@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Maskotería Akyra — El almacén para perros y gatos</title>
+<meta name="description" content="Comida, ropa, juguetes y accesorios para perros y gatos en [Ciudad]. Atención cercana y despacho coordinado por WhatsApp.">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#FBF5EB">
+<link rel="canonical" href="https://[tudominio].cl/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Maskotería Akyra">
+<meta property="og:title" content="Maskotería Akyra — El almacén para perros y gatos">
+<meta property="og:description" content="Comida, ropa, juguetes y accesorios para perros y gatos en [Ciudad].">
+<meta property="og:url" content="https://[tudominio].cl/">
+<meta property="og:image" content="https://[tudominio].cl/og-image.jpg">
+<meta property="og:locale" content="es_CL">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Maskotería Akyra — El almacén para perros y gatos">
+<meta name="twitter:description" content="Comida, ropa, juguetes y accesorios para perros y gatos en [Ciudad].">
+<meta name="twitter:image" content="https://[tudominio].cl/og-image.jpg">
+
+<!-- Datos estructurados: comercio local -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "PetStore",
+  "name": "Maskotería Akyra",
+  "description": "El almacén para perros y gatos en [Ciudad]: comida, ropa, juguetes y accesorios.",
+  "url": "https://[tudominio].cl/",
+  "telephone": "+56 9 XXXX XXXX",
+  "priceRange": "$$",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "[Dirección de la tienda]",
+    "addressLocality": "[Ciudad]",
+    "addressRegion": "Magallanes",
+    "addressCountry": "CL"
+  },
+  "sameAs": [
+    "https://www.instagram.com/maskoteria_akyra/",
+    "https://www.facebook.com/p/Maskoter%C3%ADa-Akyra-100042138145142/"
+  ]
+}
+</script>
+
+<!-- Fuentes: Baloo 2 (títulos, redondeada y cercana) + Nunito Sans (texto) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+<!-- Tailwind (solo utilidades de layout, el diseño real vive en styles.css) -->
+<script src="https://cdn.tailwindcss.com"></script>
+
+<!-- Lucide icons -->
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ================= HEADER ================= -->
+<header class="site-header" id="site-header">
+  <div class="header-inner">
+    <a href="#inicio" class="logo">
+      <img src="assets/logo/logo1.svg" alt="Maskotería Akyra" class="logo-img">
+    </a>
+
+    <nav class="main-nav" id="main-nav">
+      <a href="#inicio">Inicio</a>
+      <a href="#categorias">Categorías</a>
+      <a href="#destacados">Destacados</a>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#contacto">Contacto</a>
+      <a href="catalogo.html" class="nav-cta-secondary">Ver catálogo</a>
+      <a href="#" id="nav-whatsapp" class="nav-cta" target="_blank" rel="noopener">
+        <i data-lucide="message-circle"></i> Escríbenos
+      </a>
+    </nav>
+
+    <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">
+      <i data-lucide="menu"></i>
+    </button>
+  </div>
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="hero" id="inicio">
+  <!-- Imagen fija de portada. Se genera en script.js a partir de HERO_MEDIA. -->
+  <div class="hero-media" id="hero-media" aria-hidden="true"></div>
+  <div class="hero-tint"></div>
+  <div class="paw-trail" aria-hidden="true">
+    <span>🐾</span><span>🐾</span><span>🐾</span>
+  </div>
+  <div class="hero-content reveal">
+    <p class="eyebrow">El almacén para perros y gatos · Punta Arenas</p>
+    <h1>Todo lo que tu mascota necesita, en un solo lugar</h1>
+    <p class="hero-sub">Comida, ropa, juguetes y accesorios para perros y gatos, elegidos con cariño. Consulta disponibilidad y coordina tu pedido directo por WhatsApp.</p>
+    <div class="hero-actions">
+      <a href="catalogo.html" class="btn btn-primary">Ver catálogo</a>
+      <a href="#" id="hero-whatsapp" class="btn btn-outline" target="_blank" rel="noopener">Escríbenos por WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CATEGORÍAS ================= -->
+<section class="categories" id="categorias">
+  <div class="categories-inner">
+    <p class="eyebrow">Categorías</p>
+    <h2 class="reveal">Encuentra lo tuyo</h2>
+
+    <div class="category-grid">
+      <a href="catalogo.html?categoria=perros" class="category-card reveal">
+        <img src="https://loremflickr.com/600/500/dog" alt="Perros" class="category-img" loading="lazy">
+        <div class="category-overlay"></div>
+        <div class="category-content">
+          <h3>Perros</h3>
+          <p>Comida, ropa, juguetes y accesorios</p>
+        </div>
+      </a>
+
+      <a href="catalogo.html?categoria=gatos" class="category-card reveal">
+        <img src="https://loremflickr.com/600/500/cat" alt="Gatos" class="category-img" loading="lazy">
+        <div class="category-overlay"></div>
+        <div class="category-content">
+          <h3>Gatos</h3>
+          <p>Comida, arena, juguetes y accesorios</p>
+        </div>
+      </a>
+
+      <a href="catalogo.html?categoria=otras-mascotas" class="category-card reveal">
+        <img src="https://loremflickr.com/600/500/hamster" alt="Otras mascotas" class="category-img" loading="lazy">
+        <div class="category-overlay"></div>
+        <div class="category-content">
+          <h3>Otras mascotas</h3>
+          <p>Aves, roedores y más</p>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= DESTACADOS ================= -->
+<section class="featured" id="destacados">
+  <div class="featured-inner">
+    <p class="eyebrow">Destacados</p>
+    <h2 class="reveal">Algunos de nuestros productos</h2>
+    <p class="section-sub reveal">* Fotos y productos de ejemplo — el catálogo completo con precios y stock real vive en la página de catálogo.</p>
+
+    <div class="product-grid">
+      <div class="product-card reveal">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHNLszUUe3tIjDtgu8wiQr7UUe7lmkBJntbxk9gvr716e5W9au4NQUK4kl&s=10" alt="Alimento premium para perro" class="product-img" loading="lazy">
+        <div class="product-info">
+          <h4>Alimento premium para perro</h4>
+          <span class="product-tag">Comida</span>
+        </div>
+      </div>
+      <div class="product-card reveal">
+        <img src="https://cloudfront-us-east-1.images.arcpublishing.com/copesa/SII2TBAKKFDTRNAESSSOKTWFRI.jpg" alt="Rascador para gato" class="product-img" loading="lazy">
+        <div class="product-info">
+          <h4>Rascador para gato</h4>
+          <span class="product-tag">Accesorios</span>
+        </div>
+      </div>
+      <div class="product-card reveal">
+        <img src="https://http2.mlstatic.com/D_NQ_NP_678368-MLC112467785455_052026-O-sueter-ropa-chaleco-para-mascotas-perros-gato-invierno.webp" alt="Chaleco de invierno" class="product-img" loading="lazy">
+        <div class="product-info">
+          <h4>Chaleco de invierno</h4>
+          <span class="product-tag">Ropa</span>
+        </div>
+      </div>
+      <div class="product-card reveal">
+        <img src="https://http2.mlstatic.com/D_NQ_NP_922619-MLC90374706151_082025-O.webp" alt="Juguete mordedor" class="product-img" loading="lazy">
+        <div class="product-info">
+          <h4>Juguete mordedor</h4>
+          <span class="product-tag">Juguetes</span>
+        </div>
+      </div>
+    </div>
+
+    <a href="catalogo.html" class="btn btn-outline-dark">Ver catálogo completo</a>
+  </div>
+</section>
+
+<!-- ================= SOBRE NOSOTROS ================= -->
+<section class="about" id="nosotros">
+  <div class="about-inner">
+    <div class="about-text reveal">
+      <p class="eyebrow">Sobre Akyra</p>
+      <h2>Un almacén pensado para tu mascota</h2>
+      <p>Somos una tienda de barrio en [Ciudad], especializada en productos para perros y gatos: alimento, ropa, juguetes y accesorios, elegidos pensando en la calidad y el bienestar de tu compañero.</p>
+      <p>Nos gusta la atención cercana — si tienes dudas sobre qué producto conviene para tu mascota, escríbenos y te ayudamos a elegir.</p>
+      <a href="#" id="about-whatsapp" class="btn btn-primary" target="_blank" rel="noopener">Escríbenos por WhatsApp</a>
+    </div>
+    <div class="about-media reveal">
+      <!-- Loop de 3 fotos que se van encadenando. Rutas/orden en script.js (ABOUT_MEDIA). -->
+      <div class="about-slideshow" id="about-slideshow" aria-hidden="true"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= RESEÑAS ================= -->
+<section class="reviews" id="resenas">
+  <div class="reviews-inner">
+    <p class="eyebrow">Reseñas</p>
+    <h2 class="reveal">Lo que dicen nuestros clientes</h2>
+    <p class="section-sub reveal">* Reseñas de ejemplo — se reemplazan por las reseñas reales de Facebook de la tienda.</p>
+
+    <div class="reviews-grid">
+      <div class="review-card reveal">
+        <div class="stars">★★★★★</div>
+        <p>“Encontré justo lo que necesitaba para mi perro y me ayudaron a elegir el alimento indicado.”</p>
+        <span class="review-author">— Cliente, [Ciudad]</span>
+      </div>
+      <div class="review-card reveal">
+        <div class="stars">★★★★★</div>
+        <p>“Buena atención y variedad de productos para gatos, se nota que conocen lo que venden.”</p>
+        <span class="review-author">— Cliente, [Ciudad]</span>
+      </div>
+      <div class="review-card reveal">
+        <div class="stars">★★★★★</div>
+        <p>“Coordiné todo por WhatsApp y fue súper rápido y fácil.”</p>
+        <span class="review-author">— Cliente, [Ciudad]</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="site-footer" id="contacto">
+  <div class="footer-inner">
+
+    <div class="footer-col">
+      <img src="assets/logo/logo1.svg" alt="Maskotería Akyra" class="logo-img footer-logo">
+      <address>Casa Matriz - Av. José Martínez de Aldunate #1431,<br>Hornillas #080,<br> Punta Arenas, Chile</address>
+      <p>WhatsApp — <a href="#" id="footer-whatsapp-link" target="_blank" rel="noopener">[+56 9 XXXX XXXX]</a></p>
+      <p>Horario — [Lunes a sábado, XX:XX–XX:XX]</p>
+      <span class="copyright">© 2026 Maskotería Akyra — [Ciudad], Chile</span>
+    </div>
+
+    <div class="footer-col">
+      <h5>Tienda</h5>
+      <a href="#categorias">Categorías</a>
+      <a href="#destacados">Destacados</a>
+      <a href="catalogo.html">Catálogo completo</a>
+    </div>
+
+    <div class="footer-col">
+      <h5>Ayuda</h5>
+      <a href="#nosotros">Sobre nosotros</a>
+      <a href="#" id="footer-whatsapp-consulta" target="_blank" rel="noopener">Consultar por WhatsApp</a>
+    </div>
+
+    <div class="footer-col footer-social">
+      <h5>Síguenos</h5>
+      <div class="social-icons">
+        <a href="https://www.instagram.com/maskoteria_akyra/" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+          </svg>
+        </a>
+        <a href="https://www.facebook.com/p/Maskoter%C3%ADa-Akyra-100042138145142/" target="_blank" rel="noopener" aria-label="Facebook">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+          </svg>
+        </a>
+      </div>
+      <a href="#" id="footer-whatsapp-btn" class="btn btn-primary btn-small" target="_blank" rel="noopener">
+        <i data-lucide="message-circle"></i> Escríbenos
+      </a>
+    </div>
+
+  </div>
+</footer>
+
+<!-- ================= WHATSAPP FLOTANTE ================= -->
+<a href="#" id="whatsapp-float" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp">
+  <i data-lucide="message-circle"></i>
+</a>
+
+<script src="script.js"></script>
+</body>
+</html>
