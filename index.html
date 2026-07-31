@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Maskotería Akyra — El almacén para perros y gatos</title>
-<meta name="description" content="Comida, ropa, juguetes y accesorios para perros y gatos en [Ciudad]. Atención cercana y despacho coordinado por WhatsApp.">
+<meta name="description" content="Comida, ropa, juguetes y accesorios para perros y gatos en Punta Arenas. Atención cercana y despacho coordinado por WhatsApp.">
 <meta name="robots" content="index, follow">
 <meta name="theme-color" content="#FBF5EB">
 <link rel="canonical" href="https://[tudominio].cl/">
@@ -13,7 +13,7 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Maskotería Akyra">
 <meta property="og:title" content="Maskotería Akyra — El almacén para perros y gatos">
-<meta property="og:description" content="Comida, ropa, juguetes y accesorios para perros y gatos en [Ciudad].">
+<meta property="og:description" content="Comida, ropa, juguetes y accesorios para perros y gatos en Punta Arenas.">
 <meta property="og:url" content="https://[tudominio].cl/">
 <meta property="og:image" content="https://[tudominio].cl/og-image.jpg">
 <meta property="og:locale" content="es_CL">
@@ -21,7 +21,7 @@
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Maskotería Akyra — El almacén para perros y gatos">
-<meta name="twitter:description" content="Comida, ropa, juguetes y accesorios para perros y gatos en [Ciudad].">
+<meta name="twitter:description" content="Comida, ropa, juguetes y accesorios para perros y gatos en Punta Arenas.">
 <meta name="twitter:image" content="https://[tudominio].cl/og-image.jpg">
 
 <!-- Datos estructurados: comercio local -->
@@ -30,14 +30,14 @@
   "@context": "https://schema.org",
   "@type": "PetStore",
   "name": "Maskotería Akyra",
-  "description": "El almacén para perros y gatos en [Ciudad]: comida, ropa, juguetes y accesorios.",
+  "description": "El almacén para perros y gatos en Punta Arenas: comida, ropa, juguetes y accesorios.",
   "url": "https://[tudominio].cl/",
   "telephone": "+56 9 XXXX XXXX",
   "priceRange": "$$",
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "[Dirección de la tienda]",
-    "addressLocality": "[Ciudad]",
+    "streetAddress": "Av. José Martínez de Aldunate 1431",
+    "addressLocality": "Punta Arenas",
     "addressRegion": "Magallanes",
     "addressCountry": "CL"
   },
@@ -68,13 +68,15 @@
   <div class="header-inner">
     <a href="#inicio" class="logo">
       <img src="assets/logo/logo1.svg" alt="Maskotería Akyra" class="logo-img">
+      <span class="logo-text">El almacén para perros y gatos</span>
     </a>
 
     <nav class="main-nav" id="main-nav">
       <a href="#inicio">Inicio</a>
       <a href="#categorias">Categorías</a>
-      <a href="#destacados">Destacados</a>
+      <a href="#ofertas">Ofertas</a>
       <a href="#nosotros">Nosotros</a>
+      <a href="#ubicaciones">Ubicaciones</a>
       <a href="#contacto">Contacto</a>
       <a href="catalogo.html" class="nav-cta-secondary">Ver catálogo</a>
       <a href="#" id="nav-whatsapp" class="nav-cta" target="_blank" rel="noopener">
@@ -82,11 +84,41 @@
       </a>
     </nav>
 
-    <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">
-      <i data-lucide="menu"></i>
-    </button>
+    <div class="header-actions">
+      <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">
+        <i data-lucide="menu"></i>
+      </button>
+
+      <button class="cart-toggle" id="cart-toggle" aria-label="Ver carrito">
+        <i data-lucide="shopping-bag"></i>
+        <span class="cart-badge" id="cart-badge" hidden>0</span>
+      </button>
+    </div>
   </div>
 </header>
+
+<!-- ================= CARRITO ================= -->
+<div class="cart-overlay" id="cart-overlay"></div>
+<aside class="cart-drawer" id="cart-drawer" aria-label="Carrito de consulta">
+  <div class="cart-header">
+    <h3>Tu consulta</h3>
+    <button class="cart-close" id="cart-close" aria-label="Cerrar carrito"><i data-lucide="x"></i></button>
+  </div>
+
+  <div class="cart-empty" id="cart-empty">
+    <p>Todavía no agregaste productos.</p>
+    <p class="cart-empty-sub">Agrega los que te interesen y te ayudamos a confirmar precio y stock por WhatsApp.</p>
+  </div>
+
+  <div class="cart-items" id="cart-items"></div>
+
+  <div class="cart-footer" id="cart-footer" hidden>
+    <p class="cart-note">* Precios y stock se confirman por WhatsApp — el catálogo con precios en línea llega pronto.</p>
+    <a href="#" id="cart-whatsapp" class="btn btn-primary cart-whatsapp-btn" target="_blank" rel="noopener">
+      <i data-lucide="message-circle"></i> Enviar consulta por WhatsApp
+    </a>
+  </div>
+</aside>
 
 <!-- ================= HERO ================= -->
 <section class="hero" id="inicio">
@@ -145,44 +177,112 @@
 </section>
 
 <!-- ================= DESTACADOS ================= -->
-<section class="featured" id="destacados">
+<section class="featured" id="ofertas">
   <div class="featured-inner">
-    <p class="eyebrow">Destacados</p>
-    <h2 class="reveal">Algunos de nuestros productos</h2>
-    <p class="section-sub reveal">* Fotos y productos de ejemplo — el catálogo completo con precios y stock real vive en la página de catálogo.</p>
+    <p class="eyebrow">Ofertas</p>
+    <h2 class="reveal">Ofertas de la semana</h2>
+    <p class="section-sub reveal">* Fotos, precios y ofertas de ejemplo — el catálogo completo con precios y stock real vive en la página de catálogo.</p>
 
-    <div class="product-grid">
-      <div class="product-card reveal">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHNLszUUe3tIjDtgu8wiQr7UUe7lmkBJntbxk9gvr716e5W9au4NQUK4kl&s=10" alt="Alimento premium para perro" class="product-img" loading="lazy">
+    <div class="carousel-nav">
+      <button class="carousel-arrow" id="offers-prev" aria-label="Ver ofertas anteriores"><i data-lucide="chevron-left"></i></button>
+      <button class="carousel-arrow" id="offers-next" aria-label="Ver más ofertas"><i data-lucide="chevron-right"></i></button>
+    </div>
+
+    <div class="offers-carousel" id="offers-carousel">
+      <div class="product-card reveal" data-product-id="alimento-perro" data-product-name="Alimento Premium Senior para Perro">
+        <span class="offer-badge">20% dcto.<br>2da unidad</span>
+        <img src="https://loremflickr.com/400/300/dog,food" alt="Alimento Premium Senior para Perro" class="product-img" loading="lazy">
         <div class="product-info">
-          <h4>Alimento premium para perro</h4>
+          <h4>Alimento Premium Senior para Perro</h4>
           <span class="product-tag">Comida</span>
+          <span class="product-price">$19.900 – $68.900</span>
+          <span class="product-price-kg">desde ($4.594 x kg)</span>
+          <button class="btn-add-cart" data-add-to-cart>Agregar</button>
         </div>
       </div>
-      <div class="product-card reveal">
-        <img src="https://cloudfront-us-east-1.images.arcpublishing.com/copesa/SII2TBAKKFDTRNAESSSOKTWFRI.jpg" alt="Rascador para gato" class="product-img" loading="lazy">
+
+      <div class="product-card reveal" data-product-id="alimento-gato" data-product-name="Alimento Gourmet para Gato">
+        <img src="https://loremflickr.com/400/300/cat,food" alt="Alimento Gourmet para Gato" class="product-img" loading="lazy">
+        <div class="product-info">
+          <h4>Alimento Gourmet para Gato</h4>
+          <span class="product-tag">Comida</span>
+          <span class="product-price">$14.900 – $54.900</span>
+          <span class="product-price-kg">desde ($4.980 x kg)</span>
+          <button class="btn-add-cart" data-add-to-cart>Agregar</button>
+        </div>
+      </div>
+
+      <div class="product-card reveal" data-product-id="rascador-gato" data-product-name="Rascador para gato">
+        <img src="https://loremflickr.com/400/300/cat,toy" alt="Rascador para gato" class="product-img" loading="lazy">
         <div class="product-info">
           <h4>Rascador para gato</h4>
           <span class="product-tag">Accesorios</span>
+          <span class="product-price">$24.990</span>
+          <button class="btn-add-cart" data-add-to-cart>Agregar</button>
         </div>
       </div>
-      <div class="product-card reveal">
-        <img src="https://http2.mlstatic.com/D_NQ_NP_678368-MLC112467785455_052026-O-sueter-ropa-chaleco-para-mascotas-perros-gato-invierno.webp" alt="Chaleco de invierno" class="product-img" loading="lazy">
+
+      <div class="product-card reveal" data-product-id="chaleco-invierno" data-product-name="Chaleco de invierno">
+        <span class="offer-badge">15% dcto.</span>
+        <img src="https://loremflickr.com/400/300/dog,sweater" alt="Chaleco de invierno" class="product-img" loading="lazy">
         <div class="product-info">
           <h4>Chaleco de invierno</h4>
           <span class="product-tag">Ropa</span>
+          <span class="product-price">$12.990</span>
+          <button class="btn-add-cart" data-add-to-cart>Agregar</button>
         </div>
       </div>
-      <div class="product-card reveal">
-        <img src="https://http2.mlstatic.com/D_NQ_NP_922619-MLC90374706151_082025-O.webp" alt="Juguete mordedor" class="product-img" loading="lazy">
+
+      <div class="product-card reveal" data-product-id="juguete-mordedor" data-product-name="Juguete mordedor">
+        <img src="https://loremflickr.com/400/300/dog,toy" alt="Juguete mordedor" class="product-img" loading="lazy">
         <div class="product-info">
           <h4>Juguete mordedor</h4>
           <span class="product-tag">Juguetes</span>
+          <span class="product-price">$6.990</span>
+          <button class="btn-add-cart" data-add-to-cart>Agregar</button>
         </div>
       </div>
     </div>
 
-    <a href="catalogo.html" class="btn btn-outline-dark">Ver catálogo completo</a>
+    <a href="catalogo.html?ofertas=true" class="btn btn-outline-dark">Ver todas las ofertas</a>
+  </div>
+</section>
+
+<!-- ================= ENCUÉNTRANOS AQUÍ ================= -->
+<section class="locations" id="ubicaciones">
+  <div class="locations-inner">
+    <p class="eyebrow">Ubicaciones</p>
+    <h2 class="reveal">Encuéntranos aquí</h2>
+
+    <div class="locations-grid">
+      <div class="location-card reveal">
+        <h3>Casa Matriz</h3>
+        <address>Av. José Martínez de Aldunate 1431, Punta Arenas</address>
+        <p class="location-hours">Lunes a sábado — 10:00 a 13:00 y 15:00 a 20:00</p>
+        <div class="location-map">
+          <iframe
+            src="https://www.google.com/maps?q=Av.+Jos%C3%A9+Mart%C3%ADnez+de+Aldunate+1431,+Punta+Arenas,+Chile&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Mapa Casa Matriz — Av. José Martínez de Aldunate 1431">
+          </iframe>
+        </div>
+      </div>
+
+      <div class="location-card reveal">
+        <h3>Sucursal Hornillas</h3>
+        <address>Hornillas 080, Punta Arenas</address>
+        <p class="location-hours">Lunes a sábado — 10:10 a 13:00 y 15:00 a 19:30<br>Domingos y feriados — cerrado</p>
+        <div class="location-map">
+          <iframe
+            src="https://www.google.com/maps?q=Hornillas+080,+Punta+Arenas,+Chile&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Mapa Sucursal Hornillas 080">
+          </iframe>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -192,7 +292,7 @@
     <div class="about-text reveal">
       <p class="eyebrow">Sobre Akyra</p>
       <h2>Un almacén pensado para tu mascota</h2>
-      <p>Somos una tienda de barrio en [Ciudad], especializada en productos para perros y gatos: alimento, ropa, juguetes y accesorios, elegidos pensando en la calidad y el bienestar de tu compañero.</p>
+      <p>Somos una tienda de barrio en Punta Arenas, especializada en productos para perros y gatos: alimento, ropa, juguetes y accesorios, elegidos pensando en la calidad y el bienestar de tu compañero.</p>
       <p>Nos gusta la atención cercana — si tienes dudas sobre qué producto conviene para tu mascota, escríbenos y te ayudamos a elegir.</p>
       <a href="#" id="about-whatsapp" class="btn btn-primary" target="_blank" rel="noopener">Escríbenos por WhatsApp</a>
     </div>
@@ -214,19 +314,30 @@
       <div class="review-card reveal">
         <div class="stars">★★★★★</div>
         <p>“Encontré justo lo que necesitaba para mi perro y me ayudaron a elegir el alimento indicado.”</p>
-        <span class="review-author">— Cliente, [Ciudad]</span>
+        <span class="review-author">— Cliente, Punta Arenas</span>
       </div>
       <div class="review-card reveal">
         <div class="stars">★★★★★</div>
         <p>“Buena atención y variedad de productos para gatos, se nota que conocen lo que venden.”</p>
-        <span class="review-author">— Cliente, [Ciudad]</span>
+        <span class="review-author">— Cliente, Punta Arenas</span>
       </div>
       <div class="review-card reveal">
         <div class="stars">★★★★★</div>
         <p>“Coordiné todo por WhatsApp y fue súper rápido y fácil.”</p>
-        <span class="review-author">— Cliente, [Ciudad]</span>
+        <span class="review-author">— Cliente, Punta Arenas</span>
       </div>
     </div>
+  </div>
+</section>
+
+<!-- ================= MARCAS ================= -->
+<section class="brands" id="marcas">
+  <p class="eyebrow brands-eyebrow">Trabajamos con</p>
+  <h2 class="brands-title">Marcas que encontrarás en la tienda</h2>
+  <p class="section-sub brands-sub">* Marcas de ejemplo — reemplaza esta lista por las reales en script.js (BRANDS).</p>
+
+  <div class="brands-track-wrap">
+    <div class="brands-track" id="brands-track" aria-hidden="true"></div>
   </div>
 </section>
 
@@ -236,22 +347,23 @@
 
     <div class="footer-col">
       <img src="assets/logo/logo1.svg" alt="Maskotería Akyra" class="logo-img footer-logo">
-      <address>Casa Matriz - Av. José Martínez de Aldunate #1431,<br>Hornillas #080,<br> Punta Arenas, Chile</address>
+      <address>Casa Matriz — Av. José Martínez de Aldunate 1431, Punta Arenas</address>
       <p>WhatsApp — <a href="#" id="footer-whatsapp-link" target="_blank" rel="noopener">[+56 9 XXXX XXXX]</a></p>
-      <p>Horario — [Lunes a sábado, XX:XX–XX:XX]</p>
-      <span class="copyright">© 2026 Maskotería Akyra — [Ciudad], Chile</span>
+      <p>Horario — Lunes a sábado, 10:00–13:00 y 15:00–20:00</p>
+      <span class="copyright">© 2026 Maskotería Akyra — Punta Arenas, Chile</span>
     </div>
 
     <div class="footer-col">
       <h5>Tienda</h5>
       <a href="#categorias">Categorías</a>
-      <a href="#destacados">Destacados</a>
+      <a href="#ofertas">Ofertas</a>
       <a href="catalogo.html">Catálogo completo</a>
     </div>
 
     <div class="footer-col">
       <h5>Ayuda</h5>
       <a href="#nosotros">Sobre nosotros</a>
+      <a href="#ubicaciones">Nuestras sucursales</a>
       <a href="#" id="footer-whatsapp-consulta" target="_blank" rel="noopener">Consultar por WhatsApp</a>
     </div>
 

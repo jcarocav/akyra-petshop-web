@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Catálogo — Maskotería Akyra</title>
+<meta name="description" content="Catálogo de productos para perros, gatos y otras mascotas en Maskotería Akyra: comida, ropa, juguetes y accesorios.">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#22beb3">
+<link rel="canonical" href="https://[tudominio].cl/catalogo.html">
+
+<!-- Fuentes: Baloo 2 (títulos) + Nunito Sans (texto) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+<!-- Tailwind (solo utilidades de layout, el diseño real vive en styles.css) -->
+<script src="https://cdn.tailwindcss.com"></script>
+
+<!-- Lucide icons -->
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ================= HEADER ================= -->
+<header class="site-header" id="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="logo">
+      <img src="assets/logo/logo1.svg" alt="Maskotería Akyra" class="logo-img">
+      <span class="logo-text">El almacén para perros y gatos</span>
+    </a>
+
+    <nav class="main-nav" id="main-nav">
+      <a href="index.html#inicio">Inicio</a>
+      <a href="index.html#nosotros">Nosotros</a>
+      <a href="index.html#ubicaciones">Ubicaciones</a>
+      <a href="index.html#contacto">Contacto</a>
+      <a href="#" id="nav-whatsapp" class="nav-cta" target="_blank" rel="noopener">
+        <i data-lucide="message-circle"></i> Escríbenos
+      </a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">
+        <i data-lucide="menu"></i>
+      </button>
+
+      <button class="cart-toggle" id="cart-toggle" aria-label="Ver carrito">
+        <i data-lucide="shopping-bag"></i>
+        <span class="cart-badge" id="cart-badge" hidden>0</span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ================= CARRITO (igual que en la landing) ================= -->
+<div class="cart-overlay" id="cart-overlay"></div>
+<aside class="cart-drawer" id="cart-drawer" aria-label="Carrito de consulta">
+  <div class="cart-header">
+    <h3>Tu consulta</h3>
+    <button class="cart-close" id="cart-close" aria-label="Cerrar carrito"><i data-lucide="x"></i></button>
+  </div>
+
+  <div class="cart-empty" id="cart-empty">
+    <p>Todavía no agregaste productos.</p>
+    <p class="cart-empty-sub">Agrega los que te interesen y te ayudamos a confirmar precio y stock por WhatsApp.</p>
+  </div>
+
+  <div class="cart-items" id="cart-items"></div>
+
+  <div class="cart-footer" id="cart-footer" hidden>
+    <p class="cart-note">* Precios y stock se confirman por WhatsApp — el catálogo con precios en línea llega pronto.</p>
+    <a href="#" id="cart-whatsapp" class="btn btn-primary cart-whatsapp-btn" target="_blank" rel="noopener">
+      <i data-lucide="message-circle"></i> Enviar consulta por WhatsApp
+    </a>
+  </div>
+</aside>
+
+<!-- ================= ENCABEZADO DEL CATÁLOGO ================= -->
+<section class="catalog-hero">
+  <div class="catalog-hero-inner">
+    <p class="eyebrow">Catálogo</p>
+    <h1 id="catalog-title">Productos para Perros</h1>
+    <p class="catalog-hero-sub">Filtra por tipo de producto y agrega lo que te interese — te ayudamos a confirmar precio y stock por WhatsApp.</p>
+  </div>
+</section>
+
+<!-- ================= TABS DE CATEGORÍA ================= -->
+<div class="category-tabs-wrap">
+  <div class="category-tabs" id="category-tabs">
+    <button class="category-tab" data-category="perros">Perros</button>
+    <button class="category-tab" data-category="gatos">Gatos</button>
+    <button class="category-tab" data-category="otras-mascotas">Otros productos</button>
+  </div>
+</div>
+
+<!-- ================= CATÁLOGO ================= -->
+<section class="catalog">
+  <div class="catalog-inner">
+
+    <div class="subfilter-bar" id="subfilter-bar"></div>
+
+    <div class="catalog-grid" id="catalog-grid"></div>
+
+    <p class="catalog-empty" id="catalog-empty" hidden>Todavía no hay productos cargados en esta categoría — vuelve pronto.</p>
+  </div>
+</section>
+
+<!-- ================= WHATSAPP FLOTANTE ================= -->
+<a href="#" id="whatsapp-float" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp">
+  <i data-lucide="message-circle"></i>
+</a>
+
+<script src="script.js"></script>
+<script src="catalogo.js"></script>
+</body>
+</html>

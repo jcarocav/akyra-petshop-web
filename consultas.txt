@@ -1,0 +1,32 @@
+Trabajan con (antiparasitarios, shampoo, cosas de aseo, mats, suplementos-vitaminas
+Emiten boleta por transferencia de compras a domicilio? cual es el sistema (pago tarjeta debito/crédito) en puerta? (costos de envió)
+Polticas de cambios/devoluciones.
+
+
+Agregar categorías de casas/cama para perros y gatos, arena, ropa
+Sistema de delivery por (uber, particular)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ahora hay que crear la pagina de las "categorias", empecemos por la que seria de los productos para perro, hacerlo botón y que se abra la siguiente pagina en su categoría. Y cada subcategoria (alimento, juguetes,ropa,etc. las que siempre estan en la mayoria de paginas)  y luego ese orden del filtro de productos la usamos como plantilla para hacer lo mismo con la categoria de Gato y categoria de "Otros Productos" (si son otros animales y para productos varios o no se que podría haber). Y mostrar el stock de cada producto, tanto en la casa matriz como en la otra sucursal en pequeñas letras debajo del valor del producto.
