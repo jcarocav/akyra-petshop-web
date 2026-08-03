@@ -28,7 +28,7 @@
 <header class="site-header" id="site-header">
   <div class="header-inner">
     <a href="index.html" class="logo">
-      <img src="assets/logo/logo1.svg" alt="Maskotería Akyra" class="logo-img">
+      <img src="assets/logo/logo.svg" alt="Maskotería Akyra" class="logo-img">
       <span class="logo-text">El almacén para perros y gatos</span>
     </a>
 
@@ -50,6 +50,7 @@
       <button class="cart-toggle" id="cart-toggle" aria-label="Ver carrito">
         <i data-lucide="shopping-bag"></i>
         <span class="cart-badge" id="cart-badge" hidden>0</span>
+        <span class="cart-bump" id="cart-bump">+1</span>
       </button>
     </div>
   </div>
@@ -71,10 +72,38 @@
   <div class="cart-items" id="cart-items"></div>
 
   <div class="cart-footer" id="cart-footer" hidden>
-    <p class="cart-note">* Precios y stock se confirman por WhatsApp — el catálogo con precios en línea llega pronto.</p>
-    <a href="#" id="cart-whatsapp" class="btn btn-primary cart-whatsapp-btn" target="_blank" rel="noopener">
-      <i data-lucide="message-circle"></i> Enviar consulta por WhatsApp
-    </a>
+
+    <!-- Paso 1: resumen y total -->
+    <div class="cart-step" id="cart-step-1">
+      <div class="cart-total-row">
+        <span>Total</span>
+        <span id="cart-total">$0</span>
+      </div>
+      <p class="cart-note">* Precios referenciales — el total final y el stock se confirman por WhatsApp.</p>
+      <div class="cart-step-actions">
+        <button type="button" class="btn btn-outline-dark" id="cart-continue-shopping">Seguir comprando</button>
+        <button type="button" class="btn btn-primary" id="cart-go-checkout">Continuar compra</button>
+      </div>
+    </div>
+
+    <!-- Paso 2: datos de contacto -->
+    <div class="cart-step" id="cart-step-2" hidden>
+      <button type="button" class="cart-back" id="cart-back-to-cart">
+        <i data-lucide="arrow-left"></i> Volver al carrito
+      </button>
+
+      <div class="cart-form">
+        <input type="text" id="cart-name" class="cart-input" placeholder="Nombre" autocomplete="name">
+        <input type="tel" id="cart-phone" class="cart-input" placeholder="Teléfono" autocomplete="tel">
+        <input type="text" id="cart-address" class="cart-input" placeholder="Dirección (si necesitas despacho)" autocomplete="street-address">
+        <textarea id="cart-extra" class="cart-textarea" rows="2" placeholder="¿Algo más que debamos saber? (opcional)"></textarea>
+      </div>
+
+      <p class="cart-form-hint" id="cart-form-hint">Completa nombre y teléfono para enviar tu pedido.</p>
+      <a href="#" id="cart-whatsapp" class="btn btn-primary cart-whatsapp-btn" target="_blank" rel="noopener">
+        <i data-lucide="message-circle"></i> Enviar pedido por WhatsApp
+      </a>
+    </div>
   </div>
 </aside>
 
@@ -93,6 +122,7 @@
     <button class="category-tab" data-category="perros">Perros</button>
     <button class="category-tab" data-category="gatos">Gatos</button>
     <button class="category-tab" data-category="otras-mascotas">Otros productos</button>
+    <button class="category-tab" data-category="granel">Alimento a Granel</button>
   </div>
 </div>
 
@@ -112,6 +142,12 @@
 <a href="#" id="whatsapp-float" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp">
   <i data-lucide="message-circle"></i>
 </a>
+
+<!-- ================= TOAST "AGREGADO AL CARRITO" ================= -->
+<div class="toast" id="cart-toast" role="status" aria-live="polite">
+  <i data-lucide="check-circle-2"></i>
+  <span id="cart-toast-text">Producto agregado</span>
+</div>
 
 <script src="script.js"></script>
 <script src="catalogo.js"></script>

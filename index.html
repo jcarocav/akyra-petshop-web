@@ -67,7 +67,7 @@
 <header class="site-header" id="site-header">
   <div class="header-inner">
     <a href="#inicio" class="logo">
-      <img src="assets/logo/logo1.svg" alt="Maskotería Akyra" class="logo-img">
+      <img src="assets/logo/logo.svg" alt="Maskotería Akyra" class="logo-img">
       <span class="logo-text">El almacén para perros y gatos</span>
     </a>
 
@@ -92,6 +92,7 @@
       <button class="cart-toggle" id="cart-toggle" aria-label="Ver carrito">
         <i data-lucide="shopping-bag"></i>
         <span class="cart-badge" id="cart-badge" hidden>0</span>
+        <span class="cart-bump" id="cart-bump">+1</span>
       </button>
     </div>
   </div>
@@ -113,10 +114,38 @@
   <div class="cart-items" id="cart-items"></div>
 
   <div class="cart-footer" id="cart-footer" hidden>
-    <p class="cart-note">* Precios y stock se confirman por WhatsApp — el catálogo con precios en línea llega pronto.</p>
-    <a href="#" id="cart-whatsapp" class="btn btn-primary cart-whatsapp-btn" target="_blank" rel="noopener">
-      <i data-lucide="message-circle"></i> Enviar consulta por WhatsApp
-    </a>
+
+    <!-- Paso 1: resumen y total -->
+    <div class="cart-step" id="cart-step-1">
+      <div class="cart-total-row">
+        <span>Total</span>
+        <span id="cart-total">$0</span>
+      </div>
+      <p class="cart-note">* Precios referenciales — el total final y el stock se confirman por WhatsApp.</p>
+      <div class="cart-step-actions">
+        <button type="button" class="btn btn-outline-dark" id="cart-continue-shopping">Seguir comprando</button>
+        <button type="button" class="btn btn-primary" id="cart-go-checkout">Continuar compra</button>
+      </div>
+    </div>
+
+    <!-- Paso 2: datos de contacto -->
+    <div class="cart-step" id="cart-step-2" hidden>
+      <button type="button" class="cart-back" id="cart-back-to-cart">
+        <i data-lucide="arrow-left"></i> Volver al carrito
+      </button>
+
+      <div class="cart-form">
+        <input type="text" id="cart-name" class="cart-input" placeholder="Nombre" autocomplete="name">
+        <input type="tel" id="cart-phone" class="cart-input" placeholder="Teléfono" autocomplete="tel">
+        <input type="text" id="cart-address" class="cart-input" placeholder="Dirección (si necesitas despacho)" autocomplete="street-address">
+        <textarea id="cart-extra" class="cart-textarea" rows="2" placeholder="¿Algo más que debamos saber? (opcional)"></textarea>
+      </div>
+
+      <p class="cart-form-hint" id="cart-form-hint">Completa nombre y teléfono para enviar tu pedido.</p>
+      <a href="#" id="cart-whatsapp" class="btn btn-primary cart-whatsapp-btn" target="_blank" rel="noopener">
+        <i data-lucide="message-circle"></i> Enviar pedido por WhatsApp
+      </a>
+    </div>
   </div>
 </aside>
 
@@ -172,6 +201,15 @@
           <p>Aves, roedores y más</p>
         </div>
       </a>
+
+      <a href="catalogo.html?categoria=granel" class="category-card reveal">
+        <img src="https://loremflickr.com/600/500/dog,kibble" alt="Alimento a granel" class="category-img" loading="lazy">
+        <div class="category-overlay"></div>
+        <div class="category-content">
+          <h3>Alimento a Granel</h3>
+          <p>Elige la cantidad exacta que necesitas</p>
+        </div>
+      </a>
     </div>
   </div>
 </section>
@@ -189,7 +227,7 @@
     </div>
 
     <div class="offers-carousel" id="offers-carousel">
-      <div class="product-card reveal" data-product-id="alimento-perro" data-product-name="Alimento Premium Senior para Perro">
+      <div class="product-card reveal" data-product-id="alimento-perro" data-product-name="Alimento Premium Senior para Perro" data-product-price="19900">
         <span class="offer-badge">20% dcto.<br>2da unidad</span>
         <img src="https://loremflickr.com/400/300/dog,food" alt="Alimento Premium Senior para Perro" class="product-img" loading="lazy">
         <div class="product-info">
@@ -201,7 +239,7 @@
         </div>
       </div>
 
-      <div class="product-card reveal" data-product-id="alimento-gato" data-product-name="Alimento Gourmet para Gato">
+      <div class="product-card reveal" data-product-id="alimento-gato" data-product-name="Alimento Gourmet para Gato" data-product-price="14900">
         <img src="https://loremflickr.com/400/300/cat,food" alt="Alimento Gourmet para Gato" class="product-img" loading="lazy">
         <div class="product-info">
           <h4>Alimento Gourmet para Gato</h4>
@@ -212,7 +250,7 @@
         </div>
       </div>
 
-      <div class="product-card reveal" data-product-id="rascador-gato" data-product-name="Rascador para gato">
+      <div class="product-card reveal" data-product-id="rascador-gato" data-product-name="Rascador para gato" data-product-price="24990">
         <img src="https://loremflickr.com/400/300/cat,toy" alt="Rascador para gato" class="product-img" loading="lazy">
         <div class="product-info">
           <h4>Rascador para gato</h4>
@@ -222,7 +260,7 @@
         </div>
       </div>
 
-      <div class="product-card reveal" data-product-id="chaleco-invierno" data-product-name="Chaleco de invierno">
+      <div class="product-card reveal" data-product-id="chaleco-invierno" data-product-name="Chaleco de invierno" data-product-price="12990">
         <span class="offer-badge">15% dcto.</span>
         <img src="https://loremflickr.com/400/300/dog,sweater" alt="Chaleco de invierno" class="product-img" loading="lazy">
         <div class="product-info">
@@ -233,7 +271,7 @@
         </div>
       </div>
 
-      <div class="product-card reveal" data-product-id="juguete-mordedor" data-product-name="Juguete mordedor">
+      <div class="product-card reveal" data-product-id="juguete-mordedor" data-product-name="Juguete mordedor" data-product-price="6990">
         <img src="https://loremflickr.com/400/300/dog,toy" alt="Juguete mordedor" class="product-img" loading="lazy">
         <div class="product-info">
           <h4>Juguete mordedor</h4>
@@ -346,7 +384,7 @@
   <div class="footer-inner">
 
     <div class="footer-col">
-      <img src="assets/logo/logo1.svg" alt="Maskotería Akyra" class="logo-img footer-logo">
+      <img src="assets/logo/logo.svg" alt="Maskotería Akyra" class="logo-img footer-logo">
       <address>Casa Matriz — Av. José Martínez de Aldunate 1431, Punta Arenas</address>
       <p>WhatsApp — <a href="#" id="footer-whatsapp-link" target="_blank" rel="noopener">[+56 9 XXXX XXXX]</a></p>
       <p>Horario — Lunes a sábado, 10:00–13:00 y 15:00–20:00</p>
@@ -395,6 +433,12 @@
 <a href="#" id="whatsapp-float" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp">
   <i data-lucide="message-circle"></i>
 </a>
+
+<!-- ================= TOAST "AGREGADO AL CARRITO" ================= -->
+<div class="toast" id="cart-toast" role="status" aria-live="polite">
+  <i data-lucide="check-circle-2"></i>
+  <span id="cart-toast-text">Producto agregado</span>
+</div>
 
 <script src="script.js"></script>
 </body>
