@@ -25,7 +25,7 @@ const SHEETS_CONFIG = {
   // publicar la planilla como CSV (Archivo > Compartir >
   // Publicar en la web). Mientras esté vacía, se usan los
   // productos de respaldo de abajo.
-  csvUrl: ''
+  csvUrl: 'https://docs.google.com/spreadsheets/d/e/2PACX-1vQd81coXCU4GTm2_o8seIZqc81RmsM_SGk-1dn_41ZbpktyE5orar-xlkT_HZrIKpfXPb8oP5jxDTpn/pub?gid=1390063107&single=true&output=csv'
 };
 
 // Productos de respaldo: se usan SOLO si la planilla todavía no
