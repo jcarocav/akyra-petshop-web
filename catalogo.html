@@ -20,6 +20,9 @@
 <!-- Lucide icons -->
 <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
 
+<!-- PapaParse: lee el CSV publicado desde Google Sheets -->
+<script src="https://unpkg.com/papaparse@5.4.1/papaparse.min.js"></script>
+
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -130,6 +133,10 @@
 <!-- ================= CATÁLOGO ================= -->
 <section class="catalog">
   <div class="catalog-inner">
+
+    <p class="catalog-sheet-error" id="catalog-sheet-error" hidden>
+      No se pudo conectar con la planilla en este momento — mostrando un catálogo de respaldo. Prueba recargando la página en un rato.
+    </p>
 
     <div class="subfilter-bar" id="subfilter-bar"></div>
 

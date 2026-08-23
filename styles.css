@@ -393,6 +393,18 @@ address { font-style: normal; }
 .product-price { font-family: var(--font-display); font-weight: 700; font-size: 16px; color: var(--magenta-dark); }
 .product-price-kg { font-size: 12px; color: var(--gray); margin-top: -4px; }
 .product-stock { font-size: 11px; color: var(--gray); }
+.product-stock-out { color: var(--magenta-dark); font-weight: 600; }
+.catalog-loading { grid-column: 1 / -1; text-align: center; padding: 60px 0; color: var(--gray); }
+.catalog-sheet-error {
+  background: rgba(200, 28, 108, 0.1);
+  border: 1px solid rgba(200, 28, 108, 0.3);
+  color: var(--magenta-dark);
+  font-size: 13px;
+  padding: 12px 16px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.product-stock { font-size: 11px; color: var(--gray); }
 
 .btn-add-cart {
   align-self: stretch;

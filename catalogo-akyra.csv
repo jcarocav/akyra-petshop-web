@@ -1,0 +1,29 @@
+id,nombre,categoria,subcategoria,tipo,precio,precio_label,precio_kg_info,precio_por_kg,badge,imagen,stock
+perro-alimento-adulto,Alimento premium adulto,perros,Comida,normal,19990,desde $19.990,desde $4.594 x kg,,20% dcto. 2da unidad,"https://loremflickr.com/400/300/dog,food",11
+perro-alimento-cachorro,Alimento premium cachorro,perros,Comida,normal,17990,$17.990,$5.200 x kg,,,"https://loremflickr.com/400/300/puppy,food",5
+perro-correa-collar,Set correa y collar,perros,Accesorios,normal,8990,$8.990,,,,"https://loremflickr.com/400/300/dog,leash",18
+perro-cama,Cama acolchada,perros,Accesorios,normal,24990,$24.990,,,,"https://loremflickr.com/400/300/dog,bed",5
+perro-chaleco,Chaleco de invierno,perros,Ropa,normal,12990,$12.990,,,15% dcto.,"https://loremflickr.com/400/300/dog,sweater",9
+perro-pechera,Pechera ajustable,perros,Ropa,normal,9990,$9.990,,,,"https://loremflickr.com/400/300/dog,harness",7
+perro-mordedor,Juguete mordedor,perros,Juguetes,normal,6990,$6.990,,,,"https://loremflickr.com/400/300/dog,toy",20
+perro-pelota,Pelota interactiva,perros,Juguetes,normal,5990,$5.990,,,,"https://loremflickr.com/400/300/dog,ball",14
+gato-alimento-adulto,Alimento premium adulto,gatos,Comida,normal,18990,desde $18.990,desde $4.980 x kg,,20% dcto. 2da unidad,"https://loremflickr.com/400/300/cat,food",9
+gato-alimento-humedo,Alimento húmedo (pack x6),gatos,Comida,normal,6990,$6.990,,,,"https://loremflickr.com/400/300/cat,wetfood",13
+gato-arena-aglomerante,Arena aglomerante,gatos,Arena,normal,7990,$7.990,$1.330 x kg,,,"https://loremflickr.com/400/300/cat,litter",16
+gato-arena-silice,Arena de sílice,gatos,Arena,normal,9990,$9.990,,,,"https://loremflickr.com/400/300/cat,sand",6
+gato-rascador,Rascador para gato,gatos,Accesorios,normal,24990,$24.990,,,,"https://loremflickr.com/400/300/cat,toy",4
+gato-transportadora,Transportadora,gatos,Accesorios,normal,18990,$18.990,,,,"https://loremflickr.com/400/300/cat,carrier",3
+gato-plumas,Juguete con plumas,gatos,Juguetes,normal,4990,$4.990,,,,"https://loremflickr.com/400/300/cat,feather",22
+gato-tunel,Túnel de juego,gatos,Juguetes,normal,12990,$12.990,,,,"https://loremflickr.com/400/300/cat,tunnel",5
+aves-alimento,Alimento para aves,otras-mascotas,Aves,normal,5990,$5.990,,,,"https://loremflickr.com/400/300/bird,food",10
+aves-juguete,Juguete para jaula,otras-mascotas,Aves,normal,4490,$4.490,,,,"https://loremflickr.com/400/300/bird,toy",8
+roedor-jaula,Jaula para hámster,otras-mascotas,Roedores,normal,22990,$22.990,,,,"https://loremflickr.com/400/300/hamster,cage",2
+roedor-heno,Heno para roedores,otras-mascotas,Roedores,normal,3490,$3.490,,,,"https://loremflickr.com/400/300/hamster,hay",15
+peces-alimento,Alimento para peces,otras-mascotas,Peces,normal,3990,$3.990,,,,"https://loremflickr.com/400/300/fish,food",12
+peces-pecera,Pecera pequeña,otras-mascotas,Peces,normal,15990,$15.990,,,,"https://loremflickr.com/400/300/fish,tank",3
+otros-bebedero,Bebedero para conejo,otras-mascotas,Varios,normal,4990,$4.990,,,,https://loremflickr.com/400/300/rabbit,9
+otros-vitaminas,Vitaminas multipropósito,otras-mascotas,Varios,normal,6990,$6.990,,,,https://loremflickr.com/400/300/pets,7
+granel-perro-pollo,Granel Perro — Pollo y arroz,granel,Perro,granel,,,,4500,,"https://loremflickr.com/400/300/dog,kibble",35
+granel-perro-carne,Granel Perro — Carne y vegetales,granel,Perro,granel,,,,4900,,"https://loremflickr.com/400/300/dog,food,bulk",28
+granel-gato-pescado,Granel Gato — Pescado,granel,Gato,granel,,,,5200,,"https://loremflickr.com/400/300/cat,fish,food",20
+granel-gato-pollo,Granel Gato — Pollo,granel,Gato,granel,,,,4800,,"https://loremflickr.com/400/300/cat,kibble",24

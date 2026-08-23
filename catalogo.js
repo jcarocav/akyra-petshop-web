@@ -1,109 +1,118 @@
 // ============================================================
-// PRODUCTOS DE EJEMPLO — mientras se conecta Google Sheets (ver
-// plan acordado), el catálogo se arma con esta lista fija. Cada
-// producto necesita: id único, name, category, subcategory,
-// price (texto, admite rango), priceKg (opcional, solo alimentos
-// en bolsa), image, badge (opcional).
-//
-// Para agregar la categoría "Gatos" u "Otros productos" con datos
-// reales, esta misma lista es la plantilla: solo se agregan más
-// objetos con su "category" correspondiente.
+// CATÁLOGO — los productos se cargan desde Google Sheets (ver
+// bloque SHEETS_CONFIG más abajo). Este archivo también trae las
+// pestañas de categoría, los subfiltros, y el armado de cada
+// tarjeta de producto (normal o a granel).
 // ============================================================
 // ============================================================
-// PRODUCTOS DE EJEMPLO — mientras se conecta Google Sheets (ver
-// plan acordado), el catálogo se arma con esta lista fija. Cada
-// producto necesita: id único, name, category, subcategory,
-// price (número, se usa para el carrito y el total), priceLabel
-// (texto que se muestra, puede ser un rango), priceKg (opcional,
-// solo alimentos en bolsa), image, badge (opcional).
-//
-// Nota sobre precios en rango: el carrito necesita un número fijo
-// para sumar el total, así que en productos con rango de precio
-// (ej. distintos tamaños de bolsa) se usa el valor más bajo como
-// referencia. Cuando se conecte Sheets con variantes reales, esto
-// se puede reemplazar por un selector de tamaño/precio.
-//
-// Para agregar la categoría "Gatos" u "Otros productos" con datos
-// reales, esta misma lista es la plantilla: solo se agregan más
-// objetos con su "category" correspondiente.
+// CATÁLOGO DESDE GOOGLE SHEETS
 // ============================================================
-const PRODUCTS = [
-  // ---- PERROS ----
+// El catálogo ya no vive en un arreglo fijo acá — se trae en vivo
+// desde una planilla de Google Sheets publicada como CSV. Así,
+// cambiar un precio o el stock en la planilla actualiza el sitio
+// solo, sin tocar código.
+//
+// CÓMO CONECTARLO (una vez, ver instrucciones completas aparte):
+//  1) Crea la planilla con las columnas: id, nombre, categoria,
+//     subcategoria, tipo (normal/granel), precio, precio_label,
+//     precio_kg_info, precio_por_kg, badge, imagen, stock
+//  2) Archivo > Compartir > Publicar en la web > formato CSV
+//  3) Pega la URL que te da Google Sheets acá abajo, en
+//     SHEETS_CONFIG.csvUrl
+// ============================================================
+const SHEETS_CONFIG = {
+  // Reemplaza esta URL por la que te entrega Google Sheets al
+  // publicar la planilla como CSV (Archivo > Compartir >
+  // Publicar en la web). Mientras esté vacía, se usan los
+  // productos de respaldo de abajo.
+  csvUrl: ''
+};
+
+// Productos de respaldo: se usan SOLO si la planilla todavía no
+// está conectada, o si por algún motivo no se pudo leer (sin
+// internet, la planilla se borró, etc.) — así el catálogo nunca
+// queda completamente vacío.
+const FALLBACK_PRODUCTS = [
   { id: 'perro-alimento-adulto', name: 'Alimento premium adulto', category: 'perros', subcategory: 'Comida',
-    price: 19990, priceLabel: 'desde $19.990', priceKg: 'desde $4.594 x kg', badge: '20% dcto. 2da unidad',
+    price: 19990, priceLabel: 'desde $19.990', priceKg: 'desde $4.594 x kg', badge: '20% dcto. 2da unidad', stock: 0,
     image: 'https://loremflickr.com/400/300/dog,food' },
-  { id: 'perro-alimento-cachorro', name: 'Alimento premium cachorro', category: 'perros', subcategory: 'Comida',
-    price: 17990, priceLabel: '$17.990', priceKg: '$5.200 x kg',
-    image: 'https://loremflickr.com/400/300/puppy,food' },
-  { id: 'perro-correa-collar', name: 'Set correa y collar', category: 'perros', subcategory: 'Accesorios',
-    price: 8990, priceLabel: '$8.990', image: 'https://loremflickr.com/400/300/dog,leash' },
-  { id: 'perro-cama', name: 'Cama acolchada', category: 'perros', subcategory: 'Accesorios',
-    price: 24990, priceLabel: '$24.990', image: 'https://loremflickr.com/400/300/dog,bed' },
-  { id: 'perro-chaleco', name: 'Chaleco de invierno', category: 'perros', subcategory: 'Ropa',
-    price: 12990, priceLabel: '$12.990', image: 'https://loremflickr.com/400/300/dog,sweater' },
-  { id: 'perro-pechera', name: 'Pechera ajustable', category: 'perros', subcategory: 'Ropa',
-    price: 9990, priceLabel: '$9.990', image: 'https://loremflickr.com/400/300/dog,harness' },
-  { id: 'perro-mordedor', name: 'Juguete mordedor', category: 'perros', subcategory: 'Juguetes',
-    price: 6990, priceLabel: '$6.990', image: 'https://loremflickr.com/400/300/dog,toy' },
-  { id: 'perro-pelota', name: 'Pelota interactiva', category: 'perros', subcategory: 'Juguetes',
-    price: 5990, priceLabel: '$5.990', image: 'https://loremflickr.com/400/300/dog,ball' },
-
-  // ---- GATOS ----
   { id: 'gato-alimento-adulto', name: 'Alimento premium adulto', category: 'gatos', subcategory: 'Comida',
-    price: 18990, priceLabel: 'desde $18.990', priceKg: 'desde $4.980 x kg', badge: '20% dcto. 2da unidad',
+    price: 18990, priceLabel: 'desde $18.990', priceKg: 'desde $4.980 x kg', stock: 0,
     image: 'https://loremflickr.com/400/300/cat,food' },
-  { id: 'gato-alimento-humedo', name: 'Alimento húmedo (pack x6)', category: 'gatos', subcategory: 'Comida',
-    price: 6990, priceLabel: '$6.990', image: 'https://loremflickr.com/400/300/cat,wetfood' },
-  { id: 'gato-arena-aglomerante', name: 'Arena aglomerante', category: 'gatos', subcategory: 'Arena',
-    price: 7990, priceLabel: '$7.990', priceKg: '$1.330 x kg', image: 'https://loremflickr.com/400/300/cat,litter' },
-  { id: 'gato-arena-silice', name: 'Arena de sílice', category: 'gatos', subcategory: 'Arena',
-    price: 9990, priceLabel: '$9.990', image: 'https://loremflickr.com/400/300/cat,sand' },
-  { id: 'gato-rascador', name: 'Rascador para gato', category: 'gatos', subcategory: 'Accesorios',
-    price: 24990, priceLabel: '$24.990', image: 'https://loremflickr.com/400/300/cat,toy' },
-  { id: 'gato-transportadora', name: 'Transportadora', category: 'gatos', subcategory: 'Accesorios',
-    price: 18990, priceLabel: '$18.990', image: 'https://loremflickr.com/400/300/cat,carrier' },
-  { id: 'gato-plumas', name: 'Juguete con plumas', category: 'gatos', subcategory: 'Juguetes',
-    price: 4990, priceLabel: '$4.990', image: 'https://loremflickr.com/400/300/cat,feather' },
-  { id: 'gato-tunel', name: 'Túnel de juego', category: 'gatos', subcategory: 'Juguetes',
-    price: 12990, priceLabel: '$12.990', image: 'https://loremflickr.com/400/300/cat,tunnel' },
-
-  // ---- OTRAS MASCOTAS ----
-  { id: 'aves-alimento', name: 'Alimento para aves', category: 'otras-mascotas', subcategory: 'Aves',
-    price: 5990, priceLabel: '$5.990', image: 'https://loremflickr.com/400/300/bird,food' },
-  { id: 'aves-juguete', name: 'Juguete para jaula', category: 'otras-mascotas', subcategory: 'Aves',
-    price: 4490, priceLabel: '$4.490', image: 'https://loremflickr.com/400/300/bird,toy' },
-  { id: 'roedor-jaula', name: 'Jaula para hámster', category: 'otras-mascotas', subcategory: 'Roedores',
-    price: 22990, priceLabel: '$22.990', image: 'https://loremflickr.com/400/300/hamster,cage' },
-  { id: 'roedor-heno', name: 'Heno para roedores', category: 'otras-mascotas', subcategory: 'Roedores',
-    price: 3490, priceLabel: '$3.490', image: 'https://loremflickr.com/400/300/hamster,hay' },
-  { id: 'peces-alimento', name: 'Alimento para peces', category: 'otras-mascotas', subcategory: 'Peces',
-    price: 3990, priceLabel: '$3.990', image: 'https://loremflickr.com/400/300/fish,food' },
-  { id: 'peces-pecera', name: 'Pecera pequeña', category: 'otras-mascotas', subcategory: 'Peces',
-    price: 15990, priceLabel: '$15.990', image: 'https://loremflickr.com/400/300/fish,tank' },
-  { id: 'otros-bebedero', name: 'Bebedero para conejo', category: 'otras-mascotas', subcategory: 'Varios',
-    price: 4990, priceLabel: '$4.990', image: 'https://loremflickr.com/400/300/rabbit' },
-  { id: 'otros-vitaminas', name: 'Vitaminas multipropósito', category: 'otras-mascotas', subcategory: 'Varios',
-    price: 6990, priceLabel: '$6.990', image: 'https://loremflickr.com/400/300/pets' },
-
-  // ---- ALIMENTO A GRANEL ----
-  // Estos productos no tienen "price" fijo: se cobran por kilo
-  // (pricePerKg) y la card deja escribir la cantidad en gramos.
-  // Ver bulk:true en productCardHTML() y el manejo especial en
-  // script.js (initCart) para el cálculo del subtotal.
   { id: 'granel-perro-pollo', name: 'Granel Perro — Pollo y arroz', category: 'granel', subcategory: 'Perro',
-    bulk: true, pricePerKg: 4500, image: 'https://loremflickr.com/400/300/dog,kibble' },
-  { id: 'granel-perro-carne', name: 'Granel Perro — Carne y vegetales', category: 'granel', subcategory: 'Perro',
-    bulk: true, pricePerKg: 4900, image: 'https://loremflickr.com/400/300/dog,food,bulk' },
-  { id: 'granel-gato-pescado', name: 'Granel Gato — Pescado', category: 'granel', subcategory: 'Gato',
-    bulk: true, pricePerKg: 5200, image: 'https://loremflickr.com/400/300/cat,fish,food' },
-  { id: 'granel-gato-pollo', name: 'Granel Gato — Pollo', category: 'granel', subcategory: 'Gato',
-    bulk: true, pricePerKg: 4800, image: 'https://loremflickr.com/400/300/cat,kibble' }
+    bulk: true, pricePerKg: 4500, stock: 0, image: 'https://loremflickr.com/400/300/dog,kibble' }
 ];
+
+let PRODUCTS = [];
+
+/** Convierte un valor de celda a número, o null si viene vacío. */
+function celdaANumero_(valor) {
+  if (valor == null || String(valor).trim() === '') return null;
+  const n = Number(String(valor).replace(/[^\d.-]/g, ''));
+  return isNaN(n) ? null : n;
+}
+
+/** Traduce una fila de la planilla (ya parseada por PapaParse) al
+ *  mismo formato de objeto que usa el resto del catálogo. */
+function filaAProducto_(fila) {
+  const esGranel = String(fila.tipo || '').trim().toLowerCase() === 'granel';
+  const base = {
+    id: String(fila.id || '').trim(),
+    name: String(fila.nombre || '').trim(),
+    category: String(fila.categoria || '').trim(),
+    subcategory: String(fila.subcategoria || '').trim(),
+    image: String(fila.imagen || '').trim(),
+    stock: celdaANumero_(fila.stock) ?? 0
+  };
+  if (String(fila.badge || '').trim()) base.badge = String(fila.badge).trim();
+
+  if (esGranel) {
+    return { ...base, bulk: true, pricePerKg: celdaANumero_(fila.precio_por_kg) || 0 };
+  }
+
+  const precioLabel = String(fila.precio_label || '').trim();
+  const precio = celdaANumero_(fila.precio) || 0;
+  const precioKg = String(fila.precio_kg_info || '').trim();
+  return {
+    ...base,
+    price: precio,
+    priceLabel: precioLabel || `$${precio.toLocaleString('es-CL')}`,
+    ...(precioKg ? { priceKg: precioKg } : {})
+  };
+}
+
+/** Descarga y parsea la planilla publicada. Lanza error si algo
+ *  sale mal, para que quien llama decida qué mostrar. */
+function cargarProductosDesdeSheet_() {
+  return new Promise((resolve, reject) => {
+    if (!SHEETS_CONFIG.csvUrl) {
+      reject(new Error('SHEETS_CONFIG.csvUrl todavía no está configurada'));
+      return;
+    }
+    Papa.parse(SHEETS_CONFIG.csvUrl, {
+      download: true,
+      header: true,
+      skipEmptyLines: true,
+      complete: (resultado) => {
+        try {
+          const productos = resultado.data
+            .filter(fila => String(fila.id || '').trim() !== '')
+            .map(filaAProducto_);
+          if (productos.length === 0) throw new Error('La planilla no tiene filas con datos');
+          resolve(productos);
+        } catch (err) {
+          reject(err);
+        }
+      },
+      error: (err) => reject(err)
+    });
+  });
+}
 
 // ============================================================
 // METADATA DE CADA CATEGORÍA — título de la página y sus
 // subfiltros. Para agregar una categoría nueva, se suma acá
-// y se agregan sus productos arriba con ese mismo "category".
+// y se agregan sus productos en la planilla con ese "categoria".
 // ============================================================
 const CATEGORY_META = {
   'perros': { label: 'Perros', title: 'Productos para Perros', subfilters: ['Comida', 'Ropa', 'Juguetes', 'Accesorios'] },
@@ -117,6 +126,13 @@ let currentSubfilter = 'Todos';
 
 function bulkPrice(pricePerKg, grams) {
   return Math.round((pricePerKg * grams) / 1000);
+}
+
+function stockLineHTML_(product) {
+  if (product.stock == null) return '';
+  return product.stock > 0
+    ? `<span class="product-stock">Stock: ${product.stock} unidades</span>`
+    : `<span class="product-stock product-stock-out">Sin stock por ahora</span>`;
 }
 
 function productCardHTML(product) {
@@ -137,6 +153,7 @@ function productCardHTML(product) {
             </div>
           </div>
           <span class="bulk-subtotal-preview">Subtotal: <strong data-bulk-preview>${formatCLP(bulkPrice(product.pricePerKg, defaultGrams))}</strong></span>
+          ${stockLineHTML_(product)}
           <button class="btn-add-cart" data-add-to-cart>Agregar</button>
         </div>
       </div>
@@ -154,6 +171,7 @@ function productCardHTML(product) {
         <h4>${product.name}</h4>
         <span class="product-price">${product.priceLabel}</span>
         ${priceKg}
+        ${stockLineHTML_(product)}
         <button class="btn-add-cart" data-add-to-cart>Agregar</button>
       </div>
     </div>
@@ -214,7 +232,7 @@ function switchSubfilter(subfilter) {
   renderProducts();
 }
 
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', async () => {
   // Categoría inicial: la que venga en la URL (?categoria=perros),
   // o "perros" por defecto si no hay ninguna o no existe.
   const params = new URLSearchParams(window.location.search);
@@ -228,6 +246,20 @@ document.addEventListener('DOMContentLoaded', () => {
     const btn = e.target.closest('[data-subfilter]');
     if (btn) switchSubfilter(btn.dataset.subfilter);
   });
+
+  const grid = document.getElementById('catalog-grid');
+  const emptyMsg = document.getElementById('catalog-empty');
+  if (grid) grid.innerHTML = '<p class="catalog-loading">Cargando productos…</p>';
+  if (emptyMsg) emptyMsg.hidden = true;
+
+  try {
+    PRODUCTS = await cargarProductosDesdeSheet_();
+  } catch (err) {
+    console.warn('No se pudo cargar la planilla, usando productos de respaldo:', err.message);
+    PRODUCTS = FALLBACK_PRODUCTS;
+    const banner = document.getElementById('catalog-sheet-error');
+    if (banner) banner.hidden = false;
+  }
 
   switchCategory(initialCategory, false);
 });
