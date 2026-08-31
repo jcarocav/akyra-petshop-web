@@ -1,8 +1,8 @@
 // ============================================================
-// CONFIGURACIÓN — reemplazar con los datos reales de Maskotería Akyra
+// CONFIGURACIÓN — reemplazar con los datos reales del negocio (ya cargados para Mascotería Akyra)
 // ============================================================
 const CONFIG = {
-  whatsappNumber: '56900000000', // formato: 56 9 XXXX XXXX sin espacios ni "+"
+  whatsappNumber: '56986969111', // formato: 56 9 XXXX XXXX sin espacios ni "+"
   whatsappMessage: 'Hola, quería consultar por sus productos para mascotas 🐾'
 };
 
@@ -17,14 +17,26 @@ function buildWhatsappLink(customMessage) {
 // como { type: 'video', src: '...' } y arma un carrusel simple
 // como el que usamos en el sitio del jiu-jitsu.
 // ============================================================
+// Foto de portada del hero. Soporta dos modos vía "mode":
+//  - 'contain' (default, sin poner "mode"): pensado para una foto
+//    RECORTADA (fondo transparente) de una o varias mascotas — flota
+//    sobre el fondo magenta, con sombra para que no se vea "plana".
+//    Admite "align: 'right'" para pegarla al lado derecho (útil
+//    cuando la propia foto ya viene con espacio vacío a un lado,
+//    como esta, para dejarle sitio a un texto al costado).
+//  - 'cover': para una foto de escena completa (fondo real, no
+//    transparente) que llena todo el hero de fondo — con velo si
+//    hace falta contraste para el texto encima.
 const HERO_MEDIA = [
-  { type: 'image', src: 'assets/hero/portada.jpg', alt: 'Productos para mascotas en Patitas' }
+  { type: 'image', src: 'assets/hero/portada-lanzamiento.png', alt: 'Perrito y gatito, mascotas de ejemplo dando la bienvenida al nuevo sitio web', align: 'right' }
 ];
 
 function initHeroMedia() {
   const container = document.getElementById('hero-media');
   if (!container || HERO_MEDIA.length === 0) return;
   const item = HERO_MEDIA[0];
+  container.classList.toggle('hero-media-cover', item.mode === 'cover');
+  container.classList.toggle('hero-media-align-right', item.align === 'right');
   const el = document.createElement(item.type === 'video' ? 'video' : 'img');
   if (item.type === 'video') {
     el.src = item.src;
@@ -34,23 +46,23 @@ function initHeroMedia() {
     el.loop = true;
   } else {
     el.src = item.src;
-    el.alt = item.alt || 'Maskotería Akyra — tienda de mascotas';
+    el.alt = item.alt || 'Mascotería Akyra — tienda de mascotas';
   }
   el.classList.add('active');
   container.appendChild(el);
 }
 
 // ============================================================
-// FOTOS DE "SOBRE PATITAS" — loop de 3 que se van encadenando.
-// Por ahora son fotos genéricas de ejemplo (con licencia libre,
-// vía loremflickr.com) — reemplázalas por las rutas de tus
-// propias fotos en assets/nosotros/ cuando las tengas (mismo
-// nombre de variable, solo cambia el "src").
+// FOTOS DE "SOBRE MASCOTERÍA AKYRA" — loop de 3 que se van
+// encadenando. Por ahora son fotos genéricas de ejemplo (con
+// licencia libre, vía loremflickr.com) — reemplázalas por las
+// rutas de tus propias fotos en assets/nosotros/ cuando las
+// tengas (mismo nombre de variable, solo cambia el "src").
 // ============================================================
 const ABOUT_MEDIA = [
   { src: 'https://loremflickr.com/900/700/dog,owner', alt: 'Cliente con su mascota' },
   { src: 'https://loremflickr.com/900/700/cat,cute', alt: 'Gato en la tienda' },
-  { src: 'https://loremflickr.com/900/700/pets', alt: 'Productos para mascotas' }
+  { src: 'https://loremflickr.com/900/700/petshop,store', alt: 'Local de Mascotería Akyra' }
 ];
 
 function initAboutSlideshow() {
@@ -60,7 +72,7 @@ function initAboutSlideshow() {
   const imgs = ABOUT_MEDIA.map((item, i) => {
     const img = document.createElement('img');
     img.src = item.src;
-    img.alt = item.alt || 'Maskotería Akyra';
+    img.alt = item.alt || 'Mascotería Akyra';
     if (i === 0) img.classList.add('active');
     container.appendChild(img);
     return img;
@@ -74,6 +86,51 @@ function initAboutSlideshow() {
     current = (current + 1) % imgs.length;
     imgs[current].classList.add('active');
   }, 4000);
+}
+
+// ============================================================
+// FOTOS DE LAS SUCURSALES ("Encuéntranos aquí") — van rotando
+// en loop, y cada vez que aparece una foto se ilumina la card de
+// esa misma sucursal (matchean por "location", el mismo valor
+// que el data-location de cada .location-card).
+// ============================================================
+// PENDIENTE: falta la foto real de Casa Matriz y de Circunvalación —
+// mientras tanto se usan fotos genéricas de ejemplo (loremflickr).
+// Hornillas ya tiene su foto real (la de la fachada con el letrero).
+const LOCATIONS_MEDIA = [
+  { src: 'https://loremflickr.com/900/700/petshop,storefront', alt: 'Local Mascotería Akyra — Casa Matriz', location: 'casa-matriz' },
+  { src: 'assets/img/lugares/hornillas.jpg', alt: 'Fachada de Mascotería Akyra — sucursal Hornillas', location: 'hornillas' },
+  { src: 'https://loremflickr.com/900/700/petstore,shop', alt: 'Local Mascotería Akyra — Circunvalación', location: 'circunvalacion' }
+];
+
+function initLocationsShowcase() {
+  const container = document.getElementById('locations-bg');
+  const cards = document.querySelectorAll('.location-card');
+  if (!container || LOCATIONS_MEDIA.length === 0) return;
+
+  const imgs = LOCATIONS_MEDIA.map((item, i) => {
+    const img = document.createElement('img');
+    img.src = item.src;
+    img.alt = item.alt || 'Mascotería Akyra';
+    if (i === 0) img.classList.add('active');
+    container.appendChild(img);
+    return img;
+  });
+
+  function highlightCard(location) {
+    cards.forEach(card => card.classList.toggle('location-card-glow', card.dataset.location === location));
+  }
+  highlightCard(LOCATIONS_MEDIA[0].location);
+
+  if (imgs.length <= 1) return;
+
+  let current = 0;
+  setInterval(() => {
+    imgs[current].classList.remove('active');
+    current = (current + 1) % imgs.length;
+    imgs[current].classList.add('active');
+    highlightCard(LOCATIONS_MEDIA[current].location);
+  }, 3500);
 }
 
 // ============================================================
@@ -401,6 +458,78 @@ function initBrandsMarquee() {
 }
 
 // ============================================================
+// RESEÑAS — carrusel continuo (mismo patrón que el de marcas de
+// arriba: lista duplicada + animación CSS en loop). Reseñas reales
+// de Google que pasó la dueña — cámbialas acá si suman/cambian
+// reseñas más adelante.
+// ============================================================
+const REVIEWS = [
+  { name: 'Camilo Cárdenas Hernández', meta: 'Local Guide · 49 opiniones · 453 fotos', time: 'Hace 3 años', text: 'Buena calidad de alimentos, tanto para gatos como para perros. Buenos precios además. Cuentan con accesorios para mascotas.' },
+  { name: 'Ariel Santana', meta: '6 opiniones', time: 'Hace 4 meses', text: 'Buenos precios y buena atención' },
+  { name: 'Maria Soledad Campos Muñoz', meta: 'Local Guide · 10 opiniones', time: 'Hace 3 años', text: 'Son muy amable y siempre tienen la comida de mi perrito tiene muchas variedades de aliento de cachorro y gatos a buen precio' },
+  { name: 'Fernanda Hernández', meta: '1 opinión', time: 'Hace un año', text: 'Buenos precios!, siempre compro ahí las cositas para mi Chucky 🐈🐈' },
+  { name: 'Meg', meta: '1 opinión', time: 'Hace 4 meses', text: 'Buena atención y variedad' },
+  { name: 'sebastian Leiva', meta: 'Local Guide · 21 opiniones · 8 fotos', time: 'Hace un año', text: 'Excelente mascotería con mucha variedad de productos y una atención espectacular sin duda volveré a comprar' }
+];
+
+function initReviewsMarquee() {
+  const track = document.getElementById('reviews-track');
+  if (!track || REVIEWS.length === 0) return;
+
+  const fullList = [...REVIEWS, ...REVIEWS]; // duplicado para el loop continuo
+  fullList.forEach(review => {
+    const card = document.createElement('div');
+    card.className = 'review-card';
+    card.innerHTML = `
+      <div class="stars">★★★★★</div>
+      <p>"${review.text}"</p>
+      <span class="review-author">${review.name}</span>
+      <span class="review-meta">${review.meta} · ${review.time}</span>
+    `;
+    track.appendChild(card);
+  });
+}
+
+// ============================================================
+// INDICADOR "SIGUE BAJANDO" — se desvanece apenas el usuario
+// empieza a bajar la página, invitando a seguir scrolleando.
+// ============================================================
+function initScrollCue() {
+  const scrollCue = document.getElementById('scroll-cue');
+  if (!scrollCue) return;
+  const cueThreshold = 40;
+
+  function update() {
+    scrollCue.classList.toggle('is-hidden', window.scrollY > cueThreshold);
+  }
+
+  update();
+  window.addEventListener('scroll', update, { passive: true });
+}
+
+// ============================================================
+// AVISO DE PRIVACIDAD — pop-up que sale la primera vez que alguien
+// entra al sitio (en cualquier página), avisando que sus datos
+// (nombre, teléfono, dirección) solo se usan para coordinar la
+// compra/despacho y no se comparten ni se guardan para otra cosa.
+// Se recuerda con localStorage para no mostrarlo en cada visita.
+// ============================================================
+function initPrivacyNotice() {
+  const overlay = document.getElementById('privacy-overlay');
+  if (!overlay) return;
+  const STORAGE_KEY = 'akyra_privacy_accepted';
+
+  if (!localStorage.getItem(STORAGE_KEY)) {
+    overlay.hidden = false;
+  }
+
+  document.getElementById('privacy-accept')?.addEventListener('click', () => {
+    localStorage.setItem(STORAGE_KEY, '1');
+    overlay.hidden = true;
+  });
+}
+
+// ============================================================
 // CARRUSEL DE OFERTAS — mueve el scroll horizontal con las flechas
 // ============================================================
 function initOffersCarousel() {
@@ -420,11 +549,20 @@ document.addEventListener('DOMContentLoaded', () => {
   // Iconos Lucide
   if (window.lucide) lucide.createIcons();
 
+  // Aviso de privacidad (pop-up, primera visita)
+  initPrivacyNotice();
+
+  // Indicador "Sigue bajando" en el hero
+  initScrollCue();
+
   // Fondo del hero
   initHeroMedia();
 
-  // Loop de fotos de "Sobre Patitas"
+  // Loop de fotos de "Sobre Mascotería Akyra"
   initAboutSlideshow();
+
+  // Fotos de las sucursales en loop, con la card iluminándose según corresponda
+  initLocationsShowcase();
 
   // Carrito de consulta
   initCart();
@@ -435,15 +573,17 @@ document.addEventListener('DOMContentLoaded', () => {
   // Carrusel de marcas
   initBrandsMarquee();
 
+  // Carrusel de reseñas
+  initReviewsMarquee();
+
   // Aplica el link de WhatsApp a todos los botones/links relevantes
   const whatsappTargets = [
     'nav-whatsapp',
-    'hero-whatsapp',
     'about-whatsapp',
-    'footer-whatsapp-link',
     'footer-whatsapp-consulta',
-    'footer-whatsapp-btn',
-    'whatsapp-float'
+    'whatsapp-float',
+    'help-strip-whatsapp',
+    'contact-page-whatsapp'
   ];
   whatsappTargets.forEach(id => {
     const el = document.getElementById(id);

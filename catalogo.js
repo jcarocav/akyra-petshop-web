@@ -1,138 +1,83 @@
 // ============================================================
-// CATÁLOGO — los productos se cargan desde Google Sheets (ver
-// bloque SHEETS_CONFIG más abajo). Este archivo también trae las
-// pestañas de categoría, los subfiltros, y el armado de cada
-// tarjeta de producto (normal o a granel).
+// CATALOGO.JS — grilla filtrable de productos.
+// PRODUCTS y CATEGORY_META viven en data.js (se carga antes que
+// este archivo). Acá va toda la lógica de la página: filtros de
+// sidebar (checkbox, multi-selección), chips de filtros activos,
+// orden, y el render de las tarjetas de producto.
 // ============================================================
-// ============================================================
-// CATÁLOGO DESDE GOOGLE SHEETS
-// ============================================================
-// El catálogo ya no vive en un arreglo fijo acá — se trae en vivo
-// desde una planilla de Google Sheets publicada como CSV. Así,
-// cambiar un precio o el stock en la planilla actualiza el sitio
-// solo, sin tocar código.
-//
-// CÓMO CONECTARLO (una vez, ver instrucciones completas aparte):
-//  1) Crea la planilla con las columnas: id, nombre, categoria,
-//     subcategoria, tipo (normal/granel), precio, precio_label,
-//     precio_kg_info, precio_por_kg, badge, imagen, stock
-//  2) Archivo > Compartir > Publicar en la web > formato CSV
-//  3) Pega la URL que te da Google Sheets acá abajo, en
-//     SHEETS_CONFIG.csvUrl
-// ============================================================
-const SHEETS_CONFIG = {
-  // Reemplaza esta URL por la que te entrega Google Sheets al
-  // publicar la planilla como CSV (Archivo > Compartir >
-  // Publicar en la web). Mientras esté vacía, se usan los
-  // productos de respaldo de abajo.
-  csvUrl: 'https://docs.google.com/spreadsheets/d/e/2PACX-1vQd81coXCU4GTm2_o8seIZqc81RmsM_SGk-1dn_41ZbpktyE5orar-xlkT_HZrIKpfXPb8oP5jxDTpn/pub?gid=1390063107&single=true&output=csv'
-};
 
-// Productos de respaldo: se usan SOLO si la planilla todavía no
-// está conectada, o si por algún motivo no se pudo leer (sin
-// internet, la planilla se borró, etc.) — así el catálogo nunca
-// queda completamente vacío.
-const FALLBACK_PRODUCTS = [
-  { id: 'perro-alimento-adulto', name: 'Alimento premium adulto', category: 'perros', subcategory: 'Comida',
-    price: 19990, priceLabel: 'desde $19.990', priceKg: 'desde $4.594 x kg', badge: '20% dcto. 2da unidad', stock: 0,
-    image: 'https://loremflickr.com/400/300/dog,food' },
-  { id: 'gato-alimento-adulto', name: 'Alimento premium adulto', category: 'gatos', subcategory: 'Comida',
-    price: 18990, priceLabel: 'desde $18.990', priceKg: 'desde $4.980 x kg', stock: 0,
-    image: 'https://loremflickr.com/400/300/cat,food' },
-  { id: 'granel-perro-pollo', name: 'Granel Perro — Pollo y arroz', category: 'granel', subcategory: 'Perro',
-    bulk: true, pricePerKg: 4500, stock: 0, image: 'https://loremflickr.com/400/300/dog,kibble' }
-];
+let currentCategory = 'perros';
+let selectedSubcats = new Set();
+let selectedBrands = new Set();
+let selectedAges = new Set();
+let onlyOffers = false;
+let sortOrder = 'relevancia';
+let searchQuery = ''; // si no está vacío, ignora currentCategory y busca en TODO el catálogo
 
-let PRODUCTS = [];
-
-/** Convierte un valor de celda a número, o null si viene vacío. */
-function celdaANumero_(valor) {
-  if (valor == null || String(valor).trim() === '') return null;
-  const n = Number(String(valor).replace(/[^\d.-]/g, ''));
-  return isNaN(n) ? null : n;
+// Sin tildes ni mayúsculas, para que la búsqueda encuentre
+// "Alimento" aunque el usuario escriba "alimento" o "aliménto".
+function normalize(str) {
+  return (str || '').toString().normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
 }
 
-/** Traduce una fila de la planilla (ya parseada por PapaParse) al
- *  mismo formato de objeto que usa el resto del catálogo. */
-function filaAProducto_(fila) {
-  const esGranel = String(fila.tipo || '').trim().toLowerCase() === 'granel';
-  const base = {
-    id: String(fila.id || '').trim(),
-    name: String(fila.nombre || '').trim(),
-    category: String(fila.categoria || '').trim(),
-    subcategory: String(fila.subcategoria || '').trim(),
-    image: String(fila.imagen || '').trim(),
-    stock: celdaANumero_(fila.stock) ?? 0
-  };
-  if (String(fila.badge || '').trim()) base.badge = String(fila.badge).trim();
-
-  if (esGranel) {
-    return { ...base, bulk: true, pricePerKg: celdaANumero_(fila.precio_por_kg) || 0 };
+function getCategoryProducts() {
+  if (searchQuery) {
+    const q = normalize(searchQuery);
+    return PRODUCTS.filter(p =>
+      normalize(p.name).includes(q) ||
+      normalize(p.subcategory).includes(q) ||
+      normalize(p.brand).includes(q) ||
+      normalize(p.category).includes(q)
+    );
   }
-
-  const precioLabel = String(fila.precio_label || '').trim();
-  const precio = celdaANumero_(fila.precio) || 0;
-  const precioKg = String(fila.precio_kg_info || '').trim();
-  return {
-    ...base,
-    price: precio,
-    priceLabel: precioLabel || `$${precio.toLocaleString('es-CL')}`,
-    ...(precioKg ? { priceKg: precioKg } : {})
-  };
+  return PRODUCTS.filter(p => p.category === currentCategory);
 }
 
-/** Descarga y parsea la planilla publicada. Lanza error si algo
- *  sale mal, para que quien llama decida qué mostrar. */
-function cargarProductosDesdeSheet_() {
-  return new Promise((resolve, reject) => {
-    if (!SHEETS_CONFIG.csvUrl) {
-      reject(new Error('SHEETS_CONFIG.csvUrl todavía no está configurada'));
-      return;
-    }
-    Papa.parse(SHEETS_CONFIG.csvUrl, {
-      download: true,
-      header: true,
-      skipEmptyLines: true,
-      complete: (resultado) => {
-        try {
-          const productos = resultado.data
-            .filter(fila => String(fila.id || '').trim() !== '')
-            .map(filaAProducto_);
-          if (productos.length === 0) throw new Error('La planilla no tiene filas con datos');
-          resolve(productos);
-        } catch (err) {
-          reject(err);
-        }
-      },
-      error: (err) => reject(err)
-    });
+// Productos que cumplen todos los filtros activos EXCEPTO el
+// facet indicado — así el conteo junto a cada checkbox refleja
+// "cuántos resultados más" sumaría marcarlo, no el total fijo de
+// la categoría completa.
+function productsMatching(exceptFacet) {
+  return getCategoryProducts().filter(p => {
+    if (exceptFacet !== 'subcat' && selectedSubcats.size && !selectedSubcats.has(p.subcategory)) return false;
+    if (exceptFacet !== 'brand' && selectedBrands.size && !selectedBrands.has(p.brand)) return false;
+    if (exceptFacet !== 'age' && selectedAges.size && !selectedAges.has(p.ageStage)) return false;
+    if (exceptFacet !== 'offers' && onlyOffers && !p.badge) return false;
+    return true;
   });
 }
 
-// ============================================================
-// METADATA DE CADA CATEGORÍA — título de la página y sus
-// subfiltros. Para agregar una categoría nueva, se suma acá
-// y se agregan sus productos en la planilla con ese "categoria".
-// ============================================================
-const CATEGORY_META = {
-  'perros': { label: 'Perros', title: 'Productos para Perros', subfilters: ['Comida', 'Ropa', 'Juguetes', 'Accesorios'] },
-  'gatos': { label: 'Gatos', title: 'Productos para Gatos', subfilters: ['Comida', 'Arena', 'Juguetes', 'Accesorios'] },
-  'otras-mascotas': { label: 'Otros productos', title: 'Otros Productos', subfilters: ['Aves', 'Roedores', 'Peces', 'Varios'] },
-  'granel': { label: 'Alimento a Granel', title: 'Alimento a Granel', subfilters: ['Perro', 'Gato'] }
-};
+function countBy(list, key) {
+  const counts = {};
+  list.forEach(p => {
+    const val = p[key];
+    if (!val) return;
+    counts[val] = (counts[val] || 0) + 1;
+  });
+  return counts;
+}
 
-let currentCategory = 'perros';
-let currentSubfilter = 'Todos';
+function applyFilters() {
+  let list = productsMatching(null);
+
+  switch (sortOrder) {
+    case 'precio-asc':
+      list = [...list].sort((a, b) => (a.price ?? a.pricePerKg) - (b.price ?? b.pricePerKg));
+      break;
+    case 'precio-desc':
+      list = [...list].sort((a, b) => (b.price ?? b.pricePerKg) - (a.price ?? a.pricePerKg));
+      break;
+    case 'nombre-az':
+      list = [...list].sort((a, b) => a.name.localeCompare(b.name, 'es'));
+      break;
+    default:
+      break; // 'relevancia' = orden original del catálogo
+  }
+  return list;
+}
 
 function bulkPrice(pricePerKg, grams) {
   return Math.round((pricePerKg * grams) / 1000);
-}
-
-function stockLineHTML_(product) {
-  if (product.stock == null) return '';
-  return product.stock > 0
-    ? `<span class="product-stock">Stock: ${product.stock} unidades</span>`
-    : `<span class="product-stock product-stock-out">Sin stock por ahora</span>`;
 }
 
 function productCardHTML(product) {
@@ -153,7 +98,6 @@ function productCardHTML(product) {
             </div>
           </div>
           <span class="bulk-subtotal-preview">Subtotal: <strong data-bulk-preview>${formatCLP(bulkPrice(product.pricePerKg, defaultGrams))}</strong></span>
-          ${stockLineHTML_(product)}
           <button class="btn-add-cart" data-add-to-cart>Agregar</button>
         </div>
       </div>
@@ -162,8 +106,9 @@ function productCardHTML(product) {
 
   const badge = product.badge ? `<span class="offer-badge">${product.badge}</span>` : '';
   const priceKg = product.priceKg ? `<span class="product-price-kg">${product.priceKg}</span>` : '';
+  const note = product.note ? `<span class="product-note">${product.note}</span>` : '';
   return `
-    <div class="product-card" data-product-id="${product.id}" data-product-name="${product.name}" data-product-price="${product.price}">
+    <a href="producto.html?id=${encodeURIComponent(product.id)}" class="product-card" data-product-id="${product.id}">
       ${badge}
       <img src="${product.image}" alt="${product.name}" class="product-img" loading="lazy">
       <div class="product-info">
@@ -171,35 +116,129 @@ function productCardHTML(product) {
         <h4>${product.name}</h4>
         <span class="product-price">${product.priceLabel}</span>
         ${priceKg}
-        ${stockLineHTML_(product)}
-        <button class="btn-add-cart" data-add-to-cart>Agregar</button>
+        ${note}
+        <span class="btn-add-cart btn-view-details">Ver detalles</span>
       </div>
-    </div>
+    </a>
   `;
 }
 
-function renderSubfilters() {
-  const bar = document.getElementById('subfilter-bar');
-  if (!bar) return;
-  const options = ['Todos', ...CATEGORY_META[currentCategory].subfilters];
-  bar.innerHTML = options.map(opt =>
-    `<button class="subfilter-btn ${opt === currentSubfilter ? 'active' : ''}" data-subfilter="${opt}">${opt}</button>`
-  ).join('');
+// ============================================================
+// SIDEBAR DE FILTROS
+// ============================================================
+function filterOptionHTML(facet, value, count, checked) {
+  return `
+    <label class="filter-checkbox">
+      <input type="checkbox" data-facet="${facet}" value="${escapeAttr(value)}" ${checked ? 'checked' : ''}>
+      <span>${value}</span>
+      <span class="filter-count">${count}</span>
+    </label>
+  `;
 }
 
+function escapeAttr(str) {
+  return String(str).replace(/"/g, '&quot;');
+}
+
+function renderFilters() {
+  const meta = CATEGORY_META[currentCategory];
+
+  // ---- Tipo de producto (subcategoría) ----
+  const subcatCounts = countBy(productsMatching('subcat'), 'subcategory');
+  const subcatGroup = document.getElementById('filter-group-subcat');
+  const subcatBox = document.getElementById('filter-options-subcat');
+  const subcatOptions = meta.subfilters.filter(s => subcatCounts[s] > 0 || selectedSubcats.has(s));
+  if (subcatBox) {
+    subcatBox.innerHTML = subcatOptions
+      .map(s => filterOptionHTML('subcat', s, subcatCounts[s] || 0, selectedSubcats.has(s)))
+      .join('');
+  }
+  if (subcatGroup) subcatGroup.hidden = subcatOptions.length === 0;
+
+  // ---- Marca ----
+  const brandCounts = countBy(productsMatching('brand'), 'brand');
+  const brandGroup = document.getElementById('filter-group-brand');
+  const brandBox = document.getElementById('filter-options-brand');
+  const brandOptions = Object.keys(brandCounts).sort((a, b) => a.localeCompare(b, 'es'));
+  if (brandBox) {
+    brandBox.innerHTML = brandOptions
+      .map(b => filterOptionHTML('brand', b, brandCounts[b], selectedBrands.has(b)))
+      .join('');
+  }
+  if (brandGroup) brandGroup.hidden = brandOptions.length === 0;
+
+  // ---- Edad ----
+  const ageCounts = countBy(productsMatching('age'), 'ageStage');
+  const ageOrder = ['Cachorro', 'Adulto', 'Senior', 'Todas las edades'];
+  const ageGroup = document.getElementById('filter-group-age');
+  const ageBox = document.getElementById('filter-options-age');
+  const ageOptions = ageOrder.filter(a => ageCounts[a] > 0);
+  if (ageBox) {
+    ageBox.innerHTML = ageOptions
+      .map(a => filterOptionHTML('age', a, ageCounts[a], selectedAges.has(a)))
+      .join('');
+  }
+  if (ageGroup) ageGroup.hidden = ageOptions.length === 0;
+
+  // ---- Solo ofertas ----
+  const offersCount = productsMatching('offers').filter(p => p.badge).length;
+  const offersWrap = document.getElementById('filter-offers')?.closest('.filter-group');
+  if (offersWrap) offersWrap.hidden = offersCount === 0 && !onlyOffers;
+  const offersCheckbox = document.getElementById('filter-offers');
+  if (offersCheckbox) offersCheckbox.checked = onlyOffers;
+
+  if (window.lucide) lucide.createIcons();
+}
+
+// ============================================================
+// CHIPS DE FILTROS ACTIVOS
+// ============================================================
+function renderActiveChips() {
+  const wrap = document.getElementById('active-filters');
+  if (!wrap) return;
+
+  const chips = [];
+  selectedSubcats.forEach(v => chips.push({ facet: 'subcat', value: v }));
+  selectedBrands.forEach(v => chips.push({ facet: 'brand', value: v }));
+  selectedAges.forEach(v => chips.push({ facet: 'age', value: v }));
+  if (onlyOffers) chips.push({ facet: 'offers', value: 'Solo ofertas' });
+
+  if (!chips.length) {
+    wrap.innerHTML = '';
+    wrap.hidden = true;
+    return;
+  }
+  wrap.hidden = false;
+  wrap.innerHTML = chips.map(c => `
+    <button class="filter-chip" type="button" data-remove-facet="${c.facet}" data-remove-value="${escapeAttr(c.value)}">
+      ${c.value} <i data-lucide="x"></i>
+    </button>
+  `).join('') + `<button class="filter-chip filter-chip-clear" type="button" id="chips-clear-all">Limpiar todo</button>`;
+
+  if (window.lucide) lucide.createIcons();
+}
+
+// ============================================================
+// RENDER PRINCIPAL
+// ============================================================
 function renderProducts() {
   const grid = document.getElementById('catalog-grid');
   const emptyMsg = document.getElementById('catalog-empty');
+  const countEl = document.getElementById('catalog-count');
   if (!grid) return;
 
-  const filtered = PRODUCTS.filter(p =>
-    p.category === currentCategory &&
-    (currentSubfilter === 'Todos' || p.subcategory === currentSubfilter)
-  );
+  const filtered = applyFilters();
 
   grid.innerHTML = filtered.map(productCardHTML).join('');
   if (emptyMsg) emptyMsg.hidden = filtered.length > 0;
+  if (countEl) countEl.textContent = `${filtered.length} producto${filtered.length === 1 ? '' : 's'}`;
   if (window.lucide) lucide.createIcons();
+}
+
+function renderAll() {
+  renderFilters();
+  renderActiveChips();
+  renderProducts();
 }
 
 function setActiveTab() {
@@ -210,56 +249,166 @@ function setActiveTab() {
   if (titleEl) titleEl.textContent = CATEGORY_META[currentCategory].title;
 }
 
+// Modo búsqueda: se activa desde el buscador del navbar (funciona
+// en cualquier página — acá, en catalogo.html, se aplica al toque
+// sin recargar). Ignora la categoría/tabs mientras esté activo, y
+// busca en TODO el catálogo (nombre, subcategoría, marca).
+function setSearchQuery(query) {
+  searchQuery = (query || '').trim();
+  selectedSubcats = new Set();
+  selectedBrands = new Set();
+  selectedAges = new Set();
+  onlyOffers = false;
+  const sortSelect = document.getElementById('sort-select');
+  if (sortSelect) sortSelect.value = 'relevancia';
+  sortOrder = 'relevancia';
+
+  const tabsWrap = document.querySelector('.category-tabs-wrap');
+  const titleEl = document.getElementById('catalog-title');
+  const subEl = document.getElementById('catalog-search-note');
+  if (tabsWrap) tabsWrap.hidden = true;
+  if (titleEl) titleEl.textContent = `Resultados para "${searchQuery}"`;
+  if (subEl) subEl.hidden = false;
+
+  const input = document.getElementById('nav-search-input');
+  if (input) input.value = searchQuery;
+
+  const url = new URL(window.location);
+  url.searchParams.set('buscar', searchQuery);
+  url.searchParams.delete('categoria');
+  url.searchParams.delete('ofertas');
+  window.history.replaceState({}, '', url);
+
+  renderAll();
+}
+
+function clearSearch() {
+  searchQuery = '';
+  const tabsWrap = document.querySelector('.category-tabs-wrap');
+  const subEl = document.getElementById('catalog-search-note');
+  if (tabsWrap) tabsWrap.hidden = false;
+  if (subEl) subEl.hidden = true;
+  const input = document.getElementById('nav-search-input');
+  if (input) input.value = '';
+  switchCategory('perros');
+}
+
 function switchCategory(category, updateUrl = true) {
   if (!CATEGORY_META[category]) category = 'perros';
   currentCategory = category;
-  currentSubfilter = 'Todos';
+  selectedSubcats = new Set();
+  selectedBrands = new Set();
+  selectedAges = new Set();
+  onlyOffers = false;
+  sortOrder = 'relevancia';
+  const sortSelect = document.getElementById('sort-select');
+  if (sortSelect) sortSelect.value = 'relevancia';
   setActiveTab();
-  renderSubfilters();
-  renderProducts();
+  renderAll();
   if (updateUrl) {
     const url = new URL(window.location);
     url.searchParams.set('categoria', category);
+    url.searchParams.delete('ofertas');
+    url.searchParams.delete('buscar');
     window.history.replaceState({}, '', url);
   }
 }
 
-function switchSubfilter(subfilter) {
-  currentSubfilter = subfilter;
-  document.querySelectorAll('.subfilter-btn').forEach(btn => {
-    btn.classList.toggle('active', btn.dataset.subfilter === subfilter);
-  });
-  renderProducts();
+function toggleFacetValue(facet, value) {
+  const setByFacet = { subcat: selectedSubcats, brand: selectedBrands, age: selectedAges };
+  if (facet === 'offers') {
+    onlyOffers = !onlyOffers;
+    renderAll();
+    return;
+  }
+  const set = setByFacet[facet];
+  if (!set) return;
+  if (set.has(value)) set.delete(value);
+  else set.add(value);
+  renderAll();
 }
 
-document.addEventListener('DOMContentLoaded', async () => {
+function clearAllFilters() {
+  selectedSubcats.clear();
+  selectedBrands.clear();
+  selectedAges.clear();
+  onlyOffers = false;
+  const offersCheckbox = document.getElementById('filter-offers');
+  if (offersCheckbox) offersCheckbox.checked = false;
+  renderAll();
+}
+
+// ============================================================
+// PANEL DE FILTROS EN MOBILE (se abre como un cajón lateral)
+// ============================================================
+function openFiltersPanel() {
+  document.getElementById('filters-sidebar')?.classList.add('open');
+  document.getElementById('filters-overlay')?.classList.add('open');
+}
+function closeFiltersPanel() {
+  document.getElementById('filters-sidebar')?.classList.remove('open');
+  document.getElementById('filters-overlay')?.classList.remove('open');
+}
+
+document.addEventListener('DOMContentLoaded', () => {
   // Categoría inicial: la que venga en la URL (?categoria=perros),
-  // o "perros" por defecto si no hay ninguna o no existe.
+  // o "perros" por defecto si no hay ninguna o no existe. También
+  // soporta ?ofertas=1 para abrir directo con "Solo ofertas" marcado
+  // (usado por el botón "Ver todas las ofertas" del home), y
+  // ?buscar=texto para entrar directo en modo búsqueda (desde el
+  // buscador del navbar, en cualquier página).
   const params = new URLSearchParams(window.location.search);
   const initialCategory = params.get('categoria') || 'perros';
+  const initialOffers = params.get('ofertas') === '1';
+  const initialSearch = params.get('buscar') || '';
 
   document.querySelectorAll('.category-tab').forEach(tab => {
-    tab.addEventListener('click', () => switchCategory(tab.dataset.category));
+    tab.addEventListener('click', () => { switchCategory(tab.dataset.category); closeFiltersPanel(); });
   });
 
-  document.getElementById('subfilter-bar')?.addEventListener('click', (e) => {
-    const btn = e.target.closest('[data-subfilter]');
-    if (btn) switchSubfilter(btn.dataset.subfilter);
+  // Buscador del navbar: en esta página filtra al toque, sin
+  // recargar (en el resto del sitio, el form simplemente navega
+  // acá con ?buscar=... — comportamiento normal de un form GET).
+  document.getElementById('nav-search')?.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const input = document.getElementById('nav-search-input');
+    const q = input?.value.trim();
+    if (q) setSearchQuery(q); else clearSearch();
+  });
+  document.getElementById('catalog-search-clear')?.addEventListener('click', clearSearch);
+
+  // Delegado: cualquier checkbox de filtro dentro del sidebar
+  document.getElementById('filters-sidebar')?.addEventListener('change', (e) => {
+    const input = e.target.closest('[data-facet]');
+    if (!input) return;
+    toggleFacetValue(input.dataset.facet, input.value);
   });
 
-  const grid = document.getElementById('catalog-grid');
-  const emptyMsg = document.getElementById('catalog-empty');
-  if (grid) grid.innerHTML = '<p class="catalog-loading">Cargando productos…</p>';
-  if (emptyMsg) emptyMsg.hidden = true;
+  // Delegado: quitar un chip individual, o "Limpiar todo"
+  document.getElementById('active-filters')?.addEventListener('click', (e) => {
+    const clearAll = e.target.closest('#chips-clear-all');
+    if (clearAll) { clearAllFilters(); return; }
+    const chip = e.target.closest('[data-remove-facet]');
+    if (!chip) return;
+    toggleFacetValue(chip.dataset.removeFacet, chip.dataset.removeValue);
+  });
 
-  try {
-    PRODUCTS = await cargarProductosDesdeSheet_();
-  } catch (err) {
-    console.warn('No se pudo cargar la planilla, usando productos de respaldo:', err.message);
-    PRODUCTS = FALLBACK_PRODUCTS;
-    const banner = document.getElementById('catalog-sheet-error');
-    if (banner) banner.hidden = false;
+  document.getElementById('filters-clear')?.addEventListener('click', clearAllFilters);
+
+  document.getElementById('sort-select')?.addEventListener('change', (e) => {
+    sortOrder = e.target.value;
+    renderProducts();
+  });
+
+  document.getElementById('filters-toggle')?.addEventListener('click', openFiltersPanel);
+  document.getElementById('filters-close')?.addEventListener('click', closeFiltersPanel);
+  document.getElementById('filters-apply-mobile')?.addEventListener('click', closeFiltersPanel);
+  document.getElementById('filters-overlay')?.addEventListener('click', closeFiltersPanel);
+
+  if (initialSearch) {
+    setSearchQuery(initialSearch);
+  } else {
+    switchCategory(initialCategory, false);
+    if (initialOffers) toggleFacetValue('offers');
   }
-
-  switchCategory(initialCategory, false);
 });

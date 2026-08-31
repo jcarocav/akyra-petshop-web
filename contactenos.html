@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Formulario de contacto — Mascotería Akyra</title>
+
+<link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+<link rel="shortcut icon" href="assets/favicon/favicon.ico">
+<meta name="description" content="¿No encuentras lo que necesitas? Escríbenos los detalles y te respondemos por correo — Mascotería Akyra, Punta Arenas.">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#00b0a3">
+<link rel="canonical" href="https://[tudominio].cl/contactenos.html">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Mascotería Akyra">
+<meta property="og:title" content="Formulario de contacto — Mascotería Akyra">
+<meta property="og:description" content="¿No encuentras lo que necesitas? Escríbenos los detalles y te respondemos por correo — Mascotería Akyra, Punta Arenas.">
+<meta property="og:url" content="https://[tudominio].cl/contactenos.html">
+<meta property="og:image" content="https://[tudominio].cl/assets/og/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Mascotería Akyra — logo, perro y gata">
+<meta property="og:locale" content="es_CL">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Formulario de contacto — Mascotería Akyra">
+<meta name="twitter:description" content="¿No encuentras lo que necesitas? Escríbenos los detalles y te respondemos por correo — Mascotería Akyra, Punta Arenas.">
+<meta name="twitter:image" content="https://[tudominio].cl/assets/og/og-image.jpg">
+
+<!-- Fuentes: Fredoka (títulos) + Nunito Sans (texto) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+<!-- Tailwind (solo utilidades de layout, el diseño real vive en styles.css) -->
+<script src="https://cdn.tailwindcss.com"></script>
+
+<!-- Lucide icons -->
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ================= AVISO DE PRIVACIDAD (pop-up, primera visita) ================= -->
+<div class="privacy-overlay" id="privacy-overlay" hidden>
+  <div class="privacy-modal" role="dialog" aria-modal="true" aria-labelledby="privacy-modal-title">
+    <h3 id="privacy-modal-title">Antes de seguir...</h3>
+    <p>En Mascotería Akyra respetamos tu privacidad, conforme a la Ley N.° 19.628 sobre Protección de la Vida Privada. Los datos que nos compartes (nombre, teléfono, dirección) los usamos únicamente para coordinar tu compra, despacho o consulta por WhatsApp — no los usamos para otros fines, no los compartimos con terceros ni los almacenamos más allá de lo necesario para atenderte.</p>
+    <button type="button" class="btn btn-primary" id="privacy-accept">Aceptar</button>
+  </div>
+</div>
+
+<!-- ================= HEADER (igual que en el resto del sitio) ================= -->
+<header class="site-header" id="site-header">
+  <div class="header-top">
+    <a href="index.html" class="logo">
+      <img src="assets/logo/logo-akyra.svg" alt="Mascotería Akyra" class="logo-img">
+    </a>
+
+    <form class="nav-search" id="nav-search" action="catalogo.html" method="get" role="search">
+      <input type="search" name="buscar" id="nav-search-input" placeholder="Buscar producto..." autocomplete="off">
+      <button type="submit" aria-label="Buscar">
+        <i data-lucide="search"></i>
+        <span>Buscar</span>
+      </button>
+    </form>
+
+    <div class="header-actions">
+      <a href="#" id="nav-whatsapp" class="nav-cta" target="_blank" rel="noopener">
+        <i data-lucide="message-circle"></i> Escríbenos
+      </a>
+      <button class="cart-toggle" id="cart-toggle" aria-label="Ver carrito">
+        <i data-lucide="shopping-bag"></i>
+        <span class="cart-badge" id="cart-badge" hidden>0</span>
+        <span class="cart-bump" id="cart-bump">+1</span>
+      </button>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">
+        <i data-lucide="menu"></i>
+      </button>
+    </div>
+  </div>
+
+  <div class="nav-wrap" id="main-nav">
+    <nav class="main-nav">
+      <a href="index.html#inicio">Inicio</a>
+      <a href="index.html#categorias">Categorías</a>
+      <a href="index.html#ofertas" class="nav-tag-link">Ofertas <span class="nav-tag">¡Descuentos exclusivos!</span></a>
+      <a href="index.html#novedades">Novedades</a>
+      <a href="index.html#nosotros">Nosotros</a>
+      <a href="index.html#ubicaciones">Ubicaciones</a>
+      <a href="index.html#contacto">Contacto</a>
+      <a href="catalogo.html" class="nav-cta-secondary">Ver catálogo</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ================= CARRITO (igual que en el resto del sitio, por si viene de otra página) ================= -->
+<div class="cart-overlay" id="cart-overlay"></div>
+<aside class="cart-drawer" id="cart-drawer" aria-label="Carrito de consulta">
+  <div class="cart-header">
+    <h3>Tu consulta</h3>
+    <button class="cart-close" id="cart-close" aria-label="Cerrar carrito"><i data-lucide="x"></i></button>
+  </div>
+
+  <div class="cart-empty" id="cart-empty">
+    <p>Todavía no agregaste productos.</p>
+    <p class="cart-empty-sub">Agrega los que te interesen y te ayudamos a confirmar precio y stock por WhatsApp.</p>
+  </div>
+
+  <div class="cart-items" id="cart-items"></div>
+
+  <div class="cart-footer" id="cart-footer" hidden>
+    <div class="cart-step" id="cart-step-1">
+      <div class="cart-total-row">
+        <span>Total</span>
+        <span id="cart-total">$0</span>
+      </div>
+      <p class="cart-note">* Precios referenciales — el total final y el stock se confirman por WhatsApp.</p>
+      <p class="cart-payment-note">Aceptamos transferencia, pago en sucursal o tarjeta a domicilio.</p>
+      <div class="cart-step-actions">
+        <button type="button" class="btn btn-outline-dark" id="cart-continue-shopping">Seguir comprando</button>
+        <button type="button" class="btn btn-primary" id="cart-go-checkout">Continuar compra</button>
+      </div>
+    </div>
+
+    <div class="cart-step" id="cart-step-2" hidden>
+      <button type="button" class="cart-back" id="cart-back-to-cart">
+        <i data-lucide="arrow-left"></i> Volver al carrito
+      </button>
+      <div class="cart-form">
+        <input type="text" id="cart-name" class="cart-input" placeholder="Nombre" autocomplete="name">
+        <input type="tel" id="cart-phone" class="cart-input" placeholder="Teléfono" autocomplete="tel">
+        <input type="text" id="cart-address" class="cart-input" placeholder="Dirección (si necesitas despacho)" autocomplete="street-address">
+        <span class="cart-delivery-note">Despacho: $2.000 zona urbana · $3.500 periferia — o retira gratis en sucursal</span>
+        <textarea id="cart-extra" class="cart-textarea" rows="2" placeholder="¿Algo más que debamos saber? (opcional)"></textarea>
+      </div>
+      <p class="cart-form-hint" id="cart-form-hint">Completa nombre y teléfono para enviar tu pedido.</p>
+      <a href="#" id="cart-whatsapp" class="btn btn-primary cart-whatsapp-btn" target="_blank" rel="noopener">
+        <i data-lucide="message-circle"></i> Enviar pedido por WhatsApp
+      </a>
+    </div>
+  </div>
+</aside>
+
+<!-- ================= FORMULARIO DE CONTACTO ================= -->
+<section class="contact-form-section">
+  <div class="contact-form-wrap">
+
+    <nav class="breadcrumb" aria-label="Miga de pan">
+      <a href="index.html">Inicio</a> <span>/</span> <span>Formulario de contacto</span>
+    </nav>
+
+    <div class="contact-form-grid">
+      <div class="contact-form-side">
+        <p class="eyebrow">Punta Arenas, Magallanes</p>
+        <h3>Nuestras sucursales</h3>
+        <p>Av. José Martínez de Aldunate 1431<br>Hornillas 080<br>Av. Circunvalación 340</p>
+        <hr>
+        <p class="contact-form-side-label">Correo</p>
+        <p><a href="mailto:maskoteria.akyra@gmail.com">maskoteria.akyra@gmail.com</a></p>
+        <hr>
+        <p class="contact-form-side-label">WhatsApp</p>
+        <p><a href="#" id="contact-page-whatsapp" target="_blank" rel="noopener">+56 9 8696 9111</a></p>
+      </div>
+
+      <div class="contact-form-card">
+        <h1>Formulario de contacto</h1>
+        <p class="contact-form-intro">¿No encontraste lo que buscabas? Cuéntanos qué necesitas y te respondemos apenas veamos tu mensaje.</p>
+
+        <form id="contact-form" class="contact-form" novalidate>
+          <label class="contact-field">
+            <span>Asunto</span>
+            <select id="contact-asunto" name="asunto" required>
+              <option value="Producto que no encuentro">Producto que no encuentro</option>
+              <option value="Consulta general">Consulta general</option>
+              <option value="Sugerencia">Sugerencia</option>
+              <option value="Reclamo">Reclamo</option>
+              <option value="Felicitaciones">Felicitaciones</option>
+              <option value="Otro">Otro</option>
+            </select>
+          </label>
+
+          <label class="contact-field">
+            <span>Dirección de correo electrónico</span>
+            <input type="email" id="contact-email" name="email" placeholder="tu@email.com" required>
+          </label>
+
+          <label class="contact-field">
+            <span>Nombres</span>
+            <input type="text" id="contact-nombre" name="nombre" placeholder="Tu nombre" required>
+          </label>
+
+          <label class="contact-field">
+            <span>Teléfono de contacto</span>
+            <input type="tel" id="contact-telefono" name="telefono" placeholder="9 6594 0222">
+          </label>
+
+          <label class="contact-field">
+            <span>Mensaje</span>
+            <textarea id="contact-mensaje" name="mensaje" rows="5" placeholder="Para ayudarte de la mejor manera, escribe el detalle de los productos que quieres o necesitas tener" required></textarea>
+          </label>
+
+          <p class="contact-form-note">* Al enviar, se abrirá tu aplicación de correo con este mensaje ya redactado, listo para mandar a <strong>maskoteria.akyra@gmail.com</strong>.</p>
+
+          <button type="submit" class="btn btn-primary contact-form-submit">Enviar formulario</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= WHATSAPP FLOTANTE ================= -->
+<a href="#" id="whatsapp-float" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp">
+  <i data-lucide="message-circle"></i>
+</a>
+
+<script src="script.js"></script>
+<script>
+  // Formulario de contacto → arma un mailto: con todo el detalle y
+  // abre la app de correo del visitante, ya redactado hacia
+  // maskoteria.akyra@gmail.com. El sitio es estático (sin backend
+  // propio), así que esta es la forma de "enviar" un correo sin
+  // necesitar un servidor — el usuario solo tiene que apretar
+  // "Enviar" en su propia app de correo.
+  document.getElementById('contact-form')?.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const asunto = document.getElementById('contact-asunto').value;
+    const email = document.getElementById('contact-email').value;
+    const nombre = document.getElementById('contact-nombre').value;
+    const telefono = document.getElementById('contact-telefono').value;
+    const mensaje = document.getElementById('contact-mensaje').value;
+
+    const subject = encodeURIComponent(`[Sitio web] ${asunto} — ${nombre}`);
+    const body = encodeURIComponent(
+      `Asunto: ${asunto}\n` +
+      `Nombre: ${nombre}\n` +
+      `Correo: ${email}\n` +
+      `Teléfono: ${telefono || '(no indicado)'}\n\n` +
+      `Mensaje:\n${mensaje}`
+    );
+    window.location.href = `mailto:maskoteria.akyra@gmail.com?subject=${subject}&body=${body}`;
+  });
+</script>
+</body>
+</html>

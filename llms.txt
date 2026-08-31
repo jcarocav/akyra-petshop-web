@@ -1,0 +1,39 @@
+# Mascotería Akyra
+
+> Tienda de mascotas (pet store) en Punta Arenas, Chile — vende alimento, ropa, juguetes, accesorios y productos de cuidado para perros, gatos y otras mascotas, en 3 sucursales físicas. Los pedidos se coordinan por WhatsApp.
+
+## Sobre el negocio
+- Nombre: Mascotería Akyra
+- Rubro: tienda de mascotas (no es veterinaria ni presta servicios médicos)
+- Ciudad: Punta Arenas, Región de Magallanes, Chile
+- WhatsApp / teléfono: +56 9 8696 9111
+- Correo: maskoteria.akyra@gmail.com
+- Instagram: https://www.instagram.com/maskoteria_akyra/
+- Facebook: https://www.facebook.com/p/Maskoter%C3%ADa-Akyra-100042138145142/
+
+## Sucursales y horarios
+- Casa Matriz — Av. José Martínez de Aldunate 1431, Punta Arenas. Lunes a sábado, 10:00–13:00 y 15:00–20:00.
+- Hornillas — Hornillas 080, Punta Arenas. Lunes a sábado, 10:10–13:00 y 15:00–19:30. Domingos y feriados, cerrado.
+- Circunvalación — Av. Circunvalación 340, Punta Arenas. Lunes a sábado, 10:30–13:00 y 15:10–20:00. Domingo, cerrado.
+
+## Cómo comprar
+No hay pago en línea en el sitio. Los pedidos se arman en un carrito de consulta y se coordinan (precio, stock, pago y despacho o retiro) directamente por WhatsApp.
+
+## Despacho y retiro
+- Despacho a domicilio dentro de Punta Arenas: $2.000 zona urbana, $3.500 periferia.
+- Retiro en cualquiera de las 3 sucursales: sin costo.
+- Detalle completo: /politica-despacho-retiro.html
+
+## Cambios y devoluciones
+- Cambios: hasta 30 días corridos desde la entrega.
+- Cambio hecho en tienda: sin costo. Cambio con despacho a domicilio: se cobra el despacho.
+- Siempre se requiere la boleta o comprobante de compra.
+- Detalle completo: /politica-cambios-devoluciones.html
+
+## Páginas principales
+- / — inicio
+- /catalogo.html — catálogo completo, filtrable por categoría, marca y edad
+- /contactenos.html — formulario de contacto
+- /politica-privacidad.html
+- /politica-despacho-retiro.html
+- /politica-cambios-devoluciones.html
