@@ -12,44 +12,119 @@ function buildWhatsappLink(customMessage) {
 }
 
 // ============================================================
-// FONDO DEL HERO — una imagen fija por ahora. Si más adelante
-// quieres agregar más fotos o un video, solo suma entradas acá
-// como { type: 'video', src: '...' } y arma un carrusel simple
-// como el que usamos en el sitio del jiu-jitsu.
+// FONDO DEL HERO — carrusel de 3 "slides", cada uno con su propia
+// imagen Y su propio texto (van cambiando juntos, sincronizados).
+// Cada item admite:
+//  - mode: 'contain' (default) para una foto RECORTADA (fondo
+//    transparente) de mascota(s) — flota sobre el magenta, con
+//    sombra. align:'right' la pega contra el borde derecho (para
+//    fotos con espacio vacío de un lado, pensado para dejarle
+//    sitio al texto).
+//  - mode: 'cover' para una foto de escena completa (fondo real) —
+//    se ve centrada, ocupando el espacio disponible.
+//  - heightPercent: qué porcentaje del alto del hero ocupa la
+//    imagen (pegada abajo) — por defecto 82. Súbelo para que se vea
+//    más grande, bájalo para que quede más chica / con más aire
+//    respecto a la guirnalda de arriba. 100 la deja tocando el techo
+//    del hero, sin espacio libre arriba.
+//  - eyebrow / titleHtml / subtitle: el texto de ese slide. Para que
+//    una palabra puntual rebote (no el título completo), envuélvela
+//    en <span class="hero-bounce">...</span> dentro de titleHtml —
+//    es la misma animación que titleBounce:true aplica al <h1>
+//    entero.
 // ============================================================
-// Foto de portada del hero. Soporta dos modos vía "mode":
-//  - 'contain' (default, sin poner "mode"): pensado para una foto
-//    RECORTADA (fondo transparente) de una o varias mascotas — flota
-//    sobre el fondo magenta, con sombra para que no se vea "plana".
-//    Admite "align: 'right'" para pegarla al lado derecho (útil
-//    cuando la propia foto ya viene con espacio vacío a un lado,
-//    como esta, para dejarle sitio a un texto al costado).
-//  - 'cover': para una foto de escena completa (fondo real, no
-//    transparente) que llena todo el hero de fondo — con velo si
-//    hace falta contraste para el texto encima.
 const HERO_MEDIA = [
-  { type: 'image', src: 'assets/hero/portada-lanzamiento.png', alt: 'Perrito y gatito, mascotas de ejemplo dando la bienvenida al nuevo sitio web', align: 'right' }
+  {
+    type: 'image', src: 'assets/hero/portada-lanzamiento.png',
+    alt: 'Perrito y gatito, mascotas de ejemplo dando la bienvenida al nuevo sitio web',
+    mode: 'contain', align: 'right', heightPercent: 78,
+    eyebrow: 'Mascotería Akyra',
+    titleHtml: '¡Inauguramos<br>nuestro Sitio Web!',
+    titleBounce: true,
+    subtitle: 'Ven y descubre nuestras increíbles Ofertas!'
+  },
+  {
+    type: 'image', src: 'assets/hero/portada-granel.webp',
+    alt: 'Perro y gato de compras con alimento Akyra a granel',
+    mode: 'contain', align: 'right', heightPercent: 72,
+    eyebrow: 'Mascotería Akyra',
+    titleHtml: '¡La primera petshop online donde compras a <span class="hero-bounce">Granel</span>!',
+    titleBounce: false,
+    subtitle: 'Elige los gramos exactos, calcula el precio al instante y recíbelo en la puerta de tu casa.'
+  },
+  {
+    type: 'image', src: 'assets/hero/portada-fiestas-patrias.webp',
+    alt: 'Perrito y gatita vestidos para Fiestas Patrias, con la bandera de Chile',
+    mode: 'contain', align: 'right', heightPercent: 100,
+    eyebrow: 'Mascotería Akyra',
+    titleHtml: '¡Ya se acerca el 18<br>y ellos también celebran!',
+    titleBounce: true,
+    subtitle: 'Descubre alimentos, premios y accesorios para que tu regalón también disfrute estas fiestas!'
+  }
 ];
+
+function renderHeroSlideText(item) {
+  const eyebrowEl = document.getElementById('hero-eyebrow');
+  const titleEl = document.getElementById('hero-title');
+  const subtitleEl = document.getElementById('hero-subtitle');
+  if (eyebrowEl) {
+    eyebrowEl.textContent = item.eyebrow || '';
+    eyebrowEl.hidden = !item.eyebrow;
+  }
+  if (titleEl) {
+    titleEl.innerHTML = item.titleHtml || '';
+    titleEl.classList.toggle('hero-bounce', !!item.titleBounce);
+  }
+  if (subtitleEl) {
+    subtitleEl.textContent = item.subtitle || '';
+    subtitleEl.hidden = !item.subtitle;
+  }
+}
 
 function initHeroMedia() {
   const container = document.getElementById('hero-media');
+  const textContainer = document.getElementById('hero-launch-text');
   if (!container || HERO_MEDIA.length === 0) return;
-  const item = HERO_MEDIA[0];
-  container.classList.toggle('hero-media-cover', item.mode === 'cover');
-  container.classList.toggle('hero-media-align-right', item.align === 'right');
-  const el = document.createElement(item.type === 'video' ? 'video' : 'img');
-  if (item.type === 'video') {
-    el.src = item.src;
-    el.muted = true;
-    el.playsInline = true;
-    el.autoplay = true;
-    el.loop = true;
-  } else {
-    el.src = item.src;
-    el.alt = item.alt || 'Mascotería Akyra — tienda de mascotas';
-  }
-  el.classList.add('active');
-  container.appendChild(el);
+
+  const imgs = HERO_MEDIA.map((item, i) => {
+    const el = document.createElement(item.type === 'video' ? 'video' : 'img');
+    if (item.type === 'video') {
+      el.src = item.src;
+      el.muted = true;
+      el.playsInline = true;
+      el.autoplay = true;
+      el.loop = true;
+    } else {
+      el.src = item.src;
+      el.alt = item.alt || 'Mascotería Akyra — tienda de mascotas';
+    }
+    el.classList.add(item.mode === 'cover' ? 'hero-slide-cover' : 'hero-slide-align-right');
+    el.style.setProperty('--hero-img-height', (item.heightPercent || 82) + '%');
+    if (i === 0) el.classList.add('active');
+    container.appendChild(el);
+    return el;
+  });
+
+  renderHeroSlideText(HERO_MEDIA[0]);
+
+  if (imgs.length <= 1) return;
+
+  let current = 0;
+  setInterval(() => {
+    imgs[current].classList.remove('active');
+    current = (current + 1) % imgs.length;
+    imgs[current].classList.add('active');
+
+    if (textContainer) {
+      textContainer.style.opacity = '0';
+      setTimeout(() => {
+        renderHeroSlideText(HERO_MEDIA[current]);
+        textContainer.style.opacity = '1';
+      }, 500);
+    } else {
+      renderHeroSlideText(HERO_MEDIA[current]);
+    }
+  }, 7000);
 }
 
 // ============================================================

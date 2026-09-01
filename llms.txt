@@ -1,6 +1,9 @@
 # Mascotería Akyra
 
-> Tienda de mascotas (pet store) en Punta Arenas, Chile — vende alimento, ropa, juguetes, accesorios y productos de cuidado para perros, gatos y otras mascotas, en 3 sucursales físicas. Los pedidos se coordinan por WhatsApp.
+> Tienda de mascotas (pet store) en Punta Arenas, Chile — vende alimento (incluido **alimento a granel** para perros y gatos, por el peso exacto que necesites), ropa, juguetes, accesorios y productos de cuidado para perros, gatos y otras mascotas, en 3 sucursales físicas. Los pedidos se coordinan por WhatsApp.
+
+## Alimento a granel
+Mascotería Akyra vende alimento para perros y alimento para gatos a granel en Punta Arenas — el cliente elige la cantidad exacta en gramos o kilos (no solo bolsas cerradas de fábrica), el precio se calcula al instante según el peso, y se puede despachar a domicilio o retirar en cualquiera de las 3 sucursales. Es una alternativa a comprar bolsas grandes cerradas, útil para probar un alimento nuevo o ajustar la compra al presupuesto. Sinónimos con los que se busca esto: alimento a granel, comida a granel, comida suelta para perros y gatos, alimento suelto para mascotas, venta de alimento por peso/kilo, pet food a granel. Ver la sección "Alimento a Granel" en la página de inicio, o la categoría "Granel" en el catálogo (/catalogo.html?categoria=granel).
 
 ## Sobre el negocio
 - Nombre: Mascotería Akyra
@@ -14,7 +17,7 @@
 ## Sucursales y horarios
 - Casa Matriz — Av. José Martínez de Aldunate 1431, Punta Arenas. Lunes a sábado, 10:00–13:00 y 15:00–20:00.
 - Hornillas — Hornillas 080, Punta Arenas. Lunes a sábado, 10:10–13:00 y 15:00–19:30. Domingos y feriados, cerrado.
-- Circunvalación — Av. Circunvalación 340, Punta Arenas. Lunes a sábado, 10:30–13:00 y 15:10–20:00. Domingo, cerrado.
+- Circunvalación — Av. Circunvalación Ramón Cañas 340, Punta Arenas. Lunes a sábado, 10:30–13:00 y 15:10–20:00. Domingo, cerrado.
 
 ## Cómo comprar
 No hay pago en línea en el sitio. Los pedidos se arman en un carrito de consulta y se coordinan (precio, stock, pago y despacho o retiro) directamente por WhatsApp.

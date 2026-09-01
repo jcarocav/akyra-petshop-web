@@ -291,7 +291,7 @@ paleta, logo real y contenido propios de Mascotería Akyra.
   - **Hornillas 080** (lunes a sábado 10:10–13:00 y 15:00–19:30,
     domingos y feriados cerrado) — **ya con su foto real**
     (`assets/img/lugares/hornillas.jpg`, la fachada con el letrero).
-  - **Circunvalación** — Av. Circunvalación 340. Agregada ahora;
+  - **Circunvalación** — Av. Circunvalación Ramón Cañas 340. Agregada ahora;
     **todavía no tengo el horario**, así que quedó como "Horario por
     confirmar" en la tarjeta — pásamelo y lo actualizo. Foto también
     pendiente.
