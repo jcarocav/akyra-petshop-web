@@ -11,6 +11,17 @@ function buildWhatsappLink(customMessage) {
   return `https://wa.me/${CONFIG.whatsappNumber}?text=${message}`;
 }
 
+// Pequeño envoltorio para no repetir el chequeo de "¿existe Umami?"
+// en cada lugar — si el script de Umami no cargó (bloqueador de
+// anuncios, sin internet, o todavía no configuraste tu website-id
+// real), esto simplemente no hace nada, sin tirar error ni afectar
+// el resto del sitio.
+function trackEvent(name, data) {
+  if (window.umami && typeof window.umami.track === 'function') {
+    window.umami.track(name, data);
+  }
+}
+
 // ============================================================
 // FONDO DEL HERO — carrusel de 3 "slides", cada uno con su propia
 // imagen Y su propio texto (van cambiando juntos, sincronizados).
@@ -55,7 +66,7 @@ const HERO_MEDIA = [
   {
     type: 'image', src: 'assets/hero/portada-fiestas-patrias.webp',
     alt: 'Perrito y gatita vestidos para Fiestas Patrias, con la bandera de Chile',
-    mode: 'contain', align: 'right', heightPercent: 100,
+    mode: 'contain', align: 'right', heightPercent: 88,
     eyebrow: 'Mascotería Akyra',
     titleHtml: '¡Ya se acerca el 18<br>y ellos también celebran!',
     titleBounce: true,
@@ -231,11 +242,15 @@ function saveCart() {
 }
 
 function loadCustomer() {
+  const defaults = { name: '', phone: '', address: '', extra: '', payment: '' };
   try {
     const raw = localStorage.getItem(CUSTOMER_STORAGE_KEY);
-    return raw ? JSON.parse(raw) : { name: '', phone: '', address: '', extra: '' };
+    // el spread de defaults primero cubre a quienes tenían datos
+    // guardados de antes de agregar el campo "payment" (u otro
+    // campo nuevo a futuro), para que no quede undefined.
+    return raw ? { ...defaults, ...JSON.parse(raw) } : defaults;
   } catch (e) {
-    return { name: '', phone: '', address: '', extra: '' };
+    return defaults;
   }
 }
 
@@ -248,7 +263,7 @@ function formatCLP(amount) {
 }
 
 let cart = loadCart(); // [{ id, name, price, qty }]
-let customer = loadCustomer(); // { name, phone, address, extra }
+let customer = loadCustomer(); // { name, phone, address, extra, payment }
 
 function addToCart(id, name, price) {
   const existing = cart.find(item => item.id === id);
@@ -338,7 +353,7 @@ function updateWhatsappMessage() {
   const hintEl = document.getElementById('cart-form-hint');
   if (!whatsappBtn) return;
 
-  const ready = customer.name.trim() !== '' && customer.phone.trim() !== '';
+  const ready = customer.name.trim() !== '' && customer.phone.trim() !== '' && customer.payment.trim() !== '';
   whatsappBtn.classList.toggle('btn-disabled', !ready);
   if (hintEl) hintEl.hidden = ready;
 
@@ -350,6 +365,7 @@ function updateWhatsappMessage() {
   message += `\n\nNombre: ${customer.name || '-'}`;
   message += `\nTeléfono: ${customer.phone || '-'}`;
   if (customer.address.trim()) message += `\nDirección: ${customer.address}`;
+  if (customer.payment.trim()) message += `\nMétodo de pago: ${customer.payment}`;
   if (customer.extra.trim()) message += `\nOtra información: ${customer.extra}`;
   message += `\n\n¿Podrían confirmarme precio final y disponibilidad?`;
 
@@ -394,6 +410,11 @@ function closeCart() {
   document.getElementById('cart-overlay').classList.remove('open');
 }
 
+function updateDeliveryPaymentNote() {
+  const note = document.getElementById('cart-delivery-payment-note');
+  if (note) note.hidden = !customer.address.trim();
+}
+
 function initCart() {
   // Restaura los datos del cliente que haya escrito antes (en esta
   // u otra página del sitio)
@@ -414,8 +435,27 @@ function initCart() {
         customer[field] = el.value;
         saveCustomer();
         updateWhatsappMessage();
+        if (field === 'address') updateDeliveryPaymentNote();
       });
     });
+
+  // Botones de método de pago — selección única (como radio buttons,
+  // pero con el mismo look que otros botones del sitio). Restaura la
+  // selección guardada, si había una.
+  const paymentBtns = document.querySelectorAll('.cart-payment-btn');
+  paymentBtns.forEach(btn => {
+    if (customer.payment && btn.dataset.payment === customer.payment) {
+      btn.classList.add('active');
+    }
+    btn.addEventListener('click', () => {
+      paymentBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      customer.payment = btn.dataset.payment;
+      saveCustomer();
+      updateWhatsappMessage();
+    });
+  });
+  updateDeliveryPaymentNote();
 
   renderCart();
 
@@ -427,7 +467,17 @@ function initCart() {
       if (whatsappBtn.classList.contains('btn-disabled')) {
         e.preventDefault();
         document.getElementById('cart-form-hint')?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        return;
       }
+      // El evento más importante de todos: alguien terminó de armar
+      // un pedido y lo mandó — con el total, para tener una idea del
+      // ticket promedio directo en el panel de Umami.
+      trackEvent('cart-checkout-whatsapp', {
+        total: cartTotal(),
+        items: cart.reduce((sum, item) => sum + item.qty, 0),
+        pago: customer.payment,
+        despacho: customer.address.trim() ? 'domicilio' : 'retiro'
+      });
     });
   }
 
@@ -651,7 +701,10 @@ document.addEventListener('DOMContentLoaded', () => {
   // Carrusel de reseñas
   initReviewsMarquee();
 
-  // Aplica el link de WhatsApp a todos los botones/links relevantes
+  // Aplica el link de WhatsApp a todos los botones/links relevantes,
+  // y registra el clic como evento en Umami — así se puede ver
+  // cuántas visitas terminan realmente escribiendo, no solo cuántas
+  // entran al sitio.
   const whatsappTargets = [
     'nav-whatsapp',
     'about-whatsapp',
@@ -662,7 +715,9 @@ document.addEventListener('DOMContentLoaded', () => {
   ];
   whatsappTargets.forEach(id => {
     const el = document.getElementById(id);
-    if (el) el.href = buildWhatsappLink();
+    if (!el) return;
+    el.href = buildWhatsappLink();
+    el.addEventListener('click', () => trackEvent('whatsapp-click', { origen: id }));
   });
 
   // Menú móvil

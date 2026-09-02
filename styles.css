@@ -1145,6 +1145,26 @@ address { font-style: normal; }
 .cart-input:focus, .cart-textarea:focus { outline: none; border-color: var(--teal); }
 .cart-textarea { resize: vertical; min-height: 60px; }
 .cart-delivery-note { font-size: 11.5px; color: var(--gray); margin-top: -4px; }
+.cart-payment { display: flex; flex-direction: column; gap: 6px; }
+.cart-payment-label { font-size: 12.5px; font-weight: 700; color: var(--dark); }
+.cart-payment-options { display: flex; flex-wrap: wrap; gap: 8px; }
+.cart-payment-btn {
+  flex: 1 1 auto;
+  padding: 9px 12px;
+  border-radius: 999px;
+  border: 1.5px solid var(--border, #ddd);
+  background: #fff;
+  color: var(--dark);
+  font-family: var(--font-body);
+  font-size: 12.5px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background .15s ease, border-color .15s ease, color .15s ease;
+  white-space: nowrap;
+}
+.cart-payment-btn:hover { border-color: var(--teal); }
+.cart-payment-btn.active { background: var(--magenta); border-color: var(--magenta); color: #fff; }
+.cart-payment-note { margin-top: -2px; }
 
 .cart-step-actions { display: flex; gap: 12px; }
 .cart-step-actions .btn { flex: 1; padding: 13px 0; font-size: 13px; text-align: center; }

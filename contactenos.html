@@ -13,6 +13,13 @@
 <meta name="description" content="¿No encuentras lo que necesitas? Escríbenos los detalles y te respondemos por correo — Mascotería Akyra, Punta Arenas.">
 <meta name="robots" content="index, follow">
 <meta name="theme-color" content="#00b0a3">
+
+<!-- Umami — analítica de visitas sin cookies (no necesita aviso de
+     consentimiento). Reemplaza AMBOS valores (data-website-id y el
+     "src") por los que te den al crear tu sitio gratis en umami.is —
+     mientras tanto, con el marcador de acá el sitio funciona igual,
+     el script simplemente no envía nada a ningún lado. -->
+<script defer src="https://cloud.umami.is/script.js" data-website-id="TU-UMAMI-WEBSITE-ID"></script>
 <link rel="canonical" href="https://[tudominio].cl/contactenos.html">
 
 <!-- Open Graph -->
@@ -139,9 +146,19 @@
         <input type="tel" id="cart-phone" class="cart-input" placeholder="Teléfono" autocomplete="tel">
         <input type="text" id="cart-address" class="cart-input" placeholder="Dirección (si necesitas despacho)" autocomplete="street-address">
         <span class="cart-delivery-note">Despacho: $2.000 zona urbana · $3.500 periferia — o retira gratis en sucursal</span>
+
+        <div class="cart-payment">
+          <span class="cart-payment-label">¿Cómo vas a pagar?</span>
+          <div class="cart-payment-options">
+            <button type="button" class="cart-payment-btn" data-payment="Transferencia">Transferencia</button>
+            <button type="button" class="cart-payment-btn" data-payment="Tarjeta débito/crédito">Tarjeta débito/crédito</button>
+            <button type="button" class="cart-payment-btn" data-payment="Efectivo">Efectivo</button>
+          </div>
+        </div>
+        <span class="cart-delivery-note cart-payment-note" id="cart-delivery-payment-note" hidden>Para despacho a domicilio, transfiere al menos el valor del despacho (por si prefieres pagar el resto con tarjeta al llegar) o el total completo de tu pedido.</span>
         <textarea id="cart-extra" class="cart-textarea" rows="2" placeholder="¿Algo más que debamos saber? (opcional)"></textarea>
       </div>
-      <p class="cart-form-hint" id="cart-form-hint">Completa nombre y teléfono para enviar tu pedido.</p>
+      <p class="cart-form-hint" id="cart-form-hint">Completa nombre, teléfono y método de pago para enviar tu pedido.</p>
       <a href="#" id="cart-whatsapp" class="btn btn-primary cart-whatsapp-btn" target="_blank" rel="noopener">
         <i data-lucide="message-circle"></i> Enviar pedido por WhatsApp
       </a>
