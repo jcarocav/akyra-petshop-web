@@ -22,6 +22,14 @@ const RAIZ = resolve(dirname(fileURLToPath(import.meta.url)), '..', '..')
 const MINIMO = 0.5
 const PREFIJOS = { PER: 'perros', GAT: 'gatos', OTR: 'otras-mascotas', GRA: 'granel', ACC: 'accesorios', SAL: 'salud-higiene' }
 
+// El CSV lo escribe nuestro Apps Script (doGet) con números de JavaScript: "2.805" son 2,805 kg,
+// no 2.805 unidades. Solo si alguien escribió a mano un número con coma se usa el lector chileno.
+export function numeroCsv(valor) {
+  const t = String(valor ?? '').trim()
+  if (/^-?\d+(\.\d+)?$/.test(t)) return Number(t)
+  return lectorNumero(t)
+}
+
 function skusDe(productos) {
   return productos.flatMap(p => (p.tallas ? p.tallas.map(t => t.sku) : [p.sku]))
 }
@@ -51,7 +59,7 @@ export function aplicarCsv({ csvTexto, productos, stock, ahora = new Date() }) {
   for (const [sku, f] of porSku) {
     const crudo = String(valor(f, 'unidades') ?? '').trim()
     if (crudo === '') { unidades[sku] = null; continue }
-    const n = lectorNumero(crudo)
+    const n = numeroCsv(crudo)
     if (n === null) { errores.push(`${sku}: unidades "${crudo}" no es un número`); continue }
     unidades[sku] = normalizarUnidades(n)
   }
@@ -66,7 +74,7 @@ export function aplicarCsv({ csvTexto, productos, stock, ahora = new Date() }) {
     for (const v of variantes) {
       const f = porSku.get(v.sku.toUpperCase())
       if (!f) continue
-      const precio = precioPublico(lectorNumero(valor(f, 'precio')))
+      const precio = precioPublico(numeroCsv(valor(f, 'precio')))
       if (precio !== null && precio !== v.precio) { v.precio = precio; cambiosCatalogo++ }
     }
   }
@@ -78,7 +86,7 @@ export function aplicarCsv({ csvTexto, productos, stock, ahora = new Date() }) {
     const p = {
       id: slug(sku), sku, nombre: categoria === 'granel' ? formatoTitulo(nombre) : formatoTitulo(nombre),
       marca: formatoMarca(valor(f, 'marca')), categoria, subcategoria: deducirSubcategoria(categoria, nombre),
-      precio: precioPublico(lectorNumero(valor(f, 'precio'))), nuevo: true
+      precio: precioPublico(numeroCsv(valor(f, 'precio'))), nuevo: true
     }
     const edad = deducirEdad(categoria, nombre)
     if (edad) p.edad = edad
@@ -88,7 +96,10 @@ export function aplicarCsv({ csvTexto, productos, stock, ahora = new Date() }) {
     cambiosCatalogo++
   }
 
-  const fechas = datos.map(f => String(valor(f, 'reporte') || '')).filter(Boolean).sort()
+  // Fecha del último reporte aplicado; si todavía no llega ninguno, la fecha más nueva de las filas.
+  // Así, si nada cambió, stock.json queda idéntico y el Action no hace commit.
+  const fechasDe = nombre => datos.map(f => String(valor(f, nombre) || '')).filter(Boolean).sort()
+  const fechas = fechasDe('reporte').length ? fechasDe('reporte') : fechasDe('actualizado')
   const actualizado = fechas.length ? new Date(fechas[fechas.length - 1]) : ahora
   return {
     ok: true, error: null, coincidencia, errores, nuevos: nuevosProductos, cambiosCatalogo,

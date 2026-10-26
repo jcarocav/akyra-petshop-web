@@ -62,6 +62,10 @@ Publicado en GitHub Pages: https://jcarocav.github.io/akyra-petshop-web/ (repo p
    (secreto `STOCK_CSV_URL`, solo columnas públicas), lo valida con la misma regla del 50 % y, si algo cambió,
    actualiza `stock.json` (y `productos.json` si hay productos nuevos o precios distintos). El sitio nunca consulta
    Google: si algo falla, queda con el último stock bueno. El catálogo muestra "Stock actualizado: dd-mm-aaaa hh:mm".
+   Planilla (privada, en el Drive del dueño): https://docs.google.com/spreadsheets/d/1NkJQGtHwQNlyKrl8mXuGseTaStE579ND8Twx0bW2IWo
+   · script: https://script.google.com/d/1_xFOb9jzqqvWssGYpxHUM_m_1PlGjDpIMZvGtq6CBdMvhSfmRdTM6Oa7/edit
+   · para subir cambios del script: `npm run apps-script:preparar` y
+   `npx clasp push` dentro de `.tmp/clasp/` (la clave del CSV está en `.tmp/clasp/token.txt`, fuera de git).
 4. **Si falla**: mirar la hoja "Historial" de la planilla y la pestaña **Actions** de GitHub ("Stock desde la planilla").
 5. **Mapeo de columnas** del reporte real de Gesnex: `apps-script/Config.js` → `COLUMNAS` (todavía se probó solo con
    el reporte simulado `tests/fixtures/gesnex-simulado.*`).

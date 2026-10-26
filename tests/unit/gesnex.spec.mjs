@@ -125,6 +125,20 @@ test.describe('GitHub Action: planilla (CSV) → stock.json', () => {
     expect(r.stock.actualizado).toBe(new Date('2026-10-26T10:00:00-03:00').toISOString())
   })
 
+  test('el granel con decimales del CSV se lee en kilos (2.805 = 2,805 kg)', () => {
+    const granel = skus.find(s => s.sku.startsWith('GRA-')).sku
+    const r = aplicarCsv({ csvTexto: csvDe(todasLasFilas({ [granel]: '2.805' })), productos, stock })
+    expect(r.ok).toBe(true)
+    expect(r.stock.unidades[granel]).toBe(2.805)
+  })
+
+  test('si la planilla no cambió, stock.json queda idéntico (sin commit)', () => {
+    const filas = todasLasFilas().map(f => [...f.slice(0, 7), '2026-10-26T10:00:00.000Z', ''])
+    const r = aplicarCsv({ csvTexto: csvDe(filas), productos, stock, ahora: new Date('2030-01-01') })
+    expect(r.ok).toBe(true)
+    expect(r.stock.actualizado).toBe('2026-10-26T10:00:00.000Z')
+  })
+
   test('un CSV vacío, raro o incompleto NO cambia nada', () => {
     expect(aplicarCsv({ csvTexto: '', productos, stock }).ok).toBe(false)
     expect(aplicarCsv({ csvTexto: 'a,b\n1,2', productos, stock }).ok).toBe(false)
