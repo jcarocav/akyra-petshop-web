@@ -31,7 +31,11 @@ function instalar() {
   }
 
   var propiedades = PropertiesService.getScriptProperties()
-  if (!propiedades.getProperty('TOKEN_CSV')) propiedades.setProperty('TOKEN_CSV', Utilities.getUuid().replace(/-/g, ''))
+  // La clave del CSV viene de la instalación (Token.js, no está en el repositorio) para guardarla
+  // también como secreto en GitHub; si no está, se crea una al azar.
+  if (!propiedades.getProperty('TOKEN_CSV')) {
+    propiedades.setProperty('TOKEN_CSV', typeof TOKEN_INICIAL !== 'undefined' ? TOKEN_INICIAL : Utilities.getUuid().replace(/-/g, ''))
+  }
 
   ScriptApp.getProjectTriggers().forEach(function (t) {
     if (t.getHandlerFunction() === 'procesarCorreos') ScriptApp.deleteTrigger(t)

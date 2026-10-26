@@ -8,6 +8,7 @@
 //     Excel y NO se guarda en el repositorio.
 // Uso: npm run catalogo && node tools/stock/preparar-apps-script.mjs
 // ============================================================
+import { randomBytes } from 'node:crypto'
 import { copyFileSync, existsSync, mkdirSync, readFileSync, readdirSync, writeFileSync } from 'node:fs'
 import { dirname, join, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
@@ -30,5 +31,11 @@ const catalogo = internos.map(p => ({
   precio: p.precio, unidades: stock.unidades[p.sku] ?? null, actualizado: stock.actualizado
 }))
 writeFileSync(join(DESTINO, 'CatalogoInicial.js'), `// Generado por tools/stock/preparar-apps-script.mjs (no está en el repositorio)\nvar CATALOGO_INICIAL = ${JSON.stringify(catalogo)}\n`)
-if (!existsSync(join(DESTINO, '.claspignore'))) writeFileSync(join(DESTINO, '.claspignore'), '.clasp.json\n')
+// Clave para el CSV público (se guarda también como secreto STOCK_CSV_URL en GitHub)
+const archivoToken = join(DESTINO, 'token.txt')
+if (!existsSync(archivoToken)) writeFileSync(archivoToken, randomBytes(24).toString('hex'))
+writeFileSync(join(DESTINO, 'Token.js'), `// Generado al instalar (no está en el repositorio)
+var TOKEN_INICIAL = '${readFileSync(archivoToken, 'utf8').trim()}'
+`)
+if (!existsSync(join(DESTINO, '.claspignore'))) writeFileSync(join(DESTINO, '.claspignore'), '.clasp.json\ntoken.txt\n')
 console.log(`Carpeta para clasp lista: ${DESTINO} (${catalogo.length} productos en el catálogo inicial)`)

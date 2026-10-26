@@ -7,7 +7,7 @@ import { existsSync } from 'node:fs'
 
 const candidatos = [
   process.env.CHROME_PATH,
-  'C:\Program Files\Google\Chrome\Application\chrome.exe',
+  'C:/Program Files/Google/Chrome/Application/chrome.exe',
   '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',
   '/usr/bin/google-chrome',
   chromium.executablePath()
