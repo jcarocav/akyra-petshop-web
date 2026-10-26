@@ -27,7 +27,15 @@ jobs:
           node-version-file: .nvmrc
           cache: npm
       - run: npm ci
-      - run: npx playwright install --with-deps chromium firefox webkit
+      # A veces la descarga de navegadores se queda pegada: máximo 10 minutos por intento, 3 intentos
+      - name: Instalar navegadores
+        run: |
+          ok=0
+          for i in 1 2 3; do
+            if timeout 600 npx playwright install --with-deps chromium firefox webkit; then ok=1; break; fi
+            echo "Intento $i falló, reintentando..."
+          done
+          [ "$ok" = 1 ]
       - name: Lint (JavaScript)
         run: npm run lint
       - name: Validar HTML
