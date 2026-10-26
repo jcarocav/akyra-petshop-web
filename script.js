@@ -565,8 +565,8 @@ function initCart() {
 // no se note el corte.
 // ============================================================
 const BRANDS = [
-  'Marca 1', 'Marca 2', 'Marca 3', 'Marca 4',
-  'Marca 5', 'Marca 6', 'Marca 7', 'Marca 8'
+  'Royal Canin', 'Pedigree', 'Whiskas', 'Champion',
+  'Fit Formula', 'Master Dog', 'Felix', 'Bravery'
 ];
 
 function initBrandsMarquee() {
