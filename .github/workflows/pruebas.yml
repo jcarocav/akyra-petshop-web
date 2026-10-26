@@ -1,0 +1,49 @@
+# Corre TODAS las pruebas en cada push y pull request: lint, HTML, Playwright
+# (Chrome, Firefox y WebKit en escritorio y celular, con axe-core), enlaces
+# rotos y Lighthouse. Los commits automáticos de stock no las disparan.
+name: Pruebas
+
+on:
+  push:
+    paths-ignore: ['stock.json', 'sitemap.xml']
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pruebas-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  pruebas:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+      - run: npm ci
+      - run: npx playwright install --with-deps chromium firefox webkit
+      - name: Lint (JavaScript)
+        run: npm run lint
+      - name: Validar HTML
+        run: npm run html
+      - name: Pruebas (unidad + navegador)
+        run: npm test
+      - name: Enlaces e imágenes rotas
+        run: npm run enlaces
+      - name: Lighthouse (celular)
+        run: npm run lighthouse
+      - if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: reporte-pruebas
+          path: |
+            playwright-report/
+            test-results/
+            .lighthouseci/
+          retention-days: 7
