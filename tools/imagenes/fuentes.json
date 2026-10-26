@@ -1,0 +1,5237 @@
+{
+ "ACC-PETB-009": {
+  "fuente": "tusmascotas.cl",
+  "metodo": "código de barras",
+  "imagen": "https://www.tusmascotas.cl/wp-content/uploads/2024/09/acondicionador-.jpg",
+  "titulo": "Acondicionador e Hidratante 500ml - Petbrilho",
+  "pagina": "https://www.tusmascotas.cl/product/acondicionador-e-hidratante-500ml-natureza-petbrilho/",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/ACC-PETB-009.webp"
+ },
+ "OTR-CANA-003": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-109": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-063": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-066": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "GAT-AGIL-002": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/gato-adulto/42685-agility-gato-adulto-salmon-15-kg-7798075347016.html",
+  "imagen": "https://puntomascotas.cl/26362-large_default/agility-gato-adulto-salmon-15-kg.jpg",
+  "titulo": "Agility Gato Adulto Salmon 1,5 Kg",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-AGIL-002.webp"
+ },
+ "GAT-AGIL-003": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/agility/36521-alimento-agility-cats-premium-kitten-15-kg--7798075341311.html",
+  "imagen": "https://puntomascotas.cl/25998-large_default/alimento-agility-cats-premium-kitten-15-kg-.jpg",
+  "titulo": "Alimento Agility Cats Premium Kitten 1,5 kg",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-AGIL-003.webp"
+ },
+ "GAT-AGIL-001": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/agility/36523-alimento-agility-cats-premium-adult-15-kg-7798075341328.html",
+  "imagen": "https://puntomascotas.cl/26000-large_default/alimento-agility-cats-premium-adult-15-kg.jpg",
+  "titulo": "Alimento Agility Cats Premium Adult 1,5 kg",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-AGIL-001.webp"
+ },
+ "GAT-AGIL-004": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/cats/36517-alimento-agility-cats-premium-urinary-15-kg-7798075341342.html",
+  "imagen": "https://puntomascotas.cl/25994-large_default/alimento-agility-cats-premium-urinary-15-kg.jpg",
+  "titulo": "Alimento Agility Cats Premium Urinary 1.5 kg",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-AGIL-004.webp"
+ },
+ "PER-ALPH-004": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "PER-ALFA-002": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "GAT-AMIT-001": {
+  "fuente": "laikamascotas.cl",
+  "metodo": "código de barras",
+  "imagen": "https://static.laika.digital/products/cff0e462c9d80d4264ae740c42d48a3a_1732814825.jpg",
+  "titulo": "Amity - Alimento Super Premium para Gato Adulto Low Grain Salmón - AMITY  | Laika Mascotas",
+  "pagina": "https://laikamascotas.cl/amity-alimento-super-premium-para-gato-adulto-low-grain-salmon",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-AMIT-001.webp"
+ },
+ "GAT-AMIT-002": {
+  "fuente": "laikamascotas.cl",
+  "metodo": "código de barras",
+  "imagen": "https://static.laika.digital/products/a6071e9af43e1d5bb603c266c52d7b44_1732814634.jpg",
+  "titulo": "Amity - Alimento Super Premium para Gatito Low Grain Salmón - AMITY  | Laika Mascotas",
+  "pagina": "https://laikamascotas.cl/amity-alimento-super-premium-para-gatito-low-grain-salmon",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-AMIT-002.webp"
+ },
+ "GAT-AMIT-004": {
+  "noEncontrada": true,
+  "descartada": "la página tiene varias variantes o es un pack",
+  "fecha": "2026-10-26"
+ },
+ "GAT-AMIT-003": {
+  "noEncontrada": true,
+  "descartada": "la página tiene varias variantes o es un pack",
+  "fecha": "2026-10-26"
+ },
+ "PER-ANCE-001": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "PER-ANCE-003": {
+  "fuente": "laikamascotas.cl",
+  "metodo": "código de barras",
+  "imagen": "https://static.laika.digital/products/db7b25662099eee8225ea9178fc7b225_1754083221.jpg",
+  "titulo": "Ancestral - Alimento para Perro Adulto Raza Mediana y Grande - ANCESTRAL  | Laika Mascotas",
+  "pagina": "https://laikamascotas.cl/ancestral-alimento-para-perro-adulto-raza-mediana-y-grande",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/PER-ANCE-003.webp"
+ },
+ "PER-ANCE-002": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "GAT-BIOF-001": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/cats/39011-biofresh-gatos-adultos-15-kg-7908320402975.html",
+  "imagen": "https://puntomascotas.cl/13036-large_default/biofresh-gatos-adultos-15-kg.jpg",
+  "titulo": "Biofresh Gato Adultos 1.5 kg",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-BIOF-001.webp"
+ },
+ "GAT-BIOF-006": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/cats/39012-biofresh-gatos-adultos-75-kg-7908320403002.html",
+  "imagen": "https://puntomascotas.cl/13037-large_default/biofresh-gatos-adultos-75-kg.jpg",
+  "titulo": "Biofresh Gato Adultos 7,5 kg",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-BIOF-006.webp"
+ },
+ "GAT-BIOF-003": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/cats/39013-biofresh-gato-castrado-15-kg-7908320403187.html",
+  "imagen": "https://puntomascotas.cl/13038-large_default/biofresh-gato-castrado-15-kg.jpg",
+  "titulo": "Biofresh Gato Castrado 1.5 kg",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-BIOF-003.webp"
+ },
+ "GAT-BIOF-007": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/cats/39014-biofresh-gato-castrado-75-kg-7908320403217.html",
+  "imagen": "https://puntomascotas.cl/13039-large_default/biofresh-gato-castrado-75-kg.jpg",
+  "titulo": "Biofresh Gato Castrado 7.5 kg",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-BIOF-007.webp"
+ },
+ "GAT-BIOF-004": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/biofresh/40905-biofresh-natural-gato-senior-15kg-7908320403293.html",
+  "imagen": "https://puntomascotas.cl/20205-large_default/biofresh-natural-gato-senior-15kg.jpg",
+  "titulo": "Biofresh Natural Gato senior 1.5kg",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-BIOF-004.webp"
+ },
+ "PER-BOKA-002": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "PER-BOKA-001": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "GAT-BRAV-006": {
+  "fuente": "laikamascotas.cl",
+  "metodo": "código de barras",
+  "imagen": "https://static.laika.digital/products-3/d2a39493b5164248171928a3bd44e748_1713196539.jpg",
+  "titulo": "Bravery - Alimento Gato Adulto Salmón - BRAVERY  | Laika Mascotas",
+  "pagina": "https://laikamascotas.cl/Bravery-Salmon-Adult-Cat",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-BRAV-006.webp"
+ },
+ "PER-BRAV-008": {
+  "fuente": "petcity.cl",
+  "metodo": "nombre (marca, línea, sabor y tamaño)",
+  "imagen": "https://petcity.cl/wp-content/uploads/2022/09/Bravery_Lamb_Adult_Large-Medium_Breeds.jpg",
+  "titulo": "Bravery Lamb Adult Large/Medium Breeds 12 Kgs - Petcity",
+  "pagina": "https://petcity.cl/tienda/bravery-lamb-adult-large-medium-breeds-12-kgs/",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/PER-BRAV-008.webp"
+ },
+ "PER-BRAV-007": {
+  "fuente": "laikamascotas.cl",
+  "metodo": "código de barras",
+  "imagen": "https://static.laika.digital/products-3/e4ea70e45fea268e4beda71d01fcb0d9_1713195975.jpg",
+  "titulo": "Bravery - Alimento Adulto Razas Medianas y Grandes Pollo - BRAVERY  | Laika Mascotas",
+  "pagina": "https://laikamascotas.cl/Bravery-Chicken-Adult-Large-Medium-Breeds",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/PER-BRAV-007.webp"
+ },
+ "PER-BRAV-001": {
+  "fuente": "laikamascotas.cl",
+  "metodo": "código de barras",
+  "imagen": "https://static.laika.digital/products-3/66ebd6bd426f4e178dc23500b4428b05_1713196029.jpg",
+  "titulo": "Bravery - Alimento Adulto Raza Mediana y Grande Salmón - BRAVERY  | Laika Mascotas",
+  "pagina": "https://laikamascotas.cl/Bravery-Salmon-Adult-Large-Medium-Breed",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/PER-BRAV-001.webp"
+ },
+ "PER-BRAV-005": {
+  "fuente": "petcity.cl",
+  "metodo": "nombre (marca, línea, sabor y tamaño)",
+  "imagen": "https://petcity.cl/wp-content/uploads/2022/12/Bravery-Chicken-Puppy-LargeMedium-Breeds-12-Kg.jpeg",
+  "titulo": "Bravery Chicken Puppy Large/Medium Breeds 12 Kgs - Petcity",
+  "pagina": "https://petcity.cl/tienda/bravery-chicken-puppy-large-medium-breeds-12-kg/",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/PER-BRAV-005.webp"
+ },
+ "PER-BRAV-006": {
+  "fuente": "petcity.cl",
+  "metodo": "nombre (marca, línea, sabor y tamaño)",
+  "imagen": "https://petcity.cl/wp-content/uploads/2024/11/Bravery-Salmon-Puppy-Large-Medium-Breeds.jpg",
+  "titulo": "Bravery Salmon Puppy Large/Medium Breeds 12 Kgs - Petcity",
+  "pagina": "https://petcity.cl/tienda/bravery-salmon-puppy-large-medium-breeds-12-kg/",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/PER-BRAV-006.webp"
+ },
+ "GAT-BRAV-011": {
+  "fuente": "petcity.cl",
+  "metodo": "nombre (marca, línea, sabor y tamaño)",
+  "imagen": "https://petcity.cl/wp-content/uploads/2025/06/bravery-herring-senior-cat.jpg",
+  "titulo": "Bravery Senior Herring Cat 2 Kgs - Petcity",
+  "pagina": "https://petcity.cl/tienda/bravery-senior-herring-cat-2-kgs/",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-BRAV-011.webp"
+ },
+ "GAT-BRAV-010": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "GAT-BRAV-008": {
+  "fuente": "laikamascotas.cl",
+  "metodo": "código de barras",
+  "imagen": "https://static.laika.digital/products-3/3da56317a80e81a7b57a429d419190d1_1713196587.jpg",
+  "titulo": "Bravery - Alimento Gato Esterilizado Adulto Pollo - BRAVERY  | Laika Mascotas",
+  "pagina": "https://laikamascotas.cl/Bravery-Chicken-Adult-Cat-Sterilized",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-BRAV-008.webp"
+ },
+ "GAT-BRAV-013": {
+  "fuente": "laikamascotas.cl",
+  "metodo": "código de barras",
+  "imagen": "https://static.laika.digital/products-3/ffcd30eb86514383cb05779756001cf2_1713196712.jpg",
+  "titulo": "Bravery - Alimento Gato Esterilizado Adulto Salmón - BRAVERY  | Laika Mascotas",
+  "pagina": "https://laikamascotas.cl/Bravery-Salmon-Adult-Cat-Sterilized",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-BRAV-013.webp"
+ },
+ "GAT-BRAV-009": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "GAT-BRAV-007": {
+  "noEncontrada": true,
+  "descartada": "la página tiene varias variantes o es un pack",
+  "fecha": "2026-10-26"
+ },
+ "GAT-BRAV-005": {
+  "noEncontrada": true,
+  "descartada": "la página tiene varias variantes o es un pack",
+  "fecha": "2026-10-26"
+ },
+ "GAT-BRAV-012": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "GAT-BRAV-002": {
+  "fuente": "laikamascotas.cl",
+  "metodo": "código de barras",
+  "imagen": "https://static.laika.digital/products-3/b92211b04c7df61d8f3a8cb33b41b46f_1713196750.jpg",
+  "titulo": "Bravery - Alimento Chicken Kitten para Gatitos - BRAVERY  | Laika Mascotas",
+  "pagina": "https://laikamascotas.cl/Bravery-Chicken-Kitten",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-BRAV-002.webp"
+ },
+ "GAT-BRAV-001": {
+  "fuente": "petcity.cl",
+  "metodo": "nombre (marca, línea, sabor y tamaño)",
+  "imagen": "https://petcity.cl/wp-content/uploads/2024/12/Bravery-Salmon-Kitten.jpg",
+  "titulo": "Bravery Salmón Kitten 2 Kg - Petcity",
+  "pagina": "https://petcity.cl/tienda/bravery-salmon-kitten-2-kg/",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-BRAV-001.webp"
+ },
+ "PER-BRAV-002": {
+  "fuente": "laikamascotas.cl",
+  "metodo": "código de barras",
+  "imagen": "https://static.laika.digital/products-3/a5a0740c593239661ce64c66c2cf68ff_1713196159.jpg",
+  "titulo": "Bravery - Alimento Adulto Iberian Pork Mini Razas Pequeñas - BRAVERY  | Laika Mascotas",
+  "pagina": "https://laikamascotas.cl/Bravery-Iberian-Pork-Mini-Adult-Small-Breeds",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/PER-BRAV-002.webp"
+ },
+ "PER-BRAV-003": {
+  "fuente": "laikamascotas.cl",
+  "metodo": "código de barras",
+  "imagen": "https://static.laika.digital/products-3/5ec1a9b2d163f0dc872f320dc785a573_1713196208.jpg",
+  "titulo": "Bravery - Alimento Mini Adult Razas Pequeñas Pollo - BRAVERY  | Laika Mascotas",
+  "pagina": "https://laikamascotas.cl/Bravery-Chicken-Mini-Adult-Small-Breeds",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/PER-BRAV-003.webp"
+ },
+ "GAT-BRAV-003": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "GAT-BRAV-004": {
+  "fuente": "laikamascotas.cl",
+  "metodo": "código de barras",
+  "imagen": "https://static.laika.digital/products-3/3da56317a80e81a7b57a429d419190d1_1713196587.jpg",
+  "titulo": "Bravery - Alimento Gato Esterilizado Adulto Pollo - BRAVERY  | Laika Mascotas",
+  "pagina": "https://laikamascotas.cl/Bravery-Chicken-Adult-Cat-Sterilized",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-BRAV-004.webp"
+ },
+ "PER-CACH-002": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "GAT-CATC-012": {
+  "fuente": "petcity.cl",
+  "metodo": "nombre (marca, línea, sabor y tamaño)",
+  "imagen": "https://petcity.cl/wp-content/uploads/2022/09/Cat_Chow_Adulto_carne.jpg",
+  "titulo": "Cat Chow Adulto Carne 19.5 Kgs - Petcity",
+  "pagina": "https://petcity.cl/tienda/cat-chow-adulto-carne-19-5-kgs/",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-CATC-012.webp"
+ },
+ "GAT-PURI-008": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/cats/30049-cat-chow-adulto-activo-8-kg-7613035951204.html",
+  "imagen": "https://puntomascotas.cl/219-large_default/cat-chow-adulto-activo-8-kg.jpg",
+  "titulo": "Cat Chow Adulto Activo 8 KG",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-PURI-008.webp"
+ },
+ "GAT-CATC-009": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/cats/38469-cat-chow-deli-mix-195-kg-8445291416451.html",
+  "imagen": "https://puntomascotas.cl/13565-large_default/cat-chow-deli-mix-195-kg.jpg",
+  "titulo": "Cat Chow DELI Mix 19.5 KG",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-CATC-009.webp"
+ },
+ "GAT-PURI-009": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/cats/34774-cat-chow-deli-mix-8kg-7613035951426.html",
+  "imagen": "https://puntomascotas.cl/13564-large_default/cat-chow-deli-mix-8kg.jpg",
+  "titulo": "Cat Chow Deli Mix 8Kg",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-PURI-009.webp"
+ },
+ "GAT-CATC-011": {
+  "fuente": "petcity.cl",
+  "metodo": "nombre (marca, línea, sabor y tamaño)",
+  "imagen": "https://petcity.cl/wp-content/uploads/2022/09/Cat_Chow_esterilizados.jpg",
+  "titulo": "Cat Chow Esterilizados 19.5 kgs - Petcity",
+  "pagina": "https://petcity.cl/tienda/cat-chow-esterilizados-19-5-kgs/",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-CATC-011.webp"
+ },
+ "GAT-PURI-010": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/cats/30048-cat-chow-gatitos-8-kg-7613035951235.html",
+  "imagen": "https://puntomascotas.cl/13129-large_default/cat-chow-gatitos-8-kg.jpg",
+  "titulo": "Cat Chow Gatitos 8 KG",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-PURI-010.webp"
+ },
+ "GAT-CATC-010": {
+  "fuente": "petcity.cl",
+  "metodo": "nombre (marca, línea, sabor y tamaño)",
+  "imagen": "https://petcity.cl/wp-content/uploads/2022/09/Cat_Chow_Adulto_pescado.jpg",
+  "titulo": "Cat Chow Adulto pescado 19.5 Kgs - Petcity",
+  "pagina": "https://petcity.cl/tienda/cat-chow-adulto-pescado-19-5-kgs/",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-CATC-010.webp"
+ },
+ "GAT-PURI-011": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/cats/30050-cat-chow-pescado-y-mariscos-8-kg-7613035951488.html",
+  "imagen": "https://puntomascotas.cl/207-large_default/cat-chow-pescado-y-mariscos-8-kg.jpg",
+  "titulo": "Cat Chow Adulto Pescado y Mariscos 8 KG",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-PURI-011.webp"
+ },
+ "PER-CHAM-007": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "PER-DOGC-004": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "PER-DOGC-003": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "GAT-FELN-001": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "GAT-FITF-003": {
+  "fuente": "petcity.cl",
+  "metodo": "nombre (marca, línea, sabor y tamaño)",
+  "imagen": "https://petcity.cl/wp-content/uploads/2022/06/fit-formula-gato-_formato2.jpg",
+  "titulo": "Fit Formula Gato Adulto 10 Kgs - Petcity",
+  "pagina": "https://petcity.cl/tienda/fit-formula-gato-adulto-10-kgs/",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-FITF-003.webp"
+ },
+ "PER-FITF-016": {
+  "fuente": "clubdeperrosygatos.cl",
+  "metodo": "código de barras",
+  "imagen": "https://www.clubdeperrosygatos.cl/wp-content/uploads/2023/05/Fit-Formula-Alimento-Perro-Adulto-Light-20-Kg.webp",
+  "titulo": "Fit Formula Alimento Perro Adulto Light 20 Kg",
+  "pagina": "https://www.clubdeperrosygatos.cl/producto/fit-formula-alimento-perro-adulto-light-20-kg/",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/PER-FITF-016.webp"
+ },
+ "PER-FITF-006": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "PER-FITF-008": {
+  "fuente": "clubdeperrosygatos.cl",
+  "metodo": "código de barras",
+  "imagen": "https://www.clubdeperrosygatos.cl/wp-content/uploads/2023/05/Fit-Formula-Alimento-Perro-Adulto-20-Kg-1.webp",
+  "titulo": "Fit Formula Alimento Perro Adulto 20 Kg",
+  "pagina": "https://www.clubdeperrosygatos.cl/producto/fit-formula-alimento-perro-adulto-20-kg/",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/PER-FITF-008.webp"
+ },
+ "PER-FITF-009": {
+  "fuente": "laikamascotas.cl",
+  "metodo": "código de barras",
+  "imagen": "https://static.laika.digital/products-3/f1bd039e38919e05132b715ca3f90a36_1705002135.jpg",
+  "titulo": "Fit Formula - Alimento Premium Cachorros - FIT FORMULA  | Laika Mascotas",
+  "pagina": "https://laikamascotas.cl/fit-formula-alimento-premiun-perro-cachorro",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/PER-FITF-009.webp"
+ },
+ "PER-FITF-007": {
+  "fuente": "clubdeperrosygatos.cl",
+  "metodo": "código de barras",
+  "imagen": "https://www.clubdeperrosygatos.cl/wp-content/uploads/2023/05/FF-SENIOR-20-Kg.webp",
+  "titulo": "Fit Formula Alimento Perro senior 20 Kg",
+  "pagina": "https://www.clubdeperrosygatos.cl/producto/fit-formula-alimento-perro-senior-20-kg/",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/PER-FITF-007.webp"
+ },
+ "PER-FITF-014": {
+  "fuente": "superzoo.cl",
+  "metodo": "código de barras",
+  "imagen": "https://production-na01-mascotaslatinas.demandware.net/on/demandware.static/-/Sites-SuperZoo-master-catalog/default/dw35c2c9a8/images/1689.jpg",
+  "titulo": "Fit formula senior razas peque&ntilde;as 10 KG alimento para perro",
+  "pagina": "https://www.superzoo.cl/perro/alimentos/alimentos-seco/fit-formula-senior-razas-pequenas-10-kg-alimento-para-perro/1689.html",
+  "fecha": "2026-10-26",
+  "error": "HTTP 403"
+ },
+ "GAT-MASK-002": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "GAT-MASK-001": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "GAT-MAST-010": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "GAT-MAST-009": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "GAT-MAST-007": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "GAT-MAST-006": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "GAT-MAST-008": {
+  "fuente": "petcity.cl",
+  "metodo": "nombre (marca, línea, sabor y tamaño)",
+  "imagen": "https://petcity.cl/wp-content/uploads/2022/09/master_cat_gato_salmon.jpg",
+  "titulo": "Master Cat Salmón 20 kgs - Petcity",
+  "pagina": "https://petcity.cl/tienda/master-cat-salmon-20-kgs/",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-MAST-008.webp"
+ },
+ "PER-MAST-012": {
+  "fuente": "petcity.cl",
+  "metodo": "nombre (marca, línea, sabor y tamaño)",
+  "imagen": "https://petcity.cl/wp-content/uploads/2022/09/master_dog_adulto_Carne.jpeg",
+  "titulo": "Master Dog Adulto Carne 18 Kgs - Petcity",
+  "pagina": "https://petcity.cl/tienda/master-dog-adulto-carne-18-kgs/",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/PER-MAST-012.webp"
+ },
+ "PER-MAST-011": {
+  "fuente": "petcity.cl",
+  "metodo": "nombre (marca, línea, sabor y tamaño)",
+  "imagen": "https://petcity.cl/wp-content/uploads/2026/03/master-dog-adultos.jpg",
+  "titulo": "Master Dog Adulto Pollo 18 Kgs - Petcity",
+  "pagina": "https://petcity.cl/tienda/master-dog-adulto-pollo-18-kgs/",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/PER-MAST-011.webp"
+ },
+ "PER-MAST-008": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "GAT-NYD-004": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/cats/38835-nd-pumpkin-castrados-feline-75kg-7898604434078.html",
+  "imagen": "https://puntomascotas.cl/12644-large_default/nd-pumpkin-castrados-feline-75kg.jpg",
+  "titulo": "N&D Pumpkin Gato Adulto Esterilizado Pollo, Calabaza y Granada 7,5 KG",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-NYD-004.webp"
+ },
+ "GAT-NYD-001": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/cats/38824-nd-prime-feline-adult-pollo-y-granada-15kg-7898604433231.html",
+  "imagen": "https://puntomascotas.cl/12633-large_default/nd-prime-feline-adult-pollo-y-granada-15kg.jpg",
+  "titulo": "N&D Prime Gato Adulto Pollo y Granada 1,5 KG",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-NYD-001.webp"
+ },
+ "GAT-NDPR-001": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/cats/38821-nd-prime-feline-kitten-15kg-7898604433293.html",
+  "imagen": "https://puntomascotas.cl/12630-large_default/nd-prime-feline-kitten-15kg.jpg",
+  "titulo": "N&D Prime Gatito Pollo y Granada 1,5 KG",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-NDPR-001.webp"
+ },
+ "GAT-NYD-002": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/cats/38834-nd-pumpkin-castrados-feline-15kg-7898604432289.html",
+  "imagen": "https://puntomascotas.cl/12643-large_default/nd-pumpkin-castrados-feline-15kg.jpg",
+  "titulo": "N&D Pumpkin Gato Adulto Esterilizado Pollo, Calabaza y Granada 1,5 KG",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-NYD-002.webp"
+ },
+ "GAT-NYD-003": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "PER-NOMA-002": {
+  "fuente": "laikamascotas.cl",
+  "metodo": "código de barras",
+  "imagen": "https://static.laika.digital/products/f3ccdd27d2000e3f9255a7e3e2c48800_1734449569.jpg",
+  "titulo": "Nomade - Alimento Adulto Raza Mediana y Grande - NOMADE  | Laika Mascotas",
+  "pagina": "https://laikamascotas.cl/nomade-nomade-adulto-raza-mediana-y-grande",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/PER-NOMA-002.webp"
+ },
+ "PER-NOMA-001": {
+  "fuente": "petcity.cl",
+  "metodo": "nombre (marca, línea, sabor y tamaño)",
+  "imagen": "https://petcity.cl/wp-content/uploads/2023/10/nomade-adulto-raza-pequena-actualizado-2025.jpg",
+  "titulo": "Nómade Adulto Raza Pequeña 10 Kgs - Petcity",
+  "pagina": "https://petcity.cl/tienda/nomade-adulto-raza-pequena-10-kgs/",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/PER-NOMA-001.webp"
+ },
+ "PER-NOMA-003": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "GAT-NOMA-001": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "GAT-OWNA-001": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/cats/39243-ownat-just-grain-free-sterilized-cat-3kg-8429037016945.html",
+  "imagen": "https://puntomascotas.cl/13681-large_default/ownat-just-grain-free-sterilized-cat-3kg.jpg",
+  "titulo": "Ownat Just Grain Free Sterilized Cat 3kg.",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-OWNA-001.webp"
+ },
+ "PER-PEDI-012": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "PER-PEDI-013": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "PER-PEDI-011": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "GAT-PROP-001": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/cats/30022-pro-plan-cat-urinary-care-protection-3-kg-7613039947111.html",
+  "imagen": "https://puntomascotas.cl/11841-large_default/pro-plan-cat-urinary-care-protection-3-kg.jpg",
+  "titulo": "Pro Plan Gato Adulto Urinary Care Protection 3 KG",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-PROP-001.webp"
+ },
+ "GAT-PROP-002": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/cats/57-purina-pro-plan-cat-chicken-rice-7613039900277.html",
+  "imagen": "https://puntomascotas.cl/12976-large_default/purina-pro-plan-cat-chicken-rice.jpg",
+  "titulo": "Pro Plan Gato Chicken & Rice 3 KG",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-PROP-002.webp"
+ },
+ "GAT-PROP-003": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/cats/34214-pro-plan-cat-sterilized-3kg-7613039947784.html",
+  "imagen": "https://puntomascotas.cl/11848-large_default/pro-plan-cat-sterilized-3kg.jpg",
+  "titulo": "Pro Plan Gato Adulto Sterilized 3kg",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-PROP-003.webp"
+ },
+ "GAT-PROP-004": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/cats/33511-pro-plan-cat-urinary-care-protection-15-kg--7613039947739.html",
+  "imagen": "https://puntomascotas.cl/11837-large_default/pro-plan-cat-urinary-care-protection-15-kg-.jpg",
+  "titulo": "Pro Plan Gato Adulto Urinary Care Protection 7.5 KG",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-PROP-004.webp"
+ },
+ "GAT-PURI-012": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "PER-ROYA-001": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/dogs/36514-royal-canin-poodle-3kg-7790187341845.html",
+  "imagen": "https://puntomascotas.cl/15883-large_default/royal-canin-poodle-3kg.jpg",
+  "titulo": "Royal Canin Poodle Cachorro 3Kg",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/PER-ROYA-001.webp"
+ },
+ "GAT-ROYA-015": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/cats/34469-royal-canin-urinary-care-15kg-7790187342774.html",
+  "imagen": "https://puntomascotas.cl/26087-large_default/royal-canin-urinary-care-15kg.jpg",
+  "titulo": "Royal Canin Urinary Care 7.5Kg",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-ROYA-015.webp"
+ },
+ "GAT-ROYA-007": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/cats/34946-royal-canin-special-exigent-3530-2kg-7896181213154.html",
+  "imagen": "https://puntomascotas.cl/26111-large_default/royal-canin-special-exigent-3530-2kg.jpg",
+  "titulo": "Royal Canin Special Exigent 35/30 1.5Kg",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-ROYA-007.webp"
+ },
+ "GAT-ROYA-008": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/royal-canin/37128-royal-canin-adult-sterilised-75kg-7896181213215.html",
+  "imagen": "https://puntomascotas.cl/9212-large_default/royal-canin-adult-sterilised-75kg.jpg",
+  "titulo": "Royal Canin Felino Adulto Sterilised 1,5Kg",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-ROYA-008.webp"
+ },
+ "GAT-ROYA-003": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/royal-canin/35915-royal-canin-indoor-7-reemplaza-a-mature-27-7790187338746.html",
+  "imagen": "https://puntomascotas.cl/26076-large_default/royal-canin-indoor-7-reemplaza-a-mature-27.jpg",
+  "titulo": "Royal Canin Indoor 7+ 1.5 kg",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-ROYA-003.webp"
+ },
+ "GAT-ROYA-005": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/cats/36609-royal-canin-indoor-27-2kg-7790187338715.html",
+  "imagen": "https://puntomascotas.cl/11561-large_default/royal-canin-indoor-27-2kg.jpg",
+  "titulo": "Royal Canin Indoor 1.5 Kg",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-ROYA-005.webp"
+ },
+ "GAT-ROYA-009": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/cats/30141-royal-canin-vet-diet-felino-renal-2kg-7790187341975.html",
+  "imagen": "https://puntomascotas.cl/15853-large_default/royal-canin-vet-diet-felino-renal-2kg.jpg",
+  "titulo": "Royal Canin Vet Diet Felino Renal 2Kg",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-ROYA-009.webp"
+ },
+ "GAT-ROYA-006": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/cats/35367-royal-canin-growth-kitten-34-2kg-7896181213031.html",
+  "imagen": "https://puntomascotas.cl/20167-large_default/royal-canin-growth-kitten-34-2kg.jpg",
+  "titulo": "Royal Canin Felino Growth Kitten 1.5Kg",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-ROYA-006.webp"
+ },
+ "GAT-ROYA-002": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/royal-canin/34468-royal-canin-urinary-care-15kg-7790187342767.html",
+  "imagen": "https://puntomascotas.cl/26030-large_default/royal-canin-urinary-care-15kg.jpg",
+  "titulo": "Royal Canin Urinary Care 1.5Kg",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-ROYA-002.webp"
+ },
+ "GAT-ROYA-001": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/cats/30139-royal-canin-vet-felino-urinary-so-feline-15kg-7790187340244.html",
+  "imagen": "https://puntomascotas.cl/15792-large_default/royal-canin-vet-felino-urinary-so-feline-15kg.jpg",
+  "titulo": "Royal Canin Vet Felino Urinary S/O Feline 1.5Kg",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-ROYA-001.webp"
+ },
+ "PER-SUPE-002": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "PER-SUPE-001": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "GAT-VETL-005": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/cats/38804-Vet-Life-Urinary-Struvite-Feline-2KG-7898604431220.html",
+  "imagen": "https://puntomascotas.cl/12613-large_default/Vet-Life-Urinary-Struvite-Feline-2KG.jpg",
+  "titulo": "Vet Life Gato Urinary Struvite 2KG",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-VETL-005.webp"
+ },
+ "GAT-WHIS-011": {
+  "fuente": "laikamascotas.cl",
+  "metodo": "código de barras",
+  "imagen": "https://static.laika.digital/products-3/7c49387a6846b26a518e8aab049bb97a_1710363277.jpg",
+  "titulo": "Whiskas - Alimento Seco Gato Adulto Sabor Pollo - WHISKAS  | Laika Mascotas",
+  "pagina": "https://laikamascotas.cl/whiskas-alimento-seco-para-gato-adulto-sabor-pollo",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-WHIS-011.webp"
+ },
+ "PER-ANIM-002": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "SAL-MEBE-001": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/farmacia-veterinaria/30514-mebermic-7800006010101.html",
+  "imagen": "https://puntomascotas.cl/8434-large_default/mebermic.jpg",
+  "titulo": "Antiparasitario Mebermic 1 Comprimido",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/SAL-MEBE-001.webp"
+ },
+ "SAL-DRAG-007": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/farmacia-veterinaria/30470-invermic-gatos-10ml-7800006002861.html",
+  "imagen": "https://puntomascotas.cl/649-large_default/invermic-gatos-10ml.jpg",
+  "titulo": "Invermic Gatos 10ml",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/SAL-DRAG-007.webp"
+ },
+ "SAL-DRAG-009": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/farmacia-veterinaria/30469-invermic-perros-gotas-10ml-7800006000249.html",
+  "imagen": "https://puntomascotas.cl/26749-large_default/invermic-perros-gotas-10ml.jpg",
+  "titulo": "Invermic Perros Gotas  10ml",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/SAL-DRAG-009.webp"
+ },
+ "SAL-DRAG-008": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-FIT-001": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-AMER-003": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/arenas-y-banos-sanitarios/40179-arena-america-litter-odor-seal-lavanda-15-kg-6956131001864.html",
+  "imagen": "https://puntomascotas.cl/16708-large_default/arena-america-litter-odor-seal-lavanda-15-kg.jpg",
+  "titulo": "Arena America Litter Odor Seal Lavanda 15 kg",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/ACC-AMER-003.webp"
+ },
+ "GAT-AMLI-001": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/arenas-y-banos-sanitarios/36239-arena-sanitaria-americalitter-ultra-odor-seal-7-kg-6956131000485.html",
+  "imagen": "https://puntomascotas.cl/13645-large_default/arena-sanitaria-americalitter-ultra-odor-seal-7-kg.jpg",
+  "titulo": "Arena Sanitaria AmericaLitter Ultra Odor Seal 7 kg",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-AMLI-001.webp"
+ },
+ "ACC-BENG-001": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-BENG-002": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-CRYS-001": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-CRYS-002": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-EASY-003": {
+  "fuente": "laikamascotas.cl",
+  "metodo": "código de barras",
+  "imagen": "https://static.laika.digital/products-3/78900_Emili_Pets___Arena_Aroma_Lavanda_1653944182_0_500x500.jpg",
+  "titulo": "Easy Clean - Arena Aglutinante Aroma Lavanda - EMILY PETS  | Laika Mascotas",
+  "pagina": "https://laikamascotas.cl/easy-clean-arena-aroma-lavanda",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/ACC-EASY-003.webp"
+ },
+ "ACC-EASY-002": {
+  "noEncontrada": true,
+  "descartada": "la página tiene varias variantes o es un pack",
+  "fecha": "2026-10-26"
+ },
+ "ACC-EASY-005": {
+  "fuente": "laikamascotas.cl",
+  "metodo": "código de barras",
+  "imagen": "https://static.laika.digital/products-3/78898_Emili_Pets___Arena_aroma_Manzana_1653943668_0_500x500.jpg",
+  "titulo": "Easy Clean - Arena Aglutinante Aroma Manzana - EMILY PETS  | Laika Mascotas",
+  "pagina": "https://laikamascotas.cl/easy-clean-arena-aroma-manzana",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/ACC-EASY-005.webp"
+ },
+ "ACC-EASY-001": {
+  "noEncontrada": true,
+  "descartada": "la página tiene varias variantes o es un pack",
+  "fecha": "2026-10-26"
+ },
+ "ACC-TOPK-003": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-TOPK-010": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-FITF-001": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/arenas-y-banos-sanitarios/36794-arena-fit-10-kg-7800006010187.html",
+  "imagen": "https://puntomascotas.cl/13535-large_default/arena-fit-10-kg.jpg",
+  "titulo": "Arena Fit Aglomerante Lavanda 10 kg",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/ACC-FITF-001.webp"
+ },
+ "ACC-FITF-002": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/arenas-y-banos-sanitarios/37997-arena-sanitaria-fit-formula-micro-crystal--7800006010132.html",
+  "imagen": "https://puntomascotas.cl/10902-large_default/arena-sanitaria-fit-formula-micro-crystal-.jpg",
+  "titulo": "Arena Sanitaria Fit Formula Micro Crystal ",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/ACC-FITF-002.webp"
+ },
+ "ACC-TOPK-004": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-NEOC-001": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-TOPK-006": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-TURB-004": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-TURB-001": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-ULTR-001": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/accesorios/30641-arena-sanitaria-para-gatos-ultra-fresh-633843851401.html",
+  "imagen": "https://puntomascotas.cl/891-large_default/arena-sanitaria-para-gatos-ultra-fresh.jpg",
+  "titulo": "Arena Sanitaria Para Gatos ULTRA FRESH 1.6KG",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/ACC-ULTR-001.webp"
+ },
+ "ACC-GEN-013": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-GEN-006": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-187": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-GEN-004": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-049": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-065": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-LEON-008": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-126": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-023": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-WOND-007": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-058": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "PER-LEON-001": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "PER-LEON-004": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "PER-LEON-006": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "PER-LEON-009": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "PER-LEON-010": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "PER-LEON-008": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "PER-LEON-007": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "PER-LEON-005": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-BUEN-011": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-051": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-152": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-LEON-007": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-BUEN-009": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-BUEN-008": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-BUEN-010": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-LEON-012": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-LEON-013": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-GEN-016": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-GEN-015": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "GAT-CHUR-020": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/churu-perros/42670-churu-dog-variedades-pollo-14g-50-und-8859387702715.html",
+  "imagen": "https://puntomascotas.cl/26465-large_default/churu-dog-variedades-pollo-14g-50-und.jpg",
+  "titulo": "Churu Dog Variedades Pollo 50 und 14g",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-CHUR-020.webp"
+ },
+ "GAT-CHUR-021": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/accesorios/40278-pack-golosinas-churu-gato-diet-atun-y-pollo-50-unds-857276007697.html",
+  "imagen": "https://puntomascotas.cl/17332-large_default/pack-golosinas-churu-gato-diet-atun-y-pollo-50-unds.jpg",
+  "titulo": "Pack Golosinas Churu Gato Atun y Pollo Variedades 50 unds",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-CHUR-021.webp"
+ },
+ "GAT-CHUR-017": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/accesorios/40151-golosinas-churu-bites-receta-de-pollo-850006715336.html",
+  "imagen": "https://puntomascotas.cl/16632-large_default/golosinas-churu-bites-receta-de-pollo.jpg",
+  "titulo": "Pack Golosinas Churu Gato Diet Atun y Pollo 50 unds",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-CHUR-017.webp"
+ },
+ "GAT-CHUR-001": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/accesorios/40152-pack-golosinas-churu-gato-nourish-atun-y-pollo-50-unds-850006715305.html",
+  "imagen": "https://puntomascotas.cl/16634-large_default/pack-golosinas-churu-gato-nourish-atun-y-pollo-50-unds.jpg",
+  "titulo": "Pack Golosinas Churu Gato Nourish Atun y Pollo 50 unds",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-CHUR-001.webp"
+ },
+ "ACC-MOND-151": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-WOND-011": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-WOND-012": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-TOPK-013": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-TOPK-011": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-TOPK-012": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-PETE-004": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-TOPK-001": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-120": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-121": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-119": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "GAT-CREM-008": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/golosinas-para-gatos/42085-cremi-box-chicken-food-mix-30-sachet-7804457002616.html",
+  "imagen": "https://puntomascotas.cl/24672-large_default/cremi-box-chicken-food-mix-30-sachet.jpg",
+  "titulo": "Cremi Box Chicken Food Mix 30 und 12grs",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-CREM-008.webp"
+ },
+ "GAT-CREM-007": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/golosinas-para-gatos/42086-cremi-box-sea-food-mix-30-sachet-7804457002623.html",
+  "imagen": "https://puntomascotas.cl/24671-large_default/cremi-box-sea-food-mix-30-sachet.jpg",
+  "titulo": "Cremi Box Mix del Mar 30 unds 12grs",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-CREM-007.webp"
+ },
+ "GAT-CREM-006": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/inicio/41343-naturalistic-cremi-box-Chicken-food-60un-7804457002593.html",
+  "imagen": "https://puntomascotas.cl/22839-large_default/naturalistic-cremi-box-Chicken-food-60un.jpg",
+  "titulo": "Naturalistic Cremi Box Chicken Food 60Un",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-CREM-006.webp"
+ },
+ "GAT-CREM-005": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/inicio/41342-naturalistic-cremi-box-sea-food-60un-7804457002609.html",
+  "imagen": "https://puntomascotas.cl/22840-large_default/naturalistic-cremi-box-sea-food-60un.jpg",
+  "titulo": "Naturalistic Cremi Box Sea Food 60Un",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-CREM-005.webp"
+ },
+ "SAL-MARB-003": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "SAL-BIOL-005": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-135": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-012": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-055": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-053": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-013": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-056": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-076": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-077": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-014": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-125": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-132": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-PETE-001": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-038": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-134": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-LEON-010": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MUND-001": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-002": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-001": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-003": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-093": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-037": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-024": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "PER-MOND-009": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "PER-MOND-014": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "PER-MOND-013": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "PER-MOND-004": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "PER-MOND-003": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "PER-MOND-008": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "PER-MOND-006": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "PER-MOND-018": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "PER-MARB-001": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "PER-MARB-009": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "PER-MOND-007": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "PER-MOND-016": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "PER-MARB-006": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "PER-MARB-002": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "PER-MARB-008": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "PER-MARB-004": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "PER-MARB-005": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-WOND-006": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-007": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-036": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-BUEN-003": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-BUEN-001": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-LEON-011": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-LEON-015": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "SAL-GEN-004": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "PER-MOND-024": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MARB-003": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MARB-013": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MARB-015": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MARB-008": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MARB-007": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MARB-005": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-136": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MARB-006": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-BUEN-006": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-034": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-035": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-095": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-096": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-097": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-WOND-004": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-GEN-002": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-008": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-032": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-BUEN-002": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MUND-002": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MUND-003": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-098": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-LEON-016": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-099": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-100": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-101": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-102": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-103": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-104": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-105": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-DRAG-003": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/accesorios/34056-colonia-animal-health-blue-160ml-7800006008078.html",
+  "imagen": "https://puntomascotas.cl/3751-large_default/colonia-animal-health-blue-160ml.jpg",
+  "titulo": "Colonia Animal Health Blue 160ml",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/ACC-DRAG-003.webp"
+ },
+ "ACC-DRAG-004": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/accesorios/34058-colonia-animal-healt-hembra-160ml-7800006008061.html",
+  "imagen": "https://puntomascotas.cl/17333-large_default/colonia-animal-healt-hembra-160ml.jpg",
+  "titulo": "Colonia Animal Healt Hembra 160ml",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/ACC-DRAG-004.webp"
+ },
+ "ACC-PETB-007": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-PETB-011": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-PETB-008": {
+  "fuente": "tusmascotas.cl",
+  "metodo": "código de barras",
+  "imagen": "https://www.tusmascotas.cl/wp-content/uploads/2024/09/colonia-macho.jpg",
+  "titulo": "Colonia Perro Macho - Petbrilho",
+  "pagina": "https://www.tusmascotas.cl/product/colonia-perro-macho-petbrilho/",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/ACC-PETB-008.webp"
+ },
+ "PER-WAMP-001": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/wanpy/41385-Wanpy-Tasty-Meat-Paste-Cordero-90gr-6927749870234.html",
+  "imagen": "https://puntomascotas.cl/23035-large_default/Wanpy-Tasty-Meat-Paste-Cordero-90gr.jpg",
+  "titulo": "Wanpy Tasty Meat Paste Cordero para Perros 90 gr",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/PER-WAMP-001.webp"
+ },
+ "PER-WAMP-002": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/wanpy/41384-Wanpy-Tasty-Meat-Paste-Pato-90gr-6927749870210.html",
+  "imagen": "https://puntomascotas.cl/23032-large_default/Wanpy-Tasty-Meat-Paste-Pato-90gr.jpg",
+  "titulo": "Wanpy Tasty Meat Paste Pato para Perros 90 gr",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/PER-WAMP-002.webp"
+ },
+ "PER-WAMP-003": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/wanpy/41386-Wanpy-Tasty-Meat-Paste-Carne-90gr-6927749870227.html",
+  "imagen": "https://puntomascotas.cl/23040-large_default/Wanpy-Tasty-Meat-Paste-Carne-90gr.jpg",
+  "titulo": "Wanpy Tasty Meat Paste Vacuno para Perros 90 gr",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/PER-WAMP-003.webp"
+ },
+ "GAT-WANP-002": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/golosinas-para-gatos/41388-Wanpy-Tasty-Meat-Paste-Pato-Gatos-90gr-6927749871521.html",
+  "imagen": "https://puntomascotas.cl/23046-large_default/Wanpy-Tasty-Meat-Paste-Pato-Gatos-90gr.jpg",
+  "titulo": "Wanpy Tasty Meat Paste Pato para Gatos 90 gr",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-WANP-002.webp"
+ },
+ "GAT-WANP-001": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/golosinas-para-gatos/41389-Wanpy-Tasty-Meat-Paste-Atun-Pollo-Gatos-90gr-6927749871545.html",
+  "imagen": "https://puntomascotas.cl/23051-large_default/Wanpy-Tasty-Meat-Paste-Atun-Pollo-Gatos-90gr.jpg",
+  "titulo": "Wanpy Tasty Meat Paste Atún y Pollo para Gatos 90 gr",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-WANP-001.webp"
+ },
+ "ACC-MOND-033": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-LEON-019": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-LEON-018": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-LEON-020": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-LEON-002": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-122": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-LEON-017": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-LEON-003": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-118": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "SAL-BIOL-003": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "PER-MAST-010": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "GAT-DENT-001": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/golosinas-para-gatos/37765-dentalife-gatos-40grs-7891000247495.html",
+  "imagen": "https://puntomascotas.cl/10592-large_default/dentalife-gatos-40grs.jpg",
+  "titulo": "Dentalife Gatos 40grs",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-DENT-001.webp"
+ },
+ "PER-DENT-001": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "PER-DENT-002": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "PER-DENT-003": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-PETB-010": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-BIOL-007": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-FELI-001": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/felix/37753-felix-bocaditos-travesuras-salmon-40gr-7891000117590.html",
+  "imagen": "https://puntomascotas.cl/28237-large_default/felix-bocaditos-travesuras-salmon-40gr.jpg",
+  "titulo": "Felix Bocaditos Travesuras Salmon 40gr",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/ACC-FELI-001.webp"
+ },
+ "GAT-FELI-012": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/felix/37754-felix-bocaditos-travesura-pollo-40grs-7891000117576.html",
+  "imagen": "https://puntomascotas.cl/28238-large_default/felix-bocaditos-travesura-pollo-40grs.jpg",
+  "titulo": "Felix Bocaditos Travesura Pollo 40grs",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-FELI-012.webp"
+ },
+ "PER-MARB-020": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "PER-MARB-018": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "SAL-GEN-001": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MUND-008": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MUND-009": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MUND-006": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-026": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "PER-FITF-013": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-047": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-027": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-BUEN-004": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-BUEN-005": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "PER-FITF-001": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/fit-snack/41528-fit-formula-Galleta-Carne-400g-7800006010712.html",
+  "imagen": "https://puntomascotas.cl/23685-large_default/fit-formula-Galleta-Carne-400g.jpg",
+  "titulo": "Fit Formula Galleta Carne 400g",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/PER-FITF-001.webp"
+ },
+ "SAL-BIOL-008": {
+  "fuente": "tusmascotas.cl",
+  "metodo": "código de barras",
+  "imagen": "https://www.tusmascotas.cl/wp-content/uploads/2020/10/pasto-bioline-1.jpg",
+  "titulo": "Cat Grass kit - Bioline",
+  "pagina": "https://www.tusmascotas.cl/product/cat-grass-kit-kit-de-pasto-para-gatos-bioline/",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/SAL-BIOL-008.webp"
+ },
+ "GAT-BIOL-003": {
+  "fuente": "tusmascotas.cl",
+  "metodo": "código de barras",
+  "imagen": "https://www.tusmascotas.cl/wp-content/uploads/2020/10/Bioline-Galletas-de-Catnip-y-Salmon-1.jpg",
+  "titulo": "Bioline Galletas de Catnip y Salmon",
+  "pagina": "https://www.tusmascotas.cl/product/bioline-galletas-de-catnip-y-salmon/",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-BIOL-003.webp"
+ },
+ "GAT-CATS-007": {
+  "noEncontrada": true,
+  "descartada": "misma foto que otro producto",
+  "fecha": "2026-10-26"
+ },
+ "GAT-CATS-001": {
+  "fuente": "laikamascotas.cl",
+  "metodo": "código de barras",
+  "imagen": "https://static.laika.digital/products-3/78035_Cats_Snack___Galleta_de_At__n_con_Hierba_Gatera_1651161354_0_500x500.jpg",
+  "titulo": "Cats Snack - Galleta de Atún con Hierba Gatera - CATS SNACK  | Laika Mascotas",
+  "pagina": "https://laikamascotas.cl/cats-snack-galleta-de-atun-con-hierba-gatera",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-CATS-001.webp"
+ },
+ "GAT-CATS-010": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "GAT-CATS-002": {
+  "fuente": "laikamascotas.cl",
+  "metodo": "código de barras",
+  "imagen": "https://static.laika.digital/products-3/78043_Cats_Snack___Galletas_Rellenas_de_At__n_con_Pollo_1651162026_0_500x500.jpg",
+  "titulo": "Cats Snack - Galletas Rellenas de Atún con Pollo - CATS SNACK  | Laika Mascotas",
+  "pagina": "https://laikamascotas.cl/cats-snack-galletas-rellenas-de-atun-con-pollo",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-CATS-002.webp"
+ },
+ "GAT-CATS-008": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "GAT-CATS-003": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "GAT-CATS-006": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "GAT-CATS-009": {
+  "fuente": "laikamascotas.cl",
+  "metodo": "código de barras",
+  "imagen": "https://static.laika.digital/products-3/78036_205756_Cats_Snack___Galleta_de_Pollo_con_Hierba_Gatera_1668516210_800x800.jpg",
+  "titulo": "Cats Snack - Galleta de Pollo con Hierba Gatera - CATS SNACK  | Laika Mascotas",
+  "pagina": "https://laikamascotas.cl/cats-snack-galleta-de-pollo-con-hierba-gatera",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-CATS-009.webp"
+ },
+ "GAT-CATS-004": {
+  "noEncontrada": true,
+  "descartada": "formato distinto",
+  "fecha": "2026-10-26"
+ },
+ "GAT-CATS-005": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-GEN-026": {
+  "fuente": "laikamascotas.cl",
+  "metodo": "nombre (marca, línea, sabor y tamaño)",
+  "imagen": "https://static.laika.digital/products-3/78038_Cats_Snack___Galletas_de_Salm__n_y_Pollo_con_Hierba_Gatera_1651161621_0_500x500.jpg",
+  "titulo": "Cats Snack - Galletas de Salmón y Pollo con Hierba Gatera - CATS SNACK  | Laika Mascotas",
+  "pagina": "https://laikamascotas.cl/cats-snack-galletas-de-salmon-y-pollo-con-hierba-gatera",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/ACC-GEN-026.webp"
+ },
+ "GAT-FIT-001": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/golosinas-para-gatos/40255-galleta-fit-snack-gato-con-salmon-7800006011108.html",
+  "imagen": "https://puntomascotas.cl/17062-large_default/galleta-fit-snack-gato-con-salmon.jpg",
+  "titulo": "Galleta Fit Snack Gato con Salmon 100grs",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-FIT-001.webp"
+ },
+ "PER-MARB-014": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "PER-MARB-015": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "PER-MARB-016": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "PER-CACH-001": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "PER-MAST-001": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "PER-MAST-003": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "PER-MAST-009": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "PER-NATU-002": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "PER-NATU-001": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-094": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-039": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-133": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MUND-004": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-LEON-009": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-022": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-LEON-022": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-041": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-158": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MUND-005": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-LEON-001": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-LEON-004": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-FELI-002": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-166": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-016": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-190": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-159": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-160": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-GEN-005": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-162": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-163": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-164": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MARB-014": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-137": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-LEON-023": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-GEN-008": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-LEON-024": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-138": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-139": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-040": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-018": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-015": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-091": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-LEON-005": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-021": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MARB-018": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "SAL-DRAG-010": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/accesorios/34134-quit-olor-500ml-7800006003004.html",
+  "imagen": "https://puntomascotas.cl/3855-large_default/quit-olor-500ml.jpg",
+  "titulo": "Eliminador de Olores Quit Olor 500ml",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/SAL-DRAG-010.webp"
+ },
+ "GAT-APPL-002": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/inicio/41338-pack-24-latas-applaws-adulto-pechuga-de-pollo-con-caldito-5060481898959.html",
+  "imagen": "https://puntomascotas.cl/22821-large_default/pack-24-latas-applaws-adulto-pechuga-de-pollo-con-caldito.jpg",
+  "titulo": "Pack 24 Latas Applaws Adulto Pechuga de Pollo Con Caldito 70grs",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-APPL-002.webp"
+ },
+ "GAT-APPL-001": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/inicio/38968-pack-24-latas-applaws-adulto-pollo-y-pato-lata-con-caldito-5060481899055.html",
+  "imagen": "https://puntomascotas.cl/12878-large_default/pack-24-latas-applaws-adulto-pollo-y-pato-lata-con-caldito.jpg",
+  "titulo": "Pack 24 Latas Applaws Adulto Pollo Y Pato Con Caldito",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-APPL-001.webp"
+ },
+ "GAT-BEST-004": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "GAT-BEST-003": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "GAT-BEST-005": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "PER-BEST-001": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "GAT-CHAM-003": {
+  "fuente": "laikamascotas.cl",
+  "metodo": "código de barras",
+  "imagen": "https://static.laika.digital/products-3/69696_157350_Champion_Cat___Lata_Carne_1652106149_500x500.jpg",
+  "titulo": "Champion Cat - Alimento Húmedo Gatos Adultos Sabor Carne - CHAMPION CAT  | Laika Mascotas",
+  "pagina": "https://laikamascotas.cl/champion-cat-lata-carne",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-CHAM-003.webp"
+ },
+ "GAT-CHAM-001": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "GAT-CHAM-002": {
+  "fuente": "laikamascotas.cl",
+  "metodo": "código de barras",
+  "imagen": "https://static.laika.digital/products-3/69699_163458_Champion_Cat___Lata_Pollo_1654707971_500x500.jpg",
+  "titulo": "Champion Cat - Alimento Húmedo Gatos Adultos Sabor Pollo - CHAMPION CAT  | Laika Mascotas",
+  "pagina": "https://laikamascotas.cl/champion-cat-lata-pollo",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-CHAM-002.webp"
+ },
+ "PER-CHAM-003": {
+  "fuente": "laikamascotas.cl",
+  "metodo": "código de barras",
+  "imagen": "https://static.laika.digital/products-3/bae2733e66121cc8f2f2932503bd9d24_1682631695.jpg",
+  "titulo": "Champion Dog - Recetas de Paté Cachorro Sabor Pollo - CHAMPION DOG  | Laika Mascotas",
+  "pagina": "https://laikamascotas.cl/champion-dog-lata-cachorro-recetas-de-pate",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/PER-CHAM-003.webp"
+ },
+ "PER-CHAM-004": {
+  "fuente": "laikamascotas.cl",
+  "metodo": "código de barras",
+  "imagen": "https://static.laika.digital/products-3/876320fa9d1a4a48ff8211d498a380d4_1682631842.jpg",
+  "titulo": "Champion Dog - Recetas de Paté Adultos Sabor Carne - CHAMPION DOG  | Laika Mascotas",
+  "pagina": "https://laikamascotas.cl/champion-dog-lata-carne-y-cereales",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/PER-CHAM-004.webp"
+ },
+ "PER-CHAM-005": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "GAT-FANC-001": {
+  "fuente": "superzoo.cl",
+  "metodo": "código de barras",
+  "imagen": "https://production-na01-mascotaslatinas.demandware.net/on/demandware.static/-/Sites-SuperZoo-master-catalog/default/dw279809c5/images/1aa09-purinawetpouch2.jpg",
+  "titulo": "Alimento h&uacute;medo para gatos FANCY FEAST&reg; Mousse de Carne 85GR",
+  "pagina": "https://www.superzoo.cl/gato/alimentos/alimentos-humedos/alimento-humedo-para-gatos-fancy-feast-mousse-de-carne-85gr/6147.html",
+  "fecha": "2026-10-26",
+  "error": "HTTP 403"
+ },
+ "GAT-FANC-004": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "GAT-FANC-003": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "GAT-FANC-002": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "GAT-FELI-008": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "GAT-FELI-009": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "GAT-FELI-007": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "PER-FITF-024": {
+  "fuente": "petcity.cl",
+  "metodo": "nombre (marca, línea, sabor y tamaño)",
+  "imagen": "https://petcity.cl/wp-content/uploads/2022/09/fit-formula-snack-cachorro_lata_pollo.jpg",
+  "titulo": "Fit Formula Lata Cachorro Pollo 280 Grs - Petcity",
+  "pagina": "https://petcity.cl/tienda/fit-formula-lata-cachorro-pollo-280-grs/",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/PER-FITF-024.webp"
+ },
+ "GAT-FITF-002": {
+  "fuente": "clubdeperrosygatos.cl",
+  "metodo": "código de barras",
+  "imagen": "https://www.clubdeperrosygatos.cl/wp-content/uploads/2023/05/FIT-FORMULA-GATO-POLLO.webp",
+  "titulo": "Fit Formula Lata para gato sabor pollo",
+  "pagina": "https://www.clubdeperrosygatos.cl/producto/fit-formula-alimento-humedo-gato-sabor-pollo/",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-FITF-002.webp"
+ },
+ "PER-FITF-015": {
+  "fuente": "clubdeperrosygatos.cl",
+  "metodo": "código de barras",
+  "imagen": "https://www.clubdeperrosygatos.cl/wp-content/uploads/2023/05/FIT-FORMULA-ADULTO-CARNE.webp",
+  "titulo": "Fit Formula Lata para perro adulto carne",
+  "pagina": "https://www.clubdeperrosygatos.cl/producto/fit-formula-alimento-humedo-perro-adulto-carne/",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/PER-FITF-015.webp"
+ },
+ "PER-FITF-010": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "GAT-FITF-001": {
+  "fuente": "clubdeperrosygatos.cl",
+  "metodo": "código de barras",
+  "imagen": "https://www.clubdeperrosygatos.cl/wp-content/uploads/2023/05/FIP-FORMULA-GATO-PESCADO.webp",
+  "titulo": "Fit Formula Lata para gato sabor pescado",
+  "pagina": "https://www.clubdeperrosygatos.cl/producto/fit-formula-alimento-humedo-gato-sabor-pescado/",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-FITF-001.webp"
+ },
+ "GAT-FITG-002": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "GAT-FITG-001": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "GAT-FITG-003": {
+  "fuente": "clubdeperrosygatos.cl",
+  "metodo": "código de barras",
+  "imagen": "https://www.clubdeperrosygatos.cl/wp-content/uploads/2023/05/t-formula-lata-gato-atun-y-vegetales.webp",
+  "titulo": "Fit Formula Lata para gato atún y vegetales",
+  "pagina": "https://www.clubdeperrosygatos.cl/producto/fit-formula-lata-gato-atun-y-vegetales/",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-FITG-003.webp"
+ },
+ "GAT-LEOD-004": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/cats/41090-leonardo-latas-quality-selection-ave-400g-4002633756220.html",
+  "imagen": "https://puntomascotas.cl/21713-large_default/leonardo-latas-quality-selection-ave-400g.jpg",
+  "titulo": "Leonardo Latas Quality Selection Ave 400g",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-LEOD-004.webp"
+ },
+ "GAT-LEON-001": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/cats/38935-leonardo-latas-quality-selection-higado-04kg-4002633756237.html",
+  "imagen": "https://puntomascotas.cl/12811-large_default/leonardo-latas-quality-selection-higado-04kg.jpg",
+  "titulo": "Leonardo Latas Quality Selection Higado 0,4kg",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-LEON-001.webp"
+ },
+ "GAT-LEOD-002": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/cats/41087-leonardo-latas-quality-selection-pato-400g-4002633756268.html",
+  "imagen": "https://puntomascotas.cl/21701-large_default/leonardo-latas-quality-selection-pato-400g.jpg",
+  "titulo": "Leonardo Latas Quality Selection Pato 400g",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-LEOD-002.webp"
+ },
+ "GAT-LEOD-003": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/cats/38931-leonardo-latas-quality-selection-pescado-04kg-4002633756206.html",
+  "imagen": "https://puntomascotas.cl/21703-large_default/leonardo-latas-quality-selection-pescado-04kg.jpg",
+  "titulo": "Leonardo Latas Quality Selection Pescado 0,4kg",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-LEOD-003.webp"
+ },
+ "GAT-LEOD-005": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/cats/38933-leonardo-latas-quality-selection-ternera-04kg-4002633756251.html",
+  "imagen": "https://puntomascotas.cl/16465-large_default/leonardo-latas-quality-selection-ternera-04kg.jpg",
+  "titulo": "Leonardo Latas Quality Selection Ternera 0,4kg",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-LEOD-005.webp"
+ },
+ "GAT-LEOD-001": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/cats/38937-leonardo-latas-quality-selection-conejo-04kg-4002633756213.html",
+  "imagen": "https://puntomascotas.cl/12813-large_default/leonardo-latas-quality-selection-conejo-04kg.jpg",
+  "titulo": "Leonardo Latas Quality Selection Conejo 0,4kg",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-LEOD-001.webp"
+ },
+ "GAT-LEON-003": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/cats/38928-leonardo-latas-quality-selection-kitten-02kg-4002633756145.html",
+  "imagen": "https://puntomascotas.cl/12804-large_default/leonardo-latas-quality-selection-kitten-02kg.jpg",
+  "titulo": "Leonardo Latas Quality Selection Kitten 0,2kg",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-LEON-003.webp"
+ },
+ "GAT-LEON-004": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/cats/41089-leonardo-latas-quality-selection-ave-200g-4002633756121.html",
+  "imagen": "https://puntomascotas.cl/21709-large_default/leonardo-latas-quality-selection-ave-200g.jpg",
+  "titulo": "Leonardo Latas Quality Selection Ave 200g",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-LEON-004.webp"
+ },
+ "GAT-LEON-005": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/cats/38932-leonardo-latas-quality-selection-ternera-02kg-4002633756152.html",
+  "imagen": "https://puntomascotas.cl/16464-large_default/leonardo-latas-quality-selection-ternera-02kg.jpg",
+  "titulo": "Leonardo Latas Quality Selection Ternera 0,2kg",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-LEON-005.webp"
+ },
+ "PER-PEDI-008": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "PER-GEN-001": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "PER-ROYA-002": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "GAT-TAST-001": {
+  "fuente": "tusmascotas.cl",
+  "metodo": "código de barras",
+  "imagen": "https://www.tusmascotas.cl/wp-content/uploads/2024/03/Latas-Atun-y-Salmon-Tasty-Freshest.jpg",
+  "titulo": "Latas Atún y Salmon Tasty Freshest",
+  "pagina": "https://www.tusmascotas.cl/product/latas-atun-y-salmon-tasty-freshest/",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-TAST-001.webp"
+ },
+ "GAT-VETL-001": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/cats/38851-Vet-Life-Feline-Gastrointestinal-Humedo-85-gr-8606014102857.html",
+  "imagen": "https://puntomascotas.cl/16096-large_default/Vet-Life-Feline-Gastrointestinal-Humedo-85-gr.jpg",
+  "titulo": "Vet Life Gato Gastrointestinal Lata 85 gr",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-VETL-001.webp"
+ },
+ "PER-VETL-001": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/dogs/38855-Vet-Life-Canine-Gastrointestinal-Humedo-300-gr-8606014102796.html",
+  "imagen": "https://puntomascotas.cl/12664-large_default/Vet-Life-Canine-Gastrointestinal-Humedo-300-gr.jpg",
+  "titulo": "Vet Life Perro Gastrointestinal Humedo Lata 300 gr",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/PER-VETL-001.webp"
+ },
+ "GAT-VETL-004": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/cats/38853-Vet-Life-Feline-Struvite-Humedo-85-gr-8606014102871.html",
+  "imagen": "https://puntomascotas.cl/12662-large_default/Vet-Life-Feline-Struvite-Humedo-85-gr.jpg",
+  "titulo": "Vet Life Gato Struvite Lata 85 gr",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-VETL-004.webp"
+ },
+ "PER-VETL-003": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/dogs/38856-Vet-Life-Canine-Hypoallergenic-Duck-And-Potato-300gr-8606014102802.html",
+  "imagen": "https://puntomascotas.cl/12665-large_default/Vet-Life-Canine-Hypoallergenic-Duck-And-Potato-300gr.jpg",
+  "titulo": "Vet Life Perro Hipoalergénico Pato y Papa Lata 300gr",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/PER-VETL-003.webp"
+ },
+ "GAT-VETL-002": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/cats/38852-Vet-Life-Feline-Renal-Humedo-85-gr-8606014102864.html",
+  "imagen": "https://puntomascotas.cl/12981-large_default/Vet-Life-Feline-Renal-Humedo-85-gr.jpg",
+  "titulo": "Vet Life Gato Renal Lata 85 gr",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-VETL-002.webp"
+ },
+ "GAT-VETL-003": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/cats/38850-vet-life-feline-lata-convalescense-85-gr-8606014102840.html",
+  "imagen": "https://puntomascotas.cl/12659-large_default/vet-life-feline-lata-convalescense-85-gr.jpg",
+  "titulo": "Vet Life Gato Convalescence Lata 85 gr",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-VETL-003.webp"
+ },
+ "PER-VETL-002": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/dogs/38857-Vet-Life-Canine-Hypoallergenic-Pescado-And-Potato-300gr-8606014102819.html",
+  "imagen": "https://puntomascotas.cl/12666-large_default/Vet-Life-Canine-Hypoallergenic-Pescado-And-Potato-300gr.jpg",
+  "titulo": "Vet Life Perro Hipoalergénico Pescado y Papa Lata 300gr",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/PER-VETL-002.webp"
+ },
+ "GAT-WHIS-008": {
+  "fuente": "laikamascotas.cl",
+  "metodo": "código de barras",
+  "imagen": "https://static.laika.digital/products-3/3cf655c7d629e1834860abc05d99cefc_1695237710.jpg",
+  "titulo": "Whiskas - Alimento Húmedo Lata Gato Adulto Atún - WHISKAS  | Laika Mascotas",
+  "pagina": "https://laikamascotas.cl/whiskas-alimento-humedo-en-lata-gatos-adultos-sabor-atun",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-WHIS-008.webp"
+ },
+ "GAT-WHIS-007": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "SAL-DRAG-011": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/farmacia-veterinaria/30457-mamistop-perros-125gr-7800006003561.html",
+  "imagen": "https://puntomascotas.cl/12852-large_default/mamistop-perros-125gr.jpg",
+  "titulo": "Leche para Cachorros Mamistop Perros 125gr",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/SAL-DRAG-011.webp"
+ },
+ "GAT-DRAG-001": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/farmacia-veterinaria/30458-mamistop-gatos-100gr-7800006004421.html",
+  "imagen": "https://puntomascotas.cl/10896-large_default/mamistop-gatos-100gr.jpg",
+  "titulo": "Leche para Gatitos Mamistop 100gr",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-DRAG-001.webp"
+ },
+ "ACC-MOND-031": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "OTR-PRON-001": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-048": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "SAL-DRAG-001": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/farmacia-veterinaria/30436-matipet-crema-7800006007545.html",
+  "imagen": "https://puntomascotas.cl/8461-large_default/matipet-crema.jpg",
+  "titulo": "Matipet Crema",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/SAL-DRAG-001.webp"
+ },
+ "SAL-DRAG-002": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/farmacia-veterinaria/40658-matipet-spray-100-ml-7800006011276.html",
+  "imagen": "https://puntomascotas.cl/18952-large_default/matipet-spray-100-ml.jpg",
+  "titulo": "Matipet Spray 100 ml",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/SAL-DRAG-002.webp"
+ },
+ "ACC-MOND-011": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-010": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-LEON-006": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-LEON-025": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-020": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-THXP-001": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-THXP-004": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-THXP-003": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-THXP-002": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-BUEN-014": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-BUEN-015": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-149": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "PER-MOND-015": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "PER-MOND-002": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "PER-MOND-010": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "PER-MOND-005": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "PER-MOND-017": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "SAL-BIOL-011": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "PER-BUEN-002": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "OTR-CANA-002": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-GEN-027": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-029": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MARB-012": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-GEN-029": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-044": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-PETE-002": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-PETE-003": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MARB-002": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-106": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-WOND-005": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-045": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MARB-001": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-GEN-025": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-043": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-042": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-046": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-107": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-108": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-131": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-GEN-014": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-BIOL-002": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-177": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-196": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-025": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-176": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-HAPP-001": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-FURM-001": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-FURM-003": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-FURM-002": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-006": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-004": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-FURM-004": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "GAT-BIOL-002": {
+  "fuente": "tusmascotas.cl",
+  "metodo": "código de barras",
+  "imagen": "https://www.tusmascotas.cl/wp-content/uploads/2020/10/keep-of-spray-bioline.jpg",
+  "titulo": "Repelente para gatos - Bioline - Keep of Spray for Cat",
+  "pagina": "https://www.tusmascotas.cl/product/keep-of-spray-for-cat-repelente-para-gatos-bioline/",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-BIOL-002.webp"
+ },
+ "SAL-DRAG-012": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/accesorios/33197-pet-out-repelente-perrogato-160ml-7800006003394.html",
+  "imagen": "https://puntomascotas.cl/2348-large_default/pet-out-repelente-perrogato-160ml.jpg",
+  "titulo": "Repelente Pet Out Perro y Gato 160ml",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/SAL-DRAG-012.webp"
+ },
+ "GAT-BIOL-001": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-005": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "PER-TOPK-001": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-TOPK-007": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-BIOL-011": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-GEN-023": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-BIOL-008": {
+  "fuente": "laikamascotas.cl",
+  "metodo": "código de barras",
+  "imagen": "https://static.laika.digital/products-3/78009_Bioline___Shampoo_en_Seco_1651087705_0_500x500.jpg",
+  "titulo": "Bioline - Shampoo En Seco - BIOLINE  | Laika Mascotas",
+  "pagina": "https://laikamascotas.cl/bioline-shampoo-en-seco",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/ACC-BIOL-008.webp"
+ },
+ "ACC-DRAG-002": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/higiene-y-aseo-perros/36412-shampoo-matico-con-aloe-vera-7800006010156.html",
+  "imagen": "https://puntomascotas.cl/8025-large_default/shampoo-matico-con-aloe-vera.jpg",
+  "titulo": "Shampoo Skindrag Matico con Aloe Vera",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/ACC-DRAG-002.webp"
+ },
+ "ACC-DRAG-001": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/accesorios/33977-canish-espuma-seco-160g-perros-y-gatos-7800006003783.html",
+  "imagen": "https://puntomascotas.cl/23223-large_default/canish-espuma-seco-160g-perros-y-gatos.jpg",
+  "titulo": "Canish Espuma Seca 160g Perros y Gatos",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/ACC-DRAG-001.webp"
+ },
+ "ACC-CANI-001": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/accesorios/30548-shampoo-canish-extrabrillo-7800006004476.html",
+  "imagen": "https://puntomascotas.cl/893-large_default/shampoo-canish-extrabrillo.jpg",
+  "titulo": "Shampoo Canish Hipoalergénico",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/ACC-CANI-001.webp"
+ },
+ "ACC-PETB-003": {
+  "fuente": "tusmascotas.cl",
+  "metodo": "código de barras",
+  "imagen": "https://www.tusmascotas.cl/wp-content/uploads/2024/09/BRI131_1766409157.webp",
+  "titulo": "Shampoo de Avena y Miel - Natureza Petbrilho",
+  "pagina": "https://www.tusmascotas.cl/product/shampoo-de-avena-y-miel-natureza-petbrilho/",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/ACC-PETB-003.webp"
+ },
+ "ACC-PETB-001": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-PETB-006": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-PETB-005": {
+  "fuente": "tusmascotas.cl",
+  "metodo": "código de barras",
+  "imagen": "https://www.tusmascotas.cl/wp-content/uploads/2024/09/pelitos-claros.jpg",
+  "titulo": "Shampoo Pelos Claros 500ml - Petbrilho",
+  "pagina": "https://www.tusmascotas.cl/product/shampoo-pelos-claros-500ml-natureza-petbrilho/",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/ACC-PETB-005.webp"
+ },
+ "ACC-PETB-004": {
+  "fuente": "tusmascotas.cl",
+  "metodo": "código de barras",
+  "imagen": "https://www.tusmascotas.cl/wp-content/uploads/2024/09/pelo-oscuro.jpg",
+  "titulo": "Shampoo Pelos Oscuros 500ml- Petbrilho",
+  "pagina": "https://www.tusmascotas.cl/product/shampoo-pelos-oscuros-500ml-petbrilho/",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/ACC-PETB-004.webp"
+ },
+ "ACC-TOPK-015": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-PETB-002": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "GAT-CHUR-008": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/golosinas-para-gatos/41417-Churu-Bisque-atun-salmon-40g-850030015976.html",
+  "imagen": "https://puntomascotas.cl/23190-large_default/Churu-Bisque-atun-salmon-40g.jpg",
+  "titulo": "Churu Bisque Atún y Salmon 40g",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-CHUR-008.webp"
+ },
+ "GAT-CHUR-006": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/golosinas-para-gatos/41415-Churu-Bisque-Pollo-40g-850030015990.html",
+  "imagen": "https://puntomascotas.cl/23186-large_default/Churu-Bisque-Pollo-40g.jpg",
+  "titulo": "Churu Bisque Pollo 40g",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-CHUR-006.webp"
+ },
+ "GAT-CHUR-015": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "PER-CHUR-001": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/accesorios/39051-golosinas-churu-receta-perro-pollo-4-unds-850006715398.html",
+  "imagen": "https://puntomascotas.cl/23253-large_default/golosinas-churu-receta-perro-pollo-4-unds.jpg",
+  "titulo": "Golosinas Churu Receta Perro Pollo 4 unds",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/PER-CHUR-001.webp"
+ },
+ "PER-CHUR-002": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/accesorios/39047-golosinas-churu-perro-pollo-y-vegetales-4unds-850006715435.html",
+  "imagen": "https://puntomascotas.cl/13094-large_default/golosinas-churu-perro-pollo-y-vegetales-4unds.jpg",
+  "titulo": "Golosinas Churu Perro Pollo y Vegetales 4unds",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/PER-CHUR-002.webp"
+ },
+ "GAT-CHUR-010": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/golosinas-para-gatos/36779-golosina-ciao-grilled-tuna-fillet-855958006587.html",
+  "imagen": "https://puntomascotas.cl/17331-large_default/golosina-ciao-grilled-tuna-fillet.jpg",
+  "titulo": "Golosinas Ciao Churu Atun y Ostiones",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-CHUR-010.webp"
+ },
+ "GAT-CHUR-012": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/golosinas-para-gatos/36781-golosina-ciao-grilled-tuna-fillet-855958006570.html",
+  "imagen": "https://puntomascotas.cl/17329-large_default/golosina-ciao-grilled-tuna-fillet.jpg",
+  "titulo": "Golosinas Ciao Churu Pollo",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-CHUR-012.webp"
+ },
+ "GAT-CHUR-009": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/golosinas-para-gatos/40888-golosina-churu-gato-pollo-con-carne-850006715343.html",
+  "imagen": "https://puntomascotas.cl/26563-large_default/golosina-churu-gato-pollo-con-carne.jpg",
+  "titulo": "Golosina Churu Gato Pollo con Carne",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-CHUR-009.webp"
+ },
+ "GAT-CHUR-011": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/golosinas-para-gatos/37821-golosina-ciao-grilled-tuna-fillet-855958006662.html",
+  "imagen": "https://puntomascotas.cl/23226-large_default/golosina-ciao-grilled-tuna-fillet.jpg",
+  "titulo": "Golosinas Ciao Churu Atun con Salmon",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-CHUR-011.webp"
+ },
+ "GAT-CREM-003": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "GAT-CREM-001": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/inicio/41348-naturalistic-cremi-salmon-camaron-60g-7804457002555.html",
+  "imagen": "https://puntomascotas.cl/22861-large_default/naturalistic-cremi-salmon-camaron-60g.jpg",
+  "titulo": "Naturalistic Cremi Salmón & Camarón 60gr",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-CREM-001.webp"
+ },
+ "GAT-CREM-004": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/inicio/41344-naturalistic-cremi-atun-60un-7804457002487.html",
+  "imagen": "https://puntomascotas.cl/22844-large_default/naturalistic-cremi-atun-60un.jpg",
+  "titulo": "Naturalistic Cremi Atún 60gr",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-CREM-004.webp"
+ },
+ "GAT-CREM-002": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/inicio/41345-naturalistic-cremi-salmon-atun-60un-7804457002494.html",
+  "imagen": "https://puntomascotas.cl/22847-large_default/naturalistic-cremi-salmon-atun-60un.jpg",
+  "titulo": "Naturalistic Cremi Salmon & Atún 60gr",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-CREM-002.webp"
+ },
+ "PER-PURI-001": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/accesorios/32777-doguito-medallones-de-carne-7891000098479.html",
+  "imagen": "https://puntomascotas.cl/1715-large_default/doguito-medallones-de-carne.jpg",
+  "titulo": "Doguito Medallones de Carne",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/PER-PURI-001.webp"
+ },
+ "PER-PURI-007": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/accesorios/32774-doguito-tira-de-asado-7891000098240.html",
+  "imagen": "https://puntomascotas.cl/6394-large_default/doguito-tira-de-asado.jpg",
+  "titulo": "Doguito Tira de Asado",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/PER-PURI-007.webp"
+ },
+ "GAT-FITD-001": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "GAT-FITD-002": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "PER-FITF-002": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "PER-FITF-003": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/golosinas-y-huesos-para-perros/35368-golosinas-barras-de-premio-fit-formula-7808750700019.html",
+  "imagen": "https://puntomascotas.cl/6405-large_default/golosinas-barras-de-premio-fit-formula.jpg",
+  "titulo": "Golosinas Barras de Premio Fit Formula",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/PER-FITF-003.webp"
+ },
+ "PER-FITF-005": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "PER-FITF-004": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "PER-FITF-028": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/golosinas-y-huesos-para-perros/42203-fit-formula-salchicha-de-pato-400g-7800006011078.html",
+  "imagen": "https://puntomascotas.cl/24938-large_default/fit-formula-salchicha-de-pato-400g.jpg",
+  "titulo": "Fit Formula Salchicha de Pato 400g",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/PER-FITF-028.webp"
+ },
+ "PER-FITF-032": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/fit-snack/37653-fit-snack-tiritas-de-pollo-deshidratado-7800006010293.html",
+  "imagen": "https://puntomascotas.cl/10353-large_default/fit-snack-tiritas-de-pollo-deshidratado.jpg",
+  "titulo": "Fit Snack Tiritas de Pollo Deshidratado",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/PER-FITF-032.webp"
+ },
+ "PER-FITF-027": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/fit-snack/37654-fit-snack-trutro-pollo-deshidratado-7800006010309.html",
+  "imagen": "https://puntomascotas.cl/10354-large_default/fit-snack-trutro-pollo-deshidratado.jpg",
+  "titulo": "Fit Snack Trutro Pollo Deshidratado",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/PER-FITF-027.webp"
+ },
+ "OTR-MOND-001": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "PER-MAST-002": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "PER-NATU-009": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/inicio/43216-nt-classic-duck-strip-100-gr-7804457002012.html",
+  "imagen": "https://puntomascotas.cl/28262-large_default/nt-classic-duck-strip-100-gr.jpg",
+  "titulo": "Naturalistic Classic Duck Strip 100 gr",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/PER-NATU-009.webp"
+ },
+ "PER-NATU-003": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/inicio/43217-nt-classic-lamb-strips-100-gr-7804457002036.html",
+  "imagen": "https://puntomascotas.cl/28263-large_default/nt-classic-lamb-strips-100-gr.jpg",
+  "titulo": "Naturalistic Classic Lamb Strips 100 gr",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/PER-NATU-003.webp"
+ },
+ "PER-PEDI-001": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "PER-TAST-002": {
+  "fuente": "tusmascotas.cl",
+  "metodo": "código de barras",
+  "imagen": "https://www.tusmascotas.cl/wp-content/uploads/2025/02/cordero-taste-farm.jpg",
+  "titulo": "MINI SALCHICHAS DE CORDERO 100GR - TASTY FARM",
+  "pagina": "https://www.tusmascotas.cl/product/mini-salchichas-de-cordero-100gr-tasty-farm/",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/PER-TAST-002.webp"
+ },
+ "PER-TAST-004": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "PER-TAST-003": {
+  "fuente": "tusmascotas.cl",
+  "metodo": "código de barras",
+  "imagen": "https://www.tusmascotas.cl/wp-content/uploads/2025/02/FARM-VACUNO.jpg",
+  "titulo": "REBANADAS DE VACUNO 100GR - TASTY FARM",
+  "pagina": "https://www.tusmascotas.cl/product/rebanadas-de-vacuno-100gr-tasty-farm/",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/PER-TAST-003.webp"
+ },
+ "GAT-INAB-001": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/accesorios/41231-packs-doble-inaba-pollo-y-vegetales-en-caldo-854871008586.html",
+  "imagen": "https://puntomascotas.cl/22390-large_default/packs-doble-inaba-pollo-y-vegetales-en-caldo.jpg",
+  "titulo": "Pack Doble Perro Inaba Pollo y Vegetales en Caldo",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-INAB-001.webp"
+ },
+ "GAT-INAB-002": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/accesorios/41232-pack-doble-perro-inaba-pollo-vegetales-y-carne-en-caldo-854871008593.html",
+  "imagen": "https://puntomascotas.cl/22394-large_default/pack-doble-perro-inaba-pollo-vegetales-y-carne-en-caldo.jpg",
+  "titulo": "Pack Doble Perro Inaba Pollo, Vegetales y Carne en Caldo",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-INAB-002.webp"
+ },
+ "PER-VITF-001": {
+  "noEncontrada": true,
+  "descartada": "talla distinta",
+  "fecha": "2026-10-26"
+ },
+ "PER-WAMP-005": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/wanpy/37019-wanpy-lamb-100-grs-6927749840046.html",
+  "imagen": "https://puntomascotas.cl/9052-large_default/wanpy-lamb-100-grs.jpg",
+  "titulo": "Wanpy Lamb 100 grs",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/PER-WAMP-005.webp"
+ },
+ "GAT-WAMP-001": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/golosinas-para-gatos/41061-golosina-gato-wanpy-creamy-tuna-6927749871194.html",
+  "imagen": "https://puntomascotas.cl/26729-large_default/golosina-gato-wanpy-creamy-tuna.jpg",
+  "titulo": "Golosina Gato Wanpy Creamy Tuna",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-WAMP-001.webp"
+ },
+ "GAT-WAMP-003": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/golosinas-para-gatos/39962-golosina-gato-wanpy-creamy-tuna-and-shrimp-6927749871095.html",
+  "imagen": "https://puntomascotas.cl/16042-large_default/golosina-gato-wanpy-creamy-tuna-and-shrimp.jpg",
+  "titulo": "Golosina Gato Wanpy Creamy Tuna and Shrimp",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-WAMP-003.webp"
+ },
+ "GAT-WAMP-006": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/golosinas-para-gatos/39965-golosina-gato-wanpy-creamy-tuna-and-codfish-6927749871125.html",
+  "imagen": "https://puntomascotas.cl/16048-large_default/golosina-gato-wanpy-creamy-tuna-and-codfish.jpg",
+  "titulo": "Golosina Gato Wanpy Creamy Tuna and Codfish",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-WAMP-006.webp"
+ },
+ "GAT-WAMP-005": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/golosinas-para-gatos/41062-golosina-gato-wanpy-creamy-tuna-crab-6927749871200.html",
+  "imagen": "https://puntomascotas.cl/21515-large_default/golosina-gato-wanpy-creamy-tuna-crab.jpg",
+  "titulo": "Golosina Gato Wanpy Creamy Tuna & Crab",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-WAMP-005.webp"
+ },
+ "GAT-WAMP-004": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/golosinas-para-gatos/39964-golosina-gato-wanpy-creamy-tuna-and-salmon-6927749871118.html",
+  "imagen": "https://puntomascotas.cl/16046-large_default/golosina-gato-wanpy-creamy-tuna-and-salmon.jpg",
+  "titulo": "Golosina Gato Wanpy Creamy Tuna and Salmon",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-WAMP-004.webp"
+ },
+ "GAT-WAMP-002": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/golosinas-para-gatos/39963-golosina-gato-wanpy-creamy-tuna-and-scalop-6927749871101.html",
+  "imagen": "https://puntomascotas.cl/16044-large_default/golosina-gato-wanpy-creamy-tuna-and-scalop.jpg",
+  "titulo": "Golosina Gato Wanpy Creamy Tuna and Scalop",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-WAMP-002.webp"
+ },
+ "PER-WANP-008": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/wanpy/37022-wanpy-salmon-fish-skin-100-grs-6927749830153.html",
+  "imagen": "https://puntomascotas.cl/9055-large_default/wanpy-salmon-fish-skin-100-grs.jpg",
+  "titulo": "Wanpy Soft Beef Jerky Slices 100 grs",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/PER-WANP-008.webp"
+ },
+ "PER-WANP-005": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/wanpy/40748-golosina-wanpy-perro-beef-marbled-bites-6927749830221.html",
+  "imagen": "https://puntomascotas.cl/19287-large_default/golosina-wanpy-perro-beef-marbled-bites.jpg",
+  "titulo": "Golosina Wanpy Perro Beef Marbled Bites",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/PER-WANP-005.webp"
+ },
+ "PER-WANP-006": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/wanpy/40751-golosina-wanpy-perro-chicken-jerky-strips-6927749810339.html",
+  "imagen": "https://puntomascotas.cl/19309-large_default/golosina-wanpy-perro-chicken-jerky-strips.jpg",
+  "titulo": "Golosina Wanpy Perro Chicken Jerky Strips",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/PER-WANP-006.webp"
+ },
+ "PER-WANP-007": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/wanpy/37018-wanpy-duck-100-grs-6927749820123.html",
+  "imagen": "https://puntomascotas.cl/9051-large_default/wanpy-duck-100-grs.jpg",
+  "titulo": "Wanpy Duck 100 grs",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/PER-WANP-007.webp"
+ },
+ "PER-YUMM-002": {
+  "fuente": "tusmascotas.cl",
+  "metodo": "código de barras",
+  "imagen": "https://www.tusmascotas.cl/wp-content/uploads/2024/09/YUMM-STIX-MID-POLLO-CON-CARNE-DE-RES-50-G-10820.jpg",
+  "titulo": "Yumm Stix Pollo con Carne de Res 50gr",
+  "pagina": "https://www.tusmascotas.cl/product/yumm-stix-pollo-con-carne-de-res-50gr/",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/PER-YUMM-002.webp"
+ },
+ "PER-YUMM-001": {
+  "fuente": "tusmascotas.cl",
+  "metodo": "código de barras",
+  "imagen": "https://www.tusmascotas.cl/wp-content/uploads/2022/11/POLLO-CORDERO.png",
+  "titulo": "Yumm Stix Mind Pollo con Cordero",
+  "pagina": "https://www.tusmascotas.cl/product/yumm-stix-mind-pollo-con-cordero/",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/PER-YUMM-001.webp"
+ },
+ "ACC-JUIC-001": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/golosinas-para-gatos/42666-golosinas-juicy-bites-cat-shrimp-seafood-mix-treat-34-grs-857276007505.html",
+  "imagen": "https://puntomascotas.cl/26135-large_default/golosinas-juicy-bites-cat-shrimp-seafood-mix-treat-34-grs.jpg",
+  "titulo": "Golosinas Juicy Bites Cat Shrimp & Seafood Mix Treat 34 grs",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/ACC-JUIC-001.webp"
+ },
+ "GAT-ANIM-001": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "PER-ANIM-001": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "GAT-BEST-001": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "GAT-BEST-002": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "PER-BEST-002": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "GAT-CATC-003": {
+  "fuente": "laikamascotas.cl",
+  "metodo": "código de barras",
+  "imagen": "https://static.laika.digital/products-3/e3c1929a5d198a2771d4a7ca933a735f_1695847219.jpg",
+  "titulo": "Cat Chow - Alimento Húmedo Gatos Adultos Carne - CAT CHOW  | Laika Mascotas",
+  "pagina": "https://laikamascotas.cl/cat-chow-adultos-carne",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-CATC-003.webp"
+ },
+ "GAT-CATC-005": {
+  "fuente": "laikamascotas.cl",
+  "metodo": "código de barras",
+  "imagen": "https://static.laika.digital/products-3/e3c1929a5d198a2771d4a7ca933a735f_1701711738.jpg",
+  "titulo": "Cat Chow - Alimento Húmedo Gatos Adultos Pescado - CAT CHOW  | Laika Mascotas",
+  "pagina": "https://laikamascotas.cl/cat-chow-alimento-humedo-gato-adulto-pescado",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-CATC-005.webp"
+ },
+ "GAT-CATC-004": {
+  "fuente": "laikamascotas.cl",
+  "metodo": "código de barras",
+  "imagen": "https://static.laika.digital/products-3/cd4d64e0a478ccad4e1c4fd096d30fea_1697653338.jpg",
+  "titulo": "Cat Chow - Alimento Húmedo Gatitos Pollo - CAT CHOW  | Laika Mascotas",
+  "pagina": "https://laikamascotas.cl/cat-chow-gatitos-pollo",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-CATC-004.webp"
+ },
+ "GAT-CHAM-007": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "GAT-CHAM-006": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "GAT-CHAM-004": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "GAT-CHAM-005": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "PER-CHAM-001": {
+  "fuente": "laikamascotas.cl",
+  "metodo": "código de barras",
+  "imagen": "https://static.laika.digital/products-3/4ec6ed3d9812deb817391f13e0730c06_1686932513.jpg",
+  "titulo": "Champion Dog - Trocitos en Salsa Adultos Carne & Verduras - CHAMPION DOG  | Laika Mascotas",
+  "pagina": "https://laikamascotas.cl/champion-dog-pouch-sabor-carne-y-vegetales",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/PER-CHAM-001.webp"
+ },
+ "PER-CHAM-006": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "PER-CHAM-002": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "GAT-CHIC-002": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/accesorios/40544-sobre-churu-pechuga-de-pollo-50grs-854871008708.html",
+  "imagen": "https://puntomascotas.cl/23224-large_default/sobre-churu-pechuga-de-pollo-50grs.jpg",
+  "titulo": "Chicken Broth Pechuga de Pollo 50grs",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-CHIC-002.webp"
+ },
+ "GAT-CHIC-004": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/golosinas-para-gatos/40543-sobre-churu-pechuga-de-pollo-y-atun-50grs-854871008715.html",
+  "imagen": "https://puntomascotas.cl/18425-large_default/sobre-churu-pechuga-de-pollo-y-atun-50grs.jpg",
+  "titulo": "Chicken Broth Pechuga de Pollo y Atun 50grs",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-CHIC-004.webp"
+ },
+ "GAT-CHIC-001": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/golosinas-para-gatos/40545-sobre-churu-salmon-50grs-854871008739.html",
+  "imagen": "https://puntomascotas.cl/18433-large_default/sobre-churu-salmon-50grs.jpg",
+  "titulo": "Chicken Broth Pechuga Pollo y Salmon 50grs",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-CHIC-001.webp"
+ },
+ "GAT-CHIC-003": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/golosinas-para-gatos/40546-sobre-churu-pechuga-pollo-y-ostion-50grs-854871008722.html",
+  "imagen": "https://puntomascotas.cl/18435-large_default/sobre-churu-pechuga-pollo-y-ostion-50grs.jpg",
+  "titulo": "Chicken Broth Pechuga Pollo y Vieras 50grs",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-CHIC-003.webp"
+ },
+ "GAT-CHUR-005": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/golosinas-para-gatos/41416-Churu-Bisque-atun-40g-850030015952.html",
+  "imagen": "https://puntomascotas.cl/23188-large_default/Churu-Bisque-atun-40g.jpg",
+  "titulo": "Churu Bisque Atún 40g",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-CHUR-005.webp"
+ },
+ "GAT-CHUR-007": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/golosinas-para-gatos/41418-Churu-Bisque-pollo-carne-40g-810100850005.html",
+  "imagen": "https://puntomascotas.cl/23192-large_default/Churu-Bisque-pollo-carne-40g.jpg",
+  "titulo": "Churu Bisque Pollo y Carne 40g",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-CHUR-007.webp"
+ },
+ "GAT-CHUR-002": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/golosinas-para-gatos/41419-Churu-Stew-pollo-40g-850030015792.html",
+  "imagen": "https://puntomascotas.cl/23194-large_default/Churu-Stew-pollo-40g.jpg",
+  "titulo": "Churu Stew Pollo 40g",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-CHUR-002.webp"
+ },
+ "PER-DOGC-002": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "PER-DOGC-001": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/inicio/42810-pack-20-sobres-dog-chow-adulto-cordero-7501072210272.html",
+  "imagen": "https://puntomascotas.cl/26784-large_default/pack-20-sobres-dog-chow-adulto-cordero.jpg",
+  "titulo": "Pack 20 Sobres 100grs Dog Chow Adulto Cordero",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/PER-DOGC-001.webp"
+ },
+ "GAT-PURI-007": {
+  "fuente": "laikamascotas.cl",
+  "metodo": "código de barras",
+  "imagen": "https://static.laika.digital/products-3/e1a1b6582bce9682bfb3bfc0dde26430_1672166783.jpg",
+  "titulo": "Felix - Alimento Húmedo Gatitos Classic Carne Sobre - FELIX  | Laika Mascotas",
+  "pagina": "https://laikamascotas.cl/felix-classic-gatitos-con-carne",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-PURI-007.webp"
+ },
+ "GAT-PURI-005": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "GAT-FELI-001": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "GAT-FELI-002": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/alimento-humedo/42102-felix-pavo-pack-24-pouch-85grs-7501072209795.html",
+  "imagen": "https://puntomascotas.cl/24709-large_default/felix-pavo-pack-24-pouch-85grs.jpg",
+  "titulo": "Felix Pavo Pack 24 Pouch 85grs",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-FELI-002.webp"
+ },
+ "GAT-PURI-006": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "GAT-FELI-005": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/alimento-humedo/42357-felix-pollo-pack-24-pouch-85grs-7501072209870.html",
+  "imagen": "https://puntomascotas.cl/25391-large_default/felix-pollo-pack-24-pouch-85grs.jpg",
+  "titulo": "Felix Pollo Pack 24 Pouch 85grs",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-FELI-005.webp"
+ },
+ "GAT-LEON-008": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/alimento-humedo/41085-leonardo-drink-ternera-40g-4002633756602.html",
+  "imagen": "https://puntomascotas.cl/21734-large_default/leonardo-drink-ternera-40g.jpg",
+  "titulo": "Leonardo Drink Ternera 40g",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-LEON-008.webp"
+ },
+ "GAT-LEON-006": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/alimento-humedo/41084-leonardo-drink-pato-40g-4002633756619.html",
+  "imagen": "https://puntomascotas.cl/26278-large_default/leonardo-drink-pato-40g.jpg",
+  "titulo": "Leonardo Drink Pato 40g",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-LEON-006.webp"
+ },
+ "GAT-MAST-002": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "GAT-MAST-005": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "GAT-MAST-003": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "GAT-MAST-004": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "GAT-MAST-001": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "PER-MAST-005": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "PER-MAST-004": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "PER-MAST-006": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "PER-MAST-007": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "PER-PEDI-006": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "PER-PEDI-004": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "PER-PEDI-003": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "PER-PEDI-007": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "PER-PEDI-005": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "PER-PEDI-002": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "PER-PURI-006": {
+  "fuente": "laikamascotas.cl",
+  "metodo": "código de barras",
+  "imagen": "https://static.laika.digital/products-3/43478e449859a68ecc2d0d20f61baeb8_1698425179.jpg",
+  "titulo": "Purina One - Alimento Húmedo Adultos y Cachorros Pollo - PURINA ONE  | Laika Mascotas",
+  "pagina": "https://laikamascotas.cl/purina-one-alimento-humedo-para-perro-adultos-y-cachorros-super-nutrientes",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/PER-PURI-006.webp"
+ },
+ "GAT-ROYA-010": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/royal-canin/37456-royal-canin-pouch-gastrointestinal-feline-100-grs-7807661353536.html",
+  "imagen": "https://puntomascotas.cl/11795-large_default/royal-canin-pouch-gastrointestinal-feline-100-grs.jpg",
+  "titulo": "Royal Canin Pouch Gastrointestinal Feline 85 grs",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-ROYA-010.webp"
+ },
+ "GAT-ROYA-011": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/royal-canin/37455-royal-canin-pouch-urinary-feline-so-85-grs-7807661314148.html",
+  "imagen": "https://puntomascotas.cl/9661-large_default/royal-canin-pouch-urinary-feline-so-85-grs.jpg",
+  "titulo": "Royal Canin Pouch Urinary Feline S/O 85 grs",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-ROYA-011.webp"
+ },
+ "GAT-WHIS-002": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "GAT-WHIS-001": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "GAT-WHIS-006": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "GAT-WHIS-004": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "GAT-WHIS-003": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "GAT-WHIS-005": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-BIOL-004": {
+  "fuente": "tusmascotas.cl",
+  "metodo": "código de barras",
+  "imagen": "https://www.tusmascotas.cl/wp-content/uploads/2020/10/catnip-spray-1.jpg",
+  "titulo": "Catnip Spray Bioline 50ml",
+  "pagina": "https://www.tusmascotas.cl/product/catnip-spray-bioline-50ml/",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/ACC-BIOL-004.webp"
+ },
+ "SAL-SUPE-001": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/farmacia-veterinaria/30775-omega-superpet-cachorro-7800006006517.html",
+  "imagen": "https://puntomascotas.cl/1059-large_default/omega-superpet-cachorro.jpg",
+  "titulo": "Omega Superpet Cachorro",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/SAL-SUPE-001.webp"
+ },
+ "SAL-DRAG-004": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/farmacia-veterinaria/30499-omega-superpet-gato-125ml-7800006004926.html",
+  "imagen": "https://puntomascotas.cl/680-large_default/omega-superpet-gato-125ml.jpg",
+  "titulo": "Omega Superpet Gato 125ml",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/SAL-DRAG-004.webp"
+ },
+ "SAL-DRAG-003": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/farmacia-veterinaria/30453-lax-drag-pasta-90gr-7800006002564.html",
+  "imagen": "https://puntomascotas.cl/15896-large_default/lax-drag-pasta-90gr.jpg",
+  "titulo": "LaxDrag Pasta 90gr",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/SAL-DRAG-003.webp"
+ },
+ "SAL-DRAG-005": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/farmacia-veterinaria/30498-omega-superpet-perro-125ml-7800006004933.html",
+  "imagen": "https://puntomascotas.cl/679-large_default/omega-superpet-perro-125ml.jpg",
+  "titulo": "Omega Perro adulto 125ml",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/SAL-DRAG-005.webp"
+ },
+ "SAL-DRAG-006": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/farmacia-veterinaria/30776-omega-superpet-senior-7800006006500.html",
+  "imagen": "https://puntomascotas.cl/1060-large_default/omega-superpet-senior.jpg",
+  "titulo": "Omega Superpet Senior",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/SAL-DRAG-006.webp"
+ },
+ "SAL-MAMI-001": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/farmacia-veterinaria/30543-mamistop-250-gr-7800006003622.html",
+  "imagen": "https://puntomascotas.cl/10895-large_default/mamistop-250-gr.jpg",
+  "titulo": "Sustituto de Lácteo Mamistop 250 gr",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/SAL-MAMI-001.webp"
+ },
+ "ACC-BUEN-012": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-123": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "SAL-GEN-003": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-TOPK-005": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-068": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-009": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-070": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-067": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-071": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-069": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "OTR-CANA-001": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-WANP-001": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/golosinas-para-gatos/38371-golosina-gato-wanpy-jerky-pollo-strips-6927749811466.html",
+  "imagen": "https://puntomascotas.cl/11392-large_default/golosina-gato-wanpy-jerky-pollo-strips.jpg",
+  "titulo": "Golosina Gato Wanpy Jerky Duck Strips",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/ACC-WANP-001.webp"
+ },
+ "ACC-WANP-002": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/golosinas-para-gatos/38370-golosina-gato-wanpy-jerky-pollo-strips-6927749811299.html",
+  "imagen": "https://puntomascotas.cl/11390-large_default/golosina-gato-wanpy-jerky-pollo-strips.jpg",
+  "titulo": "Golosina Gato Wanpy Jerky Pollo Strips",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/ACC-WANP-002.webp"
+ },
+ "ACC-BIOL-005": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "PER-PETS-001": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "PER-NATU-004": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "PER-NATU-005": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/inicio/43208-nt-stick-jerky-duck-5-un-75-gr-7804457002708.html",
+  "imagen": "https://puntomascotas.cl/28255-large_default/nt-stick-jerky-duck-5-un-75-gr.jpg",
+  "titulo": "Naturalistic Stick Jerky Duck (5 Un - 75 gr)",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/PER-NATU-005.webp"
+ },
+ "PER-NATU-006": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/inicio/43209-nt-stick-jerky-beef-5-un-75-gr-7804457002722.html",
+  "imagen": "https://puntomascotas.cl/28256-large_default/nt-stick-jerky-beef-5-un-75-gr.jpg",
+  "titulo": "Naturalistic Stick Jerky Beef (5 Un - 75 gr)",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/PER-NATU-006.webp"
+ },
+ "PER-NATU-007": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/inicio/43207-nt-stick-jerky-chicken-5-un-75-gr-7804457002692.html",
+  "imagen": "https://puntomascotas.cl/28254-large_default/nt-stick-jerky-chicken-5-un-75-gr.jpg",
+  "titulo": "Naturalistic Stick Jerky Chicken (5 Un - 75 gr)",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/PER-NATU-007.webp"
+ },
+ "PER-TAST-001": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "PER-MARB-017": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "PER-NATU-008": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "OTR-MARB-001": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "PER-FITF-029": {
+  "fuente": "clubdeperrosygatos.cl",
+  "metodo": "código de barras",
+  "imagen": "https://www.clubdeperrosygatos.cl/wp-content/uploads/2026/07/Fit-Formula-Snack-Salchicha-de-Pato-100-Gr.webp",
+  "titulo": "Fit Formula Snack Salchicha de Pato 100 Gr",
+  "pagina": "https://www.clubdeperrosygatos.cl/producto/fit-formula-snack-salchicha-de-pato-100-gr/",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/PER-FITF-029.webp"
+ },
+ "PER-FITF-030": {
+  "fuente": "clubdeperrosygatos.cl",
+  "metodo": "código de barras",
+  "imagen": "https://www.clubdeperrosygatos.cl/wp-content/uploads/2026/07/Fit-Formula-Galleta-Envuelta-en-Pollo-100-Gr.webp",
+  "titulo": "Fit Formula Galleta Envuelta en Pollo 100 Gr",
+  "pagina": "https://www.clubdeperrosygatos.cl/producto/fit-formula-galleta-envuelta-en-pollo-100-gr/",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/PER-FITF-030.webp"
+ },
+ "PER-FITF-031": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "PER-MOND-001": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-GEN-001": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "PER-BEWI-001": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "PER-BEWI-002": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "PER-AMIT-001": {
+  "fuente": "laikamascotas.cl",
+  "metodo": "código de barras",
+  "imagen": "https://static.laika.digital/products/e22a9c279a941d3194c748b99b35780b_1732815879.jpg",
+  "titulo": "Amity - Alimento Húmedo Cerdo Ibércio y Calabaza para Perro - AMITY  | Laika Mascotas",
+  "pagina": "https://laikamascotas.cl/amity-alimento-humedo-cerdo-ibercio-y-calabaza-para-perro",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/PER-AMIT-001.webp"
+ },
+ "PER-AMIT-002": {
+  "fuente": "laikamascotas.cl",
+  "metodo": "código de barras",
+  "imagen": "https://static.laika.digital/products/b0ca4ff7259869f28b58215d4319a281_1732815612.jpg",
+  "titulo": "Amity - Alimento Húmedo Pollo y Arándanos para Perro - AMITY  | Laika Mascotas",
+  "pagina": "https://laikamascotas.cl/amity-alimento-humedo-pollo-y-arandanos-para-perro",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/PER-AMIT-002.webp"
+ },
+ "GAT-PURA-001": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/cats/42112-pack-x12-pura-natura-gato-humedo-carne-300gr-7804607210083.html",
+  "imagen": "https://puntomascotas.cl/24732-large_default/pack-x12-pura-natura-gato-humedo-carne-300gr.jpg",
+  "titulo": "Almavet Pack 12 Pura Natura Gato Húmedo Carne 300gr",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-PURA-001.webp"
+ },
+ "GAT-PURA-002": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/cats/42113-pack-x12-pura-natura-gato-humedo-pollo-300gr-7804607210106.html",
+  "imagen": "https://puntomascotas.cl/24733-large_default/pack-x12-pura-natura-gato-humedo-pollo-300gr.jpg",
+  "titulo": "Almavet Pack 12 Pura Natura Gato Húmedo Pollo 300gr",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-PURA-002.webp"
+ },
+ "GAT-FELI-003": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/felix/42132-felix-pescado-blanco-pack-24-pouch-85grs-7501072209818.html",
+  "imagen": "https://puntomascotas.cl/24758-large_default/felix-pescado-blanco-pack-24-pouch-85grs.jpg",
+  "titulo": "Felix Pescado Blanco Pack 24 Pouch 85grs",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-FELI-003.webp"
+ },
+ "GAT-FELI-004": {
+  "fuente": "laikamascotas.cl",
+  "metodo": "código de barras",
+  "imagen": "https://static.laika.digital/products-3/95f8734311ee05534d619ae94d88dd7f_1671655841.jpg",
+  "titulo": "Felix - Alimento Húmedo Gato Adulto Classic Atún Sobre - FELIX  | Laika Mascotas",
+  "pagina": "https://laikamascotas.cl/felix-classic-con-atun",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-FELI-004.webp"
+ },
+ "GAT-FELI-006": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/felix/42105-felix-atun-en-salsa-pack-24-pouch-85grs-7501072209849.html",
+  "imagen": "https://puntomascotas.cl/24723-large_default/felix-atun-en-salsa-pack-24-pouch-85grs.jpg",
+  "titulo": "Felix Atún en Salsa Pack 24 Pouch 85grs",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-FELI-006.webp"
+ },
+ "GAT-FELI-010": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "PER-MARB-019": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-GEN-003": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "GAT-PURI-001": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/cats/41301-Excellent-kitten-1-kg-8445290969613.html",
+  "imagen": "https://puntomascotas.cl/22686-large_default/Excellent-kitten-1-kg.jpg",
+  "titulo": "Purina Excellent Gato Kitten 1 kg",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-PURI-001.webp"
+ },
+ "GAT-PURI-002": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/cats/41297-Excellent-Gato-Esterilizado-1-kg-8445290969941.html",
+  "imagen": "https://puntomascotas.cl/22677-large_default/Excellent-Gato-Esterilizado-1-kg.jpg",
+  "titulo": "Purina Excellent Gato Esterilizado 1 kg",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-PURI-002.webp"
+ },
+ "GAT-PURI-003": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/cats/41300-Excellent-Gato-Urinario-1-kg-8445290969682.html",
+  "imagen": "https://puntomascotas.cl/22681-large_default/Excellent-Gato-Urinario-1-kg.jpg",
+  "titulo": "Purina Excellent Gato Urinario 1 kg",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-PURI-003.webp"
+ },
+ "GAT-ROYA-004": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/gatos-necesidades-especificas/32316-royal-canin-vet-feline-gatrointestinal-2kg-7790187346086.html",
+  "imagen": "https://puntomascotas.cl/11859-large_default/royal-canin-vet-feline-gatrointestinal-2kg.jpg",
+  "titulo": "Royal Canin Vet Feline Gastrointestinal 2kg",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-ROYA-004.webp"
+ },
+ "GAT-CATC-001": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "GAT-CATC-002": {
+  "fuente": "laikamascotas.cl",
+  "metodo": "código de barras",
+  "imagen": "https://static.laika.digital/products-3/adde4ec51d3cebc3daf67328bdbb8cec_1701712374.jpg",
+  "titulo": "Cat Chow - Alimento Húmedo Gatos Esterilizados Carne - CAT CHOW  | Laika Mascotas",
+  "pagina": "https://laikamascotas.cl/cat-chow-esterilizados-carne",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-CATC-002.webp"
+ },
+ "GAT-LEON-007": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/alimento-humedo/41083-leonardo-drink-salmon-40g-4002633756626.html",
+  "imagen": "https://puntomascotas.cl/21688-large_default/leonardo-drink-salmon-40g.jpg",
+  "titulo": "Leonardo Drink Salmon 40g",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-LEON-007.webp"
+ },
+ "GAT-CHUR-003": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/golosinas-para-gatos/41422-Churu-Stew-pollo-ostion-40g-850030015853.html",
+  "imagen": "https://puntomascotas.cl/23200-large_default/Churu-Stew-pollo-ostion-40g.jpg",
+  "titulo": "Churu Stew Pollo y Ostion 40g",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-CHUR-003.webp"
+ },
+ "GAT-CHUR-004": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/golosinas-para-gatos/41421-Churu-Stew-pollo-salmon-40g-850030015839.html",
+  "imagen": "https://puntomascotas.cl/23198-large_default/Churu-Stew-pollo-salmon-40g.jpg",
+  "titulo": "Churu Stew Pollo y Salmon 40g",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-CHUR-004.webp"
+ },
+ "ACC-BRNX-001": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-BRNX-002": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-BRNX-003": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MRDO-001": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MRDO-002": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-LILI-001": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-LILI-002": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-BRNX-004": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-017": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-019": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-CASA-001": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-LILI-003": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "GAT-FIT-002": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/golosinas-para-gatos/40256-galleta-fit-snack-gato-con-cangrejo-7800006011092.html",
+  "imagen": "https://puntomascotas.cl/17064-large_default/galleta-fit-snack-gato-con-cangrejo.jpg",
+  "titulo": "Galleta Fit Snack Gato con Cangrejo 100grs",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-FIT-002.webp"
+ },
+ "GAT-OMEG-001": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "GAT-OMEG-002": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "GAT-MARB-005": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "GAT-MARB-006": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "GAT-MARB-007": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "OTR-MARB-002": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-VIPC-001": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-TOPK-002": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-VIPC-002": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-CLEA-001": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-CLEA-002": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-CLEA-003": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-CLEA-004": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-TURB-002": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-TURB-003": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "SAL-MARB-001": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-BIOL-001": {
+  "fuente": "tusmascotas.cl",
+  "metodo": "código de barras",
+  "imagen": "https://www.tusmascotas.cl/wp-content/uploads/2020/10/catnip-spray.jpg",
+  "titulo": "Catnip Spray 15ml de Bioline",
+  "pagina": "https://www.tusmascotas.cl/product/bioline-catnip-spray-15ml/",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/ACC-BIOL-001.webp"
+ },
+ "ACC-BIOL-003": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "SAL-MARB-002": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-WOND-001": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-WOND-002": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "GAT-MARB-001": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "GAT-MARB-002": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "GAT-MARB-003": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "GAT-MARB-004": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-GEN-007": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-028": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-WOND-003": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "OTR-PETS-001": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-084": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-GEN-009": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-030": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-VIPC-003": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-072": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-073": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-074": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-075": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "GAT-APPE-001": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "PER-BRAV-004": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "PER-PROP-001": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "PER-NOMA-004": {
+  "noEncontrada": true,
+  "descartada": "la página tiene varias variantes o es un pack",
+  "fecha": "2026-10-26"
+ },
+ "PER-BRAV-009": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "PER-ALFA-003": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "PER-NOMA-005": {
+  "fuente": "petcity.cl",
+  "metodo": "nombre (marca, línea, sabor y tamaño)",
+  "imagen": "https://petcity.cl/wp-content/uploads/2023/10/nomade-senior-raza-pequena.jpg",
+  "titulo": "Nómade Senior Razas Pequeñas 9 Kgs - Petcity",
+  "pagina": "https://petcity.cl/tienda/nomade-senior-razas-pequenas-9-kgs/",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/PER-NOMA-005.webp"
+ },
+ "PER-FITF-017": {
+  "fuente": "clubdeperrosygatos.cl",
+  "metodo": "código de barras",
+  "imagen": "https://www.clubdeperrosygatos.cl/wp-content/uploads/2026/07/Fit-Formula-Alimento-Perro-Light-Razas-Pequenas-10-Kg-1.webp",
+  "titulo": "Fit Formula Alimento Perro Light Razas Pequeñas 10 Kg",
+  "pagina": "https://www.clubdeperrosygatos.cl/producto/fit-formula-alimento-perro-light-razas-pequenas-10-kg/",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/PER-FITF-017.webp"
+ },
+ "PER-FITF-012": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "OTR-KEND-001": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-079": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-080": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-081": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-TOPK-008": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-TOPK-009": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-EASY-004": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-TOPK-014": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-FIT-002": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-VIPC-004": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-083": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "GAT-VETL-006": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/cats/38800-Vet-Life-Obesity-Feline-2KG-7898604431138.html",
+  "imagen": "https://puntomascotas.cl/12609-large_default/Vet-Life-Obesity-Feline-2KG.jpg",
+  "titulo": "Vet Life Gato Obesity 2KG",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-VETL-006.webp"
+ },
+ "GAT-NYD-005": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/cats/39183-nd-prime-feline-adultos-castrados-75kg-7898604433279.html",
+  "imagen": "https://puntomascotas.cl/13468-large_default/nd-prime-feline-adultos-castrados-75kg.jpg",
+  "titulo": "N&D Prime Gato Adulto Esterilizado Pollo y Granada 7,5 KG",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-NYD-005.webp"
+ },
+ "ACC-MOND-064": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-087": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-088": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-089": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-090": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-BIOL-009": {
+  "fuente": "tusmascotas.cl",
+  "metodo": "código de barras",
+  "imagen": "https://www.tusmascotas.cl/wp-content/uploads/2021/06/6970117120202-1-1.png",
+  "titulo": "Shampoo en seco - Bioline 100g",
+  "pagina": "https://www.tusmascotas.cl/product/shampoo-en-seco-bioline-100g/",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/ACC-BIOL-009.webp"
+ },
+ "ACC-MOND-092": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-057": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-111": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-112": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-WOND-008": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-WOND-009": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-113": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-114": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-115": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-116": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-117": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-124": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-TOPK-016": {
+  "noEncontrada": true,
+  "descartada": "la página tiene varias variantes o es un pack",
+  "fecha": "2026-10-26"
+ },
+ "SAL-BIOL-001": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "SAL-BIOL-004": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "SAL-BIOL-006": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "GAT-ROYA-012": {
+  "fuente": "laikamascotas.cl",
+  "metodo": "código de barras",
+  "imagen": "https://static.laika.digital/products-3/0b5ccac55ba4bb3bef1fa4b71f72fea2_1670870210.jpg",
+  "titulo": "Royal Canin - Alimento Húmedo Adulto Mini Raza Pequeña Sobre - ROYAL CANIN  | Laika Mascotas",
+  "pagina": "https://laikamascotas.cl/royal-canin-mini-adulto-pouch",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-ROYA-012.webp"
+ },
+ "GAT-ROYA-013": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/alimento-humedo/36878-royal-canin-instinctive-gato-adult-85-grs-9003579308943.html",
+  "imagen": "https://puntomascotas.cl/9969-large_default/royal-canin-instinctive-gato-adult-85-grs.jpg",
+  "titulo": "Royal Canin Pouch Instinctive Gato Kitten 85 grs",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-ROYA-013.webp"
+ },
+ "GAT-PURI-013": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/fancy/41229-pack-fancy-feast-pouch-gato-goulash-pavo-85g-x-15-7891000295991.html",
+  "imagen": "https://puntomascotas.cl/22382-large_default/pack-fancy-feast-pouch-gato-goulash-pavo-85g-x-15.jpg",
+  "titulo": "Pack Fancy Feast  15 Pouch Gato Goulash Pavo 85g",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-PURI-013.webp"
+ },
+ "GAT-PURI-014": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/fancy/41227-pack-fancy-feast-pouch-cass-gato-demi-glace-carne-85g-x-15-7891000295830.html",
+  "imagen": "https://puntomascotas.cl/22374-large_default/pack-fancy-feast-pouch-cass-gato-demi-glace-carne-85g-x-15.jpg",
+  "titulo": "Pack Fancy Feast 15 Pouch Gato Demi Glace Carne 85g",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-PURI-014.webp"
+ },
+ "GAT-PURI-015": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/fancy/41225-fancy-feast-pouch-cass-gato-pollo-y-pavo-15-x-85grs-7891000295915.html",
+  "imagen": "https://puntomascotas.cl/22365-large_default/fancy-feast-pouch-cass-gato-pollo-y-pavo-15-x-85grs.jpg",
+  "titulo": "Pack Fancy Feast 15 Pouch Casserole Gato Pollo y Pavo 85grs",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-PURI-015.webp"
+ },
+ "GAT-PURI-016": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/fancy/41230-pack-fancy-feast-pouch-gato-goulash-atun-85g-x-15-7891000295717.html",
+  "imagen": "https://puntomascotas.cl/22386-large_default/pack-fancy-feast-pouch-gato-goulash-atun-85g-x-15.jpg",
+  "titulo": "Pack Fancy Feast 15 Pouch Gato Goulash Atun 85g",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-PURI-016.webp"
+ },
+ "GAT-PURI-004": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/fancy/41226-fancy-feast-pouch-cass-gato-atun-y-salmon-15-x-85grs-7891000296196.html",
+  "imagen": "https://puntomascotas.cl/22368-large_default/fancy-feast-pouch-cass-gato-atun-y-salmon-15-x-85grs.jpg",
+  "titulo": "Pack Fancy Feast 15 Pouch Casserole Gato Atun y Salmon 85grs",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-PURI-004.webp"
+ },
+ "PER-FITF-021": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "PER-FITF-022": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "PER-FITF-023": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "GAT-AGIL-005": {
+  "noEncontrada": true,
+  "descartada": "especie distinta",
+  "fecha": "2026-10-26"
+ },
+ "PER-WAMP-004": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/wanpy/41387-Wanpy-Tasty-Meat-Paste-Pollo-90gr-6927749870203.html",
+  "imagen": "https://puntomascotas.cl/23044-large_default/Wanpy-Tasty-Meat-Paste-Pollo-90gr.jpg",
+  "titulo": "Wanpy Tasty Meat Paste Pollo para Perros 90 gr",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/PER-WAMP-004.webp"
+ },
+ "GAT-WANP-003": {
+  "noEncontrada": true,
+  "descartada": "formato distinto",
+  "fecha": "2026-10-26"
+ },
+ "SAL-HEAL-002": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "SAL-HEAL-003": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "SAL-HEAL-004": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "OTR-BETA-001": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "OTR-BETA-002": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "OTR-BETA-003": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "PER-CHAM-008": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "GAT-LEON-009": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/cats/38938-sobres-leonardo-trucha-y-catnip-0085kg-4002633756411.html",
+  "imagen": "https://puntomascotas.cl/25652-large_default/sobres-leonardo-trucha-y-catnip-0085kg.jpg",
+  "titulo": "Sobres Leonardo Trucha Y Catnip 0,085kg",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-LEON-009.webp"
+ },
+ "GAT-ROYA-014": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "GAT-LEON-010": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "GAT-LEON-011": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/inicio/43383-leonardo-drink-care-mobility-40-g--4002633756664.html",
+  "imagen": "https://puntomascotas.cl/28597-large_default/leonardo-drink-care-mobility-40-g-.jpg",
+  "titulo": "Leonardo Drink & Care Mobility 40 g",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-LEON-011.webp"
+ },
+ "GAT-LEON-012": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/inicio/43385-leonardo-drink-care-beauty-40-g--4002633756671.html",
+  "imagen": "https://puntomascotas.cl/28600-large_default/leonardo-drink-care-beauty-40-g-.jpg",
+  "titulo": "Leonardo Drink & Care Beauty 40 g",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-LEON-012.webp"
+ },
+ "GAT-CHAM-011": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "GAT-CHAM-010": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "GAT-CHAM-009": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "GAT-CHAM-008": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "GAT-FITF-004": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "GAT-FANC-006": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "GAT-FANC-005": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "GAT-AGIL-006": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "GAT-CHUR-022": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-130": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-128": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-129": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "PER-PATU-001": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "PER-TAST-005": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "PER-TAST-006": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "PER-TAST-007": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "PER-GPT-001": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "PER-GPT-002": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "PER-GPT-003": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "PER-TAST-008": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "PER-GPT-004": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "PER-DING-001": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/accesorios/30386-mini-dingo-pack-semanal-7-unidades-615650991716.html",
+  "imagen": "https://puntomascotas.cl/23152-large_default/mini-dingo-pack-semanal-7-unidades.jpg",
+  "titulo": "Mini Dingo Pack Semanal 7 unidades",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/PER-DING-001.webp"
+ },
+ "ACC-MOND-140": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-141": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-142": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-143": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-144": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-061": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-LEON-026": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-LEON-014": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-146": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-147": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-148": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MARB-009": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MARB-010": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MARB-011": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "OTR-STAY-001": {
+  "noEncontrada": true,
+  "descartada": "la página tiene varias variantes o es un pack",
+  "fecha": "2026-10-26"
+ },
+ "OTR-STAY-002": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-150": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-BUEN-016": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-WOND-013": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-WOND-014": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-WOND-015": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-153": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-154": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-155": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-156": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-157": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "GAT-CHUR-023": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "GAT-CHUR-024": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/inicio/43160-churu-cat-senior-10-tuna-recipe-810100851453.html",
+  "imagen": "https://puntomascotas.cl/28137-large_default/churu-cat-senior-10-tuna-recipe.jpg",
+  "titulo": "Churu Cat Senior 10+ Tuna Recipe",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-CHUR-024.webp"
+ },
+ "GAT-CHUR-025": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "GAT-CHUR-026": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/accesorios/41101-churu-gato-bites-pollo-wraps-atun-854871008920.html",
+  "imagen": "https://puntomascotas.cl/21775-large_default/churu-gato-bites-pollo-wraps-atun.jpg",
+  "titulo": "Churu Gato Bites Pollo wraps Atún",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-CHUR-026.webp"
+ },
+ "GAT-MARB-008": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-168": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-169": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-170": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-171": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-173": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-174": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-060": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "PER-MARB-013": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "PER-LEON-011": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "PER-MOND-023": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "PER-LEON-002": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "PER-LEON-003": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "PER-MARB-012": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "PER-BUEN-001": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "PER-BABY-001": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "PER-MARB-011": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-178": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-BIOL-006": {
+  "fuente": "tusmascotas.cl",
+  "metodo": "código de barras",
+  "imagen": "https://www.tusmascotas.cl/wp-content/uploads/2020/10/Catnip-Bubbles-Bioline.png",
+  "titulo": "Catnip Bubbles Bioline",
+  "pagina": "https://www.tusmascotas.cl/product/catnip-bubbles-bioline/",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/ACC-BIOL-006.webp"
+ },
+ "SAL-DRAG-015": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/antiparasiario-interno/42577-flovovermic-1-comprimido-7800006010316.html",
+  "imagen": "https://puntomascotas.cl/25821-large_default/flovovermic-1-comprimido.jpg",
+  "titulo": "Flovovermic 1 Comprimido",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/SAL-DRAG-015.webp"
+ },
+ "ACC-AMER-001": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/arenas-y-banos-sanitarios/40292-arena-sanitaria-americalitter-ultra-odor-seal-7-kg-6956131000508.html",
+  "imagen": "https://puntomascotas.cl/26104-large_default/arena-sanitaria-americalitter-ultra-odor-seal-7-kg.jpg",
+  "titulo": "Arena Sanitaria AmericaLitter Clean Paws 15 kilos",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/ACC-AMER-001.webp"
+ },
+ "ACC-AMER-002": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/arenas-y-banos-sanitarios/40293-arena-sanitaria-americalitter-clean-paws-7-kilos-6956131001994.html",
+  "imagen": "https://puntomascotas.cl/22189-large_default/arena-sanitaria-americalitter-clean-paws-7-kilos.jpg",
+  "titulo": "Arena Sanitaria AmericaLitter Clean Paws 7 kilos",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/ACC-AMER-002.webp"
+ },
+ "ACC-GEN-019": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-179": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-180": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-181": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-182": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-185": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-186": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "SAL-BIOL-010": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-172": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "PER-MARB-003": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "PER-MOND-011": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "PER-MARB-007": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-078": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "PER-MUNC-001": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "PER-BABY-002": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "PER-MARB-010": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "PER-TOPK-002": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-GEN-017": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "PER-FORA-001": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-052": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "GAT-OMEG-003": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "GAT-CHUR-018": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/inicio/43161-churu-cat-senior-10-chicken-14-gr-4-tubos-810100852177.html",
+  "imagen": "https://puntomascotas.cl/28139-large_default/churu-cat-senior-10-chicken-14-gr-4-tubos.jpg",
+  "titulo": "Churu Cat Senior 10+ Chicken 14 gr (4 Tubos)",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-CHUR-018.webp"
+ },
+ "ACC-TOYC-001": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-059": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-062": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-GEN-018": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-GEN-020": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-GEN-021": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "GAT-CHUR-019": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "OTR-MARB-003": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "OTR-MARB-004": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "SAL-HEAL-001": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "SAL-APCA-001": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/farmacia-veterinaria/30407-apeticat-7800006002908.html",
+  "imagen": "https://puntomascotas.cl/26129-large_default/apeticat.jpg",
+  "titulo": "Apeticat 100 ml.",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/SAL-APCA-001.webp"
+ },
+ "SAL-BIOP-001": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/farmacia-veterinaria/30410-biopower-100-gr-7800006005220.html",
+  "imagen": "https://puntomascotas.cl/12741-large_default/biopower-100-gr.jpg",
+  "titulo": "Biopower 100 gr",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/SAL-BIOP-001.webp"
+ },
+ "GAT-PURI-017": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "OTR-GEN-002": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "OTR-GEN-007": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-GEN-030": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-GEN-031": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-GEN-032": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "GAT-CREM-009": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-188": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-189": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "OTR-MARP-001": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-085": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "GAT-VETL-008": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "OTR-MONC-001": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "OTR-GEN-006": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "PER-MOND-026": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "PER-GEN-003": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "GAT-CHAM-012": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "GAT-CATC-008": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "PER-WANP-001": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "PER-WANP-002": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "PER-WANP-003": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "PER-WANP-004": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "GAT-FANC-012": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "GAT-FANC-013": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "GAT-FANC-014": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "GAT-FANC-015": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "GAT-FANC-016": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "GAT-FANC-017": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "GAT-WANP-004": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "GAT-WANP-005": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "GAT-DTLT-001": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "GAT-GATI-001": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "PER-BRIT-001": {
+  "fuente": "clubdeperrosygatos.cl",
+  "metodo": "nombre (marca, línea, sabor y tamaño)",
+  "imagen": "https://www.clubdeperrosygatos.cl/wp-content/uploads/2021/05/800x800-monoprotein-lamb.jpg",
+  "titulo": "Brit Care Mono Protein Lata Cordero 400g",
+  "pagina": "https://www.clubdeperrosygatos.cl/producto/brit-care-mono-protein-lamb-400gr/",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/PER-BRIT-001.webp"
+ },
+ "ACC-MARB-016": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MARB-017": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-191": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "SAL-INVE-001": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "SAL-INVE-002": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "GAT-VIPC-001": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "GAT-TOPK-001": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "GAT-FANC-007": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "GAT-FANC-008": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "GAT-FANC-009": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "GAT-FANC-010": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "GAT-FANC-011": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "PER-FITF-025": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "PER-FITF-026": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "GAT-OWNA-002": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "GAT-BEST-006": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "GAT-BEST-007": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "PER-ALPH-001": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-BUEN-017": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "GAT-WHIS-009": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "GAT-WHIS-010": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "PER-RANC-001": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "SAL-FLOV-001": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "SAL-FLOV-002": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "GAT-CHUR-027": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "GAT-CHUR-028": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "GAT-CHUR-029": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "GAT-CHUR-030": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "GAT-CHUR-031": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-192": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-193": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-194": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-WOND-016": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "GAT-LEOD-006": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "GAT-LEOD-007": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-TOPK-017": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "GAT-TOPK-002": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MARB-019": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-MOND-195": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "PER-MAST-013": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "OTR-WANP-001": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "código de barras",
+  "pagina": "https://puntomascotas.cl/golosinas-para-gatos/39961-golosina-gato-wanpy-creamy-chicken-6927749871088.html",
+  "imagen": "https://puntomascotas.cl/16039-large_default/golosina-gato-wanpy-creamy-chicken.jpg",
+  "titulo": "Golosina Gato Wanpy Creamy Chicken",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/OTR-WANP-001.webp"
+ },
+ "OTR-GEN-001": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-VIPC-005": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "SAL-GEN-002": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-GEN-022": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "ACC-LITT-001": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "GAT-AKAN-001": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "nombre (marca, línea, sabor y tamaño)",
+  "pagina": "https://puntomascotas.cl/acana/41262-acana-bountiful-catch-gatos-18-kg-064992612047.html",
+  "imagen": "https://puntomascotas.cl/24277-large_default/acana-bountiful-catch-gatos-18-kg.jpg",
+  "titulo": "Acana Bountiful Catch Gatos 1.8 kg",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-AKAN-001.webp"
+ },
+ "PER-ALFA-001": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "GAT-BIOF-002": {
+  "noEncontrada": true,
+  "descartada": "misma foto que otro producto",
+  "fecha": "2026-10-26"
+ },
+ "OTR-ROYA-001": {
+  "noEncontrada": true,
+  "descartada": "tamaño sin confirmar",
+  "fecha": "2026-10-26"
+ },
+ "GAT-CHUR-033": {
+  "noEncontrada": true,
+  "descartada": "misma foto que otro producto",
+  "fecha": "2026-10-26"
+ },
+ "GAT-CHUR-032": {
+  "noEncontrada": true,
+  "descartada": "misma foto que otro producto",
+  "fecha": "2026-10-26"
+ },
+ "GAT-CHUR-016": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "GAT-CHUR-013": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "GAT-CHUR-014": {
+  "noEncontrada": true,
+  "fecha": "2026-10-26"
+ },
+ "GAT-FELI-011": {
+  "noEncontrada": true,
+  "descartada": "misma foto que otro producto",
+  "fecha": "2026-10-26"
+ },
+ "GAT-BIOF-005": {
+  "noEncontrada": true,
+  "descartada": "misma foto que otro producto",
+  "fecha": "2026-10-26"
+ },
+ "GAT-VETL-007": {
+  "fuente": "puntomascotas.cl",
+  "metodo": "nombre (marca, línea, sabor y tamaño)",
+  "pagina": "https://puntomascotas.cl/cats/38798-Vet-Life-Gastro---Intestinal-Feline-2KG-7898604431152.html",
+  "imagen": "https://puntomascotas.cl/12607-large_default/Vet-Life-Gastro---Intestinal-Feline-2KG.jpg",
+  "titulo": "Vet Life Gato Gastrointestinal 2KG",
+  "fecha": "2026-10-26",
+  "archivo": "assets/productos/GAT-VETL-007.webp"
+ },
+ "PER-VETL-004": {
+  "noEncontrada": true,
+  "descartada": "misma foto que otro producto",
+  "fecha": "2026-10-26"
+ }
+}
