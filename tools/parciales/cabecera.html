@@ -1,0 +1,31 @@
+<header class="cabecera">
+  <a class="saltar" href="#contenido">Saltar al contenido</a>
+  <div class="cabecera__fila">
+    <a href="index.html" class="cabecera__logo"><img src="assets/logo/logo-akyra-recortado.svg" alt="Maskotería Akyra, ir al inicio" width="976" height="330"></a>
+    <form id="buscador" class="buscador" action="catalogo.html" method="get" role="search" aria-label="Buscar productos">
+      <label for="buscador-campo" class="visualmente-oculto">Buscar por producto, marca o código</label>
+      <input id="buscador-campo" type="search" name="buscar" placeholder="Busca por producto, marca o código" maxlength="80" autocomplete="off" enterkeyhint="search">
+      <button type="submit" class="buscador__boton"><svg class="icono" aria-hidden="true" focusable="false"><use href="assets/iconos.svg#search"></use></svg><span class="buscador__texto">Buscar</span></button>
+    </form>
+    <div class="cabecera__acciones">
+      <a class="boton boton--whatsapp cabecera__whatsapp" data-whatsapp href="https://wa.me/56986969111" target="_blank" rel="noopener"><svg class="icono" aria-hidden="true" focusable="false"><use href="assets/iconos.svg#message-circle"></use></svg><span>Escríbenos</span><span class="visualmente-oculto"> por WhatsApp (se abre en una pestaña nueva)</span></a>
+      <button id="boton-carrito" class="cabecera__carrito" type="button" aria-label="Carrito, vacío" aria-haspopup="dialog" aria-controls="carrito"><svg class="icono" aria-hidden="true" focusable="false"><use href="assets/iconos.svg#shopping-bag"></use></svg><span id="contador-carrito" class="contador" aria-hidden="true" hidden>0</span></button>
+      <button id="menu-boton" class="cabecera__menu" type="button" aria-expanded="false" aria-controls="menu-principal"><svg class="icono" aria-hidden="true" focusable="false"><use href="assets/iconos.svg#menu"></use></svg><span class="visualmente-oculto">Menú</span></button>
+    </div>
+  </div>
+  <nav id="menu-principal" class="menu" aria-label="Principal">
+    <ul class="menu__lista">
+      <li><a href="catalogo.html?categoria=perros" data-categoria="perros">Perros</a></li>
+      <li><a href="catalogo.html?categoria=gatos" data-categoria="gatos">Gatos</a></li>
+      <li><a href="catalogo.html?categoria=otras-mascotas" data-categoria="otras-mascotas">Otras mascotas</a></li>
+      <li><a href="catalogo.html?categoria=granel" data-categoria="granel">Granel</a></li>
+      <li><a href="catalogo.html?categoria=accesorios" data-categoria="accesorios">Accesorios</a></li>
+      <li><a href="catalogo.html?categoria=arena" data-categoria="arena">Arena</a></li>
+      <li><a href="catalogo.html?categoria=ropa" data-categoria="ropa">Ropa</a></li>
+      <li><a href="catalogo.html?categoria=salud-higiene" data-categoria="salud-higiene">Salud/Higiene</a></li>
+      <li><a href="index.html#sucursales">Sucursales</a></li>
+      <li><a href="contactenos.html"{{actual:contacto}}>Contacto</a></li>
+      <li class="menu__destacado"><a href="catalogo.html">Ver todo el catálogo</a></li>
+    </ul>
+  </nav>
+</header>

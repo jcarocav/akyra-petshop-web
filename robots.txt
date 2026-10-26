@@ -1,4 +1,10 @@
 User-agent: *
 Allow: /
+# Carpetas de trabajo del repositorio (no son parte del sitio)
+Disallow: /tools/
+Disallow: /tests/
+Disallow: /apps-script/
+Disallow: /vendor/
+Disallow: /assets/originales/
 
-Sitemap: https://[tudominio].cl/sitemap.xml
+Sitemap: https://jcarocav.github.io/akyra-petshop-web/sitemap.xml

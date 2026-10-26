@@ -1,695 +1,553 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es-CL">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mascotería Akyra — Alimento a Granel para Perros y Gatos en Punta Arenas</title>
-
-<link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg">
-<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16.png">
-<link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
-<link rel="shortcut icon" href="assets/favicon/favicon.ico">
-<meta name="description" content="Comida y alimento a granel para perros y gatos en Punta Arenas: elige los gramos exactos y paga solo lo que necesitas. Accesorios y despacho a domicilio en Mascotería Akyra.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- parcial:seguridad -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; frame-src https://www.google.com; form-action 'self'; base-uri 'self'; object-src 'none'; manifest-src 'self'; upgrade-insecure-requests">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="format-detection" content="telephone=no">
+<!-- /parcial:seguridad -->
+<title>Maskotería Akyra — Tienda de mascotas y alimento a granel en Punta Arenas</title>
+<meta name="description" content="Alimento para perros y gatos, alimento a granel por kilo, arena, accesorios, ropa y salud para tu mascota en Punta Arenas. 3 sucursales, retiro gratis o despacho a domicilio. Pide por WhatsApp.">
 <meta name="robots" content="index, follow">
-<meta name="theme-color" content="#00b0a3">
-
-<!-- Umami — analítica de visitas sin cookies (no necesita aviso de
-     consentimiento). Reemplaza AMBOS valores (data-website-id y el
-     "src") por los que te den al crear tu sitio gratis en umami.is —
-     mientras tanto, con el marcador de acá el sitio funciona igual,
-     el script simplemente no envía nada a ningún lado. -->
-<script defer src="https://cloud.umami.is/script.js" data-website-id="TU-UMAMI-WEBSITE-ID"></script>
-<link rel="canonical" href="https://[tudominio].cl/">
-
-<!-- Open Graph -->
+<link rel="canonical" href="https://jcarocav.github.io/akyra-petshop-web/">
 <meta property="og:type" content="website">
-<meta property="og:site_name" content="Mascotería Akyra">
-<meta property="og:title" content="Mascotería Akyra — Alimento a Granel para Perros y Gatos en Punta Arenas">
-<meta property="og:description" content="Alimento a granel para perros y gatos en Punta Arenas — elige los gramos exactos y paga solo lo que necesitas.">
-<meta property="og:url" content="https://[tudominio].cl/">
-<meta property="og:image" content="https://[tudominio].cl/assets/og/og-image.jpg">
+<meta property="og:site_name" content="Maskotería Akyra">
+<meta property="og:locale" content="es_CL">
+<meta property="og:title" content="Maskotería Akyra — Tienda de mascotas en Punta Arenas">
+<meta property="og:description" content="Alimento, granel por kilo, arena, accesorios y salud para tu mascota. Retiro gratis en 3 sucursales o despacho a domicilio.">
+<meta property="og:url" content="https://jcarocav.github.io/akyra-petshop-web/">
+<meta property="og:image" content="https://jcarocav.github.io/akyra-petshop-web/assets/og/og-image.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Mascotería Akyra — logo, perro y gata">
-<meta property="og:locale" content="es_CL">
-
-<!-- Twitter Card -->
+<meta property="og:image:alt" content="Maskotería Akyra: logo, perro y gata">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Mascotería Akyra — Alimento a Granel para Perros y Gatos en Punta Arenas">
-<meta name="twitter:description" content="Alimento a granel para perros y gatos en Punta Arenas — elige los gramos exactos y paga solo lo que necesitas.">
-<meta name="twitter:image" content="https://[tudominio].cl/assets/og/og-image.jpg">
-
-<!-- Datos estructurados: comercio local -->
+<!-- parcial:recursos -->
+<meta name="theme-color" content="#00b0a3">
+<link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+<link rel="preload" href="assets/fuentes/nunito-sans.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fuentes/fredoka.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="styles.css">
+<!-- /parcial:recursos -->
+<link rel="preload" as="image" href="assets/hero/portada-lanzamiento-560.webp" imagesrcset="assets/hero/portada-lanzamiento-560.webp 560w, assets/hero/portada-lanzamiento-1000.webp 671w" imagesizes="(max-width: 720px) 80vw, 560px" fetchpriority="high">
 <script type="application/ld+json">
 [
   {
     "@context": "https://schema.org",
     "@type": "PetStore",
-    "name": "Mascotería Akyra — Casa Matriz",
-    "description": "El almacén para perros y gatos en Punta Arenas — comida, accesorios, y comida a granel (alimento a granel) para perros y gatos, con despacho a domicilio.",
-    "url": "https://[tudominio].cl/#ubicaciones",
-    "image": "https://[tudominio].cl/assets/og/og-image.jpg",
+    "name": "Maskotería Akyra — Casa Matriz",
+    "url": "https://jcarocav.github.io/akyra-petshop-web/",
+    "image": "https://jcarocav.github.io/akyra-petshop-web/assets/og/og-image.jpg",
+    "telephone": "+56986969111",
+    "email": "maskoteria.akyra@gmail.com",
+    "priceRange": "$$",
+    "address": { "@type": "PostalAddress", "streetAddress": "Av. José Martínez de Aldunate 1431", "addressLocality": "Punta Arenas", "addressRegion": "Magallanes", "addressCountry": "CL" },
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"], "opens": "10:00", "closes": "13:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"], "opens": "15:00", "closes": "20:00" }
+    ],
+    "sameAs": ["https://www.instagram.com/maskoteria_akyra/", "https://www.facebook.com/p/Maskoter%C3%ADa-Akyra-100042138145142/"]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "PetStore",
+    "name": "Maskotería Akyra — Hornillas",
+    "url": "https://jcarocav.github.io/akyra-petshop-web/",
+    "image": "https://jcarocav.github.io/akyra-petshop-web/assets/og/og-image.jpg",
     "telephone": "+56986969111",
     "priceRange": "$$",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Av. José Martínez de Aldunate 1431",
-      "addressLocality": "Punta Arenas",
-      "addressRegion": "Magallanes",
-      "addressCountry": "CL"
-    },
+    "address": { "@type": "PostalAddress", "streetAddress": "Hornillas 080", "addressLocality": "Punta Arenas", "addressRegion": "Magallanes", "addressCountry": "CL" },
     "openingHoursSpecification": [
-      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"], "opens": "10:00", "closes": "13:00" },
-      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"], "opens": "15:00", "closes": "20:00" }
-    ],
-    "sameAs": [
-      "https://www.instagram.com/maskoteria_akyra/",
-      "https://www.facebook.com/p/Maskoter%C3%ADa-Akyra-100042138145142/"
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"], "opens": "10:10", "closes": "13:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"], "opens": "15:00", "closes": "19:30" }
     ]
   },
   {
     "@context": "https://schema.org",
     "@type": "PetStore",
-    "name": "Mascotería Akyra — Hornillas",
-    "description": "El almacén para perros y gatos en Punta Arenas — comida, accesorios, y comida a granel (alimento a granel) para perros y gatos, con despacho a domicilio.",
-    "url": "https://[tudominio].cl/#ubicaciones",
-    "image": "https://[tudominio].cl/assets/og/og-image.jpg",
+    "name": "Maskotería Akyra — Las Lengas",
+    "url": "https://jcarocav.github.io/akyra-petshop-web/",
+    "image": "https://jcarocav.github.io/akyra-petshop-web/assets/og/og-image.jpg",
     "telephone": "+56986969111",
     "priceRange": "$$",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Hornillas 080",
-      "addressLocality": "Punta Arenas",
-      "addressRegion": "Magallanes",
-      "addressCountry": "CL"
-    },
+    "address": { "@type": "PostalAddress", "streetAddress": "Av. Circunvalación Ramón Cañas 340", "addressLocality": "Punta Arenas", "addressRegion": "Magallanes", "addressCountry": "CL" },
     "openingHoursSpecification": [
-      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"], "opens": "10:10", "closes": "13:00" },
-      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"], "opens": "15:00", "closes": "19:30" }
-    ],
-    "sameAs": [
-      "https://www.instagram.com/maskoteria_akyra/",
-      "https://www.facebook.com/p/Maskoter%C3%ADa-Akyra-100042138145142/"
-    ]
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "PetStore",
-    "name": "Mascotería Akyra — Circunvalación",
-    "description": "El almacén para perros y gatos en Punta Arenas — comida, accesorios, y comida a granel (alimento a granel) para perros y gatos, con despacho a domicilio.",
-    "url": "https://[tudominio].cl/#ubicaciones",
-    "image": "https://[tudominio].cl/assets/og/og-image.jpg",
-    "telephone": "+56986969111",
-    "priceRange": "$$",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Av. Circunvalación Ramón Cañas 340",
-      "addressLocality": "Punta Arenas",
-      "addressRegion": "Magallanes",
-      "addressCountry": "CL"
-    },
-    "openingHoursSpecification": [
-      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"], "opens": "10:30", "closes": "13:00" },
-      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"], "opens": "15:10", "closes": "20:00" }
-    ],
-    "sameAs": [
-      "https://www.instagram.com/maskoteria_akyra/",
-      "https://www.facebook.com/p/Maskoter%C3%ADa-Akyra-100042138145142/"
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"], "opens": "10:30", "closes": "13:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"], "opens": "15:10", "closes": "20:00" }
     ]
   }
 ]
 </script>
-
-<!-- Fuentes: Fredoka (títulos, redondeada y cercana) + Nunito Sans (texto) -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-
-<!-- Tailwind (solo utilidades de layout, el diseño real vive en styles.css) -->
-<script src="https://cdn.tailwindcss.com"></script>
-
-<!-- Lucide icons -->
-<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
-
-<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-<!-- ================= AVISO DE PRIVACIDAD (pop-up, primera visita) ================= -->
-<div class="privacy-overlay" id="privacy-overlay" hidden>
-  <div class="privacy-modal" role="dialog" aria-modal="true" aria-labelledby="privacy-modal-title">
-    <h3 id="privacy-modal-title">Antes de seguir...</h3>
-    <p>En Mascotería Akyra respetamos tu privacidad, conforme a la Ley N.° 19.628 sobre Protección de la Vida Privada. Los datos que nos compartes (nombre, teléfono, dirección) los usamos únicamente para coordinar tu compra, despacho o consulta por WhatsApp — no los usamos para otros fines, no los compartimos con terceros ni los almacenamos más allá de lo necesario para atenderte.</p>
-    <button type="button" class="btn btn-primary" id="privacy-accept">Aceptar</button>
+<!-- parcial:aviso-privacidad -->
+<div class="capa-dialogo">
+  <div id="aviso-privacidad-fondo" class="fondo fondo--oscuro" hidden></div>
+  <div id="aviso-privacidad" class="aviso" role="dialog" aria-modal="true" aria-labelledby="aviso-privacidad-titulo" aria-describedby="aviso-privacidad-texto" hidden>
+    <h2 id="aviso-privacidad-titulo">Antes de seguir…</h2>
+    <p id="aviso-privacidad-texto">En Maskotería Akyra respetamos tu privacidad, conforme a la Ley N.° 19.628 sobre Protección de la Vida Privada. Los datos que nos compartes (nombre, teléfono, dirección) los usamos únicamente para coordinar tu compra, despacho o consulta por WhatsApp: no los usamos para otros fines, no los compartimos con terceros ni los guardamos más allá de lo necesario para atenderte.</p>
+    <p><a href="politica-privacidad.html">Leer la política de privacidad</a></p>
+    <button type="button" class="boton boton--primario boton--ancho" id="aviso-privacidad-aceptar">Aceptar</button>
   </div>
 </div>
-
-<!-- ================= HEADER ================= -->
-<header class="site-header" id="site-header">
-  <div class="header-top">
-    <a href="#inicio" class="logo">
-      <img src="assets/logo/logo-akyra.svg" alt="Mascotería Akyra" class="logo-img">
-    </a>
-
-    <form class="nav-search" id="nav-search" action="catalogo.html" method="get" role="search">
-      <input type="search" name="buscar" id="nav-search-input" placeholder="Buscar producto..." autocomplete="off">
-      <button type="submit" aria-label="Buscar">
-        <i data-lucide="search"></i>
-        <span>Buscar</span>
-      </button>
+<!-- /parcial:aviso-privacidad -->
+<!-- parcial:cabecera -->
+<header class="cabecera">
+  <a class="saltar" href="#contenido">Saltar al contenido</a>
+  <div class="cabecera__fila">
+    <a href="index.html" class="cabecera__logo"><img src="assets/logo/logo-akyra-recortado.svg" alt="Maskotería Akyra, ir al inicio" width="976" height="330"></a>
+    <form id="buscador" class="buscador" action="catalogo.html" method="get" role="search" aria-label="Buscar productos">
+      <label for="buscador-campo" class="visualmente-oculto">Buscar por producto, marca o código</label>
+      <input id="buscador-campo" type="search" name="buscar" placeholder="Busca por producto, marca o código" maxlength="80" autocomplete="off" enterkeyhint="search">
+      <button type="submit" class="buscador__boton"><svg class="icono" aria-hidden="true" focusable="false"><use href="assets/iconos.svg#search"></use></svg><span class="buscador__texto">Buscar</span></button>
     </form>
-
-    <div class="header-actions">
-      <a href="#" id="nav-whatsapp" class="nav-cta" target="_blank" rel="noopener">
-        <i data-lucide="message-circle"></i> Escríbenos
-      </a>
-      <button class="cart-toggle" id="cart-toggle" aria-label="Ver carrito">
-        <i data-lucide="shopping-bag"></i>
-        <span class="cart-badge" id="cart-badge" hidden>0</span>
-        <span class="cart-bump" id="cart-bump">+1</span>
-      </button>
-      <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">
-        <i data-lucide="menu"></i>
-      </button>
+    <div class="cabecera__acciones">
+      <a class="boton boton--whatsapp cabecera__whatsapp" data-whatsapp href="https://wa.me/56986969111" target="_blank" rel="noopener"><svg class="icono" aria-hidden="true" focusable="false"><use href="assets/iconos.svg#message-circle"></use></svg><span>Escríbenos</span><span class="visualmente-oculto"> por WhatsApp (se abre en una pestaña nueva)</span></a>
+      <button id="boton-carrito" class="cabecera__carrito" type="button" aria-label="Carrito, vacío" aria-haspopup="dialog" aria-controls="carrito"><svg class="icono" aria-hidden="true" focusable="false"><use href="assets/iconos.svg#shopping-bag"></use></svg><span id="contador-carrito" class="contador" aria-hidden="true" hidden>0</span></button>
+      <button id="menu-boton" class="cabecera__menu" type="button" aria-expanded="false" aria-controls="menu-principal"><svg class="icono" aria-hidden="true" focusable="false"><use href="assets/iconos.svg#menu"></use></svg><span class="visualmente-oculto">Menú</span></button>
     </div>
   </div>
-
-  <div class="nav-wrap" id="main-nav">
-    <nav class="main-nav">
-      <a href="#inicio">Inicio</a>
-      <a href="#categorias">Categorías</a>
-      <a href="#ofertas" class="nav-tag-link">Ofertas <span class="nav-tag">¡Descuentos exclusivos!</span></a>
-      <a href="#novedades">Novedades</a>
-      <a href="#nosotros">Nosotros</a>
-      <a href="#ubicaciones">Ubicaciones</a>
-      <a href="#contacto">Contacto</a>
-      <a href="catalogo.html" class="nav-cta-secondary">Ver catálogo</a>
-    </nav>
-  </div>
+  <nav id="menu-principal" class="menu" aria-label="Principal">
+    <ul class="menu__lista">
+      <li><a href="catalogo.html?categoria=perros" data-categoria="perros">Perros</a></li>
+      <li><a href="catalogo.html?categoria=gatos" data-categoria="gatos">Gatos</a></li>
+      <li><a href="catalogo.html?categoria=otras-mascotas" data-categoria="otras-mascotas">Otras mascotas</a></li>
+      <li><a href="catalogo.html?categoria=granel" data-categoria="granel">Granel</a></li>
+      <li><a href="catalogo.html?categoria=accesorios" data-categoria="accesorios">Accesorios</a></li>
+      <li><a href="catalogo.html?categoria=arena" data-categoria="arena">Arena</a></li>
+      <li><a href="catalogo.html?categoria=ropa" data-categoria="ropa">Ropa</a></li>
+      <li><a href="catalogo.html?categoria=salud-higiene" data-categoria="salud-higiene">Salud/Higiene</a></li>
+      <li><a href="index.html#sucursales">Sucursales</a></li>
+      <li><a href="contactenos.html">Contacto</a></li>
+      <li class="menu__destacado"><a href="catalogo.html">Ver todo el catálogo</a></li>
+    </ul>
+  </nav>
 </header>
-
-<!-- ================= CARRITO ================= -->
-<div class="cart-overlay" id="cart-overlay"></div>
-<aside class="cart-drawer" id="cart-drawer" aria-label="Carrito de consulta">
-  <div class="cart-header">
-    <h3>Tu consulta</h3>
-    <button class="cart-close" id="cart-close" aria-label="Cerrar carrito"><i data-lucide="x"></i></button>
-  </div>
-
-  <div class="cart-empty" id="cart-empty">
-    <p>Todavía no agregaste productos.</p>
-    <p class="cart-empty-sub">Agrega los que te interesen y te ayudamos a confirmar precio y stock por WhatsApp.</p>
-  </div>
-
-  <div class="cart-items" id="cart-items"></div>
-
-  <div class="cart-footer" id="cart-footer" hidden>
-
-    <!-- Paso 1: resumen y total -->
-    <div class="cart-step" id="cart-step-1">
-      <div class="cart-total-row">
-        <span>Total</span>
-        <span id="cart-total">$0</span>
+<!-- /parcial:cabecera -->
+<!-- parcial:carrito -->
+<div class="capa-dialogo">
+  <div id="carrito-fondo" class="fondo" hidden></div>
+  <div id="carrito" class="carrito" role="dialog" aria-modal="true" aria-labelledby="carrito-titulo" hidden>
+    <div class="carrito__cabecera">
+      <div>
+        <h2 id="carrito-titulo" class="carrito__titulo" tabindex="-1">Tu carrito</h2>
+        <p id="carrito-indicador" class="carrito__paso">Paso 1 de 2</p>
       </div>
-      <p class="cart-note">* Precios referenciales — el total final y el stock se confirman por WhatsApp.</p>
-      <p class="cart-payment-note">Aceptamos transferencia, pago en sucursal o tarjeta a domicilio.</p>
-      <div class="cart-step-actions">
-        <button type="button" class="btn btn-outline-dark" id="cart-continue-shopping">Seguir comprando</button>
-        <button type="button" class="btn btn-primary" id="cart-go-checkout">Continuar compra</button>
+      <button id="carrito-cerrar" type="button" class="boton-icono" aria-label="Cerrar carrito"><svg class="icono" aria-hidden="true" focusable="false"><use href="assets/iconos.svg#x"></use></svg></button>
+    </div>
+
+    <!-- Paso 1: productos y total -->
+    <div id="carrito-paso-1" class="carrito__cuerpo">
+      <div id="carrito-vacio" class="estado-vacio">
+        <svg class="icono estado-vacio__icono" aria-hidden="true" focusable="false"><use href="assets/iconos.svg#shopping-bag"></use></svg>
+        <p><strong>Tu carrito está vacío.</strong></p>
+        <p>Agrega productos desde el catálogo y te ayudamos a confirmar precio y stock por WhatsApp.</p>
+        <a class="boton boton--secundario" href="catalogo.html">Ver el catálogo</a>
+      </div>
+      <ul id="carrito-lista" class="carrito__lista" aria-label="Productos en el carrito"></ul>
+      <div id="carrito-resumen" class="carrito__resumen" hidden>
+        <p class="carrito__total"><span>Subtotal</span> <strong id="carrito-subtotal">$0</strong></p>
+        <p class="nota">Precios referenciales: el total final y el stock se confirman por WhatsApp. El despacho se calcula en el paso 2.</p>
+        <p class="nota nota--destacada">Aceptamos transferencia, pago en sucursal o tarjeta a domicilio.</p>
+      </div>
+      <div class="carrito__acciones">
+        <button id="carrito-seguir" type="button" class="boton boton--secundario">Seguir comprando</button>
+        <button id="carrito-continuar" type="button" class="boton boton--primario" hidden>Continuar compra</button>
       </div>
     </div>
 
-    <!-- Paso 2: datos de contacto -->
-    <div class="cart-step" id="cart-step-2" hidden>
-      <button type="button" class="cart-back" id="cart-back-to-cart">
-        <i data-lucide="arrow-left"></i> Volver al carrito
-      </button>
+    <!-- Paso 2: datos del cliente -->
+    <div id="carrito-paso-2" class="carrito__cuerpo" hidden>
+      <form id="form-pedido" class="formulario" novalidate>
+        <div id="pedido-errores" class="errores" tabindex="-1" hidden></div>
+        <p class="nota">Los campos marcados con * son obligatorios.</p>
 
-      <div class="cart-form">
-        <input type="text" id="cart-name" class="cart-input" placeholder="Nombre" autocomplete="name">
-        <input type="tel" id="cart-phone" class="cart-input" placeholder="Teléfono" autocomplete="tel">
-        <input type="text" id="cart-address" class="cart-input" placeholder="Dirección (si necesitas despacho)" autocomplete="street-address">
-        <span class="cart-delivery-note">Despacho: $2.000 zona urbana · $3.500 periferia — o retira gratis en sucursal</span>
+        <div class="campo">
+          <label for="pedido-nombre">Nombre *</label>
+          <input id="pedido-nombre" name="nombre" type="text" autocomplete="name" maxlength="80" required aria-describedby="pedido-nombre-error">
+          <p id="pedido-nombre-error" class="campo__error" hidden></p>
+        </div>
+        <div class="campo">
+          <label for="pedido-telefono">Teléfono *</label>
+          <input id="pedido-telefono" name="telefono" type="tel" autocomplete="tel" inputmode="tel" maxlength="20" required aria-describedby="pedido-telefono-ayuda pedido-telefono-error">
+          <p id="pedido-telefono-ayuda" class="campo__ayuda">Por ejemplo: +56 9 1234 5678</p>
+          <p id="pedido-telefono-error" class="campo__error" hidden></p>
+        </div>
 
-        <div class="cart-payment">
-          <span class="cart-payment-label">¿Cómo vas a pagar?</span>
-          <div class="cart-payment-options">
-            <button type="button" class="cart-payment-btn" data-payment="Transferencia">Transferencia</button>
-            <button type="button" class="cart-payment-btn" data-payment="Tarjeta débito/crédito">Tarjeta débito/crédito</button>
-            <button type="button" class="cart-payment-btn" data-payment="Efectivo">Efectivo</button>
+        <fieldset class="campo grupo-opciones">
+          <legend>¿Cómo quieres recibirlo? *</legend>
+          <div class="opcion-radio"><input type="radio" id="entrega-retiro" name="entrega" value="retiro" checked><label for="entrega-retiro">Retiro en sucursal (gratis)</label></div>
+          <div class="opcion-radio"><input type="radio" id="entrega-despacho" name="entrega" value="despacho"><label for="entrega-despacho">Despacho a domicilio</label></div>
+        </fieldset>
+
+        <div id="bloque-retiro" class="campo">
+          <label for="pedido-sucursal">Sucursal de retiro *</label>
+          <select id="pedido-sucursal" name="sucursal" required aria-describedby="pedido-sucursal-error">
+            <option value="">Elige una sucursal</option>
+            <option value="casa-matriz">Casa Matriz: Av. José Martínez de Aldunate 1431</option>
+            <option value="hornillas">Hornillas: Hornillas 080</option>
+            <option value="las-lengas">Las Lengas: Av. Circunvalación Ramón Cañas 340</option>
+          </select>
+          <p id="pedido-sucursal-error" class="campo__error" hidden></p>
+        </div>
+
+        <div id="bloque-despacho" hidden>
+          <div class="campo">
+            <label for="pedido-direccion">Dirección de despacho *</label>
+            <input id="pedido-direccion" name="direccion" type="text" autocomplete="address-line1" maxlength="160" aria-describedby="pedido-direccion-error">
+            <p id="pedido-direccion-error" class="campo__error" hidden></p>
           </div>
+          <fieldset id="grupo-zona" class="campo grupo-opciones" aria-describedby="grupo-zona-error">
+            <legend>Zona de despacho *</legend>
+            <div class="opcion-radio"><input type="radio" id="zona-urbano" name="zona" value="urbano"><label for="zona-urbano">Zona urbana: $2.000</label></div>
+            <div class="opcion-radio"><input type="radio" id="zona-periferia" name="zona" value="periferia"><label for="zona-periferia">Periferia: $3.500</label></div>
+            <p id="grupo-zona-error" class="campo__error" hidden></p>
+          </fieldset>
         </div>
-        <span class="cart-delivery-note cart-payment-note" id="cart-delivery-payment-note" hidden>Para despacho a domicilio, transfiere al menos el valor del despacho (por si prefieres pagar el resto con tarjeta al llegar) o el total completo de tu pedido.</span>
-        <textarea id="cart-extra" class="cart-textarea" rows="2" placeholder="¿Algo más que debamos saber? (opcional)"></textarea>
+
+        <fieldset id="grupo-pago" class="campo grupo-opciones grupo-opciones--botones" aria-describedby="grupo-pago-error">
+          <legend>¿Cómo vas a pagar? *</legend>
+          <div class="opcion-radio"><input type="radio" id="pago-0" name="pago" value="Transferencia"><label for="pago-0">Transferencia</label></div>
+          <div class="opcion-radio"><input type="radio" id="pago-1" name="pago" value="Tarjeta débito/crédito"><label for="pago-1">Tarjeta débito/crédito</label></div>
+          <div class="opcion-radio"><input type="radio" id="pago-2" name="pago" value="Efectivo"><label for="pago-2">Efectivo</label></div>
+          <p id="grupo-pago-error" class="campo__error" hidden></p>
+        </fieldset>
+        <p id="nota-pago-despacho" class="nota nota--destacada" hidden>Para despacho a domicilio, transfiere al menos el valor del despacho (por si prefieres pagar el resto con tarjeta al llegar) o el total de tu pedido.</p>
+
+        <div class="campo">
+          <label for="pedido-comentarios">Comentarios (opcional)</label>
+          <textarea id="pedido-comentarios" name="comentarios" rows="3" maxlength="400" aria-describedby="pedido-comentarios-ayuda"></textarea>
+          <p id="pedido-comentarios-ayuda" class="campo__ayuda">Por ejemplo: horario para recibir o referencias de la dirección. Máximo 400 caracteres.</p>
+        </div>
+
+        <div class="trampa" aria-hidden="true">
+          <label for="pedido-sitio-web">No escribas en este campo</label>
+          <input id="pedido-sitio-web" name="sitio_web" type="text" tabindex="-1" autocomplete="off">
+        </div>
+
+        <dl class="carrito__cuentas">
+          <div><dt>Productos</dt><dd id="pedido-subtotal">$0</dd></div>
+          <div><dt>Despacho</dt><dd id="pedido-despacho">Gratis (retiro)</dd></div>
+          <div class="carrito__cuentas-total"><dt>Total</dt><dd id="pedido-total">$0</dd></div>
+        </dl>
+        <p class="nota">Al apretar el botón se abre WhatsApp con tu pedido ya escrito. <strong>Para que nos llegue, aprieta “Enviar” en WhatsApp.</strong></p>
+        <div class="carrito__acciones">
+          <button id="carrito-volver" type="button" class="boton boton--secundario">Volver</button>
+          <button type="submit" class="boton boton--whatsapp"><svg class="icono" aria-hidden="true" focusable="false"><use href="assets/iconos.svg#message-circle"></use></svg><span>Enviar pedido por WhatsApp</span></button>
+        </div>
+      </form>
+    </div>
+
+    <!-- Confirmación -->
+    <div id="carrito-paso-3" class="carrito__cuerpo" hidden>
+      <div class="confirmacion">
+        <svg class="icono confirmacion__icono" aria-hidden="true" focusable="false"><use href="assets/iconos.svg#circle-check"></use></svg>
+        <p class="confirmacion__titulo">Abrimos WhatsApp con tu pedido</p>
+        <ol class="confirmacion__pasos">
+          <li>Revisa el mensaje en WhatsApp.</li>
+          <li>Aprieta <strong>Enviar</strong>. Si no lo envías, el pedido no nos llega: el sitio no puede enviarlo por ti.</li>
+          <li>Te respondemos por WhatsApp para confirmar stock, total y entrega.</li>
+        </ol>
+        <p class="nota">¿No se abrió WhatsApp? Usa este botón, o copia el pedido y pégalo en un chat con nosotros (+56 9 8696 9111).</p>
+        <a id="pedido-enlace" class="boton boton--whatsapp boton--ancho" href="https://wa.me/56986969111" target="_blank" rel="noopener"><svg class="icono" aria-hidden="true" focusable="false"><use href="assets/iconos.svg#message-circle"></use></svg><span>Abrir WhatsApp con mi pedido</span><span class="visualmente-oculto"> (se abre en una pestaña nueva)</span></a>
+        <button id="pedido-copiar" type="button" class="boton boton--secundario boton--ancho"><svg class="icono" aria-hidden="true" focusable="false"><use href="assets/iconos.svg#copy"></use></svg><span>Copiar pedido</span></button>
+        <p id="pedido-copiado" class="nota" role="status"></p>
       </div>
-
-      <p class="cart-form-hint" id="cart-form-hint">Completa nombre, teléfono y método de pago para enviar tu pedido.</p>
-      <a href="#" id="cart-whatsapp" class="btn btn-primary cart-whatsapp-btn" target="_blank" rel="noopener">
-        <i data-lucide="message-circle"></i> Enviar pedido por WhatsApp
-      </a>
+      <div class="carrito__acciones">
+        <button id="pedido-vaciar" type="button" class="boton boton--secundario">Ya lo envié: vaciar carrito</button>
+        <button id="pedido-volver-tienda" type="button" class="boton boton--primario">Volver a la tienda</button>
+      </div>
     </div>
   </div>
-</aside>
+</div>
+<!-- /parcial:carrito -->
 
-<!-- ================= HERO ================= -->
-<section class="hero" id="inicio">
-  <!-- Imagen fija de portada. Se genera en script.js a partir de HERO_MEDIA. -->
-  <div class="hero-media" id="hero-media" aria-hidden="true"></div>
+<main id="contenido" tabindex="-1">
 
-  <div class="section-deco" aria-hidden="true">
-    <div class="deco-dashed diag deco-topleft"><span></span><span></span><span></span><span></span></div>
-    <div class="deco-dot coral sm deco-topright"></div>
-    <div class="deco-dashed diag-rev deco-bottomright"><span></span><span></span><span></span></div>
-    <div class="deco-dot yellow md deco-bottomleft"></div>
-  </div>
-
-  <!-- Texto de lanzamiento, pegado a la izquierda — el contenido lo
-       arma initHeroMedia() en script.js a partir de HERO_MEDIA, en
-       sincronía con la imagen activa (mismo índice). -->
-  <div class="hero-launch-text" id="hero-launch-text">
-    <p class="hero-launch-eyebrow" id="hero-eyebrow"></p>
-    <h1 id="hero-title"></h1>
-    <p class="hero-launch-subtitle" id="hero-subtitle"></p>
-  </div>
-
-  <div class="paw-trail" aria-hidden="true">
-    <span>🐾</span><span>🐾</span><span>🐾</span>
-  </div>
-
-  <a href="#categorias" class="scroll-cue" id="scroll-cue" aria-hidden="true">
-    <span>Sigue bajando</span>
-    <i data-lucide="chevron-down"></i>
-  </a>
-</section>
-
-<!-- ================= AYUDA / SUCURSALES ================= -->
-<section class="help-strip">
-  <div class="help-strip-inner">
-    <a href="#" id="help-strip-whatsapp" class="help-strip-item" target="_blank" rel="noopener">
-      <i data-lucide="life-buoy"></i>
-      <span>
-        <strong>¿Necesitas ayuda?</strong>
-        Escríbenos por WhatsApp
-      </span>
-    </a>
-    <a href="#ubicaciones" class="help-strip-item">
-      <i data-lucide="map-pin"></i>
-      <span>
-        <strong>Sucursales</strong>
-        3 tiendas en Punta Arenas
-      </span>
-    </a>
-  </div>
-</section>
-
-<!-- ================= CATEGORÍAS ================= -->
-<section class="categories" id="categorias">
-  <div class="section-deco" aria-hidden="true">
-    <div class="deco-dashed diag deco-topleft"><span></span><span></span><span></span><span></span></div>
-    <div class="deco-dot coral sm deco-topright"></div>
-    <div class="deco-dot yellow md deco-bottomleft"></div>
-    <div class="deco-dashed diag-rev coral deco-bottomright"><span></span><span></span><span></span></div>
-  </div>
-  <div class="categories-inner">
-    <h2 class="reveal">Comprar por categorías</h2>
-
-    <div class="category-grid">
-      <a href="catalogo.html?categoria=perros" class="category-card reveal">
-        <img src="assets/img/categorias/perros.jpg" alt="Perros" class="category-img" loading="lazy">
-        <div class="category-overlay"></div>
-        <div class="category-content">
-          <h3>Perros</h3>
-          <p>Alimento seco, húmedo y snacks</p>
+  <!-- ================= PORTADA (carrusel con pausa) ================= -->
+  <section class="hero" aria-labelledby="hero-marca" data-carrusel>
+    <div class="deco" aria-hidden="true"><span class="deco__puntos deco--arriba-izq"></span><span class="deco__punto deco__punto--amarillo deco--abajo-izq"></span></div>
+    <div class="hero__contenido">
+      <h1 id="hero-marca" class="hero__marca">Maskotería Akyra<span class="visualmente-oculto">: tienda de mascotas y alimento a granel en Punta Arenas</span></h1>
+      <div class="hero__diapositivas">
+        <div class="hero__diapositiva activa" role="group" aria-label="Inauguramos nuestro sitio web">
+          <div class="hero__texto">
+            <p class="hero__titulo">¡Inauguramos nuestro <span class="hero__resalte">sitio web!</span></p>
+            <p class="hero__bajada">Revisa el catálogo con stock real de nuestras 3 tiendas y haz tu pedido por WhatsApp.</p>
+            <a class="boton boton--claro" href="catalogo.html">Ver el catálogo</a>
+          </div>
+          <img class="hero__imagen" src="assets/hero/portada-lanzamiento-560.webp" srcset="assets/hero/portada-lanzamiento-560.webp 560w, assets/hero/portada-lanzamiento-1000.webp 671w" sizes="(max-width: 720px) 80vw, 560px" width="671" height="821" alt="Un perro y un gato sentados, dando la bienvenida" fetchpriority="high">
         </div>
-      </a>
-
-      <a href="catalogo.html?categoria=gatos" class="category-card reveal">
-        <img src="assets/img/categorias/gatos.jpg" alt="Gatos" class="category-img" loading="lazy">
-        <div class="category-overlay"></div>
-        <div class="category-content">
-          <h3>Gatos</h3>
-          <p>Alimento seco, húmedo y snacks</p>
+        <div class="hero__diapositiva" role="group" aria-label="Alimento a granel" hidden>
+          <div class="hero__texto">
+            <p class="hero__titulo">¡La primera petshop online donde compras a <span class="hero__resalte">granel!</span></p>
+            <p class="hero__bajada">Elige los kilos que necesitas, desde medio kilo, y retíralo en tienda o recíbelo en tu casa.</p>
+            <a class="boton boton--claro" href="catalogo.html?categoria=granel">Ver alimento a granel</a>
+          </div>
+          <img class="hero__imagen hero__imagen--ancha" src="assets/hero/portada-granel-640.webp" srcset="assets/hero/portada-granel-640.webp 640w, assets/hero/portada-granel-1100.webp 1100w" sizes="(max-width: 720px) 92vw, 640px" width="1100" height="461" alt="Un perro y un gato manejando una van turquesa" loading="lazy">
         </div>
-      </a>
-
-      <a href="catalogo.html?categoria=otras-mascotas" class="category-card reveal">
-        <img src="assets/img/categorias/otras-mascotas.jpg" alt="Otras mascotas" class="category-img" loading="lazy">
-        <div class="category-overlay"></div>
-        <div class="category-content">
-          <h3>Otras mascotas</h3>
-          <p>Aves, roedores y más</p>
+        <div class="hero__diapositiva" role="group" aria-label="Fiestas Patrias" data-desde="09-01" data-hasta="09-20" hidden>
+          <div class="hero__texto">
+            <p class="hero__titulo">¡Ya se acerca el 18 y ellos también <span class="hero__resalte">celebran!</span></p>
+            <p class="hero__bajada">Alimentos, premios y accesorios para que tu regalón también disfrute estas fiestas.</p>
+            <a class="boton boton--claro" href="catalogo.html">Ver el catálogo</a>
+          </div>
+          <img class="hero__imagen hero__imagen--ancha" src="assets/hero/portada-fiestas-patrias-560.webp" srcset="assets/hero/portada-fiestas-patrias-560.webp 560w, assets/hero/portada-fiestas-patrias-1000.webp 1000w" sizes="(max-width: 720px) 92vw, 560px" width="1000" height="558" alt="Un perrito y una gatita vestidos para Fiestas Patrias con la bandera de Chile" loading="lazy">
         </div>
-      </a>
-
-      <a href="catalogo.html?categoria=accesorios" class="category-card reveal">
-        <img src="https://loremflickr.com/400/300/pet,accessory" alt="Accesorios" class="category-img" loading="lazy">
-        <div class="category-overlay"></div>
-        <div class="category-content">
-          <h3>Accesorios</h3>
-          <p>Juguetes, arena, correas, platos y más</p>
-        </div>
-      </a>
-
-      <a href="catalogo.html?categoria=salud" class="category-card reveal">
-        <img src="https://loremflickr.com/400/300/pet,vet" alt="Salud y Bienestar" class="category-img" loading="lazy">
-        <div class="category-overlay"></div>
-        <div class="category-content">
-          <h3>Salud y Bienestar</h3>
-          <p>Antiparasitarios, vitaminas y suplementos</p>
-        </div>
-      </a>
+      </div>
+      <div class="hero__controles">
+        <button id="hero-anterior" type="button" class="boton-icono boton-icono--claro" aria-label="Portada anterior"><svg class="icono" aria-hidden="true" focusable="false"><use href="assets/iconos.svg#chevron-left"></use></svg></button>
+        <span id="hero-contador" class="hero__contador">1 de 2</span>
+        <button id="hero-siguiente" type="button" class="boton-icono boton-icono--claro" aria-label="Portada siguiente"><svg class="icono" aria-hidden="true" focusable="false"><use href="assets/iconos.svg#chevron-right"></use></svg></button>
+        <button id="hero-pausa" type="button" class="boton-icono boton-icono--claro" aria-pressed="false" aria-label="Pausar el carrusel de portada" hidden><svg class="icono" aria-hidden="true" focusable="false"><use href="assets/iconos.svg#pause"></use></svg></button>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- ================= ALIMENTO A GRANEL ================= -->
-<section class="bulk" id="alimento-granel">
-  <div class="section-deco" aria-hidden="true">
-    <div class="deco-dot yellow sm deco-topleft"></div>
-    <div class="deco-dashed diag coral deco-topright"><span></span><span></span><span></span></div>
-    <div class="deco-dot violet xs deco-bottomright"></div>
-  </div>
-  <div class="bulk-inner">
-    <p class="eyebrow">Alimento a Granel</p>
-    <h2 class="reveal">Compra solo lo que necesitas</h2>
-    <p class="section-sub reveal">Elige el peso exacto para tu mascota — ideal para probar un alimento nuevo o ajustarte a tu presupuesto, sin pagar de más por bolsas grandes. La primera opción de comida y alimento a granel para perros y gatos con despacho a domicilio en Punta Arenas.</p>
+  <!-- ================= AYUDA RÁPIDA ================= -->
+  <section class="atajos" aria-label="Ayuda rápida">
+    <ul class="atajos__lista">
+      <li><a class="atajo" data-whatsapp href="https://wa.me/56986969111" target="_blank" rel="noopener"><svg class="icono" aria-hidden="true" focusable="false"><use href="assets/iconos.svg#message-circle"></use></svg><span><strong>¿Necesitas ayuda?</strong> Escríbenos por WhatsApp<span class="visualmente-oculto"> (se abre en una pestaña nueva)</span></span></a></li>
+      <li><a class="atajo" href="#sucursales"><svg class="icono" aria-hidden="true" focusable="false"><use href="assets/iconos.svg#map-pin"></use></svg><span><strong>3 sucursales</strong> en Punta Arenas, retiro gratis</span></a></li>
+      <li><a class="atajo" href="politica-despacho-retiro.html"><svg class="icono" aria-hidden="true" focusable="false"><use href="assets/iconos.svg#truck"></use></svg><span><strong>Despacho a domicilio</strong> $2.000 urbano · $3.500 periferia</span></a></li>
+    </ul>
+  </section>
 
-    <div class="bulk-grid bulk-grid-1">
-      <div class="bulk-card reveal">
-        <div class="bulk-icon"><i data-lucide="scale"></i></div>
-        <h3>Alimento a Granel</h3>
-        <p>Pesamos justo la cantidad que pides, en el momento — nada de sobras ni envases de más.</p>
-        <ul class="bulk-list">
-          <li>Pesa la cantidad exacta que necesitas</li>
-          <li>Perfecto para probar un alimento nuevo</li>
-          <li>Sin pagar de más por bolsas grandes</li>
+  <!-- ================= CATEGORÍAS ================= -->
+  <section class="seccion seccion--patitas" id="categorias" aria-labelledby="categorias-titulo">
+    <div class="contenedor">
+      <p class="antetitulo">Catálogo</p>
+      <h2 id="categorias-titulo" class="seccion__titulo">Compra por categoría</h2>
+      <ul class="categorias">
+        <li><a class="categoria categoria--turquesa" href="catalogo.html?categoria=perros"><span class="categoria__icono"><svg class="icono" aria-hidden="true" focusable="false"><use href="assets/iconos.svg#dog"></use></svg></span><span class="categoria__nombre">Perros</span><span class="categoria__detalle">Alimento seco, húmedo y snacks</span><span class="categoria__conteo" data-conteo-categoria="perros"></span></a></li>
+        <li><a class="categoria categoria--magenta" href="catalogo.html?categoria=gatos"><span class="categoria__icono"><svg class="icono" aria-hidden="true" focusable="false"><use href="assets/iconos.svg#cat"></use></svg></span><span class="categoria__nombre">Gatos</span><span class="categoria__detalle">Alimento seco, húmedo y snacks</span><span class="categoria__conteo" data-conteo-categoria="gatos"></span></a></li>
+        <li><a class="categoria categoria--amarillo" href="catalogo.html?categoria=otras-mascotas"><span class="categoria__icono"><svg class="icono" aria-hidden="true" focusable="false"><use href="assets/iconos.svg#rabbit"></use></svg></span><span class="categoria__nombre">Otras mascotas</span><span class="categoria__detalle">Roedores, conejos y más</span><span class="categoria__conteo" data-conteo-categoria="otras-mascotas"></span></a></li>
+        <li><a class="categoria categoria--turquesa" href="catalogo.html?categoria=granel"><span class="categoria__icono"><svg class="icono" aria-hidden="true" focusable="false"><use href="assets/iconos.svg#scale"></use></svg></span><span class="categoria__nombre">Granel</span><span class="categoria__detalle">Alimento por kilo, desde 0,5 kg</span><span class="categoria__conteo" data-conteo-categoria="granel"></span></a></li>
+        <li><a class="categoria categoria--magenta" href="catalogo.html?categoria=accesorios"><span class="categoria__icono"><svg class="icono" aria-hidden="true" focusable="false"><use href="assets/iconos.svg#bone"></use></svg></span><span class="categoria__nombre">Accesorios</span><span class="categoria__detalle">Juguetes, collares, platos, camas</span><span class="categoria__conteo" data-conteo-categoria="accesorios"></span></a></li>
+        <li><a class="categoria categoria--amarillo" href="catalogo.html?categoria=arena"><span class="categoria__icono"><svg class="icono" aria-hidden="true" focusable="false"><use href="assets/iconos.svg#box"></use></svg></span><span class="categoria__nombre">Arena</span><span class="categoria__detalle">Aglutinante, sílica y ecológica</span><span class="categoria__conteo" data-conteo-categoria="arena"></span></a></li>
+        <li><a class="categoria categoria--turquesa" href="catalogo.html?categoria=ropa"><span class="categoria__icono"><svg class="icono" aria-hidden="true" focusable="false"><use href="assets/iconos.svg#shirt"></use></svg></span><span class="categoria__nombre">Ropa</span><span class="categoria__detalle">Parkas, chalecos y bandanas</span><span class="categoria__conteo" data-conteo-categoria="ropa"></span></a></li>
+        <li><a class="categoria categoria--magenta" href="catalogo.html?categoria=salud-higiene"><span class="categoria__icono"><svg class="icono" aria-hidden="true" focusable="false"><use href="assets/iconos.svg#heart-pulse"></use></svg></span><span class="categoria__nombre">Salud/Higiene</span><span class="categoria__detalle">Antiparasitarios, shampoo, suplementos</span><span class="categoria__conteo" data-conteo-categoria="salud-higiene"></span></a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ================= ALIMENTO A GRANEL ================= -->
+  <section class="granel" id="alimento-granel" aria-labelledby="granel-titulo">
+    <div class="contenedor granel__contenido">
+      <p class="antetitulo">Alimento a granel</p>
+      <h2 id="granel-titulo" class="seccion__titulo">Compra solo lo que necesitas</h2>
+      <p class="seccion__bajada">Elige los kilos exactos para tu mascota, desde medio kilo: ideal para probar un alimento nuevo o ajustarte a tu presupuesto, sin pagar de más por sacos grandes.</p>
+      <div class="granel__tarjeta">
+        <h3><span class="granel__icono"><svg class="icono" aria-hidden="true" focusable="false"><use href="assets/iconos.svg#scale"></use></svg></span>Así funciona</h3>
+        <ul class="lista-puntos">
+          <li>Elige el alimento y cuántos kilos quieres (de medio en medio kilo).</li>
+          <li>Ves el precio por kilo y el subtotal al instante.</li>
+          <li>Lo pesamos justo al preparar tu pedido.</li>
         </ul>
-        <a href="catalogo.html?categoria=granel" class="btn btn-primary">Ver alimento a granel</a>
+        <a href="catalogo.html?categoria=granel" class="boton boton--primario">Ver alimento a granel</a>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- ================= DESTACADOS ================= -->
-<section class="featured" id="ofertas">
-  <div class="section-deco" aria-hidden="true">
-    <div class="deco-dashed diag-rev deco-topright"><span></span><span></span><span></span><span></span></div>
-    <div class="deco-dot violet sm deco-topleft"></div>
-    <div class="deco-dot coral md deco-bottomright"></div>
-    <div class="deco-dashed diag deco-bottomleft"><span></span><span></span><span></span></div>
-  </div>
-  <div class="featured-inner">
-    <p class="eyebrow">Promociones</p>
-    <h2 class="reveal">¡Ofertas exclusivas!</h2>
-    <p class="section-sub reveal">* Fotos, precios y ofertas de ejemplo — el catálogo completo con precios y stock real vive en la página de catálogo.</p>
-    <a href="catalogo.html?categoria=perros&ofertas=1" class="btn btn-outline-dark">Ver todas las ofertas</a>
-
-    <div class="carousel-nav">
-      <button class="carousel-arrow" id="offers-prev" aria-label="Ver ofertas anteriores"><i data-lucide="chevron-left"></i></button>
-      <button class="carousel-arrow" id="offers-next" aria-label="Ver más ofertas"><i data-lucide="chevron-right"></i></button>
+  <!-- ================= DESTACADOS ================= -->
+  <section class="seccion seccion--suave seccion--patitas" id="destacados" aria-labelledby="destacados-titulo">
+    <div class="contenedor">
+      <div class="seccion__cabecera">
+        <div>
+          <p class="antetitulo">Destacados</p>
+          <h2 id="destacados-titulo" class="seccion__titulo">Lo que más llevan nuestros clientes</h2>
+        </div>
+        <div class="carrusel__flechas">
+          <button id="destacados-anterior" type="button" class="boton-icono" aria-label="Ver destacados anteriores" aria-controls="destacados-lista"><svg class="icono" aria-hidden="true" focusable="false"><use href="assets/iconos.svg#chevron-left"></use></svg></button>
+          <button id="destacados-siguiente" type="button" class="boton-icono" aria-label="Ver más destacados" aria-controls="destacados-lista"><svg class="icono" aria-hidden="true" focusable="false"><use href="assets/iconos.svg#chevron-right"></use></svg></button>
+        </div>
+      </div>
+      <ul id="destacados-lista" class="carrusel" aria-busy="true" aria-label="Productos destacados">
+        <li class="carrusel__item carrusel__item--cargando" aria-hidden="true"><div class="tarjeta tarjeta--esqueleto"></div></li>
+        <li class="carrusel__item carrusel__item--cargando" aria-hidden="true"><div class="tarjeta tarjeta--esqueleto"></div></li>
+        <li class="carrusel__item carrusel__item--cargando" aria-hidden="true"><div class="tarjeta tarjeta--esqueleto"></div></li>
+      </ul>
+      <p class="centrado"><a class="boton boton--secundario" href="catalogo.html">Ver todo el catálogo</a></p>
     </div>
+  </section>
 
-    <div class="offers-carousel" id="offers-carousel">
-      <div class="product-card reveal" data-product-id="perro-alimento-adulto" data-product-name="Alimento adulto mantención 15kg" data-product-price="39990">
-        <span class="offer-badge">15% dcto.</span>
-        <img src="https://loremflickr.com/400/300/dog,food" alt="Alimento adulto mantención 15kg" class="product-img" loading="lazy">
-        <div class="product-info">
-          <h4>Alimento adulto mantención 15kg</h4>
-          <span class="product-tag">Comida</span>
-          <span class="product-price">$39.990</span>
-          <span class="product-price-kg">$2.666 x kg</span>
-          <button class="btn-add-cart" data-add-to-cart>Agregar</button>
-        </div>
+  <!-- ================= REDES ================= -->
+  <section class="seccion seccion--patitas" id="novedades" aria-labelledby="novedades-titulo">
+    <div class="contenedor redes">
+      <div>
+        <p class="antetitulo">Redes sociales</p>
+        <h2 id="novedades-titulo" class="seccion__titulo">Mira nuestras novedades en Instagram</h2>
+        <p class="seccion__bajada">Publicamos productos nuevos, ofertas de la semana y a los regalones que nos visitan.</p>
       </div>
-
-      <div class="product-card reveal" data-product-id="gato-alimento-adulto" data-product-name="Alimento adulto mantención 10kg" data-product-price="34990">
-        <span class="offer-badge">15% dcto.</span>
-        <img src="https://loremflickr.com/400/300/cat,food" alt="Alimento adulto mantención 10kg" class="product-img" loading="lazy">
-        <div class="product-info">
-          <h4>Alimento adulto mantención 10kg</h4>
-          <span class="product-tag">Comida</span>
-          <span class="product-price">$34.990</span>
-          <span class="product-price-kg">$3.499 x kg</span>
-          <button class="btn-add-cart" data-add-to-cart>Agregar</button>
-        </div>
-      </div>
-
-      <div class="product-card reveal" data-product-id="gato-tunel" data-product-name="Túnel de juego plegable" data-product-price="12990">
-        <span class="offer-badge">20% dcto.</span>
-        <img src="https://loremflickr.com/400/300/cat,tunnel" alt="Túnel de juego plegable" class="product-img" loading="lazy">
-        <div class="product-info">
-          <h4>Túnel de juego plegable</h4>
-          <span class="product-tag">Juguetes</span>
-          <span class="product-price">$12.990</span>
-          <button class="btn-add-cart" data-add-to-cart>Agregar</button>
-        </div>
-      </div>
-
-      <div class="product-card reveal" data-product-id="perro-cama" data-product-name="Cama acolchada talla M" data-product-price="24990">
-        <span class="offer-badge">20% dcto.</span>
-        <img src="https://loremflickr.com/400/300/dog,bed" alt="Cama acolchada talla M" class="product-img" loading="lazy">
-        <div class="product-info">
-          <h4>Cama acolchada talla M</h4>
-          <span class="product-tag">Accesorios</span>
-          <span class="product-price">$24.990</span>
-          <button class="btn-add-cart" data-add-to-cart>Agregar</button>
-        </div>
-      </div>
-
-      <div class="product-card reveal" data-product-id="gato-arena-cristales" data-product-name="Arena de cristales absorbente" data-product-price="10990">
-        <span class="offer-badge">15% dcto.</span>
-        <img src="https://loremflickr.com/400/300/cat,litter,crystal" alt="Arena de cristales absorbente" class="product-img" loading="lazy">
-        <div class="product-info">
-          <h4>Arena de cristales absorbente</h4>
-          <span class="product-tag">Arena</span>
-          <span class="product-price">$10.990</span>
-          <button class="btn-add-cart" data-add-to-cart>Agregar</button>
-        </div>
-      </div>
+      <a class="boton boton--primario" href="https://www.instagram.com/maskoteria_akyra/" target="_blank" rel="noopener">Ver @maskoteria_akyra<span class="visualmente-oculto"> en Instagram (se abre en una pestaña nueva)</span></a>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- ================= NOVEDADES / INSTAGRAM ================= -->
-<section class="social-feed" id="novedades">
-  <div class="section-deco" aria-hidden="true">
-    <div class="deco-dashed diag deco-topleft"><span></span><span></span><span></span></div>
-    <div class="deco-dot coral sm deco-topright"></div>
-    <div class="deco-dot yellow xs deco-bottomleft"></div>
-  </div>
-  <div class="social-feed-inner">
-    <p class="eyebrow">Redes sociales</p>
-    <h2 class="reveal">No te pierdas las novedades de nuestras redes sociales</h2>
-    <p class="section-sub reveal">
-      * Conectado directo a nuestro Instagram — cada vez que subimos una publicación nueva,
-      aparece acá solo, sin que nadie tenga que actualizar nada.
-    </p>
-
-    <div class="social-feed-embed" id="instagram-feed-embed">
-      <!-- Elfsight Instagram Feed | Mascotería Akyra -->
-      <script src="https://elfsightcdn.com/platform.js" async></script>
-      <div class="elfsight-app-4cc8cd0a-2a8e-4e1f-bd6b-9534e0990920" data-elfsight-app-lazy></div>
+  <!-- ================= SUCURSALES ================= -->
+  <section class="sucursales" id="sucursales" aria-labelledby="sucursales-titulo">
+    <div class="contenedor">
+      <p class="antetitulo antetitulo--claro">Ubicaciones</p>
+      <h2 id="sucursales-titulo" class="seccion__titulo seccion__titulo--claro">Encuéntranos aquí</h2>
+      <ul class="sucursales__lista">
+        <li class="sucursal">
+          <h3>Casa Matriz</h3>
+          <address>Av. José Martínez de Aldunate 1431, Punta Arenas</address>
+          <p class="sucursal__horario"><svg class="icono" aria-hidden="true" focusable="false"><use href="assets/iconos.svg#clock"></use></svg> Lunes a sábado: 10:00 a 13:00 y 15:00 a 20:00</p>
+          <p class="sucursal__acciones"><a class="enlace-icono" href="https://www.google.com/maps/search/?api=1&amp;query=Av.+Jos%C3%A9+Mart%C3%ADnez+de+Aldunate+1431+Punta+Arenas" target="_blank" rel="noopener"><svg class="icono" aria-hidden="true" focusable="false"><use href="assets/iconos.svg#map"></use></svg>Cómo llegar<span class="visualmente-oculto"> a Casa Matriz (Google Maps, pestaña nueva)</span></a></p>
+          <div class="mapa"><button type="button" class="mapa__boton" data-mapa="https://www.google.com/maps?q=Av.+Jos%C3%A9+Mart%C3%ADnez+de+Aldunate+1431,+Punta+Arenas,+Chile&amp;output=embed" data-titulo="Mapa de la sucursal Casa Matriz, Av. José Martínez de Aldunate 1431"><svg class="icono" aria-hidden="true" focusable="false"><use href="assets/iconos.svg#map-pin"></use></svg>Ver mapa<span class="visualmente-oculto"> de Casa Matriz</span></button></div>
+        </li>
+        <li class="sucursal">
+          <h3>Hornillas</h3>
+          <address>Hornillas 080, Punta Arenas</address>
+          <p class="sucursal__horario"><svg class="icono" aria-hidden="true" focusable="false"><use href="assets/iconos.svg#clock"></use></svg> Lunes a sábado: 10:10 a 13:00 y 15:00 a 19:30. Domingos y feriados: cerrado</p>
+          <p class="sucursal__acciones"><a class="enlace-icono" href="https://www.google.com/maps/search/?api=1&amp;query=Hornillas+080+Punta+Arenas" target="_blank" rel="noopener"><svg class="icono" aria-hidden="true" focusable="false"><use href="assets/iconos.svg#map"></use></svg>Cómo llegar<span class="visualmente-oculto"> a Hornillas (Google Maps, pestaña nueva)</span></a></p>
+          <div class="mapa"><button type="button" class="mapa__boton" data-mapa="https://www.google.com/maps?q=Hornillas+080,+Punta+Arenas,+Chile&amp;output=embed" data-titulo="Mapa de la sucursal Hornillas 080"><svg class="icono" aria-hidden="true" focusable="false"><use href="assets/iconos.svg#map-pin"></use></svg>Ver mapa<span class="visualmente-oculto"> de Hornillas</span></button></div>
+        </li>
+        <li class="sucursal">
+          <h3>Las Lengas</h3>
+          <address>Av. Circunvalación Ramón Cañas 340, Punta Arenas</address>
+          <p class="sucursal__horario"><svg class="icono" aria-hidden="true" focusable="false"><use href="assets/iconos.svg#clock"></use></svg> Lunes a sábado: 10:30 a 13:00 y 15:10 a 20:00. Domingo: cerrado</p>
+          <p class="sucursal__acciones"><a class="enlace-icono" href="https://www.google.com/maps/search/?api=1&amp;query=Av.+Circunvalaci%C3%B3n+Ram%C3%B3n+Ca%C3%B1as+340+Punta+Arenas" target="_blank" rel="noopener"><svg class="icono" aria-hidden="true" focusable="false"><use href="assets/iconos.svg#map"></use></svg>Cómo llegar<span class="visualmente-oculto"> a Las Lengas (Google Maps, pestaña nueva)</span></a></p>
+          <div class="mapa"><button type="button" class="mapa__boton" data-mapa="https://www.google.com/maps?q=Av.+Circunvalaci%C3%B3n+Ram%C3%B3n+Ca%C3%B1as+340,+Punta+Arenas,+Chile&amp;output=embed" data-titulo="Mapa de la sucursal Las Lengas, Av. Circunvalación Ramón Cañas 340"><svg class="icono" aria-hidden="true" focusable="false"><use href="assets/iconos.svg#map-pin"></use></svg>Ver mapa<span class="visualmente-oculto"> de Las Lengas</span></button></div>
+        </li>
+      </ul>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- ================= ENCUÉNTRANOS AQUÍ ================= -->
-<section class="locations" id="ubicaciones">
-  <div class="locations-bg" id="locations-bg" aria-hidden="true"></div>
-  <div class="locations-bg-tint" aria-hidden="true"></div>
-  <div class="section-deco" aria-hidden="true">
-    <div class="deco-dot yellow sm deco-topleft"></div>
-    <div class="deco-dashed diag coral deco-topright"><span></span><span></span><span></span></div>
-    <div class="deco-dot violet xs deco-bottomright"></div>
-  </div>
-  <div class="locations-inner">
-    <p class="eyebrow">Ubicaciones</p>
-    <h2 class="reveal">Encuéntranos aquí</h2>
-
-    <div class="locations-grid" id="locations-grid">
-      <div class="location-card reveal" data-location="casa-matriz">
-        <h3>Casa Matriz</h3>
-        <address>Av. José Martínez de Aldunate 1431, Punta Arenas</address>
-        <p class="location-hours">Lunes a sábado — 10:00 a 13:00 y 15:00 a 20:00</p>
-        <div class="location-map">
-          <iframe
-            src="https://www.google.com/maps?q=Av.+José+Martínez+de+Aldunate+1431,+Punta+Arenas,+Chile&output=embed"
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-            title="Mapa sucursal Casa Matriz — Av. José Martínez de Aldunate 1431">
-          </iframe>
-        </div>
+  <!-- ================= NOSOTROS ================= -->
+  <section class="seccion seccion--patitas" id="nosotros" aria-labelledby="nosotros-titulo">
+    <div class="contenedor nosotros">
+      <div class="nosotros__texto">
+        <p class="antetitulo">Sobre Maskotería Akyra</p>
+        <h2 id="nosotros-titulo" class="seccion__titulo">Un almacén pensado para tu mascota</h2>
+        <p>Somos una tienda de barrio en Punta Arenas, especializada en productos para perros y gatos: alimento, ropa, juguetes y accesorios, elegidos pensando en la calidad y el bienestar de tu compañero.</p>
+        <p>Nos gusta la atención cercana: si tienes dudas sobre qué producto le conviene a tu mascota, escríbenos y te ayudamos a elegir.</p>
+        <a data-whatsapp href="https://wa.me/56986969111" class="boton boton--primario" target="_blank" rel="noopener">Escríbenos por WhatsApp<span class="visualmente-oculto"> (se abre en una pestaña nueva)</span></a>
       </div>
+      <img class="nosotros__foto" src="assets/img/lugares/hornillas-640.webp" width="640" height="604" alt="Fachada de la sucursal Hornillas de Maskotería Akyra, con su letrero" loading="lazy" decoding="async">
+    </div>
+  </section>
 
-      <div class="location-card reveal" data-location="hornillas">
-        <h3>Sucursal Hornillas</h3>
-        <address>Hornillas 080, Punta Arenas</address>
-        <p class="location-hours">Lunes a sábado — 10:10 a 13:00 y 15:00 a 19:30<br>Domingos y feriados — cerrado</p>
-        <div class="location-map">
-          <iframe
-            src="https://www.google.com/maps?q=Hornillas+080,+Punta+Arenas,+Chile&output=embed"
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-            title="Mapa sucursal Hornillas 080">
-          </iframe>
-        </div>
-      </div>
+  <!-- ================= ¿NO ENCUENTRAS? ================= -->
+  <section class="llamado" aria-labelledby="llamado-titulo">
+    <div class="contenedor llamado__contenido">
+      <h2 id="llamado-titulo" class="seccion__titulo seccion__titulo--claro">¿No encuentras lo que necesitas?</h2>
+      <p>Cuéntanos qué producto buscas y te avisamos si podemos conseguirlo.</p>
+      <a href="contactenos.html" class="boton boton--claro">Ir al formulario de contacto</a>
+    </div>
+  </section>
 
-      <div class="location-card reveal" data-location="circunvalacion">
-        <h3>Sucursal Circunvalación</h3>
-        <address>Av. Circunvalación Ramón Cañas 340, Punta Arenas</address>
-        <p class="location-hours">Lunes a sábado, 10:30–13:00 y 15:10–20:00. Domingo, cerrado.</p>
-        <div class="location-map">
-          <iframe
-            src="https://www.google.com/maps?q=Av.+Circunvalación+Ramón+Cañas+340,+Punta+Arenas,+Chile&output=embed"
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-            title="Mapa sucursal Av. Circunvalación Ramón Cañas 340">
-          </iframe>
-        </div>
+  <!-- ================= RESEÑAS ================= -->
+  <section class="seccion seccion--suave" id="resenas" aria-labelledby="resenas-titulo">
+    <div class="contenedor">
+      <p class="antetitulo">Reseñas</p>
+      <h2 id="resenas-titulo" class="seccion__titulo">Lo que dicen nuestros clientes</h2>
+      <p class="seccion__bajada">Reseñas reales de Google.</p>
+    </div>
+    <div class="cinta" data-cinta>
+      <button type="button" class="boton-icono cinta__pausa" data-nombre="las reseñas en movimiento" aria-pressed="false" aria-label="Pausar las reseñas en movimiento"><svg class="icono" aria-hidden="true" focusable="false"><use href="assets/iconos.svg#pause"></use></svg></button>
+      <div class="cinta__ventana">
+        <ul class="cinta__pista">
+          <li class="resena"><p class="resena__estrellas"><span aria-hidden="true">★★★★★</span><span class="visualmente-oculto">5 de 5 estrellas</span></p><blockquote><p>Buena calidad de alimentos, tanto para gatos como para perros. Buenos precios además. Cuentan con accesorios para mascotas.</p></blockquote><p class="resena__autor">Camilo Cárdenas Hernández</p><p class="resena__meta">Local Guide · Hace 3 años</p></li>
+          <li class="resena"><p class="resena__estrellas"><span aria-hidden="true">★★★★★</span><span class="visualmente-oculto">5 de 5 estrellas</span></p><blockquote><p>Buenos precios y buena atención.</p></blockquote><p class="resena__autor">Ariel Santana</p><p class="resena__meta">Hace 4 meses</p></li>
+          <li class="resena"><p class="resena__estrellas"><span aria-hidden="true">★★★★★</span><span class="visualmente-oculto">5 de 5 estrellas</span></p><blockquote><p>Son muy amables y siempre tienen la comida de mi perrito; tienen muchas variedades de alimento de cachorro y gatos a buen precio.</p></blockquote><p class="resena__autor">María Soledad Campos Muñoz</p><p class="resena__meta">Local Guide · Hace 3 años</p></li>
+          <li class="resena"><p class="resena__estrellas"><span aria-hidden="true">★★★★★</span><span class="visualmente-oculto">5 de 5 estrellas</span></p><blockquote><p>¡Buenos precios! Siempre compro ahí las cositas para mi Chucky 🐈🐈</p></blockquote><p class="resena__autor">Fernanda Hernández</p><p class="resena__meta">Hace un año</p></li>
+          <li class="resena"><p class="resena__estrellas"><span aria-hidden="true">★★★★★</span><span class="visualmente-oculto">5 de 5 estrellas</span></p><blockquote><p>Buena atención y variedad.</p></blockquote><p class="resena__autor">Meg</p><p class="resena__meta">Hace 4 meses</p></li>
+          <li class="resena"><p class="resena__estrellas"><span aria-hidden="true">★★★★★</span><span class="visualmente-oculto">5 de 5 estrellas</span></p><blockquote><p>Excelente mascotería con mucha variedad de productos y una atención espectacular, sin duda volveré a comprar.</p></blockquote><p class="resena__autor">Sebastián Leiva</p><p class="resena__meta">Local Guide · Hace un año</p></li>
+        </ul>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- ================= SOBRE NOSOTROS ================= -->
-<section class="about" id="nosotros">
-  <div class="section-deco" aria-hidden="true">
-    <div class="deco-dot yellow sm deco-topleft"></div>
-    <div class="deco-dashed diag coral deco-topright"><span></span><span></span><span></span></div>
-    <div class="deco-dot violet xs deco-bottomleft"></div>
-  </div>
-  <div class="about-inner">
-    <div class="about-text reveal">
-      <p class="eyebrow">Sobre Mascotería Akyra</p>
-      <h2>Un almacén pensado para tu mascota</h2>
-      <p>Somos una tienda de barrio en Punta Arenas, especializada en productos para perros y gatos: alimento, ropa, juguetes y accesorios, elegidos pensando en la calidad y el bienestar de tu compañero.</p>
-      <p>Nos gusta la atención cercana — si tienes dudas sobre qué producto conviene para tu mascota, escríbenos y te ayudamos a elegir.</p>
-      <a href="#" id="about-whatsapp" class="btn btn-primary" target="_blank" rel="noopener">Escríbenos por WhatsApp</a>
+  <!-- ================= MARCAS ================= -->
+  <section class="seccion marcas" id="marcas" aria-labelledby="marcas-titulo">
+    <div class="contenedor">
+      <p class="antetitulo">Trabajamos con</p>
+      <h2 id="marcas-titulo" class="seccion__titulo">Marcas que encontrarás en la tienda</h2>
     </div>
-    <div class="about-media reveal">
-      <!-- Loop de 3 fotos que se van encadenando. Rutas/orden en script.js (ABOUT_MEDIA). -->
-      <div class="about-slideshow" id="about-slideshow" aria-hidden="true"></div>
+    <div class="cinta cinta--marcas" data-cinta>
+      <button type="button" class="boton-icono cinta__pausa" data-nombre="las marcas en movimiento" aria-pressed="false" aria-label="Pausar las marcas en movimiento"><svg class="icono" aria-hidden="true" focusable="false"><use href="assets/iconos.svg#pause"></use></svg></button>
+      <div class="cinta__ventana">
+        <ul class="cinta__pista">
+          <li class="marca">Royal Canin</li><li class="marca">Pro Plan</li><li class="marca">Bravery</li><li class="marca">Fit Formula</li><li class="marca">Master Dog</li><li class="marca">Master Cat</li><li class="marca">Whiskas</li><li class="marca">Pedigree</li><li class="marca">Champion</li><li class="marca">Felix</li><li class="marca">Cat Chow</li><li class="marca">Nomade</li><li class="marca">Churu</li><li class="marca">Leonardo</li><li class="marca">Biofresh</li><li class="marca">Amity</li><li class="marca">Vet Life</li><li class="marca">N&amp;D</li><li class="marca">Dragpharma</li><li class="marca">Top K9</li>
+        </ul>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
+</main>
 
-<!-- ================= NO ENCUENTRAS LO QUE NECESITAS ================= -->
-<section class="not-found-cta" id="no-encuentras">
-  <div class="section-deco" aria-hidden="true">
-    <div class="deco-dot coral sm deco-topleft"></div>
-    <div class="deco-dashed diag-rev deco-topright"><span></span><span></span><span></span></div>
-    <div class="deco-dot yellow xs deco-bottomright"></div>
-  </div>
-  <div class="not-found-cta-inner">
-    <h2 class="reveal">¿No encuentras lo que necesitas?</h2>
-    <p class="section-sub reveal">¡Escríbenos! Rellena el formulario y envíanos un correo con los detalles de los productos que quieres o necesitas tener.</p>
-    <a href="contactenos.html" class="btn btn-primary reveal">Enviar formulario</a>
-  </div>
-</section>
-
-<!-- ================= RESEÑAS ================= -->
-<section class="reviews" id="resenas">
-  <div class="section-deco" aria-hidden="true">
-    <div class="deco-dashed diag-rev deco-topleft"><span></span><span></span><span></span></div>
-    <div class="deco-dot coral sm deco-topright"></div>
-    <div class="deco-dot yellow md deco-bottomleft"></div>
-  </div>
-  <div class="reviews-inner">
-    <p class="eyebrow">Reseñas</p>
-    <h2 class="reveal">Lo que dicen nuestros clientes</h2>
-    <p class="section-sub reveal">* Reseñas reales de Google.</p>
-
-    <div class="reviews-track-wrap">
-      <div class="reviews-track" id="reviews-track" aria-hidden="true"></div>
-    </div>
-  </div>
-</section>
-
-<!-- ================= MARCAS ================= -->
-<section class="brands" id="marcas">
-  <p class="eyebrow brands-eyebrow">Trabajamos con</p>
-  <h2 class="brands-title">Marcas que encontrarás en la tienda</h2>
-  <p class="section-sub brands-sub">Algunas de las marcas que trabajamos.</p>
-
-  <div class="brands-track-wrap">
-    <div class="brands-track" id="brands-track" aria-hidden="true"></div>
-  </div>
-</section>
-
-<!-- ================= FOOTER ================= -->
-<footer class="site-footer" id="contacto">
-  <div class="footer-top">
-    <div class="footer-inner">
-
-      <div class="footer-col">
-        <div class="footer-logo-banner">
-          <img src="assets/logo/logo-akyra.svg" alt="Mascotería Akyra" class="logo-img footer-logo">
-        </div>
-        <p class="footer-region">Punta Arenas, Magallanes</p>
-        <address>Av. José Martínez de Aldunate 1431<br>Hornillas 080<br>Av. Circunvalación Ramón Cañas 340</address>
-        <p>Email: <a href="mailto:maskoteria.akyra@gmail.com">maskoteria.akyra@gmail.com</a></p>
+<!-- parcial:pie -->
+<footer class="pie">
+  <div class="pie__arriba">
+    <div class="pie__columnas">
+      <div class="pie__col pie__col--marca">
+        <div class="pie__logo"><img src="assets/logo/logo-akyra-recortado.svg" alt="Maskotería Akyra" width="976" height="330" loading="lazy"></div>
+        <p class="pie__region">Punta Arenas, Magallanes</p>
+        <address>Casa Matriz: Av. José Martínez de Aldunate 1431<br>Hornillas 080<br>Las Lengas: Av. Circunvalación Ramón Cañas 340</address>
+        <p>Correo: <a href="mailto:maskoteria.akyra@gmail.com">maskoteria.akyra@gmail.com</a></p>
       </div>
-
-      <div class="footer-col">
-        <h5>Tienda</h5>
-        <a href="#categorias">Categorías</a>
-        <a href="#ofertas">Ofertas</a>
-        <a href="index.html#alimento-granel">Alimento a Granel</a>
-        <a href="catalogo.html">Catálogo completo</a>
-      </div>
-
-      <div class="footer-col">
-        <h5>Ayuda</h5>
-        <a href="#ubicaciones">Nuestras sucursales</a>
-        <a href="contactenos.html">Formulario de contacto</a>
-        <a href="#" id="footer-whatsapp-consulta" target="_blank" rel="noopener">Consultar por WhatsApp</a>
-      </div>
-
-      <div class="footer-col">
-        <h5>Mascotería Akyra</h5>
-        <a href="#nosotros">Sobre Nosotros</a>
-        <a href="politica-privacidad.html">Política de Privacidad</a>
-        <a href="politica-despacho-retiro.html">Política de Despacho y Retiro</a>
-        <a href="politica-cambios-devoluciones.html">Política de Cambios y Devoluciones</a>
-      </div>
-
+      <nav class="pie__col" aria-labelledby="pie-tienda">
+        <h2 id="pie-tienda" class="pie__titulo">Tienda</h2>
+        <ul>
+          <li><a href="catalogo.html">Catálogo completo</a></li>
+          <li><a href="catalogo.html?categoria=granel">Alimento a granel</a></li>
+          <li><a href="catalogo.html?categoria=perros">Perros</a></li>
+          <li><a href="catalogo.html?categoria=gatos">Gatos</a></li>
+          <li><a href="catalogo.html?categoria=accesorios">Accesorios</a></li>
+        </ul>
+      </nav>
+      <nav class="pie__col" aria-labelledby="pie-ayuda">
+        <h2 id="pie-ayuda" class="pie__titulo">Ayuda</h2>
+        <ul>
+          <li><a href="index.html#sucursales">Nuestras sucursales</a></li>
+          <li><a href="contactenos.html">Formulario de contacto</a></li>
+          <li><a data-whatsapp href="https://wa.me/56986969111" target="_blank" rel="noopener">Consultar por WhatsApp<span class="visualmente-oculto"> (se abre en una pestaña nueva)</span></a></li>
+          <li><a href="politica-despacho-retiro.html">Despacho y retiro</a></li>
+        </ul>
+      </nav>
+      <nav class="pie__col" aria-labelledby="pie-info">
+        <h2 id="pie-info" class="pie__titulo">Información</h2>
+        <ul>
+          <li><a href="politica-privacidad.html">Política de privacidad</a></li>
+          <li><a href="politica-cambios-devoluciones.html">Cambios y devoluciones</a></li>
+          <li><a href="politica-despacho-retiro.html">Política de despacho y retiro</a></li>
+          <li><a href="accesibilidad.html">Declaración de accesibilidad</a></li>
+        </ul>
+      </nav>
     </div>
   </div>
-
-  <div class="footer-bottom">
-    <div class="footer-bottom-inner">
-      <div class="social-icons">
-        <a href="https://www.instagram.com/maskoteria_akyra/" target="_blank" rel="noopener" aria-label="Instagram">
-          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-          </svg>
-        </a>
-        <a href="https://www.facebook.com/p/Maskoter%C3%ADa-Akyra-100042138145142/" target="_blank" rel="noopener" aria-label="Facebook">
-          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
-          </svg>
-        </a>
-      </div>
-      <span class="copyright">© 2026 Mascotería Akyra · Todos los derechos reservados</span>
+  <div class="pie__abajo">
+    <div class="pie__abajo-contenido">
+      <ul class="pie__redes">
+        <li><a href="https://www.instagram.com/maskoteria_akyra/" target="_blank" rel="noopener" aria-label="Instagram de Maskotería Akyra (se abre en una pestaña nueva)">
+          <svg class="icono" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+        </a></li>
+        <li><a href="https://www.facebook.com/p/Maskoter%C3%ADa-Akyra-100042138145142/" target="_blank" rel="noopener" aria-label="Facebook de Maskotería Akyra (se abre en una pestaña nueva)">
+          <svg class="icono" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+        </a></li>
+      </ul>
+      <p class="pie__copyright">© <span id="anio-actual">2026</span> Maskotería Akyra · Todos los derechos reservados</p>
     </div>
   </div>
 </footer>
 
-<!-- ================= WHATSAPP FLOTANTE ================= -->
-<a href="#" id="whatsapp-float" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp">
-  <i data-lucide="message-circle"></i>
-</a>
+<aside class="contacto-rapido" aria-label="Contacto rápido">
+  <a class="whatsapp-flotante" data-whatsapp href="https://wa.me/56986969111" target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp (se abre en una pestaña nueva)"><svg class="icono" aria-hidden="true" focusable="false"><use href="assets/iconos.svg#message-circle"></use></svg></a>
+</aside>
 
-<!-- ================= TOAST "AGREGADO AL CARRITO" ================= -->
-<div class="toast" id="cart-toast" role="status" aria-live="polite">
-  <i data-lucide="check-circle-2"></i>
-  <span id="cart-toast-text">Producto agregado</span>
+<div class="avisos" data-siempre-activo>
+  <div id="toast" class="toast" role="status"><svg class="icono" aria-hidden="true" focusable="false"><use href="assets/iconos.svg#circle-check"></use></svg><span id="toast-texto"></span></div>
+  <div id="anuncios" class="visualmente-oculto" aria-live="polite" aria-atomic="true"></div>
+  <div id="anuncios-urgentes" class="visualmente-oculto" aria-live="assertive" aria-atomic="true"></div>
 </div>
-
-<script src="script.js"></script>
+<!-- /parcial:pie -->
+<!-- parcial:scripts -->
+<script src="config.js" defer></script>
+<script type="module" src="js/app.mjs"></script>
+<script type="module" src="js/pagina-inicio.mjs"></script>
+<!-- /parcial:scripts -->
 </body>
 </html>

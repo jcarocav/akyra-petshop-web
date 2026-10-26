@@ -1,0 +1,135 @@
+<div class="capa-dialogo">
+  <div id="carrito-fondo" class="fondo" hidden></div>
+  <div id="carrito" class="carrito" role="dialog" aria-modal="true" aria-labelledby="carrito-titulo" hidden>
+    <div class="carrito__cabecera">
+      <div>
+        <h2 id="carrito-titulo" class="carrito__titulo" tabindex="-1">Tu carrito</h2>
+        <p id="carrito-indicador" class="carrito__paso">Paso 1 de 2</p>
+      </div>
+      <button id="carrito-cerrar" type="button" class="boton-icono" aria-label="Cerrar carrito"><svg class="icono" aria-hidden="true" focusable="false"><use href="assets/iconos.svg#x"></use></svg></button>
+    </div>
+
+    <!-- Paso 1: productos y total -->
+    <div id="carrito-paso-1" class="carrito__cuerpo">
+      <div id="carrito-vacio" class="estado-vacio">
+        <svg class="icono estado-vacio__icono" aria-hidden="true" focusable="false"><use href="assets/iconos.svg#shopping-bag"></use></svg>
+        <p><strong>Tu carrito está vacío.</strong></p>
+        <p>Agrega productos desde el catálogo y te ayudamos a confirmar precio y stock por WhatsApp.</p>
+        <a class="boton boton--secundario" href="catalogo.html">Ver el catálogo</a>
+      </div>
+      <ul id="carrito-lista" class="carrito__lista" aria-label="Productos en el carrito"></ul>
+      <div id="carrito-resumen" class="carrito__resumen" hidden>
+        <p class="carrito__total"><span>Subtotal</span> <strong id="carrito-subtotal">$0</strong></p>
+        <p class="nota">Precios referenciales: el total final y el stock se confirman por WhatsApp. El despacho se calcula en el paso 2.</p>
+        <p class="nota nota--destacada">Aceptamos transferencia, pago en sucursal o tarjeta a domicilio.</p>
+      </div>
+      <div class="carrito__acciones">
+        <button id="carrito-seguir" type="button" class="boton boton--secundario">Seguir comprando</button>
+        <button id="carrito-continuar" type="button" class="boton boton--primario" hidden>Continuar compra</button>
+      </div>
+    </div>
+
+    <!-- Paso 2: datos del cliente -->
+    <div id="carrito-paso-2" class="carrito__cuerpo" hidden>
+      <form id="form-pedido" class="formulario" novalidate>
+        <div id="pedido-errores" class="errores" tabindex="-1" hidden></div>
+        <p class="nota">Los campos marcados con * son obligatorios.</p>
+
+        <div class="campo">
+          <label for="pedido-nombre">Nombre *</label>
+          <input id="pedido-nombre" name="nombre" type="text" autocomplete="name" maxlength="80" required aria-describedby="pedido-nombre-error">
+          <p id="pedido-nombre-error" class="campo__error" hidden></p>
+        </div>
+        <div class="campo">
+          <label for="pedido-telefono">Teléfono *</label>
+          <input id="pedido-telefono" name="telefono" type="tel" autocomplete="tel" inputmode="tel" maxlength="20" required aria-describedby="pedido-telefono-ayuda pedido-telefono-error">
+          <p id="pedido-telefono-ayuda" class="campo__ayuda">Por ejemplo: +56 9 1234 5678</p>
+          <p id="pedido-telefono-error" class="campo__error" hidden></p>
+        </div>
+
+        <fieldset class="campo grupo-opciones">
+          <legend>¿Cómo quieres recibirlo? *</legend>
+          <div class="opcion-radio"><input type="radio" id="entrega-retiro" name="entrega" value="retiro" checked><label for="entrega-retiro">Retiro en sucursal (gratis)</label></div>
+          <div class="opcion-radio"><input type="radio" id="entrega-despacho" name="entrega" value="despacho"><label for="entrega-despacho">Despacho a domicilio</label></div>
+        </fieldset>
+
+        <div id="bloque-retiro" class="campo">
+          <label for="pedido-sucursal">Sucursal de retiro *</label>
+          <select id="pedido-sucursal" name="sucursal" required aria-describedby="pedido-sucursal-error">
+            <option value="">Elige una sucursal</option>
+            <option value="casa-matriz">Casa Matriz: Av. José Martínez de Aldunate 1431</option>
+            <option value="hornillas">Hornillas: Hornillas 080</option>
+            <option value="las-lengas">Las Lengas: Av. Circunvalación Ramón Cañas 340</option>
+          </select>
+          <p id="pedido-sucursal-error" class="campo__error" hidden></p>
+        </div>
+
+        <div id="bloque-despacho" hidden>
+          <div class="campo">
+            <label for="pedido-direccion">Dirección de despacho *</label>
+            <input id="pedido-direccion" name="direccion" type="text" autocomplete="address-line1" maxlength="160" aria-describedby="pedido-direccion-error">
+            <p id="pedido-direccion-error" class="campo__error" hidden></p>
+          </div>
+          <fieldset id="grupo-zona" class="campo grupo-opciones" aria-describedby="grupo-zona-error">
+            <legend>Zona de despacho *</legend>
+            <div class="opcion-radio"><input type="radio" id="zona-urbano" name="zona" value="urbano"><label for="zona-urbano">Zona urbana: $2.000</label></div>
+            <div class="opcion-radio"><input type="radio" id="zona-periferia" name="zona" value="periferia"><label for="zona-periferia">Periferia: $3.500</label></div>
+            <p id="grupo-zona-error" class="campo__error" hidden></p>
+          </fieldset>
+        </div>
+
+        <fieldset id="grupo-pago" class="campo grupo-opciones grupo-opciones--botones" aria-describedby="grupo-pago-error">
+          <legend>¿Cómo vas a pagar? *</legend>
+          <div class="opcion-radio"><input type="radio" id="pago-0" name="pago" value="Transferencia"><label for="pago-0">Transferencia</label></div>
+          <div class="opcion-radio"><input type="radio" id="pago-1" name="pago" value="Tarjeta débito/crédito"><label for="pago-1">Tarjeta débito/crédito</label></div>
+          <div class="opcion-radio"><input type="radio" id="pago-2" name="pago" value="Efectivo"><label for="pago-2">Efectivo</label></div>
+          <p id="grupo-pago-error" class="campo__error" hidden></p>
+        </fieldset>
+        <p id="nota-pago-despacho" class="nota nota--destacada" hidden>Para despacho a domicilio, transfiere al menos el valor del despacho (por si prefieres pagar el resto con tarjeta al llegar) o el total de tu pedido.</p>
+
+        <div class="campo">
+          <label for="pedido-comentarios">Comentarios (opcional)</label>
+          <textarea id="pedido-comentarios" name="comentarios" rows="3" maxlength="400" aria-describedby="pedido-comentarios-ayuda"></textarea>
+          <p id="pedido-comentarios-ayuda" class="campo__ayuda">Por ejemplo: horario para recibir o referencias de la dirección. Máximo 400 caracteres.</p>
+        </div>
+
+        <div class="trampa" aria-hidden="true">
+          <label for="pedido-sitio-web">No escribas en este campo</label>
+          <input id="pedido-sitio-web" name="sitio_web" type="text" tabindex="-1" autocomplete="off">
+        </div>
+
+        <dl class="carrito__cuentas">
+          <div><dt>Productos</dt><dd id="pedido-subtotal">$0</dd></div>
+          <div><dt>Despacho</dt><dd id="pedido-despacho">Gratis (retiro)</dd></div>
+          <div class="carrito__cuentas-total"><dt>Total</dt><dd id="pedido-total">$0</dd></div>
+        </dl>
+        <p class="nota">Al apretar el botón se abre WhatsApp con tu pedido ya escrito. <strong>Para que nos llegue, aprieta “Enviar” en WhatsApp.</strong></p>
+        <div class="carrito__acciones">
+          <button id="carrito-volver" type="button" class="boton boton--secundario">Volver</button>
+          <button type="submit" class="boton boton--whatsapp"><svg class="icono" aria-hidden="true" focusable="false"><use href="assets/iconos.svg#message-circle"></use></svg><span>Enviar pedido por WhatsApp</span></button>
+        </div>
+      </form>
+    </div>
+
+    <!-- Confirmación -->
+    <div id="carrito-paso-3" class="carrito__cuerpo" hidden>
+      <div class="confirmacion">
+        <svg class="icono confirmacion__icono" aria-hidden="true" focusable="false"><use href="assets/iconos.svg#circle-check"></use></svg>
+        <p class="confirmacion__titulo">Abrimos WhatsApp con tu pedido</p>
+        <ol class="confirmacion__pasos">
+          <li>Revisa el mensaje en WhatsApp.</li>
+          <li>Aprieta <strong>Enviar</strong>. Si no lo envías, el pedido no nos llega: el sitio no puede enviarlo por ti.</li>
+          <li>Te respondemos por WhatsApp para confirmar stock, total y entrega.</li>
+        </ol>
+        <p class="nota">¿No se abrió WhatsApp? Usa este botón, o copia el pedido y pégalo en un chat con nosotros (+56 9 8696 9111).</p>
+        <a id="pedido-enlace" class="boton boton--whatsapp boton--ancho" href="https://wa.me/56986969111" target="_blank" rel="noopener"><svg class="icono" aria-hidden="true" focusable="false"><use href="assets/iconos.svg#message-circle"></use></svg><span>Abrir WhatsApp con mi pedido</span><span class="visualmente-oculto"> (se abre en una pestaña nueva)</span></a>
+        <button id="pedido-copiar" type="button" class="boton boton--secundario boton--ancho"><svg class="icono" aria-hidden="true" focusable="false"><use href="assets/iconos.svg#copy"></use></svg><span>Copiar pedido</span></button>
+        <p id="pedido-copiado" class="nota" role="status"></p>
+      </div>
+      <div class="carrito__acciones">
+        <button id="pedido-vaciar" type="button" class="boton boton--secundario">Ya lo envié: vaciar carrito</button>
+        <button id="pedido-volver-tienda" type="button" class="boton boton--primario">Volver a la tienda</button>
+      </div>
+    </div>
+  </div>
+</div>

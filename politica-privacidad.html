@@ -1,126 +1,232 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es-CL">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Política de Privacidad — Mascotería Akyra</title>
-
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- parcial:seguridad -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; frame-src https://www.google.com; form-action 'self'; base-uri 'self'; object-src 'none'; manifest-src 'self'; upgrade-insecure-requests">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="format-detection" content="telephone=no">
+<!-- /parcial:seguridad -->
+<title>Política de privacidad | Maskotería Akyra</title>
+<meta name="description" content="Política de privacidad de Maskotería Akyra — cómo tratamos los datos de nuestros clientes.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://jcarocav.github.io/akyra-petshop-web/politica-privacidad.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Maskotería Akyra">
+<meta property="og:locale" content="es_CL">
+<meta property="og:title" content="Política de privacidad | Maskotería Akyra">
+<meta property="og:description" content="Política de privacidad de Maskotería Akyra — cómo tratamos los datos de nuestros clientes.">
+<meta property="og:url" content="https://jcarocav.github.io/akyra-petshop-web/politica-privacidad.html">
+<meta property="og:image" content="https://jcarocav.github.io/akyra-petshop-web/assets/og/og-image.jpg">
+<!-- parcial:recursos -->
+<meta name="theme-color" content="#00b0a3">
 <link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg">
 <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16.png">
 <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
-<link rel="shortcut icon" href="assets/favicon/favicon.ico">
-<meta name="description" content="Política de privacidad de Mascotería Akyra — cómo tratamos los datos de nuestros clientes.">
-<meta name="robots" content="index, follow">
-<meta name="theme-color" content="#00b0a3">
-
-<!-- Umami — analítica de visitas sin cookies (no necesita aviso de
-     consentimiento). Reemplaza AMBOS valores (data-website-id y el
-     "src") por los que te den al crear tu sitio gratis en umami.is —
-     mientras tanto, con el marcador de acá el sitio funciona igual,
-     el script simplemente no envía nada a ningún lado. -->
-<script defer src="https://cloud.umami.is/script.js" data-website-id="TU-UMAMI-WEBSITE-ID"></script>
-<link rel="canonical" href="https://[tudominio].cl/politica-privacidad.html">
-
-<!-- Open Graph -->
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="Mascotería Akyra">
-<meta property="og:title" content="Política de Privacidad — Mascotería Akyra">
-<meta property="og:description" content="Política de privacidad de Mascotería Akyra — cómo tratamos los datos de nuestros clientes.">
-<meta property="og:url" content="https://[tudominio].cl/politica-privacidad.html">
-<meta property="og:image" content="https://[tudominio].cl/assets/og/og-image.jpg">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Mascotería Akyra — logo, perro y gata">
-<meta property="og:locale" content="es_CL">
-
-<!-- Twitter Card -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Política de Privacidad — Mascotería Akyra">
-<meta name="twitter:description" content="Política de privacidad de Mascotería Akyra — cómo tratamos los datos de nuestros clientes.">
-<meta name="twitter:image" content="https://[tudominio].cl/assets/og/og-image.jpg">
-
-<!-- Fuentes: Fredoka (títulos) + Nunito Sans (texto) -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-
-<!-- Tailwind (solo utilidades de layout, el diseño real vive en styles.css) -->
-<script src="https://cdn.tailwindcss.com"></script>
-
-<!-- Lucide icons -->
-<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
-
+<link rel="preload" href="assets/fuentes/nunito-sans.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fuentes/fredoka.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="styles.css">
+<!-- /parcial:recursos -->
 </head>
 <body>
-
-<!-- ================= AVISO DE PRIVACIDAD (pop-up, primera visita) ================= -->
-<div class="privacy-overlay" id="privacy-overlay" hidden>
-  <div class="privacy-modal" role="dialog" aria-modal="true" aria-labelledby="privacy-modal-title">
-    <h3 id="privacy-modal-title">Antes de seguir...</h3>
-    <p>En Mascotería Akyra respetamos tu privacidad, conforme a la Ley N.° 19.628 sobre Protección de la Vida Privada. Los datos que nos compartes (nombre, teléfono, dirección) los usamos únicamente para coordinar tu compra, despacho o consulta por WhatsApp — no los usamos para otros fines, no los compartimos con terceros ni los almacenamos más allá de lo necesario para atenderte.</p>
-    <button type="button" class="btn btn-primary" id="privacy-accept">Aceptar</button>
+<!-- parcial:aviso-privacidad -->
+<div class="capa-dialogo">
+  <div id="aviso-privacidad-fondo" class="fondo fondo--oscuro" hidden></div>
+  <div id="aviso-privacidad" class="aviso" role="dialog" aria-modal="true" aria-labelledby="aviso-privacidad-titulo" aria-describedby="aviso-privacidad-texto" hidden>
+    <h2 id="aviso-privacidad-titulo">Antes de seguir…</h2>
+    <p id="aviso-privacidad-texto">En Maskotería Akyra respetamos tu privacidad, conforme a la Ley N.° 19.628 sobre Protección de la Vida Privada. Los datos que nos compartes (nombre, teléfono, dirección) los usamos únicamente para coordinar tu compra, despacho o consulta por WhatsApp: no los usamos para otros fines, no los compartimos con terceros ni los guardamos más allá de lo necesario para atenderte.</p>
+    <p><a href="politica-privacidad.html">Leer la política de privacidad</a></p>
+    <button type="button" class="boton boton--primario boton--ancho" id="aviso-privacidad-aceptar">Aceptar</button>
   </div>
 </div>
-
-<!-- ================= HEADER (igual que en el resto del sitio) ================= -->
-<header class="site-header" id="site-header">
-  <div class="header-top">
-    <a href="index.html" class="logo">
-      <img src="assets/logo/logo-akyra.svg" alt="Mascotería Akyra" class="logo-img">
-    </a>
-
-    <form class="nav-search" id="nav-search" action="catalogo.html" method="get" role="search">
-      <input type="search" name="buscar" id="nav-search-input" placeholder="Buscar producto..." autocomplete="off">
-      <button type="submit" aria-label="Buscar">
-        <i data-lucide="search"></i>
-        <span>Buscar</span>
-      </button>
+<!-- /parcial:aviso-privacidad -->
+<!-- parcial:cabecera -->
+<header class="cabecera">
+  <a class="saltar" href="#contenido">Saltar al contenido</a>
+  <div class="cabecera__fila">
+    <a href="index.html" class="cabecera__logo"><img src="assets/logo/logo-akyra-recortado.svg" alt="Maskotería Akyra, ir al inicio" width="976" height="330"></a>
+    <form id="buscador" class="buscador" action="catalogo.html" method="get" role="search" aria-label="Buscar productos">
+      <label for="buscador-campo" class="visualmente-oculto">Buscar por producto, marca o código</label>
+      <input id="buscador-campo" type="search" name="buscar" placeholder="Busca por producto, marca o código" maxlength="80" autocomplete="off" enterkeyhint="search">
+      <button type="submit" class="buscador__boton"><svg class="icono" aria-hidden="true" focusable="false"><use href="assets/iconos.svg#search"></use></svg><span class="buscador__texto">Buscar</span></button>
     </form>
-
-    <div class="header-actions">
-      <a href="#" id="nav-whatsapp" class="nav-cta" target="_blank" rel="noopener">
-        <i data-lucide="message-circle"></i> Escríbenos
-      </a>
-      <button class="cart-toggle" id="cart-toggle" aria-label="Ver carrito">
-        <i data-lucide="shopping-bag"></i>
-        <span class="cart-badge" id="cart-badge" hidden>0</span>
-        <span class="cart-bump" id="cart-bump">+1</span>
-      </button>
-      <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">
-        <i data-lucide="menu"></i>
-      </button>
+    <div class="cabecera__acciones">
+      <a class="boton boton--whatsapp cabecera__whatsapp" data-whatsapp href="https://wa.me/56986969111" target="_blank" rel="noopener"><svg class="icono" aria-hidden="true" focusable="false"><use href="assets/iconos.svg#message-circle"></use></svg><span>Escríbenos</span><span class="visualmente-oculto"> por WhatsApp (se abre en una pestaña nueva)</span></a>
+      <button id="boton-carrito" class="cabecera__carrito" type="button" aria-label="Carrito, vacío" aria-haspopup="dialog" aria-controls="carrito"><svg class="icono" aria-hidden="true" focusable="false"><use href="assets/iconos.svg#shopping-bag"></use></svg><span id="contador-carrito" class="contador" aria-hidden="true" hidden>0</span></button>
+      <button id="menu-boton" class="cabecera__menu" type="button" aria-expanded="false" aria-controls="menu-principal"><svg class="icono" aria-hidden="true" focusable="false"><use href="assets/iconos.svg#menu"></use></svg><span class="visualmente-oculto">Menú</span></button>
     </div>
   </div>
-
-  <div class="nav-wrap" id="main-nav">
-    <nav class="main-nav">
-      <a href="index.html#inicio">Inicio</a>
-      <a href="index.html#categorias">Categorías</a>
-      <a href="index.html#ofertas" class="nav-tag-link">Ofertas <span class="nav-tag">¡Descuentos exclusivos!</span></a>
-      <a href="index.html#novedades">Novedades</a>
-      <a href="index.html#nosotros">Nosotros</a>
-      <a href="index.html#ubicaciones">Ubicaciones</a>
-      <a href="index.html#contacto">Contacto</a>
-      <a href="catalogo.html" class="nav-cta-secondary">Ver catálogo</a>
-    </nav>
-  </div>
+  <nav id="menu-principal" class="menu" aria-label="Principal">
+    <ul class="menu__lista">
+      <li><a href="catalogo.html?categoria=perros" data-categoria="perros">Perros</a></li>
+      <li><a href="catalogo.html?categoria=gatos" data-categoria="gatos">Gatos</a></li>
+      <li><a href="catalogo.html?categoria=otras-mascotas" data-categoria="otras-mascotas">Otras mascotas</a></li>
+      <li><a href="catalogo.html?categoria=granel" data-categoria="granel">Granel</a></li>
+      <li><a href="catalogo.html?categoria=accesorios" data-categoria="accesorios">Accesorios</a></li>
+      <li><a href="catalogo.html?categoria=arena" data-categoria="arena">Arena</a></li>
+      <li><a href="catalogo.html?categoria=ropa" data-categoria="ropa">Ropa</a></li>
+      <li><a href="catalogo.html?categoria=salud-higiene" data-categoria="salud-higiene">Salud/Higiene</a></li>
+      <li><a href="index.html#sucursales">Sucursales</a></li>
+      <li><a href="contactenos.html">Contacto</a></li>
+      <li class="menu__destacado"><a href="catalogo.html">Ver todo el catálogo</a></li>
+    </ul>
+  </nav>
 </header>
+<!-- /parcial:cabecera -->
+<!-- parcial:carrito -->
+<div class="capa-dialogo">
+  <div id="carrito-fondo" class="fondo" hidden></div>
+  <div id="carrito" class="carrito" role="dialog" aria-modal="true" aria-labelledby="carrito-titulo" hidden>
+    <div class="carrito__cabecera">
+      <div>
+        <h2 id="carrito-titulo" class="carrito__titulo" tabindex="-1">Tu carrito</h2>
+        <p id="carrito-indicador" class="carrito__paso">Paso 1 de 2</p>
+      </div>
+      <button id="carrito-cerrar" type="button" class="boton-icono" aria-label="Cerrar carrito"><svg class="icono" aria-hidden="true" focusable="false"><use href="assets/iconos.svg#x"></use></svg></button>
+    </div>
 
-<!-- ================= POLÍTICA DE PRIVACIDAD ================= -->
-<section class="policy-section">
-  <div class="policy-inner">
-    <nav class="breadcrumb" aria-label="Miga de pan">
-      <a href="index.html">Inicio</a> <span>/</span> <span>Política de Privacidad</span>
+    <!-- Paso 1: productos y total -->
+    <div id="carrito-paso-1" class="carrito__cuerpo">
+      <div id="carrito-vacio" class="estado-vacio">
+        <svg class="icono estado-vacio__icono" aria-hidden="true" focusable="false"><use href="assets/iconos.svg#shopping-bag"></use></svg>
+        <p><strong>Tu carrito está vacío.</strong></p>
+        <p>Agrega productos desde el catálogo y te ayudamos a confirmar precio y stock por WhatsApp.</p>
+        <a class="boton boton--secundario" href="catalogo.html">Ver el catálogo</a>
+      </div>
+      <ul id="carrito-lista" class="carrito__lista" aria-label="Productos en el carrito"></ul>
+      <div id="carrito-resumen" class="carrito__resumen" hidden>
+        <p class="carrito__total"><span>Subtotal</span> <strong id="carrito-subtotal">$0</strong></p>
+        <p class="nota">Precios referenciales: el total final y el stock se confirman por WhatsApp. El despacho se calcula en el paso 2.</p>
+        <p class="nota nota--destacada">Aceptamos transferencia, pago en sucursal o tarjeta a domicilio.</p>
+      </div>
+      <div class="carrito__acciones">
+        <button id="carrito-seguir" type="button" class="boton boton--secundario">Seguir comprando</button>
+        <button id="carrito-continuar" type="button" class="boton boton--primario" hidden>Continuar compra</button>
+      </div>
+    </div>
+
+    <!-- Paso 2: datos del cliente -->
+    <div id="carrito-paso-2" class="carrito__cuerpo" hidden>
+      <form id="form-pedido" class="formulario" novalidate>
+        <div id="pedido-errores" class="errores" tabindex="-1" hidden></div>
+        <p class="nota">Los campos marcados con * son obligatorios.</p>
+
+        <div class="campo">
+          <label for="pedido-nombre">Nombre *</label>
+          <input id="pedido-nombre" name="nombre" type="text" autocomplete="name" maxlength="80" required aria-describedby="pedido-nombre-error">
+          <p id="pedido-nombre-error" class="campo__error" hidden></p>
+        </div>
+        <div class="campo">
+          <label for="pedido-telefono">Teléfono *</label>
+          <input id="pedido-telefono" name="telefono" type="tel" autocomplete="tel" inputmode="tel" maxlength="20" required aria-describedby="pedido-telefono-ayuda pedido-telefono-error">
+          <p id="pedido-telefono-ayuda" class="campo__ayuda">Por ejemplo: +56 9 1234 5678</p>
+          <p id="pedido-telefono-error" class="campo__error" hidden></p>
+        </div>
+
+        <fieldset class="campo grupo-opciones">
+          <legend>¿Cómo quieres recibirlo? *</legend>
+          <div class="opcion-radio"><input type="radio" id="entrega-retiro" name="entrega" value="retiro" checked><label for="entrega-retiro">Retiro en sucursal (gratis)</label></div>
+          <div class="opcion-radio"><input type="radio" id="entrega-despacho" name="entrega" value="despacho"><label for="entrega-despacho">Despacho a domicilio</label></div>
+        </fieldset>
+
+        <div id="bloque-retiro" class="campo">
+          <label for="pedido-sucursal">Sucursal de retiro *</label>
+          <select id="pedido-sucursal" name="sucursal" required aria-describedby="pedido-sucursal-error">
+            <option value="">Elige una sucursal</option>
+            <option value="casa-matriz">Casa Matriz: Av. José Martínez de Aldunate 1431</option>
+            <option value="hornillas">Hornillas: Hornillas 080</option>
+            <option value="las-lengas">Las Lengas: Av. Circunvalación Ramón Cañas 340</option>
+          </select>
+          <p id="pedido-sucursal-error" class="campo__error" hidden></p>
+        </div>
+
+        <div id="bloque-despacho" hidden>
+          <div class="campo">
+            <label for="pedido-direccion">Dirección de despacho *</label>
+            <input id="pedido-direccion" name="direccion" type="text" autocomplete="address-line1" maxlength="160" aria-describedby="pedido-direccion-error">
+            <p id="pedido-direccion-error" class="campo__error" hidden></p>
+          </div>
+          <fieldset id="grupo-zona" class="campo grupo-opciones" aria-describedby="grupo-zona-error">
+            <legend>Zona de despacho *</legend>
+            <div class="opcion-radio"><input type="radio" id="zona-urbano" name="zona" value="urbano"><label for="zona-urbano">Zona urbana: $2.000</label></div>
+            <div class="opcion-radio"><input type="radio" id="zona-periferia" name="zona" value="periferia"><label for="zona-periferia">Periferia: $3.500</label></div>
+            <p id="grupo-zona-error" class="campo__error" hidden></p>
+          </fieldset>
+        </div>
+
+        <fieldset id="grupo-pago" class="campo grupo-opciones grupo-opciones--botones" aria-describedby="grupo-pago-error">
+          <legend>¿Cómo vas a pagar? *</legend>
+          <div class="opcion-radio"><input type="radio" id="pago-0" name="pago" value="Transferencia"><label for="pago-0">Transferencia</label></div>
+          <div class="opcion-radio"><input type="radio" id="pago-1" name="pago" value="Tarjeta débito/crédito"><label for="pago-1">Tarjeta débito/crédito</label></div>
+          <div class="opcion-radio"><input type="radio" id="pago-2" name="pago" value="Efectivo"><label for="pago-2">Efectivo</label></div>
+          <p id="grupo-pago-error" class="campo__error" hidden></p>
+        </fieldset>
+        <p id="nota-pago-despacho" class="nota nota--destacada" hidden>Para despacho a domicilio, transfiere al menos el valor del despacho (por si prefieres pagar el resto con tarjeta al llegar) o el total de tu pedido.</p>
+
+        <div class="campo">
+          <label for="pedido-comentarios">Comentarios (opcional)</label>
+          <textarea id="pedido-comentarios" name="comentarios" rows="3" maxlength="400" aria-describedby="pedido-comentarios-ayuda"></textarea>
+          <p id="pedido-comentarios-ayuda" class="campo__ayuda">Por ejemplo: horario para recibir o referencias de la dirección. Máximo 400 caracteres.</p>
+        </div>
+
+        <div class="trampa" aria-hidden="true">
+          <label for="pedido-sitio-web">No escribas en este campo</label>
+          <input id="pedido-sitio-web" name="sitio_web" type="text" tabindex="-1" autocomplete="off">
+        </div>
+
+        <dl class="carrito__cuentas">
+          <div><dt>Productos</dt><dd id="pedido-subtotal">$0</dd></div>
+          <div><dt>Despacho</dt><dd id="pedido-despacho">Gratis (retiro)</dd></div>
+          <div class="carrito__cuentas-total"><dt>Total</dt><dd id="pedido-total">$0</dd></div>
+        </dl>
+        <p class="nota">Al apretar el botón se abre WhatsApp con tu pedido ya escrito. <strong>Para que nos llegue, aprieta “Enviar” en WhatsApp.</strong></p>
+        <div class="carrito__acciones">
+          <button id="carrito-volver" type="button" class="boton boton--secundario">Volver</button>
+          <button type="submit" class="boton boton--whatsapp"><svg class="icono" aria-hidden="true" focusable="false"><use href="assets/iconos.svg#message-circle"></use></svg><span>Enviar pedido por WhatsApp</span></button>
+        </div>
+      </form>
+    </div>
+
+    <!-- Confirmación -->
+    <div id="carrito-paso-3" class="carrito__cuerpo" hidden>
+      <div class="confirmacion">
+        <svg class="icono confirmacion__icono" aria-hidden="true" focusable="false"><use href="assets/iconos.svg#circle-check"></use></svg>
+        <p class="confirmacion__titulo">Abrimos WhatsApp con tu pedido</p>
+        <ol class="confirmacion__pasos">
+          <li>Revisa el mensaje en WhatsApp.</li>
+          <li>Aprieta <strong>Enviar</strong>. Si no lo envías, el pedido no nos llega: el sitio no puede enviarlo por ti.</li>
+          <li>Te respondemos por WhatsApp para confirmar stock, total y entrega.</li>
+        </ol>
+        <p class="nota">¿No se abrió WhatsApp? Usa este botón, o copia el pedido y pégalo en un chat con nosotros (+56 9 8696 9111).</p>
+        <a id="pedido-enlace" class="boton boton--whatsapp boton--ancho" href="https://wa.me/56986969111" target="_blank" rel="noopener"><svg class="icono" aria-hidden="true" focusable="false"><use href="assets/iconos.svg#message-circle"></use></svg><span>Abrir WhatsApp con mi pedido</span><span class="visualmente-oculto"> (se abre en una pestaña nueva)</span></a>
+        <button id="pedido-copiar" type="button" class="boton boton--secundario boton--ancho"><svg class="icono" aria-hidden="true" focusable="false"><use href="assets/iconos.svg#copy"></use></svg><span>Copiar pedido</span></button>
+        <p id="pedido-copiado" class="nota" role="status"></p>
+      </div>
+      <div class="carrito__acciones">
+        <button id="pedido-vaciar" type="button" class="boton boton--secundario">Ya lo envié: vaciar carrito</button>
+        <button id="pedido-volver-tienda" type="button" class="boton boton--primario">Volver a la tienda</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /parcial:carrito -->
+
+<main id="contenido" tabindex="-1" class="pagina-simple">
+  <div class="contenedor contenedor--angosto">
+    <nav class="migas" aria-label="Ruta de navegación">
+      <ol>
+        <li><a href="index.html">Inicio</a></li>
+        <li><span aria-current="page">Política de privacidad</span></li>
+      </ol>
     </nav>
-    <h1>Política de Privacidad</h1>
-    <p class="policy-updated">Última actualización: 29 de agosto de 2026</p>
-    <div class="policy-body">
-      <p>En Mascotería Akyra respetamos la privacidad de las personas que visitan nuestro sitio web o se contactan con nosotros. Esta política explica qué datos personales tratamos, para qué los usamos y qué derechos tienes sobre ellos, conforme a la Ley N.° 19.628 sobre Protección de la Vida Privada.</p>
+    <h1>Política de privacidad</h1>
+    <p class="actualizado">Última actualización: 25 de octubre de 2026</p>
+    <div class="texto-legal">
+      <p>En Maskotería Akyra respetamos la privacidad de las personas que visitan nuestro sitio web o se contactan con nosotros. Esta política explica qué datos personales tratamos, para qué los usamos y qué derechos tienes sobre ellos, conforme a la Ley N.° 19.628 sobre Protección de la Vida Privada.</p>
 
       <h2>Quién es responsable de tus datos</h2>
-      <p>Mascotería Akyra es la única responsable de los datos personales que recopila a través de este sitio web, WhatsApp, nuestro formulario de contacto o nuestras sucursales en Punta Arenas. No somos una plataforma con múltiples tiendas — somos un solo negocio —, así que tus datos no se comparten con otros comercios ni terceros ajenos a Akyra.</p>
+      <p>Maskotería Akyra es la única responsable de los datos personales que recopila a través de este sitio web, WhatsApp, nuestro formulario de contacto o nuestras sucursales en Punta Arenas. No somos una plataforma con múltiples tiendas — somos un solo negocio —, así que tus datos no se comparten con otros comercios ni terceros ajenos a Akyra.</p>
 
       <h2>Qué información recopilamos</h2>
       <p>Solo recopilamos los datos que tú mismo nos entregas al usar el sitio o al escribirnos:</p>
@@ -143,7 +249,8 @@
       <p>No usamos tus datos para otros fines, no los vendemos ni los cedemos a terceros para publicidad.</p>
 
       <h2>Cookies y almacenamiento en tu navegador</h2>
-      <p>Nuestro sitio web <strong>no utiliza cookies de seguimiento publicitario ni de análisis de terceros</strong>. Usamos almacenamiento local del navegador (localStorage) únicamente para recordar los productos de tu carrito de consulta, los datos que ya escribiste en un formulario, y para no volver a mostrarte el aviso de privacidad una vez que lo aceptas. Esta información queda guardada solo en tu propio dispositivo — nunca se envía a nuestros servidores — y puedes borrarla en cualquier momento desde la configuración de tu navegador.</p>
+      <p>Nuestro sitio web <strong>no usa cookies ni herramientas de seguimiento o análisis de terceros</strong>. Solo guardamos en tu propio navegador: los productos de tu carrito (para que no se pierdan al cambiar de página), los datos que escribiste en el formulario del pedido (se borran solos al cerrar la pestaña) y que ya aceptaste el aviso de privacidad. Esta información nunca se envía a nuestros servidores y puedes borrarla cuando quieras desde la configuración de tu navegador.</p>
+      <p>Los mapas de nuestras sucursales son de Google Maps y <strong>solo se cargan si apretas “Ver mapa”</strong>; en ese momento se aplica la política de privacidad de Google. Al enviar un pedido o consulta por WhatsApp, se aplica también la política de privacidad de WhatsApp.</p>
 
       <h2>Con quién compartimos tu información</h2>
       <p>No compartimos ni vendemos tus datos personales a terceros. Solo los compartimos cuando es estrictamente necesario para completar tu pedido, por ejemplo:</p>
@@ -165,13 +272,76 @@
       <p>Podemos actualizar esta política ocasionalmente. Te recomendamos revisarla de vez en cuando.</p>
     </div>
   </div>
-</section>
+</main>
 
-<!-- ================= WHATSAPP FLOTANTE ================= -->
-<a href="#" id="whatsapp-float" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp">
-  <i data-lucide="message-circle"></i>
-</a>
+<!-- parcial:pie -->
+<footer class="pie">
+  <div class="pie__arriba">
+    <div class="pie__columnas">
+      <div class="pie__col pie__col--marca">
+        <div class="pie__logo"><img src="assets/logo/logo-akyra-recortado.svg" alt="Maskotería Akyra" width="976" height="330" loading="lazy"></div>
+        <p class="pie__region">Punta Arenas, Magallanes</p>
+        <address>Casa Matriz: Av. José Martínez de Aldunate 1431<br>Hornillas 080<br>Las Lengas: Av. Circunvalación Ramón Cañas 340</address>
+        <p>Correo: <a href="mailto:maskoteria.akyra@gmail.com">maskoteria.akyra@gmail.com</a></p>
+      </div>
+      <nav class="pie__col" aria-labelledby="pie-tienda">
+        <h2 id="pie-tienda" class="pie__titulo">Tienda</h2>
+        <ul>
+          <li><a href="catalogo.html">Catálogo completo</a></li>
+          <li><a href="catalogo.html?categoria=granel">Alimento a granel</a></li>
+          <li><a href="catalogo.html?categoria=perros">Perros</a></li>
+          <li><a href="catalogo.html?categoria=gatos">Gatos</a></li>
+          <li><a href="catalogo.html?categoria=accesorios">Accesorios</a></li>
+        </ul>
+      </nav>
+      <nav class="pie__col" aria-labelledby="pie-ayuda">
+        <h2 id="pie-ayuda" class="pie__titulo">Ayuda</h2>
+        <ul>
+          <li><a href="index.html#sucursales">Nuestras sucursales</a></li>
+          <li><a href="contactenos.html">Formulario de contacto</a></li>
+          <li><a data-whatsapp href="https://wa.me/56986969111" target="_blank" rel="noopener">Consultar por WhatsApp<span class="visualmente-oculto"> (se abre en una pestaña nueva)</span></a></li>
+          <li><a href="politica-despacho-retiro.html">Despacho y retiro</a></li>
+        </ul>
+      </nav>
+      <nav class="pie__col" aria-labelledby="pie-info">
+        <h2 id="pie-info" class="pie__titulo">Información</h2>
+        <ul>
+          <li><a href="politica-privacidad.html">Política de privacidad</a></li>
+          <li><a href="politica-cambios-devoluciones.html">Cambios y devoluciones</a></li>
+          <li><a href="politica-despacho-retiro.html">Política de despacho y retiro</a></li>
+          <li><a href="accesibilidad.html">Declaración de accesibilidad</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <div class="pie__abajo">
+    <div class="pie__abajo-contenido">
+      <ul class="pie__redes">
+        <li><a href="https://www.instagram.com/maskoteria_akyra/" target="_blank" rel="noopener" aria-label="Instagram de Maskotería Akyra (se abre en una pestaña nueva)">
+          <svg class="icono" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+        </a></li>
+        <li><a href="https://www.facebook.com/p/Maskoter%C3%ADa-Akyra-100042138145142/" target="_blank" rel="noopener" aria-label="Facebook de Maskotería Akyra (se abre en una pestaña nueva)">
+          <svg class="icono" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+        </a></li>
+      </ul>
+      <p class="pie__copyright">© <span id="anio-actual">2026</span> Maskotería Akyra · Todos los derechos reservados</p>
+    </div>
+  </div>
+</footer>
 
-<script src="script.js"></script>
+<aside class="contacto-rapido" aria-label="Contacto rápido">
+  <a class="whatsapp-flotante" data-whatsapp href="https://wa.me/56986969111" target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp (se abre en una pestaña nueva)"><svg class="icono" aria-hidden="true" focusable="false"><use href="assets/iconos.svg#message-circle"></use></svg></a>
+</aside>
+
+<div class="avisos" data-siempre-activo>
+  <div id="toast" class="toast" role="status"><svg class="icono" aria-hidden="true" focusable="false"><use href="assets/iconos.svg#circle-check"></use></svg><span id="toast-texto"></span></div>
+  <div id="anuncios" class="visualmente-oculto" aria-live="polite" aria-atomic="true"></div>
+  <div id="anuncios-urgentes" class="visualmente-oculto" aria-live="assertive" aria-atomic="true"></div>
+</div>
+<!-- /parcial:pie -->
+<!-- parcial:scripts -->
+<script src="config.js" defer></script>
+<script type="module" src="js/app.mjs"></script>
+<!-- /parcial:scripts -->
 </body>
 </html>
