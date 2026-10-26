@@ -27,15 +27,23 @@ jobs:
           node-version-file: .nvmrc
           cache: npm
       - run: npm ci
-      # A veces la descarga de navegadores se queda pegada: máximo 10 minutos por intento, 3 intentos
-      - name: Instalar navegadores
+      # A veces la descarga de paquetes de Ubuntu (apt) se queda pegada: tiempos de espera
+      # cortos, máximo 8 minutos por intento y, antes de reintentar, se corta el apt colgado.
+      - name: Instalar dependencias de los navegadores
         run: |
+          printf 'Acquire::Retries "5";\nAcquire::http::Timeout "30";\nAcquire::https::Timeout "30";\nDPkg::Lock::Timeout "120";\n' | sudo tee /etc/apt/apt.conf.d/99akyra > /dev/null
           ok=0
           for i in 1 2 3; do
-            if timeout 600 npx playwright install --with-deps chromium firefox webkit; then ok=1; break; fi
+            if timeout -k 10 480 npx playwright install-deps chromium firefox webkit; then ok=1; break; fi
             echo "Intento $i falló, reintentando..."
+            sudo pkill -9 -f 'apt-get|dpkg' || true
+            sudo dpkg --configure -a || true
           done
           [ "$ok" = 1 ]
+      - name: Instalar navegadores
+        run: |
+          for i in 1 2 3; do timeout -k 10 480 npx playwright install chromium firefox webkit && exit 0; echo "Intento $i falló"; done
+          exit 1
       - name: Lint (JavaScript)
         run: npm run lint
       - name: Validar HTML
