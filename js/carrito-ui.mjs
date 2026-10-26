@@ -44,7 +44,7 @@ function filaLinea(l) {
       h('div', { class: 'cantidad cantidad--compacta' },
         h('label', { class: 'visualmente-oculto', for: idCampo, text: l.granel ? `Kilos de ${nombre}` : `Cantidad de ${nombre}` }),
         h('button', { type: 'button', class: 'cantidad__boton', 'data-linea': 'restar', 'aria-label': `Restar ${unidad} a ${nombre}`, 'aria-disabled': String(l.cantidad <= minimo) }, icono('minus')),
-        h('input', { id: idCampo, class: 'cantidad__campo', type: 'text', inputmode: l.granel ? 'decimal' : 'numeric', autocomplete: 'off', 'data-linea': 'campo', value: l.granel ? formatoDecimal(l.cantidad) : String(l.cantidad) }),
+        h('input', { id: idCampo, class: 'cantidad__campo', type: 'text', size: 3, inputmode: l.granel ? 'decimal' : 'numeric', autocomplete: 'off', 'data-linea': 'campo', value: l.granel ? formatoDecimal(l.cantidad) : String(l.cantidad) }),
         l.granel ? h('span', { class: 'cantidad__unidad', 'aria-hidden': 'true', text: 'kg' }) : null,
         h('button', { type: 'button', class: 'cantidad__boton', 'data-linea': 'sumar', 'aria-label': `Sumar ${unidad} a ${nombre}`, 'aria-disabled': String(l.tope !== null && l.cantidad >= l.tope) }, icono('plus'))
       ),

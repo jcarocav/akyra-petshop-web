@@ -406,7 +406,7 @@ main:focus { outline: none; }
   border: 2px solid var(--borde-control); border-radius: 999px; background: var(--blanco); overflow: hidden;
 }
 .cantidad__boton {
-  display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px;
+  flex: 0 0 auto; display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px;
   border: 0; background: transparent; color: var(--tinta);
   transition: background-color var(--transicion), color var(--transicion);
 }
@@ -415,7 +415,7 @@ main:focus { outline: none; }
 .cantidad__boton[aria-disabled="true"]:hover { background: transparent; color: #8c9b99; }
 .cantidad__boton:focus-visible { outline-offset: -3px; border-radius: 999px; }
 .cantidad__campo {
-  width: 44px; height: 44px; border: 0; border-inline: 1px solid var(--borde); text-align: center;
+  flex: 0 0 auto; min-width: 0; width: 44px; height: 44px; border: 0; border-inline: 1px solid var(--borde); text-align: center;
   font-weight: 800; font-size: 1rem; background: var(--blanco); padding: 0;
 }
 .cantidad__campo:focus-visible { outline-offset: -3px; }

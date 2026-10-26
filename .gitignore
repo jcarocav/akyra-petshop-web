@@ -7,6 +7,8 @@ playwright-report/
 # El inventario tiene costos: nunca se sube al repositorio público
 *.xlsx
 *.xls
+# excepción: reporte de stock SIMULADO para las pruebas (sin costos)
+!tests/fixtures/gesnex-simulado.xlsx
 *.zip
 .env*
 # Skills copiadas de terceros: se instalan localmente (origen en ORIGEN.txt), no se publican

@@ -148,6 +148,7 @@ export function filaCompra(producto, { idAviso } = {}) {
     id: idCampo,
     class: 'cantidad__campo',
     type: 'text',
+    size: 3,
     inputmode: granel ? 'decimal' : 'numeric',
     autocomplete: 'off',
     value: granel ? formatoDecimal(minimo) : '1',
