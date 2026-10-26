@@ -28,7 +28,9 @@ test('cambiar cantidad, quitar y totales correctos; se mantiene al recargar', as
   await expect(lineaG.locator('.linea__subtotal')).toContainText(formatoCLP(g.precio * 1.5))
   await expect(page.locator('#carrito-subtotal')).toHaveText(formatoCLP(a.precio * 2 + g.precio * 1.5))
 
-  await lineaA.getByRole('button', { name: `Sumar uno a ${a.nombre}` }).click()
+  // Con teclado (Safari no enfoca los botones al hacer clic)
+  await lineaA.getByRole('button', { name: `Sumar uno a ${a.nombre}` }).focus()
+  await page.keyboard.press('Enter')
   await expect(lineaA.getByLabel(`Cantidad de ${a.nombre}`)).toHaveValue('3')
   await expect(lineaA.getByRole('button', { name: `Sumar uno a ${a.nombre}` })).toBeFocused() // el foco no se pierde
   await lineaG.getByRole('button', { name: `Restar medio kilo a ${g.nombre}` }).click()

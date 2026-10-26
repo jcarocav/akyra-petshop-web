@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- parcial:seguridad -->
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; frame-src https://www.google.com; form-action 'self'; base-uri 'self'; object-src 'none'; manifest-src 'self'; upgrade-insecure-requests">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; frame-src https://www.google.com; form-action 'self'; base-uri 'self'; object-src 'none'; manifest-src 'self'">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="format-detection" content="telephone=no">
 <!-- /parcial:seguridad -->
@@ -223,7 +223,7 @@
         <label for="catalogo-buscar">Buscar por producto, marca o código</label>
         <div class="busqueda-catalogo__fila">
           <input id="catalogo-buscar" type="search" name="buscar" maxlength="80" autocomplete="off" enterkeyhint="search" placeholder="Ej: Royal Canin gatito, arena lavanda, PER-FITF-001">
-          <button type="submit" class="boton boton--primario"><svg class="icono" aria-hidden="true" focusable="false"><use href="assets/iconos.svg#search"></use></svg><span>Buscar</span></button>
+          <button type="submit" class="boton boton--primario" aria-label="Buscar en el catálogo"><svg class="icono" aria-hidden="true" focusable="false"><use href="assets/iconos.svg#search"></use></svg><span>Buscar</span></button>
         </div>
       </form>
     </div>

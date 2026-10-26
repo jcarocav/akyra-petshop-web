@@ -62,7 +62,7 @@
 
 /* ---------- Base ---------- */
 *, *::before, *::after { box-sizing: border-box; }
-html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; scroll-padding-top: calc(var(--alto-cabecera) + 16px); }
+html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; scroll-padding-top: calc(var(--alto-cabecera) + 16px); scroll-padding-bottom: 88px; /* que el foco no quede bajo el botón flotante de WhatsApp */ }
 html.sin-scroll { overflow: hidden; }
 @media (prefers-reduced-motion: no-preference) { html { scroll-behavior: smooth; } }
 body {
@@ -247,7 +247,7 @@ main:focus { outline: none; }
   padding: 0 16px; background: var(--magenta); color: var(--blanco); font-family: var(--fuente-titulos); font-weight: 600;
 }
 .buscador__boton:hover { background: var(--magenta-oscuro); }
-.buscador__texto { display: none; }
+.buscador__texto { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
 
 /* Menú */
 .menu { display: none; background: var(--blanco); border-top: 1px solid var(--borde); max-height: calc(100dvh - 120px); overflow-y: auto; }
@@ -263,7 +263,7 @@ main:focus { outline: none; }
 .menu__destacado a { color: var(--magenta-oscuro); }
 
 @media (min-width: 560px) {
-  .buscador__texto { display: inline; }
+  .buscador__texto { position: static; width: auto; height: auto; overflow: visible; clip-path: none; }
 }
 @media (min-width: 720px) {
   .cabecera__whatsapp { display: inline-flex; }

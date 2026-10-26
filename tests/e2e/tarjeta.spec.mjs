@@ -10,13 +10,13 @@ test('− y + cambian la cantidad sin bajar de 1 ni pasar el tope', async ({ pag
   const mas = card.getByRole('button', { name: `Sumar uno a ${p.nombre}` })
   await expect(campo).toHaveValue('1')
   await expect(menos).toHaveAttribute('aria-disabled', 'true')
-  await menos.click({ force: true }) // desactivado (aria-disabled): no hace nada
+  await menos.dispatchEvent('click') // desactivado (aria-disabled): no hace nada
   await expect(campo).toHaveValue('1')
   for (let i = 1; i < p.tope; i++) await mas.click()
   await expect(campo).toHaveValue(String(p.tope))
   await expect(mas).toHaveAttribute('aria-disabled', 'true')
   await expect(card.locator('[data-aviso]')).toContainText('Máximo disponible')
-  await mas.click({ force: true })
+  await mas.dispatchEvent('click')
   await expect(campo).toHaveValue(String(p.tope))
   // Escribir más que el tope lo ajusta al máximo
   await campo.fill('999')
@@ -52,7 +52,7 @@ test('no se puede pasar del tope sumando varias veces', async ({ page }) => {
   const p = await elegirProducto(page, 'simple-tope-chico')
   const card = await abrirCard(page, p)
   const anadir = card.getByRole('button', { name: `Añadir ${p.nombre} al carrito` })
-  for (let i = 0; i <= p.tope; i++) await anadir.click({ force: true })
+  for (let i = 0; i <= p.tope; i++) await anadir.dispatchEvent('click')
   expect((await carritoGuardado(page))[0].cantidad).toBe(p.tope)
   await expect(card.locator('[data-aviso]')).toContainText('máximo disponible')
 })
@@ -64,7 +64,7 @@ test('con tallas: no deja añadir sin elegir talla', async ({ page }) => {
   const anadir = card.getByRole('button', { name: new RegExp(`Añadir ${p.nombre.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}`) })
   await expect(anadir).toHaveAttribute('aria-disabled', 'true')
   await expect(card.locator('[data-aviso]')).toHaveText('Elige una talla para añadir.')
-  await anadir.click({ force: true }) // desactivado hasta elegir talla
+  await anadir.dispatchEvent('click') // desactivado hasta elegir talla
   expect(await carritoGuardado(page)).toEqual([])
   await expect(card.locator('[data-aviso]')).toHaveText('Primero elige una talla.')
   const talla = p.tallas[0]

@@ -26,7 +26,8 @@
     "stock:simular": "node tools/stock/simular-gesnex.mjs",
     "stock:desde-planilla": "node tools/stock/actualizar-desde-sheet.mjs",
     "apps-script:preparar": "node tools/stock/preparar-apps-script.mjs",
-    "imagenes:sitemaps": "node tools/imagenes/sitemaps.mjs"
+    "imagenes:sitemaps": "node tools/imagenes/sitemaps.mjs",
+    "lighthouse:local": "node tools/lighthouse-local.mjs"
   },
   "devDependencies": {
     "@axe-core/playwright": "4.14.0",

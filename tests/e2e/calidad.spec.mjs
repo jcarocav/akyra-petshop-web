@@ -10,7 +10,10 @@ const PAGINAS = ['/index.html', '/catalogo.html', '/catalogo.html?categoria=gran
 for (const ruta of PAGINAS) {
   test(`consola sin errores e imágenes sin romper: ${ruta}`, async ({ page }) => {
     const errores = []
-    page.on('console', m => { if (m.type() === 'error') errores.push(m.text()) })
+    // WebKit de Playwright inyecta una hoja de estilo propia que la CSP bloquea (pasa hasta en
+    // una página vacía con style-src 'self'): no es del sitio, se ignora solo ese mensaje.
+    const ruidoWebkit = /^Refused to apply a stylesheet because its hash, its nonce, or 'unsafe-inline'/
+    page.on('console', m => { if (m.type() === 'error' && !ruidoWebkit.test(m.text())) errores.push(m.text()) })
     page.on('pageerror', e => errores.push(String(e)))
     const fallidas = []
     page.on('response', r => { if (r.status() >= 400 && r.url().startsWith('http://localhost')) fallidas.push(`${r.status()} ${r.url()}`) })

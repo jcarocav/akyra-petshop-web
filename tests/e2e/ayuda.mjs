@@ -27,20 +27,20 @@ export async function catalogo(page) {
 
 // Cambia productos.json y/o stock.json que recibe el navegador (sin tocar los archivos)
 export async function conDatos(page, { productosExtra = [], stockExtra = {} } = {}) {
-  if (productosExtra.length) {
-    await page.route('**/productos.json', async route => {
+  // Si la página navega mientras se arma la respuesta, la petición vieja se descarta sin error
+  const modificar = cambiar => async route => {
+    try {
       const r = await route.fetch()
-      const datos = await r.json()
-      datos.productos = [...productosExtra, ...datos.productos]
-      await route.fulfill({ response: r, json: datos })
-    })
+      const datos = cambiar(await r.json())
+      await route.fulfill({ status: 200, contentType: 'application/json', body: JSON.stringify(datos) })
+    } catch {
+      await route.abort().catch(() => {})
+    }
   }
-  await page.route('**/stock.json', async route => {
-    const r = await route.fetch()
-    const datos = await r.json()
-    Object.assign(datos.unidades, stockExtra)
-    await route.fulfill({ response: r, json: datos })
-  })
+  if (productosExtra.length) {
+    await page.route('**/productos.json', modificar(d => ({ ...d, productos: [...productosExtra, ...d.productos] })))
+  }
+  await page.route('**/stock.json', modificar(d => ({ ...d, unidades: { ...d.unidades, ...stockExtra } })))
 }
 
 // Productos que se pueden comprar (con precio), según su tipo

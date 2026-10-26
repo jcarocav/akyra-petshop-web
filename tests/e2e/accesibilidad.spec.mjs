@@ -113,7 +113,8 @@ test('movimiento reducido: el carrusel queda en pausa', async ({ browser }) => {
   await contexto.close()
 })
 
-test('zoom al 200 %: sin scroll horizontal', async ({ page }) => {
+test('zoom al 200 %: sin scroll horizontal', async ({ page, isMobile }) => {
+  test.skip(isMobile, 'Simula un computador de 1280 px al 200 %; en celular no aplica')
   await page.setViewportSize({ width: 640, height: 900 }) // 1280 px de ancho al 200 %
   for (const ruta of ['/index.html', '/catalogo.html', '/contactenos.html']) {
     await page.goto(ruta)
@@ -125,6 +126,6 @@ test('zoom al 200 %: sin scroll horizontal', async ({ page }) => {
 test('botones − y + de al menos 44×44 px', async ({ page }) => {
   await page.goto('/catalogo.html?categoria=gatos')
   const caja = await page.locator('.cantidad__boton').first().boundingBox()
-  expect(caja.width).toBeGreaterThanOrEqual(44)
-  expect(caja.height).toBeGreaterThanOrEqual(44)
+  expect(caja.width).toBeGreaterThanOrEqual(43.5) // 44 px CSS (WebKit informa 43,99…)
+  expect(caja.height).toBeGreaterThanOrEqual(43.5)
 })
