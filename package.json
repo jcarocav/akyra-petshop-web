@@ -1,0 +1,44 @@
+{
+  "name": "akyra-petshop-web",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Sitio estático de Maskotería Akyra (HTML/CSS/JS puro).",
+  "type": "module",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "servidor": "node tools/servidor.mjs",
+    "catalogo": "node tools/generar-catalogo.mjs",
+    "imagenes:buscar": "node tools/imagenes/buscar.mjs",
+    "imagenes:procesar": "node tools/imagenes/procesar.mjs",
+    "imagenes:reporte": "node tools/imagenes/reporte.mjs",
+    "lint": "oxlint --deny-warnings js tools tests config.js apps-script",
+    "html": "html-validate \"*.html\"",
+    "enlaces": "node tools/verificar-enlaces.mjs",
+    "test": "playwright test",
+    "test:rapido": "playwright test --project=chromium-escritorio",
+    "lighthouse": "node tools/lighthouse.mjs",
+    "verificar": "npm run lint && npm run html && npm test && npm run enlaces && npm run lighthouse",
+    "paginas": "node tools/construir-paginas.mjs",
+    "iconos": "node tools/construir-iconos.mjs",
+    "optimizar-imagenes": "node tools/optimizar-imagenes.mjs",
+    "stock:simular": "node tools/stock/simular-gesnex.mjs",
+    "stock:desde-planilla": "node tools/stock/actualizar-desde-sheet.mjs",
+    "apps-script:preparar": "node tools/stock/preparar-apps-script.mjs",
+    "imagenes:sitemaps": "node tools/imagenes/sitemaps.mjs"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "4.14.0",
+    "@google/clasp": "^3.4.1",
+    "@lhci/cli": "0.15.1",
+    "@playwright/test": "1.64.1",
+    "exceljs": "4.4.0",
+    "html-validate": "11.17.0",
+    "linkinator": "8.1.0",
+    "lucide-static": "1.61.0",
+    "oxlint": "1.89.0",
+    "sharp": "0.35.5",
+    "xlsx": "file:vendor/xlsx-0.20.3.tgz"
+  }
+}

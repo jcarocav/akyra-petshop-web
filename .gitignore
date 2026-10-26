@@ -1,0 +1,15 @@
+node_modules/
+test-results/
+playwright-report/
+.lighthouseci/
+.tmp/
+*.log
+# El inventario tiene costos: nunca se sube al repositorio público
+*.xlsx
+*.xls
+*.zip
+.env*
+# Skills copiadas de terceros: se instalan localmente (origen en ORIGEN.txt), no se publican
+.claude/skills/
+.claude/settings.local.json
+tools/imagenes/cache/

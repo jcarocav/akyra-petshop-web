@@ -1,0 +1,33 @@
+{
+  "enabledPlugins": {
+    "frontend-design@claude-plugins-official": true,
+    "impeccable@impeccable": true,
+    "claude-code-setup@claude-plugins-official": true
+  },
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Edit|Write",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"$CLAUDE_PROJECT_DIR/.claude/hooks/proteger-archivos.mjs\"",
+            "timeout": 10
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Edit|Write",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"$CLAUDE_PROJECT_DIR/.claude/hooks/lint-archivo.mjs\"",
+            "timeout": 30
+          }
+        ]
+      }
+    ]
+  }
+}

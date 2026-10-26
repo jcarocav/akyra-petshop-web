@@ -1,0 +1,8 @@
+{
+  "overrides": [
+    {
+      "files": ["apps-script/**"],
+      "rules": { "no-unused-vars": "off" }
+    }
+  ]
+}
