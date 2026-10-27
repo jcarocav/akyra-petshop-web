@@ -164,36 +164,64 @@
   {
     "marca": "Mondo Mascota",
     "id": "mondo-mascota",
-    "fondo": "claro"
+    "fondo": "claro",
+    "archivo": "mondo-mascota.webp",
+    "ancho": 256,
+    "alto": 96,
+    "origen": "Imagen entregada por el dueño de la tienda"
   },
   {
     "marca": "Inaba",
     "id": "inaba",
-    "fondo": "claro"
+    "fondo": "claro",
+    "archivo": "inaba.webp",
+    "ancho": 268,
+    "alto": 96,
+    "origen": "Imagen entregada por el dueño de la tienda"
   },
   {
     "marca": "Leon Pet",
     "id": "leon-pet",
-    "fondo": "claro"
+    "fondo": "claro",
+    "archivo": "leon-pet.webp",
+    "ancho": 228,
+    "alto": 96,
+    "origen": "Imagen entregada por el dueño de la tienda"
   },
   {
     "marca": "Master Cat",
     "id": "master-cat",
-    "fondo": "claro"
+    "fondo": "claro",
+    "archivo": "master-cat.webp",
+    "ancho": 119,
+    "alto": 96,
+    "origen": "Imagen entregada por el dueño de la tienda"
   },
   {
     "marca": "Nomade",
     "id": "nomade",
-    "fondo": "claro"
+    "fondo": "claro",
+    "archivo": "nomade.webp",
+    "ancho": 179,
+    "alto": 96,
+    "origen": "Imagen entregada por el dueño de la tienda"
   },
   {
     "marca": "N&D",
     "id": "nd",
-    "fondo": "claro"
+    "fondo": "claro",
+    "archivo": "nd.webp",
+    "ancho": 106,
+    "alto": 96,
+    "origen": "Imagen entregada por el dueño de la tienda"
   },
   {
     "marca": "Vet Life",
     "id": "vet-life",
-    "fondo": "claro"
+    "fondo": "claro",
+    "archivo": "vet-life.webp",
+    "ancho": 220,
+    "alto": 96,
+    "origen": "Imagen entregada por el dueño de la tienda"
   }
 ]

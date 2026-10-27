@@ -1,30 +1,158 @@
 {
   "_nota": "Logos oficiales de las marcas del catálogo (columna marca). 'fondo: oscuro' = logo con letras blancas: va sobre píldora oscura (no se recolorea el logo). Sin 'url' ni 'local' = no se encontró logo oficial y se muestra el nombre.",
   "marcas": [
-    { "marca": "Royal Canin", "id": "royal-canin", "local": "royal-canin.svg", "origen": "Logo del encabezado de royalcanin.com/cl (SVG oficial, rojo #e2001a)" },
-    { "marca": "Fit Formula", "id": "fit-formula", "url": "https://fitformula.cl/wp-content/themes/fitformula/assets/img/fit_formula_logo.png", "origen": "fitformula.cl" },
-    { "marca": "Marben Pets", "id": "marben-pets", "url": "https://marbenpets.cl/wp-content/uploads/2025/12/Logo-Marben-pets-web-2.png", "origen": "marbenpets.cl" },
-    { "marca": "Wanpy", "id": "wanpy", "url": "https://www.wanpy.com/static/home/images/wlogo.svg", "origen": "wanpy.com" },
-    { "marca": "Bravery", "id": "bravery", "url": "https://www.braverypetfood.com/wp-content/uploads/2022/03/Logo_Bravery_sf.png", "origen": "braverypetfood.com" },
-    { "marca": "Purina Fancy Feast", "id": "fancy-feast", "url": "https://purina.cl/themes/custom/purina/fancy_feast/Content/img/logo/logo.png", "origen": "purina.cl (sitio oficial de Purina Chile)" },
-    { "marca": "Champion", "id": "champion", "url": "https://www.championdog.cl/wp-content/themes/sitio2021/resources/img/logo.png", "fondo": "oscuro", "origen": "championdog.cl" },
-    { "marca": "Top K9", "id": "top-k9", "url": "https://topk9.cl/cdn/shop/files/Logo-Topk9_Mesa_de_trabajo_1_copia.png?v=1738158800&width=500", "origen": "topk9.cl" },
-    { "marca": "Purina Cat Chow", "id": "cat-chow", "url": "https://purina.cl/themes/custom/purina/catchow/Content/img/logo/logo.png", "origen": "purina.cl" },
-    { "marca": "Bioline", "id": "bioline", "url": "https://bioline.cl/wp-content/uploads/2026/05/Logo-BioLine-Blanco.png", "fondo": "oscuro", "origen": "bioline.cl" },
-    { "marca": "Leonardo", "id": "leonardo", "url": "https://leonardochile.cl/wp-content/uploads/2026/07/leonardo-LOGO.png", "origen": "leonardochile.cl" },
-    { "marca": "Master Dog", "id": "master-dog", "url": "https://www.masterdog.cl/wp-content/themes/masterdog/assets/images/doglover_master_dog.png", "origen": "masterdog.cl" },
-    { "marca": "Felix", "id": "felix", "url": "https://purina.cl/themes/custom/purina/felix/Content/img/logo/logo.png", "origen": "purina.cl" },
-    { "marca": "Pedigree", "id": "pedigree", "url": "https://www.pedigree.cl/sites/g/files/fnmzdf1511/themes/site/img/png/icon_blue.png?v=1", "origen": "pedigree.cl (rosetón oficial)" },
-    { "marca": "Whiskas", "id": "whiskas", "url": "https://www.whiskas.cl/sites/g/files/fnmzdf4541/files/whiskas-logo_0.png", "fondo": "oscuro", "origen": "whiskas.cl" },
-    { "marca": "Alfa Dog", "id": "alfa-dog", "url": "https://www.alfadog.cl/wp-content/uploads/2023/07/LOGO-ALPHA-DOG-4.png", "origen": "alfadog.cl" },
-    { "marca": "Purina Pro Plan", "id": "pro-plan", "url": "https://purina.cl/themes/custom/purina/proplan/Content/img/logo/logo.png", "origen": "purina.cl" },
-    { "marca": "Dog Chow", "id": "dog-chow", "url": "https://purina.cl/themes/custom/purina/dogchow/Content/img/logo/logo.png", "origen": "purina.cl" },
-    { "marca": "Mondo Mascota", "id": "mondo-mascota" },
-    { "marca": "Inaba", "id": "inaba" },
-    { "marca": "Leon Pet", "id": "leon-pet" },
-    { "marca": "Master Cat", "id": "master-cat" },
-    { "marca": "Nomade", "id": "nomade" },
-    { "marca": "N&D", "id": "nd" },
-    { "marca": "Vet Life", "id": "vet-life" }
+    {
+      "marca": "Royal Canin",
+      "id": "royal-canin",
+      "local": "royal-canin.svg",
+      "origen": "Logo del encabezado de royalcanin.com/cl (SVG oficial, rojo #e2001a)"
+    },
+    {
+      "marca": "Fit Formula",
+      "id": "fit-formula",
+      "url": "https://fitformula.cl/wp-content/themes/fitformula/assets/img/fit_formula_logo.png",
+      "origen": "fitformula.cl"
+    },
+    {
+      "marca": "Marben Pets",
+      "id": "marben-pets",
+      "url": "https://marbenpets.cl/wp-content/uploads/2025/12/Logo-Marben-pets-web-2.png",
+      "origen": "marbenpets.cl"
+    },
+    {
+      "marca": "Wanpy",
+      "id": "wanpy",
+      "url": "https://www.wanpy.com/static/home/images/wlogo.svg",
+      "origen": "wanpy.com"
+    },
+    {
+      "marca": "Bravery",
+      "id": "bravery",
+      "url": "https://www.braverypetfood.com/wp-content/uploads/2022/03/Logo_Bravery_sf.png",
+      "origen": "braverypetfood.com"
+    },
+    {
+      "marca": "Purina Fancy Feast",
+      "id": "fancy-feast",
+      "url": "https://purina.cl/themes/custom/purina/fancy_feast/Content/img/logo/logo.png",
+      "origen": "purina.cl (sitio oficial de Purina Chile)"
+    },
+    {
+      "marca": "Champion",
+      "id": "champion",
+      "url": "https://www.championdog.cl/wp-content/themes/sitio2021/resources/img/logo.png",
+      "fondo": "oscuro",
+      "origen": "championdog.cl"
+    },
+    {
+      "marca": "Top K9",
+      "id": "top-k9",
+      "url": "https://topk9.cl/cdn/shop/files/Logo-Topk9_Mesa_de_trabajo_1_copia.png?v=1738158800&width=500",
+      "origen": "topk9.cl"
+    },
+    {
+      "marca": "Purina Cat Chow",
+      "id": "cat-chow",
+      "url": "https://purina.cl/themes/custom/purina/catchow/Content/img/logo/logo.png",
+      "origen": "purina.cl"
+    },
+    {
+      "marca": "Bioline",
+      "id": "bioline",
+      "url": "https://bioline.cl/wp-content/uploads/2026/05/Logo-BioLine-Blanco.png",
+      "fondo": "oscuro",
+      "origen": "bioline.cl"
+    },
+    {
+      "marca": "Leonardo",
+      "id": "leonardo",
+      "url": "https://leonardochile.cl/wp-content/uploads/2026/07/leonardo-LOGO.png",
+      "origen": "leonardochile.cl"
+    },
+    {
+      "marca": "Master Dog",
+      "id": "master-dog",
+      "url": "https://www.masterdog.cl/wp-content/themes/masterdog/assets/images/doglover_master_dog.png",
+      "origen": "masterdog.cl"
+    },
+    {
+      "marca": "Felix",
+      "id": "felix",
+      "url": "https://purina.cl/themes/custom/purina/felix/Content/img/logo/logo.png",
+      "origen": "purina.cl"
+    },
+    {
+      "marca": "Pedigree",
+      "id": "pedigree",
+      "url": "https://www.pedigree.cl/sites/g/files/fnmzdf1511/themes/site/img/png/icon_blue.png?v=1",
+      "origen": "pedigree.cl (rosetón oficial)"
+    },
+    {
+      "marca": "Whiskas",
+      "id": "whiskas",
+      "url": "https://www.whiskas.cl/sites/g/files/fnmzdf4541/files/whiskas-logo_0.png",
+      "fondo": "oscuro",
+      "origen": "whiskas.cl"
+    },
+    {
+      "marca": "Alfa Dog",
+      "id": "alfa-dog",
+      "url": "https://www.alfadog.cl/wp-content/uploads/2023/07/LOGO-ALPHA-DOG-4.png",
+      "origen": "alfadog.cl"
+    },
+    {
+      "marca": "Purina Pro Plan",
+      "id": "pro-plan",
+      "url": "https://purina.cl/themes/custom/purina/proplan/Content/img/logo/logo.png",
+      "origen": "purina.cl"
+    },
+    {
+      "marca": "Dog Chow",
+      "id": "dog-chow",
+      "url": "https://purina.cl/themes/custom/purina/dogchow/Content/img/logo/logo.png",
+      "origen": "purina.cl"
+    },
+    {
+      "marca": "Mondo Mascota",
+      "id": "mondo-mascota",
+      "local": "originales/mondo-mascota.png",
+      "origen": "Imagen entregada por el dueño de la tienda"
+    },
+    {
+      "marca": "Inaba",
+      "id": "inaba",
+      "local": "originales/inaba.png",
+      "origen": "Imagen entregada por el dueño de la tienda"
+    },
+    {
+      "marca": "Leon Pet",
+      "id": "leon-pet",
+      "local": "originales/leon-pet.png",
+      "origen": "Imagen entregada por el dueño de la tienda"
+    },
+    {
+      "marca": "Master Cat",
+      "id": "master-cat",
+      "local": "originales/master-cat.png",
+      "origen": "Imagen entregada por el dueño de la tienda"
+    },
+    {
+      "marca": "Nomade",
+      "id": "nomade",
+      "local": "originales/nomade.png",
+      "origen": "Imagen entregada por el dueño de la tienda"
+    },
+    {
+      "marca": "N&D",
+      "id": "nd",
+      "local": "originales/nd.png",
+      "origen": "Imagen entregada por el dueño de la tienda"
+    },
+    {
+      "marca": "Vet Life",
+      "id": "vet-life",
+      "local": "originales/vet-life.png",
+      "origen": "Imagen entregada por el dueño de la tienda"
+    }
   ]
 }

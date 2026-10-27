@@ -112,5 +112,5 @@ Publicado en GitHub Pages: https://jcarocav.github.io/akyra-petshop-web/ (repo p
   como error de CSP en la consola: agregarlo solo en `seguridad-inicio.html` y correr `npm run paginas`.
 - **Marcas con logos** (`tools/marcas/`): `fuentes.json` lista las marcas (logo oficial + sitio de origen) y
   `node tools/marcas/construir-logos.mjs` baja y optimiza los logos a `assets/marcas/` y reescribe el carrusel en
-  `index.html`. Sin logo oficial = se muestra el nombre. Los logos de letras blancas llevan `"fondo": "oscuro"`.
+  `index.html`. Sin logo = se muestra el nombre. Los logos de Inaba, Vet Life, N&D, Mondo Mascota, León Pet, Master Cat y Nómade los entregó el dueño (`tools/marcas/originales/`). Los logos de letras blancas llevan `"fondo": "oscuro"`.
 - **Granel**: kilos con hasta 3 decimales (`carrito.interpretarKilos`), − y + de a 0,1 kg, mínimo 0,1 kg.
