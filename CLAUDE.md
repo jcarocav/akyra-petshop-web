@@ -98,3 +98,19 @@ Publicado en GitHub Pages: https://jcarocav.github.io/akyra-petshop-web/ (repo p
 - Hooks: `.claude/hooks/proteger-archivos.mjs` (no editar a mano `productos.json`, `stock.json`, `.env*`, lock ni
   planillas) y `.claude/hooks/lint-archivo.mjs` (oxlint / html-validate al editar).
 - Subagente `security-reviewer` (`.claude/agents/`): revisión de seguridad del sitio estático.
+
+## Secciones del inicio con contenido de terceros o dinámico
+- **Sucursales** (`js/sucursales.mjs`): los 3 mapas de Google se cargan cuando la sección se acerca a la pantalla
+  (IntersectionObserver, `loading="lazy"`, altura reservada). Las fachadas de fondo cambian cada 3 s y la tarjeta se
+  resalta (borde, resplandor y etiqueta "Foto de fondo"); pausa con botón, mouse o foco; con "reducir movimiento"
+  queda la primera fija. Fotos: `assets/img/lugares/` (Casa Matriz y Las Lengas son imágenes neutras: reemplazar
+  `casa-matriz.svg` / `las-lengas.svg` por la foto real, mismo nombre de `data-sucursal` en `index.html`).
+- **Instagram** (`js/instagram.mjs`): feed de Elfsight (widget `4cc8cd0a-…`), script inyectado solo al acercarse la
+  sección. Si no carga, queda el botón "Síguenos en Instagram". **CSP propia del inicio**
+  (`tools/parciales/seguridad-inicio.html`): permite los dominios de Elfsight y `style-src 'unsafe-inline'` (lo usa el
+  widget); el resto de las páginas mantiene la CSP estricta (`seguridad.html`). Si Elfsight pide otro dominio, se ve
+  como error de CSP en la consola: agregarlo solo en `seguridad-inicio.html` y correr `npm run paginas`.
+- **Marcas con logos** (`tools/marcas/`): `fuentes.json` lista las marcas (logo oficial + sitio de origen) y
+  `node tools/marcas/construir-logos.mjs` baja y optimiza los logos a `assets/marcas/` y reescribe el carrusel en
+  `index.html`. Sin logo oficial = se muestra el nombre. Los logos de letras blancas llevan `"fondo": "oscuro"`.
+- **Granel**: kilos con hasta 3 decimales (`carrito.interpretarKilos`), − y + de a 0,1 kg, mínimo 0,1 kg.
