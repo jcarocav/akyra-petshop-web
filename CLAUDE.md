@@ -70,6 +70,24 @@ Publicado en GitHub Pages: https://jcarocav.github.io/akyra-petshop-web/ (repo p
 5. **Mapeo de columnas** del reporte real de Gesnex: `apps-script/Config.js` → `COLUMNAS` (todavía se probó solo con
    el reporte simulado `tests/fixtures/gesnex-simulado.*`).
 
+## Temas de temporada (decoraciones por fecha)
+- **Calendario**: `js/temas-config.mjs` (único archivo de configuración). Cada tema tiene `fechas`, `prioridad`,
+  `capa` (`principal` o `detalle`), `decoracion` (`guirnalda`, `hero`, `pie`) y, si corresponde, `portada`.
+  Se activa solo según la fecha de Chile (`js/temas.mjs`); si dos temas se cruzan gana la `prioridad` más alta.
+  Un tema `detalle` (Día del Animal) se suma al principal sin taparlo.
+- **Fechas**: fijas `{ desde: 'MM-DD', hasta: 'MM-DD' }` (si `hasta` es menor, cruza el año);
+  alrededor de un día `{ alrededor: '07-26', dias: 3 }`; móviles `{ domingo: { mes: 5, numero: 2 }, diasAntes: 7 }`
+  (2.º domingo de mayo y la semana anterior). Se recalculan solas cada año.
+- **Cambiar fechas**: editar `fechas` del tema en `js/temas-config.mjs`. Nada más.
+- **Agregar un tema**: (1) dibujarlo en `tools/temas/construir-temas.mjs` (figuras simples + `guirnalda()` y
+  `composicion()`) y correr `node tools/temas/construir-temas.mjs`; (2) agregarlo a `TEMAS` en
+  `js/temas-config.mjs`; (3) sumar un caso en `tests/unit/temas.spec.mjs`. Si trae portada, agregar en
+  `index.html` una `hero__diapositiva` con `data-portada="<id>"` y `hidden`.
+- **Ver un tema sin esperar la fecha**: `?tema=halloween` (o el id que sea) en cualquier página; `?tema=ninguno`
+  muestra el sitio sin tema.
+- Reglas: solo decoración (SVG locales con `aria-hidden`, sin clics: `pointer-events: none`), no cambia los colores
+  de la marca, no tapa contenido ni el carrito, animación suave apagada con "reducir movimiento".
+
 ## Herramientas instaladas
 - Plugins de Claude Code (en `.claude/settings.json`): **frontend-design** (construir pantallas), **impeccable**
   (revisar y pulir), **claude-code-setup**. Skills locales (fuera de git, origen en cada `ORIGEN.txt`):

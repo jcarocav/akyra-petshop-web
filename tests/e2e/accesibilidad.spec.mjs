@@ -11,7 +11,10 @@ async function sinViolaciones(page, nombre) {
 }
 
 const PAGINAS = [
-  ['inicio', '/index.html'],
+  ['inicio', '/index.html?tema=ninguno'],
+  ['inicio con tema Halloween', '/index.html?tema=halloween'],
+  ['inicio con tema Fiestas Patrias (portada)', '/index.html?tema=fiestas-patrias'],
+  ['inicio con Día del Animal', '/index.html?tema=dia-animal'],
   ['catálogo', '/catalogo.html'],
   ['catálogo granel', '/catalogo.html?categoria=granel'],
   ['catálogo con filtros', '/catalogo.html?categoria=gatos&tipo=Alimento%20h%C3%BAmedo&marca=Felix'],

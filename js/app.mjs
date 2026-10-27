@@ -7,6 +7,7 @@ import { iniciarCarrito, mostrarAviso } from './carrito-ui.mjs'
 import { activarCompra, cuandoSeAgregue } from './componentes.mjs'
 import { CONFIG } from './datos.mjs'
 import { crearDialogo } from './dialogo.mjs'
+import { aplicarTemas } from './temas.mjs'
 import { $, $$, almacen, h, reducirMovimiento } from './utilidades.mjs'
 
 const MENSAJE_WHATSAPP = 'Hola, quería consultar por sus productos para mascotas 🐾'
@@ -55,15 +56,13 @@ function iniciarPrivacidad() {
 }
 
 // ---------- Carrusel del inicio ----------
-function iniciarHero() {
+// Las diapositivas con data-portada solo se muestran cuando su tema de temporada las activa
+// (fechas en js/temas-config.mjs)
+function iniciarHero(portada) {
   const hero = $('[data-carrusel]')
   if (!hero) return
-  const hoy = new Date()
-  const mmdd = `${String(hoy.getMonth() + 1).padStart(2, '0')}-${String(hoy.getDate()).padStart(2, '0')}`
   const diapositivas = $$('.hero__diapositiva', hero).filter(d => {
-    const desde = d.dataset.desde
-    const hasta = d.dataset.hasta
-    const vigente = !desde || (mmdd >= desde && mmdd <= hasta)
+    const vigente = !d.dataset.portada || d.dataset.portada === portada
     if (!vigente) d.remove()
     return vigente
   })
@@ -171,7 +170,8 @@ export function iniciarApp() {
   iniciarCarrito()
   activarCompra()
   cuandoSeAgregue(mostrarAviso)
-  iniciarHero()
+  const { portada } = aplicarTemas()
+  iniciarHero(portada)
   iniciarCintas()
   iniciarMapas()
   iniciarPrivacidad()

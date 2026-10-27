@@ -40,7 +40,12 @@
   --blanco: #ffffff;
   --borde: #d3e3e0;            /* decorativo */
   --borde-control: #6f8784;    /* bordes de campos y botones: 3,9:1 */
-  --verde-whatsapp: #0b7a3e;   /* con texto blanco: 5,4:1 */
+  --verde-whatsapp: #25d366;   /* verde WhatsApp original: el blanco va con contorno (ver "Realce") */
+  /* Realce del blanco sobre color: contorno delgado oscuro de la misma familia del fondo.
+     Un contorno angosto cuenta como borde de la letra (WCAG, Understanding 1.4.3), así que el
+     contraste se mide contorno contra fondo: */
+  --halo-turquesa: #003a36;    /* sobre turquesa #00b0a3: 4,7:1 */
+  --halo-whatsapp: #0a4a28;    /* sobre verde #25d366: 5,2:1 · sobre blanco: 10,4:1 */
   --error: #b3261e;
   --exito: #0b6b3a;
   --foco: var(--tinta);
@@ -91,6 +96,7 @@ address { font-style: normal; }
 fieldset { border: 0; margin: 0; padding: 0; min-width: 0; }
 legend { padding: 0; }
 [hidden] { display: none !important; }
+main { position: relative; }
 main:focus { outline: none; }
 
 /* Foco siempre visible (teclado) */
@@ -135,8 +141,14 @@ main:focus { outline: none; }
 .boton--secundario:hover { background: var(--turquesa-texto); color: var(--blanco); }
 .boton--claro { background: var(--blanco); color: var(--magenta-oscuro); }
 .boton--claro:hover { background: var(--amarillo); color: var(--tinta); }
-.boton--whatsapp { background: var(--verde-whatsapp); color: var(--blanco); }
-.boton--whatsapp:hover { background: #075e2f; color: var(--blanco); }
+.boton--whatsapp {
+  --halo: var(--halo-whatsapp);
+  background: var(--verde-whatsapp); color: var(--blanco); border-color: var(--halo-whatsapp);
+  box-shadow: 0 2px 6px rgba(10, 74, 40, .25);
+}
+.boton--whatsapp:hover { background: #1fbf5b; color: var(--blanco); }
+.boton--whatsapp { text-shadow: var(--contorno-texto); }
+.boton--whatsapp .icono { filter: var(--contorno-icono); }
 .boton--ancho { width: 100%; }
 .boton[aria-disabled="true"] { background: #e3ebea; color: #4a5b59; border-color: #8a9e9b; cursor: not-allowed; }
 .boton[aria-disabled="true"]:active { transform: none; }
@@ -158,6 +170,16 @@ main:focus { outline: none; }
 .antetitulo {
   font-family: var(--fuente-titulos); font-weight: 600; font-size: .875rem; letter-spacing: .12em;
   text-transform: uppercase; color: var(--magenta-oscuro); margin-bottom: .5rem;
+}
+/* Realce: contorno delgado (4 direcciones + diagonales) y sombra suave, del color --halo.
+   Se declara en cada elemento que define su --halo (así var(--halo) toma el de ese elemento). */
+.cabecera, .boton--whatsapp, .whatsapp-flotante {
+  --contorno-texto:
+    -.8px -.8px 0 var(--halo), .8px -.8px 0 var(--halo), -.8px .8px 0 var(--halo), .8px .8px 0 var(--halo),
+    0 -1px 0 var(--halo), 0 1px 0 var(--halo), -1px 0 0 var(--halo), 1px 0 0 var(--halo),
+    0 2px 5px color-mix(in srgb, var(--halo) 45%, transparent);
+  --contorno-icono:
+    drop-shadow(0 0 .6px var(--halo)) drop-shadow(0 0 .6px var(--halo)) drop-shadow(0 1px 2px color-mix(in srgb, var(--halo) 50%, transparent));
 }
 .antetitulo--claro { color: var(--blanco); }
 .nota { font-size: .9375rem; color: var(--gris); }
@@ -209,7 +231,7 @@ main:focus { outline: none; }
    ============================================================ */
 .cabecera {
   position: sticky; top: 0; z-index: 900;
-  background: var(--turquesa); color: var(--tinta);
+  background: var(--turquesa); color: var(--blanco); --halo: var(--halo-turquesa);
   box-shadow: 0 8px 18px -12px rgba(0, 0, 0, .35);
 }
 .cabecera__fila {
@@ -222,12 +244,12 @@ main:focus { outline: none; }
 .cabecera__whatsapp { display: none; min-height: 44px; padding: 8px 18px; font-size: .9375rem; }
 .cabecera__carrito, .cabecera__menu {
   position: relative; display: inline-flex; align-items: center; justify-content: center;
-  width: 48px; height: 48px; border: 0; border-radius: 50%; background: transparent; color: var(--tinta);
+  width: 48px; height: 48px; border: 0; border-radius: 50%; background: transparent; color: var(--blanco);
   transition: background-color var(--transicion);
 }
-.cabecera__carrito:hover, .cabecera__menu:hover { background: rgba(255, 255, 255, .35); }
-.cabecera__carrito .icono, .cabecera__menu .icono { width: 26px; height: 26px; }
-.cabecera__carrito .contador { position: absolute; top: 2px; right: 0; border: 2px solid var(--turquesa); }
+.cabecera__carrito:hover, .cabecera__menu:hover { background: rgba(0, 58, 54, .22); }
+.cabecera__carrito .icono, .cabecera__menu .icono { width: 26px; height: 26px; filter: var(--contorno-icono); }
+.cabecera__carrito .contador { position: absolute; top: 2px; right: 0; border: 2px solid var(--halo-turquesa); }
 .cabecera__carrito.rebote .icono { animation: rebote .5s ease; }
 @keyframes rebote { 30% { transform: scale(1.25) rotate(-8deg); } 60% { transform: scale(.95); } }
 
@@ -276,10 +298,10 @@ main:focus { outline: none; }
   .cabecera__menu { display: none; }
   .menu { display: block; background: transparent; border-top: 1px solid rgba(255, 255, 255, .35); max-height: none; overflow: visible; }
   .menu__lista { display: flex; justify-content: space-between; align-items: center; padding-inline: var(--margen); }
-  .menu__lista a { min-height: 44px; padding: 8px 6px; border: 0; font-size: .9375rem; }
-  .menu__lista a:hover { background: transparent; color: var(--tinta); text-decoration: underline; text-decoration-thickness: 2px; }
-  .menu__lista a[aria-current="page"] { box-shadow: inset 0 -3px 0 var(--tinta); color: var(--tinta); }
-  .menu__destacado a { background: var(--blanco); color: var(--magenta-oscuro); border-radius: 999px; padding-inline: 16px; }
+  .menu__lista a { min-height: 44px; padding: 8px 6px; border: 0; font-size: .9375rem; color: var(--blanco); text-shadow: var(--contorno-texto); }
+  .menu__lista a:hover { background: transparent; color: var(--blanco); text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 4px; }
+  .menu__lista a[aria-current="page"] { box-shadow: inset 0 -3px 0 var(--blanco), 0 1px 0 var(--halo-turquesa); color: var(--blanco); }
+  .menu__destacado a { background: var(--blanco); color: var(--magenta-oscuro); border-radius: 999px; padding-inline: 16px; text-shadow: none; }
   .menu__destacado a:hover { background: var(--amarillo); text-decoration: none; }
 }
 
@@ -543,7 +565,7 @@ main:focus { outline: none; }
    PORTADA (hero)
    ============================================================ */
 .hero { position: relative; background: var(--magenta); color: var(--blanco); overflow: hidden; --foco: var(--blanco); }
-.hero__contenido { position: relative; z-index: 1; max-width: var(--ancho); margin-inline: auto; padding: 28px var(--margen) 20px; }
+.hero__contenido { position: relative; z-index: 1; max-width: var(--ancho); margin-inline: auto; padding: 36px var(--margen) 20px; }
 .hero__marca {
   font-family: var(--fuente-titulos); font-size: .9375rem; font-weight: 600; letter-spacing: .14em; text-transform: uppercase;
   color: var(--blanco); margin: 0 0 12px;
@@ -688,7 +710,7 @@ main:focus { outline: none; }
 /* ============================================================
    CATÁLOGO
    ============================================================ */
-.encabezado-pagina { background: var(--magenta); color: var(--blanco); padding: 28px 0 24px; --foco: var(--blanco); }
+.encabezado-pagina { background: var(--magenta); color: var(--blanco); padding: 36px 0 24px; --foco: var(--blanco); }
 .encabezado-pagina h1 { color: var(--blanco); margin-bottom: 6px; }
 .encabezado-pagina h1:focus { outline: none; }
 .encabezado-pagina__bajada { max-width: 60ch; margin-bottom: 16px; }
@@ -771,7 +793,7 @@ main:focus { outline: none; }
 /* ============================================================
    FICHA DE PRODUCTO
    ============================================================ */
-.pagina-producto { padding-block: 16px 72px; }
+.pagina-producto { padding-block: 36px 72px; }
 .migas ol { display: flex; flex-wrap: wrap; gap: 4px; font-size: .9375rem; margin-bottom: 20px; }
 .migas li { display: flex; align-items: center; gap: 4px; color: var(--gris); }
 .migas li + li::before { content: '/'; color: var(--gris); margin-right: 2px; }
@@ -797,7 +819,7 @@ main:focus { outline: none; }
 /* ============================================================
    PÁGINAS SIMPLES (contacto, políticas, accesibilidad, 404)
    ============================================================ */
-.pagina-simple { padding-block: 16px 72px; }
+.pagina-simple { padding-block: 36px 72px; }
 .actualizado { color: var(--gris); font-size: .9375rem; margin-bottom: 24px; }
 .texto-legal h2 { font-size: 1.35rem; margin: 32px 0 10px; }
 .texto-legal ul, .texto-legal ol { padding-left: 22px; }
@@ -816,7 +838,7 @@ main:focus { outline: none; }
    PIE DE PÁGINA
    ============================================================ */
 .pie { --foco: var(--blanco); }
-.pie__arriba { background: var(--magenta); color: var(--blanco); padding: 48px 0 32px; }
+.pie__arriba { position: relative; background: var(--magenta); color: var(--blanco); padding: 48px 0 32px; }
 .pie__columnas { max-width: var(--ancho); margin-inline: auto; padding-inline: var(--margen); display: grid; gap: 28px; }
 .pie a { color: var(--blanco); }
 .pie a:hover { color: var(--amarillo); }
@@ -840,10 +862,11 @@ main:focus { outline: none; }
 .whatsapp-flotante {
   position: fixed; right: 16px; bottom: 16px; z-index: 800; width: 56px; height: 56px; border-radius: 50%;
   display: flex; align-items: center; justify-content: center; background: var(--verde-whatsapp); color: var(--blanco);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, .25); transition: transform var(--transicion);
+  --halo: var(--halo-whatsapp); border: 2px solid var(--halo-whatsapp);
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, .9), 0 6px 20px rgba(10, 74, 40, .35); transition: transform var(--transicion);
 }
 .whatsapp-flotante:hover { transform: scale(1.06); color: var(--blanco); }
-.whatsapp-flotante .icono { width: 28px; height: 28px; }
+.whatsapp-flotante .icono { width: 28px; height: 28px; filter: var(--contorno-icono); }
 
 /* Aviso "Agregado" */
 .toast {
@@ -855,6 +878,31 @@ main:focus { outline: none; }
 }
 .toast.visible { opacity: 1; transform: translate(-50%, 0); }
 .toast .icono { color: var(--turquesa); }
+
+/* ============================================================
+   TEMAS DE TEMPORADA (js/temas.mjs + js/temas-config.mjs)
+   Solo decoración: no cambia colores de la marca, no recibe clics y no tapa contenido.
+   ============================================================ */
+.tema-guirnalda {
+  position: absolute; z-index: 5; top: 0; left: 0; right: 0; height: 24px; pointer-events: none;
+  background-repeat: repeat-x; background-size: auto 100%; background-position: top center;
+  transform-origin: top center; animation: mecer 6s ease-in-out infinite alternate;
+}
+@keyframes mecer { from { transform: translateY(-1px) rotate(-.25deg); } to { transform: translateY(1px) rotate(.25deg); } }
+.tema-adorno {
+  position: absolute; z-index: 0; pointer-events: none; height: auto;
+  animation: flotar 5s ease-in-out infinite alternate;
+}
+.tema-adorno--principal { width: 96px; top: 30px; right: 10px; }
+.tema-adorno--secundario { width: 76px; right: 6px; bottom: 96px; animation-delay: -2.5s; }
+@keyframes flotar { from { transform: translateY(0); } to { transform: translateY(-5px); } }
+.tema-adorno-pie { position: absolute; z-index: 1; width: 96px; height: auto; right: 16px; top: -58px; pointer-events: none; }
+@media (min-width: 860px) {
+  .tema-guirnalda { height: 32px; }
+  .tema-adorno--principal { width: 170px; top: 40px; right: auto; left: 45%; }
+  .tema-adorno--secundario { width: 120px; bottom: auto; right: auto; top: 230px; left: 50%; }
+  .tema-adorno-pie { width: 120px; top: -70px; right: 40px; }
+}
 
 /* ============================================================
    MOVIMIENTO REDUCIDO
