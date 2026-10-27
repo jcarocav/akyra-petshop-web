@@ -44,7 +44,7 @@ Publicado en GitHub Pages: https://jcarocav.github.io/akyra-petshop-web/ (repo p
   SKU nuevo (`CATEGORIA-MARCA-NNN`, guardado en `tools/catalogo/skus-generados.json` para que no cambie).
 - Visibilidad: stock > 0 → visible (tope del "+" = stock); stock 0 → oculto en catálogo, buscador, destacados y
   sitemap (su ficha dice "Agotado por ahora" con `noindex`); sin dato (cantidad vacía en las 5 hojas de conteo)
-  → visible como "Consultar disponibilidad", sin tope. Granel: en kilos, pasos de 0,5 kg; bajo 0,5 kg = agotado.
+  → visible como "Consultar disponibilidad", sin tope. Granel: en kilos con hasta 3 decimales (se escribe a mano, coma o punto; − y + de a 0,1 kg); bajo 0,1 kg = agotado.
 - Tallas: variantes que solo difieren en la talla son una card con selector; cada talla tiene su SKU, precio y stock.
 - Precio 1 o vacío = sin precio → "Consultar precio" + botón de WhatsApp.
 - Partes comunes de las páginas en `tools/parciales/` (se copian con `npm run paginas`). JS en `js/*.mjs` (módulos).

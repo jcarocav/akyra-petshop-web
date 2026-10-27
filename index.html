@@ -4,9 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- parcial:seguridad -->
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; frame-src https://www.google.com; form-action 'self'; base-uri 'self'; object-src 'none'; manifest-src 'self'">
-<meta name="referrer" content="strict-origin-when-cross-origin">
-<meta name="format-detection" content="telephone=no">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://elfsightcdn.com https://universe-static.elfsightcdn.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://*.cdninstagram.com https://*.fbcdn.net https://*.elfsightcdn.com; font-src 'self' data:; media-src 'self' https://phosphor.utils.elfsightcdn.com https://*.cdninstagram.com https://*.fbcdn.net; connect-src 'self' https://core.service.elfsight.com https://universe-static.elfsightcdn.com https://static.elfsight.com https://widget-data.service.elfsight.com; frame-src https://www.google.com; form-action 'self'; base-uri 'self'; object-src 'none'; manifest-src 'self'">
 <!-- /parcial:seguridad -->
 <title>Maskotería Akyra — Tienda de mascotas y alimento a granel en Punta Arenas</title>
 <meta name="description" content="Alimento para perros y gatos, alimento a granel por kilo, arena, accesorios, ropa y salud para tu mascota en Punta Arenas. 3 sucursales, retiro gratis o despacho a domicilio. Pide por WhatsApp.">
@@ -88,7 +86,7 @@
   <div id="aviso-privacidad-fondo" class="fondo fondo--oscuro" hidden></div>
   <div id="aviso-privacidad" class="aviso" role="dialog" aria-modal="true" aria-labelledby="aviso-privacidad-titulo" aria-describedby="aviso-privacidad-texto" hidden>
     <h2 id="aviso-privacidad-titulo">Antes de seguir…</h2>
-    <p id="aviso-privacidad-texto">En Maskotería Akyra respetamos tu privacidad, conforme a la Ley N.° 19.628 sobre Protección de la Vida Privada. Los datos que nos compartes (nombre, teléfono, dirección) los usamos únicamente para coordinar tu compra, despacho o consulta por WhatsApp: no los usamos para otros fines, no los compartimos con terceros ni los guardamos más allá de lo necesario para atenderte.</p>
+    <p id="aviso-privacidad-texto">En Maskotería Akyra respetamos tu privacidad, conforme a la Ley N.° 19.628 sobre Protección de la Vida Privada. Los datos que nos compartes (nombre, teléfono, dirección) los usamos únicamente para coordinar tu compra, despacho o consulta por WhatsApp: no los usamos para otros fines, no los compartimos con terceros ni los guardamos más allá de lo necesario para atenderte. Los mapas son de Google y las publicaciones de Instagram se muestran con Elfsight: esos servicios pueden recibir tu dirección IP y usar cookies al cargarse.</p>
     <p><a href="politica-privacidad.html">Leer la política de privacidad</a></p>
     <button type="button" class="boton boton--primario boton--ancho" id="aviso-privacidad-aceptar">Aceptar</button>
   </div>
@@ -284,7 +282,7 @@
         <div class="hero__diapositiva" role="group" aria-label="Alimento a granel" hidden>
           <div class="hero__texto">
             <p class="hero__titulo">¡La primera petshop online donde compras a <span class="hero__resalte">granel!</span></p>
-            <p class="hero__bajada">Elige los kilos que necesitas, desde medio kilo, y retíralo en tienda o recíbelo en tu casa.</p>
+            <p class="hero__bajada">Elige los kilos que necesitas, desde 100 gramos, y retíralo en tienda o recíbelo en tu casa.</p>
             <a class="boton boton--claro" href="catalogo.html?categoria=granel">Ver alimento a granel</a>
           </div>
           <img class="hero__imagen hero__imagen--ancha" src="assets/hero/portada-granel-640.webp" srcset="assets/hero/portada-granel-640.webp 640w, assets/hero/portada-granel-1100.webp 1100w" sizes="(max-width: 720px) 92vw, 640px" width="1100" height="461" alt="Un perro y un gato manejando una van turquesa" loading="lazy">
@@ -325,7 +323,7 @@
         <li><a class="categoria categoria--turquesa" href="catalogo.html?categoria=perros"><span class="categoria__icono"><svg class="icono" aria-hidden="true" focusable="false"><use href="assets/iconos.svg#dog"></use></svg></span><span class="categoria__nombre">Perros</span><span class="categoria__detalle">Alimento seco, húmedo y snacks</span><span class="categoria__conteo" data-conteo-categoria="perros"></span></a></li>
         <li><a class="categoria categoria--magenta" href="catalogo.html?categoria=gatos"><span class="categoria__icono"><svg class="icono" aria-hidden="true" focusable="false"><use href="assets/iconos.svg#cat"></use></svg></span><span class="categoria__nombre">Gatos</span><span class="categoria__detalle">Alimento seco, húmedo y snacks</span><span class="categoria__conteo" data-conteo-categoria="gatos"></span></a></li>
         <li><a class="categoria categoria--amarillo" href="catalogo.html?categoria=otras-mascotas"><span class="categoria__icono"><svg class="icono" aria-hidden="true" focusable="false"><use href="assets/iconos.svg#rabbit"></use></svg></span><span class="categoria__nombre">Otras mascotas</span><span class="categoria__detalle">Roedores, conejos y más</span><span class="categoria__conteo" data-conteo-categoria="otras-mascotas"></span></a></li>
-        <li><a class="categoria categoria--turquesa" href="catalogo.html?categoria=granel"><span class="categoria__icono"><svg class="icono" aria-hidden="true" focusable="false"><use href="assets/iconos.svg#scale"></use></svg></span><span class="categoria__nombre">Granel</span><span class="categoria__detalle">Alimento por kilo, desde 0,5 kg</span><span class="categoria__conteo" data-conteo-categoria="granel"></span></a></li>
+        <li><a class="categoria categoria--turquesa" href="catalogo.html?categoria=granel"><span class="categoria__icono"><svg class="icono" aria-hidden="true" focusable="false"><use href="assets/iconos.svg#scale"></use></svg></span><span class="categoria__nombre">Granel</span><span class="categoria__detalle">Alimento por kilo, desde 0,1 kg</span><span class="categoria__conteo" data-conteo-categoria="granel"></span></a></li>
         <li><a class="categoria categoria--magenta" href="catalogo.html?categoria=accesorios"><span class="categoria__icono"><svg class="icono" aria-hidden="true" focusable="false"><use href="assets/iconos.svg#bone"></use></svg></span><span class="categoria__nombre">Accesorios</span><span class="categoria__detalle">Juguetes, collares, platos, camas</span><span class="categoria__conteo" data-conteo-categoria="accesorios"></span></a></li>
         <li><a class="categoria categoria--amarillo" href="catalogo.html?categoria=arena"><span class="categoria__icono"><svg class="icono" aria-hidden="true" focusable="false"><use href="assets/iconos.svg#box"></use></svg></span><span class="categoria__nombre">Arena</span><span class="categoria__detalle">Aglutinante, sílica y ecológica</span><span class="categoria__conteo" data-conteo-categoria="arena"></span></a></li>
         <li><a class="categoria categoria--turquesa" href="catalogo.html?categoria=ropa"><span class="categoria__icono"><svg class="icono" aria-hidden="true" focusable="false"><use href="assets/iconos.svg#shirt"></use></svg></span><span class="categoria__nombre">Ropa</span><span class="categoria__detalle">Parkas, chalecos y bandanas</span><span class="categoria__conteo" data-conteo-categoria="ropa"></span></a></li>
@@ -361,15 +359,31 @@
     <div class="contenedor granel__contenido">
       <p class="antetitulo">Alimento a granel</p>
       <h2 id="granel-titulo" class="seccion__titulo">Compra solo lo que necesitas</h2>
-      <p class="seccion__bajada">Elige los kilos exactos para tu mascota, desde medio kilo: ideal para probar un alimento nuevo o ajustarte a tu presupuesto, sin pagar de más por sacos grandes.</p>
+      <p class="seccion__bajada">Elige los kilos exactos para tu mascota, desde 100 gramos: ideal para probar un alimento nuevo o ajustarte a tu presupuesto, sin pagar de más por sacos grandes.</p>
       <div class="granel__tarjeta">
         <h3><span class="granel__icono"><svg class="icono" aria-hidden="true" focusable="false"><use href="assets/iconos.svg#scale"></use></svg></span>Así funciona</h3>
         <ul class="lista-puntos">
-          <li>Elige el alimento y cuántos kilos quieres (de medio en medio kilo).</li>
+          <li>Elige el alimento y cuántos kilos quieres: escribe la cantidad (por ejemplo 1,3) o usa − y + de a 100 gramos.</li>
           <li>Ves el precio por kilo y el subtotal al instante.</li>
           <li>Lo pesamos justo al preparar tu pedido.</li>
         </ul>
         <a href="catalogo.html?categoria=granel" class="boton boton--primario">Ver alimento a granel</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= INSTAGRAM ================= -->
+  <section class="seccion instagram" id="instagram" aria-labelledby="instagram-titulo" data-instagram>
+    <div class="contenedor">
+      <p class="antetitulo">Instagram</p>
+      <h2 id="instagram-titulo" class="seccion__titulo">Síguenos en Instagram</h2>
+      <p class="seccion__bajada">Productos nuevos, ofertas de la semana y los regalones que nos visitan.</p>
+      <div class="instagram__marco">
+        <!-- Elfsight Instagram Feed | Untitled Instagram Feed -->
+        <div class="elfsight-app-4cc8cd0a-2a8e-4e1f-bd6b-9534e0990920" data-elfsight-app-lazy></div>
+        <div class="instagram__respaldo">
+          <a class="boton boton--primario" href="https://www.instagram.com/maskoteria_akyra/" target="_blank" rel="noopener"><svg class="icono" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>Síguenos en Instagram @maskoteria_akyra<span class="visualmente-oculto"> (se abre en una pestaña nueva)</span></a>
+        </div>
       </div>
     </div>
   </section>
@@ -407,10 +421,8 @@
         <h2 id="nosotros-titulo" class="seccion__titulo">Un almacén pensado para tu mascota</h2>
         <p>Somos una tienda de barrio en Punta Arenas, especializada en productos para perros y gatos: alimento, ropa, juguetes y accesorios, elegidos pensando en la calidad y el bienestar de tu compañero.</p>
         <p>Nos gusta la atención cercana: si tienes dudas sobre qué producto le conviene a tu mascota, escríbenos y te ayudamos a elegir.</p>
-        <p class="nosotros__instagram">En Instagram publicamos productos nuevos, ofertas de la semana y a los regalones que nos visitan.</p>
         <div class="nosotros__acciones">
           <a data-whatsapp href="https://wa.me/56986969111" class="boton boton--primario" target="_blank" rel="noopener">Escríbenos por WhatsApp<span class="visualmente-oculto"> (se abre en una pestaña nueva)</span></a>
-          <a class="boton boton--secundario" href="https://www.instagram.com/maskoteria_akyra/" target="_blank" rel="noopener"><svg class="icono" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>Ver @maskoteria_akyra<span class="visualmente-oculto"> en Instagram (se abre en una pestaña nueva)</span></a>
         </div>
       </div>
       <img class="nosotros__foto" src="assets/img/lugares/hornillas-640.webp" width="640" height="604" alt="Fachada de la sucursal Hornillas de Maskotería Akyra, con su letrero" loading="lazy" decoding="async">
@@ -418,28 +430,41 @@
   </section>
 
   <!-- ================= SUCURSALES ================= -->
-  <section class="sucursales" id="sucursales" aria-labelledby="sucursales-titulo">
-    <div class="contenedor">
-      <p class="antetitulo antetitulo--claro">Ubicaciones</p>
-      <h2 id="sucursales-titulo" class="seccion__titulo seccion__titulo--claro">Encuéntranos aquí</h2>
+  <section class="sucursales" id="sucursales" aria-labelledby="sucursales-titulo" data-fachadas>
+    <div class="sucursales__fondo">
+      <img class="fachada" data-sucursal="casa-matriz" src="assets/img/lugares/casa-matriz.svg" width="640" height="604" alt="Imagen de la sucursal Casa Matriz (la foto de la fachada se agregará pronto)" loading="lazy" decoding="async">
+      <img class="fachada" data-sucursal="hornillas" src="assets/img/lugares/hornillas-640.webp" width="640" height="604" alt="Fachada de la sucursal Hornillas de Maskotería Akyra, con su letrero" loading="lazy" decoding="async">
+      <img class="fachada" data-sucursal="las-lengas" src="assets/img/lugares/las-lengas.svg" width="640" height="604" alt="Imagen de la sucursal Las Lengas (la foto de la fachada se agregará pronto)" loading="lazy" decoding="async">
+    </div>
+    <div class="contenedor sucursales__contenido">
+      <div class="sucursales__encabezado">
+        <div>
+          <p class="antetitulo antetitulo--claro">Ubicaciones</p>
+          <h2 id="sucursales-titulo" class="seccion__titulo seccion__titulo--claro">Encuéntranos aquí</h2>
+        </div>
+        <button type="button" class="boton-icono boton-icono--claro fachadas__pausa" aria-pressed="false" aria-label="Pausar el cambio de fotos de fondo" hidden><svg class="icono" aria-hidden="true" focusable="false"><use href="assets/iconos.svg#pause"></use></svg></button>
+      </div>
       <ul class="sucursales__lista">
-        <li class="sucursal">
+        <li class="sucursal" data-sucursal="casa-matriz">
           <h3>Casa Matriz</h3>
           <address>Av. José Martínez de Aldunate 1431, Punta Arenas</address>
           <p class="sucursal__horario"><svg class="icono" aria-hidden="true" focusable="false"><use href="assets/iconos.svg#clock"></use></svg> Lunes a sábado: 10:00 a 13:00 y 15:00 a 20:00</p>
-          <div class="sucursal__acciones"><a class="boton boton--secundario boton--chico" href="https://www.google.com/maps/search/?api=1&amp;query=Av.+Jos%C3%A9+Mart%C3%ADnez+de+Aldunate+1431+Punta+Arenas" target="_blank" rel="noopener"><svg class="icono" aria-hidden="true" focusable="false"><use href="assets/iconos.svg#map"></use></svg>Cómo llegar<span class="visualmente-oculto"> a Casa Matriz (Google Maps, pestaña nueva)</span></a><div class="mapa"><button type="button" class="mapa__boton" data-mapa="https://www.google.com/maps?q=Av.+Jos%C3%A9+Mart%C3%ADnez+de+Aldunate+1431,+Punta+Arenas,+Chile&amp;output=embed" data-titulo="Mapa de la sucursal Casa Matriz, Av. José Martínez de Aldunate 1431"><svg class="icono" aria-hidden="true" focusable="false"><use href="assets/iconos.svg#map-pin"></use></svg>Ver mapa<span class="visualmente-oculto"> de Casa Matriz</span></button></div></div>
+          <div class="mapa" data-mapa="https://www.google.com/maps?q=Av.+Jos%C3%A9+Mart%C3%ADnez+de+Aldunate+1431,+Punta+Arenas,+Chile&amp;output=embed" data-titulo="Mapa de la sucursal Casa Matriz, Av. José Martínez de Aldunate 1431"></div>
+          <div class="sucursal__acciones"><a class="boton boton--secundario boton--chico" href="https://www.google.com/maps/search/?api=1&amp;query=Av.+Jos%C3%A9+Mart%C3%ADnez+de+Aldunate+1431+Punta+Arenas" target="_blank" rel="noopener"><svg class="icono" aria-hidden="true" focusable="false"><use href="assets/iconos.svg#map"></use></svg>Cómo llegar<span class="visualmente-oculto"> a Casa Matriz (Google Maps, pestaña nueva)</span></a></div>
         </li>
-        <li class="sucursal">
+        <li class="sucursal" data-sucursal="hornillas">
           <h3>Hornillas</h3>
           <address>Hornillas 080, Punta Arenas</address>
           <p class="sucursal__horario"><svg class="icono" aria-hidden="true" focusable="false"><use href="assets/iconos.svg#clock"></use></svg> Lunes a sábado: 10:10 a 13:00 y 15:00 a 19:30. Domingos y feriados: cerrado</p>
-          <div class="sucursal__acciones"><a class="boton boton--secundario boton--chico" href="https://www.google.com/maps/search/?api=1&amp;query=Hornillas+080+Punta+Arenas" target="_blank" rel="noopener"><svg class="icono" aria-hidden="true" focusable="false"><use href="assets/iconos.svg#map"></use></svg>Cómo llegar<span class="visualmente-oculto"> a Hornillas (Google Maps, pestaña nueva)</span></a><div class="mapa"><button type="button" class="mapa__boton" data-mapa="https://www.google.com/maps?q=Hornillas+080,+Punta+Arenas,+Chile&amp;output=embed" data-titulo="Mapa de la sucursal Hornillas 080"><svg class="icono" aria-hidden="true" focusable="false"><use href="assets/iconos.svg#map-pin"></use></svg>Ver mapa<span class="visualmente-oculto"> de Hornillas</span></button></div></div>
+          <div class="mapa" data-mapa="https://www.google.com/maps?q=Hornillas+080,+Punta+Arenas,+Chile&amp;output=embed" data-titulo="Mapa de la sucursal Hornillas, Hornillas 080"></div>
+          <div class="sucursal__acciones"><a class="boton boton--secundario boton--chico" href="https://www.google.com/maps/search/?api=1&amp;query=Hornillas+080+Punta+Arenas" target="_blank" rel="noopener"><svg class="icono" aria-hidden="true" focusable="false"><use href="assets/iconos.svg#map"></use></svg>Cómo llegar<span class="visualmente-oculto"> a Hornillas (Google Maps, pestaña nueva)</span></a></div>
         </li>
-        <li class="sucursal">
+        <li class="sucursal" data-sucursal="las-lengas">
           <h3>Las Lengas</h3>
           <address>Av. Circunvalación Ramón Cañas 340, Punta Arenas</address>
           <p class="sucursal__horario"><svg class="icono" aria-hidden="true" focusable="false"><use href="assets/iconos.svg#clock"></use></svg> Lunes a sábado: 10:30 a 13:00 y 15:10 a 20:00. Domingo: cerrado</p>
-          <div class="sucursal__acciones"><a class="boton boton--secundario boton--chico" href="https://www.google.com/maps/search/?api=1&amp;query=Av.+Circunvalaci%C3%B3n+Ram%C3%B3n+Ca%C3%B1as+340+Punta+Arenas" target="_blank" rel="noopener"><svg class="icono" aria-hidden="true" focusable="false"><use href="assets/iconos.svg#map"></use></svg>Cómo llegar<span class="visualmente-oculto"> a Las Lengas (Google Maps, pestaña nueva)</span></a><div class="mapa"><button type="button" class="mapa__boton" data-mapa="https://www.google.com/maps?q=Av.+Circunvalaci%C3%B3n+Ram%C3%B3n+Ca%C3%B1as+340,+Punta+Arenas,+Chile&amp;output=embed" data-titulo="Mapa de la sucursal Las Lengas, Av. Circunvalación Ramón Cañas 340"><svg class="icono" aria-hidden="true" focusable="false"><use href="assets/iconos.svg#map-pin"></use></svg>Ver mapa<span class="visualmente-oculto"> de Las Lengas</span></button></div></div>
+          <div class="mapa" data-mapa="https://www.google.com/maps?q=Av.+Circunvalaci%C3%B3n+Ram%C3%B3n+Ca%C3%B1as+340,+Punta+Arenas,+Chile&amp;output=embed" data-titulo="Mapa de la sucursal Las Lengas, Av. Circunvalación Ramón Cañas 340"></div>
+          <div class="sucursal__acciones"><a class="boton boton--secundario boton--chico" href="https://www.google.com/maps/search/?api=1&amp;query=Av.+Circunvalaci%C3%B3n+Ram%C3%B3n+Ca%C3%B1as+340+Punta+Arenas" target="_blank" rel="noopener"><svg class="icono" aria-hidden="true" focusable="false"><use href="assets/iconos.svg#map"></use></svg>Cómo llegar<span class="visualmente-oculto"> a Las Lengas (Google Maps, pestaña nueva)</span></a></div>
         </li>
       </ul>
     </div>
@@ -464,7 +489,7 @@
       <button type="button" class="boton-icono cinta__pausa" data-nombre="las marcas en movimiento" aria-pressed="false" aria-label="Pausar las marcas en movimiento"><svg class="icono" aria-hidden="true" focusable="false"><use href="assets/iconos.svg#pause"></use></svg></button>
       <div class="cinta__ventana">
         <ul class="cinta__pista">
-          <li class="marca">Royal Canin</li><li class="marca">Pro Plan</li><li class="marca">Bravery</li><li class="marca">Fit Formula</li><li class="marca">Master Dog</li><li class="marca">Master Cat</li><li class="marca">Whiskas</li><li class="marca">Pedigree</li><li class="marca">Champion</li><li class="marca">Felix</li><li class="marca">Cat Chow</li><li class="marca">Nomade</li><li class="marca">Churu</li><li class="marca">Leonardo</li><li class="marca">Biofresh</li><li class="marca">Amity</li><li class="marca">Vet Life</li><li class="marca">N&amp;D</li><li class="marca">Dragpharma</li><li class="marca">Top K9</li>
+          <li class="marca"><a class="marca__enlace" href="catalogo.html?marca=Royal%20Canin"><img src="assets/marcas/royal-canin.svg" alt="Royal Canin" width="275" height="96" loading="lazy" decoding="async"></a></li><li class="marca"><a class="marca__enlace" href="catalogo.html?marca=Fit%20Formula"><img src="assets/marcas/fit-formula.webp" alt="Fit Formula" width="157" height="96" loading="lazy" decoding="async"></a></li><li class="marca"><a class="marca__enlace" href="catalogo.html?marca=Marben%20Pets"><img src="assets/marcas/marben-pets.webp" alt="Marben Pets" width="269" height="96" loading="lazy" decoding="async"></a></li><li class="marca"><a class="marca__enlace" href="catalogo.html?marca=Wanpy"><img src="assets/marcas/wanpy.svg" alt="Wanpy" width="126" height="96" loading="lazy" decoding="async"></a></li><li class="marca"><a class="marca__enlace" href="catalogo.html?marca=Bravery"><img src="assets/marcas/bravery.webp" alt="Bravery" width="420" height="60" loading="lazy" decoding="async"></a></li><li class="marca"><a class="marca__enlace" href="catalogo.html?marca=Purina%20Fancy%20Feast"><img src="assets/marcas/fancy-feast.webp" alt="Purina Fancy Feast" width="160" height="96" loading="lazy" decoding="async"></a></li><li class="marca"><a class="marca__enlace marca__enlace--oscuro" href="catalogo.html?marca=Champion"><img src="assets/marcas/champion.webp" alt="Champion" width="195" height="96" loading="lazy" decoding="async"></a></li><li class="marca"><a class="marca__enlace" href="catalogo.html?marca=Top%20K9"><img src="assets/marcas/top-k9.webp" alt="Top K9" width="270" height="96" loading="lazy" decoding="async"></a></li><li class="marca"><a class="marca__enlace" href="catalogo.html?marca=Purina%20Cat%20Chow"><img src="assets/marcas/cat-chow.webp" alt="Purina Cat Chow" width="81" height="96" loading="lazy" decoding="async"></a></li><li class="marca"><a class="marca__enlace marca__enlace--oscuro" href="catalogo.html?marca=Bioline"><img src="assets/marcas/bioline.webp" alt="Bioline" width="304" height="96" loading="lazy" decoding="async"></a></li><li class="marca"><a class="marca__enlace" href="catalogo.html?marca=Leonardo"><img src="assets/marcas/leonardo.webp" alt="Leonardo" width="146" height="96" loading="lazy" decoding="async"></a></li><li class="marca"><a class="marca__enlace" href="catalogo.html?marca=Master%20Dog"><img src="assets/marcas/master-dog.webp" alt="Master Dog" width="119" height="96" loading="lazy" decoding="async"></a></li><li class="marca"><a class="marca__enlace" href="catalogo.html?marca=Felix"><img src="assets/marcas/felix.webp" alt="Felix" width="122" height="96" loading="lazy" decoding="async"></a></li><li class="marca"><a class="marca__enlace" href="catalogo.html?marca=Pedigree"><img src="assets/marcas/pedigree.webp" alt="Pedigree" width="94" height="96" loading="lazy" decoding="async"></a></li><li class="marca"><a class="marca__enlace marca__enlace--oscuro" href="catalogo.html?marca=Whiskas"><img src="assets/marcas/whiskas.webp" alt="Whiskas" width="117" height="96" loading="lazy" decoding="async"></a></li><li class="marca"><a class="marca__enlace" href="catalogo.html?marca=Alfa%20Dog"><img src="assets/marcas/alfa-dog.webp" alt="Alfa Dog" width="139" height="96" loading="lazy" decoding="async"></a></li><li class="marca"><a class="marca__enlace" href="catalogo.html?marca=Purina%20Pro%20Plan"><img src="assets/marcas/pro-plan.webp" alt="Purina Pro Plan" width="171" height="96" loading="lazy" decoding="async"></a></li><li class="marca"><a class="marca__enlace" href="catalogo.html?marca=Dog%20Chow"><img src="assets/marcas/dog-chow.webp" alt="Dog Chow" width="136" height="96" loading="lazy" decoding="async"></a></li><li class="marca"><a class="marca__enlace" href="catalogo.html?marca=Mondo%20Mascota">Mondo Mascota</a></li><li class="marca"><a class="marca__enlace" href="catalogo.html?marca=Inaba">Inaba</a></li><li class="marca"><a class="marca__enlace" href="catalogo.html?marca=Leon%20Pet">Leon Pet</a></li><li class="marca"><a class="marca__enlace" href="catalogo.html?marca=Master%20Cat">Master Cat</a></li><li class="marca"><a class="marca__enlace" href="catalogo.html?marca=Nomade">Nomade</a></li><li class="marca"><a class="marca__enlace" href="catalogo.html?marca=N%26D">N&amp;D</a></li><li class="marca"><a class="marca__enlace" href="catalogo.html?marca=Vet%20Life">Vet Life</a></li>
         </ul>
       </div>
     </div>

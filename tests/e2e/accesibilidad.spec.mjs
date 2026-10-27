@@ -6,6 +6,7 @@ async function sinViolaciones(page, nombre) {
   // Se mide con la página quieta: espera que terminen las animaciones finitas (ej. la portada que aparece)
   await page.waitForFunction(() => document.getAnimations().every(a => a.playState !== 'running' || a.effect?.getComputedTiming().iterations === Infinity))
   const r = await new AxeBuilder({ page })
+    .exclude('[class^="elfsight-app-"]') // el contenido del feed de Instagram es de un tercero (Elfsight)
     .withTags(['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa', 'wcag22aa', 'best-practice'])
     .analyze()
   const detalle = r.violations.map(v => `${v.id} (${v.impact}): ${v.help}\n   ${v.nodes.slice(0, 3).map(n => n.target.join(' ')).join('\n   ')}`).join('\n')
@@ -15,6 +16,7 @@ async function sinViolaciones(page, nombre) {
 const PAGINAS = [
   ['inicio', '/index.html?tema=ninguno'],
   ['inicio con tema Halloween', '/index.html?tema=halloween'],
+  ['inicio, sucursales y marcas ya cargadas', '/index.html?tema=ninguno#marcas'],
   ['inicio con tema Fiestas Patrias (portada)', '/index.html?tema=fiestas-patrias'],
   ['inicio con Día del Animal', '/index.html?tema=dia-animal'],
   ['catálogo', '/catalogo.html'],

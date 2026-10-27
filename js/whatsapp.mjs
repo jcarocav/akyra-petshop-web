@@ -68,7 +68,15 @@ export function construirMensaje({ lineas, cliente, tienda = 'Maskotería Akyra'
   lineas.forEach((l, i) => {
     const nombre = limpiarCampo(l.nombre, { max: 140 }) + (l.talla ? ` (talla ${limpiarCampo(l.talla, { max: 12 })})` : '')
     const unitario = l.granel ? `${formatoCLP(l.precio)} por kg` : `${formatoCLP(l.precio)} c/u`
-    if (compacto) {
+    if (l.granel) {
+      // "1,3 kg × $3.400/kg = $4.420"
+      const cuenta = `${describirCantidad(l)} × ${formatoCLP(l.precio)}/kg = ${formatoCLP(subtotalLinea(l))}`
+      if (compacto) partes.push(`${i + 1}. ${nombre} [${l.sku}] ${cuenta}`)
+      else {
+        partes.push(`${i + 1}. ${nombre}`)
+        partes.push(`    SKU ${l.sku} · ${cuenta}`)
+      }
+    } else if (compacto) {
       partes.push(`${i + 1}. ${describirCantidad(l)} × ${nombre} [${l.sku}] ${unitario} = ${formatoCLP(subtotalLinea(l))}`)
     } else {
       partes.push(`${i + 1}. ${describirCantidad(l)} × ${nombre}`)

@@ -22,9 +22,9 @@ test.describe('stock y visibilidad', () => {
     expect(esVisible(s)).toBe(true)
     expect(topePublico(s, false)).toBe(8)
   })
-  test('granel: el tope son kilos en pasos de 0,5', () => {
-    expect(topePublico(resumirStock([2.8, 1.1]), true)).toBe(3.5)
-    expect(topePublico(resumirStock([0.225]), true)).toBe(0)
+  test('granel: el tope son kilos con hasta 3 decimales (gramos)', () => {
+    expect(topePublico(resumirStock([2.8, 1.1]), true)).toBe(3.9)
+    expect(topePublico(resumirStock([0.2254]), true)).toBe(0.225)
   })
 })
 

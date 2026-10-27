@@ -5,8 +5,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- parcial:seguridad -->
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; frame-src https://www.google.com; form-action 'self'; base-uri 'self'; object-src 'none'; manifest-src 'self'">
-<meta name="referrer" content="strict-origin-when-cross-origin">
-<meta name="format-detection" content="telephone=no">
 <!-- /parcial:seguridad -->
 <title>Producto | Maskotería Akyra</title>
 <meta name="description" content="Ficha de producto de Maskotería Akyra, tienda de mascotas en Punta Arenas. Retiro gratis en 3 sucursales o despacho a domicilio.">
@@ -36,7 +34,7 @@
   <div id="aviso-privacidad-fondo" class="fondo fondo--oscuro" hidden></div>
   <div id="aviso-privacidad" class="aviso" role="dialog" aria-modal="true" aria-labelledby="aviso-privacidad-titulo" aria-describedby="aviso-privacidad-texto" hidden>
     <h2 id="aviso-privacidad-titulo">Antes de seguir…</h2>
-    <p id="aviso-privacidad-texto">En Maskotería Akyra respetamos tu privacidad, conforme a la Ley N.° 19.628 sobre Protección de la Vida Privada. Los datos que nos compartes (nombre, teléfono, dirección) los usamos únicamente para coordinar tu compra, despacho o consulta por WhatsApp: no los usamos para otros fines, no los compartimos con terceros ni los guardamos más allá de lo necesario para atenderte.</p>
+    <p id="aviso-privacidad-texto">En Maskotería Akyra respetamos tu privacidad, conforme a la Ley N.° 19.628 sobre Protección de la Vida Privada. Los datos que nos compartes (nombre, teléfono, dirección) los usamos únicamente para coordinar tu compra, despacho o consulta por WhatsApp: no los usamos para otros fines, no los compartimos con terceros ni los guardamos más allá de lo necesario para atenderte. Los mapas son de Google y las publicaciones de Instagram se muestran con Elfsight: esos servicios pueden recibir tu dirección IP y usar cookies al cargarse.</p>
     <p><a href="politica-privacidad.html">Leer la política de privacidad</a></p>
     <button type="button" class="boton boton--primario boton--ancho" id="aviso-privacidad-aceptar">Aceptar</button>
   </div>
@@ -234,7 +232,7 @@
         <p class="ficha__codigos"><span id="ficha-sku"></span> · <span id="ficha-categoria"></span></p>
         <p id="ficha-precio" class="precio precio--grande"></p>
         <p id="ficha-stock" class="estado-stock" data-estado-stock></p>
-        <p id="ficha-granel" class="nota" hidden>Precio por kilo. Elige la cantidad en kilos (de medio en medio kilo, desde 0,5 kg).</p>
+        <p id="ficha-granel" class="nota" hidden>Precio por kilo. Elige la cantidad en kilos: escríbela (por ejemplo 1,3) o usa − y + de a 0,1 kg, desde 0,1 kg.</p>
         <p id="ficha-consultar" class="nota" hidden>Este producto todavía no tiene precio publicado. Escríbenos por WhatsApp y te lo confirmamos al tiro.</p>
         <div id="ficha-compra" class="ficha__compra"></div>
         <div id="ficha-agotado" class="aviso-agotado" hidden>

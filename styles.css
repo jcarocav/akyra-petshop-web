@@ -63,7 +63,7 @@
   --transicion: 180ms cubic-bezier(.2, .8, .2, 1);
 }
 @media (min-width: 720px) { :root { --margen: 24px; } }
-@media (min-width: 1100px) { :root { --alto-cabecera: 132px; } }
+@media (min-width: 1100px) { :root { --alto-cabecera: 145px; } }
 
 /* ---------- Base ---------- */
 *, *::before, *::after { box-sizing: border-box; }
@@ -300,12 +300,27 @@ main:focus { outline: none; }
   .buscador { order: 0; flex: 1; max-width: 520px; margin: 0 auto; }
   .cabecera__menu { display: none; }
   .menu { display: block; background: transparent; border-top: 1px solid rgba(255, 255, 255, .35); max-height: none; overflow: visible; }
-  .menu__lista { display: flex; justify-content: space-between; align-items: center; padding-inline: var(--margen); }
-  .menu__lista a { min-height: 44px; padding: 8px 6px; border: 0; font-size: .9375rem; color: var(--blanco); text-shadow: var(--contorno-texto); }
-  .menu__lista a:hover { background: transparent; color: var(--blanco); text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 4px; }
-  .menu__lista a[aria-current="page"] { box-shadow: inset 0 -3px 0 var(--blanco), 0 1px 0 var(--halo-turquesa); color: var(--blanco); }
-  .menu__destacado a { background: var(--blanco); color: var(--magenta-oscuro); border-radius: 999px; padding-inline: 16px; text-shadow: none; }
-  .menu__destacado a:hover { background: var(--amarillo); color: var(--tinta); text-decoration: none; }
+  .menu__lista { display: flex; justify-content: space-between; align-items: center; padding: 6px var(--margen); }
+  .menu__lista a {
+    position: relative; min-height: 44px; padding: 8px 10px; border: 0; border-radius: 10px; font-size: .9375rem;
+    color: var(--blanco); text-shadow: var(--contorno-texto);
+    transition: background-color 200ms ease-out, color 200ms ease-out;
+  }
+  /* Subrayado que crece desde el centro (no cambia el tamaño del enlace: no mueve el resto del menú) */
+  .menu__lista a::after {
+    content: ''; position: absolute; left: 10px; right: 10px; bottom: 5px; height: 3px; border-radius: 2px;
+    background: var(--blanco); box-shadow: 0 0 0 1px var(--halo-turquesa);
+    transform: scaleX(0); transform-origin: center; transition: transform 240ms cubic-bezier(.22, 1, .36, 1);
+  }
+  .menu__lista a:hover, .menu__lista a:focus-visible { background: rgba(0, 58, 54, .2); color: var(--blanco); }
+  .menu__lista a:hover::after, .menu__lista a:focus-visible::after, .menu__lista a[aria-current="page"]::after { transform: scaleX(1); }
+  .menu__lista a[aria-current="page"] { box-shadow: none; color: var(--blanco); }
+  .menu__destacado a { min-height: 36px; padding: 6px 16px; background: var(--blanco); color: var(--magenta-oscuro); border-radius: 999px; text-shadow: none; }
+  .menu__destacado a::after { content: none; }
+  .menu__destacado a:hover, .menu__destacado a:focus-visible { background: var(--amarillo); color: var(--tinta); }
+  @media (prefers-reduced-motion: reduce) {
+    .menu__lista a, .menu__lista a::after { transition: color .01s; }
+  }
 }
 
 /* ============================================================
@@ -654,27 +669,41 @@ main:focus { outline: none; }
 }
 
 /* Sucursales */
-.sucursales { background: var(--tinta); color: var(--blanco); padding-block: clamp(56px, 8vw, 96px); --foco: var(--amarillo); }
+.sucursales { position: relative; overflow: hidden; isolation: isolate; background: var(--tinta); color: var(--blanco); padding-block: clamp(56px, 8vw, 96px); --foco: var(--amarillo); }
 .sucursales a { color: var(--blanco); }
 .sucursales a:hover { color: var(--amarillo); }
+/* Fachadas de fondo: cambian solas (js/sucursales.mjs) y la tarjeta de la sucursal se ilumina */
+.sucursales__fondo { position: absolute; inset: 0; z-index: -1; background: var(--tinta); }
+.sucursales__fondo::after { content: ''; position: absolute; inset: 0; background: linear-gradient(rgba(35, 31, 32, .82), rgba(35, 31, 32, .88)); }
+.fachada { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0; transition: opacity .9s ease-out; }
+.fachada--activa { opacity: 1; }
+.sucursales__encabezado { display: flex; align-items: flex-end; justify-content: space-between; gap: 16px; }
 .sucursales__lista { display: grid; gap: 16px; margin-top: 24px; }
-.sucursal { display: flex; flex-direction: column; background: var(--blanco); color: var(--tinta); border-radius: var(--radio); padding: 20px; --foco: var(--tinta); }
+.sucursal {
+  position: relative; display: flex; flex-direction: column; background: var(--blanco); color: var(--tinta);
+  border-radius: var(--radio); padding: 20px; --foco: var(--tinta); border: 3px solid transparent;
+  transition: box-shadow .6s ease-out, border-color .6s ease-out;
+}
+/* Resaltada: borde turquesa + resplandor + etiqueta (no depende solo del color) */
+.sucursal--resaltada { border-color: var(--turquesa); box-shadow: 0 0 0 4px rgba(0, 176, 163, .35), 0 0 36px 6px rgba(0, 176, 163, .55); }
+.sucursal__etiqueta {
+  position: absolute; top: -3px; right: 16px; transform: translateY(-50%); padding: 2px 12px; border-radius: 999px;
+  background: var(--tinta); color: var(--blanco); border: 2px solid var(--turquesa); font-family: var(--fuente-titulos); font-weight: 600; font-size: .8125rem;
+  opacity: 0; transition: opacity .6s ease-out; pointer-events: none;
+}
+.sucursal--resaltada .sucursal__etiqueta { opacity: 1; }
 .sucursal h3 { color: var(--magenta-oscuro); margin-bottom: 4px; }
 .sucursal address { margin-bottom: 8px; }
 .sucursal__horario { display: flex; gap: 8px; font-size: .9375rem; color: var(--gris); }
 .sucursal__horario .icono { margin-top: .2em; }
-.sucursal__acciones { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; margin-top: auto; padding-top: 16px; }
+.sucursal__acciones { margin-top: 14px; }
+.sucursal__acciones .boton { width: 100%; }
 .sucursales .sucursal__acciones .boton--secundario { color: var(--turquesa-texto); }
 .sucursales .sucursal__acciones .boton--secundario:hover { color: var(--blanco); }
 .sucursal a.enlace-icono { color: var(--turquesa-texto); }
-.mapa { border-radius: 999px; overflow: hidden; border: 2px solid var(--turquesa-texto); background: var(--turquesa-suave); }
-.mapa__boton {
-  width: 100%; height: 100%; min-height: 44px; display: flex; align-items: center; justify-content: center; gap: 6px;
-  border: 0; background: transparent; color: var(--turquesa-texto); font-family: var(--fuente-titulos); font-weight: 600; font-size: .9375rem;
-}
-.mapa__boton:hover { background: #d4f0eb; }
-.mapa--cargado { grid-column: 1 / -1; border-radius: var(--radio-chico); border-width: 1px; border-color: var(--borde); }
-.mapa__iframe { display: block; width: 100%; height: 240px; border: 0; }
+/* El mapa se carga al acercarse la sección; la altura queda reservada para que la página no salte */
+.mapa { position: relative; height: 220px; margin-top: 14px; border-radius: var(--radio-chico); overflow: hidden; border: 1px solid var(--borde); background: var(--turquesa-suave); }
+.mapa__iframe { display: block; width: 100%; height: 100%; border: 0; }
 @media (min-width: 860px) { .sucursales__lista { grid-template-columns: repeat(3, 1fr); gap: 24px; } }
 
 /* Nosotros */
@@ -707,10 +736,22 @@ main:focus { outline: none; }
 .resena__autor { font-family: var(--fuente-titulos); font-weight: 600; margin: 0; }
 .resena__meta { font-size: .875rem; color: var(--gris); margin: 0; }
 .cinta--marcas { --duracion: 35s; }
-.marca {
-  flex: 0 0 auto; display: flex; align-items: center; height: 60px; padding: 0 26px; border-radius: 999px;
-  background: var(--turquesa-suave); border: 1px solid var(--borde); font-family: var(--fuente-titulos); font-weight: 600; color: var(--tinta); white-space: nowrap;
+/* Marcas: logo oficial (colores originales) dentro de una píldora blanca; los logos de letras blancas van sobre píldora oscura */
+.marca { flex: 0 0 auto; display: flex; }
+.marca__enlace {
+  display: flex; align-items: center; justify-content: center; min-width: 96px; height: 60px; padding: 0 22px; border-radius: 999px;
+  background: var(--blanco); border: 1px solid var(--borde); box-shadow: 0 2px 8px rgba(35, 31, 32, .08);
+  font-family: var(--fuente-titulos); font-weight: 600; color: var(--tinta); white-space: nowrap; text-decoration: none;
+  transition: transform .2s ease-out, box-shadow .2s ease-out;
 }
+.marca__enlace img { display: block; height: 36px; width: auto; max-width: 140px; object-fit: contain; }
+.marca__enlace--oscuro { background: var(--tinta); border-color: var(--tinta); }
+.marca__enlace:hover, .marca__enlace:focus-visible { box-shadow: 0 6px 16px rgba(35, 31, 32, .18); transform: translateY(-2px); color: var(--tinta); }
+@media (min-width: 720px) {
+  .marca__enlace { height: 72px; padding: 0 28px; }
+  .marca__enlace img { height: 48px; max-width: 170px; }
+}
+@media (prefers-reduced-motion: reduce) { .marca__enlace { transition: none; } .marca__enlace:hover, .marca__enlace:focus-visible { transform: none; } }
 .marcas { padding-bottom: clamp(56px, 7vw, 88px); }
 .carrusel--resenas { grid-auto-columns: minmax(260px, 82%); }
 .carrusel--resenas:focus-visible { outline-offset: 4px; }
@@ -958,3 +999,14 @@ main:focus { outline: none; }
 .ficha .estado-stock { font-size: .9375rem; margin: 4px 0 12px; }
 .aviso-agotado { border: 2px solid var(--borde-control); border-radius: var(--radio); background: var(--blanco); padding: 16px; margin: 12px 0 20px; max-width: 460px; }
 .aviso-agotado p { margin-bottom: 12px; }
+
+@media (prefers-reduced-motion: reduce) {
+  .fachada, .sucursal, .sucursal__etiqueta { transition: none; }
+}
+
+/* Instagram (Elfsight): el widget es de un tercero y se carga al acercarse la sección */
+.instagram__marco { min-height: 660px; display: flex; flex-direction: column; justify-content: center; align-items: stretch; margin-top: 24px; }
+.instagram__respaldo { display: flex; justify-content: center; padding-block: 24px; }
+.instagram__respaldo[hidden] { display: none; }
+@media (min-width: 600px) { .instagram__marco { min-height: 1030px; } }
+@media (min-width: 900px) { .instagram__marco { min-height: 850px; } }

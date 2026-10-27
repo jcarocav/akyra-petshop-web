@@ -1,12 +1,14 @@
 // ============================================================
 // APP — lo común a todas las páginas: menú, buscador, aviso de
 // privacidad, carrito, botones de compra, carruseles con pausa,
-// mapas que se cargan al pedirlos y enlaces de WhatsApp.
+// mapas de las sucursales y enlaces de WhatsApp.
 // ============================================================
 import { iniciarCarrito, mostrarAviso } from './carrito-ui.mjs'
 import { activarCompra, cuandoSeAgregue } from './componentes.mjs'
 import { CONFIG } from './datos.mjs'
 import { crearDialogo } from './dialogo.mjs'
+import { iniciarInstagram } from './instagram.mjs'
+import { iniciarSucursales } from './sucursales.mjs'
 import { aplicarTemas } from './temas.mjs'
 import { $, $$, almacen, h, reducirMovimiento } from './utilidades.mjs'
 
@@ -141,25 +143,6 @@ function iniciarFlechas() {
   }
 }
 
-// ---------- Mapas: solo se cargan si la persona los pide ----------
-function iniciarMapas() {
-  for (const boton of $$('[data-mapa]')) {
-    boton.addEventListener('click', () => {
-      const iframe = h('iframe', {
-        src: boton.dataset.mapa,
-        title: boton.dataset.titulo,
-        loading: 'lazy',
-        referrerpolicy: 'no-referrer-when-downgrade',
-        class: 'mapa__iframe'
-      })
-      const contenedor = boton.closest('.mapa')
-      contenedor.classList.add('mapa--cargado')
-      contenedor.replaceChildren(iframe)
-      iframe.focus()
-    })
-  }
-}
-
 function iniciarEnlacesWhatsapp() {
   for (const a of $$('[data-whatsapp]')) {
     a.href = enlaceConsulta(a.dataset.whatsapp || MENSAJE_WHATSAPP)
@@ -189,7 +172,8 @@ export function iniciarApp() {
   iniciarHero(portada)
   iniciarCintas()
   iniciarFlechas()
-  iniciarMapas()
+  iniciarSucursales()
+  iniciarInstagram()
   iniciarPrivacidad()
   const anio = $('#anio-actual')
   if (anio) anio.textContent = String(new Date().getFullYear())

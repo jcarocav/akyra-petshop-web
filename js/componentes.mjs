@@ -134,7 +134,7 @@ export function filaCompra(producto, { idAviso } = {}) {
   const tope = v ? v.tope : null
   const idCampo = nuevoId('cantidad')
   const minimo = granel ? carrito.MIN_GRANEL : 1
-  const unidad = granel ? 'medio kilo' : 'uno'
+  const unidad = granel ? '100 gramos' : 'uno'
 
   const selector = h('div', {
     class: 'cantidad',
@@ -187,7 +187,7 @@ export function tarjetaProducto(producto, { nivelTitulo = 'h3', prioridad = fals
     bloquePrecio(producto),
     insigniaStock(producto)
   )
-  if (producto.granel) cuerpo.append(h('p', { class: 'tarjeta__subtotal', 'data-subtotal': '', text: `Subtotal: ${formatoCLP(producto.precio * carrito.MIN_GRANEL)}` }))
+  if (producto.granel) cuerpo.append(h('p', { class: 'tarjeta__subtotal', 'data-subtotal': '', text: `${formatoDecimal(carrito.MIN_GRANEL)} kg = ${formatoCLP(producto.precio * carrito.MIN_GRANEL)}` }))
   if (producto.tallas && !sinPrecio(producto)) cuerpo.append(selectorTallas(producto, idAviso))
 
   const pie = h('div', { class: 'tarjeta__pie' }, filaCompra(producto, { idAviso }))
@@ -221,7 +221,7 @@ function leerCantidad(selector) {
   return Number(selector.querySelector('.cantidad__campo').dataset.valor)
 }
 
-function fijarCantidad(raiz, selector, valor, { anunciarCambio = false } = {}) {
+function fijarCantidad(raiz, selector, valor, { anunciarCambio = false, avisoExtra = null } = {}) {
   const granel = selector.dataset.granel === '1'
   const tope = topeActual(raiz)
   const n = carrito.ajustarCantidad(valor, { granel, tope })
@@ -235,14 +235,14 @@ function fijarCantidad(raiz, selector, valor, { anunciarCambio = false } = {}) {
   const aviso = raiz.querySelector('[data-aviso]')
   const enMaximo = tope !== null && n >= tope
   if (aviso && (raiz.dataset.talla || !productoPorId.get(raiz.dataset.producto)?.tallas)) {
-    aviso.textContent = enMaximo ? `Máximo disponible: ${formatoCantidad(tope, granel)}.` : ''
+    aviso.textContent = avisoExtra || (enMaximo ? `Máximo disponible: ${formatoCantidad(tope, granel)}.` : '')
   }
   const subtotal = raiz.querySelector('[data-subtotal]')
   const { v } = estadoTarjeta(raiz)
-  if (subtotal && v && typeof v.precio === 'number') subtotal.textContent = `Subtotal: ${formatoCLP(v.precio * n)}`
+  if (subtotal && v && typeof v.precio === 'number') subtotal.textContent = granel ? `${formatoDecimal(n)} kg = ${formatoCLP(v.precio * n)}` : `Subtotal: ${formatoCLP(v.precio * n)}`
   if (anunciarCambio) {
     const texto = granel ? `${formatoDecimal(n)} kilos` : `Cantidad: ${n}`
-    anunciar(enMaximo ? `${texto}. Máximo disponible.` : texto)
+    anunciar(avisoExtra ? `${avisoExtra} ${texto}.` : enMaximo ? `${texto}. Máximo disponible.` : texto, { urgente: !!avisoExtra })
   }
   return n
 }
@@ -328,6 +328,14 @@ export function activarCompra(raizDocumento = document) {
     const raiz = campo.closest('[data-producto]')
     const selector = campo.closest('[data-cantidad]')
     if (!raiz || !selector) return
+    // Enter dispara también "change": si el campo ya quedó corregido, no se repite el aviso
+    const actual = leerCantidad(selector)
+    if (campo.value === (selector.dataset.granel === '1' ? formatoDecimal(actual) : String(actual))) return
+    if (selector.dataset.granel === '1') {
+      const { n, aviso } = carrito.interpretarKilos(campo.value, { tope: topeActual(raiz) })
+      fijarCantidad(raiz, selector, n ?? leerCantidad(selector), { anunciarCambio: true, avisoExtra: aviso })
+      return
+    }
     const n = leerNumero(campo.value)
     fijarCantidad(raiz, selector, Number.isNaN(n) ? leerCantidad(selector) : n, { anunciarCambio: true })
   }

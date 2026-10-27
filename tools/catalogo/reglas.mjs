@@ -69,10 +69,10 @@ export function esVisible(stock) {
 }
 
 // Tope de cantidad que se publica (nunca el detalle por sucursal).
-// Granel: kilos, redondeados hacia abajo a pasos de 0,5 kg.
+// Granel: kilos, redondeados hacia abajo a gramos (3 decimales).
 export function topePublico(stock, granel) {
   if (!stock.registrado) return null
-  if (granel) return Math.floor(stock.total * 2) / 2
+  if (granel) return Math.floor(Math.round(stock.total * 1e6) / 1000) / 1000
   return Math.floor(stock.total)
 }
 

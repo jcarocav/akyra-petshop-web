@@ -48,7 +48,9 @@ function parcial(nombre, pagina) {
     if (pagina.modulo) lineas.push(`<script type="module" src="js/${pagina.modulo}.mjs"></script>`)
     return lineas.join('\n')
   }
-  let html = readFileSync(join(RAIZ, 'tools', 'parciales', `${nombre}.html`), 'utf8').trimEnd()
+  // El inicio tiene su propia política: permite el feed de Instagram (Elfsight), que es de un tercero
+  const archivo = nombre === 'seguridad' && pagina.id === 'inicio' ? 'seguridad-inicio' : nombre
+  let html = readFileSync(join(RAIZ, 'tools', 'parciales', `${archivo}.html`), 'utf8').trimEnd()
   html = html.replace(/\{\{actual:([a-z0-9-]+)\}\}/g, (_, id) => (id === pagina.id ? ' aria-current="page"' : ''))
   return html
 }

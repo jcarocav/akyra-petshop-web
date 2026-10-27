@@ -1,0 +1,199 @@
+[
+  {
+    "marca": "Royal Canin",
+    "id": "royal-canin",
+    "fondo": "claro",
+    "archivo": "royal-canin.svg",
+    "ancho": 275,
+    "alto": 96,
+    "origen": "Logo del encabezado de royalcanin.com/cl (SVG oficial, rojo #e2001a)"
+  },
+  {
+    "marca": "Fit Formula",
+    "id": "fit-formula",
+    "fondo": "claro",
+    "archivo": "fit-formula.webp",
+    "ancho": 157,
+    "alto": 96,
+    "origen": "fitformula.cl"
+  },
+  {
+    "marca": "Marben Pets",
+    "id": "marben-pets",
+    "fondo": "claro",
+    "archivo": "marben-pets.webp",
+    "ancho": 269,
+    "alto": 96,
+    "origen": "marbenpets.cl"
+  },
+  {
+    "marca": "Wanpy",
+    "id": "wanpy",
+    "fondo": "claro",
+    "archivo": "wanpy.svg",
+    "ancho": 126,
+    "alto": 96,
+    "origen": "wanpy.com"
+  },
+  {
+    "marca": "Bravery",
+    "id": "bravery",
+    "fondo": "claro",
+    "archivo": "bravery.webp",
+    "ancho": 420,
+    "alto": 60,
+    "origen": "braverypetfood.com"
+  },
+  {
+    "marca": "Purina Fancy Feast",
+    "id": "fancy-feast",
+    "fondo": "claro",
+    "archivo": "fancy-feast.webp",
+    "ancho": 160,
+    "alto": 96,
+    "origen": "purina.cl (sitio oficial de Purina Chile)"
+  },
+  {
+    "marca": "Champion",
+    "id": "champion",
+    "fondo": "oscuro",
+    "archivo": "champion.webp",
+    "ancho": 195,
+    "alto": 96,
+    "origen": "championdog.cl"
+  },
+  {
+    "marca": "Top K9",
+    "id": "top-k9",
+    "fondo": "claro",
+    "archivo": "top-k9.webp",
+    "ancho": 270,
+    "alto": 96,
+    "origen": "topk9.cl"
+  },
+  {
+    "marca": "Purina Cat Chow",
+    "id": "cat-chow",
+    "fondo": "claro",
+    "archivo": "cat-chow.webp",
+    "ancho": 81,
+    "alto": 96,
+    "origen": "purina.cl"
+  },
+  {
+    "marca": "Bioline",
+    "id": "bioline",
+    "fondo": "oscuro",
+    "archivo": "bioline.webp",
+    "ancho": 304,
+    "alto": 96,
+    "origen": "bioline.cl"
+  },
+  {
+    "marca": "Leonardo",
+    "id": "leonardo",
+    "fondo": "claro",
+    "archivo": "leonardo.webp",
+    "ancho": 146,
+    "alto": 96,
+    "origen": "leonardochile.cl"
+  },
+  {
+    "marca": "Master Dog",
+    "id": "master-dog",
+    "fondo": "claro",
+    "archivo": "master-dog.webp",
+    "ancho": 119,
+    "alto": 96,
+    "origen": "masterdog.cl"
+  },
+  {
+    "marca": "Felix",
+    "id": "felix",
+    "fondo": "claro",
+    "archivo": "felix.webp",
+    "ancho": 122,
+    "alto": 96,
+    "origen": "purina.cl"
+  },
+  {
+    "marca": "Pedigree",
+    "id": "pedigree",
+    "fondo": "claro",
+    "archivo": "pedigree.webp",
+    "ancho": 94,
+    "alto": 96,
+    "origen": "pedigree.cl (rosetón oficial)"
+  },
+  {
+    "marca": "Whiskas",
+    "id": "whiskas",
+    "fondo": "oscuro",
+    "archivo": "whiskas.webp",
+    "ancho": 117,
+    "alto": 96,
+    "origen": "whiskas.cl"
+  },
+  {
+    "marca": "Alfa Dog",
+    "id": "alfa-dog",
+    "fondo": "claro",
+    "archivo": "alfa-dog.webp",
+    "ancho": 139,
+    "alto": 96,
+    "origen": "alfadog.cl"
+  },
+  {
+    "marca": "Purina Pro Plan",
+    "id": "pro-plan",
+    "fondo": "claro",
+    "archivo": "pro-plan.webp",
+    "ancho": 171,
+    "alto": 96,
+    "origen": "purina.cl"
+  },
+  {
+    "marca": "Dog Chow",
+    "id": "dog-chow",
+    "fondo": "claro",
+    "archivo": "dog-chow.webp",
+    "ancho": 136,
+    "alto": 96,
+    "origen": "purina.cl"
+  },
+  {
+    "marca": "Mondo Mascota",
+    "id": "mondo-mascota",
+    "fondo": "claro"
+  },
+  {
+    "marca": "Inaba",
+    "id": "inaba",
+    "fondo": "claro"
+  },
+  {
+    "marca": "Leon Pet",
+    "id": "leon-pet",
+    "fondo": "claro"
+  },
+  {
+    "marca": "Master Cat",
+    "id": "master-cat",
+    "fondo": "claro"
+  },
+  {
+    "marca": "Nomade",
+    "id": "nomade",
+    "fondo": "claro"
+  },
+  {
+    "marca": "N&D",
+    "id": "nd",
+    "fondo": "claro"
+  },
+  {
+    "marca": "Vet Life",
+    "id": "vet-life",
+    "fondo": "claro"
+  }
+]

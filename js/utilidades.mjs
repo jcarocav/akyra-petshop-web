@@ -15,9 +15,9 @@ export function formatoCLP(monto) {
   return (n < 0 ? '-$' : '$') + miles
 }
 
-// 1.5 → "1,5"   2 → "2"
+// 1.3 → "1,3"   2 → "2"   0.25 → "0,25" (coma decimal, hasta 3 decimales, sin ceros sobrantes)
 export function formatoDecimal(numero) {
-  const r = Math.round(Number(numero) * 100) / 100
+  const r = Math.round(Number(numero) * 1000) / 1000
   return String(r).replace('.', ',')
 }
 

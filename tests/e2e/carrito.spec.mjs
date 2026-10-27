@@ -33,9 +33,9 @@ test('cambiar cantidad, quitar y totales correctos; se mantiene al recargar', as
   await page.keyboard.press('Enter')
   await expect(lineaA.getByLabel(`Cantidad de ${a.nombre}`)).toHaveValue('3')
   await expect(lineaA.getByRole('button', { name: `Sumar uno a ${a.nombre}` })).toBeFocused() // el foco no se pierde
-  await lineaG.getByRole('button', { name: `Restar medio kilo a ${g.nombre}` }).click()
-  await expect(lineaG.getByLabel(`Kilos de ${g.nombre}`)).toHaveValue('1')
-  await expect(page.locator('#carrito-subtotal')).toHaveText(formatoCLP(a.precio * 3 + g.precio * 1))
+  await lineaG.getByRole('button', { name: `Restar 100 gramos a ${g.nombre}` }).click()
+  await expect(lineaG.getByLabel(`Kilos de ${g.nombre}`)).toHaveValue('1,4')
+  await expect(page.locator('#carrito-subtotal')).toHaveText(formatoCLP(a.precio * 3 + Math.round(g.precio * 1.4)))
 
   await lineaG.getByRole('button', { name: `Quitar ${g.nombre} del carrito` }).click()
   await expect(lineaG).toHaveCount(0)
@@ -104,8 +104,8 @@ test('pedido por WhatsApp: enlace al número de la tienda con todas las líneas,
   expect(texto).toMatch(/Fecha: \d{2}-\d{2}-\d{4} \d{2}:\d{2}/)
   expect(texto).toContain(`1. 2 × ${a.nombre}`)
   expect(texto).toContain(`SKU ${a.sku} · ${formatoCLP(a.precio)} c/u · Subtotal ${formatoCLP(a.precio * 2)}`)
-  expect(texto).toContain(`2. 1,5 kg × ${g.nombre}`)
-  expect(texto).toContain(`${formatoCLP(g.precio)} por kg · Subtotal ${formatoCLP(g.precio * 1.5)}`)
+  expect(texto).toContain(`2. ${g.nombre}`)
+  expect(texto).toContain(`1,5 kg × ${formatoCLP(g.precio)}/kg = ${formatoCLP(g.precio * 1.5)}`)
   expect(texto).toContain(`Subtotal productos: ${formatoCLP(productos)}`)
   expect(texto).toContain('Despacho (periferia): $3.500')
   expect(texto).toContain(`*Total: ${formatoCLP(productos + 3500)}*`)

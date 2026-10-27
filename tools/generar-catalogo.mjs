@@ -300,7 +300,7 @@ async function main() {
   escribirStock(stock)
 
   // Datos internos (sucursales, códigos de barra): solo local, fuera de git.
-  const visibleFila = f => f.unidades === null || (f.granel ? f.unidades >= 0.5 : f.unidades > 0)
+  const visibleFila = f => f.unidades === null || (f.granel ? f.unidades >= 0.1 : f.unidades > 0)
   mkdirSync(join(RAIZ, '.tmp'), { recursive: true })
   const internos = filas.map(f => ({
     sku: f.sku, codigo: f.codigo, codigoSaco: f.granel ? f.codigoSaco : null, nombre: f.nombre, nombreExcel: f.nombreExcel,

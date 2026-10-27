@@ -33,8 +33,16 @@ test('seguridad: CSP estricta, sin scripts externos ni código inline', async ({
   for (const archivo of ['index.html', 'catalogo.html', 'producto.html', 'contactenos.html']) {
     const html = readFileSync(join(RAIZ, archivo), 'utf8')
     expect(html).toContain('http-equiv="Content-Security-Policy"')
-    expect(html).toMatch(/script-src 'self';/)
-    expect(html).not.toMatch(/unsafe-inline|unsafe-eval/)
+    expect(html).not.toMatch(/unsafe-eval/)
+    if (archivo === 'index.html') {
+      // El inicio permite el feed de Instagram (Elfsight): solo esos dominios de script y estilos en línea del widget
+      expect(html).toMatch(/script-src 'self' https:\/\/elfsightcdn\.com https:\/\/universe-static\.elfsightcdn\.com;/)
+      expect(html).not.toMatch(/script-src[^;]*unsafe-inline/)
+      expect(html).toMatch(/frame-src https:\/\/www\.google\.com;/)
+    } else {
+      expect(html).toMatch(/script-src 'self';/)
+      expect(html).not.toMatch(/unsafe-inline/)
+    }
     expect(html).not.toMatch(/<script[^>]+src="https?:/) // ningún script externo
     expect(html).not.toMatch(/<script(?![^>]*(src=|type="application\/ld\+json"))[^>]*>/) // ningún script inline ejecutable
     expect(html).not.toMatch(/\son[a-z]+="/) // sin manejadores inline (onclick=...)
@@ -45,7 +53,7 @@ test('seguridad: CSP estricta, sin scripts externos ni código inline', async ({
 })
 
 test('seguridad: el código no usa eval, innerHTML ni document.write', () => {
-  for (const archivo of ['app', 'carrito', 'carrito-ui', 'componentes', 'datos', 'dialogo', 'pagina-catalogo', 'pagina-contacto', 'pagina-inicio', 'pagina-producto', 'stock', 'utilidades', 'whatsapp']) {
+  for (const archivo of ['app', 'carrito', 'carrito-ui', 'componentes', 'datos', 'dialogo', 'pagina-catalogo', 'pagina-contacto', 'pagina-inicio', 'pagina-producto', 'stock', 'utilidades', 'whatsapp', 'sucursales', 'instagram', 'temas']) {
     const js = readFileSync(join(RAIZ, 'js', `${archivo}.mjs`), 'utf8')
     expect(js, archivo).not.toMatch(/\beval\(|new Function\(|\.innerHTML\s*=|insertAdjacentHTML|document\.write/)
   }

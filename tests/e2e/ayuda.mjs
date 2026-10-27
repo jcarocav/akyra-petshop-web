@@ -7,7 +7,9 @@ export const test = base.extend({
   // Por defecto: aviso de privacidad ya aceptado y sin salir a internet
   // (WhatsApp y Google Maps se responden con una página vacía).
   conPrivacidad: [false, { option: true }],
-  page: async ({ page, conPrivacidad }, usar) => {
+  // Elfsight (feed de Instagram) se bloquea salvo que la prueba pida el real
+  conElfsight: [false, { option: true }],
+  page: async ({ page, conPrivacidad, conElfsight }, usar) => {
     if (!conPrivacidad) {
       await page.addInitScript(() => {
         try { localStorage.setItem('akyra_privacidad_aceptada', 'true') } catch { /* sin almacenamiento */ }
@@ -15,6 +17,7 @@ export const test = base.extend({
     }
     await page.context().route(/^https:\/\/(wa\.me|api\.whatsapp\.com|www\.google\.com|www\.instagram\.com|www\.facebook\.com)\//, r =>
       r.fulfill({ status: 200, contentType: 'text/html', body: '<!doctype html><title>externo</title>' }))
+    if (!conElfsight) await page.context().route(/^https:\/\/([^/]+\.)?(elfsightcdn|elfsight)\.com\//, r => r.abort())
     await usar(page)
   }
 })

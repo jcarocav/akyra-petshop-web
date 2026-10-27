@@ -2,11 +2,11 @@
 // Reglas de stock (las usan el sitio, el generador y las pruebas).
 //   - null / sin dato  → "Consultar disponibilidad": se muestra, sin tope.
 //   - mayor que 0      → se muestra; el tope del "+" es el stock.
-//   - 0 (o granel bajo medio kilo) → oculto ("Agotado por ahora").
+//   - 0 (o granel bajo 0,1 kg) → oculto ("Agotado por ahora").
 // Funciones puras: no tocan la página.
 // ============================================================
 
-export const MINIMO_GRANEL = 0.5
+export const MINIMO_GRANEL = 0.1
 export const UMBRAL_ULTIMAS = 5
 
 export function normalizarUnidades(valor) {
@@ -25,7 +25,7 @@ export function hayStock(unidades, granel = false) {
 // Tope de cantidad que se puede pedir (null = sin tope)
 export function topeDe(unidades, granel = false) {
   if (unidades === null || unidades === undefined) return null
-  return granel ? Math.floor(unidades * 2) / 2 : Math.floor(unidades)
+  return granel ? Math.floor(Math.round(unidades * 1e6) / 1000) / 1000 : Math.floor(unidades)
 }
 
 // Estado para mostrar: { clave, texto }

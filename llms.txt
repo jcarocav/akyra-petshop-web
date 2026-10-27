@@ -1,9 +1,9 @@
 # Maskotería Akyra
 
-> Tienda de mascotas (pet store) en Punta Arenas, Chile, con 3 sucursales. Vende alimento para perros y gatos (también **alimento a granel por kilo**, desde medio kilo), arena sanitaria, accesorios, ropa y productos de salud e higiene. El catálogo del sitio muestra el stock real de las tiendas y los pedidos se envían por WhatsApp.
+> Tienda de mascotas (pet store) en Punta Arenas, Chile, con 3 sucursales. Vende alimento para perros y gatos (también **alimento a granel por kilo**, desde 100 gramos), arena sanitaria, accesorios, ropa y productos de salud e higiene. El catálogo del sitio muestra el stock real de las tiendas y los pedidos se envían por WhatsApp.
 
 ## Alimento a granel
-El cliente elige cuántos kilos quiere (de medio en medio kilo, desde 0,5 kg), ve el precio por kilo y el subtotal al instante, y retira en tienda o pide despacho. Categoría "Granel" del catálogo: /catalogo.html?categoria=granel
+El cliente elige cuántos kilos quiere (escribe los kilos, por ejemplo 1,3, o usa − y + de a 0,1 kg; mínimo 0,1 kg), ve el precio por kilo y el subtotal al instante, y retira en tienda o pide despacho. Categoría "Granel" del catálogo: /catalogo.html?categoria=granel
 
 ## Sobre el negocio
 - Nombre: Maskotería Akyra

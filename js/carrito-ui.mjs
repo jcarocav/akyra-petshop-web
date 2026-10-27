@@ -31,7 +31,7 @@ function filaLinea(l) {
   const nombre = l.nombre + (l.talla ? ` (talla ${l.talla})` : '')
   const producto = productoPorId.get(l.id)
   const minimo = l.granel ? carrito.MIN_GRANEL : 1
-  const unidad = l.granel ? 'medio kilo' : 'uno'
+  const unidad = l.granel ? '100 gramos' : 'uno'
   const idCampo = `carrito-cantidad-${l.clave.replace(/[^a-z0-9]/gi, '-')}`
   return h('li', { class: 'linea', 'data-clave': l.clave },
     h('div', { class: 'linea__info' },
@@ -110,7 +110,12 @@ function activarLista() {
   const confirmar = campo => {
     const clave = campo.closest('[data-clave]').dataset.clave
     const linea = carrito.obtenerLineas().find(l => l.clave === clave)
-    const n = leerNumero(campo.value)
+    let n = leerNumero(campo.value)
+    if (linea.granel) {
+      const r = carrito.interpretarKilos(campo.value, { tope: linea.tope })
+      n = r.n ?? linea.cantidad
+      if (r.aviso) anunciar(r.aviso, { urgente: true })
+    }
     const nueva = carrito.cambiarCantidad(clave, Number.isNaN(n) ? linea.cantidad : n)
     if (nueva) anunciar(`${formatoCantidad(nueva.cantidad, nueva.granel)} × ${nueva.nombre}. Total: ${formatoCLP(carrito.totalProductos())}.`)
   }
