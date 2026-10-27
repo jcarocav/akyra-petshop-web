@@ -3,6 +3,8 @@ import AxeBuilder from '@axe-core/playwright'
 import { elegirProducto, expect, test } from './ayuda.mjs'
 
 async function sinViolaciones(page, nombre) {
+  // Se mide con la página quieta: espera que terminen las animaciones finitas (ej. la portada que aparece)
+  await page.waitForFunction(() => document.getAnimations().every(a => a.playState !== 'running' || a.effect?.getComputedTiming().iterations === Infinity))
   const r = await new AxeBuilder({ page })
     .withTags(['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa', 'wcag22aa', 'best-practice'])
     .analyze()
