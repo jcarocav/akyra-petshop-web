@@ -37,3 +37,19 @@ el carrito, WhatsApp, el stock automático, la accesibilidad, la seguridad ni Li
 | B3 | El llamado "¿No encuentras lo que necesitas?" repite el magenta del hero. | Aceptable: es el cierre de la página. |
 | B4 | Detector: "padding apretado" en secciones, interlineado 1,2 en títulos y sombra de color sobre fondo oscuro. | Falsos positivos o correctos para títulos; se revisan después de los cambios. |
 | B5 | El botón de WhatsApp repite "Escríbenos" en 3 lugares (cabecera, nosotros y flotante). | Se mantiene: son puntos de entrada distintos. |
+
+## Qué se aplicó (altas y medias)
+
+| # | Cambio |
+|---|---|
+| A1 | Categorías: columnas `minmax(0, 1fr)`; en celular el ícono va arriba del nombre y "Salud/Higiene" puede cortar en la barra. Verificado sin desborde a 320, 390 y 640 px. |
+| A2 | Puntos decorativos del hero ocultos en celular y movidos más abajo en escritorio. |
+| A3 | Nuevo orden: portada → atajos → categorías → **destacados** → granel → **reseñas** → nosotros → sucursales → llamado → marcas. |
+| A4 | Reseñas en fila deslizable (con flechas en escritorio y deslizar en celular), sin movimiento automático, alineadas con el título. |
+| A5 | Hero de escritorio: texto centrado con la foto (sin el hueco), foto un poco más chica y controles separados del botón principal. |
+| M1 | Sucursales: "Cómo llegar" y "Ver mapa" como 2 botones al pie de cada tarjeta (mismo alto); el mapa se abre a todo el ancho al pedirlo. |
+| M2 | Instagram integrado en "Sobre Maskotería" como segundo botón; se quitó la franja suelta. |
+| M3 | Fondos alternados (crema / blanco) y patitas solo en destacados y nosotros. |
+| M4 | Pie en celular con los enlaces en 2 columnas. |
+| M5 | Atajos más compactos en celular. |
+| Extra | Detector: el botón "Ver todo el catálogo" del menú quedaba blanco sobre amarillo al pasar el mouse (1,4:1) → ahora texto oscuro. |

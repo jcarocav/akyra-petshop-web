@@ -317,7 +317,7 @@
   </section>
 
   <!-- ================= CATEGORÍAS ================= -->
-  <section class="seccion seccion--patitas" id="categorias" aria-labelledby="categorias-titulo">
+  <section class="seccion seccion--suave" id="categorias" aria-labelledby="categorias-titulo">
     <div class="contenedor">
       <p class="antetitulo">Catálogo</p>
       <h2 id="categorias-titulo" class="seccion__titulo">Compra por categoría</h2>
@@ -329,8 +329,30 @@
         <li><a class="categoria categoria--magenta" href="catalogo.html?categoria=accesorios"><span class="categoria__icono"><svg class="icono" aria-hidden="true" focusable="false"><use href="assets/iconos.svg#bone"></use></svg></span><span class="categoria__nombre">Accesorios</span><span class="categoria__detalle">Juguetes, collares, platos, camas</span><span class="categoria__conteo" data-conteo-categoria="accesorios"></span></a></li>
         <li><a class="categoria categoria--amarillo" href="catalogo.html?categoria=arena"><span class="categoria__icono"><svg class="icono" aria-hidden="true" focusable="false"><use href="assets/iconos.svg#box"></use></svg></span><span class="categoria__nombre">Arena</span><span class="categoria__detalle">Aglutinante, sílica y ecológica</span><span class="categoria__conteo" data-conteo-categoria="arena"></span></a></li>
         <li><a class="categoria categoria--turquesa" href="catalogo.html?categoria=ropa"><span class="categoria__icono"><svg class="icono" aria-hidden="true" focusable="false"><use href="assets/iconos.svg#shirt"></use></svg></span><span class="categoria__nombre">Ropa</span><span class="categoria__detalle">Parkas, chalecos y bandanas</span><span class="categoria__conteo" data-conteo-categoria="ropa"></span></a></li>
-        <li><a class="categoria categoria--magenta" href="catalogo.html?categoria=salud-higiene"><span class="categoria__icono"><svg class="icono" aria-hidden="true" focusable="false"><use href="assets/iconos.svg#heart-pulse"></use></svg></span><span class="categoria__nombre">Salud/Higiene</span><span class="categoria__detalle">Antiparasitarios, shampoo, suplementos</span><span class="categoria__conteo" data-conteo-categoria="salud-higiene"></span></a></li>
+        <li><a class="categoria categoria--magenta" href="catalogo.html?categoria=salud-higiene"><span class="categoria__icono"><svg class="icono" aria-hidden="true" focusable="false"><use href="assets/iconos.svg#heart-pulse"></use></svg></span><span class="categoria__nombre">Salud/<wbr>Higiene</span><span class="categoria__detalle">Antiparasitarios, shampoo, suplementos</span><span class="categoria__conteo" data-conteo-categoria="salud-higiene"></span></a></li>
       </ul>
+    </div>
+  </section>
+
+  <!-- ================= DESTACADOS ================= -->
+  <section class="seccion seccion--patitas" id="destacados" aria-labelledby="destacados-titulo">
+    <div class="contenedor">
+      <div class="seccion__cabecera">
+        <div>
+          <p class="antetitulo">Destacados</p>
+          <h2 id="destacados-titulo" class="seccion__titulo">Lo que más llevan nuestros clientes</h2>
+        </div>
+        <div class="carrusel__flechas">
+          <button id="destacados-anterior" type="button" class="boton-icono" data-desplazar="-1" aria-label="Ver destacados anteriores" aria-controls="destacados-lista"><svg class="icono" aria-hidden="true" focusable="false"><use href="assets/iconos.svg#chevron-left"></use></svg></button>
+          <button id="destacados-siguiente" type="button" class="boton-icono" data-desplazar="1" aria-label="Ver más destacados" aria-controls="destacados-lista"><svg class="icono" aria-hidden="true" focusable="false"><use href="assets/iconos.svg#chevron-right"></use></svg></button>
+        </div>
+      </div>
+      <ul id="destacados-lista" class="carrusel" aria-busy="true" aria-label="Productos destacados">
+        <li class="carrusel__item carrusel__item--cargando" aria-hidden="true"><div class="tarjeta tarjeta--esqueleto"></div></li>
+        <li class="carrusel__item carrusel__item--cargando" aria-hidden="true"><div class="tarjeta tarjeta--esqueleto"></div></li>
+        <li class="carrusel__item carrusel__item--cargando" aria-hidden="true"><div class="tarjeta tarjeta--esqueleto"></div></li>
+      </ul>
+      <p class="centrado"><a class="boton boton--secundario" href="catalogo.html">Ver todo el catálogo</a></p>
     </div>
   </section>
 
@@ -352,37 +374,46 @@
     </div>
   </section>
 
-  <!-- ================= DESTACADOS ================= -->
-  <section class="seccion seccion--suave seccion--patitas" id="destacados" aria-labelledby="destacados-titulo">
+  <!-- ================= RESEÑAS ================= -->
+  <section class="seccion" id="resenas" aria-labelledby="resenas-titulo">
     <div class="contenedor">
       <div class="seccion__cabecera">
         <div>
-          <p class="antetitulo">Destacados</p>
-          <h2 id="destacados-titulo" class="seccion__titulo">Lo que más llevan nuestros clientes</h2>
+          <p class="antetitulo">Reseñas</p>
+          <h2 id="resenas-titulo" class="seccion__titulo">Lo que dicen nuestros clientes</h2>
+          <p class="seccion__bajada">Reseñas reales de Google.</p>
         </div>
         <div class="carrusel__flechas">
-          <button id="destacados-anterior" type="button" class="boton-icono" aria-label="Ver destacados anteriores" aria-controls="destacados-lista"><svg class="icono" aria-hidden="true" focusable="false"><use href="assets/iconos.svg#chevron-left"></use></svg></button>
-          <button id="destacados-siguiente" type="button" class="boton-icono" aria-label="Ver más destacados" aria-controls="destacados-lista"><svg class="icono" aria-hidden="true" focusable="false"><use href="assets/iconos.svg#chevron-right"></use></svg></button>
+          <button type="button" class="boton-icono" data-desplazar="-1" aria-label="Ver reseñas anteriores" aria-controls="resenas-lista"><svg class="icono" aria-hidden="true" focusable="false"><use href="assets/iconos.svg#chevron-left"></use></svg></button>
+          <button type="button" class="boton-icono" data-desplazar="1" aria-label="Ver más reseñas" aria-controls="resenas-lista"><svg class="icono" aria-hidden="true" focusable="false"><use href="assets/iconos.svg#chevron-right"></use></svg></button>
         </div>
       </div>
-      <ul id="destacados-lista" class="carrusel" aria-busy="true" aria-label="Productos destacados">
-        <li class="carrusel__item carrusel__item--cargando" aria-hidden="true"><div class="tarjeta tarjeta--esqueleto"></div></li>
-        <li class="carrusel__item carrusel__item--cargando" aria-hidden="true"><div class="tarjeta tarjeta--esqueleto"></div></li>
-        <li class="carrusel__item carrusel__item--cargando" aria-hidden="true"><div class="tarjeta tarjeta--esqueleto"></div></li>
+      <ul id="resenas-lista" class="carrusel carrusel--resenas" aria-label="Reseñas de clientes" tabindex="0">
+          <li class="carrusel__item resena"><p class="resena__estrellas"><span aria-hidden="true">★★★★★</span><span class="visualmente-oculto">5 de 5 estrellas</span></p><blockquote><p>Buena calidad de alimentos, tanto para gatos como para perros. Buenos precios además. Cuentan con accesorios para mascotas.</p></blockquote><p class="resena__autor">Camilo Cárdenas Hernández</p><p class="resena__meta">Local Guide · Hace 3 años</p></li>
+          <li class="carrusel__item resena"><p class="resena__estrellas"><span aria-hidden="true">★★★★★</span><span class="visualmente-oculto">5 de 5 estrellas</span></p><blockquote><p>Buenos precios y buena atención.</p></blockquote><p class="resena__autor">Ariel Santana</p><p class="resena__meta">Hace 4 meses</p></li>
+          <li class="carrusel__item resena"><p class="resena__estrellas"><span aria-hidden="true">★★★★★</span><span class="visualmente-oculto">5 de 5 estrellas</span></p><blockquote><p>Son muy amables y siempre tienen la comida de mi perrito; tienen muchas variedades de alimento de cachorro y gatos a buen precio.</p></blockquote><p class="resena__autor">María Soledad Campos Muñoz</p><p class="resena__meta">Local Guide · Hace 3 años</p></li>
+          <li class="carrusel__item resena"><p class="resena__estrellas"><span aria-hidden="true">★★★★★</span><span class="visualmente-oculto">5 de 5 estrellas</span></p><blockquote><p>¡Buenos precios! Siempre compro ahí las cositas para mi Chucky 🐈🐈</p></blockquote><p class="resena__autor">Fernanda Hernández</p><p class="resena__meta">Hace un año</p></li>
+          <li class="carrusel__item resena"><p class="resena__estrellas"><span aria-hidden="true">★★★★★</span><span class="visualmente-oculto">5 de 5 estrellas</span></p><blockquote><p>Buena atención y variedad.</p></blockquote><p class="resena__autor">Meg</p><p class="resena__meta">Hace 4 meses</p></li>
+          <li class="carrusel__item resena"><p class="resena__estrellas"><span aria-hidden="true">★★★★★</span><span class="visualmente-oculto">5 de 5 estrellas</span></p><blockquote><p>Excelente mascotería con mucha variedad de productos y una atención espectacular, sin duda volveré a comprar.</p></blockquote><p class="resena__autor">Sebastián Leiva</p><p class="resena__meta">Local Guide · Hace un año</p></li>
       </ul>
-      <p class="centrado"><a class="boton boton--secundario" href="catalogo.html">Ver todo el catálogo</a></p>
     </div>
   </section>
 
-  <!-- ================= REDES ================= -->
-  <section class="seccion seccion--patitas" id="novedades" aria-labelledby="novedades-titulo">
-    <div class="contenedor redes">
-      <div>
-        <p class="antetitulo">Redes sociales</p>
-        <h2 id="novedades-titulo" class="seccion__titulo">Mira nuestras novedades en Instagram</h2>
-        <p class="seccion__bajada">Publicamos productos nuevos, ofertas de la semana y a los regalones que nos visitan.</p>
+  <!-- ================= NOSOTROS ================= -->
+  <section class="seccion seccion--suave seccion--patitas" id="nosotros" aria-labelledby="nosotros-titulo">
+    <div class="contenedor nosotros">
+      <div class="nosotros__texto">
+        <p class="antetitulo">Sobre Maskotería Akyra</p>
+        <h2 id="nosotros-titulo" class="seccion__titulo">Un almacén pensado para tu mascota</h2>
+        <p>Somos una tienda de barrio en Punta Arenas, especializada en productos para perros y gatos: alimento, ropa, juguetes y accesorios, elegidos pensando en la calidad y el bienestar de tu compañero.</p>
+        <p>Nos gusta la atención cercana: si tienes dudas sobre qué producto le conviene a tu mascota, escríbenos y te ayudamos a elegir.</p>
+        <p class="nosotros__instagram">En Instagram publicamos productos nuevos, ofertas de la semana y a los regalones que nos visitan.</p>
+        <div class="nosotros__acciones">
+          <a data-whatsapp href="https://wa.me/56986969111" class="boton boton--primario" target="_blank" rel="noopener">Escríbenos por WhatsApp<span class="visualmente-oculto"> (se abre en una pestaña nueva)</span></a>
+          <a class="boton boton--secundario" href="https://www.instagram.com/maskoteria_akyra/" target="_blank" rel="noopener"><svg class="icono" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>Ver @maskoteria_akyra<span class="visualmente-oculto"> en Instagram (se abre en una pestaña nueva)</span></a>
+        </div>
       </div>
-      <a class="boton boton--primario" href="https://www.instagram.com/maskoteria_akyra/" target="_blank" rel="noopener">Ver @maskoteria_akyra<span class="visualmente-oculto"> en Instagram (se abre en una pestaña nueva)</span></a>
+      <img class="nosotros__foto" src="assets/img/lugares/hornillas-640.webp" width="640" height="604" alt="Fachada de la sucursal Hornillas de Maskotería Akyra, con su letrero" loading="lazy" decoding="async">
     </div>
   </section>
 
@@ -396,38 +427,21 @@
           <h3>Casa Matriz</h3>
           <address>Av. José Martínez de Aldunate 1431, Punta Arenas</address>
           <p class="sucursal__horario"><svg class="icono" aria-hidden="true" focusable="false"><use href="assets/iconos.svg#clock"></use></svg> Lunes a sábado: 10:00 a 13:00 y 15:00 a 20:00</p>
-          <p class="sucursal__acciones"><a class="enlace-icono" href="https://www.google.com/maps/search/?api=1&amp;query=Av.+Jos%C3%A9+Mart%C3%ADnez+de+Aldunate+1431+Punta+Arenas" target="_blank" rel="noopener"><svg class="icono" aria-hidden="true" focusable="false"><use href="assets/iconos.svg#map"></use></svg>Cómo llegar<span class="visualmente-oculto"> a Casa Matriz (Google Maps, pestaña nueva)</span></a></p>
-          <div class="mapa"><button type="button" class="mapa__boton" data-mapa="https://www.google.com/maps?q=Av.+Jos%C3%A9+Mart%C3%ADnez+de+Aldunate+1431,+Punta+Arenas,+Chile&amp;output=embed" data-titulo="Mapa de la sucursal Casa Matriz, Av. José Martínez de Aldunate 1431"><svg class="icono" aria-hidden="true" focusable="false"><use href="assets/iconos.svg#map-pin"></use></svg>Ver mapa<span class="visualmente-oculto"> de Casa Matriz</span></button></div>
+          <div class="sucursal__acciones"><a class="boton boton--secundario boton--chico" href="https://www.google.com/maps/search/?api=1&amp;query=Av.+Jos%C3%A9+Mart%C3%ADnez+de+Aldunate+1431+Punta+Arenas" target="_blank" rel="noopener"><svg class="icono" aria-hidden="true" focusable="false"><use href="assets/iconos.svg#map"></use></svg>Cómo llegar<span class="visualmente-oculto"> a Casa Matriz (Google Maps, pestaña nueva)</span></a><div class="mapa"><button type="button" class="mapa__boton" data-mapa="https://www.google.com/maps?q=Av.+Jos%C3%A9+Mart%C3%ADnez+de+Aldunate+1431,+Punta+Arenas,+Chile&amp;output=embed" data-titulo="Mapa de la sucursal Casa Matriz, Av. José Martínez de Aldunate 1431"><svg class="icono" aria-hidden="true" focusable="false"><use href="assets/iconos.svg#map-pin"></use></svg>Ver mapa<span class="visualmente-oculto"> de Casa Matriz</span></button></div></div>
         </li>
         <li class="sucursal">
           <h3>Hornillas</h3>
           <address>Hornillas 080, Punta Arenas</address>
           <p class="sucursal__horario"><svg class="icono" aria-hidden="true" focusable="false"><use href="assets/iconos.svg#clock"></use></svg> Lunes a sábado: 10:10 a 13:00 y 15:00 a 19:30. Domingos y feriados: cerrado</p>
-          <p class="sucursal__acciones"><a class="enlace-icono" href="https://www.google.com/maps/search/?api=1&amp;query=Hornillas+080+Punta+Arenas" target="_blank" rel="noopener"><svg class="icono" aria-hidden="true" focusable="false"><use href="assets/iconos.svg#map"></use></svg>Cómo llegar<span class="visualmente-oculto"> a Hornillas (Google Maps, pestaña nueva)</span></a></p>
-          <div class="mapa"><button type="button" class="mapa__boton" data-mapa="https://www.google.com/maps?q=Hornillas+080,+Punta+Arenas,+Chile&amp;output=embed" data-titulo="Mapa de la sucursal Hornillas 080"><svg class="icono" aria-hidden="true" focusable="false"><use href="assets/iconos.svg#map-pin"></use></svg>Ver mapa<span class="visualmente-oculto"> de Hornillas</span></button></div>
+          <div class="sucursal__acciones"><a class="boton boton--secundario boton--chico" href="https://www.google.com/maps/search/?api=1&amp;query=Hornillas+080+Punta+Arenas" target="_blank" rel="noopener"><svg class="icono" aria-hidden="true" focusable="false"><use href="assets/iconos.svg#map"></use></svg>Cómo llegar<span class="visualmente-oculto"> a Hornillas (Google Maps, pestaña nueva)</span></a><div class="mapa"><button type="button" class="mapa__boton" data-mapa="https://www.google.com/maps?q=Hornillas+080,+Punta+Arenas,+Chile&amp;output=embed" data-titulo="Mapa de la sucursal Hornillas 080"><svg class="icono" aria-hidden="true" focusable="false"><use href="assets/iconos.svg#map-pin"></use></svg>Ver mapa<span class="visualmente-oculto"> de Hornillas</span></button></div></div>
         </li>
         <li class="sucursal">
           <h3>Las Lengas</h3>
           <address>Av. Circunvalación Ramón Cañas 340, Punta Arenas</address>
           <p class="sucursal__horario"><svg class="icono" aria-hidden="true" focusable="false"><use href="assets/iconos.svg#clock"></use></svg> Lunes a sábado: 10:30 a 13:00 y 15:10 a 20:00. Domingo: cerrado</p>
-          <p class="sucursal__acciones"><a class="enlace-icono" href="https://www.google.com/maps/search/?api=1&amp;query=Av.+Circunvalaci%C3%B3n+Ram%C3%B3n+Ca%C3%B1as+340+Punta+Arenas" target="_blank" rel="noopener"><svg class="icono" aria-hidden="true" focusable="false"><use href="assets/iconos.svg#map"></use></svg>Cómo llegar<span class="visualmente-oculto"> a Las Lengas (Google Maps, pestaña nueva)</span></a></p>
-          <div class="mapa"><button type="button" class="mapa__boton" data-mapa="https://www.google.com/maps?q=Av.+Circunvalaci%C3%B3n+Ram%C3%B3n+Ca%C3%B1as+340,+Punta+Arenas,+Chile&amp;output=embed" data-titulo="Mapa de la sucursal Las Lengas, Av. Circunvalación Ramón Cañas 340"><svg class="icono" aria-hidden="true" focusable="false"><use href="assets/iconos.svg#map-pin"></use></svg>Ver mapa<span class="visualmente-oculto"> de Las Lengas</span></button></div>
+          <div class="sucursal__acciones"><a class="boton boton--secundario boton--chico" href="https://www.google.com/maps/search/?api=1&amp;query=Av.+Circunvalaci%C3%B3n+Ram%C3%B3n+Ca%C3%B1as+340+Punta+Arenas" target="_blank" rel="noopener"><svg class="icono" aria-hidden="true" focusable="false"><use href="assets/iconos.svg#map"></use></svg>Cómo llegar<span class="visualmente-oculto"> a Las Lengas (Google Maps, pestaña nueva)</span></a><div class="mapa"><button type="button" class="mapa__boton" data-mapa="https://www.google.com/maps?q=Av.+Circunvalaci%C3%B3n+Ram%C3%B3n+Ca%C3%B1as+340,+Punta+Arenas,+Chile&amp;output=embed" data-titulo="Mapa de la sucursal Las Lengas, Av. Circunvalación Ramón Cañas 340"><svg class="icono" aria-hidden="true" focusable="false"><use href="assets/iconos.svg#map-pin"></use></svg>Ver mapa<span class="visualmente-oculto"> de Las Lengas</span></button></div></div>
         </li>
       </ul>
-    </div>
-  </section>
-
-  <!-- ================= NOSOTROS ================= -->
-  <section class="seccion seccion--patitas" id="nosotros" aria-labelledby="nosotros-titulo">
-    <div class="contenedor nosotros">
-      <div class="nosotros__texto">
-        <p class="antetitulo">Sobre Maskotería Akyra</p>
-        <h2 id="nosotros-titulo" class="seccion__titulo">Un almacén pensado para tu mascota</h2>
-        <p>Somos una tienda de barrio en Punta Arenas, especializada en productos para perros y gatos: alimento, ropa, juguetes y accesorios, elegidos pensando en la calidad y el bienestar de tu compañero.</p>
-        <p>Nos gusta la atención cercana: si tienes dudas sobre qué producto le conviene a tu mascota, escríbenos y te ayudamos a elegir.</p>
-        <a data-whatsapp href="https://wa.me/56986969111" class="boton boton--primario" target="_blank" rel="noopener">Escríbenos por WhatsApp<span class="visualmente-oculto"> (se abre en una pestaña nueva)</span></a>
-      </div>
-      <img class="nosotros__foto" src="assets/img/lugares/hornillas-640.webp" width="640" height="604" alt="Fachada de la sucursal Hornillas de Maskotería Akyra, con su letrero" loading="lazy" decoding="async">
     </div>
   </section>
 
@@ -437,28 +451,6 @@
       <h2 id="llamado-titulo" class="seccion__titulo seccion__titulo--claro">¿No encuentras lo que necesitas?</h2>
       <p>Cuéntanos qué producto buscas y te avisamos si podemos conseguirlo.</p>
       <a href="contactenos.html" class="boton boton--claro">Ir al formulario de contacto</a>
-    </div>
-  </section>
-
-  <!-- ================= RESEÑAS ================= -->
-  <section class="seccion seccion--suave" id="resenas" aria-labelledby="resenas-titulo">
-    <div class="contenedor">
-      <p class="antetitulo">Reseñas</p>
-      <h2 id="resenas-titulo" class="seccion__titulo">Lo que dicen nuestros clientes</h2>
-      <p class="seccion__bajada">Reseñas reales de Google.</p>
-    </div>
-    <div class="cinta" data-cinta>
-      <button type="button" class="boton-icono cinta__pausa" data-nombre="las reseñas en movimiento" aria-pressed="false" aria-label="Pausar las reseñas en movimiento"><svg class="icono" aria-hidden="true" focusable="false"><use href="assets/iconos.svg#pause"></use></svg></button>
-      <div class="cinta__ventana">
-        <ul class="cinta__pista">
-          <li class="resena"><p class="resena__estrellas"><span aria-hidden="true">★★★★★</span><span class="visualmente-oculto">5 de 5 estrellas</span></p><blockquote><p>Buena calidad de alimentos, tanto para gatos como para perros. Buenos precios además. Cuentan con accesorios para mascotas.</p></blockquote><p class="resena__autor">Camilo Cárdenas Hernández</p><p class="resena__meta">Local Guide · Hace 3 años</p></li>
-          <li class="resena"><p class="resena__estrellas"><span aria-hidden="true">★★★★★</span><span class="visualmente-oculto">5 de 5 estrellas</span></p><blockquote><p>Buenos precios y buena atención.</p></blockquote><p class="resena__autor">Ariel Santana</p><p class="resena__meta">Hace 4 meses</p></li>
-          <li class="resena"><p class="resena__estrellas"><span aria-hidden="true">★★★★★</span><span class="visualmente-oculto">5 de 5 estrellas</span></p><blockquote><p>Son muy amables y siempre tienen la comida de mi perrito; tienen muchas variedades de alimento de cachorro y gatos a buen precio.</p></blockquote><p class="resena__autor">María Soledad Campos Muñoz</p><p class="resena__meta">Local Guide · Hace 3 años</p></li>
-          <li class="resena"><p class="resena__estrellas"><span aria-hidden="true">★★★★★</span><span class="visualmente-oculto">5 de 5 estrellas</span></p><blockquote><p>¡Buenos precios! Siempre compro ahí las cositas para mi Chucky 🐈🐈</p></blockquote><p class="resena__autor">Fernanda Hernández</p><p class="resena__meta">Hace un año</p></li>
-          <li class="resena"><p class="resena__estrellas"><span aria-hidden="true">★★★★★</span><span class="visualmente-oculto">5 de 5 estrellas</span></p><blockquote><p>Buena atención y variedad.</p></blockquote><p class="resena__autor">Meg</p><p class="resena__meta">Hace 4 meses</p></li>
-          <li class="resena"><p class="resena__estrellas"><span aria-hidden="true">★★★★★</span><span class="visualmente-oculto">5 de 5 estrellas</span></p><blockquote><p>Excelente mascotería con mucha variedad de productos y una atención espectacular, sin duda volveré a comprar.</p></blockquote><p class="resena__autor">Sebastián Leiva</p><p class="resena__meta">Local Guide · Hace un año</p></li>
-        </ul>
-      </div>
     </div>
   </section>
 

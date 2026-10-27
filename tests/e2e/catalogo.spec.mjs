@@ -120,6 +120,7 @@ test('pestañas de categoría, subcategoría, marca y buscador filtran bien', as
 
   // Buscador (por nombre, marca o código)
   await page.goto('/catalogo.html')
+  await expect(page.locator('article.tarjeta').first()).toBeVisible() // el catálogo ya cargó y escucha el buscador
   await page.locator('#catalogo-buscar').fill('churu')
   await expect(page.getByRole('heading', { level: 1 })).toContainText('churu')
   const nombres = await page.locator('article.tarjeta').evaluateAll(els => els.map(e => e.textContent.toLowerCase()))

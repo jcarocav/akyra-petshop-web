@@ -282,6 +282,8 @@ function iniciar() {
     actualizar()
   }, 300)
   campo.addEventListener('input', buscar)
+  // Si alguien escribió antes de que terminara de cargar el catálogo, se aplica ahora
+  if (campo.value.trim() && campo.value.trim() !== estado.busqueda) buscar()
   $('#catalogo-busqueda').addEventListener('submit', e => {
     e.preventDefault()
     estado.busqueda = campo.value.trim().slice(0, 80)

@@ -127,6 +127,20 @@ function iniciarCintas() {
   }
 }
 
+// ---------- Flechas de las filas deslizables (destacados, reseñas) ----------
+// <button data-desplazar="-1|1" aria-controls="id-de-la-lista">
+function iniciarFlechas() {
+  for (const boton of $$('[data-desplazar]')) {
+    boton.addEventListener('click', () => {
+      const lista = document.getElementById(boton.getAttribute('aria-controls'))
+      if (!lista) return
+      const item = lista.querySelector('.carrusel__item')
+      const paso = item ? item.getBoundingClientRect().width + 16 : 280
+      lista.scrollBy({ left: Number(boton.dataset.desplazar) * paso, behavior: reducirMovimiento() ? 'auto' : 'smooth' })
+    })
+  }
+}
+
 // ---------- Mapas: solo se cargan si la persona los pide ----------
 function iniciarMapas() {
   for (const boton of $$('[data-mapa]')) {
@@ -139,6 +153,7 @@ function iniciarMapas() {
         class: 'mapa__iframe'
       })
       const contenedor = boton.closest('.mapa')
+      contenedor.classList.add('mapa--cargado')
       contenedor.replaceChildren(iframe)
       iframe.focus()
     })
@@ -173,6 +188,7 @@ export function iniciarApp() {
   const { portada } = aplicarTemas()
   iniciarHero(portada)
   iniciarCintas()
+  iniciarFlechas()
   iniciarMapas()
   iniciarPrivacidad()
   const anio = $('#anio-actual')

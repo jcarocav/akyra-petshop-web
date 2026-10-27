@@ -43,15 +43,6 @@ function pintarDestacados() {
   const elegidos = elegirDestacados()
   lista.replaceChildren(...elegidos.map(p => h('li', { class: 'carrusel__item' }, tarjetaProducto(p, { nivelTitulo: 'h3' }))))
   lista.setAttribute('aria-busy', 'false')
-  const anterior = $('#destacados-anterior')
-  const siguiente = $('#destacados-siguiente')
-  const desplazar = dir => {
-    const item = lista.querySelector('.carrusel__item')
-    const paso = item ? item.getBoundingClientRect().width + 16 : 280
-    lista.scrollBy({ left: dir * paso, behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' })
-  }
-  anterior?.addEventListener('click', () => desplazar(-1))
-  siguiente?.addEventListener('click', () => desplazar(1))
 }
 
 function pintarConteos() {
