@@ -1,0 +1,13 @@
+{
+  "_nota": "Fotos de Pexels (licencia Pexels: uso comercial permitido, sin atribución obligatoria; se da crédito igual). Recortadas con rembg (modelo birefnet-general-lite). 'especial' = ajuste manual del recorte.",
+  "fotos": [
+    { "id": "perros", "pexels": 6291570, "titulo": "White with Black Dog Sitting on the Floor", "autor": "Ivan S", "perfil": "https://www.pexels.com/@ivan-s/", "url": "https://www.pexels.com/photo/white-with-black-dog-sitting-on-the-floor-6291570/" },
+    { "id": "gatos", "pexels": 3822875, "titulo": "Silver Tabby Cat on Blue Textile", "autor": "Magda Ehlers", "perfil": "https://www.pexels.com/@magda-ehlers-pexels/", "url": "https://www.pexels.com/photo/silver-tabby-cat-on-blue-textile-3822875/" },
+    { "id": "otras-mascotas", "pexels": 39502340, "titulo": "Adorable Fluffy Bunny on White Background", "autor": "Baarast Project", "perfil": "https://www.pexels.com/@baarast-project-243124132/", "url": "https://www.pexels.com/photo/adorable-fluffy-bunny-on-white-background-39502340/" },
+    { "id": "granel", "pexels": 12928245, "titulo": "Animal Feed in Bowl", "autor": "Barking Royalty", "perfil": "https://www.pexels.com/@barking-royalty-276311748/", "url": "https://www.pexels.com/photo/animal-feed-in-bowl-12928245/" },
+    { "id": "accesorios", "pexels": 5731838, "titulo": "Cute funny Shiba inu with small soccer ball in studio", "autor": "Sam Lion", "perfil": "https://www.pexels.com/@sam-lion/", "url": "https://www.pexels.com/photo/cute-funny-shiba-inu-with-small-soccer-ball-in-studio-5731838/" },
+    { "id": "arena", "pexels": 13705497, "titulo": "White and Orange Cat Walking Out of a Litter Box", "autor": "Nadiye Odabaşı", "perfil": "https://www.pexels.com/@nadiye-odabasi-3668408/", "url": "https://www.pexels.com/photo/white-and-orange-cat-walking-out-of-a-litter-box-13705497/", "especial": "arena" },
+    { "id": "ropa", "pexels": 9649638, "titulo": "White and Brown Shih Tzu Puppy Wearing Ribbon on Head", "autor": "Ricardo Pérez-Saravia", "perfil": "https://www.pexels.com/@ricardo-perez-saravia-111153633/", "url": "https://www.pexels.com/photo/white-and-brown-shih-tzu-puppy-wearing-ribbon-on-head-9649638/" },
+    { "id": "salud-higiene", "pexels": 7083557, "titulo": "Sad Brown and White Short Coated Dog with a Dog Cone", "autor": "mazzy Fritzel", "perfil": "https://www.pexels.com/@mazzy-fritzel-34487039/", "url": "https://www.pexels.com/photo/sad-brown-and-white-short-coated-dog-with-a-dog-cone-7083557/", "especial": "salud" }
+  ]
+}
