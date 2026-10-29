@@ -73,7 +73,7 @@ test('el aviso es gris pequeño con contraste AA y se lee en celular', async ({ 
 })
 
 test('las cards con foto exacta y referencial en la misma fila tienen la misma altura y alineación', async ({ page, isMobile }) => {
-  test.skip(isMobile, 'En celular las cards son horizontales, una por fila')
+  test.skip(isMobile || page.viewportSize().width < 560, 'En celular las cards son horizontales, una por fila')
   await conDatos(page, { productosExtra: [REFERENCIAL, EXACTA], stockExtra: STOCK })
   await page.goto('/catalogo.html?buscar=Plato%20Pl%C3%A1stico%20De%20Prueba')
   const a = page.locator(`article.tarjeta[data-producto="${REFERENCIAL.id}"]`)
