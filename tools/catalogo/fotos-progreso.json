@@ -2228,5 +2228,525 @@
   "grupo": "C",
   "motivo": "sin coincidencia segura por código ni por nombre",
   "fecha": "2026-10-29"
+ },
+ "ACC-LEON-013": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "ACC-GEN-016": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "ACC-TOPK-013": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "ACC-GEN-015": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "ACC-TOPK-011": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "ACC-WOND-016": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "OTR-GEN-007": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "ACC-MOND-120": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "ACC-MOND-121": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "ACC-TOPK-012": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "ACC-MOND-119": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "ACC-TOPK-001": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "ACC-MOND-073": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "ACC-MOND-135": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "ACC-MOND-012": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "ACC-MOND-055": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "ACC-MOND-053": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "ACC-MOND-013": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "ACC-MOND-056": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "ACC-MOND-076": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "ACC-MOND-077": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "ACC-MOND-014": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "ACC-MOND-074": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "ACC-MOND-078": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "ACC-MOND-075": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "OTR-MARP-001": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "OTR-GEN-006": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "ACC-MOND-125": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "ACC-MOND-132": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "ACC-MOND-038": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "ACC-MOND-134": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "ACC-MOND-092": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "ACC-LEON-010": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "ACC-MUND-001": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "ACC-MOND-002": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "ACC-PETE-001": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "ACC-MOND-001": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "ACC-MOND-003": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "ACC-MOND-093": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "ACC-MOND-037": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "ACC-MOND-062": {
+  "grupo": "A",
+  "metodo": "nombre",
+  "confirmaCodigo": false,
+  "titulo": "Mondo Mascota - Cepillo Para Mascotas Tipo Agujas Para",
+  "pagina": "https://knasta.cl/detail/lider/00289370001809/mondo-mascota-cepillo-para-mascotas-tipo-agujas-para-pelaje-y-pulgas-rojo-rojo",
+  "origen": "https://i5.walmartimages.cl/asr/e62007a2-06dc-4935-ab7e-fef316a4c3c9.f72d313125f20dacc529055002df93d8.jpeg?odnHeight=500&odnWidth=500&odnBg=ffffff",
+  "archivo": "assets/productos/ACC-MOND-062.webp",
+  "fecha": "2026-10-29"
+ },
+ "ACC-MOND-024": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "ACC-MOND-007": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "ACC-MOND-036": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "ACC-LEON-011": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "ACC-WOND-006": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "ACC-LEON-015": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "ACC-BUEN-003": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "ACC-BUEN-001": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "ACC-BUEN-016": {
+  "grupo": "A",
+  "metodo": "nombre",
+  "confirmaCodigo": false,
+  "titulo": "COLLAR BUEN AMIGO | Gohan Pet Shop",
+  "pagina": "https://www.gohanpetshop.cl/product/collar-buen-amigo",
+  "origen": "https://dojiw2m9tvv09.cloudfront.net/93434/product/F_collar-buen-amigo-3-8cm9766.jpg?150&time=1766536809",
+  "archivo": "assets/productos/ACC-BUEN-016.webp",
+  "fecha": "2026-10-29"
+ },
+ "ACC-MARB-010": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "ACC-MARB-009": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "ACC-MARB-011": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "ACC-MARB-003": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "ACC-MARB-013": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "ACC-MARB-015": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "ACC-MARB-008": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "ACC-MOND-136": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "ACC-MARB-006": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "ACC-MOND-111": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "ACC-MOND-057": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "ACC-MARB-007": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "ACC-MOND-034": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "ACC-MOND-035": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "ACC-MOND-150": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "ACC-BUEN-006": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "ACC-MOND-112": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "ACC-MOND-095": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "ACC-MOND-096": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "ACC-MOND-097": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "ACC-WOND-014": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "ACC-WOND-013": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "ACC-WOND-015": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "ACC-GEN-002": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "ACC-MOND-008": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "ACC-WOND-004": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "ACC-MOND-032": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "ACC-MUND-002": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "ACC-MUND-003": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "ACC-MOND-098": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "ACC-LEON-016": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "ACC-MOND-099": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "ACC-MOND-115": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "ACC-MOND-100": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "ACC-BUEN-002": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "ACC-MOND-102": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "ACC-MOND-117": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "ACC-MOND-113": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "ACC-MOND-101": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "ACC-MOND-114": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "ACC-MOND-116": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "ACC-MOND-103": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "ACC-MOND-104": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "ACC-MOND-105": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "ACC-WOND-009": {
+  "grupo": "A",
+  "metodo": "nombre",
+  "confirmaCodigo": false,
+  "titulo": "Collar Para Perros Wonder Dog Diseños Varios X-large | Cuotas sin interés",
+  "pagina": "https://articulo.mercadolibre.cl/MLC-1694083588-collar-para-perros-wonder-dog-disenos-varios-x-large-_JM",
+  "origen": "https://http2.mlstatic.com/D_NQ_NP_856423-MLC69558950120_052023-O.webp",
+  "archivo": "assets/productos/ACC-WOND-009.webp",
+  "fecha": "2026-10-29"
+ },
+ "OTR-MARB-003": {
+  "grupo": "A",
+  "metodo": "nombre",
+  "confirmaCodigo": false,
+  "titulo": "MARBEN PETS COLLAR ECO CUERO DOBLE ARGOLLA PARA PERRO | La Casa de las ...",
+  "pagina": "https://www.lacasadelasmascotasonline.cl/product/marben-pets-collar-eco-cuero-doble-argolla-para-perro",
+  "origen": "https://dojiw2m9tvv09.cloudfront.net/42482/product/5687-95206-11359.jpg?129&time=1750536173",
+  "archivo": "assets/productos/OTR-MARB-003.webp",
+  "fecha": "2026-10-29"
+ },
+ "ACC-WOND-008": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "ACC-MOND-033": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "ACC-LEON-019": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "ACC-GEN-022": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
  }
 }
