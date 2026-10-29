@@ -85,23 +85,19 @@
   "fecha": "2026-10-29"
  },
  "PER-CACH-002": {
-  "grupo": "A",
-  "metodo": "nombre",
-  "confirmaCodigo": false,
-  "titulo": "Cachupin Adulto Sabor Carne y Arroz 25 Kg - Pet Palace - Chillán",
-  "pagina": "https://petpalace.cl/producto/cachupin-adulto-sabor-carne-y-arroz-25-kg/",
-  "origen": "https://petpalace.cl/wp-content/uploads/2023/04/cachupin_adulto_carne_arroz_18kg.webp",
-  "archivo": "assets/productos/PER-CACH-002.webp",
+  "grupo": "C",
+  "motivo": "foto descartada en la revisión: el envase de la foto muestra otro tamaño",
+  "descartadas": [
+   "https://petpalace.cl/wp-content/uploads/2023/04/cachupin_adulto_carne_arroz_18kg.webp"
+  ],
   "fecha": "2026-10-29"
  },
  "PER-CHAM-007": {
-  "grupo": "A",
-  "metodo": "nombre",
-  "confirmaCodigo": false,
-  "titulo": "Champion Dog Adulto Senior Sabor Carne y Pollo 18Kg – Latir Animal",
-  "pagina": "https://latiranimal.cl/producto/champion-dog-adulto-senior-sabor-carne-y-pollo-18kg/",
-  "origen": "https://latiranimal.cl/wp-content/uploads/2022/04/32.png",
-  "archivo": "assets/productos/PER-CHAM-007.webp",
+  "grupo": "C",
+  "motivo": "foto descartada en la revisión: el envase de la foto muestra otro tamaño",
+  "descartadas": [
+   "https://latiranimal.cl/wp-content/uploads/2022/04/32.png"
+  ],
   "fecha": "2026-10-29"
  },
  "PER-DOGC-004": {
@@ -135,13 +131,11 @@
   "fecha": "2026-10-29"
  },
  "PER-FITF-012": {
-  "grupo": "A",
-  "metodo": "código + nombre",
-  "confirmaCodigo": false,
-  "titulo": "Fit Formula Cachorro 20 kg: La Mejor Alimentación para Tu Perro",
-  "pagina": "https://gatosforever.com/fit-formula-cachorro-20-kg-la-mejor-alimentacion-para-tu-perro/",
-  "origen": "https://gatosforever.com/wp-content/uploads/2025/blog/_Fit-Formula-Cachorro-20-kg_-La-Mejor-Alimentación-para-Tu-Perro__collage2_horizontal_66.webp",
-  "archivo": "assets/productos/PER-FITF-012.webp",
+  "grupo": "C",
+  "motivo": "foto descartada en la revisión: es un banner, un aviso o el reverso del envase, no el producto",
+  "descartadas": [
+   "https://gatosforever.com/wp-content/uploads/2025/blog/_Fit-Formula-Cachorro-20-kg_-La-Mejor-Alimentación-para-Tu-Perro__collage2_horizontal_66.webp"
+  ],
   "fecha": "2026-10-29"
  },
  "PER-FITF-014": {
@@ -190,13 +184,11 @@
   "fecha": "2026-10-29"
  },
  "PER-PEDI-013": {
-  "grupo": "A",
-  "metodo": "código de barras",
-  "confirmaCodigo": false,
-  "titulo": "PEDIGREE CACHORRO 21KG",
-  "pagina": "https://www.befoods.cl/products/pedigree-cachorro",
-  "origen": "https://www.befoods.cl/cdn/shop/files/7797453000642_4Platedfood_1024x.jpg?v=1753707195",
-  "archivo": "assets/productos/PER-PEDI-013.webp",
+  "grupo": "C",
+  "motivo": "foto descartada en la revisión: es un banner, un aviso o el reverso del envase, no el producto",
+  "descartadas": [
+   "https://www.befoods.cl/cdn/shop/files/7797453000642_4Platedfood_1024x.jpg?v=1753707195"
+  ],
   "fecha": "2026-10-29"
  },
  "PER-PEDI-011": {
@@ -500,13 +492,11 @@
   "fecha": "2026-10-29"
  },
  "PER-ROYA-002": {
-  "grupo": "A",
-  "metodo": "código de barras",
-  "confirmaCodigo": false,
-  "titulo": "Lata Gastro intestinal Royal Canin High Energy Perro 385 g – Plaza ...",
-  "pagina": "https://animall.com.mx/products/lata-royal-canin-gastrointestinal-vet-high-energy-385-gr",
-  "origen": "https://animall.com.mx/cdn/shop/files/gastro_intestinal_royal_canin.jpg?v=1753278272&width=1946",
-  "archivo": "assets/productos/PER-ROYA-002.webp",
+  "grupo": "C",
+  "motivo": "foto descartada en la revisión: es un banner, un aviso o el reverso del envase, no el producto",
+  "descartadas": [
+   "https://animall.com.mx/cdn/shop/files/gastro_intestinal_royal_canin.jpg?v=1753278272&width=1946"
+  ],
   "fecha": "2026-10-29"
  },
  "PER-PEDI-008": {
@@ -800,13 +790,11 @@
   "fecha": "2026-10-29"
  },
  "PER-PEDI-005": {
-  "grupo": "A",
-  "metodo": "código de barras",
-  "confirmaCodigo": false,
-  "titulo": "Pedigree Pouch Adulto Razas Pequeñas Pollo - Allendes Hnos.",
-  "pagina": "https://www.allendeshnos.cl/producto/pedigree-pouch-adulto-razas-pequenas-pollo/",
-  "origen": "https://www.allendeshnos.cl/wp-content/uploads/2023/06/7797453000482-2-600x600.jpg",
-  "archivo": "assets/productos/PER-PEDI-005.webp",
+  "grupo": "C",
+  "motivo": "foto descartada en la revisión: es un banner, un aviso o el reverso del envase, no el producto",
+  "descartadas": [
+   "https://www.allendeshnos.cl/wp-content/uploads/2023/06/7797453000482-2-600x600.jpg"
+  ],
   "fecha": "2026-10-29"
  },
  "PER-PEDI-007": {
@@ -905,13 +893,11 @@
   "fecha": "2026-10-29"
  },
  "GAT-BRAV-009": {
-  "grupo": "A",
-  "metodo": "nombre",
-  "confirmaCodigo": false,
-  "titulo": "Bravery Gato Adulto Herring 7 kg.",
-  "pagina": "https://braloy.cl/mascotas/3077-bravery-gato-adulto-herring-7-kg.html",
-  "origen": "https://braloy103.akamaized.net/9657-thickbox_default/bravery-gato-adulto-herring-7-kg.jpg",
-  "archivo": "assets/productos/GAT-BRAV-009.webp",
+  "grupo": "C",
+  "motivo": "foto descartada en la revisión: muy chica o de mala calidad",
+  "descartadas": [
+   "https://braloy103.akamaized.net/9657-thickbox_default/bravery-gato-adulto-herring-7-kg.jpg"
+  ],
   "fecha": "2026-10-29"
  },
  "GAT-BIOF-005": {
@@ -920,13 +906,11 @@
   "fecha": "2026-10-29"
  },
  "GAT-BRAV-005": {
-  "grupo": "A",
-  "metodo": "código de barras",
-  "confirmaCodigo": true,
-  "titulo": "Bravery Gato Adulto Salmón 2KG",
-  "pagina": "https://felican.cl/perros/393-bravery-gato-adulto-salmon-2kg-8436538947647.html",
-  "origen": "https://felican.cl/442-large_default/bravery-gato-adulto-salmon-2kg.jpg",
-  "archivo": "assets/productos/GAT-BRAV-005.webp",
+  "grupo": "C",
+  "motivo": "foto descartada en la revisión: otra variante o sabor que el producto",
+  "descartadas": [
+   "https://felican.cl/442-large_default/bravery-gato-adulto-salmon-2kg.jpg"
+  ],
   "fecha": "2026-10-29"
  },
  "GAT-BRAV-007": {
@@ -1135,13 +1119,11 @@
   "fecha": "2026-10-29"
  },
  "GAT-CATS-007": {
-  "grupo": "A",
-  "metodo": "nombre",
-  "confirmaCodigo": false,
-  "titulo": "Cats Snack Galletas Atún con Hierba Gatera",
-  "pagina": "https://felinus.cl/snack-y-golosinas/cats-snacks-atun-con-hierba-gatera.html",
-  "origen": "https://felinus.cl/4313-large_default/cats-snacks-atun-con-hierba-gatera.jpg",
-  "archivo": "assets/productos/GAT-CATS-007.webp",
+  "grupo": "C",
+  "motivo": "foto descartada en la revisión: no se puede confirmar la variante (color/sabor ambiguo)",
+  "descartadas": [
+   "https://felinus.cl/4313-large_default/cats-snacks-atun-con-hierba-gatera.jpg"
+  ],
   "fecha": "2026-10-29"
  },
  "GAT-CATS-010": {
@@ -1160,23 +1142,19 @@
   "fecha": "2026-10-29"
  },
  "GAT-CATS-008": {
-  "grupo": "A",
-  "metodo": "nombre",
-  "confirmaCodigo": false,
-  "titulo": "Cats Snack Galletas sabor camarón con hierba gatera 80g – Tutto Pets ...",
-  "pagina": "https://tuttopets.cl/products/cats-snack-galletas-sabor-camaron-con-hierba-gatera-80g",
-  "origen": "https://tuttopets.cl/cdn/shop/files/b3c0976bc50be361fea48f691f96b145.png?v=1761682625&width=1445",
-  "archivo": "assets/productos/GAT-CATS-008.webp",
+  "grupo": "C",
+  "motivo": "foto descartada en la revisión: no se puede confirmar la variante (color/sabor ambiguo)",
+  "descartadas": [
+   "https://tuttopets.cl/cdn/shop/files/b3c0976bc50be361fea48f691f96b145.png?v=1761682625&width=1445"
+  ],
   "fecha": "2026-10-29"
  },
  "GAT-CATS-005": {
-  "grupo": "A",
-  "metodo": "código de barras",
-  "confirmaCodigo": false,
-  "titulo": "CATS SNACK GALLETAS SABOR CAMARON CON HIERBA GATERA 80 GR",
-  "pagina": "https://www.pettime.cl/cats-snack-galletas-sabor-camaron-con-hierba-gatera-80-gr",
-  "origen": "https://cdnx.jumpseller.com/tienda-pet-time/image/67413110/resize/306/306?1757373024",
-  "archivo": "assets/productos/GAT-CATS-005.webp",
+  "grupo": "C",
+  "motivo": "foto descartada en la revisión: no se puede confirmar la variante (color/sabor ambiguo)",
+  "descartadas": [
+   "https://cdnx.jumpseller.com/tienda-pet-time/image/67413110/resize/306/306?1757373024"
+  ],
   "fecha": "2026-10-29"
  },
  "GAT-CATS-004": {
@@ -1200,13 +1178,11 @@
   "fecha": "2026-10-29"
  },
  "GAT-CATS-006": {
-  "grupo": "A",
-  "metodo": "nombre",
-  "confirmaCodigo": false,
-  "titulo": "Cats Snack Galletas Conejo con Hierba Gatera | Bodega de la Mascota",
-  "pagina": "https://bodegadelamascota.cl/products/cats-snack-galletas-sabor-conejo-con-hierba-gatera",
-  "origen": "https://bodegadelamascota.cl/cdn/shop/files/Cats_Snack_Galletas_Sabor_Conejo_con_Hierba_Gatera_2_700x700.webp?v=1747884691",
-  "archivo": "assets/productos/GAT-CATS-006.webp",
+  "grupo": "C",
+  "motivo": "foto descartada en la revisión: no se puede confirmar la variante (color/sabor ambiguo)",
+  "descartadas": [
+   "https://bodegadelamascota.cl/cdn/shop/files/Cats_Snack_Galletas_Sabor_Conejo_con_Hierba_Gatera_2_700x700.webp?v=1747884691"
+  ],
   "fecha": "2026-10-29"
  },
  "GAT-AGIL-006": {
@@ -1305,13 +1281,11 @@
   "fecha": "2026-10-29"
  },
  "GAT-FANC-003": {
-  "grupo": "A",
-  "metodo": "nombre",
-  "confirmaCodigo": false,
-  "titulo": "purina fancy feast lata petit filetes de atún 85 gr – NovaPet",
-  "pagina": "https://www.novapet.cl/products/purina-fancy-feast-lata-petit-filetes-de-atun-85-gr",
-  "origen": "https://www.novapet.cl/cdn/shop/files/fancyfeastpetitfiletesatun61902793.jpg?v=1745519564&width=1000",
-  "archivo": "assets/productos/GAT-FANC-003.webp",
+  "grupo": "C",
+  "motivo": "foto descartada en la revisión: no se puede confirmar la variante (color/sabor ambiguo)",
+  "descartadas": [
+   "https://www.novapet.cl/cdn/shop/files/fancyfeastpetitfiletesatun61902793.jpg?v=1745519564&width=1000"
+  ],
   "fecha": "2026-10-29"
  },
  "GAT-FANC-012": {
@@ -1355,13 +1329,11 @@
   "fecha": "2026-10-29"
  },
  "GAT-FANC-017": {
-  "grupo": "A",
-  "metodo": "nombre",
-  "confirmaCodigo": false,
-  "titulo": "Fancy Feast, lata de comida de gatos terrine con pollo, Chunky chicken ...",
-  "pagina": "https://www.faunimals.com/product/fancy-feast-lata-de-comida-de-gatos-terrine-con-pollo-chunky-chicken-feast-85g",
-  "origen": "https://dojiw2m9tvv09.cloudfront.net/23385/product/050000426942default.jpg?171&time=1703783605",
-  "archivo": "assets/productos/GAT-FANC-017.webp",
+  "grupo": "C",
+  "motivo": "foto descartada en la revisión: otra variante o sabor que el producto",
+  "descartadas": [
+   "https://dojiw2m9tvv09.cloudfront.net/23385/product/050000426942default.jpg?171&time=1703783605"
+  ],
   "fecha": "2026-10-29"
  },
  "GAT-FELI-007": {
@@ -1395,13 +1367,11 @@
   "fecha": "2026-10-29"
  },
  "GAT-FITG-002": {
-  "grupo": "A",
-  "metodo": "nombre",
-  "confirmaCodigo": false,
-  "titulo": "Fit Lata Gourmet Gatos con Atún y Camarón 80 grs - Petcity",
-  "pagina": "https://petcity.cl/tienda/fit-lata-gourmet-gatos-con-atun-y-camaron-80-grs/",
-  "origen": "https://petcity.cl/wp-content/uploads/2024/01/fit-formula-gourmet-gato-atun-y-vegetales.jpg",
-  "archivo": "assets/productos/GAT-FITG-002.webp",
+  "grupo": "C",
+  "motivo": "foto descartada en la revisión: otra variante o sabor que el producto",
+  "descartadas": [
+   "https://petcity.cl/wp-content/uploads/2024/01/fit-formula-gourmet-gato-atun-y-vegetales.jpg"
+  ],
   "fecha": "2026-10-29"
  },
  "GAT-FITG-001": {
@@ -1425,13 +1395,11 @@
   "fecha": "2026-10-29"
  },
  "GAT-WHIS-007": {
-  "grupo": "A",
-  "metodo": "código de barras",
-  "confirmaCodigo": true,
-  "titulo": "Ração Úmida Whiskas Lata Patê De Carne Para Gatos Adultos - 290G ...",
-  "pagina": "https://www.americanpet.com.br/7896029079447-racao-umida-whiskas-lata-pate-de-carne-para-gatos-adultos-290g/p",
-  "origen": "https://amepettatix.vtexassets.com/arquivos/ids/185558-800-auto?v=638496811105470000&width=800&height=auto&aspect=true",
-  "archivo": "assets/productos/GAT-WHIS-007.webp",
+  "grupo": "C",
+  "motivo": "foto descartada en la revisión: es un banner, un aviso o el reverso del envase, no el producto",
+  "descartadas": [
+   "https://amepettatix.vtexassets.com/arquivos/ids/185558-800-auto?v=638496811105470000&width=800&height=auto&aspect=true"
+  ],
   "fecha": "2026-10-29"
  },
  "GAT-CHUR-033": {
@@ -1500,13 +1468,11 @@
   "fecha": "2026-10-29"
  },
  "GAT-CHUR-025": {
-  "grupo": "A",
-  "metodo": "código + nombre",
-  "confirmaCodigo": false,
-  "titulo": "Churu for Senior Chicken Recipe - INABA Chile",
-  "pagina": "https://inabalatam.com/cl/producto/churu-for-senior-chicken-recipe/",
-  "origen": "https://inabalatam.com/cl/wp-content/uploads/2026/04/BACK-USA695.png",
-  "archivo": "assets/productos/GAT-CHUR-025.webp",
+  "grupo": "C",
+  "motivo": "foto descartada en la revisión: es un banner, un aviso o el reverso del envase, no el producto",
+  "descartadas": [
+   "https://inabalatam.com/cl/wp-content/uploads/2026/04/BACK-USA695.png"
+  ],
   "fecha": "2026-10-29"
  },
  "GAT-FELI-010": {
@@ -1650,13 +1616,11 @@
   "fecha": "2026-10-29"
  },
  "GAT-BEST-002": {
-  "grupo": "A",
-  "metodo": "código de barras",
-  "confirmaCodigo": true,
-  "titulo": "BESTPET ADULT CATS-8681465602514 სრულყოფილი (დაბალანსებული) სველი ...",
-  "pagina": "https://invet.ge/ka/products/5327",
-  "origen": "https://invet.ge/files/uploads/1.jpg",
-  "archivo": "assets/productos/GAT-BEST-002.webp",
+  "grupo": "C",
+  "motivo": "foto descartada en la revisión: otra variante o sabor que el producto",
+  "descartadas": [
+   "https://invet.ge/files/uploads/1.jpg"
+  ],
   "fecha": "2026-10-29"
  },
  "GAT-CHAM-012": {
@@ -1740,13 +1704,11 @@
   "fecha": "2026-10-29"
  },
  "GAT-FANC-011": {
-  "grupo": "A",
-  "metodo": "nombre",
-  "confirmaCodigo": false,
-  "titulo": "Purina Fancy Feast alimento húmedo en sobre Casserole Atun y Salmón/ 12 ...",
-  "pagina": "https://www.amazon.com.mx/FANCY-FEAST-Casserole-Salmon-Piezas/dp/B0971DSHZH",
-  "origen": "https://m.media-amazon.com/images/I/61ceYh6m+rL._AC_.jpg",
-  "archivo": "assets/productos/GAT-FANC-011.webp",
+  "grupo": "C",
+  "motivo": "foto descartada en la revisión: otra variante o sabor que el producto",
+  "descartadas": [
+   "https://m.media-amazon.com/images/I/61ceYh6m+rL._AC_.jpg"
+  ],
   "fecha": "2026-10-29"
  },
  "GAT-FANC-008": {
@@ -1865,13 +1827,11 @@
   "fecha": "2026-10-29"
  },
  "GAT-WHIS-006": {
-  "grupo": "A",
-  "metodo": "código de barras",
-  "confirmaCodigo": true,
-  "titulo": "Alimento Whiskas Adulto 1+ Sabor Pollo En Salsa X 85G— Farmacorp",
-  "pagina": "https://farmacorp.com/products/7797453000550",
-  "origen": "https://farmacorp.com/cdn/shop/files/7797453000550-des_1400x1400.jpg?v=1714442213",
-  "archivo": "assets/productos/GAT-WHIS-006.webp",
+  "grupo": "C",
+  "motivo": "foto descartada en la revisión: es un banner, un aviso o el reverso del envase, no el producto",
+  "descartadas": [
+   "https://farmacorp.com/cdn/shop/files/7797453000550-des_1400x1400.jpg?v=1714442213"
+  ],
   "fecha": "2026-10-29"
  },
  "GAT-WHIS-001": {
@@ -1940,13 +1900,11 @@
   "fecha": "2026-10-29"
  },
  "OTR-CANA-001": {
-  "grupo": "A",
-  "metodo": "código de barras",
-  "confirmaCodigo": true,
-  "titulo": "VIRUTA VEGETAL CANAIMA",
-  "pagina": "https://tiendapetzoo.cl/inicio/363-viruta-vegetal-canaima-7804645360023.html",
-  "origen": "https://tiendapetzoo.cl/363-large_default/viruta-vegetal-canaima.jpg",
-  "archivo": "assets/productos/OTR-CANA-001.webp",
+  "grupo": "C",
+  "motivo": "foto descartada en la revisión: muy chica o de mala calidad",
+  "descartadas": [
+   "https://tiendapetzoo.cl/363-large_default/viruta-vegetal-canaima.jpg"
+  ],
   "fecha": "2026-10-29"
  },
  "GRA-ALFA-001": {
@@ -2170,13 +2128,11 @@
   "fecha": "2026-10-29"
  },
  "ACC-LITT-001": {
-  "grupo": "A",
-  "metodo": "nombre",
-  "confirmaCodigo": false,
-  "titulo": "LitterLocker LitterBox Gris-Blanco, Arenero Moderno para Gatos con Pala ...",
-  "pagina": "https://www.51kaixinwang.com/producto/litterlocker-litterbox-gris-blanco-arenero-moderno-para-gatos-con-pala-incluida/",
-  "origen": "https://guauquebarato.cl/wp-content/uploads/2023/04/litter-box.png",
-  "archivo": "assets/productos/ACC-LITT-001.webp",
+  "grupo": "C",
+  "motivo": "foto descartada en la revisión: otra variante o sabor que el producto",
+  "descartadas": [
+   "https://guauquebarato.cl/wp-content/uploads/2023/04/litter-box.png"
+  ],
   "fecha": "2026-10-29"
  },
  "ACC-WOND-007": {

@@ -28,6 +28,7 @@ import {
 } from './catalogo/reglas.mjs'
 import { normalizarUnidades } from '../js/stock.mjs'
 import { escribirCatalogo, escribirStock } from './catalogo/escritura.mjs'
+import { tipoDeImagen } from './catalogo/fotos.mjs'
 
 const RAIZ = resolve(dirname(fileURLToPath(import.meta.url)), '..')
 const HOJA_RESUMEN = 'Resumen'
@@ -287,7 +288,7 @@ function armarProducto(f, skuPorCodigo) {
   const candidatos = [f.sku]
   if (f.granel && f.codigoSaco && skuPorCodigo.get(f.codigoSaco)) candidatos.push(skuPorCodigo.get(f.codigoSaco))
   const conFoto = candidatos.find(s => existsSync(join(RAIZ, 'assets', 'productos', `${s}.webp`)))
-  if (conFoto) p.imagen = `assets/productos/${conFoto}.webp`
+  if (conFoto) { p.imagen = `assets/productos/${conFoto}.webp`; p.imagenTipo = tipoDeImagen(conFoto) }
   return p
 }
 

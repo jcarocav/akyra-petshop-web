@@ -10,7 +10,7 @@
 // Guarda el avance en tools/catalogo/fotos-progreso.json (si se corta, al retomar no repite lo ya buscado)
 // y la foto optimizada en assets/productos/<SKU>.webp.
 //
-// Uso: node tools/imagenes/buscar-web.mjs [--max 80] [--sku SKU] [--pausa 1500]
+// Uso: node tools/imagenes/buscar-web.mjs [--max 80] [--sku SKU] [--pausa 1500] [--paralelo 4]
 // ============================================================
 import sharp from 'sharp'
 import { existsSync, readFileSync, writeFileSync } from 'node:fs'
@@ -28,6 +28,7 @@ const arg = (n, d) => (process.argv.includes(n) ? process.argv[process.argv.inde
 const MAX = Number(arg('--max', 80))
 const PAUSA = Number(arg('--pausa', 1500))
 const SOLO = arg('--sku', null)
+const PARALELO = Number(arg('--paralelo', 4))
 const esperar = ms => new Promise(r => setTimeout(r, ms))
 
 // Bancos de imágenes y redes: casi siempre con marca de agua o de otro producto
@@ -57,7 +58,7 @@ export async function buscarBing(consulta) {
 }
 
 async function bajar(url) {
-  const r = await fetch(url, { headers: { 'User-Agent': UA, Accept: 'image/avif,image/webp,image/*,*/*;q=0.8' }, signal: AbortSignal.timeout(25000) })
+  const r = await fetch(url, { headers: { 'User-Agent': UA, Accept: 'image/avif,image/webp,image/*,*/*;q=0.8' }, signal: AbortSignal.timeout(10000) })
   if (!r.ok) throw new Error(`HTTP ${r.status}`)
   if (!(r.headers.get('content-type') || '').startsWith('image/')) throw new Error('no es imagen')
   return Buffer.from(await r.arrayBuffer())
@@ -125,24 +126,31 @@ async function main() {
   const pendientes = armarItems().filter(i => (SOLO ? i.sku === SOLO : !progreso[i.sku])).slice(0, MAX)
   console.log(`Buscando fotos para ${pendientes.length} productos...`)
   let a = 0
-  for (const [n, item] of pendientes.entries()) {
-    let r = null
-    try { r = await buscarItem(item) } catch (e) { console.error(e.message); guardar(); process.exit(2) }
-    const hoy = new Date().toISOString().slice(0, 10)
-    if (r) {
-      const archivo = `assets/productos/${item.sku}.webp`
-      try {
-        await optimizar(r.buf, join(RAIZ, archivo))
-        progreso[item.sku] = { grupo: 'A', metodo: r.via, confirmaCodigo: r.confirmaCodigo, titulo: r.titulo, pagina: r.pagina, origen: r.imagen, archivo, fecha: hoy }
-        a++
-      } catch (e) {
-        progreso[item.sku] = { grupo: 'C', motivo: `la mejor foto no se pudo procesar (${e.message})`, fecha: hoy }
+  let hechos = 0
+  let siguiente = 0
+  const trabajador = async () => {
+    while (siguiente < pendientes.length) {
+      const item = pendientes[siguiente++]
+      let r = null
+      try { r = await buscarItem(item) } catch (e) { console.error(e.message); guardar(); process.exit(2) }
+      const hoy = new Date().toISOString().slice(0, 10)
+      if (r) {
+        const archivo = `assets/productos/${item.sku}.webp`
+        try {
+          await optimizar(r.buf, join(RAIZ, archivo))
+          progreso[item.sku] = { grupo: 'A', metodo: r.via, confirmaCodigo: r.confirmaCodigo, titulo: r.titulo, pagina: r.pagina, origen: r.imagen, archivo, fecha: hoy }
+          a++
+        } catch (e) {
+          progreso[item.sku] = { grupo: 'C', motivo: `la mejor foto no se pudo procesar (${e.message})`, fecha: hoy }
+        }
+      } else {
+        progreso[item.sku] = { grupo: 'C', motivo: 'sin coincidencia segura por código ni por nombre', fecha: hoy }
       }
-    } else {
-      progreso[item.sku] = { grupo: 'C', motivo: 'sin coincidencia segura por código ni por nombre', fecha: hoy }
+      hechos++
+      if (hechos % 10 === 0 || hechos === pendientes.length) { guardar(); console.log(`  ${hechos}/${pendientes.length} · exactas: ${a}`) }
     }
-    if ((n + 1) % 10 === 0 || n === pendientes.length - 1) { guardar(); console.log(`  ${n + 1}/${pendientes.length} · exactas: ${a}`) }
   }
+  await Promise.all(Array.from({ length: PARALELO }, trabajador))
   guardar()
   console.log(`Listo. Exactas encontradas: ${a} de ${pendientes.length}.`)
 }

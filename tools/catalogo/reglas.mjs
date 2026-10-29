@@ -372,7 +372,7 @@ export function nombreIncluyeMarca(nombre, marca) {
 // productos.json: solo estos campos (nunca costo, proveedor ni unidades por sucursal)
 export const CAMPOS_PUBLICOS = new Set([
   'id', 'sku', 'nombre', 'marca', 'categoria', 'subcategoria', 'edad', 'precio', 'granel',
-  'imagen', 'tallas', 'talla', 'nuevo'
+  'imagen', 'imagenTipo', 'tallas', 'talla', 'nuevo'
 ])
 
 // ---------- SKU nuevos (convención de la planilla: CATEGORIA-MARCA-NNN) ----------
