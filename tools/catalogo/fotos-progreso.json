@@ -93,5 +93,740 @@
   "origen": "https://petpalace.cl/wp-content/uploads/2023/04/cachupin_adulto_carne_arroz_18kg.webp",
   "archivo": "assets/productos/PER-CACH-002.webp",
   "fecha": "2026-10-29"
+ },
+ "PER-CHAM-007": {
+  "grupo": "A",
+  "metodo": "nombre",
+  "confirmaCodigo": false,
+  "titulo": "Champion Dog Adulto Senior Sabor Carne y Pollo 18Kg – Latir Animal",
+  "pagina": "https://latiranimal.cl/producto/champion-dog-adulto-senior-sabor-carne-y-pollo-18kg/",
+  "origen": "https://latiranimal.cl/wp-content/uploads/2022/04/32.png",
+  "archivo": "assets/productos/PER-CHAM-007.webp",
+  "fecha": "2026-10-29"
+ },
+ "PER-DOGC-004": {
+  "grupo": "A",
+  "metodo": "nombre",
+  "confirmaCodigo": false,
+  "titulo": "Dog Chow Adulto Razas Mini Y Pequeños Carne Y Pollo 19,5 Kg | Cuotas ...",
+  "pagina": "https://www.mercadolibre.cl/dog-chow-adulto-razas-mini-y-pequenos-carne-y-pollo-195-kg/p/MLC64965906",
+  "origen": "https://http2.mlstatic.com/D_NQ_NP_682992-MLA105299180698_012026-O.webp",
+  "archivo": "assets/productos/PER-DOGC-004.webp",
+  "fecha": "2026-10-29"
+ },
+ "PER-DOGC-003": {
+  "grupo": "A",
+  "metodo": "nombre",
+  "confirmaCodigo": false,
+  "titulo": "Dog Chow Cachorro Raza Mini y Pequeña 19,5 Kg",
+  "pagina": "https://lamascota.cl/dog-chow-cachorro-raza-mini-y-pequena-195-kg",
+  "origen": "https://cdnx.jumpseller.com/la-mascota/image/66206379/resize/719/719?1754422356",
+  "archivo": "assets/productos/PER-DOGC-003.webp",
+  "fecha": "2026-10-29"
+ },
+ "PER-FITF-006": {
+  "grupo": "A",
+  "metodo": "código de barras",
+  "confirmaCodigo": false,
+  "titulo": "Fit Formula Perro Adulto Raza Pequeña 10 Kg – Madriguera Pet",
+  "pagina": "https://madriguerapet.cl/producto/fit-formula-perro-adulto-raza-pequea-10-kg/",
+  "origen": "https://madriguerapet.cl/wp-content/uploads/2024/07/7804658500003.jpg",
+  "archivo": "assets/productos/PER-FITF-006.webp",
+  "fecha": "2026-10-29"
+ },
+ "PER-FITF-012": {
+  "grupo": "A",
+  "metodo": "código + nombre",
+  "confirmaCodigo": false,
+  "titulo": "Fit Formula Cachorro 20 kg: La Mejor Alimentación para Tu Perro",
+  "pagina": "https://gatosforever.com/fit-formula-cachorro-20-kg-la-mejor-alimentacion-para-tu-perro/",
+  "origen": "https://gatosforever.com/wp-content/uploads/2025/blog/_Fit-Formula-Cachorro-20-kg_-La-Mejor-Alimentación-para-Tu-Perro__collage2_horizontal_66.webp",
+  "archivo": "assets/productos/PER-FITF-012.webp",
+  "fecha": "2026-10-29"
+ },
+ "PER-FITF-014": {
+  "grupo": "A",
+  "metodo": "nombre",
+  "confirmaCodigo": false,
+  "titulo": "Fit formula senior razas pequeñas 10 KG alimento para perro",
+  "pagina": "https://www.superzoo.cl/perro/alimentos/alimentos-seco/fit-formula-senior-razas-pequenas-10-kg-alimento-para-perro/1689.html",
+  "origen": "https://www.superzoo.cl/on/demandware.static/-/Sites-SuperZoo-master-catalog/default/dw35c2c9a8/images/1689.jpg",
+  "archivo": "assets/productos/PER-FITF-014.webp",
+  "fecha": "2026-10-29"
+ },
+ "PER-FORA-001": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "PER-MAST-013": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "PER-MAST-008": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "PER-NOMA-003": {
+  "grupo": "A",
+  "metodo": "código de barras",
+  "confirmaCodigo": false,
+  "titulo": "Nomade alimento perro cachorro todas las razas 10kg – Imperio Patitas",
+  "pagina": "https://imperiopatitas.cl/producto/nomade-cachorro-todas-las-razas-10-kg/",
+  "origen": "https://imperiopatitas.cl/wp-content/uploads/2025/04/nomade-cachorro.jpg",
+  "archivo": "assets/productos/PER-NOMA-003.webp",
+  "fecha": "2026-10-29"
+ },
+ "PER-NOMA-004": {
+  "grupo": "A",
+  "metodo": "código de barras",
+  "confirmaCodigo": false,
+  "titulo": "Nomade Perro Senior Raza Mediana y Grande 15 Kg – PawsPet",
+  "pagina": "https://www.pawspet.cl/products/nomade-perro-senior-raza-mediana-y-grande-15-kg",
+  "origen": "https://www.pawspet.cl/cdn/shop/files/7805644001191.avif?v=1778625286&width=1160",
+  "archivo": "assets/productos/PER-NOMA-004.webp",
+  "fecha": "2026-10-29"
+ },
+ "PER-PEDI-013": {
+  "grupo": "A",
+  "metodo": "código de barras",
+  "confirmaCodigo": false,
+  "titulo": "PEDIGREE CACHORRO 21KG",
+  "pagina": "https://www.befoods.cl/products/pedigree-cachorro",
+  "origen": "https://www.befoods.cl/cdn/shop/files/7797453000642_4Platedfood_1024x.jpg?v=1753707195",
+  "archivo": "assets/productos/PER-PEDI-013.webp",
+  "fecha": "2026-10-29"
+ },
+ "PER-PEDI-011": {
+  "grupo": "A",
+  "metodo": "nombre",
+  "confirmaCodigo": false,
+  "titulo": "Pedigree alimento seco para perro adulto sabor carne pollo cereal 21 KG",
+  "pagina": "https://www.superzoo.cl/perro/alimentos/alimentos-seco/pedigree-alimento-seco-para-perro-adulto-sabor-carne-pollo-cereal-21-kg/15363.html",
+  "origen": "https://www.superzoo.cl/on/demandware.static/-/Sites-SuperZoo-master-catalog/default/dw913cda82/images/sku15363.jpg",
+  "archivo": "assets/productos/PER-PEDI-011.webp",
+  "fecha": "2026-10-29"
+ },
+ "PER-PEDI-012": {
+  "grupo": "A",
+  "metodo": "nombre",
+  "confirmaCodigo": false,
+  "titulo": "Pedigree Perro Adulto Raza Pequeña – 21 Kg – VLM",
+  "pagina": "https://vlm.com.uy/producto/pedigree-perro-adulto-raza-pequena-21-kg/",
+  "origen": "https://vlm.com.uy/wp-content/uploads/2020/08/18.21-Pedigree-1-7-Razas-Pequenas-CV-21kg.png",
+  "archivo": "assets/productos/PER-PEDI-012.webp",
+  "fecha": "2026-10-29"
+ },
+ "PER-PROP-001": {
+  "grupo": "A",
+  "metodo": "nombre",
+  "confirmaCodigo": false,
+  "titulo": "Pro Plan Optihealth Perro Adulto Raza Mediana Pollo 12kg L&h | Cuotas ...",
+  "pagina": "https://www.mercadolibre.cl/pro-plan-optihealth-perro-adulto-raza-mediana-pollo-12kg-lh/up/MLCU2893535897",
+  "origen": "https://http2.mlstatic.com/D_NQ_NP_904455-MLC83154797543_032025-O.webp",
+  "archivo": "assets/productos/PER-PROP-001.webp",
+  "fecha": "2026-10-29"
+ },
+ "PER-LEON-001": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "PER-SUPE-002": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "PER-LEON-004": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "PER-SUPE-001": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "PER-LEON-006": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "PER-ANIM-002": {
+  "grupo": "A",
+  "metodo": "nombre",
+  "confirmaCodigo": false,
+  "titulo": "Animal Planet Adult Dog Medium y Large 20 kg - Pet Phone - Tienda de ...",
+  "pagina": "https://petphone.cl/producto/animal-planet-adult-dog-medium-y-large-20-kg/",
+  "origen": "https://petphone.cl/wp-content/uploads/2021/10/0003_MCKUP-PERRO-20k.jpg",
+  "archivo": "assets/productos/PER-ANIM-002.webp",
+  "fecha": "2026-10-29"
+ },
+ "PER-LEON-009": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "PER-LEON-010": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "PER-LEON-008": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "PER-LEON-007": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "PER-LEON-002": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "PER-LEON-005": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "PER-LEON-011": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "PER-MOND-023": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "PER-RANC-001": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "PER-MARB-011": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "PER-MOND-024": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "PER-MARB-012": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "PER-TOPK-002": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "PER-MOND-026": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "PER-MAST-010": {
+  "grupo": "A",
+  "metodo": "nombre",
+  "confirmaCodigo": false,
+  "titulo": "Master Dog Delisnack Multivitamínico 300 G Snack Funcional Para Perros ...",
+  "pagina": "https://petdelivery.shop/perros/snacks-perro/master-dog-delisnack-multivitaminico-300g-snack-perros/",
+  "origen": "https://petdelivery.shop/wp-content/uploads/2026/03/Master-dog-delisnack-multivitaminico-300-g.jpg",
+  "archivo": "assets/productos/PER-MAST-010.webp",
+  "fecha": "2026-10-29"
+ },
+ "PER-DENT-002": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "PER-DENT-001": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "PER-DENT-003": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "PER-MARB-020": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "PER-MARB-019": {
+  "grupo": "A",
+  "metodo": "nombre",
+  "confirmaCodigo": false,
+  "titulo": "Marben Pets Femur Cerdo Simple – naturalpetworld.cl",
+  "pagina": "https://naturalpetworld.cl/product/marben-pets-femur-cerdo-simple/",
+  "origen": "https://naturalpetworld.cl/wp-content/uploads/2026/03/Hueso-de-carne-natural-para-perros.png",
+  "archivo": "assets/productos/PER-MARB-019.webp",
+  "fecha": "2026-10-29"
+ },
+ "PER-FITF-013": {
+  "grupo": "A",
+  "metodo": "nombre",
+  "confirmaCodigo": false,
+  "titulo": "FIT FORMULA ALIMENTO DE PERRO FIT FORMULA CACHORRO 10 KG | falabella.com",
+  "pagina": "https://www.falabella.com/falabella-cl/product/125336564/ALIMENTO-DE-PERRO-FIT-FORMULA-CACHORRO-10-KG/125336565",
+  "origen": "https://media.falabella.com/falabellaCL/125336565_01/w=800,h=800,fit=pad",
+  "archivo": "assets/productos/PER-FITF-013.webp",
+  "fecha": "2026-10-29"
+ },
+ "PER-MARB-018": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "PER-MARB-014": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "PER-MARB-015": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "PER-CACH-001": {
+  "grupo": "A",
+  "metodo": "nombre",
+  "confirmaCodigo": false,
+  "titulo": "Galletas Cachupin 220gr Horneadas Para Perros | Cuotas sin interés",
+  "pagina": "https://www.mercadolibre.cl/galletas-cachupin-220gr-horneadas-para-perros/up/MLCU2718481007",
+  "origen": "https://http2.mlstatic.com/D_NQ_NP_672372-MLC80557483673_112024-O.webp",
+  "archivo": "assets/productos/PER-CACH-001.webp",
+  "fecha": "2026-10-29"
+ },
+ "PER-MARB-016": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "PER-MAST-001": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "PER-MAST-003": {
+  "grupo": "A",
+  "metodo": "nombre",
+  "confirmaCodigo": false,
+  "titulo": "Galletas Perro Adulto Sabor Carne Bolsa 500 g Master Dog",
+  "pagina": "https://www.ofertasshark.cl/product/619477c0b0ef92b43c9ef0bb/Galletas-Perro-Adulto-Sabor-Carne-Bolsa-500-g-Master-Dog",
+  "origen": "https://images.lider.cl/wmtcl?source=url[file:/productos/306873ab.jpg]&sink",
+  "archivo": "assets/productos/PER-MAST-003.webp",
+  "fecha": "2026-10-29"
+ },
+ "PER-MAST-009": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "PER-NATU-001": {
+  "grupo": "A",
+  "metodo": "nombre",
+  "confirmaCodigo": false,
+  "titulo": "GALLETAS NATURAL EARTH PARA PERROS SABOR POLLO - Fullerton",
+  "pagina": "https://stage.fullerton.cl/snacks/galletas-natural-earth-para-perros-sabor-pollo/",
+  "origen": "https://stage.fullerton.cl/wp-content/uploads/APF0361-1-1-1.png",
+  "archivo": "assets/productos/PER-NATU-001.webp",
+  "fecha": "2026-10-29"
+ },
+ "PER-NATU-002": {
+  "grupo": "A",
+  "metodo": "nombre",
+  "confirmaCodigo": false,
+  "titulo": "Fullerton | GALLETAS NATURAL EARTH PARA PERROS SABOR CARNE - Fullerton",
+  "pagina": "https://www.fullerton.cl/producto/galletas-natural-earth-para-perros-sabor-carne/",
+  "origen": "https://www.fullerton.cl/wp-content/uploads/GNE-Carne.png",
+  "archivo": "assets/productos/PER-NATU-002.webp",
+  "fecha": "2026-10-29"
+ },
+ "PER-BEST-001": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "PER-BEWI-001": {
+  "grupo": "A",
+  "metodo": "código + nombre",
+  "confirmaCodigo": false,
+  "titulo": "Lata Bewi Dog Vacuno 400 g | Alimento húmedo premium",
+  "pagina": "https://redpet.cl/producto/lata-bewi-dog-rico-en-vacuno-400gr/",
+  "origen": "https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_700,h_700/https://redpet.cl/wp-content/uploads/2025/07/LATA-BEWI-DOG-RICO-EN-VACUNO-400GR.png",
+  "archivo": "assets/productos/PER-BEWI-001.webp",
+  "fecha": "2026-10-29"
+ },
+ "PER-CHAM-005": {
+  "grupo": "A",
+  "metodo": "nombre",
+  "confirmaCodigo": false,
+  "titulo": "Champion Dog - Lata Sabor Pollo",
+  "pagina": "https://alomascotas.cl/champion-dog-lata-sabor-pollo",
+  "origen": "https://cdnx.jumpseller.com/alo-mascotas/image/63840617/resize/719/719?1776222796",
+  "archivo": "assets/productos/PER-CHAM-005.webp",
+  "fecha": "2026-10-29"
+ },
+ "PER-BEWI-002": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "PER-FITF-010": {
+  "grupo": "A",
+  "metodo": "código de barras",
+  "confirmaCodigo": false,
+  "titulo": "Fit Formula Lata Pollo Perro Adulto 280gr – ZOOMARKET",
+  "pagina": "https://zoomarket.cl/products/fit-formula-lata-pollo-perro-adulto-280gr",
+  "origen": "https://zoomarket.cl/cdn/shop/files/7800006006425.jpg?v=1755042552&width=3840",
+  "archivo": "assets/productos/PER-FITF-010.webp",
+  "fecha": "2026-10-29"
+ },
+ "PER-VETL-004": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "PER-ROYA-002": {
+  "grupo": "A",
+  "metodo": "código de barras",
+  "confirmaCodigo": false,
+  "titulo": "Lata Gastro intestinal Royal Canin High Energy Perro 385 g – Plaza ...",
+  "pagina": "https://animall.com.mx/products/lata-royal-canin-gastrointestinal-vet-high-energy-385-gr",
+  "origen": "https://animall.com.mx/cdn/shop/files/gastro_intestinal_royal_canin.jpg?v=1753278272&width=1946",
+  "archivo": "assets/productos/PER-ROYA-002.webp",
+  "fecha": "2026-10-29"
+ },
+ "PER-PEDI-008": {
+  "grupo": "A",
+  "metodo": "nombre",
+  "confirmaCodigo": false,
+  "titulo": "Lata Pedigree Perro Adulto sabor Carne 340gr",
+  "pagina": "https://rosario.pluspet.com.ar/products/perro-snacks-adulto-pedigree-lata-carne",
+  "origen": "https://rosario.pluspet.com.ar/cdn/shop/files/alimento-humedo-pedigree-perro-adulto-carne-01.jpg?v=1702566283&width=1080",
+  "archivo": "assets/productos/PER-PEDI-008.webp",
+  "fecha": "2026-10-29"
+ },
+ "PER-GEN-001": {
+  "grupo": "A",
+  "metodo": "nombre",
+  "confirmaCodigo": false,
+  "titulo": "Lata Pedigree Perro Adulto sabor Pollo 340gr",
+  "pagina": "https://rosario.pluspet.com.ar/products/perro-snacks-adulto-pedigree-lata-pollo",
+  "origen": "https://rosario.pluspet.com.ar/cdn/shop/files/alimento-humedo-pedigree-perro-adulto-pollo-01.jpg?v=1702566303&width=1080",
+  "archivo": "assets/productos/PER-GEN-001.webp",
+  "fecha": "2026-10-29"
+ },
+ "OTR-PETS-001": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "OTR-MONC-001": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "PER-BUEN-002": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "PER-MUNC-001": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "PER-FITF-031": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "PER-FITF-005": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "PER-FITF-002": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "PER-FITF-004": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "PER-GPT-004": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "PER-GPT-001": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "PER-GPT-002": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "OTR-MOND-001": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "PER-GPT-003": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "PER-MOND-001": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "PER-TAST-008": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "PER-MAST-002": {
+  "grupo": "A",
+  "metodo": "nombre",
+  "confirmaCodigo": false,
+  "titulo": "🐶 Snack Perro Adulto 50gr Rollitos - Master Dog - Oferta — Descuentos Rata",
+  "pagina": "https://descuentosrata.com/oferta/20736/snack-perro-adulto-50gr-rollitos---master-dog",
+  "origen": "https://easycl.vteximg.com.br/arquivos/ids/4980997/1187319-0000-001.jpg?v=638742030533170000",
+  "archivo": "assets/productos/PER-MAST-002.webp",
+  "fecha": "2026-10-29"
+ },
+ "PER-PETS-001": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "PER-NATU-008": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "PER-PATU-001": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "PER-NATU-004": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "PER-PEDI-001": {
+  "grupo": "A",
+  "metodo": "código de barras",
+  "confirmaCodigo": true,
+  "titulo": "Snack Pedigree Rodeo Adulto Sabor Carne X 4 Unidades — Amarket",
+  "pagina": "https://amarket.com.bo/products/7797453971850",
+  "origen": "https://amarket.com.bo/cdn/shop/files/7797453971850_1200x1200.jpg?v=1712344899",
+  "archivo": "assets/productos/PER-PEDI-001.webp",
+  "fecha": "2026-10-29"
+ },
+ "PER-TAST-006": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "PER-TAST-007": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "OTR-MARB-001": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "PER-MARB-017": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "PER-TAST-005": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "PER-TAST-001": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "PER-TAST-004": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "PER-VITF-001": {
+  "grupo": "A",
+  "metodo": "código de barras",
+  "confirmaCodigo": false,
+  "titulo": "Snacks Vital Fiber Brush Pera, Zanahoria Morada y Blueberry",
+  "pagina": "https://www.propetonline.cl/snacks-vital-fiber-brush-pera-zanahoria-morada-y-blueberry-8un",
+  "origen": "https://cdnx.jumpseller.com/pro-pet/image/53345701/resize/610/610?1726344959",
+  "archivo": "assets/productos/PER-VITF-001.webp",
+  "fecha": "2026-10-29"
+ },
+ "PER-CHAM-006": {
+  "grupo": "A",
+  "metodo": "nombre",
+  "confirmaCodigo": false,
+  "titulo": "Champion Dog - Pouch Adulto Sabor Pollo",
+  "pagina": "https://alomascotas.cl/champion-dog-pouch-adulto-sabor-pollo",
+  "origen": "https://cdnx.jumpseller.com/alo-mascotas/image/75805207/resize/719/719?1776215440",
+  "archivo": "assets/productos/PER-CHAM-006.webp",
+  "fecha": "2026-10-29"
+ },
+ "PER-ANIM-001": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "PER-BEST-002": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "PER-CHAM-002": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "PER-DOGC-002": {
+  "grupo": "A",
+  "metodo": "código de barras",
+  "confirmaCodigo": true,
+  "titulo": "Alimento Húmedo Dog Chow Adultos Carne 100 g | DelSol",
+  "pagina": "https://www.delsol.com.mx/alimento-humedo-dog-chow-adultos-carne-100-g-7501072210265P",
+  "origen": "https://detqhtv6m6lzl.cloudfront.net/HCLContenido/producto/FullImage/7501072210265_1.jpg",
+  "archivo": "assets/productos/PER-DOGC-002.webp",
+  "fecha": "2026-10-29"
+ },
+ "PER-CHAM-008": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "PER-FITF-021": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "PER-FITF-025": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "PER-FITF-023": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "PER-FITF-026": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "PER-FITF-022": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "PER-MAST-005": {
+  "grupo": "A",
+  "metodo": "código de barras",
+  "confirmaCodigo": false,
+  "titulo": "MASTER DOG SOBRE ADULTO CARNE 100GR | PATITAS SHOP",
+  "pagina": "https://www.patitasshop.cl/shop/master-dog-sobre-adulto-carne-100gr-192",
+  "origen": "https://www.patitasshop.cl/web/image/product.image/70/image_1024/7802575531759.webp?unique=3288229",
+  "archivo": "assets/productos/PER-MAST-005.webp",
+  "fecha": "2026-10-29"
+ },
+ "PER-MAST-004": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "PER-PEDI-006": {
+  "grupo": "A",
+  "metodo": "nombre",
+  "confirmaCodigo": false,
+  "titulo": "PEDIGREE SOBRE PERRO ADULTO SABOR CARNE 100 g",
+  "pagina": "https://www.doffis.cl/pedigree-sobre-perro-adulto-sabor-carne-100-g",
+  "origen": "https://cdnx.jumpseller.com/doffis-la-tienda-de-tu-mascota/image/37229788/resize/1200/1200?1688495123",
+  "archivo": "assets/productos/PER-PEDI-006.webp",
+  "fecha": "2026-10-29"
+ },
+ "PER-MAST-006": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "PER-MAST-007": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "PER-PEDI-003": {
+  "grupo": "A",
+  "metodo": "código de barras",
+  "confirmaCodigo": false,
+  "titulo": "Pedigree Pouch Cachorro Carne – Total Pet",
+  "pagina": "https://www.totalpet.cl/producto/pouch-pedigree-cachorro-carne/",
+  "origen": "https://www.totalpet.cl/wp-content/uploads/2021/02/POUCH-PEDIGREE-CACHORRO-CARNE.png",
+  "archivo": "assets/productos/PER-PEDI-003.webp",
+  "fecha": "2026-10-29"
+ },
+ "PER-PEDI-005": {
+  "grupo": "A",
+  "metodo": "código de barras",
+  "confirmaCodigo": false,
+  "titulo": "Pedigree Pouch Adulto Razas Pequeñas Pollo - Allendes Hnos.",
+  "pagina": "https://www.allendeshnos.cl/producto/pedigree-pouch-adulto-razas-pequenas-pollo/",
+  "origen": "https://www.allendeshnos.cl/wp-content/uploads/2023/06/7797453000482-2-600x600.jpg",
+  "archivo": "assets/productos/PER-PEDI-005.webp",
+  "fecha": "2026-10-29"
+ },
+ "PER-PEDI-007": {
+  "grupo": "A",
+  "metodo": "código de barras",
+  "confirmaCodigo": true,
+  "titulo": "PEDIGREE EN SALSA RAZAS PEQUEÑAS CARNE 85 GRAMOS — Veterinaria Mérida",
+  "pagina": "https://veterinariamerida.com/catalogo/pedigree-en-salsa-razas-pequenas-carne-85-gramos_7797453000475_7797453000475",
+  "origen": "https://f.fcdn.app/imgs/b2074e/veterinariamerida.com/meriuy/26d7/original/catalogo/7797453000475_7797453000475_1/800x800/pedigree-en-salsa-razas-pequenas-carne-85-gramos-pedigree-en-salsa-razas-pequenas-carne-85-gramos.jpg",
+  "archivo": "assets/productos/PER-PEDI-007.webp",
+  "fecha": "2026-10-29"
+ },
+ "PER-PEDI-004": {
+  "grupo": "A",
+  "metodo": "nombre",
+  "confirmaCodigo": false,
+  "titulo": "Pedigree Sobre de Pollo Perro Adulto 100g • La Granja",
+  "pagina": "https://lagranjamed.com/tienda/alimentos/alimento-humedo/pedigree-sobre-de-pollo-perro-adulto-100g/",
+  "origen": "https://lagranjamed.com/wp-content/uploads/2025/07/unnamed-21.png",
+  "archivo": "assets/productos/PER-PEDI-004.webp",
+  "fecha": "2026-10-29"
  }
 }
