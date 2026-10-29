@@ -10,7 +10,7 @@
 // Uso: node tools/imagenes/buscar-referencial.mjs [--max 400]      (busca candidatas)
 //      node tools/imagenes/buscar-referencial.mjs --confirmar      (B? → B)
 // ============================================================
-import { existsSync, readFileSync, writeFileSync } from 'node:fs'
+import { readFileSync, writeFileSync } from 'node:fs'
 import { dirname, join, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import sharp from 'sharp'
