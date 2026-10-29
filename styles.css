@@ -593,6 +593,7 @@ main:focus { outline: none; }
   font-family: var(--fuente-titulos); font-size: .8125rem; font-weight: 600; letter-spacing: .14em; text-transform: uppercase;
   color: var(--blanco); margin: 0 0 6px;
 }
+.hero__diapositivas { min-height: 362px; } /* reserva el alto (celular) para que el cambio de tipografía no mueva la página */
 .hero__diapositiva { display: grid; gap: 4px; align-items: end; }
 .hero__diapositiva.activa { animation: aparecer .6s ease; }
 @keyframes aparecer { from { opacity: 0; } to { opacity: 1; } }
@@ -613,6 +614,7 @@ main:focus { outline: none; }
 .hero__contador { min-width: 3.5em; text-align: center; font-weight: 700; }
 @media (min-width: 860px) {
   .hero__contenido { padding-top: 16px; }
+  .hero__diapositivas { min-height: 0; }
   .hero__diapositiva { grid-template-columns: 1.05fr 1fr; gap: 24px; align-items: end; min-height: 352px; }
   .hero__diapositiva:has(.hero__imagen--ancha) { grid-template-columns: 1fr 1fr; }
   .hero__texto { align-self: center; padding-bottom: 54px; }
