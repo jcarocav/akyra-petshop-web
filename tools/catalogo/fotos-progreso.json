@@ -2018,8 +2018,13 @@
   "fecha": "2026-10-29"
  },
  "ACC-MOND-109": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "alfombra diseno huesito para mascotas",
+  "titulo": "Alfombra Antideslizante Para Arenero Diseño Huesito | Arena para Mascotas",
+  "pagina": "https://arenaparamascotas.cl/producto/alfombra-antideslizante-para-arenero-diseno-huesito/",
+  "origen": "https://arenaparamascotas.cl/wp-content/uploads/2025/11/alfombra-beige.jpg",
+  "archivo": "assets/productos/ACC-MOND-109.webp",
   "fecha": "2026-10-29"
  },
  "GRA-WHIS-003": {
@@ -2033,356 +2038,680 @@
   "fecha": "2026-10-29"
  },
  "ACC-MOND-063": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "alfombra diseno patitas para mascotas",
+  "titulo": "Alfombra Para Comedero Mascotas Absorbente Perros Gatos 60 Cm 40 Cm ...",
+  "pagina": "https://www.mercadolibre.com.ar/alfombra-para-comedero-mascotas-absorbente-perros-gatos/up/MLAU3451710091",
+  "origen": "https://http2.mlstatic.com/D_NQ_NP_877855-MLA93415401724_092025-O.webp",
+  "archivo": "assets/productos/ACC-MOND-063.webp",
   "fecha": "2026-10-29"
  },
  "ACC-MOND-066": {
   "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "motivo": "foto referencial descartada en la revisión: muestra la marca de otro, no es del mismo tipo o está rota",
+  "descartadas": [
+   "https://http2.mlstatic.com/D_NQ_NP_643820-MLA94935102618_102025-O.webp"
+  ],
   "fecha": "2026-10-29"
  },
  "ACC-MOND-064": {
   "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "motivo": "foto referencial descartada en la revisión: muestra la marca de otro, no es del mismo tipo o está rota",
+  "descartadas": [
+   "https://cdnx.jumpseller.com/cody-store/image/45631870/resize/1200/1200?1708219637"
+  ],
   "fecha": "2026-10-29"
  },
  "ACC-MOND-085": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "alfombra plastica para mascotas",
+  "titulo": "Alfombra plastica para plato de mascotas 48x30 cm azul - Alfombras para ...",
+  "pagina": "https://novex.cr/producto/445553/Alfombra-plastica-para-plato-de-mascotas-48x30-cm-azul.html",
+  "origen": "https://ferreteriavidri.com/images/items/large/445553.jpg",
+  "archivo": "assets/productos/ACC-MOND-085.webp",
   "fecha": "2026-10-29"
  },
  "ACC-GEN-017": {
   "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "motivo": "foto referencial descartada en la revisión: muestra la marca de otro, no es del mismo tipo o está rota",
+  "descartadas": [
+   "https://www.marie-claire.es/wp-content/uploads/sites/2/2023/01/10/63bd7936dd9a3.jpeg"
+  ],
   "fecha": "2026-10-29"
  },
  "ACC-MOND-187": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "arenero para mascotas",
+  "titulo": "Arenero Gatos Grande Borde Alto Antiderrame - Plastico Resistente ...",
+  "pagina": "https://www.doctormascota.cl/producto/arenero-gatos-grande-borde-alto-antiderrame-plastico-resistente-57x45x19-cm/",
+  "origen": "https://www.doctormascota.cl/wp-content/uploads/2026/04/Arenero-Gatos-Grande-Borde-Alto-Antiderrame-Plastico-Resistente-57x45x19-cm.png",
+  "archivo": "assets/productos/ACC-MOND-187.webp",
   "fecha": "2026-10-29"
  },
  "ACC-GEN-004": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "arenero para mascotas",
+  "titulo": "Arenero Gigante Marbenpets | Bio Pet Shop -Tienda para Mascotas",
+  "pagina": "https://www.biopetshop.cl/arenero-gigante-marbenpets",
+  "origen": "https://cdnx.jumpseller.com/bio-pet-shop-tienda-de-mascotas/image/46061685/resize/1200/1200?1709567002",
+  "archivo": "assets/productos/ACC-GEN-004.webp",
   "fecha": "2026-10-29"
  },
  "ACC-MOND-049": {
   "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "motivo": "foto referencial descartada en la revisión: muestra la marca de otro, no es del mismo tipo o está rota",
+  "descartadas": [
+   "https://img.aosomcdn.com/100/product/2025/01/24/e4M1ee194959dbef5.jpg"
+  ],
   "fecha": "2026-10-29"
  },
  "ACC-MOND-065": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "arenero para mascotas",
+  "titulo": "CT8855 1 Pieza De Arenero Para Mascota Ch – celtok",
+  "pagina": "https://www.celtok.com/products/ct8855-1-pieza-de-arenero-para-mascota",
+  "origen": "https://www.celtok.com/cdn/shop/files/ct8855-1-pieza-de-arenero-para-mascota-244130.png?v=1744813395",
+  "archivo": "assets/productos/ACC-MOND-065.webp",
   "fecha": "2026-10-29"
  },
  "ACC-MOND-195": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "arenero grande para mascotas",
+  "titulo": "Arenero para Gatos Cubierto Extra Grande 53x42x27cm Acero Inoxidable ...",
+  "pagina": "https://www.leroymerlin.es/productos/arenero-para-gatos-cubierto-extra-grande-53x42x27cm-acero-inoxidable-con-pala-y-escalon-gris-76631272.html",
+  "origen": "https://media.adeo.com/mkp/0acfb410b050836f048b03531c2de2e0/media.jpg",
+  "archivo": "assets/productos/ACC-MOND-195.webp",
   "fecha": "2026-10-29"
  },
  "ACC-LEON-008": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "arenero para mascotas",
+  "titulo": "CT6837 1 Pieza De Arenero Para Mascota – celtok",
+  "pagina": "https://www.celtok.com/products/ct6837-1-pieza-de-arenero-para-mascota",
+  "origen": "https://www.celtok.com/cdn/shop/files/ct6837-1-pieza-de-arenero-para-mascota-762601.jpg?v=1744813431",
+  "archivo": "assets/productos/ACC-LEON-008.webp",
   "fecha": "2026-10-29"
  },
  "ACC-MOND-126": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "arenero para mascotas",
+  "titulo": "Arenero para Mascotas Color Celeste con Bandeja I Oechsle - Oechsle",
+  "pagina": "https://www.oechsle.pe/arenero-para-mascotas-color-celeste-con-bandeja-1000549239/p",
+  "origen": "https://oechsle.vteximg.com.br/arquivos/ids/14875068-1000-1000/image-0.jpg?v=638281895697730000",
+  "archivo": "assets/productos/ACC-MOND-126.webp",
   "fecha": "2026-10-29"
  },
  "ACC-MOND-189": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "arenero para mascotas",
+  "titulo": "CT6837 1 Pieza De Arenero Cerrado Para Mascota – celtok",
+  "pagina": "https://www.celtok.com/products/ct6837-1-pieza-de-arenero-para-mascota",
+  "origen": "https://www.celtok.com/cdn/shop/files/ct6837-1-pieza-de-arenero-para-mascota-4999280.jpg?v=1768766055",
+  "archivo": "assets/productos/ACC-MOND-189.webp",
   "fecha": "2026-10-29"
  },
  "ACC-MOND-188": {
   "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "motivo": "foto referencial descartada en la revisión: muestra la marca de otro, no es del mismo tipo o está rota",
+  "descartadas": [
+   "https://www.doctormascota.cl/wp-content/uploads/2026/03/Arenero-Para-Gatos-Autolimpiable-Sensores-Seguridad-54x40x55-cm-1024x1024-1.webp"
+  ],
   "fecha": "2026-10-29"
  },
  "ACC-MOND-028": {
   "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "motivo": "foto referencial descartada en la revisión: muestra la marca de otro, no es del mismo tipo o está rota",
+  "descartadas": [
+   "https://oechsle.vteximg.com.br/arquivos/ids/15109836-1000-1000/image-0.jpg?v=638279365422170000"
+  ],
   "fecha": "2026-10-29"
  },
  "ACC-MOND-030": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "arenero gris puerta para mascotas",
+  "titulo": "Arenero con puerta para Gato gris de Rimax – Pa´la house",
+  "pagina": "https://palahouse.co/products/arenero-con-puerta-para-gato-gris-de-rimax",
+  "origen": "https://palahouse.co/cdn/shop/files/arenero_puerta_gris_1.webp?v=1778538202&width=416",
+  "archivo": "assets/productos/ACC-MOND-030.webp",
   "fecha": "2026-10-29"
  },
  "ACC-MOND-023": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "arenero plastico para mascotas",
+  "titulo": "Arenero para Gatos Trixie Plástico – Mi tienda",
+  "pagina": "https://buyveloro.com/products/arenero-para-gatos-trixie-plastico",
+  "origen": "https://buyveloro.com/cdn/shop/files/4011905403977_M0605010_P11.jpg?v=1774164921&width=1024",
+  "archivo": "assets/productos/ACC-MOND-023.webp",
   "fecha": "2026-10-29"
  },
  "ACC-MOND-058": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "arnes para mascotas",
+  "titulo": "Arnés Para Mascotas, Arnés De Pecho Para Mascotas De Alta Visibilidad A ...",
+  "pagina": "https://www.walmart.com.mx/ip/perros/arnes-para-mascotas-arnes-de-pecho-para-mascotas-de-alta-visibilidad-a-prueba-de-explosiones-para-p-ccdes-otros/00618525119024",
+  "origen": "https://i5.walmartimages.com.mx/mg/gm/3pp/asr/1d0ee996-8655-4ee9-b957-0cc705c2611b.48cc97857475625963ca06910e1c67d8.jpeg?odnHeight=2000&odnWidth=2000&odnBg=ffffff",
+  "archivo": "assets/productos/ACC-MOND-058.webp",
   "fecha": "2026-10-29"
  },
  "ACC-MOND-051": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "arnes para mascotas",
+  "titulo": "Arnés para perros sin tirones, ajustable, altamente reflectante por la ...",
+  "pagina": "https://www.walmart.com.mx/ip/mascotas/perros/correas-y-collares-para-perro/arnes-para-perros-sin-tirones-ajustable-altamente-reflectante-por-la-noche-arnes-de-pecho-para-mascotas-facil-control-arnes-para-perros-mediano-y-grande/00077241153002",
+  "origen": "https://i5.walmartimages.com/asr/e5556a27-73da-4a8f-a695-2f22fec9c300.15f1badc97b09414253efbd285ab46c5.jpeg",
+  "archivo": "assets/productos/ACC-MOND-051.webp",
   "fecha": "2026-10-29"
  },
  "ACC-LITT-001": {
   "grupo": "C",
-  "motivo": "foto descartada en la revisión: otra variante o sabor que el producto",
+  "motivo": "foto referencial descartada en la revisión: muestra la marca de otro, no es del mismo tipo o está rota",
   "descartadas": [
-   "https://guauquebarato.cl/wp-content/uploads/2023/04/litter-box.png"
+   "https://guauquebarato.cl/wp-content/uploads/2023/04/litter-box.png",
+   "https://http2.mlstatic.com/D_NQ_NP_951603-MLC70892884281_082023-O.webp"
   ],
   "fecha": "2026-10-29"
  },
  "ACC-WOND-007": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "arenero para mascotas",
+  "titulo": "Arenero Para Gatos Arenero Extra Grande Para Mascotas Xxl | Cuotas sin ...",
+  "pagina": "https://articulo.mercadolibre.cl/MLC-1477554559-arenero-para-gatos-arenero-extra-grande-para-mascotas-xxl-_JM",
+  "origen": "https://http2.mlstatic.com/D_NQ_NP_851121-MLC85673262935_062025-O-arenero-para-gatos-arenero-extra-grande-para-mascotas-xxl.webp",
+  "archivo": "assets/productos/ACC-WOND-007.webp",
   "fecha": "2026-10-29"
  },
  "ACC-MOND-052": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "arnes gatito para mascotas",
+  "titulo": "Arnés para Gato Sassy Woof Paso a Paso Hello Kitty Rojo Clásico - Talla ...",
+  "pagina": "https://mascotario.es/products/arnes-para-gato-sassy-woof-paso-a-paso-hello-kitty-rojo-clasico-talla-l-malla-transpirable-dos-anillos-licenciado",
+  "origen": "https://mascotario.es/cdn/shop/files/sassywoof-gato-harness-frente-hello-kitty-rojo_1200x.jpg?v=1775027831",
+  "archivo": "assets/productos/ACC-MOND-052.webp",
   "fecha": "2026-10-29"
  },
  "ACC-MOND-152": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "arnes para gato",
+  "titulo": "Arnés para gato - La tienda de Family Vet",
+  "pagina": "https://tienda.familyvet.es/mascotas/gatos/accesorios-gatos/arnes-gato/",
+  "origen": "https://tienda.familyvet.es/wp-content/uploads/2022/12/ro.jpg",
+  "archivo": "assets/productos/ACC-MOND-152.webp",
   "fecha": "2026-10-29"
  },
  "ACC-BUEN-011": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "arnes m para mascotas",
+  "titulo": "Aprovechar Arnés para perros sin tirones ajustable altamente ...",
+  "pagina": "https://www.walmart.com.mx/ip/perros/aprovechar-arnes-para-perros-sin-tirones-ajustable-altamente-reflectante-por-la-noche-arnes-de-pecho-para-mascotas-facil-control-arnes-para-perros-mediano-y-grande/00074977183672",
+  "origen": "https://i5.walmartimages.com.mx/mg/gm/3pp/asr/3cd653f1-c12a-49c4-af04-44340041b799.07250496d2abff615c89547761690ae9.jpeg?odnHeight=2000&odnWidth=2000&odnBg=ffffff",
+  "archivo": "assets/productos/ACC-BUEN-011.webp",
   "fecha": "2026-10-29"
  },
  "ACC-LEON-007": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "arnes para gato",
+  "titulo": "Arnés para gatos: los mejores modelos que puedes comprar en Amazon",
+  "pagina": "https://www.lavanguardia.com/comprar/cultura-ocio/20221104/8592813/arnes-gatos-mejores-modelos-puedes-comprar-amazon.html",
+  "origen": "https://www.lavanguardia.com/files/content_image_mobile_filter/uploads/2022/11/03/6363d4645b2b7.png",
+  "archivo": "assets/productos/ACC-LEON-007.webp",
   "fecha": "2026-10-29"
  },
  "ACC-MOND-153": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "arnes para gato",
+  "titulo": "Arnés ajustable de nylón para Gatos - Fauna Salud",
+  "pagina": "https://faunasalud.cl/product/arnes-ajustable-de-nylon-gatos/",
+  "origen": "https://faunasalud.cl/wp-content/uploads/2020/09/20200905_180134_0003.png",
+  "archivo": "assets/productos/ACC-MOND-153.webp",
   "fecha": "2026-10-29"
  },
  "ACC-BUEN-008": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "arnes talla m para perro",
+  "titulo": "Puppia Arnés Color Rojo Para Perro Talla M – Plaza animal productos y ...",
+  "pagina": "https://animall.com.mx/products/puppia-arnes-color-rojo-para-perro-talla-m",
+  "origen": "https://animall.com.mx/cdn/shop/files/Guia_tallas_Arnes_Puppia_Rojo_M.png?v=1753715858&width=1445",
+  "archivo": "assets/productos/ACC-BUEN-008.webp",
   "fecha": "2026-10-29"
  },
  "ACC-LILI-003": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "arnes lili para gato",
+  "titulo": "Arnés para gatos - Fauna Salud",
+  "pagina": "https://faunasalud.cl/categoria-producto/gatos/arnes-para-gatos/",
+  "origen": "https://faunasalud.cl/wp-content/uploads/2020/09/32.jpg",
+  "archivo": "assets/productos/ACC-LILI-003.webp",
   "fecha": "2026-10-29"
  },
  "ACC-BUEN-009": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "arnes talla l para perro",
+  "titulo": "Arnés para perros grandes Rojo Talla L Puppia",
+  "pagina": "https://animall.com.mx/products/arnes-para-perros-grandes-talla-g-rojo",
+  "origen": "https://animall.com.mx/cdn/shop/files/Guia_tallas_Arnes_Puppia_Rojo_XL.png?v=1753561408&width=1445",
+  "archivo": "assets/productos/ACC-BUEN-009.webp",
   "fecha": "2026-10-29"
  },
  "ACC-BUEN-010": {
   "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "motivo": "foto referencial descartada en la revisión: muestra la marca de otro, no es del mismo tipo o está rota",
+  "descartadas": [
+   "https://media.sodimac.cl/sodimacCL/7696809_01/public"
+  ],
   "fecha": "2026-10-29"
  },
  "ACC-LEON-013": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "arnes para perro",
+  "titulo": "Arnés Para Perro FERPLAST Agila Fluo 8 Amarillo - Espacio Mascota ...",
+  "pagina": "https://www.espaciomascota.com.uy/arnes-para-perro-ferplast-agila-fluo-8-amarillo",
+  "origen": "https://i.aw.uy/espacio-mascota/0011281_arnes-para-perro-ferplast-agila-fluo-8-amarillo_1080.jpeg",
+  "archivo": "assets/productos/ACC-LEON-013.webp",
   "fecha": "2026-10-29"
  },
  "ACC-GEN-016": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "arnes talla m para perro",
+  "titulo": "Arnés Para Perros Color Morado Talla Mediano marca Puppia",
+  "pagina": "https://animall.com.mx/products/arnes-para-perro-scolor-morado-talla-m-puppia",
+  "origen": "https://animall.com.mx/cdn/shop/files/Guia_tallas_Arnes_Puppia_Morado_M.png?v=1753717342&width=1445",
+  "archivo": "assets/productos/ACC-GEN-016.webp",
   "fecha": "2026-10-29"
  },
  "ACC-TOPK-013": {
   "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "motivo": "foto referencial descartada en la revisión: muestra la marca de otro, no es del mismo tipo o está rota",
+  "descartadas": [
+   "https://i5.walmartimages.cl/asr/f3529789-2190-4064-964d-b8f63de1ea11.112ec7525fa796d1c7c61e992909e6af.png?odnHeight=2000&odnWidth=2000&odnBg=ffffff"
+  ],
   "fecha": "2026-10-29"
  },
  "ACC-GEN-015": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "arnes xl para mascotas",
+  "titulo": "Arnes Ajustable Mascota Dog de Color Negro XL | plazaVea - plazaVea",
+  "pagina": "https://www.plazavea.com.pe/arnes-ajustable-mascota-dog-de-color-negro-xl-100756643/p",
+  "origen": "https://plazavea.vteximg.com.br/arquivos/ids/26856913-1000-1000/image-0.jpg?v=638234799158100000",
+  "archivo": "assets/productos/ACC-GEN-015.webp",
   "fecha": "2026-10-29"
  },
  "ACC-TOPK-011": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "bandeja arenero desechable ecomix top 9 para mascotas",
+  "titulo": "Arena Top-k9 Ecomix Bandeja Desechable 2kg — Telotenemos",
+  "pagina": "https://telotenemos.cl/products/arena-top-k9-ecomix-bandeja-desechable-2kg",
+  "origen": "https://telotenemos.cl/cdn/shop/files/187_1200x1200.jpg?v=1756310421",
+  "archivo": "assets/productos/ACC-TOPK-011.webp",
   "fecha": "2026-10-29"
  },
  "ACC-WOND-016": {
   "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "motivo": "foto referencial descartada en la revisión: muestra la marca de otro, no es del mismo tipo o está rota",
+  "descartadas": [
+   "https://gofresh.cl/wp-content/uploads/2025/03/GF-EB-104.jpg"
+  ],
   "fecha": "2026-10-29"
  },
  "OTR-GEN-007": {
   "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "motivo": "foto referencial descartada en la revisión: muestra la marca de otro, no es del mismo tipo o está rota",
+  "descartadas": [
+   "https://http2.mlstatic.com/D_NQ_NP_865247-MLU71842232134_092023-O.webp"
+  ],
   "fecha": "2026-10-29"
  },
  "ACC-MOND-120": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "bozal para perro",
+  "titulo": "Bozal de Perro Reforzado N1 — TusMascotas.cl — Bozal para perros",
+  "pagina": "https://www.tusmascotas.cl/product/bozal-de-perro-reforzado-n-1/",
+  "origen": "https://www.tusmascotas.cl/wp-content/uploads/2020/10/Bozal-de-Perro-Reforzado-N-1.jpg",
+  "archivo": "assets/productos/ACC-MOND-120.webp",
   "fecha": "2026-10-29"
  },
  "ACC-MOND-121": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "bozal para perro",
+  "titulo": "Bozal para Perros de Cuero Sintético Ajustable con Ventilación – Tienda ...",
+  "pagina": "https://www.mielyorson.com/producto/bozal-para-perros-de-cuero-sintetico-ajustable-con-ventilacion/",
+  "origen": "https://www.mielyorson.com/wp-content/uploads/sites/132/2026/10/WhatsApp-Image-2026-10-26-at-20.38.21.jpeg",
+  "archivo": "assets/productos/ACC-MOND-121.webp",
   "fecha": "2026-10-29"
  },
  "ACC-TOPK-012": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "bandeja arenero desechable reepelente pulgas para mascotas",
+  "titulo": "Arena Top-k9 Repelente De Pulgas Bandeja Desechable 2kg | Cuotas sin ...",
+  "pagina": "https://www.mercadolibre.cl/arena-topk9-repelente-de-pulgas-bandeja-desechable-2kg/up/MLCU3390208414",
+  "origen": "https://http2.mlstatic.com/D_NQ_NP_750277-MLC90743202186_082025-O.webp",
+  "archivo": "assets/productos/ACC-TOPK-012.webp",
   "fecha": "2026-10-29"
  },
  "ACC-MOND-119": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "bozal para perro",
+  "titulo": "Bozal para Perro – Hunter",
+  "pagina": "https://www.hunterperu.pe/producto/bozal-para-perro/",
+  "origen": "https://www.hunterperu.pe/wp-content/uploads/2020/07/92493_002_19.jpg",
+  "archivo": "assets/productos/ACC-MOND-119.webp",
   "fecha": "2026-10-29"
  },
  "ACC-TOPK-001": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "bolsa sanitaria bio degradable para mascotas",
+  "titulo": "Bolsas Sanitarias Biodegradables 32x22 Cm 120 Un Pet's Fun - Easy",
+  "pagina": "https://www.easy.com.ar/bolsa-sanitaria-biodegradable-32x22-cm-120-un-pet-s-fun-1349193/p",
+  "origen": "https://arcencohogar.vtexassets.com/arquivos/ids/339457-800-800?v=638060114764530000&width=800&height=800&aspect=true",
+  "archivo": "assets/productos/ACC-TOPK-001.webp",
   "fecha": "2026-10-29"
  },
  "ACC-MOND-073": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "cama diseno mickey minnie mouse para mascotas",
+  "titulo": "Cama Mascota Perro Minnie Mouse Pets Resistente Cómoda Color Rojo ...",
+  "pagina": "https://www.mercadolibre.com.mx/cama-mascota-perro-minnie-mouse-pets-resistente-comoda-color-rojo/p/MLM37831061",
+  "origen": "https://http2.mlstatic.com/D_NQ_NP_698968-MLU77149478415_062024-O.webp",
+  "archivo": "assets/productos/ACC-MOND-073.webp",
   "fecha": "2026-10-29"
  },
  "ACC-MOND-135": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "calzon para mascotas",
+  "titulo": "Calzon Celo Y Incontinencia Para Perros Y Gatos Reutilizable | Cuotas ...",
+  "pagina": "https://articulo.mercadolibre.cl/MLC-1429280039-calzon-celo-y-incontinencia-para-perros-y-gatos-reutilizable-_JM",
+  "origen": "https://http2.mlstatic.com/D_NQ_NP_666635-MLC74443617618_022024-O.webp",
+  "archivo": "assets/productos/ACC-MOND-135.webp",
   "fecha": "2026-10-29"
  },
  "ACC-MOND-012": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "cama para mascotas",
+  "titulo": "Cama multiuso para mascotas perros & gatos - Importaciones Konarm Ecuador",
+  "pagina": "https://www.importacioneskonarm.com/producto/cama-para-mascotas-perros-gatos-multiuso-para-sillon-cama/",
+  "origen": "https://www.importacioneskonarm.com/wp-content/uploads/2024/12/cama-toldo-sillo.png",
+  "archivo": "assets/productos/ACC-MOND-012.webp",
   "fecha": "2026-10-29"
  },
  "ACC-MOND-055": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "cama para mascotas",
+  "titulo": "CAMA PARA MASCOTA PREMIUM GRIS - Chilax El Salvador",
+  "pagina": "https://chilax.es/producto/cama-para-mascota-premium-gris/",
+  "origen": "https://chilax.es/wp-content/uploads/2023/02/CAMA-PARA-MASCOTA-PREMIUM-GRIS.jpeg",
+  "archivo": "assets/productos/ACC-MOND-055.webp",
   "fecha": "2026-10-29"
  },
  "ACC-MOND-053": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "cama para mascotas",
+  "titulo": "Camas para Gatos | Arena para Mascotas",
+  "pagina": "https://arenaparamascotas.cl/categoria-producto/gatos/accesorios-gatos/camas-gatos/",
+  "origen": "https://arenaparamascotas.cl/wp-content/uploads/2024/09/cama-verde-cachorros.jpg",
+  "archivo": "assets/productos/ACC-MOND-053.webp",
   "fecha": "2026-10-29"
  },
  "ACC-MOND-013": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "cama para mascotas",
+  "titulo": "Cama Para Mascota Perros Y Gatos 100cm Antiestres Premium | Lider",
+  "pagina": "https://www.lider.cl/ip/accesorios/cama-para-mascota-perros-y-gatos-100cm-antiestres-premium/00047000032964",
+  "origen": "https://i5.walmartimages.cl/asr/f7ced577-b6ac-4cb0-a91e-86af49f9fb9b.9a7fc4be35e9f013e7015c89397266bd.jpeg?odnHeight=2000&odnWidth=2000&odnBg=ffffff",
+  "archivo": "assets/productos/ACC-MOND-013.webp",
   "fecha": "2026-10-29"
  },
  "ACC-MOND-056": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "cama para mascotas",
+  "titulo": "Cama Para Mascota Dinamarca - Club de Perros y Gatos",
+  "pagina": "https://www.clubdeperrosygatos.cl/producto/cama-para-mascota-rigida/",
+  "origen": "https://www.clubdeperrosygatos.cl/wp-content/uploads/2024/05/caracol-600x600.webp",
+  "archivo": "assets/productos/ACC-MOND-056.webp",
   "fecha": "2026-10-29"
  },
  "ACC-MOND-076": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "cama para mascotas",
+  "titulo": "Cama para mascotas perro y gatos 68x50x40 Gris | Lider",
+  "pagina": "https://www.lider.cl/ip/marcas-destacadas/cama-para-mascotas-perro-y-gatos-68x50x40-gris/00201638515300",
+  "origen": "https://i5.walmartimages.cl/asr/62f18299-8eb4-42fa-afb4-28aa291c3037.ec27a657b7f978f59046cacf17276fc8.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF",
+  "archivo": "assets/productos/ACC-MOND-076.webp",
   "fecha": "2026-10-29"
  },
  "ACC-MOND-077": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "cama para mascotas",
+  "titulo": "Camas para perros y gatos – Petlandia cl",
+  "pagina": "https://petlandiachile.cl/collections/camas-para-perros-y-gatos",
+  "origen": "https://petlandiachile.cl/cdn/shop/files/286.png?v=1778689193&width=1080",
+  "archivo": "assets/productos/ACC-MOND-077.webp",
   "fecha": "2026-10-29"
  },
  "ACC-MOND-014": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "cama para mascotas",
+  "titulo": "Cama para Mascotas Pink - Mollys",
+  "pagina": "https://mollys.cl/producto/cama-para-mascotas-pink/",
+  "origen": "https://mollys.cl/wp-content/uploads/2024/04/cama-para-mascotas-pink.jpg",
+  "archivo": "assets/productos/ACC-MOND-014.webp",
   "fecha": "2026-10-29"
  },
  "ACC-MOND-074": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "cama negra diseno mickey mouse para mascotas",
+  "titulo": "Cama para Mascota Disney Pets Mickey a precio de socio | Sam’s Club en ...",
+  "pagina": "https://www.sams.com.mx/ip/cama-para-mascota-disney-pets-mickey/980012747",
+  "origen": "https://i5.walmartimages.com.mx/samsmx/images/product-images/img_large/980012747l.jpg",
+  "archivo": "assets/productos/ACC-MOND-074.webp",
   "fecha": "2026-10-29"
  },
  "ACC-MOND-078": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "cama negra diseno mickey mouse para mascotas",
+  "titulo": "Cama para mascota con borde diseño Mickey, talla L",
+  "pagina": "https://www.panamericana.com.co/cama-para-mascota-con-borde-diseno-mickey-primavera-talla-l-675248/p",
+  "origen": "https://panamericana.vtexassets.com/arquivos/ids/536546/cama-para-mascota-con-borde-diseno-mickey-primavera-talla-l-2-7707849574015.jpg?v=638476837673670000",
+  "archivo": "assets/productos/ACC-MOND-078.webp",
   "fecha": "2026-10-29"
  },
  "ACC-MOND-075": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "cama rosada diseno mickey minnie mouse para mascotas",
+  "titulo": "Kit Cama Pet para Cachorro ou Gato Porte Grande Mickey e Minnie:rosa ...",
+  "pagina": "https://www.madeiramadeira.com.br/kit-cama-pet-para-cachorro-ou-gato-porte-grande-mickey-e-minnie-rosa-978644271.html",
+  "origen": "https://product-hub-prd.madeiramadeira.com.br/978644271/images/e894e088-389e-47e0-87f8-b6fd69d94488oportegrandemickeyeminnie2.jpg",
+  "archivo": "assets/productos/ACC-MOND-075.webp",
   "fecha": "2026-10-29"
  },
  "OTR-MARP-001": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "cama o marpen para gato",
+  "titulo": "Cama para gatos Garnpet Cube House para interiores con bloc de notas ...",
+  "pagina": "https://www.walmart.com.mx/ip/perros/cama-para-gatos-garnpet-cube-house-para-interiores-con-bloc-de-notas-color-gris/00046908914563",
+  "origen": "https://i5.walmartimages.com/asr/c4ca8d91-3491-4cff-b5e5-e733478b45fd.606fe4bc0446f0b656cab3078d6ada58.jpeg",
+  "archivo": "assets/productos/OTR-MARP-001.webp",
   "fecha": "2026-10-29"
  },
  "OTR-GEN-006": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "canguro transportador para perro",
+  "titulo": "Canguro De Transporte Para Perros | Cuotas sin interés",
+  "pagina": "https://www.mercadolibre.com.ec/canguro-de-transporte-para-perros/up/MECU3898646693",
+  "origen": "https://http2.mlstatic.com/D_NQ_NP_925283-MEC106307716404_022026-O.webp",
+  "archivo": "assets/productos/OTR-GEN-006.webp",
   "fecha": "2026-10-29"
  },
  "ACC-MOND-125": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "casa para gato",
+  "titulo": "Casas De Gatos Exclusivas ᐉ CASA GATO EN LOS TULES HOTEL",
+  "pagina": "https://fity.club/lists/suggestions/casas-de-gatos-exclusivas/",
+  "origen": "https://m.media-amazon.com/images/I/71NlI2zcHiL.jpg",
+  "archivo": "assets/productos/ACC-MOND-125.webp",
   "fecha": "2026-10-29"
  },
  "ACC-MOND-132": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "cepillo para mascotas",
+  "titulo": "Cepillo para perros y gatos, cepillo autolimpiante para mascotas ...",
+  "pagina": "https://www.walmart.com.mx/ip/gatos/cepillo-para-perros-y-gatos-cepillo-autolimpiante-para-mascotas-cepillo-de-cerdas-largas-y-cortas-eficaz-para-desenredar/00142754757211",
+  "origen": "https://i5.walmartimages.com.mx/mg/gm/3pp/asr/c3fb0581-4079-42ab-b729-11e1ee64427f.17b2c2855d22c1298848627b40f83a53.jpeg?odnHeight=2000&odnWidth=2000&odnBg=ffffff",
+  "archivo": "assets/productos/ACC-MOND-132.webp",
   "fecha": "2026-10-29"
  },
  "ACC-MOND-038": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "cepillo boton expulsor pelo para mascotas",
+  "titulo": "Cepillo Robusto De Pelo Con Botón Extractor Perros Y Gatos | Cuotas sin ...",
+  "pagina": "https://articulo.mercadolibre.cl/MLC-1094016089-cepillo-robusto-de-pelo-con-boton-extractor-perros-y-gatos-_JM",
+  "origen": "https://http2.mlstatic.com/D_NQ_NP_704389-MLC51991773000_102022-O.webp",
+  "archivo": "assets/productos/ACC-MOND-038.webp",
   "fecha": "2026-10-29"
  },
  "ACC-MOND-134": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "cepillo dientes para mascotas",
+  "titulo": "Fancy Pets cepillo de dientes triple para perro | PetHome",
+  "pagina": "https://pethome.club/products/fancy-pets-cepillo-de-dientes-triple-para-perro",
+  "origen": "https://pethome.club/cdn/shop/files/FL8324-1.jpg?v=1792885390&width=2048",
+  "archivo": "assets/productos/ACC-MOND-134.webp",
   "fecha": "2026-10-29"
  },
  "ACC-MOND-092": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "cepillo electrico spray masajeador para mascotas",
+  "titulo": "Cepillo Masajeador Perros Gatos Vapor Spray Electrico | Cuotas sin interés",
+  "pagina": "https://articulo.mercadolibre.cl/MLC-2713976954-cepillo-masajeador-perros-gatos-vapor-spray-electrico-_JM",
+  "origen": "https://http2.mlstatic.com/D_NQ_NP_613693-MLC79351993966_092024-O.webp",
+  "archivo": "assets/productos/ACC-MOND-092.webp",
   "fecha": "2026-10-29"
  },
  "ACC-LEON-010": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "cepillo huella patita para mascotas",
+  "titulo": "Cepillo Vapor Cancat En Forma De Huella Para Mascotas Marrón Claro ...",
+  "pagina": "https://www.mercadolibre.com.ar/cepillo-vapor-cancat-en-forma-de-huella-para-mascotas-marron-claro/p/MLA47634499",
+  "origen": "https://http2.mlstatic.com/D_NQ_NP_789861-MLA83472768993_042025-O.webp",
+  "archivo": "assets/productos/ACC-LEON-010.webp",
   "fecha": "2026-10-29"
  },
  "ACC-MUND-001": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "cepillo para mascotas",
+  "titulo": "Cepillo con expulsor para Mascotas Autolimpiable | Arena para Mascotas",
+  "pagina": "https://arenaparamascotas.cl/producto/cepillo-con-expulsor-para-mascotas-autolimpiable-con-orejas/",
+  "origen": "https://arenaparamascotas.cl/wp-content/uploads/2023/01/sepillos-1.jpg",
+  "archivo": "assets/productos/ACC-MUND-001.webp",
   "fecha": "2026-10-29"
  },
  "ACC-MOND-002": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "cepillo doble para mascotas",
+  "titulo": "Cepillo Doble Peine Plástico Para Mascotas Dos en Uno - Maskoticas CR",
+  "pagina": "https://maskoticascr.com/producto/cepillo-doble-peine-plastico-para-mascotas-dos-en-uno/",
+  "origen": "https://maskoticascr.com/wp-content/uploads/2022/09/14.png",
+  "archivo": "assets/productos/ACC-MOND-002.webp",
   "fecha": "2026-10-29"
  },
  "ACC-PETE-001": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "cepillo boton puilsador pelo petegou para mascotas",
+  "titulo": "Cepillo Pequeño Para Perros Con Botón Saca Pelos | Lider",
+  "pagina": "https://www.lider.cl/ip/higiene-y-salud/cepillo-pequeno-para-perros-con-boton-saca-pelos/00045041441526",
+  "origen": "https://i5.walmartimages.cl/asr/e409e574-08d7-492b-80b4-d598cca60955.ee06373999c68e9987f5e3b6e0443e57.png?odnHeight=2000&odnWidth=2000&odnBg=ffffff",
+  "archivo": "assets/productos/ACC-PETE-001.webp",
   "fecha": "2026-10-29"
  },
  "ACC-MOND-001": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "cepillo doble para mascotas",
+  "titulo": "Cepillo Doble Cara para Mascotas Blanco",
+  "pagina": "https://www.fernapet.cl/-cepillo-doble-cara-para-mascotas-blanco---ovalado/p",
+  "origen": "https://fernapetcl.vtexassets.com/arquivos/ids/214000/787909--2.jpg?v=638392206163000000",
+  "archivo": "assets/productos/ACC-MOND-001.webp",
   "fecha": "2026-10-29"
  },
  "ACC-MOND-003": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "cepillo para mascotas",
+  "titulo": "Cepillo para mascota , deslanador De Pelo 2 en 1 , perro o gato , husky ...",
+  "pagina": "https://www.walmart.com.mx/ip/gatos/cepillo-para-mascota-deslanador-de-pelo-2-en-1-perro-o-gato-husky-gelvic-cepillo/00750303906595",
+  "origen": "https://i5.walmartimages.com.mx/mg/gm/3pp/asr/61e35b5f-27a6-4f23-b72b-9e5f724c9a6a.a5b8fc36b1b34f13a2dd274ea4fe07ae.jpeg?odnHeight=2000&odnWidth=2000&odnBg=ffffff",
+  "archivo": "assets/productos/ACC-MOND-003.webp",
   "fecha": "2026-10-29"
  },
  "ACC-MOND-093": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "cepillo bano para mascotas",
+  "titulo": "Cepillo Baño Silicona Para Mascotas Varios | MercadoLibre",
+  "pagina": "https://www.mercadolibre.com.ar/cepillo-bano-silicona-para-mascotas/up/MLAU3387047291",
+  "origen": "https://http2.mlstatic.com/D_NQ_NP_940916-MLA90833998748_082025-O.webp",
+  "archivo": "assets/productos/ACC-MOND-093.webp",
   "fecha": "2026-10-29"
  },
  "ACC-MOND-037": {
   "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "motivo": "foto referencial descartada en la revisión: muestra la marca de otro, no es del mismo tipo o está rota",
+  "descartadas": [
+   "https://felinus.cl/461-large_default/furminator-cepillo-saca-nudos-para-mascotas.jpg"
+  ],
   "fecha": "2026-10-29"
  },
  "ACC-MOND-062": {
@@ -2396,43 +2725,81 @@
   "fecha": "2026-10-29"
  },
  "ACC-MOND-024": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "cepillo vapor para mascotas",
+  "titulo": "🐕 Cepillo Vapor Portátil Con Mango Para Mascotas - Oferta — Descuentos Rata",
+  "pagina": "https://descuentosrata.com/oferta/20669/cepillo-vapor-portatil-con-mango-para-mascotas",
+  "origen": "https://www.clubdeperrosygatos.cl/wp-content/uploads/2024/07/PERFIL-CEPILLO-OK.webp",
+  "archivo": "assets/productos/ACC-MOND-024.webp",
   "fecha": "2026-10-29"
  },
  "ACC-MOND-007": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "collar para mascotas",
+  "titulo": "Kit de 12 piezas de collar para mascota - TO.SHOP™: Productos con Envío ...",
+  "pagina": "https://toshopping.com.mx/producto/kit-de-12-piezas-de-collar-para-mascota/",
+  "origen": "https://toshopping.com.mx/wp-content/uploads/2023/06/1-38.jpeg",
+  "archivo": "assets/productos/ACC-MOND-007.webp",
   "fecha": "2026-10-29"
  },
  "ACC-MOND-036": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "collar para mascotas",
+  "titulo": "Collar para mascota – Tienda PL Ecuador",
+  "pagina": "https://tiendapl.com.ec/index.php/product/collar-para-mascota/",
+  "origen": "https://tiendapl.com.ec/wp-content/uploads/2023/12/COLLAR-PARA-MASCOTA_CASCABEL.jpg",
+  "archivo": "assets/productos/ACC-MOND-036.webp",
   "fecha": "2026-10-29"
  },
  "ACC-LEON-011": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "collar acolchado para mascotas",
+  "titulo": "Collar Isabelino Acolchado para Perros y Gatos – Maos Store",
+  "pagina": "https://maospets.com/products/collar-isabelino-acolchado-para-perros-y-gatos",
+  "origen": "https://maospets.com/cdn/shop/files/COLLAR_I.png?v=1765974446&width=1445",
+  "archivo": "assets/productos/ACC-LEON-011.webp",
   "fecha": "2026-10-29"
  },
  "ACC-WOND-006": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "cojin para gato",
+  "titulo": "Cojín de animales",
+  "pagina": "https://www.gueule-damour.com/es/decoracion-y-hogar/1684-funda-de-cojin-perro-y-gato.html",
+  "origen": "https://www.gueule-damour.com/9620/funda-de-cojin-perro-y-gato.jpg",
+  "archivo": "assets/productos/ACC-WOND-006.webp",
   "fecha": "2026-10-29"
  },
  "ACC-LEON-015": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "collar acolchado para mascotas",
+  "titulo": "Collar Isabelino Acolchado para Perros y Gatos – Maos Store",
+  "pagina": "https://maospets.com/products/collar-isabelino-acolchado-para-perros-y-gatos",
+  "origen": "https://maospets.com/cdn/shop/files/FONDOBLANCOCOLLARDERECUPERACION_1.jpg?v=1765974396&width=1445",
+  "archivo": "assets/productos/ACC-LEON-015.webp",
   "fecha": "2026-10-29"
  },
  "ACC-BUEN-003": {
   "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "motivo": "foto referencial descartada en la revisión: muestra la marca de otro, no es del mismo tipo o está rota",
+  "descartadas": [
+   "http://limonae.com/blog/wp-content/uploads/2017/05/DSC_8433.jpg"
+  ],
   "fecha": "2026-10-29"
  },
  "ACC-BUEN-001": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "collar para mascotas",
+  "titulo": "Pack De 3 Collares Con Cascabel Para Mascotas Gatos Perros | Lider",
+  "pagina": "https://www.lider.cl/ip/accesorios/pack-de-3-collares-con-cascabel-para-mascotas-gatos-perros/00046268210599",
+  "origen": "https://i5.walmartimages.cl/asr/9efaa16b-f8bd-499e-a069-43b87facde75.175b0678dbe0775dfd908e62ae099562.png?odnHeight=2000&odnWidth=2000&odnBg=ffffff",
+  "archivo": "assets/productos/ACC-BUEN-001.webp",
   "fecha": "2026-10-29"
  },
  "ACC-BUEN-016": {
@@ -2447,223 +2814,351 @@
  },
  "ACC-MARB-010": {
   "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "motivo": "foto referencial descartada en la revisión: muestra la marca de otro, no es del mismo tipo o está rota",
+  "descartadas": [
+   "https://http2.mlstatic.com/D_NQ_NP_701700-MLC81219164439_122024-O.webp"
+  ],
   "fecha": "2026-10-29"
  },
  "ACC-MARB-009": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "collar isabelino inflable marbenpets talla m para mascotas",
+  "titulo": "Collar Isabelino Inflable Protector Perros Gatos Talla M | Cuotas sin ...",
+  "pagina": "https://articulo.mercadolibre.cl/MLC-1147513650-collar-isabelino-inflable-protector-perros-gatos-talla-m-_JM",
+  "origen": "https://http2.mlstatic.com/D_NQ_NP_819134-MLC52815205238_122022-O-collar-isabelino-inflable-protector-perros-gatos-talla-m.webp",
+  "archivo": "assets/productos/ACC-MARB-009.webp",
   "fecha": "2026-10-29"
  },
  "ACC-MARB-011": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "collar isabelino inflable marbenpets talla xl para mascotas",
+  "titulo": "Collar Isabelino | MercadoLibre 📦",
+  "pagina": "https://listado.mercadolibre.cl/collar-isabelino",
+  "origen": "https://http2.mlstatic.com/D_Q_NP_2X_817892-MLA100657148741_122025-E.webp",
+  "archivo": "assets/productos/ACC-MARB-011.webp",
   "fecha": "2026-10-29"
  },
  "ACC-MARB-003": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "collar isabelino inflable marbenpets talla m para mascotas",
+  "titulo": "Collar Isabelino Inflable Perros Y Gatos Talla M – Chimuelo.cl",
+  "pagina": "https://www.chimuelo.cl/productos/collar-isabelino-inflable-perros-y-gatos-talla-m/",
+  "origen": "https://www.chimuelo.cl/wp-content/uploads/2023/01/D_977128-MLC31212095905_062019-F.jpg",
+  "archivo": "assets/productos/ACC-MARB-003.webp",
   "fecha": "2026-10-29"
  },
  "ACC-MARB-013": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "collar isabelino inflable marbenpets talla s para mascotas",
+  "titulo": "Collar Isabelino Inflable Protector Perros Gatos Talla S-xl | Cuotas ...",
+  "pagina": "https://articulo.mercadolibre.cl/MLC-1868946854-collar-isabelino-inflable-protector-perros-gatos-talla-s-xl-_JM",
+  "origen": "https://http2.mlstatic.com/D_NQ_NP_996773-CBT72562163240_112023-O.webp",
+  "archivo": "assets/productos/ACC-MARB-013.webp",
   "fecha": "2026-10-29"
  },
  "ACC-MARB-015": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "collar isabelino inflable marbenpets talla xxl para mascotas",
+  "titulo": "Collar Isabelino Inflable Perros Gato Collar Xl Mascota Azul | Sodimac ...",
+  "pagina": "https://sodimac.falabella.com/sodimac-cl/product/127004198/Collar-Isabelino-Inflable-Perros-Gato-Collar-Xl-Mascota-Azul/CATG10083",
+  "origen": "https://imagedelivery.net/4fYuQyy-r8_rpBpcY7lH_A/falabellaCL/127004200_01/w=800,h=800,fit=pad",
+  "archivo": "assets/productos/ACC-MARB-015.webp",
   "fecha": "2026-10-29"
  },
  "ACC-MARB-008": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "collar isabelino marbenpets talla l para mascotas",
+  "titulo": "Collar Isabelino Inflable Protector Anti Mordida Perros Gatos Collar ...",
+  "pagina": "https://www.mercadolibre.cl/collar-isabelino-inflable-protector-anti-mordida-perros-gatos-collar-mascotas-talla-l/p/MLC36619691",
+  "origen": "https://http2.mlstatic.com/D_NQ_NP_744297-MLU77678780924_072024-O.webp",
+  "archivo": "assets/productos/ACC-MARB-008.webp",
   "fecha": "2026-10-29"
  },
  "ACC-MOND-136": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "collar isabelino para mascotas",
+  "titulo": "Collar Isabelino Para Recuperación Rápida de Mascotas",
+  "pagina": "https://www.petilandshop.com/producto/collar-isabelino-para-mascotas/",
+  "origen": "https://www.petilandshop.com/wp-content/uploads/2023/11/ISABELINO-SM-5-Isabelino-SM-5.jpg",
+  "archivo": "assets/productos/ACC-MOND-136.webp",
   "fecha": "2026-10-29"
  },
  "ACC-MARB-006": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "collar isabelino talla s para mascotas",
+  "titulo": "COLLAR ISABELINO - TALLA S | Farmascota",
+  "pagina": "https://farmascota.com.pe/collar-isabelino-talla-s/",
+  "origen": "https://farmascota.com.pe/wp-content/uploads/2024/10/COLLAR-ISABELINO.jpg",
+  "archivo": "assets/productos/ACC-MARB-006.webp",
   "fecha": "2026-10-29"
  },
  "ACC-MOND-111": {
   "grupo": "C",
   "motivo": "sin coincidencia segura por código ni por nombre",
-  "fecha": "2026-10-29"
+  "fecha": "2026-10-29",
+  "buscadaReferencial": true
  },
  "ACC-MOND-057": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "collar para mascotas",
+  "titulo": "Collar para mascotas Iluminación LED Suministros para mascotas ABS ...",
+  "pagina": "https://www.walmart.com.mx/ip/joyeria-y-bisuteria/collar-para-mascotas-iluminacion-led-suministros-para-mascotas-abs-recargable-prevencion-de-accidentes-herramientas-anti-perdida-collares-actividades-de-seguridad-usb-recargable-azul-xl-seitruly-pt000654-15/00943382722141",
+  "origen": "https://i5.walmartimages.com.mx/mg/gm/3pp/asr/f030b693-408f-498d-ac8f-08b0ab61ac92.bfc0f86654798952216275f222b0aa7b.jpeg?odnHeight=2000&odnWidth=2000&odnBg=ffffff",
+  "archivo": "assets/productos/ACC-MOND-057.webp",
   "fecha": "2026-10-29"
  },
  "ACC-MARB-007": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "collar isabelino marbenpets talla m para mascotas",
+  "titulo": "COLLAR ISABELINO - TALLA M | Farmascota",
+  "pagina": "https://farmascota.com.pe/collar-isabelino-talla-m/",
+  "origen": "https://farmascota.com.pe/wp-content/uploads/2024/10/COLLAR-ISABELINO-1.jpg",
+  "archivo": "assets/productos/ACC-MARB-007.webp",
   "fecha": "2026-10-29"
  },
  "ACC-MOND-034": {
   "grupo": "C",
   "motivo": "sin coincidencia segura por código ni por nombre",
-  "fecha": "2026-10-29"
+  "fecha": "2026-10-29",
+  "buscadaReferencial": true
  },
  "ACC-MOND-035": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "collar para mascotas",
+  "titulo": "Collar Para Mascota 45 - Mil Rebajas",
+  "pagina": "https://www.milrebajas.com.uy/producto/collar-para-mascota/",
+  "origen": "https://www.milrebajas.com.uy/wp-content/uploads/2024/03/61190830000000-600x600.jpg",
+  "archivo": "assets/productos/ACC-MOND-035.webp",
   "fecha": "2026-10-29"
  },
  "ACC-MOND-150": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "collar para mascotas",
+  "titulo": "Collar para mascotas Iluminación LED Suministros para mascotas ABS ...",
+  "pagina": "https://www.walmart.com.mx/ip/joyeria-y-bisuteria/collar-para-mascotas-iluminacion-led-suministros-para-mascotas-abs-recargable-prevencion-de-accidentes-herramientas-anti-perdida-collares-actividades-de-seguridad-bateria-usb-rojo-l-vogacara-pt000654-39/00978944904012",
+  "origen": "https://i5.walmartimages.com.mx/mg/gm/3pp/asr/33320494-fc08-4122-ba5c-7bb290c61391.179d305af5762329e0ffb44151c2bcce.jpeg?odnHeight=2000&odnWidth=2000&odnBg=ffffff",
+  "archivo": "assets/productos/ACC-MOND-150.webp",
   "fecha": "2026-10-29"
  },
  "ACC-BUEN-006": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "collar mas humita para gato",
+  "titulo": "Collar con estampado de cachemira rojo y humita para gatos",
+  "pagina": "https://www.superzoo.cl/gato/accesorios/collares-arneses-y-correas/collar-con-estampado-de-cachemira-rojo-y-humita-para-gatos/15167.html",
+  "origen": "https://www.superzoo.cl/on/demandware.static/-/Sites-SuperZoo-master-catalog/default/dwb9db0db2/images/sku15167_2.jpg",
+  "archivo": "assets/productos/ACC-BUEN-006.webp",
   "fecha": "2026-10-29"
  },
  "ACC-MOND-112": {
   "grupo": "C",
   "motivo": "sin coincidencia segura por código ni por nombre",
-  "fecha": "2026-10-29"
+  "fecha": "2026-10-29",
+  "buscadaReferencial": true
  },
  "ACC-MOND-095": {
   "grupo": "C",
   "motivo": "sin coincidencia segura por código ni por nombre",
-  "fecha": "2026-10-29"
+  "fecha": "2026-10-29",
+  "buscadaReferencial": true
  },
  "ACC-MOND-096": {
   "grupo": "C",
   "motivo": "sin coincidencia segura por código ni por nombre",
-  "fecha": "2026-10-29"
+  "fecha": "2026-10-29",
+  "buscadaReferencial": true
  },
  "ACC-MOND-097": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "collar para gato",
+  "titulo": "Fancy Pets Collar Elástico con Cascabel para Gato Varios Colores ...",
+  "pagina": "https://www.amazon.com.mx/Fancy-Pets-Elástico-Cascabel-Colores/dp/B0B8F7DJ5K",
+  "origen": "https://m.media-amazon.com/images/I/51CQiW90ixL.jpg",
+  "archivo": "assets/productos/ACC-MOND-097.webp",
   "fecha": "2026-10-29"
  },
  "ACC-WOND-014": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "collar para gato",
+  "titulo": "Collar para Gatos Glitter - Cat-oh pet shop",
+  "pagina": "https://cat-oh.com/comprar-producto/collar-reflectivo-para-gatos-glitter/",
+  "origen": "https://i0.wp.com/cat-oh.com/wp-content/uploads/2023/01/collar-gato4.jpg",
+  "archivo": "assets/productos/ACC-WOND-014.webp",
   "fecha": "2026-10-29"
  },
  "ACC-WOND-013": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "collar para gato",
+  "titulo": "PAMELARG Collar para Gatos con Campana,Juego de 4 Collares de Gatito ...",
+  "pagina": "https://www.amazon.com.mx/PAMELARG-Collares-Extraíble-Mascotas-Cuadros/dp/B0CQ7PP1S3",
+  "origen": "https://m.media-amazon.com/images/I/71B2Hl-wY-L.jpg",
+  "archivo": "assets/productos/ACC-WOND-013.webp",
   "fecha": "2026-10-29"
  },
  "ACC-WOND-015": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "collar para gato",
+  "titulo": "uds. De collares para gatos, pajarita y cascabel, collar triangular ...",
+  "pagina": "https://www.walmart.com.mx/ip/gatos/uds-de-collares-para-gatos-pajarita-y-cascabel-collar-triangular-para-gatitos-antiestrangulamiento-collar-ajustable-para-gatitos-de-20-28-cm-jfhhh-pequena/00693192985348",
+  "origen": "https://i5.walmartimages.com.mx/mg/gm/3pp/asr/1f3d5ca3-f889-4cd3-a975-6dccf62e178c.bfd5b99761be3d553b6f3d8316b18a7b.jpeg?odnHeight=2000&odnWidth=2000&odnBg=ffffff",
+  "archivo": "assets/productos/ACC-WOND-015.webp",
   "fecha": "2026-10-29"
  },
  "ACC-GEN-002": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "collar para perro",
+  "titulo": "Collar para perro de Nylon doble – Marroquinería Almendro",
+  "pagina": "http://www.marroquineria-almendro.com/productos/articulos-para-perros/collares/collar-para-perro-de-nylon/",
+  "origen": "http://www.marroquineria-almendro.com/wp-content/uploads/2022/11/287-5-rojoazul-scaled.jpg",
+  "archivo": "assets/productos/ACC-GEN-002.webp",
   "fecha": "2026-10-29"
  },
  "ACC-MOND-008": {
   "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "motivo": "foto referencial descartada en la revisión: muestra la marca de otro, no es del mismo tipo o está rota",
+  "descartadas": [
+   "https://www.divinechien.com/wp-content/uploads/2014/06/7.jpg"
+  ],
   "fecha": "2026-10-29"
  },
  "ACC-WOND-004": {
   "grupo": "C",
   "motivo": "sin coincidencia segura por código ni por nombre",
-  "fecha": "2026-10-29"
+  "fecha": "2026-10-29",
+  "buscadaReferencial": true
  },
  "ACC-MOND-032": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "collar para perro",
+  "titulo": "Collares Para Perro - Meow Design",
+  "pagina": "https://www.meowdsgn.com/categorias-de-producto/collares-perro/",
+  "origen": "https://www.meowdsgn.com/wp-content/uploads/2024/03/7706959404977.Collar-cuero-clasico-miel-para-perro-XL.1-1536x1536.png",
+  "archivo": "assets/productos/ACC-MOND-032.webp",
   "fecha": "2026-10-29"
  },
  "ACC-MUND-002": {
   "grupo": "C",
   "motivo": "sin coincidencia segura por código ni por nombre",
-  "fecha": "2026-10-29"
+  "fecha": "2026-10-29",
+  "buscadaReferencial": true
  },
  "ACC-MUND-003": {
   "grupo": "C",
   "motivo": "sin coincidencia segura por código ni por nombre",
-  "fecha": "2026-10-29"
+  "fecha": "2026-10-29",
+  "buscadaReferencial": true
  },
  "ACC-MOND-098": {
   "grupo": "C",
   "motivo": "sin coincidencia segura por código ni por nombre",
-  "fecha": "2026-10-29"
+  "fecha": "2026-10-29",
+  "buscadaReferencial": true
  },
  "ACC-LEON-016": {
   "grupo": "C",
   "motivo": "sin coincidencia segura por código ni por nombre",
-  "fecha": "2026-10-29"
+  "fecha": "2026-10-29",
+  "buscadaReferencial": true
  },
  "ACC-MOND-099": {
   "grupo": "C",
   "motivo": "sin coincidencia segura por código ni por nombre",
-  "fecha": "2026-10-29"
+  "fecha": "2026-10-29",
+  "buscadaReferencial": true
  },
  "ACC-MOND-115": {
   "grupo": "C",
   "motivo": "sin coincidencia segura por código ni por nombre",
-  "fecha": "2026-10-29"
+  "fecha": "2026-10-29",
+  "buscadaReferencial": true
  },
  "ACC-MOND-100": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "collar para perro",
+  "titulo": "Collar Para Perro LILI MASCOTA Zigzag Grande - Espacio Mascota ...",
+  "pagina": "https://www.espaciomascota.com.uy/collar-para-perro-lili-mascota-zigzag-grande",
+  "origen": "https://i.aw.uy/espacio-mascota/0015559_17668_1_1080.jpeg",
+  "archivo": "assets/productos/ACC-MOND-100.webp",
   "fecha": "2026-10-29"
  },
  "ACC-BUEN-002": {
   "grupo": "C",
   "motivo": "sin coincidencia segura por código ni por nombre",
-  "fecha": "2026-10-29"
+  "fecha": "2026-10-29",
+  "buscadaReferencial": true
  },
  "ACC-MOND-102": {
   "grupo": "C",
   "motivo": "sin coincidencia segura por código ni por nombre",
-  "fecha": "2026-10-29"
+  "fecha": "2026-10-29",
+  "buscadaReferencial": true
  },
  "ACC-MOND-117": {
   "grupo": "C",
   "motivo": "sin coincidencia segura por código ni por nombre",
-  "fecha": "2026-10-29"
+  "fecha": "2026-10-29",
+  "buscadaReferencial": true
  },
  "ACC-MOND-113": {
   "grupo": "C",
   "motivo": "sin coincidencia segura por código ni por nombre",
-  "fecha": "2026-10-29"
+  "fecha": "2026-10-29",
+  "buscadaReferencial": true
  },
  "ACC-MOND-101": {
   "grupo": "C",
   "motivo": "sin coincidencia segura por código ni por nombre",
-  "fecha": "2026-10-29"
+  "fecha": "2026-10-29",
+  "buscadaReferencial": true
  },
  "ACC-MOND-114": {
   "grupo": "C",
   "motivo": "sin coincidencia segura por código ni por nombre",
-  "fecha": "2026-10-29"
+  "fecha": "2026-10-29",
+  "buscadaReferencial": true
  },
  "ACC-MOND-116": {
   "grupo": "C",
   "motivo": "sin coincidencia segura por código ni por nombre",
-  "fecha": "2026-10-29"
+  "fecha": "2026-10-29",
+  "buscadaReferencial": true
  },
  "ACC-MOND-103": {
   "grupo": "C",
   "motivo": "sin coincidencia segura por código ni por nombre",
-  "fecha": "2026-10-29"
+  "fecha": "2026-10-29",
+  "buscadaReferencial": true
  },
  "ACC-MOND-104": {
   "grupo": "C",
   "motivo": "sin coincidencia segura por código ni por nombre",
-  "fecha": "2026-10-29"
+  "fecha": "2026-10-29",
+  "buscadaReferencial": true
  },
  "ACC-MOND-105": {
   "grupo": "C",
   "motivo": "sin coincidencia segura por código ni por nombre",
-  "fecha": "2026-10-29"
+  "fecha": "2026-10-29",
+  "buscadaReferencial": true
  },
  "ACC-WOND-009": {
   "grupo": "A",
@@ -2688,66 +3183,125 @@
  "ACC-WOND-008": {
   "grupo": "C",
   "motivo": "sin coincidencia segura por código ni por nombre",
-  "fecha": "2026-10-29"
+  "fecha": "2026-10-29",
+  "buscadaReferencial": true
  },
  "ACC-MOND-033": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "correa perros para perro",
+  "titulo": "SilaiteWP Correa para Perro Cadena de Correa para Mascotas a Prueba de ...",
+  "pagina": "https://www.amazon.com.mx/SilaiteWP-Mascotas-Masticación-Acolchado-medianos/dp/B0BXKMHXXH",
+  "origen": "https://m.media-amazon.com/images/I/71XLwUdYnjL.jpg",
+  "archivo": "assets/productos/ACC-MOND-033.webp",
   "fecha": "2026-10-29"
  },
  "ACC-LEON-019": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "correa para perro",
+  "titulo": "Correa retráctil para perro Flexi cinta 3 metros Funtime (XS) color ...",
+  "pagina": "https://www.walmart.com.mx/ip/perros/correa-retractil-para-perro-flexi-cinta-3-metros-funtime-xs-color-verde/00400049801283",
+  "origen": "https://i5.walmartimages.com/asr/b88ef63c-6148-451c-b2f2-844108cbabad.c3c23959141f128e1b675ec6fd5bfd70.jpeg",
+  "archivo": "assets/productos/ACC-LEON-019.webp",
   "fecha": "2026-10-29"
  },
  "ACC-GEN-022": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "contenedor alimento patita para mascotas",
+  "titulo": "Contenedor de alimentos XL para Mascotas hasta 20kg Patitas Food - Oechsle",
+  "pagina": "https://www.oechsle.pe/contenedor-de-alimentos-xl-para-mascotas-hasta-20kg-patitas-food-1001117556/p",
+  "origen": "https://oechsle.vteximg.com.br/arquivos/ids/21225326-1000-1000/image-0.jpg?v=638839586387900000",
+  "archivo": "assets/productos/ACC-GEN-022.webp",
   "fecha": "2026-10-29"
  },
  "ACC-LEON-020": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "correa para perro",
+  "titulo": "Correa para perro resistente con 2 cómodas asas acolchadas, correa ...",
+  "pagina": "https://www.walmart.com.mx/ip/perros/correa-para-perro-resistente-con-2-comodas-asas-acolchadas-correa-reflectante-para-perros-de-razas-grandes-medianas-y-pequenas/00941604866806",
+  "origen": "https://i5.walmartimages.com.mx/mg/gm/3pp/asr/4c4472ec-2d2b-41b5-947d-de4d1f904152.e376dfb8877803eb23d816e17294b1f0.jpeg?odnHeight=2000&odnWidth=2000&odnBg=ffffff",
+  "archivo": "assets/productos/ACC-LEON-020.webp",
   "fecha": "2026-10-29"
  },
  "ACC-MOND-122": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "correa para perro",
+  "titulo": "Correa Plana Larga Resistente Para Perros 4,5 Metros X 2,5cm color azul ...",
+  "pagina": "https://www.lider.cl/ip/accesorios/correa-plana-larga-resistente-para-perros-4-5-metros-x-2-5cm-color-azul/00697329531245",
+  "origen": "https://i5.walmartimages.cl/asr/73c4a9d2-0379-4229-9634-cb83cddc733b.2d58334c774019578e005928682d1014.jpeg?odnHeight=2000&odnWidth=2000&odnBg=ffffff",
+  "archivo": "assets/productos/ACC-MOND-122.webp",
   "fecha": "2026-10-29"
  },
  "ACC-LEON-018": {
   "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "motivo": "foto referencial descartada en la revisión: muestra la marca de otro, no es del mismo tipo o está rota",
+  "descartadas": [
+   "https://m.media-amazon.com/images/I/61dgtDhZT1L._AC_SL1500_.jpg"
+  ],
   "fecha": "2026-10-29"
  },
  "ACC-LEON-002": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "correa para perro",
+  "titulo": "Correa para perro con tracción trenzada, correa para pasear perros ...",
+  "pagina": "https://www.bodegaaurrera.com.mx/ip/perros/correa-para-perro-con-traccion-trenzada-correa-para-pasear-perros-amortiguador-elastico-multifuncional-correa-para-mascotas-correa-reflectante-para-perros-pesados-diseno-elevado/00095013089941",
+  "origen": "https://i5.walmartimages.com/asr/76a10260-9937-4a36-807c-f5927678738b.ffe0376eab14660f84dbda1991f9fa28.jpeg",
+  "archivo": "assets/productos/ACC-LEON-002.webp",
   "fecha": "2026-10-29"
  },
  "ACC-LEON-003": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "correa retractil para mascotas",
+  "titulo": "Correa retráctil para mascotas hasta 25KG - Promart",
+  "pagina": "https://www.promart.pe/correa-retractil-para-mascotas-hasta-25kg-1000232253/p",
+  "origen": "https://promart.vteximg.com.br/arquivos/ids/5894355-1000-1000/image-77641794fe55490fa89a7aa9d183de7c.jpg?v=637886802318870000",
+  "archivo": "assets/productos/ACC-LEON-003.webp",
   "fecha": "2026-10-29"
  },
  "ACC-LEON-017": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "correa retractil para mascotas",
+  "titulo": "Correa Retráctil Expandible Para Perros Y Mascotas 3 Y 5 Mts | Walmart ...",
+  "pagina": "https://www.walmart.com.mx/ip/perros/correa-retractil-expandible-para-perros-y-mascotas-3-y-5-mts/00945599465379",
+  "origen": "https://i5.walmartimages.com/asr/212dacc2-8ca0-47fb-8e08-b6457931ed14.5bc0eb2dae594a41ba88b1eec44f481d.jpeg",
+  "archivo": "assets/productos/ACC-LEON-017.webp",
   "fecha": "2026-10-29"
  },
  "ACC-MOND-118": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "correa retractil parra 5 m para perro",
+  "titulo": "Correa Retráctil Automática Extensible 5 Mts Para Perros | Cuotas sin ...",
+  "pagina": "https://www.mercadolibre.cl/correa-retractil-automatica-extensible-5-mts-para-perros/up/MLCU3741082039",
+  "origen": "https://http2.mlstatic.com/D_NQ_NP_975374-MLC105455810673_012026-O.webp",
+  "archivo": "assets/productos/ACC-MOND-118.webp",
   "fecha": "2026-10-29"
  },
  "ACC-MOND-186": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "cortaunas para mascotas",
+  "titulo": "Corta Uñas Para Mascota Perro y Gato Cortauñas Sin Lastimarlo y Fácilmente",
+  "pagina": "https://www.claroshop.com/producto/16932349/corta-unas-para-mascota-perro-y-gato-cortaunas-sin-lastimarlo-y-facilmente",
+  "origen": "https://resources.claroshop.com/medios-plazavip/mkt/649e37278d6c0_cortaun-as-mascotas-05jpg.jpg?scale=500&qlty=75",
+  "archivo": "assets/productos/ACC-MOND-186.webp",
   "fecha": "2026-10-29"
  },
  "ACC-MOND-185": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "cortaunas para mascotas",
+  "titulo": "Cortaúñas para mascotas, cortaúñas profesional para perros y recortador ...",
+  "pagina": "https://www.bodegaaurrera.com.mx/ip/manicure-y-unas/cortaunas-para-mascotas-cortaunas-profesional-para-perros-y-recortador-de-garras-herramienta-de-aseo-para-el-hogar-con-proteccion-de-seguridad-para-evitar-recortes-excesivos-xemadio-2034369-1/00613716448243",
+  "origen": "https://i5.walmartimages.com.mx/mg/gm/3pp/asr/83771672-9ca1-44d4-9783-6593909b7573.a9d619a6fd7f502ec86c7bd8aea87103.jpeg?odnHeight=2000&odnWidth=2000&odnBg=ffffff",
+  "archivo": "assets/productos/ACC-MOND-185.webp",
   "fecha": "2026-10-29"
  },
  "ACC-PETB-010": {
@@ -2772,378 +3326,677 @@
  },
  "ACC-MUND-006": {
   "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "motivo": "foto referencial descartada en la revisión: muestra la marca de otro, no es del mismo tipo o está rota",
+  "descartadas": [
+   "https://http2.mlstatic.com/D_NQ_NP_616863-MLM102461120249_122025-O-filtro-automatico-de-fuente-de-agua-para-mascotas.webp"
+  ],
   "fecha": "2026-10-29"
  },
  "ACC-MOND-026": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "filtro fuente agua 4 uds para mascotas",
+  "titulo": "4 Uds. Filtros de fuente de agua para gato, carbón... – Grandado",
+  "pagina": "https://esp.grandado.com/products/4-uds-filtros-de-fuente-de-agua-para-gato-carbon-activo-2-filtros-de-esponja-de-repuesto-para-fuente-del-gato-fuente-de-agua-automatica-para-mascotas?variant=UHJvZHVjdFZhcmlhbnQ6Nzc0MTI2MzM0",
+  "origen": "https://images.nexusapp.co/assets/9a/21/9d/186573646.jpg",
+  "archivo": "assets/productos/ACC-MOND-026.webp",
   "fecha": "2026-10-29"
  },
  "ACC-MUND-009": {
   "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "motivo": "foto referencial descartada en la revisión: muestra la marca de otro, no es del mismo tipo o está rota",
+  "descartadas": [
+   "https://http2.mlstatic.com/D_NQ_NP_868483-MLA79560205938_102024-O.webp"
+  ],
   "fecha": "2026-10-29"
  },
  "ACC-MUND-008": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "filtro fuente agua para mascotas",
+  "titulo": "Repuesto Filtros Fuente Agua Gatos Perros Mascotas GENERICO | falabella.com",
+  "pagina": "https://www.falabella.com.co/falabella-co/product/129957375/Repuesto-Filtros-Fuente-Agua-Gatos-Perros-Mascotas/129957376",
+  "origen": "https://imagedelivery.net/4fYuQyy-r8_rpBpcY7lH_A/falabellaCO/129957376_01/w=800,h=800,fit=pad",
+  "archivo": "assets/productos/ACC-MUND-008.webp",
   "fecha": "2026-10-29"
  },
  "ACC-GEN-009": {
   "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "motivo": "foto referencial descartada en la revisión: muestra la marca de otro, no es del mismo tipo o está rota",
+  "descartadas": [
+   "https://petitpaws.com.co/cdn/shop/files/Catit-Flower-Fountain-3-Litros-1.webp?v=1744576355&width=1946"
+  ],
   "fecha": "2026-10-29"
  },
  "ACC-MOND-084": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "fuente agua gatos fountain 2.4 l para gato",
+  "titulo": "exito.com | Fuente De Agua Gatos 2.4 Litros",
+  "pagina": "https://www.exito.com/fuente-de-agua-gatos-24-litros-104181059-mp/p",
+  "origen": "https://exitocol.vteximg.com.br/arquivos/ids/27000484/fuente-de-agua-gatos-24-litros.jpg?v=638769821275970000",
+  "archivo": "assets/productos/ACC-MOND-084.webp",
   "fecha": "2026-10-29"
  },
  "ACC-MOND-047": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "fuente agua 2 l para mascotas",
+  "titulo": "FUENTE DE AGUA PARA MASCOTAS 2 L",
+  "pagina": "https://www.doffis.cl/fuente-de-agua-para-mascotas-2-l",
+  "origen": "https://cdnx.jumpseller.com/doffis-la-tienda-de-tu-mascota/image/37092981/resize/1200/1200?1688249269",
+  "archivo": "assets/productos/ACC-MOND-047.webp",
   "fecha": "2026-10-29"
  },
  "ACC-WOND-002": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "frazada grande para mascotas",
+  "titulo": "Manta Frazada Para Mascotas 60x90cm Perros Y Gatos Invierno | Cuotas ...",
+  "pagina": "https://www.mercadolibre.cl/manta-frazada-para-mascotas-60x90cm-perros-y-gatos-invierno/up/MLCU74027218",
+  "origen": "https://http2.mlstatic.com/D_NQ_NP_976522-MLC75894590356_042024-O.webp",
+  "archivo": "assets/productos/ACC-WOND-002.webp",
   "fecha": "2026-10-29"
  },
  "ACC-WOND-001": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "frazada mediana para mascotas",
+  "titulo": "Frazada Para Mascotas / Acolchado Para Perros Y Gatos – Universo Hobby",
+  "pagina": "https://www.universohobby.uy/shop/mascotas/cuchas-y-camas/frazada-para-mascotas-acolchado-para-perros-y-gatos/",
+  "origen": "https://www.universohobby.uy/wp-content/uploads/2024/07/D_681472-MLU72968035007_112023-F.jpg",
+  "archivo": "assets/productos/ACC-WOND-001.webp",
   "fecha": "2026-10-29"
  },
  "ACC-MOND-027": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "fuente agua para mascotas",
+  "titulo": "Loomla Fuente de agua para gatos, fuente de agua para mascotas de 85 ...",
+  "pagina": "https://costarica.yaxa.co/products/loomla-fuente-de-agua-para-gatos-fuente-de-agua-para-mascotas-de-85-onzas-2-5-litros-en-interiores-dispensador-automatico-de-agua-para-perros-con/",
+  "origen": "https://m.media-amazon.com/images/I/61c2sNYgLVL._AC_SL1500_.jpg",
+  "archivo": "assets/productos/ACC-MOND-027.webp",
   "fecha": "2026-10-29"
  },
  "ACC-MOND-124": {
   "grupo": "C",
   "motivo": "sin coincidencia segura por código ni por nombre",
-  "fecha": "2026-10-29"
+  "fecha": "2026-10-29",
+  "buscadaReferencial": true
  },
  "ACC-MOND-094": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "guante sacar pelos para mascotas",
+  "titulo": "Guante Cepillo Saca Quita Pelos Aseo Mascotas Perros Gatos Disponible ...",
+  "pagina": "https://donalberto.uy/producto/61227/",
+  "origen": "https://donalberto.uy/wp-content/uploads/2025/04/D_NQ_NP_2X_775719-MLU82557160051_022025-O.jpg",
+  "archivo": "assets/productos/ACC-MOND-094.webp",
   "fecha": "2026-10-29"
  },
  "ACC-MOND-039": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "hamaca ventana noyal para mascotas",
+  "titulo": "Cama Hamaca Colgante Ventosa Ventana Mediana Noyal Beige Gato | Cuotas ...",
+  "pagina": "https://www.mercadolibre.cl/cama-hamaca-colgante-ventosa-ventana-mediana-noyal-beige-gato/p/MLC43489610",
+  "origen": "https://http2.mlstatic.com/D_NQ_NP_747279-MLA100064065911_122025-O.webp",
+  "archivo": "assets/productos/ACC-MOND-039.webp",
   "fecha": "2026-10-29"
  },
  "ACC-BUEN-004": {
   "grupo": "C",
   "motivo": "sin coincidencia segura por código ni por nombre",
-  "fecha": "2026-10-29"
+  "fecha": "2026-10-29",
+  "buscadaReferencial": true
  },
  "ACC-BUEN-005": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "fuente agua para mascotas",
+  "titulo": "Fuente de agua para , mascotas, animales , silencioso, 3 modos ...",
+  "pagina": "https://www.bodegaaurrera.com.mx/ip/gatos/fuente-de-agua-para-mascotas-animales-silencioso-3-modos-dispensador-de-agua-filtracion-cascada-para-mascotas-sin-inteligente-salvador-fuentes-de-agua-potable/00075573548196",
+  "origen": "https://i5.walmartimages.com.mx/mg/gm/3pp/asr/35f11e9d-cf78-4807-b958-1743bdbd8b0e.df699bda861984fe037cd6c3ccb19d7a.jpeg?odnHeight=2000&odnWidth=2000&odnBg=ffffff",
+  "archivo": "assets/productos/ACC-BUEN-005.webp",
   "fecha": "2026-10-29"
  },
  "ACC-MOND-079": {
   "grupo": "C",
   "motivo": "sin coincidencia segura por código ni por nombre",
-  "fecha": "2026-10-29"
+  "fecha": "2026-10-29",
+  "buscadaReferencial": true
  },
  "ACC-MOND-133": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "jeringa remedios para mascotas",
+  "titulo": "Jeringa De Medicamentos Y Liquidos Universal Para Mascotas Color Azul ...",
+  "pagina": "https://www.mercadolibre.com.mx/jeringa-de-medicamentos-y-liquidos-universal-para-mascotas-color-azul/p/MLM28923387",
+  "origen": "https://http2.mlstatic.com/D_NQ_NP_770238-MLU73332503800_122023-O.webp",
+  "archivo": "assets/productos/ACC-MOND-133.webp",
   "fecha": "2026-10-29"
  },
  "ACC-MUND-004": {
   "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "motivo": "foto referencial descartada en la revisión: muestra la marca de otro, no es del mismo tipo o está rota",
+  "descartadas": [
+   "https://img.ele-gate.com/wp-content/uploads/2023/09/MAS.05.9.02.jpg"
+  ],
   "fecha": "2026-10-29"
  },
  "ACC-GEN-001": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "guantes pack 6 pcs para mascotas",
+  "titulo": "Paquete con 6 pares de guantes húmedos desechables para mascotas – Joinet",
+  "pagina": "https://joinet.com/producto/paquete-con-6-pares-de-guantes-para-mascotas-desechables-variedad-de-usos/",
+  "origen": "https://cdn.joinet.com/wp-content/uploads/2025/11/JR2595-1.webp",
+  "archivo": "assets/productos/ACC-GEN-001.webp",
   "fecha": "2026-10-29"
  },
  "ACC-MOND-193": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "juguete a pila gatos para gato",
+  "titulo": "Juguete eléctrico interactivo para gatos, juguete interactivo ...",
+  "pagina": "https://www.walmart.com.mx/ip/gatos/juguete-electrico-interactivo-para-gatos-juguete-interactivo-recargable-por-usb-para-gatos-juguete-inteligente-autogiratorio-para-gatos-juguete-con-luces-led-con-pluma-xemadio-wmxl-66/00622939882611",
+  "origen": "https://i5.walmartimages.com.mx/mg/gm/3pp/asr/94163da0-4550-4025-ba58-fae7734e6b9c.2559cda76fda6c5164f248c672244471.jpeg?odnHeight=2000&odnWidth=2000&odnBg=ffffff",
+  "archivo": "assets/productos/ACC-MOND-193.webp",
   "fecha": "2026-10-29"
  },
  "ACC-LEON-009": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "juguete ave colgante para mascotas",
+  "titulo": "10 unids/set juguetes pájaros mascotas Loro colgan... – Grandado",
+  "pagina": "https://esp.grandado.com/products/10-unids-set-juguetes-pajaros-mascotas-loro-colgante-pajaro-juguete-masticar-campana-juguetes-bola-juguete-masticar-loro-y-ave-mascota-jaula-accesorios?variant=UHJvZHVjdFZhcmlhbnQ6Mjc4OTE1MzQ",
+  "origen": "https://images.nexusapp.co/assets/3b/6c/4c/208974280.jpg",
+  "archivo": "assets/productos/ACC-LEON-009.webp",
   "fecha": "2026-10-29"
  },
  "ACC-BRNX-001": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "juguete modelo para gato",
+  "titulo": "Simulación de juguetes para gatos, modelos de animales, modelo de ...",
+  "pagina": "https://www.bodegaaurrera.com.mx/ip/gatos/simulacion-de-juguetes-para-gatos-modelos-de-animales-modelo-de-animal-de-gato-realista-para-navid-soledad-juguetes-de-gato-de-simulacion/00075536311585",
+  "origen": "https://i5.walmartimages.com.mx/mg/gm/3pp/asr/858b3e37-2cc6-4738-bae0-32f12aa4dc6c.0660e8e96eb1a6f7730839afaef666b5.jpeg?odnHeight=2000&odnWidth=2000&odnBg=ffffff",
+  "archivo": "assets/productos/ACC-BRNX-001.webp",
   "fecha": "2026-10-29"
  },
  "ACC-BRNX-004": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "juguete cuerda plumas para mascotas",
+  "titulo": "Juguete de plumas para gatos, cuerda de papel resistente a los arañazos ...",
+  "pagina": "https://www.bodegaaurrera.com.mx/ip/gatos/juguete-de-plumas-para-gatos-cuerda-de-papel-resistente-a-los-aranazos-juguete-interactivo-multiusos-para-gatos/00940976846637",
+  "origen": "https://i5.walmartimages.com/asr/42a913eb-63eb-4db4-b895-7d1c5f039c74.7c1fd76b43c399448e7ae3eeb0b0e8a3.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF",
+  "archivo": "assets/productos/ACC-BRNX-004.webp",
   "fecha": "2026-10-29"
  },
  "ACC-BRNX-003": {
   "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "motivo": "foto referencial descartada en la revisión: muestra la marca de otro, no es del mismo tipo o está rota",
+  "descartadas": [
+   "https://imagedelivery.net/4fYuQyy-r8_rpBpcY7lH_A/falabellaCL/132961214_01/w=800,h=800,fit=pad"
+  ],
   "fecha": "2026-10-29"
  },
  "ACC-BRNX-002": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "juguete modelo pollo para mascotas",
+  "titulo": "Xihbxyly Juguete de Pollo de Látex, Dispositivo de Sonido de ...",
+  "pagina": "https://www.walmart.com.mx/ip/mascotas-y-juguetes-electronicos/xihbxyly-juguete-de-pollo-de-latex-dispositivo-de-sonido-de-descompresion-material-para-rechinar-los-dientes-divertido-rebote-liberacion-de-energia-juego-para-mascotas-tamano-de-21-cm-diseno-d/00333138445762",
+  "origen": "https://i5.walmartimages.com/asr/3d090665-6aeb-4550-93d0-eaac0766f7a9.726a97f8fcb0f182494d4d4c1e734abc.jpeg",
+  "archivo": "assets/productos/ACC-BRNX-002.webp",
   "fecha": "2026-10-29"
  },
  "ACC-MOND-022": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "juguete colgante para mascotas",
+  "titulo": "Paquete de 7 Juguetes para Masticar Columpios para Loros Y Pájaros para ...",
+  "pagina": "https://www.walmart.com.mx/ip/otras-mascotas/paquete-de-7-juguetes-para-masticar-columpios-para-loros-y-pajaros-para-mascotas-cockatiel-budgie-multicolor-sunnimix-juguetes-colgantes-de-jaula-de-pajaros/00074042290346",
+  "origen": "https://i5.walmartimages.com/asr/46399cb0-a19e-42a4-a030-376f45d1a25b.2eca47b4159964d46384b771bbb50abb.jpeg",
+  "archivo": "assets/productos/ACC-MOND-022.webp",
   "fecha": "2026-10-29"
  },
  "ACC-MOND-142": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "juguete cuerda para mascotas",
+  "titulo": "Juguetes De Cuerda Para Mascotas Morder Paquete De 10 Piezas",
+  "pagina": "https://www.sanborns.com.mx/producto/743025/juguetes-de-cuerda-para-mascotas-morder-paquete-de-10-piezas",
+  "origen": "https://produ-bucket-media.s3.amazonaws.com/producto_manual/204800/2025/6/21/D_NQ_NP_620136-CBT48966264563_012022-O-juguetes-de-cuerda-para-perro-morder-paquete-de-10pz.jpg",
+  "archivo": "assets/productos/ACC-MOND-142.webp",
   "fecha": "2026-10-29"
  },
  "ACC-LEON-022": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "juguete cumpleanos para mascotas",
+  "titulo": "Juguetes para perros y gatos pastel de feliz cumpleaños juguete para ...",
+  "pagina": "https://guatemala.yaxa.co/products/juguetes-para-perros-y-gatos-pastel-de-feliz-cumpleanos-juguete-para-mascotas-acogedor-peluche-de-algodon-masticable-velas-coloridas-para-mascotas/",
+  "origen": "https://m.media-amazon.com/images/I/71-KN49TYgL._AC_SL1500_.jpg",
+  "archivo": "assets/productos/ACC-LEON-022.webp",
   "fecha": "2026-10-29"
  },
  "ACC-MOND-140": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "juguete disco para mascotas",
+  "titulo": "Juguete Disco Volador Para Mascotas Frisby Goma Resistente | MercadoLibre",
+  "pagina": "https://articulo.mercadolibre.com.co/MCO-1284330573-juguete-disco-volador-para-mascotas-frisby-goma-resistente-_JM",
+  "origen": "https://http2.mlstatic.com/D_NQ_NP_839448-MCO73849412814_012024-O.webp",
+  "archivo": "assets/productos/ACC-MOND-140.webp",
   "fecha": "2026-10-29"
  },
  "ACC-MOND-041": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "juguete gallina para mascotas",
+  "titulo": "Juguete Para Perro Mascota Pollo Gallina Con Chifle Gigante - Don Alberto",
+  "pagina": "https://donalberto.uy/producto/57704/",
+  "origen": "https://donalberto.uy/wp-content/uploads/2024/05/D_NQ_NP_2X_741908-MLU52338575514_112022-O.jpg",
+  "archivo": "assets/productos/ACC-MOND-041.webp",
   "fecha": "2026-10-29"
  },
  "ACC-GEN-018": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "juguete cascabel para gato",
+  "titulo": "Juguete cascabel con plumas para gatos | Arena para Mascotas",
+  "pagina": "https://arenaparamascotas.cl/producto/juguete-cascabel-con-plumas-para-gatos/",
+  "origen": "https://arenaparamascotas.cl/wp-content/uploads/2024/09/juguete-cascabel.jpg",
+  "archivo": "assets/productos/ACC-GEN-018.webp",
   "fecha": "2026-10-29"
  },
  "ACC-MOND-158": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "juguete para gato",
+  "titulo": "Juguete interactivo para gatos, vaso 4 en 1, juguete para gatos con ...",
+  "pagina": "https://www.walmart.com.mx/ip/gatos/juguete-interactivo-para-gatos-vaso-4-en-1-juguete-para-gatos-con-doble-bola-y-palo-dispensador-d-oso-de-fresa-electronica/00905031074827",
+  "origen": "https://i5.walmartimages.com.mx/mg/gm/3pp/asr/17e629fb-d99f-42f2-a865-e0c40bd551ce.84db465b9e7c4440b7668da8efb3f35e.jpeg?odnHeight=2000&odnWidth=2000&odnBg=ffffff",
+  "archivo": "assets/productos/ACC-MOND-158.webp",
   "fecha": "2026-10-29"
  },
  "ACC-CASA-001": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "juguete casa store pez plumas para mascotas",
+  "titulo": "Juguete Pez Y Plumas para Gatos – MELO Pet and Garden",
+  "pagina": "https://melopetandgarden.com/products/juguete-pez-y-plumas-para-gatos",
+  "origen": "https://melopetandgarden.com/cdn/shop/files/Disenosintitulo-2025-03-21T170007.031_1.jpg?v=1742594429",
+  "archivo": "assets/productos/ACC-CASA-001.webp",
   "fecha": "2026-10-29"
  },
  "ACC-MUND-005": {
   "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "motivo": "foto referencial descartada en la revisión: muestra la marca de otro, no es del mismo tipo o está rota",
+  "descartadas": [
+   "https://m.media-amazon.com/images/I/41qFcPRJqgL.jpg"
+  ],
   "fecha": "2026-10-29"
  },
  "ACC-LEON-001": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "juguete para mascotas",
+  "titulo": "Kit De 7 Juguetes Para Mascotas Multiuso Importado | Lider",
+  "pagina": "https://www.lider.cl/ip/accesorios/kit-de-7-juguetes-para-mascotas-multiuso-importado/00790681577758",
+  "origen": "https://i5.walmartimages.cl/asr/460cbe35-78dd-4462-a71e-37b6020bd9e8.6d05a4337196f92313a247f6fe980638.png?odnHeight=2000&odnWidth=2000&odnBg=ffffff",
+  "archivo": "assets/productos/ACC-LEON-001.webp",
   "fecha": "2026-10-29"
  },
  "ACC-LEON-004": {
   "grupo": "C",
   "motivo": "sin coincidencia segura por código ni por nombre",
-  "fecha": "2026-10-29"
+  "fecha": "2026-10-29",
+  "buscadaReferencial": true
  },
  "ACC-MOND-144": {
   "grupo": "C",
   "motivo": "sin coincidencia segura por código ni por nombre",
-  "fecha": "2026-10-29"
+  "fecha": "2026-10-29",
+  "buscadaReferencial": true
  },
  "ACC-MOND-166": {
   "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "motivo": "foto referencial descartada en la revisión: muestra la marca de otro, no es del mismo tipo o está rota",
+  "descartadas": [
+   "https://oechsle.vteximg.com.br/arquivos/ids/16512779-1000-1000/image-78891e8ce7644a288c6d55720cdd17ee.jpg?v=638331831660670000"
+  ],
   "fecha": "2026-10-29"
  },
  "ACC-LILI-001": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "juguete lili modelo pelota colores para mascotas",
+  "titulo": "Pelota Robótica Juguete Para Mascotas + 4 Fundas De Colores | Cuotas ...",
+  "pagina": "https://articulo.mercadolibre.com.uy/MLU-671049270-pelota-robotica-juguete-para-mascotas-4-fundas-de-colores-_JM",
+  "origen": "https://http2.mlstatic.com/D_NQ_NP_692793-MLU74341056356_022024-O.webp",
+  "archivo": "assets/productos/ACC-LILI-001.webp",
   "fecha": "2026-10-29"
  },
  "ACC-LILI-002": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "juguete lili modelo tortuga para mascotas",
+  "titulo": "Mascota de Juguete Tortuga Surtido Little Live Pets Movimientos y ...",
+  "pagina": "https://despensa.bodegaaurrera.com.mx/ip/mascota-de-juguete-tortuga-surtido-little-live-pets-movimientos-y-sonidos-interactivo-varios-modelos-1-pieza-/00063099626686",
+  "origen": "https://i5.walmartimages.com.mx/mg/gm/3pp/asr/1f5f8d5e-efab-4cc6-8789-94d2a18ef243.82288445971e74689b762dce1194ed96.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF",
+  "archivo": "assets/productos/ACC-LILI-002.webp",
   "fecha": "2026-10-29"
  },
  "ACC-FELI-002": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "juguete modelo jaula feline para mascotas",
+  "titulo": "Juguete Para Gatos Interactivo Jaula Con Ratita Y Plumas Azul Acero ...",
+  "pagina": "https://www.mercadolibre.com.ar/juguete-para-gatos-interactivo-jaula-con-ratita-y-plumas/up/MLAU3294697153",
+  "origen": "https://http2.mlstatic.com/D_NQ_NP_871666-MLA87701696170_072025-O.webp",
+  "archivo": "assets/productos/ACC-FELI-002.webp",
   "fecha": "2026-10-29"
  },
  "ACC-MOND-143": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "juguete para mascotas",
+  "titulo": "Juguetes Para Mascota Kit De 6 Piezas Indestructibles | Meses sin interés",
+  "pagina": "https://www.mercadolibre.com.mx/juguetes-para-mascota-kit-de-6-piezas-indestructibles/up/MLMU939950445",
+  "origen": "https://http2.mlstatic.com/D_NQ_NP_622255-MLM54941526456_042023-O.webp",
+  "archivo": "assets/productos/ACC-MOND-143.webp",
   "fecha": "2026-10-29"
  },
  "ACC-MOND-061": {
   "grupo": "C",
   "motivo": "sin coincidencia segura por código ni por nombre",
-  "fecha": "2026-10-29"
+  "fecha": "2026-10-29",
+  "buscadaReferencial": true
  },
  "ACC-MOND-019": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "juguete peluche cuerda pelota para mascotas",
+  "titulo": "JUGUETE PELUCHE CUERDA MAS PELOTA – Para Mi Mascota",
+  "pagina": "https://www.paramimascota.cl/producto/juguete-peluche-cuerda-mas-pelota/",
+  "origen": "https://www.paramimascota.cl/wp-content/uploads/2023/05/juguete-peluche-con-cuerda-pelota_IGTm7.jpg",
+  "archivo": "assets/productos/ACC-MOND-019.webp",
   "fecha": "2026-10-29"
  },
  "ACC-MOND-017": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "juguete palo cuerda pelota para mascotas",
+  "titulo": "Juguete Cuerda Con Nudos Y 1 Pelota De Goma Para Mascota Aleatorio ...",
+  "pagina": "https://www.mercadolibre.com.uy/juguete-cuerda-con-nudos-y-1-pelota-de-goma-para-mascota/up/MLUU2439546781",
+  "origen": "https://http2.mlstatic.com/D_NQ_NP_665607-MLU93662237530_102025-O.webp",
+  "archivo": "assets/productos/ACC-MOND-017.webp",
   "fecha": "2026-10-29"
  },
  "ACC-MOND-016": {
   "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "motivo": "foto referencial descartada en la revisión: muestra la marca de otro, no es del mismo tipo o está rota",
+  "descartadas": [
+   "https://imagedelivery.net/4fYuQyy-r8_rpBpcY7lH_A/falabellaCL/128910390_01/w=800,h=800,fit=pad"
+  ],
   "fecha": "2026-10-29"
  },
  "ACC-MOND-172": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "juguete para gato",
+  "titulo": "Juguete para Gato, Juguetes para Gato con Plumas, Cascabeles y Ventosas ...",
+  "pagina": "https://www.amazon.com.mx/Juguetes-Cascabeles-Interactivos-Ejercicio-Interiores/dp/B0CF488X69",
+  "origen": "https://m.media-amazon.com/images/I/514BtJ2HPqL._AC_SL1500_.jpg",
+  "archivo": "assets/productos/ACC-MOND-172.webp",
   "fecha": "2026-10-29"
  },
  "ACC-MOND-083": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "juguete para gato",
+  "titulo": "Juguete para Gato, Juguetes para Gato con Plumas, Cascabeles y Ventosas ...",
+  "pagina": "https://www.amazon.com.mx/Juguetes-Cascabeles-Interactivos-Ejercicio-Interiores/dp/B0CF488X69",
+  "origen": "https://m.media-amazon.com/images/I/514BtJ2HPqL._AC_.jpg",
+  "archivo": "assets/productos/ACC-MOND-083.webp",
   "fecha": "2026-10-29"
  },
  "ACC-MOND-190": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "juguete para gato",
+  "titulo": "Los mejores juguetes para gatos 🐱 ¡Diversión asegurada!",
+  "pagina": "https://blog.guaw.com/cuales-son-los-mejores-juguetes-para-gatos/",
+  "origen": "https://guaw.com/30188-thickbox_default/juguete-surtido-ferplast-5017-para-gato.jpg",
+  "archivo": "assets/productos/ACC-MOND-190.webp",
   "fecha": "2026-10-29"
  },
  "ACC-MRDO-001": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "juguete mr dog modelo naranja para gato",
+  "titulo": "Juguete Interactivo Para Gatos King Dog & Cat Modelo 5008 Rosa Naranja ...",
+  "pagina": "https://www.mercadolibre.com.mx/juguete-interactivo-para-gatos-king-dog--cat-modelo-5008/up/MLMU3245673893",
+  "origen": "https://http2.mlstatic.com/D_NQ_NP_724730-MLM88989409902_082025-O.webp",
+  "archivo": "assets/productos/ACC-MRDO-001.webp",
   "fecha": "2026-10-29"
  },
  "ACC-MRDO-002": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "juguete mr dog raton colores para gato",
+  "titulo": "Juguete para gato colores espiral con ratón 26cm",
+  "pagina": "https://www.mrpartymrdog.cl/juguete-para-gato-colores-espiral-con-raton-26cm",
+  "origen": "https://cdnx.jumpseller.com/mr-party-mr-dog/image/69248100/resize/400/400?1762039347",
+  "archivo": "assets/productos/ACC-MRDO-002.webp",
   "fecha": "2026-10-29"
  },
  "ACC-MOND-179": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "juguete para gato",
+  "titulo": "Juguete para Gato Fancy Pets Multicolor 1 Pieza | Walmart en línea",
+  "pagina": "https://super.walmart.com.mx/ip/juguete-para-gato-fancy-pets-multicolor-1-pieza/00750155649742",
+  "origen": "https://i5.walmartimages.com.mx/gr/images/product-images/img_large/00750155649742L.jpg?odnHeight=612&odnWidth=612&odnBg=FFFFFF",
+  "archivo": "assets/productos/ACC-MOND-179.webp",
   "fecha": "2026-10-29"
  },
  "ACC-MOND-180": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "juguete para gato",
+  "titulo": "Kit interactivo de juguetes para gatos - 8 artículos | MercadoLibre",
+  "pagina": "https://www.mercadolibre.com.ar/kit-interactivo-de-juguetes-para-gatos-8-articulos/p/MLA27458784",
+  "origen": "https://http2.mlstatic.com/D_NQ_NP_670519-MLU72091641449_102023-O.webp",
+  "archivo": "assets/productos/ACC-MOND-180.webp",
   "fecha": "2026-10-29"
  },
  "ACC-MOND-169": {
   "grupo": "C",
   "motivo": "sin coincidencia segura por código ni por nombre",
-  "fecha": "2026-10-29"
+  "fecha": "2026-10-29",
+  "buscadaReferencial": true
  },
  "ACC-MOND-168": {
   "grupo": "C",
   "motivo": "sin coincidencia segura por código ni por nombre",
-  "fecha": "2026-10-29"
+  "fecha": "2026-10-29",
+  "buscadaReferencial": true
  },
  "ACC-MOND-171": {
   "grupo": "C",
   "motivo": "sin coincidencia segura por código ni por nombre",
-  "fecha": "2026-10-29"
+  "fecha": "2026-10-29",
+  "buscadaReferencial": true
  },
  "ACC-MOND-159": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "juguete para gato",
+  "titulo": "Juguete para Gato Fancy Pets Multicolor 1 Pieza | Walmart en línea",
+  "pagina": "https://super.walmart.com.mx/ip/juguete-para-gato-fancy-pets-multicolor-1-pieza/00750155649742",
+  "origen": "https://i5.walmartimages.com.mx/gr/images/product-images/img_large/00750155649742L.jpg",
+  "archivo": "assets/productos/ACC-MOND-159.webp",
   "fecha": "2026-10-29"
  },
  "ACC-MOND-173": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "juguete para gato",
+  "titulo": "HavenJanny Juguetes de Langosta para Gatos y Perros, Juguete ...",
+  "pagina": "https://www.amazon.com.mx/HavenJanny-Interactivo-Masticable-Pateadores-Recargable/dp/B0BV6FTWM3",
+  "origen": "https://m.media-amazon.com/images/I/71fORhNh4FL._AC_.jpg",
+  "archivo": "assets/productos/ACC-MOND-173.webp",
   "fecha": "2026-10-29"
  },
  "ACC-MOND-060": {
   "grupo": "C",
   "motivo": "sin coincidencia segura por código ni por nombre",
-  "fecha": "2026-10-29"
+  "fecha": "2026-10-29",
+  "buscadaReferencial": true
  },
  "ACC-MOND-174": {
   "grupo": "C",
   "motivo": "sin coincidencia segura por código ni por nombre",
-  "fecha": "2026-10-29"
+  "fecha": "2026-10-29",
+  "buscadaReferencial": true
  },
  "ACC-MOND-170": {
   "grupo": "C",
   "motivo": "sin coincidencia segura por código ni por nombre",
-  "fecha": "2026-10-29"
+  "fecha": "2026-10-29",
+  "buscadaReferencial": true
  },
  "ACC-MOND-160": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "juguete paleta para gato",
+  "titulo": "Juguete Gato Catnip Paleta Hierba Gatera Catnip Juego Gatos | Cuotas ...",
+  "pagina": "https://articulo.mercadolibre.cl/MLC-1472863426-juguete-gato-catnip-paleta-hierba-gatera-catnip-juego-gatos-_JM",
+  "origen": "https://http2.mlstatic.com/D_NQ_NP_604115-MLC70199976943_062023-O.webp",
+  "archivo": "assets/productos/ACC-MOND-160.webp",
   "fecha": "2026-10-29"
  },
  "ACC-GEN-005": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "juguete pelota pluma para gato",
+  "titulo": "GENERICO Juguete Con Pluma Para Gatos Pelota Interactiva | falabella.com",
+  "pagina": "https://www.falabella.com/falabella-cl/product/119502503/Juguete-Con-Pluma-Para-Gatos-Pelota-Interactiva/119502506",
+  "origen": "https://imagedelivery.net/4fYuQyy-r8_rpBpcY7lH_A/falabellaCL/119502506_01/w=800,h=800,fit=pad",
+  "archivo": "assets/productos/ACC-GEN-005.webp",
   "fecha": "2026-10-29"
  },
  "ACC-MOND-162": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "juguete peluche para gato",
+  "titulo": "Juguete para gato peluches de animales y dulces 6 piezas 12.7 cm ...",
+  "pagina": "https://www.vidri.com.sv/producto/475907/juguete-para-gato-peluches-de-animales-y-dulces-6-piezas-127-cm.html",
+  "origen": "https://ferreteriavidri.com/images/items/large/475907.jpg",
+  "archivo": "assets/productos/ACC-MOND-162.webp",
   "fecha": "2026-10-29"
  },
  "ACC-MOND-163": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "juguete mariposa para gato",
+  "titulo": "Juguete para Gato Mariposa Giratoria (7133) - Distribuidora Lira",
+  "pagina": "https://www.distribuidoralira.cl/product/juguete-para-gato-mariposa-giratoria-7133/",
+  "origen": "https://www.distribuidoralira.cl/wp-content/uploads/2025/03/18P142-600x600.jpg",
+  "archivo": "assets/productos/ACC-MOND-163.webp",
   "fecha": "2026-10-29"
  },
  "ACC-MOND-164": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "juguete varilla para gato",
+  "titulo": "Juguete Para Gato AFP Varilla Furry Ball Roja - Espacio Mascota ...",
+  "pagina": "https://www.espaciomascota.com.uy/juguete-para-gato-afp-varilla-furry-ball-roja",
+  "origen": "https://i.aw.uy/espacio-mascota/0008127_12155_1_1080.jpeg",
+  "archivo": "assets/productos/ACC-MOND-164.webp",
   "fecha": "2026-10-29"
  },
  "ACC-MOND-194": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "juguete gatos para gato",
+  "titulo": "Juguetes para gatos con mangos de madera, palitos para jugar con gatos ...",
+  "pagina": "https://www.walmart.com.mx/ip/gatos/juguetes-para-gatos-con-mangos-de-madera-palitos-para-jugar-con-gatos-cuerdas-elasticas-y-cascabeles-de-tela-de-lino-juguetes-para-gatos-juguetes-adecuados-para-la-interaccion-con-gatos-juguete-d/00241366538011",
+  "origen": "https://i5.walmartimages.com/asr/8984679c-18be-4d85-808d-070301b0d1a5.8cfd30de353112e3aab5aec4413b079c.jpeg",
+  "archivo": "assets/productos/ACC-MOND-194.webp",
   "fecha": "2026-10-29"
  },
  "ACC-MOND-137": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "juguete pelota para mascotas",
+  "titulo": "Pelota para mascotas para perros, juguetes interactivos para perros ...",
+  "pagina": "https://www.bodegaaurrera.com.mx/ip/perros/pelota-para-mascotas-para-perros-juguetes-interactivos-para-perros-pelota-para-masticar-para-perros-juguetes-divertidos-para-gatos-pelotas-para-mascotas-juguete-para-cachorros-mascotas-pequenas/00947250871781",
+  "origen": "https://i5.walmartimages.com/asr/f2c61cf2-c407-42fc-b107-8adcdc15e895.6714d0c660b8d479a34ea4342176b742.jpeg",
+  "archivo": "assets/productos/ACC-MOND-137.webp",
   "fecha": "2026-10-29"
  },
  "ACC-LEON-023": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "juguete pelota goma para mascotas",
+  "titulo": "Pelota para mascotas con huella hueca de voz de goma, juguete ...",
+  "pagina": "https://www.walmart.com.mx/ip/blancos/pelota-para-mascotas-con-huella-hueca-de-voz-de-goma-juguete-interactivo-para-perros-pelota-de-juego-para-perros-entrenamiento-deportivo-sonidos-divertidos-zefeiwu-8390614082786/00839061408278",
+  "origen": "https://i5.walmartimages.com.mx/mg/gm/3pp/asr/1a5d6b14-934d-43be-b78f-8d0eae84de44.cb253043def4a7d459a9dd8c413b3934.jpeg?odnHeight=2000&odnWidth=2000&odnBg=ffffff",
+  "archivo": "assets/productos/ACC-LEON-023.webp",
   "fecha": "2026-10-29"
  },
  "ACC-GEN-008": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "juguete pelota interactiva para mascotas",
+  "titulo": "Pelota Interactiva para Gato Juguete Inteligente Azul d4,3 - Oechsle",
+  "pagina": "https://www.oechsle.pe/pelota-interactiva-para-gato-juguete-inteligente-azul-d43-1000889499/p",
+  "origen": "https://oechsle.vteximg.com.br/arquivos/ids/19291395-1000-1000/image.jpg?v=638653622988600000",
+  "archivo": "assets/productos/ACC-GEN-008.webp",
   "fecha": "2026-10-29"
  },
  "ACC-LEON-024": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "juguete para perro",
+  "titulo": "Juguetes para Perros mordedera para Perro para Masticadores Agresivos ...",
+  "pagina": "https://www.amazon.com.mx/mordedera-Masticadores-Agresivos-Indestructible-Remolcador/dp/B09FYTNHN9",
+  "origen": "https://m.media-amazon.com/images/I/61sdIL+DAJL._AC_.jpg",
+  "archivo": "assets/productos/ACC-LEON-024.webp",
   "fecha": "2026-10-29"
  },
  "ACC-MOND-138": {
   "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "motivo": "foto referencial descartada en la revisión: muestra la marca de otro, no es del mismo tipo o está rota",
+  "descartadas": [
+   "https://i5.walmartimages.com.mx/gr/images/product-images/img_large/00750155648503L.jpg"
+  ],
   "fecha": "2026-10-29"
  },
  "ACC-MARB-014": {
   "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "motivo": "foto referencial descartada en la revisión: muestra la marca de otro, no es del mismo tipo o está rota",
+  "descartadas": [
+   "https://http2.mlstatic.com/D_NQ_NP_724791-MLC87841845946_072025-O.webp"
+  ],
   "fecha": "2026-10-29"
  },
  "ACC-MOND-139": {
   "grupo": "C",
   "motivo": "sin coincidencia segura por código ni por nombre",
-  "fecha": "2026-10-29"
+  "fecha": "2026-10-29",
+  "buscadaReferencial": true
  },
  "ACC-MOND-141": {
   "grupo": "C",
   "motivo": "sin coincidencia segura por código ni por nombre",
-  "fecha": "2026-10-29"
+  "fecha": "2026-10-29",
+  "buscadaReferencial": true
  },
  "OTR-MARB-004": {
   "grupo": "A",
@@ -3156,103 +4009,199 @@
   "fecha": "2026-10-29"
  },
  "ACC-MOND-040": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "juguete pollo sonido para mascotas",
+  "titulo": "Juguete Con Sonido Pollo Para Perros 28cm Color Amarillo | Cuotas sin ...",
+  "pagina": "https://www.mercadolibre.com.co/juguete-con-sonido-pollo-para-perros-28cm-color-amarillo/p/MCO45693871",
+  "origen": "https://http2.mlstatic.com/D_NQ_NP_722748-MLA82105231479_012025-O.webp",
+  "archivo": "assets/productos/ACC-MOND-040.webp",
   "fecha": "2026-10-29"
  },
  "ACC-MOND-018": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "juguete raton tela para mascotas",
+  "titulo": "Juguete Ratón Azul Para Mascota Peluche De Tela Con Sonido Azul Ratón ...",
+  "pagina": "https://www.mercadolibre.com.mx/juguete-raton-azul-para-mascota-peluche-de-tela-con-sonido/up/MLMU2731005919",
+  "origen": "https://http2.mlstatic.com/D_NQ_NP_723530-MLM91941881910_092025-O.webp",
+  "archivo": "assets/productos/ACC-MOND-018.webp",
   "fecha": "2026-10-29"
  },
  "ACC-MOND-015": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "juguete raton unidad para mascotas",
+  "titulo": "Juguete Para Gato LILI MASCOTA Ratón Redondo - Espacio Mascota ...",
+  "pagina": "https://www.espaciomascota.com.uy/juguete-para-gato-lili-mascota-raton-redondo",
+  "origen": "https://i.aw.uy/espacio-mascota/0015572_17675_1_1080.jpeg",
+  "archivo": "assets/productos/ACC-MOND-015.webp",
   "fecha": "2026-10-29"
  },
  "OTR-STAY-001": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "juguete stay wild para perro",
+  "titulo": "STAY WILD RAMA JUGUETE MORDEDOR PARA PERROS - Manifarmavet",
+  "pagina": "https://www.manifarmavet.cl/product/stay-wild-rama-juguete-mordedor-para-perros/",
+  "origen": "https://www.manifarmavet.cl/wp-content/uploads/2026/05/378-600x600.webp",
+  "archivo": "assets/productos/OTR-STAY-001.webp",
   "fecha": "2026-10-29"
  },
  "OTR-STAY-002": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "juguete stay wild para perro",
+  "titulo": "STAY WILD PACK 3 FORMAS JUGUETE MORDEDOR PARA PERROS - Manifarmavet",
+  "pagina": "https://www.manifarmavet.cl/product/stay-wild-pack-3-formas-juguete-mordedor-para-perros/",
+  "origen": "https://www.manifarmavet.cl/wp-content/uploads/2026/05/bbd77ca1-2c36-4c66-9ea0-d3a69192e00f-600x600.webp",
+  "archivo": "assets/productos/OTR-STAY-002.webp",
   "fecha": "2026-10-29"
  },
  "ACC-MOND-191": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "juguete ratoncito para mascotas",
+  "titulo": "Juguete Peluche Con Sonido Raton Grande Para Mascotas | Lider",
+  "pagina": "https://www.lider.cl/ip/accesorios/juguete-peluche-con-sonido-raton-grande-para-mascotas/00759882479489",
+  "origen": "https://i5.walmartimages.cl/asr/5e5786cb-ac92-4551-a8dd-bb528221ea49.0a77cc4ea2b923fd981dc823edc1b9af.jpeg?odnHeight=2000&odnWidth=2000&odnBg=ffffff",
+  "archivo": "assets/productos/ACC-MOND-191.webp",
   "fecha": "2026-10-29"
  },
  "ACC-TOYC-001": {
   "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "motivo": "foto referencial descartada en la revisión: muestra la marca de otro, no es del mismo tipo o está rota",
+  "descartadas": [
+   "https://ecuador.vanderpet.com/wp-content/uploads/2024/05/TOYCAT-012.jpg"
+  ],
   "fecha": "2026-10-29"
  },
  "ACC-MOND-091": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "juguete tunel para mascotas",
+  "titulo": "Cachorro mascota Conejo gato juego túnel tubo juguete | Laberinto para ...",
+  "pagina": "https://www.walmart.com.mx/ip/gatos/cachorro-mascota-conejo-gato-juego-tunel-tubo-juguete-laberinto-para-gatos-casa-cama-tienda-ventana-abierta-tipo-t-3-vias/00941604816930",
+  "origen": "https://i5.walmartimages.com.mx/mg/gm/3pp/asr/91927301-6f00-43cb-afa6-008dd6bef7d8.5e6aac0bc8e2b17d90716dc90cade9a2.jpeg?odnHeight=2000&odnWidth=2000&odnBg=ffffff",
+  "archivo": "assets/productos/ACC-MOND-091.webp",
   "fecha": "2026-10-29"
  },
  "ACC-LEON-005": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "juguete varilla para mascotas",
+  "titulo": "Varilla colorida para gatos, varita para mascotas, juguete para gatos ...",
+  "pagina": "https://www.walmart.com.mx/ip/gatos/varilla-colorida-para-gatos-varita-para-mascotas-juguete-para-gatos-palo-interactivo-para-rascar-wdftyju/00134850307945",
+  "origen": "https://i5.walmartimages.com.mx/mg/gm/3pp/asr/999b63c1-164d-4516-9733-81a7174a950b.fc389a42ce57665915fd3edb1ba41a50.jpeg?odnHeight=2000&odnWidth=2000&odnBg=ffffff",
+  "archivo": "assets/productos/ACC-LEON-005.webp",
   "fecha": "2026-10-29"
  },
  "ACC-MOND-021": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "juguete yerba gatera modelo bola para mascotas",
+  "titulo": "Bola Giratoria C/hierba Gatera De Juguete Para Gatos, 6 Pzs | Cuotas ...",
+  "pagina": "https://www.mercadolibre.cl/bola-giratoria-chierba-gatera-de-juguete-para-gatos-6-pzs/p/MLC43806332",
+  "origen": "https://http2.mlstatic.com/D_NQ_NP_613256-MLA80950103563_112024-O.webp",
+  "archivo": "assets/productos/ACC-MOND-021.webp",
   "fecha": "2026-10-29"
  },
  "ACC-GEN-031": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "juguetitos grandes para gato",
+  "titulo": "Set 3 Juguetes Masticables Grandes para Gatos - Duraderos y Atractivos ...",
+  "pagina": "https://megacentral.com.mx/product/juguetes-masticables-gatos-grandes-mlm-3867618302/",
+  "origen": "https://megacentral-storage.nyc3.digitaloceanspaces.com/wp-content/uploads/2026/02/14140157/D_NQ_NP_2X_892685-MLM88485186910_072025-F.webp",
+  "archivo": "assets/productos/ACC-GEN-031.webp",
   "fecha": "2026-10-29"
  },
  "ACC-GEN-032": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "juguetitos individuales para gato",
+  "titulo": "Juguetes interactivos para gatos, vaso 4 en 1, juguete para gatos con ...",
+  "pagina": "https://www.walmart.com.mx/ip/gatos/juguetes-interactivos-para-gatos-vaso-4-en-1-juguete-para-gatos-con-doble-bola-y-palo-dispensador-er/00820378803596",
+  "origen": "https://i5.walmartimages.com.mx/mg/gm/3pp/asr/924653b4-adee-461c-a1ce-43adf5b54282.541ab1f03d947e61be42a141f2d1b030.jpeg?odnHeight=2000&odnWidth=2000&odnBg=ffffff",
+  "archivo": "assets/productos/ACC-GEN-032.webp",
   "fecha": "2026-10-29"
  },
  "ACC-GEN-030": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "juguetitos mostrador para gato",
+  "titulo": "Juguete interactivo para gatos, juguete de enriquecimiento, juguetes de ...",
+  "pagina": "https://www.bodegaaurrera.com.mx/ip/gatos/juguete-interactivo-para-gatos-juguete-de-enriquecimiento-juguetes-de-rompecabezas-parque-infantil-centro-de-actividades-caja-de-carton-muebles-fernando-rascador-para-gatos/00076282468264",
+  "origen": "https://i5.walmartimages.com.mx/mg/gm/3pp/asr/57fc51d2-66c4-4a5d-9ad0-467cf8db7983.839d4eb73eb42603ea01d2d7dab5d1b5.jpeg?odnHeight=2000&odnWidth=2000&odnBg=ffffff",
+  "archivo": "assets/productos/ACC-GEN-030.webp",
   "fecha": "2026-10-29"
  },
  "ACC-MOND-031": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "lentes para gato",
+  "titulo": "Lentes para Gatos - Rojo - Cat-oh pet shop",
+  "pagina": "https://cat-oh.com/comprar-producto/lentes-de-sol-para-gatos-rojo/",
+  "origen": "https://i0.wp.com/cat-oh.com/wp-content/uploads/2022/11/lentes_gato_rojo.jpg",
+  "archivo": "assets/productos/ACC-MOND-031.webp",
   "fecha": "2026-10-29"
  },
  "ACC-MOND-148": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "mamadera para mascotas",
+  "titulo": "Kit De Mamadera Para Cachorros Y Gatitos - Fauna Salud",
+  "pagina": "https://faunasalud.cl/product/kit-de-mamadera-para-cachorros-y-gatitos/",
+  "origen": "https://faunasalud.cl/wp-content/uploads/2024/05/2-14.jpg",
+  "archivo": "assets/productos/ACC-MOND-148.webp",
   "fecha": "2026-10-29"
  },
  "ACC-MOND-048": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "manta 60 x 90 para mascotas",
+  "titulo": "Kit De 3 Mantas Para Perros De 60cm X 90cm Gatos Mascotas | Cuotas sin ...",
+  "pagina": "https://articulo.mercadolibre.cl/MLC-1464507025-kit-de-3-mantas-para-perros-de-60cm-x-90cm-gatos-mascotas-_JM",
+  "origen": "https://http2.mlstatic.com/D_NQ_NP_815782-MLC74633638015_022024-O.webp",
+  "archivo": "assets/productos/ACC-MOND-048.webp",
   "fecha": "2026-10-29"
  },
  "ACC-MOND-147": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "mamadera para mascotas",
+  "titulo": "Mamadera Para Gatitos O Perritos Cachorros Mascotas Bebes Cs | Cuotas ...",
+  "pagina": "https://www.mercadolibre.cl/mamadera-para-gatitos-o-perritos-cachorros-mascotas-bebes-cs/up/MLCU11110691",
+  "origen": "https://http2.mlstatic.com/D_NQ_NP_651355-MLC52648253431_112022-O.webp",
+  "archivo": "assets/productos/ACC-MOND-147.webp",
   "fecha": "2026-10-29"
  },
  "OTR-PRON-001": {
   "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "motivo": "foto referencial descartada en la revisión: muestra la marca de otro, no es del mismo tipo o está rota",
+  "descartadas": [
+   "https://static.wixstatic.com/media/795aad_3a3ab5d1e0854e39b0ecee439ec22211~mv2.jpg/v1/fill/w_980,h_980,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/795aad_3a3ab5d1e0854e39b0ecee439ec22211~mv2.jpg"
+  ],
   "fecha": "2026-10-29"
  },
  "ACC-MOND-011": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "mochila para mascotas",
+  "titulo": "Amazon.com: PETKIT Mochila transportadora para gatos con ventilador ...",
+  "pagina": "https://www.amazon.com/-/es/transportadora-ventilador-incorporado-aerolíneas-desmontable/dp/B0CHFC2YCM",
+  "origen": "https://m.media-amazon.com/images/I/81ak1O9SK7L._AC_.jpg",
+  "archivo": "assets/productos/ACC-MOND-011.webp",
   "fecha": "2026-10-29"
  },
  "ACC-MOND-010": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "mochila transportador para mascotas",
+  "titulo": "MOCHILA TRANSPORTADORA PARA GATO MASCOTA TRANSPARENTE PANORAMICO - Promart",
+  "pagina": "https://www.promart.pe/mochila-transportadora-para-gato-mascota-transparente-panoramico--1001639703/p",
+  "origen": "https://promart.vteximg.com.br/arquivos/ids/11714950-1000-1000/image-1.jpg?v=639282916241300000",
+  "archivo": "assets/productos/ACC-MOND-010.webp",
   "fecha": "2026-10-29"
  },
  "ACC-MARB-018": {
@@ -3266,188 +4215,357 @@
   "fecha": "2026-10-29"
  },
  "ACC-LEON-006": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "pala para mascotas",
+  "titulo": "Pala de Metal para Gatos, Pala para Arena con Mango de Madera, Pala ...",
+  "pagina": "https://www.walmart.com.mx/ip/gatos/pala-de-metal-para-gatos-pala-para-arena-con-mango-de-madera-pala-profunda-para-tamizar-rapidamente-pala-para-arena-para-limpiar-mascotas-perros-y-gatos-jm/00915862487433",
+  "origen": "https://i5.walmartimages.com.mx/mg/gm/3pp/asr/bc47db9b-180d-42ac-a0c5-b9ec51649d88.fdecb3e8241e87d30569f331cfd64c68.jpeg?odnHeight=2000&odnWidth=2000&odnBg=ffffff",
+  "archivo": "assets/productos/ACC-LEON-006.webp",
   "fecha": "2026-10-29"
  },
  "ACC-LEON-014": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "pala arenero para mascotas",
+  "titulo": "Pala Arenero Recogedora Heces Desechos Popo Mascotas Gatos | Cuotas sin ...",
+  "pagina": "https://www.mercadolibre.cl/pala-arenero-recogedora-heces-desechos-popo-mascotas-gatos/p/MLC2022243115",
+  "origen": "https://http2.mlstatic.com/D_NQ_NP_903612-MLC86464208581_062025-O.webp",
+  "archivo": "assets/productos/ACC-LEON-014.webp",
   "fecha": "2026-10-29"
  },
  "ACC-LEON-025": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "pala arenero para mascotas",
+  "titulo": "Pala Arenero Mascotas Gatos Para Gatos Arena De Gato | MercadoLibre",
+  "pagina": "https://articulo.mercadolibre.com.mx/MLM-3850008384-pala-arenero-mascotas-gatos-para-gatos-arena-de-gato-_JM",
+  "origen": "https://http2.mlstatic.com/D_NQ_NP_745300-CBT88250439500_072025-O-pala-arenero-mascotas-gatos-para-gatos-arena-de-gato.webp",
+  "archivo": "assets/productos/ACC-LEON-025.webp",
   "fecha": "2026-10-29"
  },
  "ACC-LEON-026": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "pala arenero para mascotas",
+  "titulo": "Pala para Arenero de Gato – Robles Veterinaria",
+  "pagina": "https://roblesveterinaria.com/products/pala-para-arenero-de-gato",
+  "origen": "https://roblesveterinaria.com/cdn/shop/products/Pala-para-Arenero-de-Gato-Robles-Veterinaria_1.jpg?v=1707444063",
+  "archivo": "assets/productos/ACC-LEON-026.webp",
   "fecha": "2026-10-29"
  },
  "ACC-MOND-020": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "pala carita para mascotas",
+  "titulo": "Pala Cara De Gato – AVG Mascotas",
+  "pagina": "https://www.avgmascotas.com/producto/pala-cara-de-gato-1und/",
+  "origen": "https://www.avgmascotas.com/wp-content/uploads/2024/12/Pala-Cara-De-Gato.jpg",
+  "archivo": "assets/productos/ACC-MOND-020.webp",
   "fecha": "2026-10-29"
  },
  "OTR-GEN-002": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "pala recogedora arena para mascotas",
+  "titulo": "Pala Recogedora Arena Gatos Ergonómica img #1",
+  "pagina": "https://www.exito.com/pala-recogedora-arena-gatos-ergonomica-104842255-mp/p",
+  "origen": "https://exitocol.vteximg.com.br/arquivos/ids/31974558/pala-recogedora-arena-gatos-ergonomica.jpg?v=639004615530770000",
+  "archivo": "assets/productos/OTR-GEN-002.webp",
   "fecha": "2026-10-29"
  },
  "ACC-MOND-192": {
   "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "motivo": "foto referencial descartada en la revisión: muestra la marca de otro, no es del mismo tipo o está rota",
+  "descartadas": [
+   "https://cdn.homedepot.com.mx/productos/199867/199867-za1.jpg"
+  ],
   "fecha": "2026-10-29"
  },
  "ACC-MOND-059": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "pala recogedora arena para mascotas",
+  "titulo": "Pala Recogedora Arena Am Mascotas Und – Cruz Pet Colombia",
+  "pagina": "https://www.cruzpet.com.co/products/pala-recogedora-arena-am-mascotas-und",
+  "origen": "https://www.cruzpet.com.co/cdn/shop/files/583871_VETPALARECOGEDORAARENAAMMASCOTASUND.jpg?v=1772749992&width=1000",
+  "archivo": "assets/productos/ACC-MOND-059.webp",
   "fecha": "2026-10-29"
  },
  "ACC-GEN-019": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "pelota tenis para perro",
+  "titulo": "Pelota de tenis grande para perros 9\" pelotas de tenis gigantes ...",
+  "pagina": "https://www.walmart.com.mx/ip/articulos-de-cocina/pelota-de-tenis-grande-para-perros-9-pelotas-de-tenis-gigantes-inflables-juguete-masticable-para-mascotas/00132754760941",
+  "origen": "https://i5.walmartimages.com.mx/mg/gm/3pp/asr/9b6d1ee9-a6b6-4fa2-8b41-74f0b77cc33c.857f882e3188b71fb1b7f20fe800bccd.jpeg?odnHeight=2000&odnWidth=2000&odnBg=ffffff",
+  "archivo": "assets/productos/ACC-GEN-019.webp",
   "fecha": "2026-10-29"
  },
  "ACC-MOND-029": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "glasses para mascotas",
+  "titulo": "Glasses with clear lenses for small dogs",
+  "pagina": "https://www.gueule-damour.com/en/dog-sunglasses/1994-glasses-with-clear-lenses-for-small-dogs.html",
+  "origen": "https://www.gueule-damour.com/11513/glasses-with-clear-lenses-for-small-dogs.jpg",
+  "archivo": "assets/productos/ACC-MOND-029.webp",
   "fecha": "2026-10-29"
  },
  "ACC-MOND-044": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "plato para mascotas",
+  "titulo": "Plato para Mascota 15CM",
+  "pagina": "https://www.importadoranovoa.com/plato-para-mascota-15cm/p",
+  "origen": "https://novicompu.vtexassets.com/arquivos/ids/165900/1HSM858.jpg?v=637971340655870000",
+  "archivo": "assets/productos/ACC-MOND-044.webp",
   "fecha": "2026-10-29"
  },
  "ACC-GEN-027": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "pelota ejercicio hamster exotix para mascotas",
+  "titulo": "Pelota de ejercicio para hámster Carno - 12 cm - Pets furry",
+  "pagina": "https://petsfurry.cl/producto/pelota-de-ejercicio-para-hamster-carno-12-cm/",
+  "origen": "https://petsfurry.cl/wp-content/uploads/2025/08/6970425101825-hamster-1-1200x1200-1-600x600.webp",
+  "archivo": "assets/productos/ACC-GEN-027.webp",
   "fecha": "2026-10-29"
  },
  "ACC-MARB-012": {
   "grupo": "C",
   "motivo": "sin coincidencia segura por código ni por nombre",
-  "fecha": "2026-10-29"
+  "fecha": "2026-10-29",
+  "buscadaReferencial": true
  },
  "ACC-GEN-029": {
   "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "motivo": "foto referencial descartada en la revisión: muestra la marca de otro, no es del mismo tipo o está rota",
+  "descartadas": [
+   "https://http2.mlstatic.com/D_NQ_NP_799238-CBT77074410265_062024-O.webp"
+  ],
   "fecha": "2026-10-29"
  },
  "ACC-MOND-106": {
   "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "motivo": "foto referencial descartada en la revisión: muestra la marca de otro, no es del mismo tipo o está rota",
+  "descartadas": [
+   "https://cms.cloudinary.vpsvc.com/images/c_scale,dpr_auto,f_auto,q_auto:best,t_productPageHeroGalleryTransformation_v2,w_auto/legacy_dam/es-us/S001846927/NPIB-31179-NA-Pet-Bowls-Hero-004"
+  ],
   "fecha": "2026-10-29"
  },
  "ACC-PETE-002": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "plato petegou para mascotas",
+  "titulo": "CALCOMANÍA PLATO PARA MASCOTAS (5 TALLAS) – Petegou",
+  "pagina": "https://petegou.cl/producto/calcomania-plato-para-mascota/",
+  "origen": "https://petegou.cl/wp-content/uploads/2023/02/IMG_6211-1024x1024.jpeg",
+  "archivo": "assets/productos/ACC-PETE-002.webp",
   "fecha": "2026-10-29"
  },
  "ACC-PETE-003": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "plato petegou para mascotas",
+  "titulo": "Plato PG Metálico Negro Hueso Talla L – Petcity",
+  "pagina": "https://petcity.cl/tienda/plato-pg-metalico-negro-hueso-talla-l/",
+  "origen": "https://petcity.cl/wp-content/uploads/2023/08/plato-petegou-metalico-negro.jpg",
+  "archivo": "assets/productos/ACC-PETE-003.webp",
   "fecha": "2026-10-29"
  },
  "ACC-MARB-002": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "plato marbenpets para mascotas",
+  "titulo": "Marben Pets PLATO ACERO INOXIDABLE DISEÑO PATITAS CELESTE - Todo para ...",
+  "pagina": "https://www.lvswinecellar.com/producto/marben-pets-plato-acero-inoxidable-diseno-patitas-celeste/",
+  "origen": "https://guauquebarato.cl/wp-content/uploads/2022/10/platosperro-20.png",
+  "archivo": "assets/productos/ACC-MARB-002.webp",
   "fecha": "2026-10-29"
  },
  "ACC-GEN-021": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "plato goma retractil portable para mascotas",
+  "titulo": "Plato De Goma Plegable Portátil De Mascotas Perro Y Gato Color Azul ...",
+  "pagina": "https://www.mercadolibre.com.mx/plato-de-goma-plegable-portatil-de-mascotas-perro-y-gato-color-azul/p/MLM29769308",
+  "origen": "https://http2.mlstatic.com/D_NQ_NP_847387-MLA80664004135_112024-O.webp",
+  "archivo": "assets/productos/ACC-GEN-021.webp",
   "fecha": "2026-10-29"
  },
  "ACC-MOND-045": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "plato doble para mascotas",
+  "titulo": "Plato Doble Para Mascotas Pequeñas Perros Y Gatos rosa | Lider",
+  "pagina": "https://www.lider.cl/ip/accesorios/plato-doble-para-mascotas-pequenas-perros-y-gatos-rosa/00072920820886",
+  "origen": "https://i5.walmartimages.cl/asr/6cc0f855-ebe4-4f94-921b-b5552a619907.0fab69eb75895d2225470b331af32266.jpeg?odnHeight=2000&odnWidth=2000&odnBg=ffffff",
+  "archivo": "assets/productos/ACC-MOND-045.webp",
   "fecha": "2026-10-29"
  },
  "ACC-GEN-007": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "plato bowl no splashes para mascotas",
+  "titulo": "Plato Para Mascotas Bowl",
+  "pagina": "https://www.clubdeperrosygatos.cl/producto/plato-para-mascotas-bowl/",
+  "origen": "https://www.clubdeperrosygatos.cl/wp-content/uploads/2024/01/bowl-azul.webp",
+  "archivo": "assets/productos/ACC-GEN-007.webp",
   "fecha": "2026-10-29"
  },
  "ACC-GEN-025": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "plato frosty para mascotas",
+  "titulo": "Plato Cuenco Frosty Bowl Enfriante Refrescante Para Mascotas | Cuotas ...",
+  "pagina": "https://articulo.mercadolibre.cl/MLC-1460674681-plato-cuenco-frosty-bowl-enfriante-refrescante-para-mascotas-_JM",
+  "origen": "https://http2.mlstatic.com/D_NQ_NP_973952-MLC74323073507_012024-O.webp",
+  "archivo": "assets/productos/ACC-GEN-025.webp",
   "fecha": "2026-10-29"
  },
  "ACC-WOND-005": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "plato colores para mascotas",
+  "titulo": "Moderno Plato Multicolor Pack Doble Ideal para tu Mascota - Promart",
+  "pagina": "https://www.promart.pe/moderno-plato-multicolor-pack-doble-ideal-para-tu-mascota-1000419506/p",
+  "origen": "https://promart.vteximg.com.br/arquivos/ids/7247278-1000-1000/image-4cb2528e0e75469193f5d7ab0b3f9041.jpg?v=638235853704000000",
+  "archivo": "assets/productos/ACC-WOND-005.webp",
   "fecha": "2026-10-29"
  },
  "ACC-MOND-043": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "plato para mascotas",
+  "titulo": "Plato Para Mascotas Alto - Niveles",
+  "pagina": "https://www.clubdeperrosygatos.cl/producto/plato-para-mascotas-alto-niveles/",
+  "origen": "https://www.clubdeperrosygatos.cl/wp-content/uploads/2024/01/PLATO-ALTURA-3-NIVELES.webp",
+  "archivo": "assets/productos/ACC-MOND-043.webp",
   "fecha": "2026-10-29"
  },
  "ACC-GEN-003": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "plato langzhiiia para mascotas",
+  "titulo": "Plato De Alimentación Lenta Para Perro Mascota Rosa",
+  "pagina": "https://www.sanborns.com.mx/producto/830329/plato-de-alimentacion-lenta-para-perro-mascota-rosa",
+  "origen": "https://product-media.cdn.t1.com/product-channel/204800/2026/1/15/b29884b3bda79ef39677c95be53e1bbe.jpg",
+  "archivo": "assets/productos/ACC-GEN-003.webp",
   "fecha": "2026-10-29"
  },
  "ACC-MOND-178": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "plato lamedor churu para mascotas",
+  "titulo": "Plato Lamedor Interactivo para mascotas – Antiestrés, Antiansiedad y ...",
+  "pagina": "https://www.wohlpet.com/producto/plato-lamedor-interactivo-para-mascotas-antiestres-antiansiedad-y-alimentacion-lenta/",
+  "origen": "https://www.wohlpet.com/wp-content/uploads/2026/03/lamedor.webp",
+  "archivo": "assets/productos/ACC-MOND-178.webp",
   "fecha": "2026-10-29"
  },
  "ACC-MARB-001": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "plato elevado acero inoxidable marbenpets para mascotas",
+  "titulo": "Platos Elevado Acero Inoxidable - Altura Ajustable Mascotas | Cuotas ...",
+  "pagina": "https://articulo.mercadolibre.cl/MLC-1468335395-platos-elevado-acero-inoxidable-altura-ajustable-mascotas-_JM",
+  "origen": "https://http2.mlstatic.com/D_NQ_NP_876753-MLC74821369054_032024-O.webp",
+  "archivo": "assets/productos/ACC-MARB-001.webp",
   "fecha": "2026-10-29"
  },
  "ACC-MOND-042": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "plato para mascotas",
+  "titulo": "Plato Para Mascotas Alto - Niveles",
+  "pagina": "https://www.clubdeperrosygatos.cl/producto/plato-para-mascotas-alto-niveles/",
+  "origen": "https://www.clubdeperrosygatos.cl/wp-content/uploads/2024/01/plato-alto-5-niveless.webp",
+  "archivo": "assets/productos/ACC-MOND-042.webp",
   "fecha": "2026-10-29"
  },
  "ACC-MOND-130": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "plato para mascotas",
+  "titulo": "Plato Doble de Comida para Mascotas - Celeste CC GROUP | falabella.com",
+  "pagina": "https://www.falabella.com.pe/falabella-pe/product/119641102/Plato-Doble-de-Comida-para-Mascotas-Celeste/119641103",
+  "origen": "https://imagedelivery.net/4fYuQyy-r8_rpBpcY7lH_A/falabellaPE/119641103_01/w=800,h=800,fit=pad",
+  "archivo": "assets/productos/ACC-MOND-130.webp",
   "fecha": "2026-10-29"
  },
  "ACC-MOND-046": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "plato para mascotas",
+  "titulo": "Plato Doble Mascota Plástico Para Perro Gato Plegable - Cs",
+  "pagina": "https://www.codystore.cl/plato-doble-mascota-plastico-para-perro-gato-plegable-cs",
+  "origen": "https://cdnx.jumpseller.com/cody-store/image/29955498/resize/1200/1200?1670024762",
+  "archivo": "assets/productos/ACC-MOND-046.webp",
   "fecha": "2026-10-29"
  },
  "ACC-MOND-107": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "plato para mascotas",
+  "titulo": "Plato para Mascota Antivoracidad 23cm | Almacenes Boyacá",
+  "pagina": "https://www.boyaca.com/plato-para-mascota-antivoracidad-23cm-97922",
+  "origen": "https://www.boyaca.com/wp-content/themes/boyaca/vista/imagenes/graf_zoom/97922.jpg",
+  "archivo": "assets/productos/ACC-MOND-107.webp",
   "fecha": "2026-10-29"
  },
  "ACC-MOND-108": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "plato para mascotas",
+  "titulo": "Platos Dobles Para Mascotas - Clínica Veterinaria y Boutique",
+  "pagina": "https://vetmakclinicaveterinaria.com/product/platos-dobles-para-gatos/",
+  "origen": "https://vetmakclinicaveterinaria.com/wp-content/uploads/2023/10/68-1.jpg",
+  "archivo": "assets/productos/ACC-MOND-108.webp",
   "fecha": "2026-10-29"
  },
  "ACC-MOND-131": {
   "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "motivo": "foto referencial descartada en la revisión: muestra la marca de otro, no es del mismo tipo o está rota",
+  "descartadas": [
+   "https://detqhtv6m6lzl.cloudfront.net/HCLContenido/producto/FullImage/7506198177966-1.jpg"
+  ],
   "fecha": "2026-10-29"
  },
  "ACC-GEN-014": {
   "grupo": "C",
   "motivo": "sin coincidencia segura por código ni por nombre",
-  "fecha": "2026-10-29"
+  "fecha": "2026-10-29",
+  "buscadaReferencial": true
  },
  "ACC-MOND-196": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "rascador para mascotas",
+  "titulo": "Rascador con casa para gatos | Arena para Mascotas",
+  "pagina": "https://arenaparamascotas.cl/producto/rascador-con-casa-para-gatos/",
+  "origen": "https://arenaparamascotas.cl/wp-content/uploads/2024/09/rascador-para-gatos-1.jpg",
+  "archivo": "assets/productos/ACC-MOND-196.webp",
   "fecha": "2026-10-29"
  },
  "ACC-MOND-025": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "rascador para mascotas",
+  "titulo": "Rascadores para Gatos | Arena para Mascotas",
+  "pagina": "https://arenaparamascotas.cl/categoria-producto/gatos/rascadores-gatos/",
+  "origen": "https://arenaparamascotas.cl/wp-content/uploads/2021/06/rascador.png",
+  "archivo": "assets/productos/ACC-MOND-025.webp",
   "fecha": "2026-10-29"
  },
  "ACC-MOND-182": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "rascador juguete para mascotas",
+  "titulo": "Rascador Para Mascotas Gatos Con Juguetes Premium Chico Color Café ...",
+  "pagina": "https://www.mercadolibre.com.mx/rascador-para-mascotas-gatos-con-juguetes-premium-chico-color-cafe/p/MLM35591250",
+  "origen": "https://http2.mlstatic.com/D_NQ_NP_891265-MLU75701754209_042024-O.webp",
+  "archivo": "assets/productos/ACC-MOND-182.webp",
   "fecha": "2026-10-29"
  },
  "ACC-BIOL-002": {
@@ -3461,78 +4579,151 @@
   "fecha": "2026-10-29"
  },
  "ACC-MOND-181": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "rascador juguete para mascotas",
+  "titulo": "Rascador para Mascotas Gatos con Juguetes Premium Chico Pet Paradise ...",
+  "pagina": "https://www.walmart.com.mx/ip/gatos/rascador-para-mascotas-gatos-con-juguetes-premium-chico-pet-paradise/00046423735336",
+  "origen": "https://i5.walmartimages.com.mx/mg/gm/3pp/asr/6f9821a3-b60a-4ee2-92b4-2d5a935ae4a6.2bfe74ce814d15547407b642b9d231b1.jpeg?odnHeight=2000&odnWidth=2000&odnBg=ffffff",
+  "archivo": "assets/productos/ACC-MOND-181.webp",
   "fecha": "2026-10-29"
  },
  "ACC-MOND-088": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "rascador para mascotas",
+  "titulo": "Rascador para gatos MeoWhomm, 32 cm de alto, para gatos de interior ...",
+  "pagina": "https://www.walmart.com.mx/ip/gatos/rascador-para-gatos-meowhomm-32-cm-de-alto-para-gatos-de-interior/00046875156891",
+  "origen": "https://i5.walmartimages.com/asr/8986eefb-cf82-49e0-8e45-c5947292ba8c.0c5064a92d22f2a836328c45eaed7862.jpeg",
+  "archivo": "assets/productos/ACC-MOND-088.webp",
   "fecha": "2026-10-29"
  },
  "ACC-MOND-087": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "rascador para mascotas",
+  "titulo": "Rascador casa de gato gris modelo 6085A-V - SD MED",
+  "pagina": "https://sdmed.cl/productos/rascador-casa-de-gato-gris-modelo-6085a-v/",
+  "origen": "https://sdmed.cl/wp-content/uploads/2022/08/1-22.jpg",
+  "archivo": "assets/productos/ACC-MOND-087.webp",
   "fecha": "2026-10-29"
  },
  "ACC-MOND-128": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "rascador para mascotas",
+  "titulo": "Rascador con casa para gatos | Arena para Mascotas",
+  "pagina": "https://arenaparamascotas.cl/producto/rascador-con-casa-para-gatos/",
+  "origen": "https://arenaparamascotas.cl/wp-content/uploads/2024/09/rascador-para-gatos-1-1024x1024.jpg",
+  "archivo": "assets/productos/ACC-MOND-128.webp",
   "fecha": "2026-10-29"
  },
  "ACC-MOND-129": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "rascador para mascotas",
+  "titulo": "Rascador D Gato Rascadores Antiestres Para Mascota Xl Catnip | Cuotas ...",
+  "pagina": "https://articulo.mercadolibre.cl/MLC-1344812531-rascador-d-gato-rascadores-antiestres-para-mascota-xl-catnip-_JM",
+  "origen": "https://http2.mlstatic.com/D_NQ_NP_810678-MLC53975749559_022023-O.webp",
+  "archivo": "assets/productos/ACC-MOND-129.webp",
   "fecha": "2026-10-29"
  },
  "ACC-MOND-177": {
   "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "motivo": "foto referencial descartada en la revisión: muestra la marca de otro, no es del mismo tipo o está rota",
+  "descartadas": [
+   "https://http2.mlstatic.com/D_NQ_NP_612852-MLA75464434493_032024-O.webp"
+  ],
   "fecha": "2026-10-29"
  },
  "ACC-MOND-176": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "rascador torre para mascotas",
+  "titulo": "Rascador Torre 2 Pisos Con Casita Para Gatos | Arena para Mascotas",
+  "pagina": "https://arenaparamascotas.cl/producto/rascador-torre-2-pisos-con-casita-para-gatos/",
+  "origen": "https://arenaparamascotas.cl/wp-content/uploads/2024/04/rascador-torre-1.jpeg",
+  "archivo": "assets/productos/ACC-MOND-176.webp",
   "fecha": "2026-10-29"
  },
  "ACC-FURM-002": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "removedor pelaje furminator para perro",
+  "titulo": "Removedor de Pelaje Furminator Short Hair Dog Medium (P-92925 ...",
+  "pagina": "https://wp-adm.distribuidoralira.cl/product/removedor-de-pelaje-furminator-short-hair-dog-medium-p-92925/",
+  "origen": "https://wp-adm.distribuidoralira.cl/wp-content/uploads/2025/03/15P330.jpg",
+  "archivo": "assets/productos/ACC-FURM-002.webp",
   "fecha": "2026-10-29"
  },
  "ACC-MOND-006": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "removedor pelos para mascotas",
+  "titulo": "Juego de 4 removedores de pelo de mascotas, rastrillo retráctil ...",
+  "pagina": "https://guatemala.yaxa.co/products/juego-de-4-removedores-de-pelo-de-mascotas-rastrillo-retractil-rascador-de-alfombras-herramienta-limpiadora-de-desprendimiento-de-perros-giratoria/",
+  "origen": "https://m.media-amazon.com/images/I/71LkbXLqCNL._AC_SL1500_.jpg",
+  "archivo": "assets/productos/ACC-MOND-006.webp",
   "fecha": "2026-10-29"
  },
  "ACC-MOND-004": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "removedor pelos para mascotas",
+  "titulo": "Rodillo Removedor de Pelo para Mascotas – AFujia Removedor de Piel de ...",
+  "pagina": "https://www.amazon.com.mx/Rodillo-Removedor-Pelo-para-Mascotas/dp/B096RNQ3D4",
+  "origen": "https://m.media-amazon.com/images/I/71oe7EdSVaS._AC_.jpg",
+  "archivo": "assets/productos/ACC-MOND-004.webp",
   "fecha": "2026-10-29"
  },
  "ACC-FURM-004": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "removedor pelaje furminator l para gato",
+  "titulo": "Removedor de Pelaje Furminator Long Hair Cat (P-92928) - Distribuidora Lira",
+  "pagina": "https://www.distribuidoralira.cl/product/removedor-de-pelaje-furminator-long-hair-cat-p-92928-2/",
+  "origen": "https://www.distribuidoralira.cl/wp-content/uploads/2025/07/17p552-2.jpg",
+  "archivo": "assets/productos/ACC-FURM-004.webp",
   "fecha": "2026-10-29"
  },
  "ACC-MOND-005": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "roller pelaje para mascotas",
+  "titulo": "Eliminador De Pelo Para Mascotas Lint Roller, Multianimal | Cuotas sin ...",
+  "pagina": "https://articulo.mercadolibre.cl/MLC-1498707357-eliminador-de-pelo-para-mascotas-lint-roller-multianimal-_JM",
+  "origen": "https://http2.mlstatic.com/D_NQ_NP_703017-CBT77129436802_062024-O.webp",
+  "archivo": "assets/productos/ACC-MOND-005.webp",
   "fecha": "2026-10-29"
  },
  "ACC-HAPP-001": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "removedor pelaje medium happypets para gato",
+  "titulo": "Cepillo Removedor De Pelo Para Gatos Con Boton Autolimpiante - Dekosas",
+  "pagina": "https://www.dekosas.com/cepillo-removedor-de-pelo-para-gatos-con-boton-autolimpiante-36337/p",
+  "origen": "https://dekosas.vtexassets.com/arquivos/ids/333355-800-auto?v=638809796311770000&width=800&height=auto&aspect=true",
+  "archivo": "assets/productos/ACC-HAPP-001.webp",
   "fecha": "2026-10-29"
  },
  "ACC-MARB-019": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "saco dormir marbenpets para mascotas",
+  "titulo": "Saco de dormir para mascota talla L (67 x 48) cms | PET BJ",
+  "pagina": "https://www.petbj.cl/saco-de-dormir-para-mascota-talla-l-67-x-48-cms",
+  "origen": "https://cdnx.jumpseller.com/pet-bj/image/50625623/resize/1200/1200?1720717459",
+  "archivo": "assets/productos/ACC-MARB-019.webp",
   "fecha": "2026-10-29"
  },
  "ACC-WOND-003": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "rodillo gel lavable reutilizable para mascotas",
+  "titulo": "Rodillo quitapelos gris para mascotas, lavable y reutilizable, elimina ...",
+  "pagina": "https://www.leroymerlin.es/productos/rodillo-quitapelos-gris-para-mascotas-lavable-y-reutilizable-elimina-pelo-de-perro-gato-en-ropa-sofa-alfombra-asiento-de-coche-y-muebles-98977250.html",
+  "origen": "https://media.adeo.com/mkp/8902e75ad92be57aa16bf6b63186f1b7/media.jpeg",
+  "archivo": "assets/productos/ACC-WOND-003.webp",
   "fecha": "2026-10-29"
  },
  "ACC-GEN-023": {
@@ -3556,8 +4747,13 @@
   "fecha": "2026-10-29"
  },
  "ACC-MOND-146": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "tijera cortaunas para mascotas",
+  "titulo": "Tijeras cortaúñas para mascotas 12cm PRT-101",
+  "pagina": "https://www.manomano.es/p/tijeras-cortaunas-para-mascotas-12cm-prt-101-92692980",
+  "origen": "https://cdn.manomano.com/images/images_products/40360778/L/168545972_1.jpg",
+  "archivo": "assets/productos/ACC-MOND-146.webp",
   "fecha": "2026-10-29"
  },
  "ACC-BIOL-003": {
@@ -3571,53 +4767,99 @@
   "fecha": "2026-10-29"
  },
  "ACC-MOND-123": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "tirador para mascotas",
+  "titulo": "Tirador de cuerda para mascotas y perros, trenzado de color amarillo ...",
+  "pagina": "https://www.mercadolibre.com.co/tirador-de-cuerda-para-mascotas-y-perros-trenzado-de-color-amarillo-fuerte-43-cm/p/MCO31006096",
+  "origen": "https://http2.mlstatic.com/D_NQ_NP_985917-MLU74198225598_012024-O.webp",
+  "archivo": "assets/productos/ACC-MOND-123.webp",
   "fecha": "2026-10-29"
  },
  "ACC-MOND-068": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "transportador para mascotas",
+  "titulo": "Transportador Para Mascotas Razas Pequeñas Colores Surtidos - Moderna ...",
+  "pagina": "https://www.cemaco.com/transportador-para-mascotas-razas-pequenas-colores-surtidos-moderna-917858/p",
+  "origen": "https://cemacogt.vtexassets.com/arquivos/ids/388378-800-800?v=638143662206370000&width=800&height=800&aspect=true",
+  "archivo": "assets/productos/ACC-MOND-068.webp",
   "fecha": "2026-10-29"
  },
  "ACC-MOND-009": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "transportador para gato",
+  "titulo": "Kennel Transportador para Gatos L50 Celeste – ANAVAPETS",
+  "pagina": "https://anavapets.pe/product/kennelceleste/",
+  "origen": "https://anavapets.pe/wp-content/uploads/2026/01/w1200h1200fitpad.jpg",
+  "archivo": "assets/productos/ACC-MOND-009.webp",
   "fecha": "2026-10-29"
  },
  "ACC-MOND-070": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "transportador para gato",
+  "titulo": "Transportador para Gatos y Perros - Kennel L50 Rosa IMPORTADO MC ...",
+  "pagina": "https://www.falabella.com.pe/falabella-pe/product/131638902/Transportador-para-Gatos-y-Perros-Kennel-L50-Rosa/131638903",
+  "origen": "https://imagedelivery.net/4fYuQyy-r8_rpBpcY7lH_A/falabellaPE/131638903_01/w=800,h=800,fit=pad",
+  "archivo": "assets/productos/ACC-MOND-070.webp",
   "fecha": "2026-10-29"
  },
  "ACC-MOND-072": {
   "grupo": "C",
   "motivo": "sin coincidencia segura por código ni por nombre",
-  "fecha": "2026-10-29"
+  "fecha": "2026-10-29",
+  "buscadaReferencial": true
  },
  "ACC-MOND-067": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "transportador para gato",
+  "titulo": "Transportín para gatos Fernando transportador de mascotas de viaje con ...",
+  "pagina": "https://www.walmart.com.mx/ip/transportin-para-gatos-fernando-transportador-de-mascotas-de-viaje-con-ruedas-base-extraible/00075299323470",
+  "origen": "https://i5.walmartimages.com/asr/b55a810d-392f-4cb0-a693-68c854c1bfc7.d76516b25876413f835aff90e862fe08.jpeg",
+  "archivo": "assets/productos/ACC-MOND-067.webp",
   "fecha": "2026-10-29"
  },
  "ACC-BUEN-012": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "tirador para mascotas",
+  "titulo": "TIRADOR PARA MASCOTAS 1.5x150CM",
+  "pagina": "https://www.befoods.cl/products/tirador-para-mascotas-1-5x150cm",
+  "origen": "https://www.befoods.cl/cdn/shop/files/TIRADOR_PARA_MASCOTAS_1.5x150CM.jpg?v=1767022139&width=1200",
+  "archivo": "assets/productos/ACC-BUEN-012.webp",
   "fecha": "2026-10-29"
  },
  "ACC-MOND-071": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "transportador para mascotas",
+  "titulo": "TeqHome - Transportador para mascotas con ruedas, aprobado por ...",
+  "pagina": "https://www.amazon.com.mx/TeqHome-Transportador-aerolíneas-transportador-transporte/dp/B0CC5VSM35",
+  "origen": "https://m.media-amazon.com/images/I/71BwrAmJr7L._AC_SL1500_.jpg",
+  "archivo": "assets/productos/ACC-MOND-071.webp",
   "fecha": "2026-10-29"
  },
  "ACC-MOND-069": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "transportador para mascotas",
+  "titulo": "Bolso Transportador Para Mascota Expandible",
+  "pagina": "https://www.clubdeperrosygatos.cl/producto/bolso-transportador-para-mascota-expandible/",
+  "origen": "https://www.clubdeperrosygatos.cl/wp-content/uploads/2024/01/BOLSO-600x600.webp",
+  "archivo": "assets/productos/ACC-MOND-069.webp",
   "fecha": "2026-10-29"
  },
  "ACC-GEN-020": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "transportador para gato",
+  "titulo": "Transportador para Gatos y Perros - Kennel L50 Celeste IMPORTADO MC ...",
+  "pagina": "https://www.falabella.com.pe/falabella-pe/product/131638927/Transportador-para-Gatos-y-Perros-Kennel-L50-Celeste/131638928",
+  "origen": "https://imagedelivery.net/4fYuQyy-r8_rpBpcY7lH_A/falabellaPE/131638928_01/public",
+  "archivo": "assets/productos/ACC-GEN-020.webp",
   "fecha": "2026-10-29"
  },
  "ACC-BIOL-005": {
@@ -3866,8 +5108,13 @@
   "fecha": "2026-10-29"
  },
  "ACC-MOND-151": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "bandana para mascotas",
+  "titulo": "Bandanas para mascotas en Panamá | Parda",
+  "pagina": "https://pardapty.com/producto/bandanas/",
+  "origen": "https://pardapty.com/wp-content/uploads/2026/03/bandana-m-01.png",
+  "archivo": "assets/productos/ACC-MOND-151.webp",
   "fecha": "2026-10-29"
  },
  "ACC-VIPC-005": {
@@ -3886,138 +5133,269 @@
   "fecha": "2026-10-29"
  },
  "ACC-WOND-011": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "bandana para mascotas",
+  "titulo": "Bandanas para mascotas en Panamá | Parda",
+  "pagina": "https://pardapty.com/producto/bandanas/",
+  "origen": "https://pardapty.com/wp-content/uploads/2026/03/bandana-m-03.png",
+  "archivo": "assets/productos/ACC-WOND-011.webp",
   "fecha": "2026-10-29"
  },
  "ACC-MARB-017": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "body marbenpets para mascotas",
+  "titulo": "Body Mascotas Traje De Esterilización Gatos Perros Talla L | Cuotas sin ...",
+  "pagina": "https://articulo.mercadolibre.cl/MLC-2864418424-body-mascotas-traje-de-esterilizacion-gatos-perros-talla-l-_JM",
+  "origen": "https://http2.mlstatic.com/D_NQ_NP_675326-MLC83425924559_032025-O-body-mascotas-traje-de-esterilizacion-gatos-perros-talla-l.webp",
+  "archivo": "assets/productos/ACC-MARB-017.webp",
   "fecha": "2026-10-29"
  },
  "ACC-WOND-012": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "bandana talla s para mascotas",
+  "titulo": "Bandanas para mascotas en Panamá | Parda",
+  "pagina": "https://pardapty.com/producto/bandanas/",
+  "origen": "https://pardapty.com/wp-content/uploads/2026/03/bandana-s-02.png",
+  "archivo": "assets/productos/ACC-WOND-012.webp",
   "fecha": "2026-10-29"
  },
  "ACC-BUEN-017": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "chaleco para mascotas",
+  "titulo": "Sweater Para Mascotas | Chaleco Talla 3xl Para Perro O Gatos - Omydog",
+  "pagina": "https://omydog.cl/tienda/gatos/vestuario-gatos/abrigos-gatos/sweater-para-mascotas-chaleco-talla-3xl-para-perro-o-gatos/",
+  "origen": "https://omydog.cl/wp-content/uploads/2025/07/D_NQ_NP_2X_776027-MLC76307824532_052024-O-768x707.jpg",
+  "archivo": "assets/productos/ACC-BUEN-017.webp",
   "fecha": "2026-10-29"
  },
  "PER-MOND-009": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "chaleco lana para mascotas",
+  "titulo": "Chalecos, Suéter De Lana Para Mascotas, Perro Y Gatos | Omydog",
+  "pagina": "https://omydog.cl/tienda/gatos/vestuario-gatos/abrigos-gatos/chalecos-sueter-de-lana-para-mascotas-perro-y-gatos/",
+  "origen": "https://omydog.cl/wp-content/uploads/2023/03/20-1024x1024.jpg",
+  "archivo": "assets/productos/PER-MOND-009.webp",
   "fecha": "2026-10-29"
  },
  "PER-MOND-008": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "chaleco lana para mascotas",
+  "titulo": "Chaleco Abrigo De Lana Tejido Para Mascota | Cuotas sin interés",
+  "pagina": "https://articulo.mercadolibre.cl/MLC-2341592950-chaleco-abrigo-de-lana-tejido-para-mascota-_JM",
+  "origen": "https://http2.mlstatic.com/D_NQ_NP_617626-MLC75151839108_032024-O.webp",
+  "archivo": "assets/productos/PER-MOND-008.webp",
   "fecha": "2026-10-29"
  },
  "PER-MOND-006": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "chaleco lana para mascotas",
+  "titulo": "Chalecos, Suéter De Lana Para Mascotas, Perro Y Gatos | Omydog",
+  "pagina": "https://omydog.cl/tienda/vestuario/ropa-vestuario/chalecos-sueter-de-lana-para-mascotas-perro-y-gatos/",
+  "origen": "https://omydog.cl/wp-content/uploads/2023/03/18-1024x1024.jpg",
+  "archivo": "assets/productos/PER-MOND-006.webp",
   "fecha": "2026-10-29"
  },
  "PER-MOND-018": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "chaqueta para mascotas",
+  "titulo": "Chaquetas premium summer para mascota – Nakan Pets",
+  "pagina": "https://nakanpets.com/products/copia-de-chaquetas-premium-tiburones",
+  "origen": "http://nakanpets.com/cdn/shop/files/6_6c951168-b757-4d47-881f-289981d0f309.png?v=1709399870",
+  "archivo": "assets/productos/PER-MOND-018.webp",
   "fecha": "2026-10-29"
  },
  "ACC-PETE-004": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "body petegou talla xl para mascotas",
+  "titulo": "Bodys Post-operatorio Mayorista Chile | Compras Aqui",
+  "pagina": "https://comprasaqui.cl/mascotas/bodys-post-operatorio",
+  "origen": "https://comprasaqui.cl/assets/img/product/trajedeesterilizacionparamascotas_comprasaqui_df282996.png",
+  "archivo": "assets/productos/ACC-PETE-004.webp",
   "fecha": "2026-10-29"
  },
  "PER-MOND-011": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "chaqueta para mascotas",
+  "titulo": "AUTOWT Chaqueta de Invierno para Perros, Forro de Franela Desmontable ...",
+  "pagina": "https://www.amazon.com.mx/AUTOWT-Desmontable-Ajustable-Reflectantes-Impermeable/dp/B0B84PR9J9",
+  "origen": "https://m.media-amazon.com/images/I/71M9o4rhxCL._AC_.jpg",
+  "archivo": "assets/productos/PER-MOND-011.webp",
   "fecha": "2026-10-29"
  },
  "PER-BABY-002": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "chaqueta baby dog para perro",
+  "titulo": "Chaqueta de Invierno para mascotas | Omydog",
+  "pagina": "https://omydog.cl/tienda/perros/vestuario/abrigos/chaqueta-de-invierno-para-mascotas/",
+  "origen": "https://omydog.cl/wp-content/uploads/2022/05/13-4-1024x1024.jpg",
+  "archivo": "assets/productos/PER-BABY-002.webp",
   "fecha": "2026-10-29"
  },
  "PER-MARB-002": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "chaqueta marbenpets para perro",
+  "titulo": "Reebok Chaqueta Acolchada para Perros - Chaleco Impermeable para Perros ...",
+  "pagina": "https://www.amazon.com.mx/Reebok-Chaqueta-Acolchada-para-Perros/dp/B0CJVMRXYF",
+  "origen": "https://m.media-amazon.com/images/I/81WLbXud8AL.jpg",
+  "archivo": "assets/productos/PER-MARB-002.webp",
   "fecha": "2026-10-29"
  },
  "PER-MARB-006": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "chaqueta marbenpets para perro",
+  "titulo": "Chaqueta para perros Chaquetas de noche impermeables reflectantes ...",
+  "pagina": "https://www.walmart.com.mx/ip/hornos-electricos-y-sandwicheras/chaqueta-para-perros-chaquetas-de-noche-impermeables-reflectantes-abanopi-chaqueta-al-aire-libre/00075573610703",
+  "origen": "https://i5.walmartimages.com.mx/mg/gm/3pp/asr/0be32189-2e37-44d5-a29b-01548a4a3f9e.5cae745ed42d9b0d666b0f4c6db9ec53.jpeg?odnHeight=2000&odnWidth=2000&odnBg=ffffff",
+  "archivo": "assets/productos/PER-MARB-006.webp",
   "fecha": "2026-10-29"
  },
  "PER-MARB-001": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "chaqueta marbenpets talla xl para perro",
+  "titulo": "Chaqueta para mascota talla XL, vinotinto con gris",
+  "pagina": "https://www.panamericana.com.co/impermeable-para-mascota-talla-xl-vinotinto-con-gris-674896/p",
+  "origen": "https://panamericana.vtexassets.com/arquivos/ids/587045-800-auto?v=638794583063930000&width=800&height=auto&aspect=true",
+  "archivo": "assets/productos/PER-MARB-001.webp",
   "fecha": "2026-10-29"
  },
  "PER-MARB-013": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "chaqueta marbenpets para perro",
+  "titulo": "Chaqueta Impermeable Para Perro Con Capucha Negra | Envío gratis",
+  "pagina": "https://www.mercadolibre.com.mx/chaqueta-impermeable-para-perro-con-capucha-negra/up/MLMU3095968133",
+  "origen": "https://http2.mlstatic.com/D_NQ_NP_830969-MLM83453254349_032025-O.webp",
+  "archivo": "assets/productos/PER-MARB-013.webp",
   "fecha": "2026-10-29"
  },
  "PER-MARB-003": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "chaqueta marbenpets para perro",
+  "titulo": "Chaqueta Campera Abrigo Ropa Para Perro Mascotas | Cuotas sin interés",
+  "pagina": "https://www.mercadolibre.com.uy/chaqueta-campera-abrigo-ropa-para-perro-mascotas/up/MLUU3806250966",
+  "origen": "https://http2.mlstatic.com/D_NQ_NP_604864-MLU96508963841_102025-O.webp",
+  "archivo": "assets/productos/PER-MARB-003.webp",
   "fecha": "2026-10-29"
  },
  "PER-MARB-007": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "chaqueta marbenpets para perro",
+  "titulo": "CHAQUETA PARA PER… | Por mayor desde $3.735/u | Compras Aqui",
+  "pagina": "https://comprasaqui.cl/chaqueta-para-perro-121495",
+  "origen": "https://comprasaqui.cl/assets/img/product/chaquetaparaperro_comprasaqui_ab164121.jpg",
+  "archivo": "assets/productos/PER-MARB-007.webp",
   "fecha": "2026-10-29"
  },
  "PER-MARB-010": {
   "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "motivo": "foto referencial descartada en la revisión: muestra la marca de otro, no es del mismo tipo o está rota",
+  "descartadas": [
+   "https://http2.mlstatic.com/D_NQ_NP_710586-MLC87167689094_072025-O-chaquetas-para-perrosabrigo-para-perro-perro-chaleco-algodon.webp"
+  ],
   "fecha": "2026-10-29"
  },
  "PER-MOND-007": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "chaqueta talla xxxxl para perro",
+  "titulo": "Chaqueta De Mezclilla Para Perro Grande Talla Xxl | Cuotas sin interés",
+  "pagina": "https://articulo.mercadolibre.cl/MLC-919638533-chaqueta-de-mezclilla-para-perro-grande-talla-xxl-_JM",
+  "origen": "https://http2.mlstatic.com/D_NQ_NP_859501-MLC47833962920_102021-O.webp",
+  "archivo": "assets/productos/PER-MOND-007.webp",
   "fecha": "2026-10-29"
  },
  "PER-MOND-016": {
   "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "motivo": "foto referencial descartada en la revisión: muestra la marca de otro, no es del mismo tipo o está rota",
+  "descartadas": [
+   "https://http2.mlstatic.com/D_NQ_NP_627696-MLU80823515670_122024-O.webp"
+  ],
   "fecha": "2026-10-29"
  },
  "ACC-MARB-036": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "chaqueta para mascotas",
+  "titulo": "Chaqueta cálida a prueba de viento para mascotas, ... – Vicedeal",
+  "pagina": "https://es.vicedeal.com/products/chaqueta-calida-a-prueba-de-viento-para-mascotas-chaleco-de-perro-cachorro-grueso-abrigo-calido-para-perros-pequenos-y-medianos-abrigo-de-algodon-con-boton-para-perro-para-exterior?variant=UHJvZHVjdFZhcmlhbnQ6NTc1OTg2ODk4",
+  "origen": "https://images.nexusapp.co/assets/ed/cb/4f/29725202.jpg",
+  "archivo": "assets/productos/ACC-MARB-036.webp",
   "fecha": "2026-10-29"
  },
  "PER-MARB-005": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "chaqueta para mascotas",
+  "titulo": "Chaqueta elástica no pegajosa para mascotas, ropa ... – Grandado",
+  "pagina": "https://es.grandado.com/products/chaqueta-elastica-no-pegajosa-para-mascotas-ropa-de-reversible-calida-recien?variant=UHJvZHVjdFZhcmlhbnQ6MjI5NzU2NTUw",
+  "origen": "https://images.nexusapp.co/assets/3e/23/4f/361921308.jpg",
+  "archivo": "assets/productos/PER-MARB-005.webp",
   "fecha": "2026-10-29"
  },
  "PER-MARB-004": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "chaqueta talla xs para mascotas",
+  "titulo": "Chaqueta Impermeable Para Mascota Modelo Banana Talla Xs Celeste ...",
+  "pagina": "https://www.mercadolibre.cl/chaqueta-impermeable-para-mascota-modelo-banana-talla-xs/up/MLCU2743657078",
+  "origen": "https://http2.mlstatic.com/D_NQ_NP_860264-MLC92379276277_092025-O.webp",
+  "archivo": "assets/productos/PER-MARB-004.webp",
   "fecha": "2026-10-29"
  },
  "PER-BABY-001": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "parka baby dog para perro",
+  "titulo": "GENERICO Parka Chaqueta Impermeable Perro Talla S Azul | falabella.com",
+  "pagina": "https://www.falabella.com/falabella-cl/product/123162379/Parka-Chaqueta-Impermeable-Perro-Talla-S-Azul/123162380",
+  "origen": "https://imagedelivery.net/4fYuQyy-r8_rpBpcY7lH_A/falabellaCL/123162380_01/w=800,h=800,fit=pad",
+  "archivo": "assets/productos/PER-BABY-001.webp",
   "fecha": "2026-10-29"
  },
  "PER-GEN-003": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "parka marca desconocida para perro",
+  "titulo": "Parka Chaqueta Impermeable Perro Talla S Azul | Lider",
+  "pagina": "https://www.lider.cl/ip/hogar/parka-chaqueta-impermeable-perro-talla-s-azul/00046841569727",
+  "origen": "https://i5.walmartimages.cl/asr/0f61f6c9-8da7-4a43-b13a-94cb57c4e7b0.c295ffebb3673ff7301560c5324c4707.png?odnHeight=2000&odnWidth=2000&odnBg=ffffff",
+  "archivo": "assets/productos/PER-GEN-003.webp",
   "fecha": "2026-10-29"
  },
  "PER-MOND-010": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "parka para perro",
+  "titulo": "Parka Impermeable Para Perros Pequeños, Con Arnés, Reflectant - M | Lider",
+  "pagina": "https://www.lider.cl/ip/accesorios/parka-impermeable-para-perros-pequenos-con-arnes-reflectant-m/00046749536673",
+  "origen": "https://i5.walmartimages.cl/asr/a51e97fd-ce94-46f0-92b4-622881d2353e.b85f04252e151e066c67ec4c6b7f8765.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF",
+  "archivo": "assets/productos/PER-MOND-010.webp",
   "fecha": "2026-10-29"
  },
  "PER-MOND-005": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "parka para perro",
+  "titulo": "Parka Para Perro Grande #683-6xl M BN - Chimuelo.cl",
+  "pagina": "https://www.chimuelo.cl/productos/parka-para-perro-grande-683-6xl-2/",
+  "origen": "https://www.chimuelo.cl/wp-content/uploads/2023/01/D_930671-MLC49775941773_042022-F-1000x945.jpg",
+  "archivo": "assets/productos/PER-MOND-005.webp",
   "fecha": "2026-10-29"
  },
  "SAL-FLOV-002": {
@@ -4031,8 +5409,13 @@
   "fecha": "2026-10-29"
  },
  "PER-BUEN-001": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
+  "grupo": "B",
+  "metodo": "tipo de producto",
+  "consulta": "parka para perro",
+  "titulo": "Parka Reversible para Perros – Petlandia cl",
+  "pagina": "https://petlandiachile.cl/products/parka-reversible-para-perros",
+  "origen": "https://petlandiachile.cl/cdn/shop/files/ChatGPTImage14may2026_13_29_21.png?v=1778779784&width=1080",
+  "archivo": "assets/productos/PER-BUEN-001.webp",
   "fecha": "2026-10-29"
  },
  "SAL-INVE-002": {

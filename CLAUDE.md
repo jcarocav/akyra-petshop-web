@@ -15,9 +15,14 @@ Publicado en GitHub Pages: https://jcarocav.github.io/akyra-petshop-web/ (repo p
 4. **Nunca publicar datos internos**: costo neto, proveedor ni unidades por sucursal. El Excel de inventario
    **no se sube** al repositorio (`.gitignore`). `productos.json` y `stock.json` solo llevan campos públicos
    (lo verifican `tools/catalogo/escritura.mjs` y `tests/unit/datos-publicos.spec.mjs`).
-5. **Imágenes**: solo fotos que calcen EXACTAMENTE (marca, línea, sabor, formato y tamaño; idealmente
-   confirmadas por código de barras). Ante la duda, "No encontrada". Se guardan en `assets/productos/<SKU>.webp`
-   (≤ 800 px, ~60 KB), nunca enlazadas al sitio de origen.
+5. **Imágenes**: dos tipos, declarados en `imagenTipo` de `productos.json`. **Exacta**: la foto calza EXACTAMENTE (marca, línea, sabor, formato y tamaño; idealmente
+   confirmada por código de barras). **Referencial**: producto sin marca visible o genérico (platos, juguetes, camas, collares…) con una foto de un producto igual en forma y uso;
+   la card y la ficha lo dicen ("Imagen referencial") y la ficha ofrece "Ver foto real por WhatsApp". NUNCA una referencial que muestre la etiqueta de otra marca, otro sabor o tamaño.
+   Ante la duda, sin foto. Se guardan en `assets/productos/<SKU>.webp` (≤ 800 px, ~60 KB), nunca enlazadas al sitio de origen.
+   Avance y fuentes de cada foto: `tools/catalogo/fotos-progreso.json` (grupo A exacta, B referencial, C sin foto + motivo).
+   Buscar fotos en la web: `node tools/imagenes/buscar-web.mjs` (Bing; retoma lo ya buscado) o `bash tools/imagenes/tandas.sh`;
+   aplicarlas a `productos.json` sin pisar el stock: `node tools/catalogo/aplicar-fotos.mjs`; revisión visual: `node tools/imagenes/galeria.mjs`
+   y abrir `comparar/revisar-fotos.html`; Excel por grupos: `node tools/catalogo/exportar-formato-resumen.mjs`.
 6. **Accesibilidad WCAG 2.2 AA** y **0 violaciones de axe-core**; contraste 4,5:1 en texto y 3:1 en controles.
 7. **Seguridad**: sin secretos en el código; CSP estricta (sin `unsafe-inline`), nada de `eval` ni `innerHTML`
    con datos; todo texto del usuario se limpia antes de ir al carrito o a WhatsApp.

@@ -15,9 +15,14 @@ import { anunciar, formatoCLP, formatoCantidad, formatoDecimal, h, icono, leerNu
 let contador = 0
 const nuevoId = prefijo => `${prefijo}-${++contador}`
 
+// Foto de referencia (no es el producto exacto): etiqueta con texto real sobre la parte baja de la foto
+export function etiquetaReferencial() {
+  return h('span', { class: 'etiqueta-referencial', text: 'Imagen referencial' })
+}
+
 // ---------- Imagen o placeholder ----------
 export function imagenProducto(producto, { prioridad = false, tamano = 400 } = {}) {
-  const alt = textoAlternativo(producto)
+  const alt = textoAlternativo(producto) + (producto.imagenTipo === 'referencial' ? ' (imagen referencial)' : '')
   if (producto.imagen) {
     return h('img', {
       src: producto.imagen,
@@ -180,6 +185,7 @@ export function tarjetaProducto(producto, { nivelTitulo = 'h3', prioridad = fals
 
   const media = h('a', { class: 'tarjeta__media', href: url, tabindex: '-1' }, imagenProducto(producto, { prioridad }))
   if (sinPrecio(producto)) media.append(h('span', { class: 'insignia insignia--consultar insignia--flotante', 'aria-hidden': 'true', text: 'Consultar precio' }))
+  if (producto.imagen && producto.imagenTipo === 'referencial') media.append(etiquetaReferencial())
 
   const cuerpo = h('div', { class: 'tarjeta__cuerpo' },
     h('p', { class: 'tarjeta__marca', text: producto.marca }),

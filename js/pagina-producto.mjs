@@ -3,7 +3,7 @@
 // cantidad + "Añadir", datos para buscadores (schema.org Product/Offer:
 // solo precio y disponibilidad) y productos relacionados.
 // ============================================================
-import { estadoDe, filaCompra, imagenProducto, tarjetaProducto } from './componentes.mjs'
+import { estadoDe, etiquetaReferencial, filaCompra, imagenProducto, tarjetaProducto } from './componentes.mjs'
 import { CONFIG, categoriaPorId, preciosDe, productoPorId, productos, sinPrecio, textoAlternativo, urlProducto } from './datos.mjs'
 import { $, formatoCLP, h } from './utilidades.mjs'
 
@@ -66,6 +66,12 @@ function pintar(p) {
   ficha.dataset.producto = p.id
   ficha.dataset.talla = ''
   $('#ficha-media').replaceChildren(imagenProducto(p, { prioridad: true, tamano: 800 }))
+  if (p.imagen && p.imagenTipo === 'referencial') {
+    $('#ficha-media').append(etiquetaReferencial())
+    const pedido = `Hola, ¿me pueden mandar una foto real de ${p.nombre} (SKU ${p.sku})?`
+    $('#ficha-referencial-whatsapp').href = `https://wa.me/${CONFIG.whatsappTienda}?text=${encodeURIComponent(pedido)}`
+    $('#ficha-referencial').hidden = false
+  }
   $('#ficha-marca').textContent = p.marca
   $('#ficha-nombre').textContent = p.nombre
   $('#ficha-sku').textContent = `SKU ${p.sku}`
