@@ -477,9 +477,10 @@ main:focus { outline: none; }
 }
 .tarjeta:hover { box-shadow: var(--sombra); border-color: #b9cfcb; }
 .tarjeta__media {
-  grid-area: media; position: relative; display: block; aspect-ratio: 1 / 1; text-decoration: none; border-radius: var(--radio-chico);
-  overflow: hidden; background: var(--blanco); align-self: start;
+  position: relative; display: block; aspect-ratio: 1 / 1; text-decoration: none; border-radius: var(--radio-chico);
+  overflow: hidden; background: var(--blanco);
 }
+.tarjeta__foto { grid-area: media; position: relative; align-self: start; display: grid; gap: 4px; min-width: 0; }
 .tarjeta__media .producto-foto { width: 100%; height: 100%; object-fit: contain; padding: 6%; }
 .tarjeta__media .insignia--flotante { display: none; }
 .tarjeta__cuerpo { grid-area: cuerpo; display: flex; flex-direction: column; gap: 4px; min-width: 0; }
@@ -545,6 +546,9 @@ main:focus { outline: none; }
   .tarjeta { grid-template-columns: minmax(0, 1fr); grid-template-areas: "media" "cuerpo" "pie"; grid-template-rows: auto 1fr auto; padding: 14px; gap: 10px; }
   .tarjeta:hover { transform: translateY(-3px); }
   .tarjeta__media { aspect-ratio: 1 / 1; }
+  /* El aviso va en un espacio reservado (también en las cards con foto exacta): las cards quedan parejas */
+  .tarjeta__foto { padding-bottom: 18px; }
+  .tarjeta__foto .nota-referencial { position: absolute; left: 0; right: 0; bottom: 0; line-height: 18px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
   .tarjeta__media .insignia--flotante { display: inline-block; position: absolute; top: 8px; left: 8px; }
   .foto-pendiente__texto { font-size: .875rem; }
   .tarjeta--esqueleto { min-height: 420px; }
@@ -858,16 +862,9 @@ main:focus { outline: none; }
 .ficha { display: grid; gap: 24px; }
 .ficha__galeria { display: grid; gap: 12px; width: 100%; max-width: 520px; justify-self: center; align-content: start; }
 .ficha__media { position: relative; aspect-ratio: 1 / 1; width: 100%; border-radius: 24px; overflow: hidden; background: var(--blanco); border: 1px solid var(--borde); }
-.ficha__referencial { display: grid; gap: 10px; padding: 14px 16px; border: 1px solid #c79a1e; border-radius: var(--radio-chico); background: var(--amarillo-suave); color: var(--tinta); }
-.ficha__referencial p { margin: 0; font-size: .9375rem; }
-.ficha__referencial .boton { justify-self: start; }
-/* "Imagen referencial": texto real sobre la parte baja de la foto (no tapa el precio ni el botón Añadir) */
-.etiqueta-referencial {
-  position: absolute; left: 6px; right: 6px; bottom: 6px; padding: 3px 8px; border-radius: 8px; text-align: center;
-  background: rgba(255, 255, 255, .94); color: var(--tinta); border: 1px solid #c79a1e;
-  font-family: var(--fuente-titulos); font-weight: 600; font-size: .75rem; line-height: 1.25; pointer-events: none;
-}
-.ficha__media .etiqueta-referencial { left: 12px; right: auto; bottom: 12px; font-size: .875rem; padding: 4px 12px; }
+/* Aviso de foto referencial: texto pequeño y gris (contraste AA) justo debajo de la imagen */
+.nota-referencial { margin: 0; font-size: .75rem; line-height: 1.3; color: var(--gris); }
+.ficha__galeria .nota-referencial { font-size: .8125rem; }
 .ficha__media .producto-foto { width: 100%; height: 100%; object-fit: contain; padding: 6%; }
 .ficha__media .foto-pendiente__texto { font-size: 1rem; }
 .ficha__marca { margin: 0; font-weight: 800; letter-spacing: .05em; text-transform: uppercase; color: var(--turquesa-texto); }
@@ -1021,3 +1018,5 @@ main:focus { outline: none; }
 .instagram__respaldo[hidden] { display: none; }
 @media (min-width: 600px) { .instagram__marco { min-height: 1030px; } }
 @media (min-width: 900px) { .instagram__marco { min-height: 850px; } }
+.carrusel__item .tarjeta__foto { padding-bottom: 18px; }
+.carrusel__item .tarjeta__foto .nota-referencial { position: absolute; left: 0; right: 0; bottom: 0; line-height: 18px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }

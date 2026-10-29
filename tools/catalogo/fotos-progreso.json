@@ -368,11 +368,10 @@
  },
  "PER-FITF-013": {
   "grupo": "A",
-  "metodo": "nombre",
-  "confirmaCodigo": false,
-  "titulo": "FIT FORMULA ALIMENTO DE PERRO FIT FORMULA CACHORRO 10 KG | falabella.com",
-  "pagina": "https://www.falabella.com/falabella-cl/product/125336564/ALIMENTO-DE-PERRO-FIT-FORMULA-CACHORRO-10-KG/125336565",
-  "origen": "https://media.falabella.com/falabellaCL/125336565_01/w=800,h=800,fit=pad",
+  "metodo": "indicada por el dueño",
+  "titulo": "FIT Formula Adulto Raza Pequeña (La Mascota)",
+  "pagina": "",
+  "origen": "https://cdnx.jumpseller.com/la-mascota/image/63181611/FIT_Formula_Adulto_Raza_Peque_a.png?1746541141",
   "archivo": "assets/productos/PER-FITF-013.webp",
   "fecha": "2026-10-29"
  },
@@ -2007,16 +2006,6 @@
   "motivo": "sin coincidencia segura por código ni por nombre",
   "fecha": "2026-10-29"
  },
- "GRA-WHIS-002": {
-  "grupo": "A",
-  "metodo": "nombre",
-  "confirmaCodigo": false,
-  "titulo": "Ração Whiskas Gatos Adultos Á Granel 1kg Sabor Carne | Shopee Brasil",
-  "pagina": "https://shopee.com.br/Ração-Whiskas-Gatos-Adultos-Á-Granel-1kg-Sabor-Carne-i.405635623.23993587021",
-  "origen": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m3xwi3d89smw2e",
-  "archivo": "assets/productos/GRA-WHIS-002.webp",
-  "fecha": "2026-10-29"
- },
  "ACC-MOND-109": {
   "grupo": "B",
   "metodo": "tipo de producto",
@@ -2025,16 +2014,6 @@
   "pagina": "https://arenaparamascotas.cl/producto/alfombra-antideslizante-para-arenero-diseno-huesito/",
   "origen": "https://arenaparamascotas.cl/wp-content/uploads/2025/11/alfombra-beige.jpg",
   "archivo": "assets/productos/ACC-MOND-109.webp",
-  "fecha": "2026-10-29"
- },
- "GRA-WHIS-003": {
-  "grupo": "A",
-  "metodo": "nombre",
-  "confirmaCodigo": false,
-  "titulo": "WHISKAS Adulto Sabor Pescado 1KG (A GRANEL) SOLO VENTA EN LOCAL ...",
-  "pagina": "https://tiempodemascotas.com/producto/whiskas-adulto-sabor-pescado-1kg-a-granel/",
-  "origen": "http://tiempodemascotas.com/wp-content/uploads/2020/11/whiskas-pescado-a-granel.jpg",
-  "archivo": "assets/productos/GRA-WHIS-003.webp",
   "fecha": "2026-10-29"
  },
  "ACC-MOND-063": {
@@ -5657,5 +5636,26 @@
   "grupo": "C",
   "motivo": "sin coincidencia segura por código ni por nombre",
   "fecha": "2026-10-29"
+ },
+ "GAT-WHIS-013": {
+  "grupo": "A",
+  "metodo": "nombre",
+  "confirmaCodigo": false,
+  "titulo": "Alimento Gato Whiskas Carne 20 KG - Distribuidora Lira",
+  "pagina": "https://www.distribuidoralira.cl/product/alimento-gato-whiskas-carne-20-kg/",
+  "origen": "https://www.distribuidoralira.cl/wp-content/uploads/2025/08/22P862-600x600.webp",
+  "archivo": "assets/productos/GAT-WHIS-009.webp",
+  "fecha": "2026-10-29",
+  "nota": "foto del saco Whiskas carne (sin sticker promocional) que usa el producto a granel"
+ },
+ "GAT-WHIS-012": {
+  "grupo": "A",
+  "metodo": "código de barras",
+  "titulo": "WHISKAS PESCADO 10 KG - Mascotería Gonzalito",
+  "pagina": "https://www.mascoteriagonzalito.cl/index.php/producto/whiskas-pescado-10-kg/",
+  "origen": "https://www.mascoteriagonzalito.cl/wp-content/uploads/2026/02/7797453972321-product-image-1.png",
+  "archivo": "assets/productos/GAT-WHIS-012.webp",
+  "fecha": "2026-10-29",
+  "nota": "foto del saco que usa el producto a granel"
  }
 }

@@ -15,9 +15,10 @@ import { anunciar, formatoCLP, formatoCantidad, formatoDecimal, h, icono, leerNu
 let contador = 0
 const nuevoId = prefijo => `${prefijo}-${++contador}`
 
-// Foto de referencia (no es el producto exacto): etiqueta con texto real sobre la parte baja de la foto
-export function etiquetaReferencial() {
-  return h('span', { class: 'etiqueta-referencial', text: 'Imagen referencial' })
+// Foto de referencia (no es el producto exacto): aviso discreto, en texto real, justo debajo de la imagen.
+// En la card va corto; en la ficha dice cómo ver el producto real.
+export function avisoReferencial({ largo = false } = {}) {
+  return h('p', { class: 'nota-referencial', text: largo ? 'Imagen referencial. Consulta por WhatsApp para ver el producto real en tienda.' : 'Imagen referencial' })
 }
 
 // ---------- Imagen o placeholder ----------
@@ -185,7 +186,8 @@ export function tarjetaProducto(producto, { nivelTitulo = 'h3', prioridad = fals
 
   const media = h('a', { class: 'tarjeta__media', href: url, tabindex: '-1' }, imagenProducto(producto, { prioridad }))
   if (sinPrecio(producto)) media.append(h('span', { class: 'insignia insignia--consultar insignia--flotante', 'aria-hidden': 'true', text: 'Consultar precio' }))
-  if (producto.imagen && producto.imagenTipo === 'referencial') media.append(etiquetaReferencial())
+  const foto = h('div', { class: 'tarjeta__foto' }, media)
+  if (producto.imagen && producto.imagenTipo === 'referencial') foto.append(avisoReferencial())
 
   const cuerpo = h('div', { class: 'tarjeta__cuerpo' },
     h('p', { class: 'tarjeta__marca', text: producto.marca }),
@@ -203,7 +205,7 @@ export function tarjetaProducto(producto, { nivelTitulo = 'h3', prioridad = fals
     'data-aviso': '',
     text: producto.tallas && !sinPrecio(producto) ? 'Elige una talla para añadir.' : ''
   }))
-  tarjeta.append(media, cuerpo, pie)
+  tarjeta.append(foto, cuerpo, pie)
   return tarjeta
 }
 

@@ -17,7 +17,7 @@ Publicado en GitHub Pages: https://jcarocav.github.io/akyra-petshop-web/ (repo p
    (lo verifican `tools/catalogo/escritura.mjs` y `tests/unit/datos-publicos.spec.mjs`).
 5. **Imágenes**: dos tipos, declarados en `imagenTipo` de `productos.json`. **Exacta**: la foto calza EXACTAMENTE (marca, línea, sabor, formato y tamaño; idealmente
    confirmada por código de barras). **Referencial**: producto sin marca visible o genérico (platos, juguetes, camas, collares…) con una foto de un producto igual en forma y uso;
-   la card y la ficha lo dicen ("Imagen referencial") y la ficha ofrece "Ver foto real por WhatsApp". NUNCA una referencial que muestre la etiqueta de otra marca, otro sabor o tamaño.
+   la card dice "Imagen referencial" y la ficha "Imagen referencial. Consulta por WhatsApp para ver el producto real en tienda." (aviso gris pequeño bajo la foto, sin botones). NUNCA una referencial que muestre la etiqueta de otra marca, otro sabor o tamaño.
    Ante la duda, sin foto. Se guardan en `assets/productos/<SKU>.webp` (≤ 800 px, ~60 KB), nunca enlazadas al sitio de origen.
    Avance y fuentes de cada foto: `tools/catalogo/fotos-progreso.json` (grupo A exacta, B referencial, C sin foto + motivo).
    Buscar fotos en la web: `node tools/imagenes/buscar-web.mjs` (Bing; retoma lo ya buscado) o `bash tools/imagenes/tandas.sh`;
