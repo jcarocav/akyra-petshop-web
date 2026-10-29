@@ -1603,5 +1603,630 @@
   "origen": "https://bassapet.cl/266-large_default/dentalight-omegas-para-gatos-crunchy-salmon-60-grs.jpg",
   "archivo": "assets/productos/GAT-OMEG-001.webp",
   "fecha": "2026-10-29"
+ },
+ "GAT-BEST-007": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "GAT-BEST-006": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "GAT-OMEG-003": {
+  "grupo": "A",
+  "metodo": "nombre",
+  "confirmaCodigo": false,
+  "titulo": "Dentalight Omegas Crunchy Pollo",
+  "pagina": "https://felinus.cl/snack-y-golosinas/dentalight-omegas-crunchy-pollo.html",
+  "origen": "https://felinus.cl/9900-large_default/dentalight-omegas-crunchy-pollo.jpg",
+  "archivo": "assets/productos/GAT-OMEG-003.webp",
+  "fecha": "2026-10-29"
+ },
+ "GAT-OMEG-002": {
+  "grupo": "A",
+  "metodo": "nombre",
+  "confirmaCodigo": false,
+  "titulo": "DENTALIGHT CRUNCHY OMEGAS SNACK PARA GATOS SABOR ATÚN 60G - Manifarmavet",
+  "pagina": "https://www.manifarmavet.cl/product/dentalight-omegas-crunchy-atun/",
+  "origen": "https://www.manifarmavet.cl/wp-content/uploads/2025/11/Captura-de-pantalla-2024-08-31-120733.png",
+  "archivo": "assets/productos/GAT-OMEG-002.webp",
+  "fecha": "2026-10-29"
+ },
+ "GAT-ANIM-001": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "GAT-CATC-008": {
+  "grupo": "A",
+  "metodo": "nombre",
+  "confirmaCodigo": false,
+  "titulo": "Purina Cat Chow Defensehydro Adultos Esterilizados Pescado Sobre 85g ...",
+  "pagina": "https://www.mercadolibre.com.mx/purina-cat-chow-defensehydro-adultos-esterilizados-pescado-sobre-85g/p/MLM27932149",
+  "origen": "https://http2.mlstatic.com/D_NQ_NP_924717-MLU72462968494_102023-O.webp",
+  "archivo": "assets/productos/GAT-CATC-008.webp",
+  "fecha": "2026-10-29"
+ },
+ "GAT-BEST-002": {
+  "grupo": "A",
+  "metodo": "código de barras",
+  "confirmaCodigo": true,
+  "titulo": "BESTPET ADULT CATS-8681465602514 სრულყოფილი (დაბალანსებული) სველი ...",
+  "pagina": "https://invet.ge/ka/products/5327",
+  "origen": "https://invet.ge/files/uploads/1.jpg",
+  "archivo": "assets/productos/GAT-BEST-002.webp",
+  "fecha": "2026-10-29"
+ },
+ "GAT-CHAM-012": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "GAT-BEST-001": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "GAT-CHAM-007": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "GAT-CHAM-006": {
+  "grupo": "A",
+  "metodo": "nombre",
+  "confirmaCodigo": false,
+  "titulo": "Sobre Champion Cat Trocitos en salsa Carne | Bodega de la Mascota",
+  "pagina": "https://bodegadelamascota.cl/products/sobre-champion-cat-trocitos-en-salsa-sabor-carne",
+  "origen": "https://bodegadelamascota.cl/cdn/shop/files/ChampionCat_Sobre_Carne-1_600x600.webp?v=1713815043",
+  "archivo": "assets/productos/GAT-CHAM-006.webp",
+  "fecha": "2026-10-29"
+ },
+ "GAT-CHAM-011": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "GAT-CHAM-010": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "GAT-CHAM-009": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "GAT-CHAM-008": {
+  "grupo": "A",
+  "metodo": "nombre",
+  "confirmaCodigo": false,
+  "titulo": "CHAMPION CAT 100 GRS. POUCH GATITO POLLO | AGROCOMERCIAL LA DAMASCA",
+  "pagina": "https://www.ladamasca.cl/product/champion-cat-100-grs-pouch-gatito-pollo",
+  "origen": "https://dojiw2m9tvv09.cloudfront.net/88151/product/F_4120868-001190.jpg?53&time=1751743622",
+  "archivo": "assets/productos/GAT-CHAM-008.webp",
+  "fecha": "2026-10-29"
+ },
+ "GAT-CHAM-004": {
+  "grupo": "A",
+  "metodo": "nombre",
+  "confirmaCodigo": false,
+  "titulo": "SOBRE CHAMPION CAT POLLO Y PAVO 100 GR | Astro Pet",
+  "pagina": "https://www.astropet.cl/product/sobre-champion-cat-pollo-y-pavo-100-gr",
+  "origen": "https://dojiw2m9tvv09.cloudfront.net/64067/product/sobrechampioncatpolloypavo100gr3455.jpg?94&t=1770286393",
+  "archivo": "assets/productos/GAT-CHAM-004.webp",
+  "fecha": "2026-10-29"
+ },
+ "GAT-CHAM-005": {
+  "grupo": "A",
+  "metodo": "nombre",
+  "confirmaCodigo": false,
+  "titulo": "Sobre Champion Cat Sabor Salmón y Sardina | Bodega de la Mascota",
+  "pagina": "https://bodegadelamascota.cl/products/sobre-champion-cat-trocitos-en-salsa-sabor-salmon-y-sardina",
+  "origen": "https://bodegadelamascota.cl/cdn/shop/files/SobreChampionCatTrocitosenSalsaSaborSalmonySardina_700x700.webp?v=1749134459",
+  "archivo": "assets/productos/GAT-CHAM-005.webp",
+  "fecha": "2026-10-29"
+ },
+ "GAT-FANC-009": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "GAT-FANC-010": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "GAT-FANC-011": {
+  "grupo": "A",
+  "metodo": "nombre",
+  "confirmaCodigo": false,
+  "titulo": "Purina Fancy Feast alimento húmedo en sobre Casserole Atun y Salmón/ 12 ...",
+  "pagina": "https://www.amazon.com.mx/FANCY-FEAST-Casserole-Salmon-Piezas/dp/B0971DSHZH",
+  "origen": "https://m.media-amazon.com/images/I/61ceYh6m+rL._AC_.jpg",
+  "archivo": "assets/productos/GAT-FANC-011.webp",
+  "fecha": "2026-10-29"
+ },
+ "GAT-FANC-008": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "GAT-FANC-007": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "GAT-PURI-005": {
+  "grupo": "A",
+  "metodo": "código de barras",
+  "confirmaCodigo": true,
+  "titulo": "Alimento Purina Felix Classic Con Pescado X 85G — Totem Amarket",
+  "pagina": "https://totem-amarket.myshopify.com/products/7891000240588",
+  "origen": "https://totem-amarket.myshopify.com/cdn/shop/files/7891000240588_700x700.jpg?v=1705691799",
+  "archivo": "assets/productos/GAT-PURI-005.webp",
+  "fecha": "2026-10-29"
+ },
+ "GAT-FELI-001": {
+  "grupo": "A",
+  "metodo": "código de barras",
+  "confirmaCodigo": false,
+  "titulo": "Alimento Para Gato Sobre Carne Felix 85G - Sirena",
+  "pagina": "https://www.sirena.do/felix-pouches-alimento-gato-carne-85g-2142170/p",
+  "origen": "https://gruporamos.vtexassets.com/arquivos/ids/160230-800-800?v=639089557127430000&width=800&height=800&aspect=true",
+  "archivo": "assets/productos/GAT-FELI-001.webp",
+  "fecha": "2026-10-29"
+ },
+ "GAT-FITF-004": {
+  "grupo": "A",
+  "metodo": "código de barras",
+  "confirmaCodigo": false,
+  "titulo": "Pouch Suplemento Húmedo para Gato Salmón 85 gr | Fit Formula | Santa Fe ...",
+  "pagina": "https://santafemascotas.cl/producto/pouch-suplemento-humedo-gato-salmon-85-gr-pouch-suplemento-humedo-para-gato-salmon-85-gr/",
+  "origen": "https://santafemascotas.cl/wp-content/uploads/2026/03/MKP-Pouch-gato-salmon-1186x1536-1.png",
+  "archivo": "assets/productos/GAT-FITF-004.webp",
+  "fecha": "2026-10-29"
+ },
+ "GAT-PURI-006": {
+  "grupo": "A",
+  "metodo": "código de barras",
+  "confirmaCodigo": true,
+  "titulo": "7891000241134 - Pouch felix gato pescado blanco 0.085kg",
+  "pagina": "https://tiendasheper.com/product/pouch-felix-gato-pescado-blanco-0085kg",
+  "origen": "https://tiendasheper.com/assets/uploads/7c1146c87d0d09ae9d11311403eb6295.jpg",
+  "archivo": "assets/productos/GAT-PURI-006.webp",
+  "fecha": "2026-10-29"
+ },
+ "GAT-MAST-002": {
+  "grupo": "A",
+  "metodo": "nombre",
+  "confirmaCodigo": false,
+  "titulo": "POUCH MÁSTER CAT ADULTO ATÚN 85 GRS. – Doña Francisca",
+  "pagina": "https://www.donafrancisca.cl/producto/pouch-master-cat-adulto-atun-85-grs/",
+  "origen": "https://www.donafrancisca.cl/wp-content/uploads/2025/12/1000435793.jpg",
+  "archivo": "assets/productos/GAT-MAST-002.webp",
+  "fecha": "2026-10-29"
+ },
+ "GAT-LEON-010": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "GAT-MAST-005": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "GAT-MAST-003": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "GAT-MAST-004": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "GAT-MAST-001": {
+  "grupo": "A",
+  "metodo": "nombre",
+  "confirmaCodigo": false,
+  "titulo": "MASTERCAT SOBRE SENIOR POLLO 85GR",
+  "pagina": "https://www.befoods.cl/products/mastercat-sobre-senior-pollo-85gr",
+  "origen": "https://www.befoods.cl/cdn/shop/files/3d-1514147-POUCH-MCAT-SENIOR-RETOR-85-G_800x.jpg?v=1701773725",
+  "archivo": "assets/productos/GAT-MAST-001.webp",
+  "fecha": "2026-10-29"
+ },
+ "GAT-PURI-017": {
+  "grupo": "A",
+  "metodo": "nombre",
+  "confirmaCodigo": false,
+  "titulo": "SOBRE PURINA ONE GATO CON SALMON ATÚN Y PESCADO BLANCO 85 G",
+  "pagina": "https://www.doffis.cl/sobre-purina-one-gato-con-salmon-atun-y-pescado-blanco-85-g",
+  "origen": "https://cdnx.jumpseller.com/doffis-la-tienda-de-tu-mascota/image/42941837/resize/1200/1200?1701369941",
+  "archivo": "assets/productos/GAT-PURI-017.webp",
+  "fecha": "2026-10-29"
+ },
+ "GAT-WANP-004": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "GAT-WANP-005": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "GAT-CATC-001": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "GAT-WHIS-006": {
+  "grupo": "A",
+  "metodo": "código de barras",
+  "confirmaCodigo": true,
+  "titulo": "Alimento Whiskas Adulto 1+ Sabor Pollo En Salsa X 85G— Farmacorp",
+  "pagina": "https://farmacorp.com/products/7797453000550",
+  "origen": "https://farmacorp.com/cdn/shop/files/7797453000550-des_1400x1400.jpg?v=1714442213",
+  "archivo": "assets/productos/GAT-WHIS-006.webp",
+  "fecha": "2026-10-29"
+ },
+ "GAT-WHIS-001": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "GAT-WHIS-002": {
+  "grupo": "A",
+  "metodo": "código + nombre",
+  "confirmaCodigo": true,
+  "titulo": "Alimento Whiskas Adulto 1+ Sabor Carne En Salsa X 85G— Farmacorp",
+  "pagina": "https://farmacorp.com/products/07797453000420",
+  "origen": "https://farmacorp.com/cdn/shop/files/07797453000420_700x700.jpg?v=1714442210",
+  "archivo": "assets/productos/GAT-WHIS-002.webp",
+  "fecha": "2026-10-29"
+ },
+ "GAT-WHIS-004": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "GAT-WHIS-005": {
+  "grupo": "A",
+  "metodo": "código de barras",
+  "confirmaCodigo": true,
+  "titulo": "Alimento Whiskas Gatitos 2 A 12 Meses Sabor Carne X 85G— Farmacorp",
+  "pagina": "https://farmacorp.com/products/07797453000406",
+  "origen": "https://farmacorp.com/cdn/shop/files/07797453000406_1200x1200.jpg?v=1714442211",
+  "archivo": "assets/productos/GAT-WHIS-005.webp",
+  "fecha": "2026-10-29"
+ },
+ "OTR-KEND-001": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "GAT-WHIS-003": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "OTR-CANA-003": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "OTR-CANA-002": {
+  "grupo": "A",
+  "metodo": "nombre",
+  "confirmaCodigo": false,
+  "titulo": "Canaima Pelet de papel 2 Kg - Tienda de Mascotas y Veterinaria Los ...",
+  "pagina": "https://lospatiperrosconcepcion.cl/producto/canaima-pelet-de-papel-2-kg/",
+  "origen": "https://lospatiperrosconcepcion.cl/wp-content/uploads/2026/01/Canaima-Pelet-de-papel-2-kg.png",
+  "archivo": "assets/productos/OTR-CANA-002.webp",
+  "fecha": "2026-10-29"
+ },
+ "OTR-BETA-003": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "OTR-BETA-002": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "OTR-CANA-001": {
+  "grupo": "A",
+  "metodo": "código de barras",
+  "confirmaCodigo": true,
+  "titulo": "VIRUTA VEGETAL CANAIMA",
+  "pagina": "https://tiendapetzoo.cl/inicio/363-viruta-vegetal-canaima-7804645360023.html",
+  "origen": "https://tiendapetzoo.cl/363-large_default/viruta-vegetal-canaima.jpg",
+  "archivo": "assets/productos/OTR-CANA-001.webp",
+  "fecha": "2026-10-29"
+ },
+ "GRA-ALFA-001": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "GRA-ALFA-002": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "OTR-BETA-001": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "GRA-ANCE-002": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "GRA-APPE-001": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "GRA-CATC-004": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "GRA-AGRO-001": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "GRA-FELI-001": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "GRA-MASK-001": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "GRA-MAST-007": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "GRA-MAST-008": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "GRA-MAST-009": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "GRA-MAST-006": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "GRA-FORA-001": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "GRA-MAST-002": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "GRA-GATT-002": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "GRA-GATT-001": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "GRA-NOMA-001": {
+  "grupo": "A",
+  "metodo": "nombre",
+  "confirmaCodigo": false,
+  "titulo": "Nómade Gato Adulto Granel 1 kg",
+  "pagina": "https://www.espaciopetshop.cl/nomade-gato-adulto-granel-1-kg",
+  "origen": "https://cdnx.jumpseller.com/espacio-pet1/image/35794276/gsc_116026890_1345741_1.jpg?1685220334",
+  "archivo": "assets/productos/GRA-NOMA-001.webp",
+  "fecha": "2026-10-29"
+ },
+ "GRA-SUPE-002": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "GRA-WHIS-002": {
+  "grupo": "A",
+  "metodo": "nombre",
+  "confirmaCodigo": false,
+  "titulo": "Ração Whiskas Gatos Adultos Á Granel 1kg Sabor Carne | Shopee Brasil",
+  "pagina": "https://shopee.com.br/Ração-Whiskas-Gatos-Adultos-Á-Granel-1kg-Sabor-Carne-i.405635623.23993587021",
+  "origen": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m3xwi3d89smw2e",
+  "archivo": "assets/productos/GRA-WHIS-002.webp",
+  "fecha": "2026-10-29"
+ },
+ "ACC-MOND-109": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "GRA-WHIS-003": {
+  "grupo": "A",
+  "metodo": "nombre",
+  "confirmaCodigo": false,
+  "titulo": "WHISKAS Adulto Sabor Pescado 1KG (A GRANEL) SOLO VENTA EN LOCAL ...",
+  "pagina": "https://tiempodemascotas.com/producto/whiskas-adulto-sabor-pescado-1kg-a-granel/",
+  "origen": "http://tiempodemascotas.com/wp-content/uploads/2020/11/whiskas-pescado-a-granel.jpg",
+  "archivo": "assets/productos/GRA-WHIS-003.webp",
+  "fecha": "2026-10-29"
+ },
+ "ACC-MOND-063": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "ACC-MOND-066": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "ACC-MOND-064": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "ACC-MOND-085": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "ACC-GEN-017": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "ACC-MOND-187": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "ACC-GEN-004": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "ACC-MOND-049": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "ACC-MOND-065": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "ACC-MOND-195": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "ACC-LEON-008": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "ACC-MOND-126": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "ACC-MOND-189": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "ACC-MOND-188": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "ACC-MOND-028": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "ACC-MOND-030": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "ACC-MOND-023": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "ACC-MOND-058": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "ACC-MOND-051": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "ACC-LITT-001": {
+  "grupo": "A",
+  "metodo": "nombre",
+  "confirmaCodigo": false,
+  "titulo": "LitterLocker LitterBox Gris-Blanco, Arenero Moderno para Gatos con Pala ...",
+  "pagina": "https://www.51kaixinwang.com/producto/litterlocker-litterbox-gris-blanco-arenero-moderno-para-gatos-con-pala-incluida/",
+  "origen": "https://guauquebarato.cl/wp-content/uploads/2023/04/litter-box.png",
+  "archivo": "assets/productos/ACC-LITT-001.webp",
+  "fecha": "2026-10-29"
+ },
+ "ACC-WOND-007": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "ACC-MOND-052": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "ACC-MOND-152": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "ACC-BUEN-011": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "ACC-LEON-007": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "ACC-MOND-153": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "ACC-BUEN-008": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "ACC-LILI-003": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "ACC-BUEN-009": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "ACC-BUEN-010": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
  }
 }
