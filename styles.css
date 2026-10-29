@@ -588,7 +588,7 @@ main:focus { outline: none; }
    PORTADA (hero)
    ============================================================ */
 .hero { position: relative; background: var(--magenta); color: var(--blanco); overflow: hidden; --foco: var(--blanco); }
-.hero__contenido { position: relative; z-index: 1; max-width: var(--ancho); margin-inline: auto; padding: 14px var(--margen) 0; }
+.hero__contenido { position: relative; z-index: 1; max-width: var(--ancho); margin-inline: auto; padding: 28px var(--margen) 0; } /* el alto de arriba ya deja lugar a la guirnalda de temporada (sin mover nada cuando aparece) */
 .hero__marca {
   font-family: var(--fuente-titulos); font-size: .8125rem; font-weight: 600; letter-spacing: .14em; text-transform: uppercase;
   color: var(--blanco); margin: 0 0 6px;
@@ -607,13 +607,12 @@ main:focus { outline: none; }
 .hero__imagen { display: block; width: auto; max-width: 100%; height: auto; max-height: 170px; justify-self: end; align-self: end; filter: drop-shadow(0 14px 22px rgba(34, 29, 61, .3)); }
 .hero__imagen--ancha { max-height: 130px; max-width: 84%; }
 /* Controles DENTRO del hero, abajo a la izquierda (sin franja propia) */
-.con-guirnalda .hero__contenido { padding-top: 38px; }
 .hero__controles { position: absolute; left: var(--margen); bottom: 10px; z-index: 2; display: flex; align-items: center; gap: 8px; }
 /* En celular los controles pueden quedar sobre la foto: llevan un fondo oscuro translúcido para que se lean siempre */
 @media (max-width: 859px) { .hero__controles { padding: 4px 8px 4px 4px; border-radius: 999px; background: rgba(35, 31, 32, .38); } }
 .hero__contador { min-width: 3.5em; text-align: center; font-weight: 700; }
 @media (min-width: 860px) {
-  .hero__contenido { padding-top: 16px; }
+  .hero__contenido { padding-top: 36px; }
   .hero__diapositivas { min-height: 0; }
   .hero__diapositiva { grid-template-columns: 1.05fr 1fr; gap: 24px; align-items: end; min-height: 352px; }
   .hero__diapositiva:has(.hero__imagen--ancha) { grid-template-columns: 1fr 1fr; }
