@@ -1,0 +1,97 @@
+{
+ "PER-ALFA-003": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "PER-ALFA-001": {
+  "grupo": "A",
+  "metodo": "nombre",
+  "confirmaCodigo": false,
+  "titulo": "Alfa Dog Adulto Raza Pequeña 10 Kg – petonline",
+  "pagina": "https://petonline.govic.cl/producto/alfa-dog-adulto-raza-pequena/",
+  "origen": "https://petonline.govic.cl/wp-content/uploads/2023/01/Diseno-sin-titulo-2023-02-01T084851.477.png",
+  "archivo": "assets/productos/PER-ALFA-001.webp",
+  "fecha": "2026-10-29"
+ },
+ "PER-ALPH-004": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "PER-ALFA-002": {
+  "grupo": "A",
+  "metodo": "código de barras",
+  "confirmaCodigo": false,
+  "titulo": "Alfa Dog Senior Razas Pequeñas 3 kg - Pet Palace - Chillán",
+  "pagina": "https://petpalace.cl/producto/alfa-dog-senior-razas-pequenas-3-kg/",
+  "origen": "https://petpalace.cl/wp-content/uploads/2023/10/7157970-600x600.jpg",
+  "archivo": "assets/productos/PER-ALFA-002.webp",
+  "fecha": "2026-10-29"
+ },
+ "PER-ALPH-001": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "PER-ANCE-001": {
+  "grupo": "A",
+  "metodo": "nombre",
+  "confirmaCodigo": false,
+  "titulo": "Ancestral perro adulto raza pequeña 10 Kilos – Distribuidora AhorroPet",
+  "pagina": "https://distribuidoraahorropet.cl/producto/ancestral-perro-adulto-raza-pequena-10-kilos/",
+  "origen": "https://distribuidoraahorropet.cl/wp-content/uploads/2025/02/ancestral-adulto-raza-pequena-10-kilos.jpg",
+  "archivo": "assets/productos/PER-ANCE-001.webp",
+  "fecha": "2026-10-29"
+ },
+ "PER-ANCE-002": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "PER-BOKA-002": {
+  "grupo": "A",
+  "metodo": "nombre",
+  "confirmaCodigo": false,
+  "titulo": "Bokato Cachorro 10 kg – Alimento Premium para Cachorros y Lactantes ...",
+  "pagina": "https://www.foodscannin.cl/product-page/bokato-cachorro-10kg",
+  "origen": "https://static.wixstatic.com/media/3b9c32_d6ef7c27914d49399ef362f60fea2422~mv2.png/v1/fill/w_1024,h_1024,al_c,q_90,enc_avif,quality_auto/3b9c32_d6ef7c27914d49399ef362f60fea2422~mv2.png",
+  "archivo": "assets/productos/PER-BOKA-002.webp",
+  "fecha": "2026-10-29"
+ },
+ "PER-BOKA-001": {
+  "grupo": "A",
+  "metodo": "nombre",
+  "confirmaCodigo": false,
+  "titulo": "Alimento Bokato Gold Super Premium Perro Adulto 20 Kg | Cuotas sin interés",
+  "pagina": "https://www.mercadolibre.cl/alimento-bokato-gold-super-premium-perro-adulto-20-kg/up/MLCU3115812710",
+  "origen": "https://http2.mlstatic.com/D_NQ_NP_941815-MLC83626283987_042025-O.webp",
+  "archivo": "assets/productos/PER-BOKA-001.webp",
+  "fecha": "2026-10-29"
+ },
+ "PER-BRAV-009": {
+  "grupo": "A",
+  "metodo": "nombre",
+  "confirmaCodigo": false,
+  "titulo": "Bravery | Adulto | Cerdo ibérico | 12 kg - Pet King",
+  "pagina": "https://petkingperu.com/tienda/bravery-iberian-pork-adult-large-medium-breed-12-kg/",
+  "origen": "https://petkingperu.com/wp-content/uploads/2025/01/Bravery-_-Adulto-_-Cerdo-iberico-_-12-kg.jpg",
+  "archivo": "assets/productos/PER-BRAV-009.webp",
+  "fecha": "2026-10-29"
+ },
+ "PER-BRAV-004": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "PER-CACH-002": {
+  "grupo": "A",
+  "metodo": "nombre",
+  "confirmaCodigo": false,
+  "titulo": "Cachupin Adulto Sabor Carne y Arroz 25 Kg - Pet Palace - Chillán",
+  "pagina": "https://petpalace.cl/producto/cachupin-adulto-sabor-carne-y-arroz-25-kg/",
+  "origen": "https://petpalace.cl/wp-content/uploads/2023/04/cachupin_adulto_carne_arroz_18kg.webp",
+  "archivo": "assets/productos/PER-CACH-002.webp",
+  "fecha": "2026-10-29"
+ }
+}
