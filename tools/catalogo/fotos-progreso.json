@@ -828,5 +828,780 @@
   "origen": "https://lagranjamed.com/wp-content/uploads/2025/07/unnamed-21.png",
   "archivo": "assets/productos/PER-PEDI-004.webp",
   "fecha": "2026-10-29"
+ },
+ "PER-WANP-001": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "PER-WANP-004": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "PER-WANP-003": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "PER-WANP-002": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "PER-PEDI-002": {
+  "grupo": "A",
+  "metodo": "nombre",
+  "confirmaCodigo": false,
+  "titulo": "Pedigree Sobre Senior En Salsa Sabor Carne | Bodega de la Mascota",
+  "pagina": "https://bodegadelamascota.cl/products/pedigree-sobre-senior-en-salsa-sabor-carne",
+  "origen": "https://bodegadelamascota.cl/cdn/shop/files/Pedigree_Sobre_Senior_Carne_600x600.webp?v=1711375951",
+  "archivo": "assets/productos/PER-PEDI-002.webp",
+  "fecha": "2026-10-29"
+ },
+ "GAT-BIOF-002": {
+  "grupo": "A",
+  "metodo": "código de barras",
+  "confirmaCodigo": false,
+  "titulo": "Biofresh Gato Kitten 1.5kg",
+  "pagina": "https://petsrancagua.cl/biofresh-gato-cachorro",
+  "origen": "https://cdnx.jumpseller.com/nuevapet/image/57052728/resize/610/610?1731521937",
+  "archivo": "assets/productos/GAT-BIOF-002.webp",
+  "fecha": "2026-10-29"
+ },
+ "GAT-AMIT-003": {
+  "grupo": "A",
+  "metodo": "nombre",
+  "confirmaCodigo": false,
+  "titulo": "Amity Salmon Adult Cat Sterilized 7 Kg - Nutritails",
+  "pagina": "https://nutritails.cl/producto/amity-salmon-adult-cat-sterilized-7-kg/",
+  "origen": "https://nutritails.cl/wp-content/uploads/2025/02/amity-cat-salmon-adulto-sterilizado-7kg.jpg",
+  "archivo": "assets/productos/GAT-AMIT-003.webp",
+  "fecha": "2026-10-29"
+ },
+ "GAT-AMIT-004": {
+  "grupo": "A",
+  "metodo": "código + nombre",
+  "confirmaCodigo": false,
+  "titulo": "Amity Super Premium adult cat salmon (2kg / 7kg) - Wolly",
+  "pagina": "https://wollypetshop.cl/producto/amity-super-premium-adult-cat-salmon-2kg-7kg/",
+  "origen": "https://wollypetshop.cl/wp-content/uploads/2023/07/145-700x700.jpg",
+  "archivo": "assets/productos/GAT-AMIT-004.webp",
+  "fecha": "2026-10-29"
+ },
+ "GAT-APPE-001": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "GAT-BRAV-010": {
+  "grupo": "A",
+  "metodo": "nombre",
+  "confirmaCodigo": false,
+  "titulo": "Bravery Arenque (herring) Gato Adulto Esterilizado 7 Kg | Cuotas sin ...",
+  "pagina": "https://www.mercadolibre.cl/bravery-arenque-herring-gato-adulto-esterilizado-7-kg/up/MLCU3672072727",
+  "origen": "https://http2.mlstatic.com/D_NQ_NP_998974-MLC101265563427_122025-O.webp",
+  "archivo": "assets/productos/GAT-BRAV-010.webp",
+  "fecha": "2026-10-29"
+ },
+ "GAT-BRAV-009": {
+  "grupo": "A",
+  "metodo": "nombre",
+  "confirmaCodigo": false,
+  "titulo": "Bravery Gato Adulto Herring 7 kg.",
+  "pagina": "https://braloy.cl/mascotas/3077-bravery-gato-adulto-herring-7-kg.html",
+  "origen": "https://braloy103.akamaized.net/9657-thickbox_default/bravery-gato-adulto-herring-7-kg.jpg",
+  "archivo": "assets/productos/GAT-BRAV-009.webp",
+  "fecha": "2026-10-29"
+ },
+ "GAT-BIOF-005": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "GAT-BRAV-005": {
+  "grupo": "A",
+  "metodo": "código de barras",
+  "confirmaCodigo": true,
+  "titulo": "Bravery Gato Adulto Salmón 2KG",
+  "pagina": "https://felican.cl/perros/393-bravery-gato-adulto-salmon-2kg-8436538947647.html",
+  "origen": "https://felican.cl/442-large_default/bravery-gato-adulto-salmon-2kg.jpg",
+  "archivo": "assets/productos/GAT-BRAV-005.webp",
+  "fecha": "2026-10-29"
+ },
+ "GAT-BRAV-007": {
+  "grupo": "A",
+  "metodo": "nombre",
+  "confirmaCodigo": false,
+  "titulo": "BRAVERY GATO ADULTO POLLO 7 Kg - Manifarmavet",
+  "pagina": "https://www.manifarmavet.cl/product/bravery-gato-adulto-pollo-7-kg/",
+  "origen": "https://www.manifarmavet.cl/wp-content/uploads/2025/11/bravery-gatos-sabor-pollo-1024x1024.png",
+  "archivo": "assets/productos/GAT-BRAV-007.webp",
+  "fecha": "2026-10-29"
+ },
+ "GAT-BRAV-012": {
+  "grupo": "A",
+  "metodo": "código de barras",
+  "confirmaCodigo": false,
+  "titulo": "Bravery Gato adulto Herring (Arenque) 2Kg",
+  "pagina": "https://santafemascotas.cl/producto/bravery-gato-adulto-herring-arenque-2kg/",
+  "origen": "https://santafemascotas.cl/wp-content/uploads/2023/06/bravery-herring-adult-cat-santa-fe-mascotas-416x416.png",
+  "archivo": "assets/productos/GAT-BRAV-012.webp",
+  "fecha": "2026-10-29"
+ },
+ "GAT-GATI-001": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "GAT-BRAV-003": {
+  "grupo": "A",
+  "metodo": "nombre",
+  "confirmaCodigo": false,
+  "titulo": "Bravery Pollo Para Gato Adulto 2 Kg | Cuotas sin interés",
+  "pagina": "https://www.mercadolibre.cl/bravery-pollo-para-gato-adulto-2-kg/up/MLCU3319645869",
+  "origen": "https://http2.mlstatic.com/D_NQ_NP_954242-MLU75133285425_032024-O.webp",
+  "archivo": "assets/productos/GAT-BRAV-003.webp",
+  "fecha": "2026-10-29"
+ },
+ "GAT-FELN-001": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "GAT-MASK-001": {
+  "grupo": "A",
+  "metodo": "código de barras",
+  "confirmaCodigo": true,
+  "titulo": "Masko Cat 10 Kg | PATITAS SHOP",
+  "pagina": "https://www.patitasshop.cl/shop/7805644000521-masko-cat-10-kg-401",
+  "origen": "https://www.patitasshop.cl/web/image/product.product/424/image_1024/[7805644000521] Masko Cat 10 Kg ?unique=5506e7f",
+  "archivo": "assets/productos/GAT-MASK-001.webp",
+  "fecha": "2026-10-29"
+ },
+ "GAT-MASK-002": {
+  "grupo": "A",
+  "metodo": "nombre",
+  "confirmaCodigo": false,
+  "titulo": "MASKO CAT 25 KG",
+  "pagina": "https://www.petbj.cl/masko-cat-25-kg",
+  "origen": "https://cdnx.jumpseller.com/pet-bj/image/25699761/resize/540/540?1657733874",
+  "archivo": "assets/productos/GAT-MASK-002.webp",
+  "fecha": "2026-10-29"
+ },
+ "GAT-MAST-010": {
+  "grupo": "A",
+  "metodo": "nombre",
+  "confirmaCodigo": false,
+  "titulo": "Master Cat – Carne – 20 KG – Mundo Patitas",
+  "pagina": "https://mundopatitas.cl/producto/master-cat-carne-20-kg/",
+  "origen": "https://mundopatitas.cl/wp-content/uploads/2024/07/master-cat-carne.jpg",
+  "archivo": "assets/productos/GAT-MAST-010.webp",
+  "fecha": "2026-10-29"
+ },
+ "GAT-MAST-006": {
+  "grupo": "A",
+  "metodo": "código de barras",
+  "confirmaCodigo": false,
+  "titulo": "MASTERCAT ADULTO POLLO 20KG",
+  "pagina": "https://www.befoods.cl/products/mastercat-adulto-pollo-20kg",
+  "origen": "https://www.befoods.cl/cdn/shop/products/7801920001671.jpg?v=1753706874&width=1000",
+  "archivo": "assets/productos/GAT-MAST-006.webp",
+  "fecha": "2026-10-29"
+ },
+ "GAT-MAST-007": {
+  "grupo": "A",
+  "metodo": "nombre",
+  "confirmaCodigo": false,
+  "titulo": "Master Cat Gatitos 20 kg - Distribuidora Lira",
+  "pagina": "https://www.distribuidoralira.cl/product/master-cat-gatitos-20-kg-2/",
+  "origen": "https://www.distribuidoralira.cl/wp-content/uploads/2025/07/gatito-600x850.png",
+  "archivo": "assets/productos/GAT-MAST-007.webp",
+  "fecha": "2026-10-29"
+ },
+ "GAT-MAST-009": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "GAT-OWNA-002": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "GAT-NYD-003": {
+  "grupo": "A",
+  "metodo": "nombre",
+  "confirmaCodigo": false,
+  "titulo": "N&d Quinoa Gato Skin & Coat 1,5kg | Cuotas sin interés",
+  "pagina": "https://www.mercadolibre.com.uy/nd-quinoa-gato-skin-coat-15kg/p/MLU21718402",
+  "origen": "https://http2.mlstatic.com/D_NQ_NP_943115-MLA99830484403_112025-O.webp",
+  "archivo": "assets/productos/GAT-NYD-003.webp",
+  "fecha": "2026-10-29"
+ },
+ "GAT-VETL-008": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "GAT-NOMA-001": {
+  "grupo": "A",
+  "metodo": "nombre",
+  "confirmaCodigo": false,
+  "titulo": "NOMADE GATO ADULTO 10 KG - Alfa Premium Pets",
+  "pagina": "https://www.alfapremiumpets.cl/producto/nomade-gato-adulto-10-kg/",
+  "origen": "https://www.alfapremiumpets.cl/wp-content/uploads/2023/08/AF-08-31.jpeg",
+  "archivo": "assets/productos/GAT-NOMA-001.webp",
+  "fecha": "2026-10-29"
+ },
+ "GAT-PURI-012": {
+  "grupo": "A",
+  "metodo": "nombre",
+  "confirmaCodigo": false,
+  "titulo": "Purina Excellent Urinary Gato Adulto 7.5 kg - Pet Palace - Chillán",
+  "pagina": "https://petpalace.cl/producto/purina-excellent-urinary-gato-adulto-7-5-kg/",
+  "origen": "https://petpalace.cl/wp-content/uploads/2026/01/Excellent-Gato-Urinario-75-kg-1131x2048.jpg",
+  "archivo": "assets/productos/GAT-PURI-012.webp",
+  "fecha": "2026-10-29"
+ },
+ "GAT-WHIS-010": {
+  "grupo": "A",
+  "metodo": "nombre",
+  "confirmaCodigo": false,
+  "titulo": "Whiskas Para Gatos Adultos Pescado 20 Kg. | Lider",
+  "pagina": "https://www.lider.cl/ip/gatos/whiskas-para-gatos-adultos-pescado-20-kg-/00779745397413",
+  "origen": "https://i5.walmartimages.cl/asr/404b876b-70e7-4d1e-907e-8dac3731abac.51f1e71aed2ee5d8949f297a239ef5f4.jpeg?odnHeight=2000&odnWidth=2000&odnBg=ffffff",
+  "archivo": "assets/productos/GAT-WHIS-010.webp",
+  "fecha": "2026-10-29"
+ },
+ "GAT-WHIS-009": {
+  "grupo": "A",
+  "metodo": "nombre",
+  "confirmaCodigo": false,
+  "titulo": "Alimento Gato Whiskas Carne 20 KG - Distribuidora Lira",
+  "pagina": "https://www.distribuidoralira.cl/product/alimento-gato-whiskas-carne-20-kg/",
+  "origen": "https://www.distribuidoralira.cl/wp-content/uploads/2025/08/22P862-600x600.webp",
+  "archivo": "assets/productos/GAT-WHIS-009.webp",
+  "fecha": "2026-10-29"
+ },
+ "OTR-ROYA-001": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "GAT-LEOD-006": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "GAT-LEOD-007": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "GAT-CHUR-030": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "GAT-CHUR-028": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "GAT-CHUR-027": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "GAT-CHUR-022": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "GAT-CHUR-029": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "GAT-CHUR-031": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "GAT-CHUR-019": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "GAT-CATS-007": {
+  "grupo": "A",
+  "metodo": "nombre",
+  "confirmaCodigo": false,
+  "titulo": "Cats Snack Galletas Atún con Hierba Gatera",
+  "pagina": "https://felinus.cl/snack-y-golosinas/cats-snacks-atun-con-hierba-gatera.html",
+  "origen": "https://felinus.cl/4313-large_default/cats-snacks-atun-con-hierba-gatera.jpg",
+  "archivo": "assets/productos/GAT-CATS-007.webp",
+  "fecha": "2026-10-29"
+ },
+ "GAT-CATS-010": {
+  "grupo": "A",
+  "metodo": "nombre",
+  "confirmaCodigo": false,
+  "titulo": "Cats Snack Galletas Rellenas de Atún con Ostión 80gr – NovaPet",
+  "pagina": "https://www.novapet.cl/products/cats-snack-galletas-rellenas-de-atun-con-ostion-80gr",
+  "origen": "https://www.novapet.cl/cdn/shop/files/2_6e0f3da9-01f2-4909-a063-a9e2923e9763.png?v=1748449573&width=1000",
+  "archivo": "assets/productos/GAT-CATS-010.webp",
+  "fecha": "2026-10-29"
+ },
+ "GAT-WANP-003": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "GAT-CATS-008": {
+  "grupo": "A",
+  "metodo": "nombre",
+  "confirmaCodigo": false,
+  "titulo": "Cats Snack Galletas sabor camarón con hierba gatera 80g – Tutto Pets ...",
+  "pagina": "https://tuttopets.cl/products/cats-snack-galletas-sabor-camaron-con-hierba-gatera-80g",
+  "origen": "https://tuttopets.cl/cdn/shop/files/b3c0976bc50be361fea48f691f96b145.png?v=1761682625&width=1445",
+  "archivo": "assets/productos/GAT-CATS-008.webp",
+  "fecha": "2026-10-29"
+ },
+ "GAT-CATS-005": {
+  "grupo": "A",
+  "metodo": "código de barras",
+  "confirmaCodigo": false,
+  "titulo": "CATS SNACK GALLETAS SABOR CAMARON CON HIERBA GATERA 80 GR",
+  "pagina": "https://www.pettime.cl/cats-snack-galletas-sabor-camaron-con-hierba-gatera-80-gr",
+  "origen": "https://cdnx.jumpseller.com/tienda-pet-time/image/67413110/resize/306/306?1757373024",
+  "archivo": "assets/productos/GAT-CATS-005.webp",
+  "fecha": "2026-10-29"
+ },
+ "GAT-CATS-004": {
+  "grupo": "A",
+  "metodo": "código de barras",
+  "confirmaCodigo": false,
+  "titulo": "Cats Snack Galletas Rellenas Salmón y Hierba Gatera 80gr",
+  "pagina": "https://petsrancagua.cl/cats-snack-galletas-rellenas-salmon-y-hierba-gatera-80gr",
+  "origen": "https://cdnx.jumpseller.com/nuevapet/image/65570410/resize/1200/1200?1753211821",
+  "archivo": "assets/productos/GAT-CATS-004.webp",
+  "fecha": "2026-10-29"
+ },
+ "GAT-CATS-003": {
+  "grupo": "A",
+  "metodo": "nombre",
+  "confirmaCodigo": false,
+  "titulo": "Galletas Cats Snack Cangrejo & Hierba Gatera (CK1026) – Distribuidora Lira",
+  "pagina": "https://www.distribuidoralira.cl/product/galletas-cats-snack-cangrejo-hierba-gatera-ck1026-2/",
+  "origen": "https://www.distribuidoralira.cl/wp-content/uploads/2025/07/21P913.png",
+  "archivo": "assets/productos/GAT-CATS-003.webp",
+  "fecha": "2026-10-29"
+ },
+ "GAT-CATS-006": {
+  "grupo": "A",
+  "metodo": "nombre",
+  "confirmaCodigo": false,
+  "titulo": "Cats Snack Galletas Conejo con Hierba Gatera | Bodega de la Mascota",
+  "pagina": "https://bodegadelamascota.cl/products/cats-snack-galletas-sabor-conejo-con-hierba-gatera",
+  "origen": "https://bodegadelamascota.cl/cdn/shop/files/Cats_Snack_Galletas_Sabor_Conejo_con_Hierba_Gatera_2_700x700.webp?v=1747884691",
+  "archivo": "assets/productos/GAT-CATS-006.webp",
+  "fecha": "2026-10-29"
+ },
+ "GAT-AGIL-006": {
+  "grupo": "A",
+  "metodo": "nombre",
+  "confirmaCodigo": false,
+  "titulo": "Agility Lata Gatito Vacuno 340 Gr | PET BJ",
+  "pagina": "https://www.petbj.cl/agility-lata-gatito-vacuno-340-gr",
+  "origen": "https://cdnx.jumpseller.com/pet-bj/image/70357695/resize/1200/1200?1764784812",
+  "archivo": "assets/productos/GAT-AGIL-006.webp",
+  "fecha": "2026-10-29"
+ },
+ "GAT-BEST-004": {
+  "grupo": "A",
+  "metodo": "código de barras",
+  "confirmaCodigo": true,
+  "titulo": "ინვეტ ჯგუფის ოფიციალური ვებ-გვერდი - 8681465601173 BESTPET CAT 400 gr ...",
+  "pagina": "https://invet.ge/ka/products/5320",
+  "origen": "https://invet.ge/uploads/products/20250806120014-005.jpg",
+  "archivo": "assets/productos/GAT-BEST-004.webp",
+  "fecha": "2026-10-29"
+ },
+ "GAT-BEST-003": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "GAT-DTLT-001": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "GAT-BEST-005": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "GAT-AGIL-005": {
+  "grupo": "A",
+  "metodo": "nombre",
+  "confirmaCodigo": false,
+  "titulo": "LATA AGILITY DOG ADULT CORDERO – Animalia",
+  "pagina": "https://www.animalia.com.ar/producto/lata-agility-dog-adult-cordero/",
+  "origen": "https://www.animalia.com.ar/wp-content/uploads/2024/09/8-1-920x920.png",
+  "archivo": "assets/productos/GAT-AGIL-005.webp",
+  "fecha": "2026-10-29"
+ },
+ "GAT-CHAM-001": {
+  "grupo": "A",
+  "metodo": "nombre",
+  "confirmaCodigo": false,
+  "titulo": "Lata Champion cat 315gr sabor pescado – Tienda Patudos",
+  "pagina": "https://patudosonline.cl/producto/lata-champion-cat-315gr-sabor-pescado/",
+  "origen": "https://patudosonline.cl/wp-content/uploads/2025/07/Screenshot_20250729_163232_com_cencosud_cl_jumboahora_MainActivity.jpg",
+  "archivo": "assets/productos/GAT-CHAM-001.webp",
+  "fecha": "2026-10-29"
+ },
+ "GAT-FANC-001": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "GAT-FANC-014": {
+  "grupo": "A",
+  "metodo": "nombre",
+  "confirmaCodigo": false,
+  "titulo": "purina fancy feast lata petit filetes de atún 85 gr – NovaPet",
+  "pagina": "https://www.novapet.cl/products/purina-fancy-feast-lata-petit-filetes-de-atun-85-gr",
+  "origen": "https://www.novapet.cl/cdn/shop/files/fancyfeastpetitfiletesatun61902793.jpg?v=1745519564&width=1000",
+  "archivo": "assets/productos/GAT-FANC-014.webp",
+  "fecha": "2026-10-29"
+ },
+ "GAT-FANC-004": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "GAT-FANC-015": {
+  "grupo": "A",
+  "metodo": "nombre",
+  "confirmaCodigo": false,
+  "titulo": "purina fancy feast lata petit filetes de salmón 85 gr",
+  "pagina": "https://www.pawspain.com/products/purina-fancy-feast-lata-petit-filetes-de-salmon-85-gr/",
+  "origen": "https://www.pawspain.com/wp-content/uploads/2026/03/fancyfeastpetitsfiletessalmon62940778.webp",
+  "archivo": "assets/productos/GAT-FANC-015.webp",
+  "fecha": "2026-10-29"
+ },
+ "GAT-FANC-016": {
+  "grupo": "A",
+  "metodo": "nombre",
+  "confirmaCodigo": false,
+  "titulo": "Lata Fancy Feast Mousse Carne – Supermercado de la mascota",
+  "pagina": "https://supermercadodelamascota.cl/products/fancy-feast-lata-mousse-carne",
+  "origen": "https://supermercadodelamascota.cl/cdn/shop/files/50000429547-9_jpg.webp?v=1690390402&width=1946",
+  "archivo": "assets/productos/GAT-FANC-016.webp",
+  "fecha": "2026-10-29"
+ },
+ "GAT-FANC-003": {
+  "grupo": "A",
+  "metodo": "nombre",
+  "confirmaCodigo": false,
+  "titulo": "purina fancy feast lata petit filetes de atún 85 gr – NovaPet",
+  "pagina": "https://www.novapet.cl/products/purina-fancy-feast-lata-petit-filetes-de-atun-85-gr",
+  "origen": "https://www.novapet.cl/cdn/shop/files/fancyfeastpetitfiletesatun61902793.jpg?v=1745519564&width=1000",
+  "archivo": "assets/productos/GAT-FANC-003.webp",
+  "fecha": "2026-10-29"
+ },
+ "GAT-FANC-012": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "GAT-FANC-005": {
+  "grupo": "A",
+  "metodo": "código + nombre",
+  "confirmaCodigo": true,
+  "titulo": "FANCY FEAST LATA TARTARE ATÚN 85 GRS",
+  "pagina": "https://jardinzoo.cl/alimentos-humedos/3486-fancy-feast-lata-tartare-atun-85-grs-50000001248.html",
+  "origen": "https://jardinzoo.cl/4479-large_default/fancy-feast-lata-tartare-atun-85-grs.jpg",
+  "archivo": "assets/productos/GAT-FANC-005.webp",
+  "fecha": "2026-10-29"
+ },
+ "GAT-FANC-002": {
+  "grupo": "A",
+  "metodo": "nombre",
+  "confirmaCodigo": false,
+  "titulo": "Purina Fancy Feast Naturals Pollo Lata 85 g desde $ 32.00",
+  "pagina": "https://www.rappi.com.mx/p/purina-fancy-feast-naturals-pollo-l-58692",
+  "origen": "https://images.rappi.com.mx/products/92789a1b-b295-4af9-8a0a-cfbb5367fe5a.png?d=900x750&e=webp&q=30",
+  "archivo": "assets/productos/GAT-FANC-002.webp",
+  "fecha": "2026-10-29"
+ },
+ "GAT-FANC-006": {
+  "grupo": "A",
+  "metodo": "nombre",
+  "confirmaCodigo": false,
+  "titulo": "PURINA LATA FANCY FEAST GRILLED SALMON 85 GR | L&H PET SHOP",
+  "pagina": "https://www.lhpetshop.cl/product/purina-lata-fancy-feast-grilled-salmon-85-gr",
+  "origen": "https://dojiw2m9tvv09.cloudfront.net/75790/product/F_fancy-feast-gato-lata-filetes-salmon-85-grs2823.jpg?59&time=1755302999",
+  "archivo": "assets/productos/GAT-FANC-006.webp",
+  "fecha": "2026-10-29"
+ },
+ "GAT-FANC-013": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "GAT-FANC-017": {
+  "grupo": "A",
+  "metodo": "nombre",
+  "confirmaCodigo": false,
+  "titulo": "Fancy Feast, lata de comida de gatos terrine con pollo, Chunky chicken ...",
+  "pagina": "https://www.faunimals.com/product/fancy-feast-lata-de-comida-de-gatos-terrine-con-pollo-chunky-chicken-feast-85g",
+  "origen": "https://dojiw2m9tvv09.cloudfront.net/23385/product/050000426942default.jpg?171&time=1703783605",
+  "archivo": "assets/productos/GAT-FANC-017.webp",
+  "fecha": "2026-10-29"
+ },
+ "GAT-FELI-007": {
+  "grupo": "A",
+  "metodo": "código de barras",
+  "confirmaCodigo": false,
+  "titulo": "Comida Húmeda Para Gato Felix Lata Pate De Salmon",
+  "pagina": "https://ceba.com.co/products/felix-lata-pate-de-salmon-x-156-gr",
+  "origen": "https://ceba.com.co/cdn/shop/files/50000290482_1.jpg?v=1708968735",
+  "archivo": "assets/productos/GAT-FELI-007.webp",
+  "fecha": "2026-10-29"
+ },
+ "GAT-FELI-009": {
+  "grupo": "A",
+  "metodo": "nombre",
+  "confirmaCodigo": false,
+  "titulo": "LATA FELIX PATE SABOR PESCADO Y ATUN 156g | Vervet",
+  "pagina": "https://www.vervet.cl/product/lata-felix-pate-sabor-pescado-y-atun-156g",
+  "origen": "https://dojiw2m9tvv09.cloudfront.net/24755/product/lata-felix-pate-pescado-y-atun4235.png?23&t=1778553708",
+  "archivo": "assets/productos/GAT-FELI-009.webp",
+  "fecha": "2026-10-29"
+ },
+ "GAT-FELI-008": {
+  "grupo": "A",
+  "metodo": "nombre",
+  "confirmaCodigo": false,
+  "titulo": "Lata Felix Pate sabor pavo y menudencias 156 g - Mundo Gato",
+  "pagina": "https://mundogato.com.ec/producto/lata-felix-pate-sabor-pavo-y-menudencias-156-g/",
+  "origen": "https://mundogato.com.ec/wp-content/uploads/2026/01/latas-Felix-pate-Pavo-y-menudencias.jpg",
+  "archivo": "assets/productos/GAT-FELI-008.webp",
+  "fecha": "2026-10-29"
+ },
+ "GAT-FITG-002": {
+  "grupo": "A",
+  "metodo": "nombre",
+  "confirmaCodigo": false,
+  "titulo": "Fit Lata Gourmet Gatos con Atún y Camarón 80 grs - Petcity",
+  "pagina": "https://petcity.cl/tienda/fit-lata-gourmet-gatos-con-atun-y-camaron-80-grs/",
+  "origen": "https://petcity.cl/wp-content/uploads/2024/01/fit-formula-gourmet-gato-atun-y-vegetales.jpg",
+  "archivo": "assets/productos/GAT-FITG-002.webp",
+  "fecha": "2026-10-29"
+ },
+ "GAT-FITG-001": {
+  "grupo": "A",
+  "metodo": "nombre",
+  "confirmaCodigo": false,
+  "titulo": "Lata Fit Gato Gourmet Atun Palitos de Cangrejo 80 gr - Distribuidora Lira",
+  "pagina": "https://www.distribuidoralira.cl/product/lata-fit-gato-gourmet-atun-palitos-de-cangrejo-80-gr-2/",
+  "origen": "https://www.distribuidoralira.cl/wp-content/uploads/2025/07/19P978.png",
+  "archivo": "assets/productos/GAT-FITG-001.webp",
+  "fecha": "2026-10-29"
+ },
+ "GAT-ROYA-014": {
+  "grupo": "A",
+  "metodo": "nombre",
+  "confirmaCodigo": false,
+  "titulo": "Royal Canin Lata Recovery Perro Gato 145 GR - Distribuidora Lira",
+  "pagina": "https://www.distribuidoralira.cl/product/royal-canin-lata-recovery-perro-gato-145-gr/",
+  "origen": "https://www.distribuidoralira.cl/wp-content/uploads/2025/03/Dise_o_sin_t_tulo__3_-1024x1024.png",
+  "archivo": "assets/productos/GAT-ROYA-014.webp",
+  "fecha": "2026-10-29"
+ },
+ "GAT-WHIS-007": {
+  "grupo": "A",
+  "metodo": "código de barras",
+  "confirmaCodigo": true,
+  "titulo": "Ração Úmida Whiskas Lata Patê De Carne Para Gatos Adultos - 290G ...",
+  "pagina": "https://www.americanpet.com.br/7896029079447-racao-umida-whiskas-lata-pate-de-carne-para-gatos-adultos-290g/p",
+  "origen": "https://amepettatix.vtexassets.com/arquivos/ids/185558-800-auto?v=638496811105470000&width=800&height=auto&aspect=true",
+  "archivo": "assets/productos/GAT-WHIS-007.webp",
+  "fecha": "2026-10-29"
+ },
+ "GAT-CHUR-033": {
+  "grupo": "A",
+  "metodo": "nombre",
+  "confirmaCodigo": false,
+  "titulo": "Inaba Churu Bisque Pollo",
+  "pagina": "https://felinus.cl/snack-y-golosinas/inaba-churu-bisque-pollo.html",
+  "origen": "https://felinus.cl/11799-large_default/inaba-churu-bisque-pollo.jpg",
+  "archivo": "assets/productos/GAT-CHUR-033.webp",
+  "fecha": "2026-10-29"
+ },
+ "GAT-CHUR-032": {
+  "grupo": "A",
+  "metodo": "nombre",
+  "confirmaCodigo": false,
+  "titulo": "Churu Bisque Pollo Y Carne 40Grs — TusMascotas.cl",
+  "pagina": "https://www.tusmascotas.cl/product/churu-bisque-pollo-y-carne-40grs/",
+  "origen": "https://www.tusmascotas.cl/wp-content/uploads/2024/09/bisquepollo.jpg",
+  "archivo": "assets/productos/GAT-CHUR-032.webp",
+  "fecha": "2026-10-29"
+ },
+ "GAT-BIOL-001": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "GAT-CHUR-015": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "GAT-CHUR-016": {
+  "grupo": "A",
+  "metodo": "nombre",
+  "confirmaCodigo": false,
+  "titulo": "Inaba Churu Broth - Chicken & Salmon",
+  "pagina": "https://tienda.catfood.com.co/productos/inaba-churu-broth-chicken-salmon-caldo-de-pollo-y-salmon-x-40g/",
+  "origen": "https://acdn-us.mitiendanube.com/stores/003/746/240/products/inaba-churu-broth-chicken-salmon-1-79cd526cc5975f1ffa17742283900705-480-0.webp",
+  "archivo": "assets/productos/GAT-CHUR-016.webp",
+  "fecha": "2026-10-29"
+ },
+ "GAT-CHUR-014": {
+  "grupo": "A",
+  "metodo": "nombre",
+  "confirmaCodigo": false,
+  "titulo": "Churu Broth Caldo De Pollo Ostión 50 Gr — BaluStore.cl",
+  "pagina": "https://www.balustore.cl/producto/inaba-broth-caldo-de-pollo-ostion-50-gr/",
+  "origen": "https://www.balustore.cl/wp-content/uploads/2023/04/USA823-700x700.png",
+  "archivo": "assets/productos/GAT-CHUR-014.webp",
+  "fecha": "2026-10-29"
+ },
+ "GAT-CHUR-013": {
+  "grupo": "A",
+  "metodo": "nombre",
+  "confirmaCodigo": false,
+  "titulo": "Churu Broth Caldo De Pollo Atún 50 Gr — BaluStore.cl",
+  "pagina": "https://www.balustore.cl/producto/inaba-broth-caldo-de-pollo-atun-50-gr/",
+  "origen": "https://www.balustore.cl/wp-content/uploads/2023/04/USA822-1024x1024.png",
+  "archivo": "assets/productos/GAT-CHUR-013.webp",
+  "fecha": "2026-10-29"
+ },
+ "GAT-CHUR-023": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "GAT-CHUR-025": {
+  "grupo": "A",
+  "metodo": "código + nombre",
+  "confirmaCodigo": false,
+  "titulo": "Churu for Senior Chicken Recipe - INABA Chile",
+  "pagina": "https://inabalatam.com/cl/producto/churu-for-senior-chicken-recipe/",
+  "origen": "https://inabalatam.com/cl/wp-content/uploads/2026/04/BACK-USA695.png",
+  "archivo": "assets/productos/GAT-CHUR-025.webp",
+  "fecha": "2026-10-29"
+ },
+ "GAT-FELI-010": {
+  "grupo": "A",
+  "metodo": "nombre",
+  "confirmaCodigo": false,
+  "titulo": "Snack Felix Travesuras Pollo 40g Gato | Adele Pet",
+  "pagina": "https://adelepet.cl/producto/snack-felix-travesuras-pollo-40g/",
+  "origen": "https://adelepet.cl/wp-content/uploads/2026/06/12612401.webp",
+  "archivo": "assets/productos/GAT-FELI-010.webp",
+  "fecha": "2026-10-29"
+ },
+ "GAT-CREM-003": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "GAT-FELI-011": {
+  "grupo": "A",
+  "metodo": "nombre",
+  "confirmaCodigo": false,
+  "titulo": "FELIX TRAVESURAS BOCADITOS SALMON X 40GR – Farmascota",
+  "pagina": "https://farmascota.co/products/felix-travesuras-bocaditos-salmon-x-40gr",
+  "origen": "https://farmascota.co/cdn/shop/files/FELIXTRAVESURASBOCADITOSSALMONX40GR.png?v=1778272007&width=3840",
+  "archivo": "assets/productos/GAT-FELI-011.webp",
+  "fecha": "2026-10-29"
+ },
+ "GAT-FITD-001": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "GAT-FITD-002": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "GAT-MARB-002": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "GAT-MARB-003": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "GAT-MARB-004": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "GAT-MARB-001": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "GAT-MARB-005": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "GAT-MARB-006": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "GAT-CREM-009": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "GAT-MARB-007": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "OTR-MARB-002": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "GAT-MARB-008": {
+  "grupo": "C",
+  "motivo": "sin coincidencia segura por código ni por nombre",
+  "fecha": "2026-10-29"
+ },
+ "GAT-OMEG-001": {
+  "grupo": "A",
+  "metodo": "nombre",
+  "confirmaCodigo": false,
+  "titulo": "Dentalight Omegas para gatos Crunchy Salmón 60g | Salud Oral y ...",
+  "pagina": "https://bassapet.cl/alimento/172-dentalight-omegas-para-gatos-crunchy-salmon-60-grs.html",
+  "origen": "https://bassapet.cl/266-large_default/dentalight-omegas-para-gatos-crunchy-salmon-60-grs.jpg",
+  "archivo": "assets/productos/GAT-OMEG-001.webp",
+  "fecha": "2026-10-29"
  }
 }
