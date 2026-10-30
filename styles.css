@@ -622,11 +622,11 @@ main:focus { outline: none; }
 }
 
 /* Atajos (ayuda rápida) */
-.atajos { background: var(--turquesa-suave); }
+.atajos { background: #cdeee8; border-bottom: 1px solid #b4dcd5; } /* un turquesa un poco más intenso que las secciones de abajo (#e6f7f4): resalta la franja; el texto sigue con contraste AA */
 .atajos__lista { max-width: var(--ancho); margin-inline: auto; padding: 8px var(--margen); display: grid; gap: 0; }
 .atajo {
   display: flex; align-items: center; gap: 12px; min-height: 52px; padding: 6px 4px;
-  color: var(--tinta); text-decoration: none; border-bottom: 1px solid var(--borde);
+  color: var(--tinta); text-decoration: none; border-bottom: 1px solid #a9d3cb;
 }
 .atajos__lista li:last-child .atajo { border-bottom: 0; }
 .atajo .icono { flex-shrink: 0; width: 24px; height: 24px; color: var(--turquesa-texto); }
@@ -635,12 +635,13 @@ main:focus { outline: none; }
 .atajo:hover strong { color: var(--magenta-oscuro); }
 @media (min-width: 860px) {
   .atajos__lista { grid-template-columns: repeat(3, 1fr); padding-block: 16px; }
-  .atajo { min-height: 64px; border-bottom: 0; border-right: 1px solid var(--borde); padding-inline: 20px; }
+  .atajo { min-height: 64px; border-bottom: 0; border-right: 1px solid #a9d3cb; padding-inline: 20px; }
   .atajo .icono { width: 28px; height: 28px; }
   .atajos__lista li:last-child .atajo { border-right: 0; }
 }
 
 /* Categorías */
+#categorias { padding-top: clamp(28px, 3.5vw, 44px); } /* menos aire entre la franja de ayuda y el catálogo */
 .categorias { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; margin-top: 24px; }
 .categoria {
   /* En celular el ícono va arriba del nombre (2 columnas angostas); desde 560 px, al lado */
