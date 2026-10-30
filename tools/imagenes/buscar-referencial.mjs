@@ -79,7 +79,7 @@ async function main() {
   const catalogo = JSON.parse(readFileSync(join(RAIZ, 'productos.json'), 'utf8'))
   const stock = JSON.parse(readFileSync(join(RAIZ, 'stock.json'), 'utf8'))
   const pendientes = cruzarStock(catalogo.productos, stock)
-    .filter(p => p.visible && !p.imagen && ['accesorios', 'ropa'].includes(p.categoria) && (!progreso[p.sku] || progreso[p.sku].grupo === 'C'))
+    .filter(p => !p.imagen && ['accesorios', 'ropa'].includes(p.categoria) && (!progreso[p.sku] || progreso[p.sku].grupo === 'C'))
     .filter(p => !progreso[p.sku]?.buscadaReferencial)
     .slice(0, MAX)
   console.log(`Buscando fotos referenciales para ${pendientes.length} productos...`)

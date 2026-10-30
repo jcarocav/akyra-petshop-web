@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // ============================================================
-// BUSCAR FOTOS EN LA WEB (Bing Imágenes) para los productos visibles que aún no tienen foto.
+// BUSCAR FOTOS EN LA WEB (Bing Imágenes) para los productos que aún no tienen foto (también los ocultos por stock 0).
 //
 // Para cada producto prueba, en este orden: (1) código de barras, (2) nombre + marca, (3) código + nombre.
 // Solo acepta una foto como EXACTA (grupo A) si el título de la página de donde sale calza con el
@@ -10,7 +10,7 @@
 // Guarda el avance en tools/catalogo/fotos-progreso.json (si se corta, al retomar no repite lo ya buscado)
 // y la foto optimizada en assets/productos/<SKU>.webp.
 //
-// Uso: node tools/imagenes/buscar-web.mjs [--max 80] [--sku SKU] [--pausa 1500] [--paralelo 4]
+// Uso: node tools/imagenes/buscar-web.mjs [--max 80] [--solo-visibles] [--sku SKU] [--pausa 1500] [--paralelo 4]
 // ============================================================
 import sharp from 'sharp'
 import { existsSync, readFileSync, writeFileSync } from 'node:fs'
@@ -28,11 +28,13 @@ const arg = (n, d) => (process.argv.includes(n) ? process.argv[process.argv.inde
 const MAX = Number(arg('--max', 80))
 const PAUSA = Number(arg('--pausa', 1500))
 const SOLO = arg('--sku', null)
+// Por defecto se buscan todos los productos sin foto, también los ocultos por stock 0 (así ya tienen foto cuando vuelvan)
+const SOLO_VISIBLES = process.argv.includes('--solo-visibles')
 const PARALELO = Number(arg('--paralelo', 4))
 const esperar = ms => new Promise(r => setTimeout(r, ms))
 
 // Bancos de imágenes y redes: casi siempre con marca de agua o de otro producto
-const DOMINIOS_MALOS = /(shutterstock|alamy|istockphoto|dreamstime|123rf|depositphotos|gettyimages|pinterest|facebook|fbcdn|instagram|tiktok|youtube|ytimg|wikimedia|redd\.it|reddit|animania|aliexpress|alicdn|temu|ebay|mercadolibre\.com\.ar|olx)/i
+export const DOMINIOS_MALOS = /(shutterstock|alamy|istockphoto|dreamstime|123rf|depositphotos|gettyimages|pinterest|facebook|fbcdn|instagram|tiktok|youtube|ytimg|wikimedia|redd\.it|reddit|animania|aliexpress|alicdn|temu|ebay|mercadolibre\.com\.ar|olx)/i
 
 export async function buscarBing(consulta) {
   for (let i = 0; i < 3; i++) {
@@ -42,7 +44,11 @@ export async function buscarBing(consulta) {
       })
       if (r.status === 429 || r.status >= 500) { await esperar(5000 * (i + 1)); continue }
       const t = await r.text()
-      if (/captcha|unusual traffic/i.test(t.slice(0, 20000)) && !t.includes('iusc')) throw new Error('Bing pide captcha: pausar y retomar más tarde')
+      const hayResultados = t.includes('class="iusc"')
+      // Bing a veces responde una página sin resultados cuando se le consulta mucho (bloqueo suave): se espera y se reintenta;
+      // si persiste, se corta para no anotar como "no encontrada" lo que en realidad no se buscó.
+      if (!hayResultados && t.length > 100000) { if (i < 2) { await esperar(20000 * (i + 1)); continue } throw new Error('Bing no está entregando resultados (bloqueo temporal): pausar y retomar más tarde') }
+      if (/captcha|unusual traffic/i.test(t.slice(0, 20000)) && !hayResultados) throw new Error('Bing pide captcha: pausar y retomar más tarde')
       return [...t.matchAll(/class="iusc"[^>]*m="([^"]+)"/g)].map(m => {
         try {
           const j = JSON.parse(m[1].replace(/&quot;/g, '"').replace(/&amp;/g, '&'))
@@ -50,14 +56,14 @@ export async function buscarBing(consulta) {
         } catch { return null }
       }).filter(c => c && c.imagen)
     } catch (e) {
-      if (/captcha/i.test(e.message)) throw e
+      if (/captcha|Bing no está/i.test(e.message)) throw e
       await esperar(2000 * (i + 1))
     }
   }
   return []
 }
 
-async function bajar(url) {
+export async function bajar(url) {
   const r = await fetch(url, { headers: { 'User-Agent': UA, Accept: 'image/avif,image/webp,image/*,*/*;q=0.8' }, signal: AbortSignal.timeout(10000) })
   if (!r.ok) throw new Error(`HTTP ${r.status}`)
   if (!(r.headers.get('content-type') || '').startsWith('image/')) throw new Error('no es imagen')
@@ -65,7 +71,7 @@ async function bajar(url) {
 }
 
 // ¿La imagen sirve? ≥ 300 px y no es un banner (proporción cercana a cuadrada)
-async function imagenUsable(buf) {
+export async function imagenUsable(buf) {
   const m = await sharp(buf).metadata()
   if (!m.width || Math.max(m.width, m.height) < 300) return 'muy chica'
   const proporcion = m.width / m.height
@@ -79,7 +85,7 @@ function armarItems() {
   const { internos } = JSON.parse(readFileSync(join(RAIZ, '.tmp', 'catalogo-interno.json'), 'utf8'))
   const porSku = new Map(internos.map(i => [i.sku, i]))
   const items = []
-  for (const p of cruzarStock(catalogo.productos, stock).filter(x => x.visible && !x.imagen)) {
+  for (const p of cruzarStock(catalogo.productos, stock).filter(x => (!SOLO_VISIBLES || x.visible) && !x.imagen)) {
     const skuInterno = p.tallas ? p.tallas.find(t => porSku.has(t.sku))?.sku : p.sku
     const i = porSku.get(skuInterno || p.sku)
     if (!i) continue
@@ -128,11 +134,17 @@ async function main() {
   let a = 0
   let hechos = 0
   let siguiente = 0
+  let bloqueos = 0
   const trabajador = async () => {
     while (siguiente < pendientes.length) {
       const item = pendientes[siguiente++]
       let r = null
-      try { r = await buscarItem(item) } catch (e) { console.error(e.message); guardar(); process.exit(2) }
+      try { r = await buscarItem(item); bloqueos = 0 } catch (e) {
+        // Bloqueo temporal de Bing: el producto NO se anota (se reintenta después); si son muchos seguidos, se corta
+        console.error(`  (sin buscar ${item.sku}: ${e.message})`)
+        if (++bloqueos >= 8) { guardar(); console.error('Demasiados bloqueos seguidos: pausar y retomar más tarde'); process.exit(2) }
+        continue
+      }
       const hoy = new Date().toISOString().slice(0, 10)
       if (r) {
         const archivo = `assets/productos/${item.sku}.webp`
