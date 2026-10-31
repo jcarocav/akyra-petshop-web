@@ -100,7 +100,7 @@ async function main() {
           await optimizar(r.buf, join(RAIZ, archivo))
           progreso[item.sku] = { grupo: 'A', metodo: r.via, confirmaCodigo: r.confirmaCodigo, titulo: r.titulo, pagina: r.pagina, origen: r.imagen, archivo, descartadas: previo.descartadas, fecha: hoy, segundaPasada: true }
           ok++
-        } catch (e) { progreso[item.sku] = { ...previo, segundaPasada: true, intentos: r.hechas, fecha: hoy } }
+        } catch { progreso[item.sku] = { ...previo, segundaPasada: true, intentos: r.hechas, fecha: hoy } }
       } else {
         progreso[item.sku] = { ...previo, segundaPasada: true, intentos: r.hechas, motivo: 'sin coincidencia segura ni por código ni por nombre (Bing, tiendas chilenas y búsqueda ampliada)', fecha: hoy }
       }
