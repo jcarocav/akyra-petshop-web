@@ -2,7 +2,7 @@
  "PER-ALFA-003": {
   "grupo": "C",
   "motivo": "sin coincidencia segura por código ni por nombre",
-  "fecha": "2026-10-30",
+  "fecha": "2026-10-31",
   "tiendas": true,
   "intentos": [
    "tusmascotas.cl: alfa dog adulto raza-mediana grande carne (0)",
@@ -23,7 +23,8 @@
    "petcity.cl: alfa dog adulto raza-mediana grande carne (0)",
    "petcity.cl: alfa dog adulto 20 KG (0)",
    "petcity.cl: alfa dog (0)"
-  ]
+  ],
+  "brave": true
  },
  "PER-ALFA-001": {
   "grupo": "A",
@@ -38,7 +39,7 @@
  "PER-ALPH-004": {
   "grupo": "C",
   "motivo": "sin coincidencia segura por código ni por nombre",
-  "fecha": "2026-10-30",
+  "fecha": "2026-10-31",
   "tiendas": true,
   "intentos": [
    "tusmascotas.cl: alfa dog cachorro carne arroz 10 (0)",
@@ -59,7 +60,8 @@
    "petcity.cl: alfa dog cachorro carne arroz 10 (0)",
    "petcity.cl: alfa dog cachorro 10 KG (0)",
    "petcity.cl: alfa dog (0)"
-  ]
+  ],
+  "brave": true
  },
  "PER-ALFA-002": {
   "grupo": "A",
@@ -74,7 +76,7 @@
  "PER-ALPH-001": {
   "grupo": "C",
   "motivo": "sin coincidencia segura por código ni por nombre",
-  "fecha": "2026-10-30",
+  "fecha": "2026-10-31",
   "tiendas": true,
   "intentos": [
    "tusmascotas.cl: alpha dog senior raza-mediana grandes 20kg (0)",
@@ -95,7 +97,8 @@
    "petcity.cl: alpha dog senior raza-mediana grandes 20kg (0)",
    "petcity.cl: alpha dog senior 20KG (0)",
    "petcity.cl: alpha dog (0)"
-  ]
+  ],
+  "brave": true
  },
  "PER-ANCE-001": {
   "grupo": "A",
@@ -110,7 +113,7 @@
  "PER-ANCE-002": {
   "grupo": "C",
   "motivo": "sin coincidencia segura por código ni por nombre",
-  "fecha": "2026-10-30",
+  "fecha": "2026-10-31",
   "tiendas": true,
   "intentos": [
    "tusmascotas.cl: ancestral perro cachorro raza-mediana grande 10 (0)",
@@ -131,7 +134,8 @@
    "petcity.cl: ancestral perro cachorro raza-mediana grande 10 (0)",
    "petcity.cl: ancestral perro cachorro 10 KG (0)",
    "petcity.cl: ancestral perro (0)"
-  ]
+  ],
+  "brave": true
  },
  "PER-BOKA-002": {
   "grupo": "A",
@@ -166,7 +170,7 @@
  "PER-BRAV-004": {
   "grupo": "C",
   "motivo": "sin coincidencia segura por código ni por nombre",
-  "fecha": "2026-10-30",
+  "fecha": "2026-10-31",
   "tiendas": true,
   "intentos": [
    "tusmascotas.cl: bravery perro senior raza-pequena arenque kg (0)",
@@ -187,7 +191,8 @@
    "petcity.cl: bravery perro senior raza-pequena arenque kg (0)",
    "petcity.cl: bravery perro senior 2 KG (0)",
    "petcity.cl: bravery perro (0)"
-  ]
+  ],
+  "brave": true
  },
  "PER-CACH-002": {
   "grupo": "A",
@@ -11099,7 +11104,8 @@
    "petcity.cl: alfa dog (0)"
   ],
   "motivo": "sin coincidencia segura por código ni por nombre",
-  "fecha": "2026-10-30"
+  "fecha": "2026-10-31",
+  "brave": true
  },
  "PER-ALFA-006": {
   "grupo": "C",
@@ -11125,7 +11131,8 @@
    "petcity.cl: alfa dog (0)"
   ],
   "motivo": "sin coincidencia segura por código ni por nombre",
-  "fecha": "2026-10-30"
+  "fecha": "2026-10-31",
+  "brave": true
  },
  "PER-BIOF-001": {
   "grupo": "A",
@@ -11161,7 +11168,8 @@
    "petcity.cl: bravery perro (0)"
   ],
   "motivo": "sin coincidencia segura por código ni por nombre",
-  "fecha": "2026-10-30"
+  "fecha": "2026-10-31",
+  "brave": true
  },
  "PER-DOGC-006": {
   "grupo": "C",
@@ -11187,7 +11195,8 @@
    "petcity.cl: dogchow adulto (0)"
   ],
   "motivo": "sin coincidencia segura por código ni por nombre",
-  "fecha": "2026-10-30"
+  "fecha": "2026-10-31",
+  "brave": true
  },
  "PER-EVOL-003": {
   "grupo": "C",
@@ -11213,7 +11222,8 @@
    "petcity.cl: evolve perro (0)"
   ],
   "motivo": "sin coincidencia segura por código ni por nombre",
-  "fecha": "2026-10-30"
+  "fecha": "2026-10-31",
+  "brave": true
  },
  "PER-MAST-015": {
   "grupo": "C",

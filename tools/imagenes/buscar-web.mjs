@@ -104,10 +104,10 @@ function consultas(item) {
   return lista
 }
 
-export async function buscarItem(item) {
+export async function buscarItem(item, motor = buscarBing) {
   const vistos = new Set()
   for (const { q, via } of consultas(item)) {
-    const candidatos = await buscarBing(q)
+    const candidatos = await motor(q)
     await esperar(PAUSA)
     for (const c of candidatos.slice(0, 20)) {
       if (vistos.has(c.imagen) || DOMINIOS_MALOS.test(c.imagen) || DOMINIOS_MALOS.test(c.pagina || '')) continue
