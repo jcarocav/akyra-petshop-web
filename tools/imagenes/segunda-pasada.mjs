@@ -9,7 +9,7 @@
 //
 // Uso: node tools/imagenes/segunda-pasada.mjs [--max 200] [--paralelo 3] [--pausa 1500]
 // ============================================================
-import { existsSync, readFileSync, writeFileSync } from 'node:fs'
+import { readFileSync, writeFileSync } from 'node:fs'
 import { dirname, join, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { cruzarStock } from '../../js/stock.mjs'
