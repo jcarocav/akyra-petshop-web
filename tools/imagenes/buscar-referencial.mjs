@@ -51,7 +51,7 @@ async function bajar(url) {
 }
 
 // Foto de catálogo: fondo blanco o casi blanco en los bordes (sin escenas, sin marca de agua de tienda en los bordes)
-async function fondoBlanco(buf) {
+export async function fondoBlanco(buf) {
   const { data, info } = await sharp(buf).flatten({ background: '#fff' }).resize(40, 40, { fit: 'fill' }).raw().toBuffer({ resolveWithObject: true })
   let suma = 0
   let n = 0

@@ -31,7 +31,7 @@ const REINTENTAR = process.argv.includes('--reintentar')
 const esperar = ms => new Promise(r => setTimeout(r, ms))
 
 // Tiendas con WooCommerce Store API abierta (se probó que responden JSON)
-const TIENDAS = [
+export const TIENDAS = [
   { id: 'tusmascotas.cl', base: 'https://www.tusmascotas.cl' },
   { id: 'distribuidoralira.cl', base: 'https://www.distribuidoralira.cl' },
   { id: 'petpalace.cl', base: 'https://petpalace.cl' },
@@ -39,9 +39,9 @@ const TIENDAS = [
   { id: 'mascoteriagonzalito.cl', base: 'https://www.mascoteriagonzalito.cl' },
   { id: 'petcity.cl', base: 'https://petcity.cl' }
 ]
-const GENERICAS = /\b(alimento|sobre|lata|snack|caja|balde|pote|para|de|del|con|sabor|receta|y|el|la|los|las|a|granel|unidades?|uds?)\b/gi
+export const GENERICAS = /\b(alimento|sobre|lata|snack|caja|balde|pote|para|de|del|con|sabor|receta|y|el|la|los|las|a|granel|unidades?|uds?)\b/gi
 
-async function pedir(url) {
+export async function pedir(url) {
   for (let i = 0; i < 3; i++) {
     try {
       const r = await fetch(url, { headers: { 'User-Agent': UA, Accept: 'application/json' }, signal: AbortSignal.timeout(20000) })
@@ -54,7 +54,7 @@ async function pedir(url) {
   return []
 }
 
-const sinHtml = t => String(t || '').replace(/&#8211;|&ndash;/g, '-').replace(/&amp;/g, '&').replace(/&#\d+;/g, ' ').replace(/<[^>]*>/g, ' ')
+export const sinHtml = t => String(t || '').replace(/&#8211;|&ndash;/g, '-').replace(/&amp;/g, '&').replace(/&#\d+;/g, ' ').replace(/<[^>]*>/g, ' ')
 
 function consultas(item) {
   const limpio = normalizar(item.nombreExcel.replace(/\([^)]*\)/g, ' ')).replace(GENERICAS, ' ').replace(/\s+/g, ' ').trim()
