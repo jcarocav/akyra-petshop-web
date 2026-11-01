@@ -51,7 +51,7 @@ async function bajar(url) {
 }
 
 // Foto de catálogo: fondo blanco o casi blanco en los bordes (sin escenas, sin marca de agua de tienda en los bordes)
-async function fondoBlanco(buf) {
+export async function fondoBlanco(buf) {
   const { data, info } = await sharp(buf).flatten({ background: '#fff' }).resize(40, 40, { fit: 'fill' }).raw().toBuffer({ resolveWithObject: true })
   let suma = 0
   let n = 0
@@ -79,7 +79,7 @@ async function main() {
   const catalogo = JSON.parse(readFileSync(join(RAIZ, 'productos.json'), 'utf8'))
   const stock = JSON.parse(readFileSync(join(RAIZ, 'stock.json'), 'utf8'))
   const pendientes = cruzarStock(catalogo.productos, stock)
-    .filter(p => p.visible && !p.imagen && ['accesorios', 'ropa'].includes(p.categoria) && (!progreso[p.sku] || progreso[p.sku].grupo === 'C'))
+    .filter(p => !p.imagen && ['accesorios', 'ropa'].includes(p.categoria) && (!progreso[p.sku] || progreso[p.sku].grupo === 'C'))
     .filter(p => !progreso[p.sku]?.buscadaReferencial)
     .slice(0, MAX)
   console.log(`Buscando fotos referenciales para ${pendientes.length} productos...`)
