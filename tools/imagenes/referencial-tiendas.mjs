@@ -30,10 +30,10 @@ const esperar = ms => new Promise(r => setTimeout(r, ms))
 
 // Palabras de marca o código que no describen el producto
 const SOBRA = /\b(mondo|mascotas?|leon pet|leon|marben pets?|marben|wonder (cat|dog)|wonder|top-?k9|generico|mundo|buen amigo|brnx|pets?|petegou|baby dog|happy pets?|furminator|stay wild|toycat|mr dog|mr|clean cat|easy clean|turbo clean|para|de|del|con|y|el|la|los|las|x\d+|\d{3,})\b/g
-const MARCAS_OTRAS = /\b(royal canin|kong|nerf|catit|furminator|petmate|trixie|ferplast|savic|stefanplast|nylabone|chuckit|petsafe|hartz|kodak)\b/
+export const MARCAS_OTRAS = /\b(royal canin|kong|nerf|catit|furminator|petmate|trixie|ferplast|savic|stefanplast|nylabone|chuckit|petsafe|hartz|kodak)\b/
 const TIPOS = ['collar', 'correa', 'arnes', 'plato', 'bebedero', 'comedero', 'fuente', 'cama', 'colchon', 'cojin', 'manta', 'juguete', 'pelota', 'hueso', 'cuerda', 'rascador', 'arenero', 'pala', 'transportador', 'mochila', 'bandana', 'chaleco', 'chaqueta', 'parka', 'poleron', 'body', 'cepillo', 'cortaunas', 'peine', 'tijera', 'mamadera', 'tunel', 'tirador', 'placa', 'lentes', 'sweater', 'polera', 'capa', 'impermeable', 'bozal', 'pechera', 'alfombra', 'comedor', 'jaula', 'casa']
 
-function describir(p) {
+export function describir(p) {
   const n = normalizar(p.nombre.replace(/\([^)]*\)/g, ' '))
   const palabras = n.split(' ')
   const tipo = TIPOS.find(t => palabras.includes(t))

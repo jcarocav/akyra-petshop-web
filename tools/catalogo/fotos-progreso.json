@@ -4548,18 +4548,22 @@
    "petcity.cl: alfombra doble (0)"
   ],
   "referencialTiendas": true,
-  "motivoReferencial": "sin foto de referencia adecuada (se buscó \"alfombra doble\" en 6 tiendas)",
-  "catalogosTiendas": true
+  "motivoReferencial": "sin foto de referencia adecuada en los catálogos de las 9 tiendas",
+  "catalogosTiendas": true,
+  "referencialCatalogos": true
  },
  "ACC-MOND-064": {
-  "grupo": "C",
-  "motivo": "foto referencial descartada en la revisión: no es del mismo tipo de producto, está en blanco o tiene marca de agua",
+  "grupo": "B",
+  "metodo": "tipo de producto (catálogo de tusmascotas.cl)",
+  "titulo": "Alfombra Voladora - Granja de Conejino",
+  "pagina": "https://www.tusmascotas.cl/product/alfombra-voladora-granja-de-conejino/",
+  "origen": "https://www.tusmascotas.cl/wp-content/uploads/2022/07/alfombra.png",
+  "archivo": "assets/productos/ACC-MOND-064.webp",
   "descartadas": [
    "https://cdnx.jumpseller.com/cody-store/image/45631870/resize/1200/1200?1708219637",
    "https://www.tusmascotas.cl/wp-content/uploads/2024/12/729208212809.png"
   ],
-  "fecha": "2026-11-01",
-  "catalogosTiendas": true
+  "fecha": "2026-11-01"
  },
  "ACC-MOND-085": {
   "grupo": "B",
@@ -4578,7 +4582,9 @@
    "https://www.marie-claire.es/wp-content/uploads/sites/2/2023/01/10/63bd7936dd9a3.jpeg",
    "https://www.tusmascotas.cl/wp-content/uploads/2021/12/peine-piojos.png"
   ],
-  "fecha": "2026-11-01"
+  "fecha": "2026-11-01",
+  "referencialCatalogos": true,
+  "motivoReferencial": "no se reconoce el tipo de producto en el nombre"
  },
  "ACC-MOND-187": {
   "grupo": "B",
@@ -4721,8 +4727,9 @@
    "petcity.cl: arenero mondo (0)"
   ],
   "referencialTiendas": true,
-  "motivoReferencial": "sin foto de referencia adecuada (se buscó \"arenero color rosado\" en 6 tiendas)",
-  "catalogosTiendas": true
+  "motivoReferencial": "sin foto de referencia adecuada en los catálogos de las 9 tiendas",
+  "catalogosTiendas": true,
+  "referencialCatalogos": true
  },
  "ACC-MOND-030": {
   "grupo": "B",
@@ -4772,7 +4779,9 @@
    "https://http2.mlstatic.com/D_NQ_NP_951603-MLC70892884281_082023-O.webp",
    "https://www.tusmascotas.cl/wp-content/uploads/2026/03/Litter-Box-Bandeja-Sanitaria-Pala-Gre.png"
   ],
-  "fecha": "2026-11-01"
+  "fecha": "2026-11-01",
+  "referencialCatalogos": true,
+  "motivoReferencial": "sin foto de referencia adecuada en los catálogos de las 9 tiendas"
  },
  "ACC-WOND-007": {
   "grupo": "B",
@@ -4893,8 +4902,9 @@
    "petcity.cl: arnes perro (1)"
   ],
   "referencialTiendas": true,
-  "motivoReferencial": "sin foto de referencia adecuada (se buscó \"correa perro arnes perro\" en 6 tiendas)",
-  "catalogosTiendas": true
+  "motivoReferencial": "sin foto de referencia adecuada en los catálogos de las 9 tiendas",
+  "catalogosTiendas": true,
+  "referencialCatalogos": true
  },
  "ACC-LEON-013": {
   "grupo": "B",
@@ -4945,8 +4955,9 @@
    "petcity.cl: bandeja arenero (0)"
   ],
   "referencialTiendas": true,
-  "motivoReferencial": "sin foto de referencia adecuada (se buscó \"arenero bandeja desechable\" en 6 tiendas)",
-  "catalogosTiendas": true
+  "motivoReferencial": "sin foto de referencia adecuada en los catálogos de las 9 tiendas",
+  "catalogosTiendas": true,
+  "referencialCatalogos": true
  },
  "ACC-GEN-015": {
   "grupo": "B",
@@ -4998,7 +5009,8 @@
   ],
   "referencialTiendas": true,
   "motivoReferencial": "no se reconoce el tipo de producto en el nombre",
-  "catalogosTiendas": true
+  "catalogosTiendas": true,
+  "referencialCatalogos": true
  },
  "OTR-GEN-007": {
   "grupo": "C",
@@ -5024,7 +5036,8 @@
   ],
   "referencialTiendas": true,
   "motivoReferencial": "no se reconoce el tipo de producto en el nombre",
-  "catalogosTiendas": true
+  "catalogosTiendas": true,
+  "referencialCatalogos": true
  },
  "ACC-MOND-120": {
   "grupo": "B",
@@ -5375,8 +5388,9 @@
    "petcity.cl: cepillo saca (0)"
   ],
   "referencialTiendas": true,
-  "motivoReferencial": "sin foto de referencia adecuada (se buscó \"cepillo saca nudos\" en 6 tiendas)",
-  "catalogosTiendas": true
+  "motivoReferencial": "sin foto de referencia adecuada en los catálogos de las 9 tiendas",
+  "catalogosTiendas": true,
+  "referencialCatalogos": true
  },
  "ACC-MOND-062": {
   "grupo": "A",
@@ -5450,13 +5464,13 @@
  },
  "ACC-BUEN-003": {
   "grupo": "C",
-  "motivo": "foto referencial descartada en la revisión: no es del mismo tipo de producto, está en blanco o tiene marca de agua",
+  "motivo": "foto referencial descartada en la revisión: muestra la marca de otro, un empaque de otra marca o una marca de agua de otra tienda",
   "descartadas": [
    "http://limonae.com/blog/wp-content/uploads/2017/05/DSC_8433.jpg",
-   "https://www.tusmascotas.cl/wp-content/uploads/2025/06/WhatsApp-Image-2025-06-17-at-15.32.06.jpeg"
+   "https://www.tusmascotas.cl/wp-content/uploads/2025/06/WhatsApp-Image-2025-06-17-at-15.32.06.jpeg",
+   "https://www.tusmascotas.cl/wp-content/uploads/2026/06/00-1.jpg"
   ],
-  "fecha": "2026-11-01",
-  "catalogosTiendas": true
+  "fecha": "2026-11-01"
  },
  "ACC-BUEN-001": {
   "grupo": "B",
@@ -5678,31 +5692,40 @@
   "fecha": "2026-10-29"
  },
  "ACC-MOND-112": {
-  "grupo": "C",
-  "motivo": "foto referencial descartada en la revisión: muestra la marca de otro, un empaque de otra marca o un personaje con licencia",
+  "grupo": "B",
+  "metodo": "tipo de producto (catálogo de tusmascotas.cl)",
+  "titulo": "ZeeDog Nox Sidus Collar - S",
+  "pagina": "https://www.tusmascotas.cl/product/zeedog-nox-sidus-collar-s/",
+  "origen": "https://www.tusmascotas.cl/wp-content/uploads/2024/12/7908471122098-2.png",
+  "archivo": "assets/productos/ACC-MOND-112.webp",
   "descartadas": [
    "https://www.mascoteriagonzalito.cl/wp-content/uploads/2026/10/770d82b7-3d30-46af-a186-42bd0bf258e6.9caddf27c097acaf17ef73c92e8605a5.avif"
   ],
-  "fecha": "2026-11-01",
-  "catalogosTiendas": true
+  "fecha": "2026-11-01"
  },
  "ACC-MOND-095": {
-  "grupo": "C",
-  "motivo": "foto referencial descartada en la revisión: muestra la marca de otro, un empaque de otra marca o un personaje con licencia",
+  "grupo": "B",
+  "metodo": "tipo de producto (catálogo de tusmascotas.cl)",
+  "titulo": "ZeeCat Nox Lumen Cat Collar",
+  "pagina": "https://www.tusmascotas.cl/product/zeecat-nox-lumen-cat-collar/",
+  "origen": "https://www.tusmascotas.cl/wp-content/uploads/2024/12/7908471122449.png",
+  "archivo": "assets/productos/ACC-MOND-095.webp",
   "descartadas": [
    "https://petpalace.cl/wp-content/uploads/2026/03/299767.jpg"
   ],
-  "fecha": "2026-11-01",
-  "catalogosTiendas": true
+  "fecha": "2026-11-01"
  },
  "ACC-MOND-096": {
-  "grupo": "C",
-  "motivo": "foto referencial descartada en la revisión: muestra la marca de otro, un empaque de otra marca o un personaje con licencia",
+  "grupo": "B",
+  "metodo": "tipo de producto (catálogo de tusmascotas.cl)",
+  "titulo": "ZeeDog Nox Sidus Collar - L",
+  "pagina": "https://www.tusmascotas.cl/product/zeedog-nox-sidus-collar-l/",
+  "origen": "https://www.tusmascotas.cl/wp-content/uploads/2024/12/7908471122098.png",
+  "archivo": "assets/productos/ACC-MOND-096.webp",
   "descartadas": [
    "https://www.mascoteriagonzalito.cl/wp-content/uploads/2026/02/wonder-cat-collar-para-gatos-1.png"
   ],
-  "fecha": "2026-11-01",
-  "catalogosTiendas": true
+  "fecha": "2026-11-01"
  },
  "ACC-MOND-097": {
   "grupo": "B",
@@ -5756,59 +5779,20 @@
  },
  "ACC-MOND-008": {
   "grupo": "C",
-  "motivo": "foto referencial descartada en la revisión: muestra la marca de otro, no es del mismo tipo o está rota",
+  "motivo": "foto referencial descartada en la revisión: no es del mismo tipo de producto, está en blanco o es de otra especie",
   "descartadas": [
-   "https://www.divinechien.com/wp-content/uploads/2014/06/7.jpg"
+   "https://www.divinechien.com/wp-content/uploads/2014/06/7.jpg",
+   "https://www.tusmascotas.cl/wp-content/uploads/2020/10/Collar-Para-Perro-con-Corbata-Pequeno.png"
   ],
-  "fecha": "2026-11-01",
-  "tiendas": true,
-  "intentos": [
-   "tusmascotas.cl: collar perro mondo (0)",
-   "tusmascotas.cl: collar perro (2)",
-   "distribuidoralira.cl: collar perro mondo (0)",
-   "distribuidoralira.cl: collar perro (0)",
-   "petpalace.cl: collar perro mondo (0)",
-   "petpalace.cl: collar perro (0)",
-   "petshopmg.cl: collar perro mondo (0)",
-   "petshopmg.cl: collar perro (1)",
-   "mascoteriagonzalito.cl: collar perro mondo (0)",
-   "mascoteriagonzalito.cl: collar perro (1)",
-   "petcity.cl: collar perro mondo (0)",
-   "petcity.cl: collar perro (3)"
-  ],
-  "referencialTiendas": true,
-  "motivoReferencial": "sin foto de referencia adecuada (se buscó \"collar perro perro\" en 6 tiendas)",
-  "catalogosTiendas": true
+  "fecha": "2026-11-01"
  },
  "ACC-WOND-004": {
   "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
-  "fecha": "2026-11-01",
-  "buscadaReferencial": true,
-  "tiendas": true,
-  "intentos": [
-   "tusmascotas.cl: collar gato wonder cat (0)",
-   "tusmascotas.cl: collar gato wonder (0)",
-   "tusmascotas.cl: collar gato (0)",
-   "distribuidoralira.cl: collar gato wonder cat (0)",
-   "distribuidoralira.cl: collar gato wonder (0)",
-   "distribuidoralira.cl: collar gato (2)",
-   "petpalace.cl: collar gato wonder cat (0)",
-   "petpalace.cl: collar gato wonder (0)",
-   "petpalace.cl: collar gato (0)",
-   "petshopmg.cl: collar gato wonder cat (0)",
-   "petshopmg.cl: collar gato wonder (0)",
-   "petshopmg.cl: collar gato (1)",
-   "mascoteriagonzalito.cl: collar gato wonder cat (0)",
-   "mascoteriagonzalito.cl: collar gato wonder (0)",
-   "mascoteriagonzalito.cl: collar gato (3)",
-   "petcity.cl: collar gato wonder cat (0)",
-   "petcity.cl: collar gato wonder (0)",
-   "petcity.cl: collar gato (8)"
+  "motivo": "foto referencial descartada en la revisión: muestra la marca de otro, un empaque de otra marca o una marca de agua de otra tienda",
+  "descartadas": [
+   "https://www.distribuidoralira.cl/wp-content/uploads/2025/03/19P308.jpg"
   ],
-  "referencialTiendas": true,
-  "motivoReferencial": "sin foto de referencia adecuada (se buscó \"collar gato gato\" en 6 tiendas)",
-  "catalogosTiendas": true
+  "fecha": "2026-11-01"
  },
  "ACC-MOND-032": {
   "grupo": "B",
@@ -5821,11 +5805,12 @@
   "fecha": "2026-10-29"
  },
  "ACC-MUND-002": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
-  "fecha": "2026-11-01",
-  "buscadaReferencial": true,
-  "tiendas": true,
+  "grupo": "B",
+  "metodo": "tipo de producto (catálogo de tusmascotas.cl)",
+  "titulo": "Collar de perro redondeado gris 55 cm – Coastal",
+  "pagina": "https://www.tusmascotas.cl/product/collar-de-perro-redondeado-gris-55-cm-coastal/",
+  "origen": "https://www.tusmascotas.cl/wp-content/uploads/2022/02/redgris1-1.png",
+  "archivo": "assets/productos/ACC-MUND-002.webp",
   "intentos": [
    "tusmascotas.cl: collar perro mundo (0)",
    "tusmascotas.cl: collar perro (2)",
@@ -5840,16 +5825,15 @@
    "petcity.cl: collar perro mundo (0)",
    "petcity.cl: collar perro (3)"
   ],
-  "referencialTiendas": true,
-  "motivoReferencial": "sin foto de referencia adecuada (se buscó \"collar perro perro\" en 6 tiendas)",
-  "catalogosTiendas": true
+  "fecha": "2026-11-01"
  },
  "ACC-MUND-003": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
-  "fecha": "2026-11-01",
-  "buscadaReferencial": true,
-  "tiendas": true,
+  "grupo": "B",
+  "metodo": "tipo de producto (catálogo de tusmascotas.cl)",
+  "titulo": "Collar de perro redondeado rustico 55 cm – Coastal",
+  "pagina": "https://www.tusmascotas.cl/product/collar-de-perro-redondeado-rustico-55-cm-coastal/",
+  "origen": "https://www.tusmascotas.cl/wp-content/uploads/2022/02/redcafe1.png",
+  "archivo": "assets/productos/ACC-MUND-003.webp",
   "intentos": [
    "tusmascotas.cl: collar perro mundo (0)",
    "tusmascotas.cl: collar perro (2)",
@@ -5864,16 +5848,15 @@
    "petcity.cl: collar perro mundo (0)",
    "petcity.cl: collar perro (3)"
   ],
-  "referencialTiendas": true,
-  "motivoReferencial": "sin foto de referencia adecuada (se buscó \"collar perro perro\" en 6 tiendas)",
-  "catalogosTiendas": true
+  "fecha": "2026-11-01"
  },
  "ACC-MOND-098": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
-  "fecha": "2026-11-01",
-  "buscadaReferencial": true,
-  "tiendas": true,
+  "grupo": "B",
+  "metodo": "tipo de producto (catálogo de tusmascotas.cl)",
+  "titulo": "Collar de perro redondeado rustico 50 cm – Coastal",
+  "pagina": "https://www.tusmascotas.cl/product/collar-de-perro-redondeado-rustico-50-cm-coastal/",
+  "origen": "https://www.tusmascotas.cl/wp-content/uploads/2022/02/redcafe1.png-1.webp",
+  "archivo": "assets/productos/ACC-MOND-098.webp",
   "intentos": [
    "tusmascotas.cl: collar perro mundo (0)",
    "tusmascotas.cl: collar perro (2)",
@@ -5888,16 +5871,15 @@
    "petcity.cl: collar perro mundo (0)",
    "petcity.cl: collar perro (3)"
   ],
-  "referencialTiendas": true,
-  "motivoReferencial": "sin foto de referencia adecuada (se buscó \"collar perro perro\" en 6 tiendas)",
-  "catalogosTiendas": true
+  "fecha": "2026-11-01"
  },
  "ACC-LEON-016": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
-  "fecha": "2026-11-01",
-  "buscadaReferencial": true,
-  "tiendas": true,
+  "grupo": "B",
+  "metodo": "tipo de producto (catálogo de marbenpets.cl)",
+  "titulo": "Súper Collar Chileno para Perros – Wonder Pet",
+  "pagina": "https://marbenpets.cl/shop/super-collar-chileno-para-perros-wonder-dog/",
+  "origen": "https://marbenpets.cl/wp-content/uploads/2026/08/266-scaled.jpg",
+  "archivo": "assets/productos/ACC-LEON-016.webp",
   "intentos": [
    "tusmascotas.cl: collar perro leon pet (0)",
    "tusmascotas.cl: collar perro leon (0)",
@@ -5918,16 +5900,15 @@
    "petcity.cl: collar perro leon (0)",
    "petcity.cl: collar perro (3)"
   ],
-  "referencialTiendas": true,
-  "motivoReferencial": "sin foto de referencia adecuada (se buscó \"collar perro perro\" en 6 tiendas)",
-  "catalogosTiendas": true
+  "fecha": "2026-11-01"
  },
  "ACC-MOND-099": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
-  "fecha": "2026-11-01",
-  "buscadaReferencial": true,
-  "tiendas": true,
+  "grupo": "B",
+  "metodo": "tipo de producto (catálogo de tusmascotas.cl)",
+  "titulo": "Collar de perro de cuero rústico gris 60 cm – Coastal",
+  "pagina": "https://www.tusmascotas.cl/product/collar-de-perro-de-cuero-rustico-gris-60-cm/",
+  "origen": "https://www.tusmascotas.cl/wp-content/uploads/2022/02/gris.png",
+  "archivo": "assets/productos/ACC-MOND-099.webp",
   "intentos": [
    "tusmascotas.cl: collar perro mondo (0)",
    "tusmascotas.cl: collar perro (2)",
@@ -5942,16 +5923,15 @@
    "petcity.cl: collar perro mondo (0)",
    "petcity.cl: collar perro (3)"
   ],
-  "referencialTiendas": true,
-  "motivoReferencial": "sin foto de referencia adecuada (se buscó \"collar perro perro\" en 6 tiendas)",
-  "catalogosTiendas": true
+  "fecha": "2026-11-01"
  },
  "ACC-MOND-115": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
-  "fecha": "2026-11-01",
-  "buscadaReferencial": true,
-  "tiendas": true,
+  "grupo": "B",
+  "metodo": "tipo de producto (catálogo de tusmascotas.cl)",
+  "titulo": "Collar de perro de cuero rústico 60 cm – Coastal",
+  "pagina": "https://www.tusmascotas.cl/product/collar-de-perro-de-cuero-rustico-60-cm-coastal/",
+  "origen": "https://www.tusmascotas.cl/wp-content/uploads/2022/02/collar-cuerooo.png",
+  "archivo": "assets/productos/ACC-MOND-115.webp",
   "intentos": [
    "tusmascotas.cl: collar perro mondo (0)",
    "tusmascotas.cl: collar perro (2)",
@@ -5966,9 +5946,7 @@
    "petcity.cl: collar perro mondo (0)",
    "petcity.cl: collar perro (3)"
   ],
-  "referencialTiendas": true,
-  "motivoReferencial": "sin foto de referencia adecuada (se buscó \"collar perro perro\" en 6 tiendas)",
-  "catalogosTiendas": true
+  "fecha": "2026-11-01"
  },
  "ACC-MOND-100": {
   "grupo": "B",
@@ -5982,112 +5960,43 @@
  },
  "ACC-BUEN-002": {
   "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
-  "fecha": "2026-11-01",
-  "buscadaReferencial": true,
-  "tiendas": true,
-  "intentos": [
-   "tusmascotas.cl: collar perro buen amigo (0)",
-   "tusmascotas.cl: collar perro buen (0)",
-   "tusmascotas.cl: collar perro (2)",
-   "distribuidoralira.cl: collar perro buen amigo (0)",
-   "distribuidoralira.cl: collar perro buen (0)",
-   "distribuidoralira.cl: collar perro (0)",
-   "petpalace.cl: collar perro buen amigo (0)",
-   "petpalace.cl: collar perro buen (0)",
-   "petpalace.cl: collar perro (0)",
-   "petshopmg.cl: collar perro buen amigo (0)",
-   "petshopmg.cl: collar perro buen (0)",
-   "petshopmg.cl: collar perro (1)",
-   "mascoteriagonzalito.cl: collar perro buen amigo (0)",
-   "mascoteriagonzalito.cl: collar perro buen (0)",
-   "mascoteriagonzalito.cl: collar perro (1)",
-   "petcity.cl: collar perro buen amigo (0)",
-   "petcity.cl: collar perro buen (0)",
-   "petcity.cl: collar perro (3)"
+  "motivo": "foto referencial descartada en la revisión: muestra la marca de otro, un empaque de otra marca o una marca de agua de otra tienda",
+  "descartadas": [
+   "https://petcity.cl/wp-content/uploads/2025/01/sentry-calming-collar-for-dog.jpg"
   ],
-  "referencialTiendas": true,
-  "motivoReferencial": "sin foto de referencia adecuada (se buscó \"collar perro perro\" en 6 tiendas)",
-  "catalogosTiendas": true
+  "fecha": "2026-11-01"
  },
  "ACC-MOND-102": {
   "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
-  "fecha": "2026-11-01",
-  "buscadaReferencial": true,
-  "tiendas": true,
-  "intentos": [
-   "tusmascotas.cl: collar perro mondo (0)",
-   "tusmascotas.cl: collar perro (2)",
-   "distribuidoralira.cl: collar perro mondo (0)",
-   "distribuidoralira.cl: collar perro (0)",
-   "petpalace.cl: collar perro mondo (0)",
-   "petpalace.cl: collar perro (0)",
-   "petshopmg.cl: collar perro mondo (0)",
-   "petshopmg.cl: collar perro (1)",
-   "mascoteriagonzalito.cl: collar perro mondo (0)",
-   "mascoteriagonzalito.cl: collar perro (1)",
-   "petcity.cl: collar perro mondo (0)",
-   "petcity.cl: collar perro (3)"
+  "motivo": "foto referencial descartada en la revisión: muestra la marca de otro, un empaque de otra marca o una marca de agua de otra tienda",
+  "descartadas": [
+   "https://www.distribuidoralira.cl/wp-content/uploads/2025/03/19P310.jpg"
   ],
-  "referencialTiendas": true,
-  "motivoReferencial": "sin foto de referencia adecuada (se buscó \"collar perro perro\" en 6 tiendas)",
-  "catalogosTiendas": true
+  "fecha": "2026-11-01"
  },
  "ACC-MOND-117": {
   "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
-  "fecha": "2026-11-01",
-  "buscadaReferencial": true,
-  "tiendas": true,
-  "intentos": [
-   "tusmascotas.cl: collar perro mondo (0)",
-   "tusmascotas.cl: collar perro (2)",
-   "distribuidoralira.cl: collar perro mondo (0)",
-   "distribuidoralira.cl: collar perro (0)",
-   "petpalace.cl: collar perro mondo (0)",
-   "petpalace.cl: collar perro (0)",
-   "petshopmg.cl: collar perro mondo (0)",
-   "petshopmg.cl: collar perro (1)",
-   "mascoteriagonzalito.cl: collar perro mondo (0)",
-   "mascoteriagonzalito.cl: collar perro (1)",
-   "petcity.cl: collar perro mondo (0)",
-   "petcity.cl: collar perro (3)"
+  "motivo": "foto referencial descartada en la revisión: muestra la marca de otro, un empaque de otra marca o una marca de agua de otra tienda",
+  "descartadas": [
+   "https://www.mascoteriagonzalito.cl/wp-content/uploads/2026/02/Photoroom-20250309_175044_1280x.webp"
   ],
-  "referencialTiendas": true,
-  "motivoReferencial": "sin foto de referencia adecuada (se buscó \"collar perro perro\" en 6 tiendas)",
-  "catalogosTiendas": true
+  "fecha": "2026-11-01"
  },
  "ACC-MOND-113": {
   "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
-  "fecha": "2026-11-01",
-  "buscadaReferencial": true,
-  "tiendas": true,
-  "intentos": [
-   "tusmascotas.cl: collar perro mondo (0)",
-   "tusmascotas.cl: collar perro (2)",
-   "distribuidoralira.cl: collar perro mondo (0)",
-   "distribuidoralira.cl: collar perro (0)",
-   "petpalace.cl: collar perro mondo (0)",
-   "petpalace.cl: collar perro (0)",
-   "petshopmg.cl: collar perro mondo (0)",
-   "petshopmg.cl: collar perro (1)",
-   "mascoteriagonzalito.cl: collar perro mondo (0)",
-   "mascoteriagonzalito.cl: collar perro (1)",
-   "petcity.cl: collar perro mondo (0)",
-   "petcity.cl: collar perro (3)"
+  "motivo": "foto referencial descartada en la revisión: muestra la marca de otro, un empaque de otra marca o una marca de agua de otra tienda",
+  "descartadas": [
+   "https://petcity.cl/wp-content/uploads/2025/01/Fuzzyard-Collar-Perro-monkey-mania.jpg"
   ],
-  "referencialTiendas": true,
-  "motivoReferencial": "sin foto de referencia adecuada (se buscó \"collar perro perro\" en 6 tiendas)",
-  "catalogosTiendas": true
+  "fecha": "2026-11-01"
  },
  "ACC-MOND-101": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
-  "fecha": "2026-11-01",
-  "buscadaReferencial": true,
-  "tiendas": true,
+  "grupo": "B",
+  "metodo": "tipo de producto (catálogo de tusmascotas.cl)",
+  "titulo": "Doco Collar Perro Vario Oring  S Azul",
+  "pagina": "https://www.tusmascotas.cl/product/doco-collar-perro/",
+  "origen": "https://www.tusmascotas.cl/wp-content/uploads/2021/01/88888602059.jpg",
+  "archivo": "assets/productos/ACC-MOND-101.webp",
   "intentos": [
    "tusmascotas.cl: collar perro mondo (0)",
    "tusmascotas.cl: collar perro (2)",
@@ -6102,64 +6011,31 @@
    "petcity.cl: collar perro mondo (0)",
    "petcity.cl: collar perro (3)"
   ],
-  "referencialTiendas": true,
-  "motivoReferencial": "sin foto de referencia adecuada (se buscó \"collar perro perro\" en 6 tiendas)",
-  "catalogosTiendas": true
+  "fecha": "2026-11-01"
  },
  "ACC-MOND-114": {
   "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
-  "fecha": "2026-11-01",
-  "buscadaReferencial": true,
-  "tiendas": true,
-  "intentos": [
-   "tusmascotas.cl: collar perro mondo (0)",
-   "tusmascotas.cl: collar perro (2)",
-   "distribuidoralira.cl: collar perro mondo (0)",
-   "distribuidoralira.cl: collar perro (0)",
-   "petpalace.cl: collar perro mondo (0)",
-   "petpalace.cl: collar perro (0)",
-   "petshopmg.cl: collar perro mondo (0)",
-   "petshopmg.cl: collar perro (1)",
-   "mascoteriagonzalito.cl: collar perro mondo (0)",
-   "mascoteriagonzalito.cl: collar perro (1)",
-   "petcity.cl: collar perro mondo (0)",
-   "petcity.cl: collar perro (3)"
+  "motivo": "foto referencial descartada en la revisión: muestra la marca de otro, un empaque de otra marca o una marca de agua de otra tienda",
+  "descartadas": [
+   "https://petcity.cl/wp-content/uploads/2025/01/Fuzzyard-Collar-Perro-Go-Nuts.jpg"
   ],
-  "referencialTiendas": true,
-  "motivoReferencial": "sin foto de referencia adecuada (se buscó \"collar perro perro\" en 6 tiendas)",
-  "catalogosTiendas": true
+  "fecha": "2026-11-01"
  },
  "ACC-MOND-116": {
   "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
-  "fecha": "2026-11-01",
-  "buscadaReferencial": true,
-  "tiendas": true,
-  "intentos": [
-   "tusmascotas.cl: collar perro mondo (0)",
-   "tusmascotas.cl: collar perro (2)",
-   "distribuidoralira.cl: collar perro mondo (0)",
-   "distribuidoralira.cl: collar perro (0)",
-   "petpalace.cl: collar perro mondo (0)",
-   "petpalace.cl: collar perro (0)",
-   "petshopmg.cl: collar perro mondo (0)",
-   "petshopmg.cl: collar perro (1)",
-   "mascoteriagonzalito.cl: collar perro mondo (0)",
-   "mascoteriagonzalito.cl: collar perro (1)",
-   "petcity.cl: collar perro mondo (0)",
-   "petcity.cl: collar perro (3)"
+  "motivo": "foto referencial descartada en la revisión: muestra la marca de otro, un empaque de otra marca o una marca de agua de otra tienda",
+  "descartadas": [
+   "https://petcity.cl/wp-content/uploads/2022/10/Calming-Collar-Perro.jpeg"
   ],
-  "referencialTiendas": true,
-  "motivoReferencial": "sin foto de referencia adecuada (se buscó \"collar perro perro\" en 6 tiendas)",
-  "catalogosTiendas": true
+  "fecha": "2026-11-01"
  },
  "ACC-MOND-103": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
-  "fecha": "2026-11-01",
-  "buscadaReferencial": true,
-  "tiendas": true,
+  "grupo": "B",
+  "metodo": "tipo de producto (catálogo de marbenpets.cl)",
+  "titulo": "Collar perro comando (M / L / XL)",
+  "pagina": "https://marbenpets.cl/shop/collar-perro-comando-m-l-xl/",
+  "origen": "https://marbenpets.cl/wp-content/uploads/2025/12/CP469.png",
+  "archivo": "assets/productos/ACC-MOND-103.webp",
   "intentos": [
    "tusmascotas.cl: collar perro mondo (0)",
    "tusmascotas.cl: collar perro (2)",
@@ -6174,16 +6050,15 @@
    "petcity.cl: collar perro mondo (0)",
    "petcity.cl: collar perro (3)"
   ],
-  "referencialTiendas": true,
-  "motivoReferencial": "sin foto de referencia adecuada (se buscó \"collar perro perro\" en 6 tiendas)",
-  "catalogosTiendas": true
+  "fecha": "2026-11-01"
  },
  "ACC-MOND-104": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
-  "fecha": "2026-11-01",
-  "buscadaReferencial": true,
-  "tiendas": true,
+  "grupo": "B",
+  "metodo": "tipo de producto (catálogo de marbenpets.cl)",
+  "titulo": "Collar táctico para perros",
+  "pagina": "https://marbenpets.cl/shop/collar-tactico-para-perros/",
+  "origen": "https://marbenpets.cl/wp-content/uploads/2025/12/BBT01.png",
+  "archivo": "assets/productos/ACC-MOND-104.webp",
   "intentos": [
    "tusmascotas.cl: collar perro mondo (0)",
    "tusmascotas.cl: collar perro (2)",
@@ -6198,33 +6073,15 @@
    "petcity.cl: collar perro mondo (0)",
    "petcity.cl: collar perro (3)"
   ],
-  "referencialTiendas": true,
-  "motivoReferencial": "sin foto de referencia adecuada (se buscó \"collar perro perro\" en 6 tiendas)",
-  "catalogosTiendas": true
+  "fecha": "2026-11-01"
  },
  "ACC-MOND-105": {
   "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
-  "fecha": "2026-11-01",
-  "buscadaReferencial": true,
-  "tiendas": true,
-  "intentos": [
-   "tusmascotas.cl: collar perro mondo (0)",
-   "tusmascotas.cl: collar perro (2)",
-   "distribuidoralira.cl: collar perro mondo (0)",
-   "distribuidoralira.cl: collar perro (0)",
-   "petpalace.cl: collar perro mondo (0)",
-   "petpalace.cl: collar perro (0)",
-   "petshopmg.cl: collar perro mondo (0)",
-   "petshopmg.cl: collar perro (1)",
-   "mascoteriagonzalito.cl: collar perro mondo (0)",
-   "mascoteriagonzalito.cl: collar perro (1)",
-   "petcity.cl: collar perro mondo (0)",
-   "petcity.cl: collar perro (3)"
+  "motivo": "foto referencial descartada en la revisión: muestra la marca de otro, un empaque de otra marca o una marca de agua de otra tienda",
+  "descartadas": [
+   "https://cdn.shopify.com/s/files/1/0415/8242/8317/files/Collar-Calmante-para-Perros-Men-for-San.jpg?v=1759001527"
   ],
-  "referencialTiendas": true,
-  "motivoReferencial": "sin foto de referencia adecuada (se buscó \"collar perro perro\" en 6 tiendas)",
-  "catalogosTiendas": true
+  "fecha": "2026-11-01"
  },
  "ACC-WOND-009": {
   "grupo": "A",
@@ -6247,11 +6104,12 @@
   "fecha": "2026-10-29"
  },
  "ACC-WOND-008": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
-  "fecha": "2026-11-01",
-  "buscadaReferencial": true,
-  "tiendas": true,
+  "grupo": "B",
+  "metodo": "tipo de producto (catálogo de bpets.cl)",
+  "titulo": "Collar de Halloween para Perros WonderDog",
+  "pagina": "https://bpets.cl/products/collar-de-halloween-para-perros-wonderdog",
+  "origen": "https://cdn.shopify.com/s/files/1/0415/8242/8317/files/Collar-de-Halloween-para-Perros-WonderDog.jpg?v=1729356947",
+  "archivo": "assets/productos/ACC-WOND-008.webp",
   "intentos": [
    "tusmascotas.cl: collar perro wonderpets (0)",
    "tusmascotas.cl: collar perro (2)",
@@ -6266,9 +6124,7 @@
    "petcity.cl: collar perro wonderpets (0)",
    "petcity.cl: collar perro (3)"
   ],
-  "referencialTiendas": true,
-  "motivoReferencial": "sin foto de referencia adecuada (se buscó \"collar perro perro\" en 6 tiendas)",
-  "catalogosTiendas": true
+  "fecha": "2026-11-01"
  },
  "ACC-MOND-033": {
   "grupo": "B",
@@ -6321,13 +6177,15 @@
   "fecha": "2026-10-29"
  },
  "ACC-LEON-018": {
-  "grupo": "C",
-  "motivo": "foto referencial descartada en la revisión: muestra la marca de otro, no es del mismo tipo o está rota",
+  "grupo": "B",
+  "metodo": "tipo de producto (catálogo de tusmascotas.cl)",
+  "titulo": "Doco Correa Perro Martini Azul Large",
+  "pagina": "https://www.tusmascotas.cl/product/doco-correa-perro-martini-azul-large/",
+  "origen": "https://www.tusmascotas.cl/wp-content/uploads/2020/10/Doco-Correa-Perro-Martini-Azul-Medium.png",
+  "archivo": "assets/productos/ACC-LEON-018.webp",
   "descartadas": [
    "https://m.media-amazon.com/images/I/61dgtDhZT1L._AC_SL1500_.jpg"
   ],
-  "fecha": "2026-11-01",
-  "tiendas": true,
   "intentos": [
    "tusmascotas.cl: correa perro leon pet (0)",
    "tusmascotas.cl: correa perro leon (0)",
@@ -6348,9 +6206,7 @@
    "petcity.cl: correa perro leon (0)",
    "petcity.cl: correa perro (0)"
   ],
-  "referencialTiendas": true,
-  "motivoReferencial": "sin foto de referencia adecuada (se buscó \"correa perro perro\" en 6 tiendas)",
-  "catalogosTiendas": true
+  "fecha": "2026-11-01"
  },
  "ACC-LEON-002": {
   "grupo": "B",
@@ -6433,13 +6289,15 @@
   "fecha": "2026-10-29"
  },
  "ACC-MUND-006": {
-  "grupo": "C",
-  "motivo": "foto referencial descartada en la revisión: muestra la marca de otro, no es del mismo tipo o está rota",
+  "grupo": "B",
+  "metodo": "tipo de producto (catálogo de petcity.cl)",
+  "titulo": "Filtros Bebederos Fuente De Agua Perros Y Gatos 4 Unidades",
+  "pagina": "https://petcity.cl/tienda/filtros-bebederos-fuente-de-agua-perros-y-gatos-4-unidades/",
+  "origen": "https://petcity.cl/wp-content/uploads/2026/05/PACK-FILTRO-FUENTE-DE-AGUA-4-UNIDADES-RD-001A-MB.jpg",
+  "archivo": "assets/productos/ACC-MUND-006.webp",
   "descartadas": [
    "https://http2.mlstatic.com/D_NQ_NP_616863-MLM102461120249_122025-O-filtro-automatico-de-fuente-de-agua-para-mascotas.webp"
   ],
-  "fecha": "2026-11-01",
-  "tiendas": true,
   "intentos": [
    "tusmascotas.cl: filtro fuente agua mundo (0)",
    "tusmascotas.cl: filtro fuente agua (0)",
@@ -6460,9 +6318,7 @@
    "petcity.cl: filtro fuente agua (0)",
    "petcity.cl: filtro fuente (0)"
   ],
-  "referencialTiendas": true,
-  "motivoReferencial": "sin foto de referencia adecuada (se buscó \"fuente filtro agua\" en 6 tiendas)",
-  "catalogosTiendas": true
+  "fecha": "2026-11-01"
  },
  "ACC-MOND-026": {
   "grupo": "B",
@@ -6475,13 +6331,15 @@
   "fecha": "2026-10-29"
  },
  "ACC-MUND-009": {
-  "grupo": "C",
-  "motivo": "foto referencial descartada en la revisión: muestra la marca de otro, no es del mismo tipo o está rota",
+  "grupo": "B",
+  "metodo": "tipo de producto (catálogo de distribuidoralira.cl)",
+  "titulo": "Filtro para Fuente de Agua Gato 1 Unidad",
+  "pagina": "https://www.distribuidoralira.cl/product/filtro-para-fuente-de-agua-gato-1-unidad/",
+  "origen": "https://www.distribuidoralira.cl/wp-content/uploads/2025/10/filtro-1-unidad.webp",
+  "archivo": "assets/productos/ACC-MUND-009.webp",
   "descartadas": [
    "https://http2.mlstatic.com/D_NQ_NP_868483-MLA79560205938_102024-O.webp"
   ],
-  "fecha": "2026-11-01",
-  "tiendas": true,
   "intentos": [
    "tusmascotas.cl: filtro fuente agua (0)",
    "tusmascotas.cl: filtro fuente (8)",
@@ -6496,9 +6354,7 @@
    "petcity.cl: filtro fuente agua (0)",
    "petcity.cl: filtro fuente (0)"
   ],
-  "referencialTiendas": true,
-  "motivoReferencial": "sin foto de referencia adecuada (se buscó \"fuente filtro agua\" en 6 tiendas)",
-  "catalogosTiendas": true
+  "fecha": "2026-11-01"
  },
  "ACC-MUND-008": {
   "grupo": "B",
@@ -6539,8 +6395,9 @@
    "petcity.cl: fuente agua (0)"
   ],
   "referencialTiendas": true,
-  "motivoReferencial": "sin foto de referencia adecuada (se buscó \"fuente gato agua gatos\" en 6 tiendas)",
-  "catalogosTiendas": true
+  "motivoReferencial": "sin foto de referencia adecuada en los catálogos de las 9 tiendas",
+  "catalogosTiendas": true,
+  "referencialCatalogos": true
  },
  "ACC-MOND-084": {
   "grupo": "B",
@@ -6620,7 +6477,8 @@
   ],
   "referencialTiendas": true,
   "motivoReferencial": "no se reconoce el tipo de producto en el nombre",
-  "catalogosTiendas": true
+  "catalogosTiendas": true,
+  "referencialCatalogos": true
  },
  "ACC-MOND-094": {
   "grupo": "B",
@@ -6644,33 +6502,11 @@
  },
  "ACC-BUEN-004": {
   "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
-  "fecha": "2026-11-01",
-  "buscadaReferencial": true,
-  "tiendas": true,
-  "intentos": [
-   "tusmascotas.cl: fuente agua buen amigo (0)",
-   "tusmascotas.cl: fuente agua buen (0)",
-   "tusmascotas.cl: fuente agua (2)",
-   "distribuidoralira.cl: fuente agua buen amigo (0)",
-   "distribuidoralira.cl: fuente agua buen (0)",
-   "distribuidoralira.cl: fuente agua (0)",
-   "petpalace.cl: fuente agua buen amigo (0)",
-   "petpalace.cl: fuente agua buen (0)",
-   "petpalace.cl: fuente agua (0)",
-   "petshopmg.cl: fuente agua buen amigo (0)",
-   "petshopmg.cl: fuente agua buen (0)",
-   "petshopmg.cl: fuente agua (0)",
-   "mascoteriagonzalito.cl: fuente agua buen amigo (0)",
-   "mascoteriagonzalito.cl: fuente agua buen (0)",
-   "mascoteriagonzalito.cl: fuente agua (0)",
-   "petcity.cl: fuente agua buen amigo (0)",
-   "petcity.cl: fuente agua buen (0)",
-   "petcity.cl: fuente agua (0)"
+  "motivo": "foto referencial descartada en la revisión: muestra la marca de otro, un empaque de otra marca o una marca de agua de otra tienda",
+  "descartadas": [
+   "https://petpalace.cl/wp-content/uploads/2025/01/lnn.png"
   ],
-  "referencialTiendas": true,
-  "motivoReferencial": "sin foto de referencia adecuada (se buscó \"fuente agua\" en 6 tiendas)",
-  "catalogosTiendas": true
+  "fecha": "2026-11-01"
  },
  "ACC-BUEN-005": {
   "grupo": "B",
@@ -6709,8 +6545,9 @@
    "petcity.cl: jaula gato (0)"
   ],
   "referencialTiendas": true,
-  "motivoReferencial": "sin foto de referencia adecuada (se buscó \"jaula gato gato\" en 6 tiendas)",
-  "catalogosTiendas": true
+  "motivoReferencial": "sin foto de referencia adecuada en los catálogos de las 9 tiendas",
+  "catalogosTiendas": true,
+  "referencialCatalogos": true
  },
  "ACC-MOND-133": {
   "grupo": "B",
@@ -6822,8 +6659,9 @@
    "petcity.cl: juguete brnx (0)"
   ],
   "referencialTiendas": true,
-  "motivoReferencial": "sin foto de referencia adecuada (se buscó \"juguete modelo oso\" en 6 tiendas)",
-  "catalogosTiendas": true
+  "motivoReferencial": "sin foto de referencia adecuada en los catálogos de las 9 tiendas",
+  "catalogosTiendas": true,
+  "referencialCatalogos": true
  },
  "ACC-BRNX-002": {
   "grupo": "B",
@@ -6954,31 +6792,37 @@
  },
  "ACC-LEON-004": {
   "grupo": "C",
-  "motivo": "foto referencial descartada en la revisión: muestra la marca de otro, un empaque de otra marca o un personaje con licencia",
+  "motivo": "foto referencial descartada en la revisión: muestra la marca de otro, un empaque de otra marca o una marca de agua de otra tienda",
   "descartadas": [
-   "https://www.tusmascotas.cl/wp-content/uploads/2026/06/793969584239.png"
+   "https://www.tusmascotas.cl/wp-content/uploads/2026/06/793969584239.png",
+   "https://petcity.cl/wp-content/uploads/2025/12/Juguete-Natura-Nourish-Pet-Treat-Cocodrilo-2-en-1-sabor-Pollo.jpg"
   ],
-  "fecha": "2026-11-01",
-  "catalogosTiendas": true
+  "fecha": "2026-11-01"
  },
  "ACC-MOND-144": {
-  "grupo": "C",
-  "motivo": "foto referencial descartada en la revisión: muestra la marca de otro, un empaque de otra marca o un personaje con licencia",
+  "grupo": "B",
+  "metodo": "tipo de producto (catálogo de tusmascotas.cl)",
+  "titulo": "Catstages Juguete Pato",
+  "pagina": "https://www.tusmascotas.cl/product/catstages-juguete-pato/",
+  "origen": "https://www.tusmascotas.cl/wp-content/uploads/2026/05/260545.png",
+  "archivo": "assets/productos/ACC-MOND-144.webp",
   "descartadas": [
    "https://www.tusmascotas.cl/wp-content/uploads/2026/06/793969584321.png"
   ],
-  "fecha": "2026-11-01",
-  "catalogosTiendas": true
+  "fecha": "2026-11-01"
  },
  "ACC-MOND-166": {
-  "grupo": "C",
-  "motivo": "foto referencial descartada en la revisión: muestra la marca de otro, un empaque de otra marca o un personaje con licencia",
+  "grupo": "B",
+  "metodo": "tipo de producto (catálogo de tusmascotas.cl)",
+  "titulo": "Pelota de Juguete Para Perro (JW-001)",
+  "pagina": "https://www.tusmascotas.cl/product/pelota-de-juguete-para-perro-jw-001/",
+  "origen": "https://www.tusmascotas.cl/wp-content/uploads/2026/04/00-26.jpg",
+  "archivo": "assets/productos/ACC-MOND-166.webp",
   "descartadas": [
    "https://oechsle.vteximg.com.br/arquivos/ids/16512779-1000-1000/image-78891e8ce7644a288c6d55720cdd17ee.jpg?v=638331831660670000",
    "https://www.tusmascotas.cl/wp-content/uploads/2026/06/793969584291.png"
   ],
-  "fecha": "2026-11-01",
-  "catalogosTiendas": true
+  "fecha": "2026-11-01"
  },
  "ACC-LILI-001": {
   "grupo": "B",
@@ -7021,13 +6865,16 @@
   "fecha": "2026-10-29"
  },
  "ACC-MOND-061": {
-  "grupo": "C",
-  "motivo": "foto referencial descartada en la revisión: muestra la marca de otro, un empaque de otra marca o un personaje con licencia",
+  "grupo": "B",
+  "metodo": "tipo de producto (catálogo de tusmascotas.cl)",
+  "titulo": "Juguete Para Perro Pez Azul 30cm (JW17083A)",
+  "pagina": "https://www.tusmascotas.cl/product/juguete-para-perro-pez-azul-30cm-jw17083a/",
+  "origen": "https://www.tusmascotas.cl/wp-content/uploads/2026/04/001.jpg",
+  "archivo": "assets/productos/ACC-MOND-061.webp",
   "descartadas": [
    "https://www.tusmascotas.cl/wp-content/uploads/2026/06/793969584345.png"
   ],
-  "fecha": "2026-11-01",
-  "catalogosTiendas": true
+  "fecha": "2026-11-01"
  },
  "ACC-MOND-019": {
   "grupo": "B",
@@ -7078,8 +6925,9 @@
    "petcity.cl: juguete par (0)"
   ],
   "referencialTiendas": true,
-  "motivoReferencial": "sin foto de referencia adecuada (se buscó \"juguete par modelo\" en 6 tiendas)",
-  "catalogosTiendas": true
+  "motivoReferencial": "sin foto de referencia adecuada en los catálogos de las 9 tiendas",
+  "catalogosTiendas": true,
+  "referencialCatalogos": true
  },
  "ACC-MOND-172": {
   "grupo": "B",
@@ -7152,11 +7000,12 @@
   "fecha": "2026-10-29"
  },
  "ACC-MOND-169": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
-  "fecha": "2026-11-01",
-  "buscadaReferencial": true,
-  "tiendas": true,
+  "grupo": "B",
+  "metodo": "tipo de producto (catálogo de tusmascotas.cl)",
+  "titulo": "Juguete Palta Con Catnip Para Gato",
+  "pagina": "https://www.tusmascotas.cl/product/juguete-palta-con-catnip-para-gato/",
+  "origen": "https://www.tusmascotas.cl/wp-content/uploads/2022/04/palta.png",
+  "archivo": "assets/productos/ACC-MOND-169.webp",
   "intentos": [
    "tusmascotas.cl: juguete gato mondo (0)",
    "tusmascotas.cl: juguete gato (9)",
@@ -7171,16 +7020,15 @@
    "petcity.cl: juguete gato mondo (0)",
    "petcity.cl: juguete gato (6)"
   ],
-  "referencialTiendas": true,
-  "motivoReferencial": "sin foto de referencia adecuada (se buscó \"juguete gato gato\" en 6 tiendas)",
-  "catalogosTiendas": true
+  "fecha": "2026-11-01"
  },
  "ACC-MOND-168": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
-  "fecha": "2026-11-01",
-  "buscadaReferencial": true,
-  "tiendas": true,
+  "grupo": "B",
+  "metodo": "tipo de producto (catálogo de tusmascotas.cl)",
+  "titulo": "Juguete Electrónico UFO Para Gato",
+  "pagina": "https://www.tusmascotas.cl/product/juguete-electronico-ufo-para-gato/",
+  "origen": "https://www.tusmascotas.cl/wp-content/uploads/2022/05/juguete-ufo.png",
+  "archivo": "assets/productos/ACC-MOND-168.webp",
   "intentos": [
    "tusmascotas.cl: juguete gato mondo (0)",
    "tusmascotas.cl: juguete gato (9)",
@@ -7195,16 +7043,15 @@
    "petcity.cl: juguete gato mondo (0)",
    "petcity.cl: juguete gato (6)"
   ],
-  "referencialTiendas": true,
-  "motivoReferencial": "sin foto de referencia adecuada (se buscó \"juguete gato gato\" en 6 tiendas)",
-  "catalogosTiendas": true
+  "fecha": "2026-11-01"
  },
  "ACC-MOND-171": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
-  "fecha": "2026-11-01",
-  "buscadaReferencial": true,
-  "tiendas": true,
+  "grupo": "B",
+  "metodo": "tipo de producto (catálogo de tusmascotas.cl)",
+  "titulo": "Juguete Barra con Plumas para gato",
+  "pagina": "https://www.tusmascotas.cl/product/juguete-barra-con-plumas-para-gato-3/",
+  "origen": "https://www.tusmascotas.cl/wp-content/uploads/2020/10/Juguete-Barra-con-Plumas-para-gato.png",
+  "archivo": "assets/productos/ACC-MOND-171.webp",
   "intentos": [
    "tusmascotas.cl: juguete gato mondo (0)",
    "tusmascotas.cl: juguete gato (9)",
@@ -7219,9 +7066,7 @@
    "petcity.cl: juguete gato mondo (0)",
    "petcity.cl: juguete gato (6)"
   ],
-  "referencialTiendas": true,
-  "motivoReferencial": "sin foto de referencia adecuada (se buscó \"juguete gato gato\" en 6 tiendas)",
-  "catalogosTiendas": true
+  "fecha": "2026-11-01"
  },
  "ACC-MOND-159": {
   "grupo": "B",
@@ -7244,11 +7089,12 @@
   "fecha": "2026-10-29"
  },
  "ACC-MOND-060": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
-  "fecha": "2026-11-01",
-  "buscadaReferencial": true,
-  "tiendas": true,
+  "grupo": "B",
+  "metodo": "tipo de producto (catálogo de distribuidoralira.cl)",
+  "titulo": "Juguete para Gato Wonder Cat Pez con Catnip Colores (HDD016) 🐟",
+  "pagina": "https://www.distribuidoralira.cl/product/juguete-para-gato-wonder-cat-pez-con-catnip-colores-hdd016-%f0%9f%90%9f/",
+  "origen": "https://www.distribuidoralira.cl/wp-content/uploads/2025/10/23P128.png",
+  "archivo": "assets/productos/ACC-MOND-060.webp",
   "intentos": [
    "tusmascotas.cl: juguete gato mondo (0)",
    "tusmascotas.cl: juguete gato (9)",
@@ -7263,57 +7109,23 @@
    "petcity.cl: juguete gato mondo (0)",
    "petcity.cl: juguete gato (6)"
   ],
-  "referencialTiendas": true,
-  "motivoReferencial": "sin foto de referencia adecuada (se buscó \"juguete gato gato\" en 6 tiendas)",
-  "catalogosTiendas": true
+  "fecha": "2026-11-01"
  },
  "ACC-MOND-174": {
   "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
-  "fecha": "2026-11-01",
-  "buscadaReferencial": true,
-  "tiendas": true,
-  "intentos": [
-   "tusmascotas.cl: juguete gato mondo (0)",
-   "tusmascotas.cl: juguete gato (9)",
-   "distribuidoralira.cl: juguete gato mondo (0)",
-   "distribuidoralira.cl: juguete gato (8)",
-   "petpalace.cl: juguete gato mondo (0)",
-   "petpalace.cl: juguete gato (0)",
-   "petshopmg.cl: juguete gato mondo (0)",
-   "petshopmg.cl: juguete gato (0)",
-   "mascoteriagonzalito.cl: juguete gato mondo (0)",
-   "mascoteriagonzalito.cl: juguete gato (0)",
-   "petcity.cl: juguete gato mondo (0)",
-   "petcity.cl: juguete gato (6)"
+  "motivo": "foto referencial descartada en la revisión: muestra la marca de otro, un empaque de otra marca o una marca de agua de otra tienda",
+  "descartadas": [
+   "https://www.distribuidoralira.cl/wp-content/uploads/2025/07/22P740.webp"
   ],
-  "referencialTiendas": true,
-  "motivoReferencial": "sin foto de referencia adecuada (se buscó \"juguete gato gato\" en 6 tiendas)",
-  "catalogosTiendas": true
+  "fecha": "2026-11-01"
  },
  "ACC-MOND-170": {
   "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
-  "fecha": "2026-11-01",
-  "buscadaReferencial": true,
-  "tiendas": true,
-  "intentos": [
-   "tusmascotas.cl: juguete gato mondo (0)",
-   "tusmascotas.cl: juguete gato (9)",
-   "distribuidoralira.cl: juguete gato mondo (0)",
-   "distribuidoralira.cl: juguete gato (8)",
-   "petpalace.cl: juguete gato mondo (0)",
-   "petpalace.cl: juguete gato (0)",
-   "petshopmg.cl: juguete gato mondo (0)",
-   "petshopmg.cl: juguete gato (0)",
-   "mascoteriagonzalito.cl: juguete gato mondo (0)",
-   "mascoteriagonzalito.cl: juguete gato (0)",
-   "petcity.cl: juguete gato mondo (0)",
-   "petcity.cl: juguete gato (6)"
+  "motivo": "foto referencial descartada en la revisión: no es del mismo tipo de producto, está en blanco o es de otra especie",
+  "descartadas": [
+   "https://www.distribuidoralira.cl/wp-content/uploads/2025/07/22P328.jpg"
   ],
-  "referencialTiendas": true,
-  "motivoReferencial": "sin foto de referencia adecuada (se buscó \"juguete gato gato\" en 6 tiendas)",
-  "catalogosTiendas": true
+  "fecha": "2026-11-01"
  },
  "ACC-MOND-160": {
   "grupo": "B",
@@ -7417,38 +7229,23 @@
  },
  "ACC-MOND-138": {
   "grupo": "C",
-  "motivo": "foto referencial descartada en la revisión: muestra la marca de otro, no es del mismo tipo o está rota",
+  "motivo": "foto referencial descartada en la revisión: muestra la marca de otro, un empaque de otra marca o una marca de agua de otra tienda",
   "descartadas": [
-   "https://i5.walmartimages.com.mx/gr/images/product-images/img_large/00750155648503L.jpg"
+   "https://i5.walmartimages.com.mx/gr/images/product-images/img_large/00750155648503L.jpg",
+   "https://www.tusmascotas.cl/wp-content/uploads/2024/12/729208212625.png"
   ],
-  "fecha": "2026-11-01",
-  "tiendas": true,
-  "intentos": [
-   "tusmascotas.cl: juguete perro mondo (0)",
-   "tusmascotas.cl: juguete perro (8)",
-   "distribuidoralira.cl: juguete perro mondo (0)",
-   "distribuidoralira.cl: juguete perro (4)",
-   "petpalace.cl: juguete perro mondo (0)",
-   "petpalace.cl: juguete perro (0)",
-   "petshopmg.cl: juguete perro mondo (0)",
-   "petshopmg.cl: juguete perro (0)",
-   "mascoteriagonzalito.cl: juguete perro mondo (0)",
-   "mascoteriagonzalito.cl: juguete perro (3)",
-   "petcity.cl: juguete perro mondo (0)",
-   "petcity.cl: juguete perro (1)"
-  ],
-  "referencialTiendas": true,
-  "motivoReferencial": "sin foto de referencia adecuada (se buscó \"juguete perro perro\" en 6 tiendas)",
-  "catalogosTiendas": true
+  "fecha": "2026-11-01"
  },
  "ACC-MARB-014": {
-  "grupo": "C",
-  "motivo": "foto referencial descartada en la revisión: muestra la marca de otro, no es del mismo tipo o está rota",
+  "grupo": "B",
+  "metodo": "tipo de producto (catálogo de distribuidoralira.cl)",
+  "titulo": "Juguete para perro Bola Warrior Maciza + cuerda colores surtidos (ER059)",
+  "pagina": "https://www.distribuidoralira.cl/product/juguete-para-perro-bola-warrior-maciza-cuerda-colores-surtidos-er059/",
+  "origen": "https://www.distribuidoralira.cl/wp-content/uploads/2025/07/22P236.jpg",
+  "archivo": "assets/productos/ACC-MARB-014.webp",
   "descartadas": [
    "https://http2.mlstatic.com/D_NQ_NP_724791-MLC87841845946_072025-O.webp"
   ],
-  "fecha": "2026-11-01",
-  "tiendas": true,
   "intentos": [
    "tusmascotas.cl: juguete perro (8)",
    "distribuidoralira.cl: juguete perro (4)",
@@ -7457,40 +7254,23 @@
    "mascoteriagonzalito.cl: juguete perro (3)",
    "petcity.cl: juguete perro (1)"
   ],
-  "referencialTiendas": true,
-  "motivoReferencial": "sin foto de referencia adecuada (se buscó \"juguete perro perro\" en 6 tiendas)",
-  "catalogosTiendas": true
+  "fecha": "2026-11-01"
  },
  "ACC-MOND-139": {
   "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
-  "fecha": "2026-11-01",
-  "buscadaReferencial": true,
-  "tiendas": true,
-  "intentos": [
-   "tusmascotas.cl: juguete perro mondo (0)",
-   "tusmascotas.cl: juguete perro (8)",
-   "distribuidoralira.cl: juguete perro mondo (0)",
-   "distribuidoralira.cl: juguete perro (4)",
-   "petpalace.cl: juguete perro mondo (0)",
-   "petpalace.cl: juguete perro (0)",
-   "petshopmg.cl: juguete perro mondo (0)",
-   "petshopmg.cl: juguete perro (0)",
-   "mascoteriagonzalito.cl: juguete perro mondo (0)",
-   "mascoteriagonzalito.cl: juguete perro (3)",
-   "petcity.cl: juguete perro mondo (0)",
-   "petcity.cl: juguete perro (1)"
+  "motivo": "foto referencial descartada en la revisión: muestra la marca de otro, un empaque de otra marca o una marca de agua de otra tienda",
+  "descartadas": [
+   "https://www.tusmascotas.cl/wp-content/uploads/2024/12/729208212618.png"
   ],
-  "referencialTiendas": true,
-  "motivoReferencial": "sin foto de referencia adecuada (se buscó \"juguete perro perro\" en 6 tiendas)",
-  "catalogosTiendas": true
+  "fecha": "2026-11-01"
  },
  "ACC-MOND-141": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
-  "fecha": "2026-11-01",
-  "buscadaReferencial": true,
-  "tiendas": true,
+  "grupo": "B",
+  "metodo": "tipo de producto (catálogo de tusmascotas.cl)",
+  "titulo": "Juguete perro pelota goma snack con dientes Naranja",
+  "pagina": "https://www.tusmascotas.cl/product/juguete-perro-pelota-goma-snack-con-dientes-naranja/",
+  "origen": "https://www.tusmascotas.cl/wp-content/uploads/2021/05/Pelota-naranja.jpg",
+  "archivo": "assets/productos/ACC-MOND-141.webp",
   "intentos": [
    "tusmascotas.cl: juguete perro mondo (0)",
    "tusmascotas.cl: juguete perro (8)",
@@ -7505,9 +7285,7 @@
    "petcity.cl: juguete perro mondo (0)",
    "petcity.cl: juguete perro (1)"
   ],
-  "referencialTiendas": true,
-  "motivoReferencial": "sin foto de referencia adecuada (se buscó \"juguete perro perro\" en 6 tiendas)",
-  "catalogosTiendas": true
+  "fecha": "2026-11-01"
  },
  "OTR-MARB-004": {
   "grupo": "A",
@@ -7581,13 +7359,13 @@
  },
  "ACC-TOYC-001": {
   "grupo": "C",
-  "motivo": "foto referencial descartada en la revisión: muestra la marca de otro, un empaque de otra marca o un personaje con licencia",
+  "motivo": "foto referencial descartada en la revisión: muestra la marca de otro, un empaque de otra marca o una marca de agua de otra tienda",
   "descartadas": [
    "https://ecuador.vanderpet.com/wp-content/uploads/2024/05/TOYCAT-012.jpg",
-   "https://www.tusmascotas.cl/wp-content/uploads/2026/06/793969584260.png"
+   "https://www.tusmascotas.cl/wp-content/uploads/2026/06/793969584260.png",
+   "https://www.tusmascotas.cl/wp-content/uploads/2025/12/793969581702.png"
   ],
-  "fecha": "2026-11-01",
-  "catalogosTiendas": true
+  "fecha": "2026-11-01"
  },
  "ACC-MOND-091": {
   "grupo": "B",
@@ -7696,7 +7474,9 @@
    "https://static.wixstatic.com/media/795aad_3a3ab5d1e0854e39b0ecee439ec22211~mv2.jpg/v1/fill/w_980,h_980,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/795aad_3a3ab5d1e0854e39b0ecee439ec22211~mv2.jpg",
    "https://www.mascoteriagonzalito.cl/wp-content/uploads/2026/02/LIMADOR.webp"
   ],
-  "fecha": "2026-11-01"
+  "fecha": "2026-11-01",
+  "referencialCatalogos": true,
+  "motivoReferencial": "no se reconoce el tipo de producto en el nombre"
  },
  "ACC-MOND-011": {
   "grupo": "B",
@@ -7817,8 +7597,9 @@
    "petcity.cl: pelota adhesiva (0)"
   ],
   "referencialTiendas": true,
-  "motivoReferencial": "sin foto de referencia adecuada (se buscó \"pelota adhesiva catnip\" en 6 tiendas)",
-  "catalogosTiendas": true
+  "motivoReferencial": "sin foto de referencia adecuada en los catálogos de las 9 tiendas",
+  "catalogosTiendas": true,
+  "referencialCatalogos": true
  },
  "ACC-MOND-059": {
   "grupo": "B",
@@ -7886,7 +7667,8 @@
   ],
   "referencialTiendas": true,
   "motivoReferencial": "no se reconoce el tipo de producto en el nombre",
-  "catalogosTiendas": true
+  "catalogosTiendas": true,
+  "referencialCatalogos": true
  },
  "ACC-GEN-029": {
   "grupo": "C",
@@ -7911,8 +7693,9 @@
    "petcity.cl: placas metalicas (0)"
   ],
   "referencialTiendas": true,
-  "motivoReferencial": "sin foto de referencia adecuada (se buscó \"collar placas metalicas\" en 6 tiendas)",
-  "catalogosTiendas": true
+  "motivoReferencial": "sin foto de referencia adecuada en los catálogos de las 9 tiendas",
+  "catalogosTiendas": true,
+  "referencialCatalogos": true
  },
  "ACC-MOND-106": {
   "grupo": "B",
@@ -8153,8 +7936,9 @@
    "petcity.cl: plato silicona (0)"
   ],
   "referencialTiendas": true,
-  "motivoReferencial": "sin foto de referencia adecuada (se buscó \"plato silicona multi\" en 6 tiendas)",
-  "catalogosTiendas": true
+  "motivoReferencial": "sin foto de referencia adecuada en los catálogos de las 9 tiendas",
+  "catalogosTiendas": true,
+  "referencialCatalogos": true
  },
  "ACC-MOND-196": {
   "grupo": "B",
@@ -8247,14 +8031,17 @@
   "fecha": "2026-10-29"
  },
  "ACC-MOND-177": {
-  "grupo": "C",
-  "motivo": "foto referencial descartada en la revisión: no es del mismo tipo de producto, está en blanco o tiene marca de agua",
+  "grupo": "B",
+  "metodo": "tipo de producto (catálogo de tusmascotas.cl)",
+  "titulo": "Rascador Torre C/Juguete raton beige",
+  "pagina": "https://www.tusmascotas.cl/product/rascador-torre-c-juguete-raton-beige/",
+  "origen": "https://www.tusmascotas.cl/wp-content/uploads/2024/10/Rascador-Torre-2.jpg",
+  "archivo": "assets/productos/ACC-MOND-177.webp",
   "descartadas": [
    "https://http2.mlstatic.com/D_NQ_NP_612852-MLA75464434493_032024-O.webp",
    "https://www.tusmascotas.cl/wp-content/uploads/2024/11/RASCADOR-TORRE-MICHI-23HT-6-2.jpg"
   ],
-  "fecha": "2026-11-01",
-  "catalogosTiendas": true
+  "fecha": "2026-11-01"
  },
  "ACC-MOND-176": {
   "grupo": "B",
@@ -8427,11 +8214,12 @@
   "fecha": "2026-10-29"
  },
  "ACC-MOND-072": {
-  "grupo": "C",
-  "motivo": "sin coincidencia segura por código ni por nombre",
-  "fecha": "2026-11-01",
-  "buscadaReferencial": true,
-  "tiendas": true,
+  "grupo": "B",
+  "metodo": "tipo de producto (catálogo de tusmascotas.cl)",
+  "titulo": "Transportador Skudo 3 para Gatos",
+  "pagina": "https://www.tusmascotas.cl/product/transportador-skudo-3-para-gatos/",
+  "origen": "https://www.tusmascotas.cl/wp-content/uploads/2022/08/TRANSPORTADORA-SKUDO-3-PARA-GATOS-600x600-1.jpg",
+  "archivo": "assets/productos/ACC-MOND-072.webp",
   "intentos": [
    "tusmascotas.cl: transportador gato mondo (0)",
    "tusmascotas.cl: transportador gato (0)",
@@ -8446,9 +8234,7 @@
    "petcity.cl: transportador gato mondo (0)",
    "petcity.cl: transportador gato (0)"
   ],
-  "referencialTiendas": true,
-  "motivoReferencial": "sin foto de referencia adecuada (se buscó \"transportador gato gato\" en 6 tiendas)",
-  "catalogosTiendas": true
+  "fecha": "2026-11-01"
  },
  "ACC-MOND-067": {
   "grupo": "B",
@@ -9446,8 +9232,9 @@
    "petcity.cl: chaqueta perro (0)"
   ],
   "referencialTiendas": true,
-  "motivoReferencial": "sin foto de referencia adecuada (se buscó \"chaqueta perro perro marbenpets\" en 6 tiendas)",
-  "catalogosTiendas": true
+  "motivoReferencial": "sin foto de referencia adecuada en los catálogos de las 9 tiendas",
+  "catalogosTiendas": true,
+  "referencialCatalogos": true
  },
  "PER-MOND-007": {
   "grupo": "B",
@@ -9488,8 +9275,9 @@
    "petcity.cl: chaqueta perro (0)"
   ],
   "referencialTiendas": true,
-  "motivoReferencial": "sin foto de referencia adecuada (se buscó \"chaqueta perro perro talla\" en 6 tiendas)",
-  "catalogosTiendas": true
+  "motivoReferencial": "sin foto de referencia adecuada en los catálogos de las 9 tiendas",
+  "catalogosTiendas": true,
+  "referencialCatalogos": true
  },
  "ACC-MARB-036": {
   "grupo": "B",
@@ -12500,32 +12288,11 @@
  },
  "ACC-MOND-275": {
   "grupo": "C",
-  "tiendas": true,
-  "intentos": [
-   "tusmascotas.cl: alfombra diseno gato mondo (0)",
-   "tusmascotas.cl: alfombra diseno gato (0)",
-   "tusmascotas.cl: alfombra diseno (0)",
-   "distribuidoralira.cl: alfombra diseno gato mondo (0)",
-   "distribuidoralira.cl: alfombra diseno gato (0)",
-   "distribuidoralira.cl: alfombra diseno (0)",
-   "petpalace.cl: alfombra diseno gato mondo (0)",
-   "petpalace.cl: alfombra diseno gato (0)",
-   "petpalace.cl: alfombra diseno (0)",
-   "petshopmg.cl: alfombra diseno gato mondo (0)",
-   "petshopmg.cl: alfombra diseno gato (0)",
-   "petshopmg.cl: alfombra diseno (0)",
-   "mascoteriagonzalito.cl: alfombra diseno gato mondo (0)",
-   "mascoteriagonzalito.cl: alfombra diseno gato (0)",
-   "mascoteriagonzalito.cl: alfombra diseno (0)",
-   "petcity.cl: alfombra diseno gato mondo (0)",
-   "petcity.cl: alfombra diseno gato (0)",
-   "petcity.cl: alfombra diseno (0)"
+  "motivo": "foto referencial descartada en la revisión: no es del mismo tipo de producto, está en blanco o es de otra especie",
+  "descartadas": [
+   "https://www.distribuidoralira.cl/wp-content/uploads/2025/07/17P553-1.webp"
   ],
-  "motivo": "sin coincidencia segura por código ni por nombre",
-  "fecha": "2026-11-01",
-  "referencialTiendas": true,
-  "motivoReferencial": "sin foto de referencia adecuada (se buscó \"alfombra gato diseno gato\" en 6 tiendas)",
-  "catalogosTiendas": true
+  "fecha": "2026-11-01"
  },
  "ACC-MOND-273": {
   "grupo": "C",
@@ -12553,8 +12320,9 @@
   "motivo": "sin coincidencia segura por código ni por nombre",
   "fecha": "2026-11-01",
   "referencialTiendas": true,
-  "motivoReferencial": "sin foto de referencia adecuada (se buscó \"alfombra engomada carita\" en 6 tiendas)",
-  "catalogosTiendas": true
+  "motivoReferencial": "sin foto de referencia adecuada en los catálogos de las 9 tiendas",
+  "catalogosTiendas": true,
+  "referencialCatalogos": true
  },
  "ACC-MOND-274": {
   "grupo": "C",
@@ -12582,8 +12350,9 @@
   "motivo": "sin coincidencia segura por código ni por nombre",
   "fecha": "2026-11-01",
   "referencialTiendas": true,
-  "motivoReferencial": "sin foto de referencia adecuada (se buscó \"alfombra goma carita\" en 6 tiendas)",
-  "catalogosTiendas": true
+  "motivoReferencial": "sin foto de referencia adecuada en los catálogos de las 9 tiendas",
+  "catalogosTiendas": true,
+  "referencialCatalogos": true
  },
  "ACC-MOND-276": {
   "grupo": "C",
@@ -12611,26 +12380,27 @@
   "motivo": "sin coincidencia segura por código ni por nombre",
   "fecha": "2026-11-01",
   "referencialTiendas": true,
-  "motivoReferencial": "sin foto de referencia adecuada (se buscó \"alfombra goma huellitas\" en 6 tiendas)",
-  "catalogosTiendas": true
+  "motivoReferencial": "sin foto de referencia adecuada en los catálogos de las 9 tiendas",
+  "catalogosTiendas": true,
+  "referencialCatalogos": true
  },
  "ACC-MOND-227": {
   "grupo": "C",
-  "motivo": "foto referencial descartada en la revisión: no es del mismo tipo de producto, está en blanco o tiene marca de agua",
+  "motivo": "foto referencial descartada en la revisión: no es del mismo tipo de producto, está en blanco o es de otra especie",
   "descartadas": [
-   "https://www.tusmascotas.cl/wp-content/uploads/2026/09/55005239.png"
+   "https://www.tusmascotas.cl/wp-content/uploads/2026/09/55005239.png",
+   "https://www.tusmascotas.cl/wp-content/uploads/2024/10/PALA-ARENERO-INCLUYE-ROLLO-BOLSA-DEARENA-29CM-F07.jpg"
   ],
-  "fecha": "2026-11-01",
-  "catalogosTiendas": true
+  "fecha": "2026-11-01"
  },
  "ACC-MOND-303": {
   "grupo": "C",
-  "motivo": "foto referencial descartada en la revisión: no es del mismo tipo de producto, está en blanco o tiene marca de agua",
+  "motivo": "foto referencial descartada en la revisión: no es del mismo tipo de producto, está en blanco o es de otra especie",
   "descartadas": [
-   "https://www.tusmascotas.cl/wp-content/uploads/2024/10/PALA-ARENERO-INCLUYE-ROLLO-BOLSA-DEARENA-29CM-F07.jpg"
+   "https://www.tusmascotas.cl/wp-content/uploads/2024/10/PALA-ARENERO-INCLUYE-ROLLO-BOLSA-DEARENA-29CM-F07.jpg",
+   "https://www.tusmascotas.cl/wp-content/uploads/2026/09/55005239.png"
   ],
-  "fecha": "2026-11-01",
-  "catalogosTiendas": true
+  "fecha": "2026-11-01"
  },
  "ACC-MOND-302": {
   "grupo": "C",
@@ -12652,8 +12422,9 @@
   "motivo": "sin coincidencia segura por código ni por nombre",
   "fecha": "2026-11-01",
   "referencialTiendas": true,
-  "motivoReferencial": "sin foto de referencia adecuada (se buscó \"arenero alto\" en 6 tiendas)",
-  "catalogosTiendas": true
+  "motivoReferencial": "sin foto de referencia adecuada en los catálogos de las 9 tiendas",
+  "catalogosTiendas": true,
+  "referencialCatalogos": true
  },
  "ACC-MOND-235": {
   "grupo": "B",
@@ -12807,8 +12578,9 @@
   "motivo": "sin coincidencia segura por código ni por nombre",
   "fecha": "2026-11-01",
   "referencialTiendas": true,
-  "motivoReferencial": "sin foto de referencia adecuada (se buscó \"arenero plastico\" en 6 tiendas)",
-  "catalogosTiendas": true
+  "motivoReferencial": "sin foto de referencia adecuada en los catálogos de las 9 tiendas",
+  "catalogosTiendas": true,
+  "referencialCatalogos": true
  },
  "ACC-BUEN-021": {
   "grupo": "B",
@@ -12829,17 +12601,24 @@
   "fecha": "2026-10-31"
  },
  "ACC-LEON-039": {
-  "grupo": "C",
-  "motivo": "foto referencial descartada en la revisión: no es del mismo tipo de producto, está en blanco o tiene marca de agua",
+  "grupo": "B",
+  "metodo": "tipo de producto (catálogo de marbenpets.cl)",
+  "titulo": "Arnés para Perros Variedad Diseño Monstruos - Wonder Pet",
+  "pagina": "https://marbenpets.cl/shop/arnes-para-perros-variedad-diseno-monstruos-wonder-pet/",
+  "origen": "https://marbenpets.cl/wp-content/uploads/2026/09/FOTOS-WEB-2-52-scaled.jpg",
+  "archivo": "assets/productos/ACC-LEON-039.webp",
   "descartadas": [
    "https://www.tusmascotas.cl/wp-content/uploads/2026/06/19067810.png"
   ],
-  "fecha": "2026-11-01",
-  "catalogosTiendas": true
+  "fecha": "2026-11-01"
  },
  "ACC-LEON-040": {
-  "grupo": "C",
-  "tiendas": true,
+  "grupo": "B",
+  "metodo": "tipo de producto (catálogo de tusmascotas.cl)",
+  "titulo": "Arnes Para Gato Con Brillos Naranja",
+  "pagina": "https://www.tusmascotas.cl/product/arnes-para-gato-con-brillos-naranja/",
+  "origen": "https://www.tusmascotas.cl/wp-content/uploads/2021/05/ARNES.png",
+  "archivo": "assets/productos/ACC-LEON-040.webp",
   "intentos": [
    "tusmascotas.cl: arnes gato (2)",
    "distribuidoralira.cl: arnes gato (0)",
@@ -12848,24 +12627,24 @@
    "mascoteriagonzalito.cl: arnes gato (0)",
    "petcity.cl: arnes gato (1)"
   ],
-  "motivo": "sin coincidencia segura por código ni por nombre",
-  "fecha": "2026-11-01",
-  "referencialTiendas": true,
-  "motivoReferencial": "sin foto de referencia adecuada (se buscó \"arnes gato gato\" en 6 tiendas)",
-  "catalogosTiendas": true
+  "fecha": "2026-11-01"
  },
  "ACC-LEON-027": {
   "grupo": "C",
-  "motivo": "foto referencial descartada en la revisión: muestra la marca de otro, un empaque de otra marca o un personaje con licencia",
+  "motivo": "foto referencial descartada en la revisión: muestra la marca de otro, un empaque de otra marca o una marca de agua de otra tienda",
   "descartadas": [
-   "https://www.tusmascotas.cl/wp-content/uploads/2026/10/ARNES-AERO-PINK-5.jpg"
+   "https://www.tusmascotas.cl/wp-content/uploads/2026/10/ARNES-AERO-PINK-5.jpg",
+   "https://www.tusmascotas.cl/wp-content/uploads/2021/04/arnes-multicolor-1.png"
   ],
-  "fecha": "2026-11-01",
-  "catalogosTiendas": true
+  "fecha": "2026-11-01"
  },
  "ACC-MOND-214": {
-  "grupo": "C",
-  "tiendas": true,
+  "grupo": "B",
+  "metodo": "tipo de producto (catálogo de tusmascotas.cl)",
+  "titulo": "Arnes para Auto Gato 20-50cm Rojo",
+  "pagina": "https://www.tusmascotas.cl/product/arnes-para-auto-gato-20-50cm-rojo/",
+  "origen": "https://www.tusmascotas.cl/wp-content/uploads/2020/10/Arnes-para-Auto-Gato-20-50cm-Rojo.jpg",
+  "archivo": "assets/productos/ACC-MOND-214.webp",
   "intentos": [
    "tusmascotas.cl: arnes gato (2)",
    "distribuidoralira.cl: arnes gato (0)",
@@ -12874,11 +12653,7 @@
    "mascoteriagonzalito.cl: arnes gato (0)",
    "petcity.cl: arnes gato (1)"
   ],
-  "motivo": "sin coincidencia segura por código ni por nombre",
-  "fecha": "2026-11-01",
-  "referencialTiendas": true,
-  "motivoReferencial": "sin foto de referencia adecuada (se buscó \"arnes gato gato\" en 6 tiendas)",
-  "catalogosTiendas": true
+  "fecha": "2026-11-01"
  },
  "ACC-BUEN-025": {
   "grupo": "C",
@@ -12906,46 +12681,29 @@
   "motivo": "sin coincidencia segura por código ni por nombre",
   "fecha": "2026-11-01",
   "referencialTiendas": true,
-  "motivoReferencial": "sin foto de referencia adecuada (se buscó \"arnes gato pata gato\" en 6 tiendas)",
-  "catalogosTiendas": true
+  "motivoReferencial": "sin foto de referencia adecuada en los catálogos de las 9 tiendas",
+  "catalogosTiendas": true,
+  "referencialCatalogos": true
  },
  "ACC-BUEN-023": {
   "grupo": "C",
-  "tiendas": true,
-  "intentos": [
-   "tusmascotas.cl: arnes perro buen amigo talla (0)",
-   "tusmascotas.cl: arnes perro buen (0)",
-   "tusmascotas.cl: arnes perro (1)",
-   "distribuidoralira.cl: arnes perro buen amigo talla (0)",
-   "distribuidoralira.cl: arnes perro buen (0)",
-   "distribuidoralira.cl: arnes perro (0)",
-   "petpalace.cl: arnes perro buen amigo talla (0)",
-   "petpalace.cl: arnes perro buen (0)",
-   "petpalace.cl: arnes perro (0)",
-   "petshopmg.cl: arnes perro buen amigo talla (0)",
-   "petshopmg.cl: arnes perro buen (0)",
-   "petshopmg.cl: arnes perro (0)",
-   "mascoteriagonzalito.cl: arnes perro buen amigo talla (0)",
-   "mascoteriagonzalito.cl: arnes perro buen (0)",
-   "mascoteriagonzalito.cl: arnes perro (1)",
-   "petcity.cl: arnes perro buen amigo talla (0)",
-   "petcity.cl: arnes perro buen (0)",
-   "petcity.cl: arnes perro (1)"
+  "motivo": "foto referencial descartada en la revisión: muestra la marca de otro, un empaque de otra marca o una marca de agua de otra tienda",
+  "descartadas": [
+   "https://www.distribuidoralira.cl/wp-content/uploads/2025/07/22P739-22P743-22P744.jpg"
   ],
-  "motivo": "sin coincidencia segura por código ni por nombre",
-  "fecha": "2026-11-01",
-  "referencialTiendas": true,
-  "motivoReferencial": "sin foto de referencia adecuada (se buscó \"arnes perro perro talla\" en 6 tiendas)",
-  "catalogosTiendas": true
+  "fecha": "2026-11-01"
  },
  "ACC-MOND-271": {
-  "grupo": "C",
-  "motivo": "foto referencial descartada en la revisión: muestra la marca de otro, un empaque de otra marca o un personaje con licencia",
+  "grupo": "B",
+  "metodo": "tipo de producto (catálogo de distribuidoralira.cl)",
+  "titulo": "Arnés Malla Transpirable Trailla XL Colores surtidos (HP111-XL)",
+  "pagina": "https://www.distribuidoralira.cl/product/arnes-malla-transpirable-trailla-xl-colores-surtidos-hp111-xl-2/",
+  "origen": "https://www.distribuidoralira.cl/wp-content/uploads/2025/06/22P508-22P509.webp",
+  "archivo": "assets/productos/ACC-MOND-271.webp",
   "descartadas": [
    "https://www.tusmascotas.cl/wp-content/uploads/2025/03/76484369469.png"
   ],
-  "fecha": "2026-11-01",
-  "catalogosTiendas": true
+  "fecha": "2026-11-01"
  },
  "ACC-MOND-278": {
   "grupo": "B",
@@ -12984,8 +12742,12 @@
   "fecha": "2026-10-31"
  },
  "ACC-MOND-277": {
-  "grupo": "C",
-  "tiendas": true,
+  "grupo": "B",
+  "metodo": "tipo de producto (catálogo de petcity.cl)",
+  "titulo": "Arnés Acolchado Perro Diseño Camuflado Talla L",
+  "pagina": "https://petcity.cl/tienda/arnes-acolchado-perro-diseno-camuflado-talla-l/",
+  "origen": "https://petcity.cl/wp-content/uploads/2023/11/Arnes-Acolchado-Perro-Diseno-Camuflado.jpg",
+  "archivo": "assets/productos/ACC-MOND-277.webp",
   "intentos": [
    "tusmascotas.cl: arnes perro talla mondo (0)",
    "tusmascotas.cl: arnes perro talla (0)",
@@ -13006,15 +12768,15 @@
    "petcity.cl: arnes perro talla (0)",
    "petcity.cl: arnes perro (1)"
   ],
-  "motivo": "sin coincidencia segura por código ni por nombre",
-  "fecha": "2026-11-01",
-  "referencialTiendas": true,
-  "motivoReferencial": "sin foto de referencia adecuada (se buscó \"arnes perro perro talla\" en 6 tiendas)",
-  "catalogosTiendas": true
+  "fecha": "2026-11-01"
  },
  "ACC-MOND-229": {
-  "grupo": "C",
-  "tiendas": true,
+  "grupo": "B",
+  "metodo": "tipo de producto (catálogo de tusmascotas.cl)",
+  "titulo": "Bozal Braquicefalos para Perro 9-13KG M Gris",
+  "pagina": "https://www.tusmascotas.cl/product/bozal-braquicefalos-para-perro-9-13kg-m-gris/",
+  "origen": "https://www.tusmascotas.cl/wp-content/uploads/2024/12/Bozal-Braquicefalos-para-Perro-9-13KG-M-Gris.png",
+  "archivo": "assets/productos/ACC-MOND-229.webp",
   "intentos": [
    "tusmascotas.cl: bozal perro mondo (0)",
    "tusmascotas.cl: bozal perro (0)",
@@ -13029,15 +12791,15 @@
    "petcity.cl: bozal perro mondo (0)",
    "petcity.cl: bozal perro (6)"
   ],
-  "motivo": "sin coincidencia segura por código ni por nombre",
-  "fecha": "2026-11-01",
-  "referencialTiendas": true,
-  "motivoReferencial": "sin foto de referencia adecuada (se buscó \"bozal perro perro\" en 6 tiendas)",
-  "catalogosTiendas": true
+  "fecha": "2026-11-01"
  },
  "ACC-MOND-230": {
-  "grupo": "C",
-  "tiendas": true,
+  "grupo": "B",
+  "metodo": "tipo de producto (catálogo de tusmascotas.cl)",
+  "titulo": "Bozal Braquicefalos Para Perro 22 - 35 kg - XL Gris",
+  "pagina": "https://www.tusmascotas.cl/product/bozal-braquicefalos-para-perro-22-35-kg-xl-gris/",
+  "origen": "https://www.tusmascotas.cl/wp-content/uploads/2024/09/coso.jpeg",
+  "archivo": "assets/productos/ACC-MOND-230.webp",
   "intentos": [
    "tusmascotas.cl: bozal perro mondo (0)",
    "tusmascotas.cl: bozal perro (0)",
@@ -13052,15 +12814,15 @@
    "petcity.cl: bozal perro mondo (0)",
    "petcity.cl: bozal perro (6)"
   ],
-  "motivo": "sin coincidencia segura por código ni por nombre",
-  "fecha": "2026-11-01",
-  "referencialTiendas": true,
-  "motivoReferencial": "sin foto de referencia adecuada (se buscó \"bozal perro perro\" en 6 tiendas)",
-  "catalogosTiendas": true
+  "fecha": "2026-11-01"
  },
  "ACC-MOND-272": {
-  "grupo": "C",
-  "tiendas": true,
+  "grupo": "B",
+  "metodo": "tipo de producto (catálogo de tusmascotas.cl)",
+  "titulo": "Bozal Braquicefalos Para Perro 22 - 35 kg - XL",
+  "pagina": "https://www.tusmascotas.cl/product/bozal-braquicefalos-para-perro-22-35-kg/",
+  "origen": "https://www.tusmascotas.cl/wp-content/uploads/2022/05/709081031742.png",
+  "archivo": "assets/productos/ACC-MOND-272.webp",
   "intentos": [
    "tusmascotas.cl: bozal perro mondo (0)",
    "tusmascotas.cl: bozal perro (0)",
@@ -13075,29 +12837,28 @@
    "petcity.cl: bozal perro mondo (0)",
    "petcity.cl: bozal perro (6)"
   ],
-  "motivo": "sin coincidencia segura por código ni por nombre",
-  "fecha": "2026-11-01",
-  "referencialTiendas": true,
-  "motivoReferencial": "sin foto de referencia adecuada (se buscó \"bozal perro perro\" en 6 tiendas)",
-  "catalogosTiendas": true
+  "fecha": "2026-11-01"
  },
  "ACC-MOND-220": {
   "grupo": "C",
-  "motivo": "foto referencial descartada en la revisión: no es del mismo tipo de producto, está en blanco o tiene marca de agua",
+  "motivo": "foto referencial descartada en la revisión: no es del mismo tipo de producto, está en blanco o es de otra especie",
   "descartadas": [
-   "https://www.tusmascotas.cl/wp-content/uploads/2026/09/757953605997.png"
+   "https://www.tusmascotas.cl/wp-content/uploads/2026/09/757953605997.png",
+   "https://www.tusmascotas.cl/wp-content/uploads/2026/08/00-37.jpg"
   ],
-  "fecha": "2026-11-01",
-  "catalogosTiendas": true
+  "fecha": "2026-11-01"
  },
  "ACC-MOND-221": {
-  "grupo": "C",
-  "motivo": "foto referencial descartada en la revisión: no es del mismo tipo de producto, está en blanco o tiene marca de agua",
+  "grupo": "B",
+  "metodo": "tipo de producto (catálogo de tusmascotas.cl)",
+  "titulo": "Cama Circular Perro Gris – L",
+  "pagina": "https://www.tusmascotas.cl/product/cama-circular-perro-gris-l/",
+  "origen": "https://www.tusmascotas.cl/wp-content/uploads/2026/07/793969580859.png",
+  "archivo": "assets/productos/ACC-MOND-221.webp",
   "descartadas": [
    "https://www.tusmascotas.cl/wp-content/uploads/2026/08/55004944.png"
   ],
-  "fecha": "2026-11-01",
-  "catalogosTiendas": true
+  "fecha": "2026-11-01"
  },
  "ACC-MOND-201": {
   "grupo": "B",
@@ -13149,12 +12910,12 @@
  },
  "ACC-PETE-007": {
   "grupo": "C",
-  "motivo": "foto referencial descartada en la revisión: muestra la marca de otro, un empaque de otra marca o un personaje con licencia",
+  "motivo": "foto referencial descartada en la revisión: muestra la marca de otro, un empaque de otra marca o una marca de agua de otra tienda",
   "descartadas": [
-   "https://www.tusmascotas.cl/wp-content/uploads/2026/05/036179003009.jpg"
+   "https://www.tusmascotas.cl/wp-content/uploads/2026/05/036179003009.jpg",
+   "https://www.tusmascotas.cl/wp-content/uploads/2020/10/Le-Salon-Cepillo-De-Cerdas-Small.jpg"
   ],
-  "fecha": "2026-11-01",
-  "catalogosTiendas": true
+  "fecha": "2026-11-01"
  },
  "ACC-MOND-228": {
   "grupo": "B",
@@ -13176,21 +12937,21 @@
  },
  "ACC-MOND-203": {
   "grupo": "C",
-  "motivo": "foto referencial descartada en la revisión: muestra la marca de otro, un empaque de otra marca o un personaje con licencia",
+  "motivo": "foto referencial descartada en la revisión: muestra la marca de otro, un empaque de otra marca o una marca de agua de otra tienda",
   "descartadas": [
-   "https://www.tusmascotas.cl/wp-content/uploads/2025/02/OUTLET-Cepillo-le-salon-sp3.jpg"
+   "https://www.tusmascotas.cl/wp-content/uploads/2025/02/OUTLET-Cepillo-le-salon-sp3.jpg",
+   "https://www.tusmascotas.cl/wp-content/uploads/2026/05/036179003009.jpg"
   ],
-  "fecha": "2026-11-01",
-  "catalogosTiendas": true
+  "fecha": "2026-11-01"
  },
  "ACC-MOND-255": {
   "grupo": "C",
-  "motivo": "foto referencial descartada en la revisión: muestra la marca de otro, un empaque de otra marca o un personaje con licencia",
+  "motivo": "foto referencial descartada en la revisión: no es del mismo tipo de producto, está en blanco o es de otra especie",
   "descartadas": [
-   "https://www.tusmascotas.cl/wp-content/uploads/2026/06/00-1.jpg"
+   "https://www.tusmascotas.cl/wp-content/uploads/2026/06/00-1.jpg",
+   "https://www.tusmascotas.cl/wp-content/uploads/2025/06/WhatsApp-Image-2025-06-17-at-15.32.06.jpeg"
   ],
-  "fecha": "2026-11-01",
-  "catalogosTiendas": true
+  "fecha": "2026-11-01"
  },
  "ACC-BUEN-022": {
   "grupo": "B",
@@ -13236,8 +12997,9 @@
   "motivo": "sin coincidencia segura por código ni por nombre",
   "fecha": "2026-11-01",
   "referencialTiendas": true,
-  "motivoReferencial": "sin foto de referencia adecuada (se buscó \"collar tirador\" en 6 tiendas)",
-  "catalogosTiendas": true
+  "motivoReferencial": "sin foto de referencia adecuada en los catálogos de las 9 tiendas",
+  "catalogosTiendas": true,
+  "referencialCatalogos": true
  },
  "ACC-MOND-240": {
   "grupo": "C",
@@ -13265,8 +13027,9 @@
   "motivo": "sin coincidencia segura por código ni por nombre",
   "fecha": "2026-11-01",
   "referencialTiendas": true,
-  "motivoReferencial": "sin foto de referencia adecuada (se buscó \"collar isabelino cms\" en 6 tiendas)",
-  "catalogosTiendas": true
+  "motivoReferencial": "sin foto de referencia adecuada en los catálogos de las 9 tiendas",
+  "catalogosTiendas": true,
+  "referencialCatalogos": true
  },
  "ACC-MOND-241": {
   "grupo": "C",
@@ -13294,8 +13057,9 @@
   "motivo": "sin coincidencia segura por código ni por nombre",
   "fecha": "2026-11-01",
   "referencialTiendas": true,
-  "motivoReferencial": "sin foto de referencia adecuada (se buscó \"collar isabelino cms\" en 6 tiendas)",
-  "catalogosTiendas": true
+  "motivoReferencial": "sin foto de referencia adecuada en los catálogos de las 9 tiendas",
+  "catalogosTiendas": true,
+  "referencialCatalogos": true
  },
  "ACC-MOND-284": {
   "grupo": "B",
@@ -13347,8 +13111,9 @@
   "motivo": "sin coincidencia segura por código ni por nombre",
   "fecha": "2026-11-01",
   "referencialTiendas": true,
-  "motivoReferencial": "sin foto de referencia adecuada (se buscó \"collar isabelino plastico\" en 6 tiendas)",
-  "catalogosTiendas": true
+  "motivoReferencial": "sin foto de referencia adecuada en los catálogos de las 9 tiendas",
+  "catalogosTiendas": true,
+  "referencialCatalogos": true
  },
  "ACC-MOND-238": {
   "grupo": "C",
@@ -13376,8 +13141,9 @@
   "motivo": "sin coincidencia segura por código ni por nombre",
   "fecha": "2026-11-01",
   "referencialTiendas": true,
-  "motivoReferencial": "sin foto de referencia adecuada (se buscó \"collar isabelino plastico\" en 6 tiendas)",
-  "catalogosTiendas": true
+  "motivoReferencial": "sin foto de referencia adecuada en los catálogos de las 9 tiendas",
+  "catalogosTiendas": true,
+  "referencialCatalogos": true
  },
  "ACC-MOND-237": {
   "grupo": "C",
@@ -13405,8 +13171,9 @@
   "motivo": "sin coincidencia segura por código ni por nombre",
   "fecha": "2026-11-01",
   "referencialTiendas": true,
-  "motivoReferencial": "sin foto de referencia adecuada (se buscó \"collar isabelino plastico\" en 6 tiendas)",
-  "catalogosTiendas": true
+  "motivoReferencial": "sin foto de referencia adecuada en los catálogos de las 9 tiendas",
+  "catalogosTiendas": true,
+  "referencialCatalogos": true
  },
  "ACC-MOND-329": {
   "grupo": "B",
@@ -13470,8 +13237,9 @@
   "motivo": "sin coincidencia segura por código ni por nombre",
   "fecha": "2026-11-01",
   "referencialTiendas": true,
-  "motivoReferencial": "sin foto de referencia adecuada (se buscó \"collar isabelino plastico\" en 6 tiendas)",
-  "catalogosTiendas": true
+  "motivoReferencial": "sin foto de referencia adecuada en los catálogos de las 9 tiendas",
+  "catalogosTiendas": true,
+  "referencialCatalogos": true
  },
  "ACC-MOND-289": {
   "grupo": "B",
@@ -13546,152 +13314,204 @@
   "fecha": "2026-10-31"
  },
  "ACC-MOND-210": {
-  "grupo": "C",
-  "motivo": "foto referencial descartada en la revisión: no es del mismo tipo de producto, está en blanco o tiene marca de agua",
+  "grupo": "B",
+  "metodo": "tipo de producto (catálogo de tusmascotas.cl)",
+  "titulo": "Lords OF Zee.Town Manifesto Collar Medium",
+  "pagina": "https://www.tusmascotas.cl/product/lords-of-zee-town-manifesto-collar-medium/",
+  "origen": "https://www.tusmascotas.cl/wp-content/uploads/2024/12/LORDS-OF-ZEETOWN-MANIFESTO-COLLAR-MEDIUM.jpg",
+  "archivo": "assets/productos/ACC-MOND-210.webp",
   "descartadas": [
    "https://www.distribuidoralira.cl/wp-content/uploads/2025/10/22P961-22P962-22P963.png"
   ],
-  "fecha": "2026-11-01",
-  "catalogosTiendas": true
+  "fecha": "2026-11-01"
  },
  "ACC-MOND-250": {
-  "grupo": "C",
-  "motivo": "foto referencial descartada en la revisión: no es del mismo tipo de producto, está en blanco o tiene marca de agua",
+  "grupo": "B",
+  "metodo": "tipo de producto (catálogo de tusmascotas.cl)",
+  "titulo": "ZeeDog Lords Of Zee.town Manifesto Collar – S",
+  "pagina": "https://www.tusmascotas.cl/product/zeedog-lords-of-zee-town-manifesto-collar-s/",
+  "origen": "https://www.tusmascotas.cl/wp-content/uploads/2024/12/7908471124580-1.png",
+  "archivo": "assets/productos/ACC-MOND-250.webp",
   "descartadas": [
    "https://www.distribuidoralira.cl/wp-content/uploads/2025/09/22P919.png"
   ],
-  "fecha": "2026-11-01",
-  "catalogosTiendas": true
+  "fecha": "2026-11-01"
  },
  "ACC-MOND-262": {
-  "grupo": "C",
-  "motivo": "foto referencial descartada en la revisión: no es del mismo tipo de producto, está en blanco o tiene marca de agua",
+  "grupo": "B",
+  "metodo": "tipo de producto (catálogo de tusmascotas.cl)",
+  "titulo": "ZeeDog Lords Of Zee.town Manifesto Collar - XS",
+  "pagina": "https://www.tusmascotas.cl/product/zeedog-lords-of-zee-town-manifesto-collar-xs/",
+  "origen": "https://www.tusmascotas.cl/wp-content/uploads/2024/12/7908471124580.png",
+  "archivo": "assets/productos/ACC-MOND-262.webp",
   "descartadas": [
    "https://www.distribuidoralira.cl/wp-content/uploads/2025/09/22P878-22P879-22P880.jpg"
   ],
-  "fecha": "2026-11-01",
-  "catalogosTiendas": true
+  "fecha": "2026-11-01"
  },
  "ACC-MOND-209": {
-  "grupo": "C",
-  "motivo": "foto referencial descartada en la revisión: muestra la marca de otro, un empaque de otra marca o un personaje con licencia",
+  "grupo": "B",
+  "metodo": "tipo de producto (catálogo de tusmascotas.cl)",
+  "titulo": "ZeeCat Lords Of Zee.town Melted Cat Collar",
+  "pagina": "https://www.tusmascotas.cl/product/zeecat-lords-of-zee-town-melted-cat-collar/",
+  "origen": "https://www.tusmascotas.cl/wp-content/uploads/2024/12/7908471125280.png",
+  "archivo": "assets/productos/ACC-MOND-209.webp",
   "descartadas": [
    "https://www.distribuidoralira.cl/wp-content/uploads/2025/07/22P752.png"
   ],
-  "fecha": "2026-11-01",
-  "catalogosTiendas": true
+  "fecha": "2026-11-01"
  },
  "ACC-MOND-211": {
-  "grupo": "C",
-  "motivo": "foto referencial descartada en la revisión: muestra la marca de otro, un empaque de otra marca o un personaje con licencia",
+  "grupo": "B",
+  "metodo": "tipo de producto (catálogo de tusmascotas.cl)",
+  "titulo": "ZeeCat Lords of Zee.town Manifesto Cat Collar",
+  "pagina": "https://www.tusmascotas.cl/product/zeecat-lords-of-zee-town-manifesto-cat-collar/",
+  "origen": "https://www.tusmascotas.cl/wp-content/uploads/2024/12/7908471125303.png",
+  "archivo": "assets/productos/ACC-MOND-211.webp",
   "descartadas": [
    "https://www.distribuidoralira.cl/wp-content/uploads/2025/07/22P751.png"
   ],
-  "fecha": "2026-11-01",
-  "catalogosTiendas": true
+  "fecha": "2026-11-01"
  },
  "ACC-MOND-246": {
-  "grupo": "C",
-  "motivo": "foto referencial descartada en la revisión: muestra la marca de otro, un empaque de otra marca o un personaje con licencia",
+  "grupo": "B",
+  "metodo": "tipo de producto (catálogo de tusmascotas.cl)",
+  "titulo": "ZeeCat Nox Sidus Cat Collar",
+  "pagina": "https://www.tusmascotas.cl/product/zeecat-nox-sidus-cat-collar/",
+  "origen": "https://www.tusmascotas.cl/wp-content/uploads/2024/12/7908471122456.png",
+  "archivo": "assets/productos/ACC-MOND-246.webp",
   "descartadas": [
    "https://www.distribuidoralira.cl/wp-content/uploads/2025/07/22P749.jpg"
   ],
-  "fecha": "2026-11-01",
-  "catalogosTiendas": true
+  "fecha": "2026-11-01"
  },
  "ACC-MOND-247": {
-  "grupo": "C",
-  "motivo": "foto referencial descartada en la revisión: no es del mismo tipo de producto, está en blanco o tiene marca de agua",
+  "grupo": "B",
+  "metodo": "tipo de producto (catálogo de tusmascotas.cl)",
+  "titulo": "ZeeCat Nox Cat Collar",
+  "pagina": "https://www.tusmascotas.cl/product/zeecat-nox-cat-collar/",
+  "origen": "https://www.tusmascotas.cl/wp-content/uploads/2024/12/7908471122432.png",
+  "archivo": "assets/productos/ACC-MOND-247.webp",
   "descartadas": [
    "https://petshopmg.cl/wp-content/uploads/2024/04/PA64COLLARISABELINO4_1024x1024.webp"
   ],
-  "fecha": "2026-11-01",
-  "catalogosTiendas": true
+  "fecha": "2026-11-01"
  },
  "ACC-MOND-251": {
-  "grupo": "C",
-  "motivo": "foto referencial descartada en la revisión: muestra la marca de otro, un empaque de otra marca o un personaje con licencia",
+  "grupo": "B",
+  "metodo": "tipo de producto (catálogo de tusmascotas.cl)",
+  "titulo": "ZeeDog Nox Lumen Collar - XS",
+  "pagina": "https://www.tusmascotas.cl/product/zeedog-nox-lumen-collar-xs/",
+  "origen": "https://www.tusmascotas.cl/wp-content/uploads/2024/12/7908471122050-3.png",
+  "archivo": "assets/productos/ACC-MOND-251.webp",
   "descartadas": [
    "https://petshopmg.cl/wp-content/uploads/2020/05/calmingcollargato-1.jpg"
   ],
-  "fecha": "2026-11-01",
-  "catalogosTiendas": true
+  "fecha": "2026-11-01"
  },
  "ACC-MOND-248": {
-  "grupo": "C",
-  "motivo": "foto referencial descartada en la revisión: muestra la marca de otro, un empaque de otra marca o un personaje con licencia",
+  "grupo": "B",
+  "metodo": "tipo de producto (catálogo de tusmascotas.cl)",
+  "titulo": "ZeeDog Nox Sidus Collar - XS",
+  "pagina": "https://www.tusmascotas.cl/product/zeedog-nox-sidus-collar-xs/",
+  "origen": "https://www.tusmascotas.cl/wp-content/uploads/2024/12/7908471122098-3.png",
+  "archivo": "assets/productos/ACC-MOND-248.webp",
   "descartadas": [
    "https://petpalace.cl/wp-content/uploads/2025/08/1000601020.jpg"
   ],
-  "fecha": "2026-11-01",
-  "catalogosTiendas": true
+  "fecha": "2026-11-01"
  },
  "ACC-MOND-252": {
-  "grupo": "C",
-  "motivo": "foto referencial descartada en la revisión: muestra la marca de otro, un empaque de otra marca o un personaje con licencia",
+  "grupo": "B",
+  "metodo": "tipo de producto (catálogo de tusmascotas.cl)",
+  "titulo": "ZeeDog Nox Collar - XS",
+  "pagina": "https://www.tusmascotas.cl/product/zeedog-nox-collar-xs/",
+  "origen": "https://www.tusmascotas.cl/wp-content/uploads/2024/12/7908471122012-3.png",
+  "archivo": "assets/productos/ACC-MOND-252.webp",
   "descartadas": [
    "https://petshopmg.cl/wp-content/uploads/2020/05/calmingcollarperro-1.jpg"
   ],
-  "fecha": "2026-11-01",
-  "catalogosTiendas": true
+  "fecha": "2026-11-01"
  },
  "ACC-MOND-254": {
-  "grupo": "C",
-  "motivo": "foto referencial descartada en la revisión: muestra la marca de otro, un empaque de otra marca o un personaje con licencia",
+  "grupo": "B",
+  "metodo": "tipo de producto (catálogo de tusmascotas.cl)",
+  "titulo": "ZeeDog Nox Lumen Collar - S",
+  "pagina": "https://www.tusmascotas.cl/product/zeedog-nox-lumen-collar-s/",
+  "origen": "https://www.tusmascotas.cl/wp-content/uploads/2024/12/7908471122050-2.png",
+  "archivo": "assets/productos/ACC-MOND-254.webp",
   "descartadas": [
    "https://www.mascoteriagonzalito.cl/wp-content/uploads/2026/05/collar-reflectante-800x1067-1.jpeg"
   ],
-  "fecha": "2026-11-01",
-  "catalogosTiendas": true
+  "fecha": "2026-11-01"
  },
  "ACC-MOND-259": {
-  "grupo": "C",
-  "motivo": "foto referencial descartada en la revisión: muestra la marca de otro, un empaque de otra marca o un personaje con licencia",
+  "grupo": "B",
+  "metodo": "tipo de producto (catálogo de tusmascotas.cl)",
+  "titulo": "ZeeDog Nox Lumen Collar - M",
+  "pagina": "https://www.tusmascotas.cl/product/zeedog-nox-lumen-collar-m/",
+  "origen": "https://www.tusmascotas.cl/wp-content/uploads/2024/12/7908471122050-1.png",
+  "archivo": "assets/productos/ACC-MOND-259.webp",
   "descartadas": [
    "https://www.mascoteriagonzalito.cl/wp-content/uploads/2026/02/wonder-cat-collar-para-gatos.png"
   ],
-  "fecha": "2026-11-01",
-  "catalogosTiendas": true
+  "fecha": "2026-11-01"
  },
  "ACC-MOND-257": {
-  "grupo": "C",
-  "motivo": "foto referencial descartada en la revisión: no es del mismo tipo de producto, está en blanco o tiene marca de agua",
+  "grupo": "B",
+  "metodo": "tipo de producto (catálogo de tusmascotas.cl)",
+  "titulo": "ZeeDog Nox Collar - S",
+  "pagina": "https://www.tusmascotas.cl/product/zeedog-nox-collar-s/",
+  "origen": "https://www.tusmascotas.cl/wp-content/uploads/2024/12/7908471122012-2.png",
+  "archivo": "assets/productos/ACC-MOND-257.webp",
   "descartadas": [
    "https://www.mascoteriagonzalito.cl/wp-content/uploads/2026/02/Photoroom-20250309_174936_1280x.webp"
   ],
-  "fecha": "2026-11-01",
-  "catalogosTiendas": true
+  "fecha": "2026-11-01"
  },
  "ACC-MOND-258": {
-  "grupo": "C",
-  "motivo": "foto referencial descartada en la revisión: no es del mismo tipo de producto, está en blanco o tiene marca de agua",
+  "grupo": "B",
+  "metodo": "tipo de producto (catálogo de tusmascotas.cl)",
+  "titulo": "ZeeDog Nox Sidus Collar - M",
+  "pagina": "https://www.tusmascotas.cl/product/zeedog-nox-sidus-collar-m/",
+  "origen": "https://www.tusmascotas.cl/wp-content/uploads/2024/12/7908471122098-1.png",
+  "archivo": "assets/productos/ACC-MOND-258.webp",
   "descartadas": [
    "https://www.mascoteriagonzalito.cl/wp-content/uploads/2026/02/1758731548912-MKTF4R47MN-1-4.webp"
   ],
-  "fecha": "2026-11-01",
-  "catalogosTiendas": true
+  "fecha": "2026-11-01"
  },
  "ACC-MOND-263": {
-  "grupo": "C",
-  "motivo": "foto referencial descartada en la revisión: muestra la marca de otro, un empaque de otra marca o un personaje con licencia",
+  "grupo": "B",
+  "metodo": "tipo de producto (catálogo de tusmascotas.cl)",
+  "titulo": "ZeeDog Nox Lumen Collar - L",
+  "pagina": "https://www.tusmascotas.cl/product/zeedog-nox-lumen-collar-l/",
+  "origen": "https://www.tusmascotas.cl/wp-content/uploads/2024/12/7908471122050.png",
+  "archivo": "assets/productos/ACC-MOND-263.webp",
   "descartadas": [
    "https://www.mascoteriagonzalito.cl/wp-content/uploads/2025/11/SERESTO-ELANCO-MAYOR-DE-8KILOS-1.jpg"
   ],
-  "fecha": "2026-11-01",
-  "catalogosTiendas": true
+  "fecha": "2026-11-01"
  },
  "ACC-MOND-260": {
-  "grupo": "C",
-  "motivo": "foto referencial descartada en la revisión: no es del mismo tipo de producto, está en blanco o tiene marca de agua",
+  "grupo": "B",
+  "metodo": "tipo de producto (catálogo de tusmascotas.cl)",
+  "titulo": "ZeeDog Nox Collar – M",
+  "pagina": "https://www.tusmascotas.cl/product/zeedog-nox-collar-m/",
+  "origen": "https://www.tusmascotas.cl/wp-content/uploads/2024/12/7908471122012-1.png",
+  "archivo": "assets/productos/ACC-MOND-260.webp",
   "descartadas": [
    "https://www.mascoteriagonzalito.cl/wp-content/uploads/2026/02/Photoroom-20250309_175044_1280x.webp"
   ],
-  "fecha": "2026-11-01",
-  "catalogosTiendas": true
+  "fecha": "2026-11-01"
  },
  "ACC-MOND-331": {
-  "grupo": "C",
-  "tiendas": true,
+  "grupo": "B",
+  "metodo": "tipo de producto (catálogo de tusmascotas.cl)",
+  "titulo": "Collar Acolchonado Reflectante Celeste para Gato",
+  "pagina": "https://www.tusmascotas.cl/product/collar-acolchonado-reflectante-celeste-para-gato/",
+  "origen": "https://www.tusmascotas.cl/wp-content/uploads/2021/03/collar-acolchado.png",
+  "archivo": "assets/productos/ACC-MOND-331.webp",
   "intentos": [
    "tusmascotas.cl: collar gato mondo (0)",
    "tusmascotas.cl: collar gato (0)",
@@ -13706,15 +13526,15 @@
    "petcity.cl: collar gato mondo (0)",
    "petcity.cl: collar gato (8)"
   ],
-  "motivo": "sin coincidencia segura por código ni por nombre",
-  "fecha": "2026-11-01",
-  "referencialTiendas": true,
-  "motivoReferencial": "sin foto de referencia adecuada (se buscó \"collar gato gato\" en 6 tiendas)",
-  "catalogosTiendas": true
+  "fecha": "2026-11-01"
  },
  "ACC-BUEN-019": {
-  "grupo": "C",
-  "tiendas": true,
+  "grupo": "B",
+  "metodo": "tipo de producto (catálogo de tusmascotas.cl)",
+  "titulo": "Collar Acolchonado Reflectante Fucsia para Gato",
+  "pagina": "https://www.tusmascotas.cl/product/collar-acolchonado-reflectante-fucsia-para-gato/",
+  "origen": "https://www.tusmascotas.cl/wp-content/uploads/2021/03/collar-acolchado-fucsia.png",
+  "archivo": "assets/productos/ACC-BUEN-019.webp",
   "intentos": [
    "tusmascotas.cl: collar gato buen amigo (0)",
    "tusmascotas.cl: collar gato buen (0)",
@@ -13735,11 +13555,7 @@
    "petcity.cl: collar gato buen (0)",
    "petcity.cl: collar gato (8)"
   ],
-  "motivo": "sin coincidencia segura por código ni por nombre",
-  "fecha": "2026-11-01",
-  "referencialTiendas": true,
-  "motivoReferencial": "sin foto de referencia adecuada (se buscó \"collar gato gato\" en 6 tiendas)",
-  "catalogosTiendas": true
+  "fecha": "2026-11-01"
  },
  "ACC-MYGO-001": {
   "grupo": "C",
@@ -13767,12 +13583,17 @@
   "motivo": "sin coincidencia segura por código ni por nombre",
   "fecha": "2026-11-01",
   "referencialTiendas": true,
-  "motivoReferencial": "sin foto de referencia adecuada (se buscó \"collar good friend\" en 6 tiendas)",
-  "catalogosTiendas": true
+  "motivoReferencial": "sin foto de referencia adecuada en los catálogos de las 9 tiendas",
+  "catalogosTiendas": true,
+  "referencialCatalogos": true
  },
  "ACC-MOND-332": {
-  "grupo": "C",
-  "tiendas": true,
+  "grupo": "B",
+  "metodo": "tipo de producto (catálogo de tusmascotas.cl)",
+  "titulo": "Collar Reflectante Fucsia para Gato",
+  "pagina": "https://www.tusmascotas.cl/product/collar-reflectante-fucsia-para-gato/",
+  "origen": "https://www.tusmascotas.cl/wp-content/uploads/2021/03/https___s3-us-west-2.amazonaws.com_im-prod-product-versions-images_963264-mlc31709012216_082019-o-318722c3-fdd9-47d6-b18b-93740a7f7b0b.jpeg",
+  "archivo": "assets/productos/ACC-MOND-332.webp",
   "intentos": [
    "tusmascotas.cl: collar gato mondo (0)",
    "tusmascotas.cl: collar gato (0)",
@@ -13787,15 +13608,15 @@
    "petcity.cl: collar gato mondo (0)",
    "petcity.cl: collar gato (8)"
   ],
-  "motivo": "sin coincidencia segura por código ni por nombre",
-  "fecha": "2026-11-01",
-  "referencialTiendas": true,
-  "motivoReferencial": "sin foto de referencia adecuada (se buscó \"collar gato gato\" en 6 tiendas)",
-  "catalogosTiendas": true
+  "fecha": "2026-11-01"
  },
  "ACC-MOND-256": {
-  "grupo": "C",
-  "tiendas": true,
+  "grupo": "B",
+  "metodo": "tipo de producto (catálogo de tusmascotas.cl)",
+  "titulo": "Collar Reflectante Rojo para Gato",
+  "pagina": "https://www.tusmascotas.cl/product/collar-reflectante-rojo-para-gato/",
+  "origen": "https://www.tusmascotas.cl/wp-content/uploads/2021/03/7390337_1.jpg",
+  "archivo": "assets/productos/ACC-MOND-256.webp",
   "intentos": [
    "tusmascotas.cl: collar gato mondo (0)",
    "tusmascotas.cl: collar gato (0)",
@@ -13810,15 +13631,15 @@
    "petcity.cl: collar gato mondo (0)",
    "petcity.cl: collar gato (8)"
   ],
-  "motivo": "sin coincidencia segura por código ni por nombre",
-  "fecha": "2026-11-01",
-  "referencialTiendas": true,
-  "motivoReferencial": "sin foto de referencia adecuada (se buscó \"collar gato gato\" en 6 tiendas)",
-  "catalogosTiendas": true
+  "fecha": "2026-11-01"
  },
  "ACC-MOND-261": {
-  "grupo": "C",
-  "tiendas": true,
+  "grupo": "B",
+  "metodo": "tipo de producto (catálogo de tusmascotas.cl)",
+  "titulo": "Collar Floreado Doble Seguridad Celeste para Gato",
+  "pagina": "https://www.tusmascotas.cl/product/collar-floreado-doble-seguridad-celeste-para-gato/",
+  "origen": "https://www.tusmascotas.cl/wp-content/uploads/2021/03/collar-gato-doble-seguridad6246.jpg",
+  "archivo": "assets/productos/ACC-MOND-261.webp",
   "intentos": [
    "tusmascotas.cl: collar gato mondo (0)",
    "tusmascotas.cl: collar gato (0)",
@@ -13833,15 +13654,15 @@
    "petcity.cl: collar gato mondo (0)",
    "petcity.cl: collar gato (8)"
   ],
-  "motivo": "sin coincidencia segura por código ni por nombre",
-  "fecha": "2026-11-01",
-  "referencialTiendas": true,
-  "motivoReferencial": "sin foto de referencia adecuada (se buscó \"collar gato gato\" en 6 tiendas)",
-  "catalogosTiendas": true
+  "fecha": "2026-11-01"
  },
  "ACC-MOND-291": {
-  "grupo": "C",
-  "tiendas": true,
+  "grupo": "B",
+  "metodo": "tipo de producto (catálogo de tusmascotas.cl)",
+  "titulo": "Collar Doble Seguridad Floreado Rojo para Gato",
+  "pagina": "https://www.tusmascotas.cl/product/collar-doble-seguridad-floreado-para-gato/",
+  "origen": "https://www.tusmascotas.cl/wp-content/uploads/2021/03/coll50001_rojo6241.jpg",
+  "archivo": "assets/productos/ACC-MOND-291.webp",
   "intentos": [
    "tusmascotas.cl: collar gato mundo (0)",
    "tusmascotas.cl: collar gato (0)",
@@ -13856,11 +13677,7 @@
    "petcity.cl: collar gato mundo (0)",
    "petcity.cl: collar gato (8)"
   ],
-  "motivo": "sin coincidencia segura por código ni por nombre",
-  "fecha": "2026-11-01",
-  "referencialTiendas": true,
-  "motivoReferencial": "sin foto de referencia adecuada (se buscó \"collar gato gato\" en 6 tiendas)",
-  "catalogosTiendas": true
+  "fecha": "2026-11-01"
  },
  "ACC-MARB-049": {
   "grupo": "B",
@@ -13875,61 +13692,19 @@
  },
  "ACC-MARB-048": {
   "grupo": "C",
-  "tiendas": true,
-  "intentos": [
-   "tusmascotas.cl: collar gato wonder cat (0)",
-   "tusmascotas.cl: collar gato wonder (0)",
-   "tusmascotas.cl: collar gato (0)",
-   "distribuidoralira.cl: collar gato wonder cat (0)",
-   "distribuidoralira.cl: collar gato wonder (0)",
-   "distribuidoralira.cl: collar gato (2)",
-   "petpalace.cl: collar gato wonder cat (0)",
-   "petpalace.cl: collar gato wonder (0)",
-   "petpalace.cl: collar gato (0)",
-   "petshopmg.cl: collar gato wonder cat (0)",
-   "petshopmg.cl: collar gato wonder (0)",
-   "petshopmg.cl: collar gato (1)",
-   "mascoteriagonzalito.cl: collar gato wonder cat (0)",
-   "mascoteriagonzalito.cl: collar gato wonder (0)",
-   "mascoteriagonzalito.cl: collar gato (3)",
-   "petcity.cl: collar gato wonder cat (0)",
-   "petcity.cl: collar gato wonder (0)",
-   "petcity.cl: collar gato (8)"
+  "motivo": "foto referencial descartada en la revisión: muestra la marca de otro, un empaque de otra marca o una marca de agua de otra tienda",
+  "descartadas": [
+   "https://petpalace.cl/wp-content/uploads/2026/03/299767.jpg"
   ],
-  "motivo": "sin coincidencia segura por código ni por nombre",
-  "fecha": "2026-11-01",
-  "referencialTiendas": true,
-  "motivoReferencial": "sin foto de referencia adecuada (se buscó \"collar gato gato\" en 6 tiendas)",
-  "catalogosTiendas": true
+  "fecha": "2026-11-01"
  },
  "ACC-BUEN-024": {
   "grupo": "C",
-  "tiendas": true,
-  "intentos": [
-   "tusmascotas.cl: collar gatos buen amigo (0)",
-   "tusmascotas.cl: collar gatos buen (0)",
-   "tusmascotas.cl: collar gatos (0)",
-   "distribuidoralira.cl: collar gatos buen amigo (0)",
-   "distribuidoralira.cl: collar gatos buen (0)",
-   "distribuidoralira.cl: collar gatos (0)",
-   "petpalace.cl: collar gatos buen amigo (0)",
-   "petpalace.cl: collar gatos buen (0)",
-   "petpalace.cl: collar gatos (0)",
-   "petshopmg.cl: collar gatos buen amigo (0)",
-   "petshopmg.cl: collar gatos buen (0)",
-   "petshopmg.cl: collar gatos (0)",
-   "mascoteriagonzalito.cl: collar gatos buen amigo (0)",
-   "mascoteriagonzalito.cl: collar gatos buen (0)",
-   "mascoteriagonzalito.cl: collar gatos (0)",
-   "petcity.cl: collar gatos buen amigo (0)",
-   "petcity.cl: collar gatos buen (0)",
-   "petcity.cl: collar gatos (0)"
+  "motivo": "foto referencial descartada en la revisión: muestra la marca de otro, un empaque de otra marca o una marca de agua de otra tienda",
+  "descartadas": [
+   "https://www.distribuidoralira.cl/wp-content/uploads/2025/09/22P919.png"
   ],
-  "motivo": "sin coincidencia segura por código ni por nombre",
-  "fecha": "2026-11-01",
-  "referencialTiendas": true,
-  "motivoReferencial": "sin foto de referencia adecuada (se buscó \"collar gato gatos\" en 6 tiendas)",
-  "catalogosTiendas": true
+  "fecha": "2026-11-01"
  },
  "ACC-MARB-020": {
   "grupo": "A",
@@ -13961,127 +13736,57 @@
   "motivo": "sin coincidencia segura por código ni por nombre",
   "fecha": "2026-11-01",
   "referencialTiendas": true,
-  "motivoReferencial": "sin foto de referencia adecuada (se buscó \"collar perro perro oushang\" en 6 tiendas)",
-  "catalogosTiendas": true
+  "motivoReferencial": "sin foto de referencia adecuada en los catálogos de las 9 tiendas",
+  "catalogosTiendas": true,
+  "referencialCatalogos": true
  },
  "ACC-MOND-216": {
   "grupo": "C",
-  "tiendas": true,
-  "intentos": [
-   "tusmascotas.cl: collar perro mondo (0)",
-   "tusmascotas.cl: collar perro (2)",
-   "distribuidoralira.cl: collar perro mondo (0)",
-   "distribuidoralira.cl: collar perro (0)",
-   "petpalace.cl: collar perro mondo (0)",
-   "petpalace.cl: collar perro (0)",
-   "petshopmg.cl: collar perro mondo (0)",
-   "petshopmg.cl: collar perro (1)",
-   "mascoteriagonzalito.cl: collar perro mondo (0)",
-   "mascoteriagonzalito.cl: collar perro (1)",
-   "petcity.cl: collar perro mondo (0)",
-   "petcity.cl: collar perro (3)"
+  "motivo": "foto referencial descartada en la revisión: muestra la marca de otro, un empaque de otra marca o una marca de agua de otra tienda",
+  "descartadas": [
+   "https://www.distribuidoralira.cl/wp-content/uploads/2025/03/D_NQ_NP_2X_851372-MLC47606151063_092021-F.webp"
   ],
-  "motivo": "sin coincidencia segura por código ni por nombre",
-  "fecha": "2026-11-01",
-  "referencialTiendas": true,
-  "motivoReferencial": "sin foto de referencia adecuada (se buscó \"collar perro perro\" en 6 tiendas)",
-  "catalogosTiendas": true
+  "fecha": "2026-11-01"
  },
  "ACC-MOND-327": {
   "grupo": "C",
-  "tiendas": true,
-  "intentos": [
-   "tusmascotas.cl: collar perro mondo (0)",
-   "tusmascotas.cl: collar perro (2)",
-   "distribuidoralira.cl: collar perro mondo (0)",
-   "distribuidoralira.cl: collar perro (0)",
-   "petpalace.cl: collar perro mondo (0)",
-   "petpalace.cl: collar perro (0)",
-   "petshopmg.cl: collar perro mondo (0)",
-   "petshopmg.cl: collar perro (1)",
-   "mascoteriagonzalito.cl: collar perro mondo (0)",
-   "mascoteriagonzalito.cl: collar perro (1)",
-   "petcity.cl: collar perro mondo (0)",
-   "petcity.cl: collar perro (3)"
+  "motivo": "foto referencial descartada en la revisión: muestra la marca de otro, un empaque de otra marca o una marca de agua de otra tienda",
+  "descartadas": [
+   "https://www.distribuidoralira.cl/wp-content/uploads/2025/07/22P651.webp"
   ],
-  "motivo": "sin coincidencia segura por código ni por nombre",
-  "fecha": "2026-11-01",
-  "referencialTiendas": true,
-  "motivoReferencial": "sin foto de referencia adecuada (se buscó \"collar perro perro\" en 6 tiendas)",
-  "catalogosTiendas": true
+  "fecha": "2026-11-01"
  },
  "ACC-MOND-330": {
   "grupo": "C",
-  "tiendas": true,
-  "intentos": [
-   "tusmascotas.cl: collar perro mondo (0)",
-   "tusmascotas.cl: collar perro (2)",
-   "distribuidoralira.cl: collar perro mondo (0)",
-   "distribuidoralira.cl: collar perro (0)",
-   "petpalace.cl: collar perro mondo (0)",
-   "petpalace.cl: collar perro (0)",
-   "petshopmg.cl: collar perro mondo (0)",
-   "petshopmg.cl: collar perro (1)",
-   "mascoteriagonzalito.cl: collar perro mondo (0)",
-   "mascoteriagonzalito.cl: collar perro (1)",
-   "petcity.cl: collar perro mondo (0)",
-   "petcity.cl: collar perro (3)"
+  "motivo": "foto referencial descartada en la revisión: muestra la marca de otro, un empaque de otra marca o una marca de agua de otra tienda",
+  "descartadas": [
+   "https://petshopmg.cl/wp-content/uploads/2020/05/calmingcollarperro-1.jpg"
   ],
-  "motivo": "sin coincidencia segura por código ni por nombre",
-  "fecha": "2026-11-01",
-  "referencialTiendas": true,
-  "motivoReferencial": "sin foto de referencia adecuada (se buscó \"collar perro perro\" en 6 tiendas)",
-  "catalogosTiendas": true
+  "fecha": "2026-11-01"
  },
  "ACC-MOND-333": {
   "grupo": "C",
-  "tiendas": true,
-  "intentos": [
-   "tusmascotas.cl: collar perro mondo (0)",
-   "tusmascotas.cl: collar perro (2)",
-   "distribuidoralira.cl: collar perro mondo (0)",
-   "distribuidoralira.cl: collar perro (0)",
-   "petpalace.cl: collar perro mondo (0)",
-   "petpalace.cl: collar perro (0)",
-   "petshopmg.cl: collar perro mondo (0)",
-   "petshopmg.cl: collar perro (1)",
-   "mascoteriagonzalito.cl: collar perro mondo (0)",
-   "mascoteriagonzalito.cl: collar perro (1)",
-   "petcity.cl: collar perro mondo (0)",
-   "petcity.cl: collar perro (3)"
+  "motivo": "foto referencial descartada en la revisión: muestra la marca de otro, un empaque de otra marca o una marca de agua de otra tienda",
+  "descartadas": [
+   "https://www.mascoteriagonzalito.cl/wp-content/uploads/2026/02/1758731548912-MKTF4R47MN-1-4.webp"
   ],
-  "motivo": "sin coincidencia segura por código ni por nombre",
-  "fecha": "2026-11-01",
-  "referencialTiendas": true,
-  "motivoReferencial": "sin foto de referencia adecuada (se buscó \"collar perro perro\" en 6 tiendas)",
-  "catalogosTiendas": true
+  "fecha": "2026-11-01"
  },
  "ACC-MOND-217": {
   "grupo": "C",
-  "tiendas": true,
-  "intentos": [
-   "tusmascotas.cl: collar perro mondo (0)",
-   "tusmascotas.cl: collar perro (2)",
-   "distribuidoralira.cl: collar perro mondo (0)",
-   "distribuidoralira.cl: collar perro (0)",
-   "petpalace.cl: collar perro mondo (0)",
-   "petpalace.cl: collar perro (0)",
-   "petshopmg.cl: collar perro mondo (0)",
-   "petshopmg.cl: collar perro (1)",
-   "mascoteriagonzalito.cl: collar perro mondo (0)",
-   "mascoteriagonzalito.cl: collar perro (1)",
-   "petcity.cl: collar perro mondo (0)",
-   "petcity.cl: collar perro (3)"
+  "motivo": "foto referencial descartada en la revisión: muestra la marca de otro, un empaque de otra marca o una marca de agua de otra tienda",
+  "descartadas": [
+   "https://www.mascoteriagonzalito.cl/wp-content/uploads/2025/06/6970117124477-bioline-flea-and-tick-dog-collar-60cm-flavor-margosa-sweet-orange-18965.png"
   ],
-  "motivo": "sin coincidencia segura por código ni por nombre",
-  "fecha": "2026-11-01",
-  "referencialTiendas": true,
-  "motivoReferencial": "sin foto de referencia adecuada (se buscó \"collar perro perro\" en 6 tiendas)",
-  "catalogosTiendas": true
+  "fecha": "2026-11-01"
  },
  "ACC-MOND-208": {
-  "grupo": "C",
-  "tiendas": true,
+  "grupo": "B",
+  "metodo": "tipo de producto (catálogo de petcity.cl)",
+  "titulo": "Collar + Trailla Halloween Para Perros WonderDog Talla XL",
+  "pagina": "https://petcity.cl/tienda/collar-trailla-halloween-para-perros-wonderdog-talla-xl/",
+  "origen": "https://petcity.cl/wp-content/uploads/2026/10/JW-Z1060XL-JW-L1060M-460x460-1.png",
+  "archivo": "assets/productos/ACC-MOND-208.webp",
   "intentos": [
    "tusmascotas.cl: collar perro mondo (0)",
    "tusmascotas.cl: collar perro (2)",
@@ -14096,61 +13801,31 @@
    "petcity.cl: collar perro mondo (0)",
    "petcity.cl: collar perro (3)"
   ],
-  "motivo": "sin coincidencia segura por código ni por nombre",
-  "fecha": "2026-11-01",
-  "referencialTiendas": true,
-  "motivoReferencial": "sin foto de referencia adecuada (se buscó \"collar perro perro\" en 6 tiendas)",
-  "catalogosTiendas": true
+  "fecha": "2026-11-01"
  },
  "ACC-MOND-249": {
   "grupo": "C",
-  "tiendas": true,
-  "intentos": [
-   "tusmascotas.cl: collar perro mondo (0)",
-   "tusmascotas.cl: collar perro (2)",
-   "distribuidoralira.cl: collar perro mondo (0)",
-   "distribuidoralira.cl: collar perro (0)",
-   "petpalace.cl: collar perro mondo (0)",
-   "petpalace.cl: collar perro (0)",
-   "petshopmg.cl: collar perro mondo (0)",
-   "petshopmg.cl: collar perro (1)",
-   "mascoteriagonzalito.cl: collar perro mondo (0)",
-   "mascoteriagonzalito.cl: collar perro (1)",
-   "petcity.cl: collar perro mondo (0)",
-   "petcity.cl: collar perro (3)"
+  "motivo": "foto referencial descartada en la revisión: muestra la marca de otro, un empaque de otra marca o una marca de agua de otra tienda",
+  "descartadas": [
+   "https://cdn.shopify.com/s/files/1/0415/8242/8317/files/collar-anti-pulgas-y-garrapatas-para-perros-marbenpets.jpg?v=1777229833"
   ],
-  "motivo": "sin coincidencia segura por código ni por nombre",
-  "fecha": "2026-11-01",
-  "referencialTiendas": true,
-  "motivoReferencial": "sin foto de referencia adecuada (se buscó \"collar perro perro\" en 6 tiendas)",
-  "catalogosTiendas": true
+  "fecha": "2026-11-01"
  },
  "ACC-MOND-253": {
   "grupo": "C",
-  "tiendas": true,
-  "intentos": [
-   "tusmascotas.cl: collar perro mondo (0)",
-   "tusmascotas.cl: collar perro (2)",
-   "distribuidoralira.cl: collar perro mondo (0)",
-   "distribuidoralira.cl: collar perro (0)",
-   "petpalace.cl: collar perro mondo (0)",
-   "petpalace.cl: collar perro (0)",
-   "petshopmg.cl: collar perro mondo (0)",
-   "petshopmg.cl: collar perro (1)",
-   "mascoteriagonzalito.cl: collar perro mondo (0)",
-   "mascoteriagonzalito.cl: collar perro (1)",
-   "petcity.cl: collar perro mondo (0)",
-   "petcity.cl: collar perro (3)"
+  "motivo": "foto referencial descartada en la revisión: muestra la marca de otro, un empaque de otra marca o una marca de agua de otra tienda",
+  "descartadas": [
+   "https://cdn.shopify.com/s/files/1/0415/8242/8317/files/Collar-Anti-Insectos-para-Perros-Men-for-San.jpg?v=1759020309"
   ],
-  "motivo": "sin coincidencia segura por código ni por nombre",
-  "fecha": "2026-11-01",
-  "referencialTiendas": true,
-  "motivoReferencial": "sin foto de referencia adecuada (se buscó \"collar perro perro\" en 6 tiendas)",
-  "catalogosTiendas": true
+  "fecha": "2026-11-01"
  },
  "ACC-MOND-205": {
-  "grupo": "C",
-  "tiendas": true,
+  "grupo": "B",
+  "metodo": "tipo de producto (catálogo de petcity.cl)",
+  "titulo": "Cortauñas + Lima Rojo M",
+  "pagina": "https://petcity.cl/tienda/cortaunas-lima-rojo-m/",
+  "origen": "https://petcity.cl/wp-content/uploads/2023/10/CORTAUNAS-LIMA-ROJO.jpg",
+  "archivo": "assets/productos/ACC-MOND-205.webp",
   "intentos": [
    "tusmascotas.cl: cortaunas lima mondo (0)",
    "tusmascotas.cl: cortaunas lima (0)",
@@ -14165,11 +13840,7 @@
    "petcity.cl: cortaunas lima mondo (0)",
    "petcity.cl: cortaunas lima (0)"
   ],
-  "motivo": "sin coincidencia segura por código ni por nombre",
-  "fecha": "2026-11-01",
-  "referencialTiendas": true,
-  "motivoReferencial": "sin foto de referencia adecuada (se buscó \"cortaunas lima\" en 6 tiendas)",
-  "catalogosTiendas": true
+  "fecha": "2026-11-01"
  },
  "ACC-BUEN-020": {
   "grupo": "C",
@@ -14192,7 +13863,8 @@
   "fecha": "2026-11-01",
   "referencialTiendas": true,
   "motivoReferencial": "no se reconoce el tipo de producto en el nombre",
-  "catalogosTiendas": true
+  "catalogosTiendas": true,
+  "referencialCatalogos": true
  },
  "ACC-LEON-029": {
   "grupo": "B",
@@ -14303,11 +13975,16 @@
   "fecha": "2026-11-01",
   "referencialTiendas": true,
   "motivoReferencial": "no se reconoce el tipo de producto en el nombre",
-  "catalogosTiendas": true
+  "catalogosTiendas": true,
+  "referencialCatalogos": true
  },
  "ACC-MOND-299": {
-  "grupo": "C",
-  "tiendas": true,
+  "grupo": "B",
+  "metodo": "tipo de producto (catálogo de tusmascotas.cl)",
+  "titulo": "Jaula Zoozone - Talla S",
+  "pagina": "https://www.tusmascotas.cl/product/jaula-zoozone-talla-s/",
+  "origen": "https://www.tusmascotas.cl/wp-content/uploads/2022/07/JAULA-BURDEO.png",
+  "archivo": "assets/productos/ACC-MOND-299.webp",
   "intentos": [
    "tusmascotas.cl: jaula talla mondo (0)",
    "tusmascotas.cl: jaula talla (0)",
@@ -14322,15 +13999,15 @@
    "petcity.cl: jaula talla mondo (0)",
    "petcity.cl: jaula talla (0)"
   ],
-  "motivo": "sin coincidencia segura por código ni por nombre",
-  "fecha": "2026-11-01",
-  "referencialTiendas": true,
-  "motivoReferencial": "sin foto de referencia adecuada (se buscó \"jaula talla\" en 6 tiendas)",
-  "catalogosTiendas": true
+  "fecha": "2026-11-01"
  },
  "ACC-LEON-032": {
-  "grupo": "C",
-  "tiendas": true,
+  "grupo": "B",
+  "metodo": "tipo de producto (catálogo de tusmascotas.cl)",
+  "titulo": "Jaula Zoozone – Talla L",
+  "pagina": "https://www.tusmascotas.cl/product/jaula-zoozone-talla-l/",
+  "origen": "https://www.tusmascotas.cl/wp-content/uploads/2022/07/JAULA-BURDEO-1.png",
+  "archivo": "assets/productos/ACC-LEON-032.webp",
   "intentos": [
    "tusmascotas.cl: jaula talla leon pet (0)",
    "tusmascotas.cl: jaula talla leon (0)",
@@ -14351,11 +14028,7 @@
    "petcity.cl: jaula talla leon (0)",
    "petcity.cl: jaula talla (0)"
   ],
-  "motivo": "sin coincidencia segura por código ni por nombre",
-  "fecha": "2026-11-01",
-  "referencialTiendas": true,
-  "motivoReferencial": "sin foto de referencia adecuada (se buscó \"jaula talla\" en 6 tiendas)",
-  "catalogosTiendas": true
+  "fecha": "2026-11-01"
  },
  "ACC-LEON-031": {
   "grupo": "C",
@@ -14377,8 +14050,9 @@
   "motivo": "sin coincidencia segura por código ni por nombre",
   "fecha": "2026-11-01",
   "referencialTiendas": true,
-  "motivoReferencial": "sin foto de referencia adecuada (se buscó \"jaula talla leonpet\" en 6 tiendas)",
-  "catalogosTiendas": true
+  "motivoReferencial": "sin foto de referencia adecuada en los catálogos de las 9 tiendas",
+  "catalogosTiendas": true,
+  "referencialCatalogos": true
  },
  "ACC-MOND-200": {
   "grupo": "C",
@@ -14406,8 +14080,9 @@
   "motivo": "sin coincidencia segura por código ni por nombre",
   "fecha": "2026-11-01",
   "referencialTiendas": true,
-  "motivoReferencial": "sin foto de referencia adecuada (se buscó \"juguete aro goma\" en 6 tiendas)",
-  "catalogosTiendas": true
+  "motivoReferencial": "sin foto de referencia adecuada en los catálogos de las 9 tiendas",
+  "catalogosTiendas": true,
+  "referencialCatalogos": true
  },
  "ACC-MOND-307": {
   "grupo": "C",
@@ -14435,8 +14110,9 @@
   "motivo": "sin coincidencia segura por código ni por nombre",
   "fecha": "2026-11-01",
   "referencialTiendas": true,
-  "motivoReferencial": "sin foto de referencia adecuada (se buscó \"juguete cascabel pluma\" en 6 tiendas)",
-  "catalogosTiendas": true
+  "motivoReferencial": "sin foto de referencia adecuada en los catálogos de las 9 tiendas",
+  "catalogosTiendas": true,
+  "referencialCatalogos": true
  },
  "ACC-MOND-233": {
   "grupo": "B",
@@ -14463,8 +14139,12 @@
   "fecha": "2026-10-31"
  },
  "ACC-MOND-308": {
-  "grupo": "C",
-  "tiendas": true,
+  "grupo": "B",
+  "metodo": "tipo de producto (catálogo de petpalace.cl)",
+  "titulo": "juguete Grande con Cuerda y Pelota para Perro",
+  "pagina": "https://petpalace.cl/producto/juguete-grande-con-cuerda-y-pelota-para-perro/",
+  "origen": "https://petpalace.cl/wp-content/uploads/2025/02/1000392673.png",
+  "archivo": "assets/productos/ACC-MOND-308.webp",
   "intentos": [
    "tusmascotas.cl: juguete cuerda pelota mondo (0)",
    "tusmascotas.cl: juguete cuerda pelota (0)",
@@ -14485,11 +14165,7 @@
    "petcity.cl: juguete cuerda pelota (0)",
    "petcity.cl: juguete cuerda (12)"
   ],
-  "motivo": "sin coincidencia segura por código ni por nombre",
-  "fecha": "2026-11-01",
-  "referencialTiendas": true,
-  "motivoReferencial": "sin foto de referencia adecuada (se buscó \"juguete cuerda pelota\" en 6 tiendas)",
-  "catalogosTiendas": true
+  "fecha": "2026-11-01"
  },
  "ACC-MOND-266": {
   "grupo": "C",
@@ -14517,12 +14193,17 @@
   "motivo": "sin coincidencia segura por código ni por nombre",
   "fecha": "2026-11-01",
   "referencialTiendas": true,
-  "motivoReferencial": "sin foto de referencia adecuada (se buscó \"juguete gato gato modelo\" en 6 tiendas)",
-  "catalogosTiendas": true
+  "motivoReferencial": "sin foto de referencia adecuada en los catálogos de las 9 tiendas",
+  "catalogosTiendas": true,
+  "referencialCatalogos": true
  },
  "ACC-MOND-234": {
-  "grupo": "C",
-  "tiendas": true,
+  "grupo": "B",
+  "metodo": "tipo de producto (catálogo de tusmascotas.cl)",
+  "titulo": "Juguete gato caña de pescar con diseños - Raton celeste con rosado",
+  "pagina": "https://www.tusmascotas.cl/product/juguete-gato-cana-de-pescar-con-disenos-raton-celeste-rosado/",
+  "origen": "https://www.tusmascotas.cl/wp-content/uploads/2024/01/WhatsApp-Image-2024-01-22-at-13.36.48.jpeg",
+  "archivo": "assets/productos/ACC-MOND-234.webp",
   "intentos": [
    "tusmascotas.cl: juguete gato mundo (0)",
    "tusmascotas.cl: juguete gato (9)",
@@ -14537,43 +14218,24 @@
    "petcity.cl: juguete gato mundo (0)",
    "petcity.cl: juguete gato (6)"
   ],
-  "motivo": "sin coincidencia segura por código ni por nombre",
-  "fecha": "2026-11-01",
-  "referencialTiendas": true,
-  "motivoReferencial": "sin foto de referencia adecuada (se buscó \"juguete gato gato\" en 6 tiendas)",
-  "catalogosTiendas": true
+  "fecha": "2026-11-01"
  },
  "ACC-MOND-264": {
   "grupo": "C",
-  "tiendas": true,
-  "intentos": [
-   "tusmascotas.cl: juguete gato mundo (0)",
-   "tusmascotas.cl: juguete gato (9)",
-   "distribuidoralira.cl: juguete gato mundo (0)",
-   "distribuidoralira.cl: juguete gato (8)",
-   "petpalace.cl: juguete gato mundo (0)",
-   "petpalace.cl: juguete gato (0)",
-   "petshopmg.cl: juguete gato mundo (0)",
-   "petshopmg.cl: juguete gato (0)",
-   "mascoteriagonzalito.cl: juguete gato mundo (0)",
-   "mascoteriagonzalito.cl: juguete gato (0)",
-   "petcity.cl: juguete gato mundo (0)",
-   "petcity.cl: juguete gato (6)"
+  "motivo": "foto referencial descartada en la revisión: muestra la marca de otro, un empaque de otra marca o una marca de agua de otra tienda",
+  "descartadas": [
+   "https://www.tusmascotas.cl/wp-content/uploads/2026/06/62626-135.png"
   ],
-  "motivo": "sin coincidencia segura por código ni por nombre",
-  "fecha": "2026-11-01",
-  "referencialTiendas": true,
-  "motivoReferencial": "sin foto de referencia adecuada (se buscó \"juguete gato gato\" en 6 tiendas)",
-  "catalogosTiendas": true
+  "fecha": "2026-11-01"
  },
  "ACC-LEON-037": {
   "grupo": "C",
-  "motivo": "foto referencial descartada en la revisión: muestra la marca de otro, un empaque de otra marca o un personaje con licencia",
+  "motivo": "foto referencial descartada en la revisión: muestra la marca de otro, un empaque de otra marca o una marca de agua de otra tienda",
   "descartadas": [
-   "https://www.tusmascotas.cl/wp-content/uploads/2026/06/793969584284.png"
+   "https://www.tusmascotas.cl/wp-content/uploads/2026/06/793969584284.png",
+   "https://petcity.cl/wp-content/uploads/2026/08/imagen-1.webp"
   ],
-  "fecha": "2026-11-01",
-  "catalogosTiendas": true
+  "fecha": "2026-11-01"
  },
  "ACC-MOND-279": {
   "grupo": "C",
@@ -14595,8 +14257,9 @@
   "motivo": "sin coincidencia segura por código ni por nombre",
   "fecha": "2026-11-01",
   "referencialTiendas": true,
-  "motivoReferencial": "sin foto de referencia adecuada (se buscó \"juguete laser\" en 6 tiendas)",
-  "catalogosTiendas": true
+  "motivoReferencial": "sin foto de referencia adecuada en los catálogos de las 9 tiendas",
+  "catalogosTiendas": true,
+  "referencialCatalogos": true
  },
  "ACC-LILI-004": {
   "grupo": "C",
@@ -14618,17 +14281,21 @@
   "motivo": "sin coincidencia segura por código ni por nombre",
   "fecha": "2026-11-01",
   "referencialTiendas": true,
-  "motivoReferencial": "sin foto de referencia adecuada (se buscó \"juguete lili\" en 6 tiendas)",
-  "catalogosTiendas": true
+  "motivoReferencial": "sin foto de referencia adecuada en los catálogos de las 9 tiendas",
+  "catalogosTiendas": true,
+  "referencialCatalogos": true
  },
  "ACC-MOND-305": {
-  "grupo": "C",
-  "motivo": "foto referencial descartada en la revisión: muestra la marca de otro, un empaque de otra marca o un personaje con licencia",
+  "grupo": "B",
+  "metodo": "tipo de producto (catálogo de petpalace.cl)",
+  "titulo": "Juguete de Peluche y Cuerda con Sonido para Mascota",
+  "pagina": "https://petpalace.cl/producto/juguete-de-peluche-y-cuerda-con-sonido-para-mascota/",
+  "origen": "https://petpalace.cl/wp-content/uploads/2025/01/D_NQ_NP_903449-MLC75436770666_042024-O-1.webp",
+  "archivo": "assets/productos/ACC-MOND-305.webp",
   "descartadas": [
    "https://www.tusmascotas.cl/wp-content/uploads/2026/06/793969584222.png"
   ],
-  "fecha": "2026-11-01",
-  "catalogosTiendas": true
+  "fecha": "2026-11-01"
  },
  "ACC-MOND-318": {
   "grupo": "C",
@@ -14656,8 +14323,9 @@
   "motivo": "sin coincidencia segura por código ni por nombre",
   "fecha": "2026-11-01",
   "referencialTiendas": true,
-  "motivoReferencial": "sin foto de referencia adecuada (se buscó \"juguete navidad\" en 6 tiendas)",
-  "catalogosTiendas": true
+  "motivoReferencial": "sin foto de referencia adecuada en los catálogos de las 9 tiendas",
+  "catalogosTiendas": true,
+  "referencialCatalogos": true
  },
  "ACC-MOND-285": {
   "grupo": "C",
@@ -14679,8 +14347,9 @@
   "motivo": "sin coincidencia segura por código ni por nombre",
   "fecha": "2026-11-01",
   "referencialTiendas": true,
-  "motivoReferencial": "sin foto de referencia adecuada (se buscó \"juguete gato gato cereza\" en 6 tiendas)",
-  "catalogosTiendas": true
+  "motivoReferencial": "sin foto de referencia adecuada en los catálogos de las 9 tiendas",
+  "catalogosTiendas": true,
+  "referencialCatalogos": true
  },
  "ACC-MARB-031": {
   "grupo": "A",
@@ -14694,30 +14363,19 @@
  },
  "ACC-MOND-288": {
   "grupo": "C",
-  "tiendas": true,
-  "intentos": [
-   "tusmascotas.cl: juguete gato mondo (0)",
-   "tusmascotas.cl: juguete gato (9)",
-   "distribuidoralira.cl: juguete gato mondo (0)",
-   "distribuidoralira.cl: juguete gato (8)",
-   "petpalace.cl: juguete gato mondo (0)",
-   "petpalace.cl: juguete gato (0)",
-   "petshopmg.cl: juguete gato mondo (0)",
-   "petshopmg.cl: juguete gato (0)",
-   "mascoteriagonzalito.cl: juguete gato mondo (0)",
-   "mascoteriagonzalito.cl: juguete gato (0)",
-   "petcity.cl: juguete gato mondo (0)",
-   "petcity.cl: juguete gato (6)"
+  "motivo": "foto referencial descartada en la revisión: muestra la marca de otro, un empaque de otra marca o una marca de agua de otra tienda",
+  "descartadas": [
+   "https://www.tusmascotas.cl/wp-content/uploads/2022/05/jugueteelectrico.png"
   ],
-  "motivo": "sin coincidencia segura por código ni por nombre",
-  "fecha": "2026-11-01",
-  "referencialTiendas": true,
-  "motivoReferencial": "sin foto de referencia adecuada (se buscó \"juguete gato gato\" en 6 tiendas)",
-  "catalogosTiendas": true
+  "fecha": "2026-11-01"
  },
  "ACC-MOND-304": {
-  "grupo": "C",
-  "tiendas": true,
+  "grupo": "B",
+  "metodo": "tipo de producto (catálogo de tusmascotas.cl)",
+  "titulo": "Juguete Barra con Plumas para gato",
+  "pagina": "https://www.tusmascotas.cl/product/juguete-barra-con-plumas-para-gato-2/",
+  "origen": "https://www.tusmascotas.cl/wp-content/uploads/2020/10/juguete-barra-con-plumas.jpg",
+  "archivo": "assets/productos/ACC-MOND-304.webp",
   "intentos": [
    "tusmascotas.cl: juguete gato mondo (0)",
    "tusmascotas.cl: juguete gato (9)",
@@ -14732,15 +14390,15 @@
    "petcity.cl: juguete gato mondo (0)",
    "petcity.cl: juguete gato (6)"
   ],
-  "motivo": "sin coincidencia segura por código ni por nombre",
-  "fecha": "2026-11-01",
-  "referencialTiendas": true,
-  "motivoReferencial": "sin foto de referencia adecuada (se buscó \"juguete gato gato\" en 6 tiendas)",
-  "catalogosTiendas": true
+  "fecha": "2026-11-01"
  },
  "ACC-MOND-338": {
-  "grupo": "C",
-  "tiendas": true,
+  "grupo": "B",
+  "metodo": "tipo de producto (catálogo de petcity.cl)",
+  "titulo": "Juguete Bola Giratoria De Catnip Para Gato",
+  "pagina": "https://petcity.cl/tienda/juguete-bola-giratoria-de-catnip-para-gato/",
+  "origen": "https://petcity.cl/wp-content/uploads/2023/07/juguete-bola-de-hierva-gatera_azul.jpg",
+  "archivo": "assets/productos/ACC-MOND-338.webp",
   "intentos": [
    "tusmascotas.cl: juguete gato mondo (0)",
    "tusmascotas.cl: juguete gato (9)",
@@ -14755,15 +14413,15 @@
    "petcity.cl: juguete gato mondo (0)",
    "petcity.cl: juguete gato (6)"
   ],
-  "motivo": "sin coincidencia segura por código ni por nombre",
-  "fecha": "2026-11-01",
-  "referencialTiendas": true,
-  "motivoReferencial": "sin foto de referencia adecuada (se buscó \"juguete gato gato\" en 6 tiendas)",
-  "catalogosTiendas": true
+  "fecha": "2026-11-01"
  },
  "ACC-MOND-309": {
-  "grupo": "C",
-  "tiendas": true,
+  "grupo": "B",
+  "metodo": "tipo de producto (catálogo de tusmascotas.cl)",
+  "titulo": "Juguete Erizo Para Perro Super Realista",
+  "pagina": "https://www.tusmascotas.cl/product/juguete-erizo-para-perro-super-realista-2/",
+  "origen": "https://www.tusmascotas.cl/wp-content/uploads/2026/04/729208212717.png",
+  "archivo": "assets/productos/ACC-MOND-309.webp",
   "intentos": [
    "tusmascotas.cl: juguete perro (8)",
    "distribuidoralira.cl: juguete perro (4)",
@@ -14772,11 +14430,7 @@
    "mascoteriagonzalito.cl: juguete perro (3)",
    "petcity.cl: juguete perro (1)"
   ],
-  "motivo": "sin coincidencia segura por código ni por nombre",
-  "fecha": "2026-11-01",
-  "referencialTiendas": true,
-  "motivoReferencial": "sin foto de referencia adecuada (se buscó \"juguete perro perro\" en 6 tiendas)",
-  "catalogosTiendas": true
+  "fecha": "2026-11-01"
  },
  "ACC-MOND-306": {
   "grupo": "C",
@@ -14798,12 +14452,17 @@
   "motivo": "sin coincidencia segura por código ni por nombre",
   "fecha": "2026-11-01",
   "referencialTiendas": true,
-  "motivoReferencial": "sin foto de referencia adecuada (se buscó \"juguete gato gato zanahoria\" en 6 tiendas)",
-  "catalogosTiendas": true
+  "motivoReferencial": "sin foto de referencia adecuada en los catálogos de las 9 tiendas",
+  "catalogosTiendas": true,
+  "referencialCatalogos": true
  },
  "ACC-LEON-038": {
-  "grupo": "C",
-  "tiendas": true,
+  "grupo": "B",
+  "metodo": "tipo de producto (catálogo de tusmascotas.cl)",
+  "titulo": "JUGUETE PARA PERRO LOBO 23*15*23cm",
+  "pagina": "https://www.tusmascotas.cl/product/juguete-para-perro-lobo-231523cm/",
+  "origen": "https://www.tusmascotas.cl/wp-content/uploads/2026/04/lobo.jpg",
+  "archivo": "assets/productos/ACC-LEON-038.webp",
   "intentos": [
    "tusmascotas.cl: juguete perro (8)",
    "distribuidoralira.cl: juguete perro (4)",
@@ -14812,15 +14471,15 @@
    "mascoteriagonzalito.cl: juguete perro (3)",
    "petcity.cl: juguete perro (1)"
   ],
-  "motivo": "sin coincidencia segura por código ni por nombre",
-  "fecha": "2026-11-01",
-  "referencialTiendas": true,
-  "motivoReferencial": "sin foto de referencia adecuada (se buscó \"juguete perro perro\" en 6 tiendas)",
-  "catalogosTiendas": true
+  "fecha": "2026-11-01"
  },
  "ACC-MOND-218": {
-  "grupo": "C",
-  "tiendas": true,
+  "grupo": "B",
+  "metodo": "tipo de producto (catálogo de petcity.cl)",
+  "titulo": "Juguete Gato Pelota Rústica Puntos con Pluma",
+  "pagina": "https://petcity.cl/tienda/juguete-gato-pelota-rustica-puntos-con-pluma/",
+  "origen": "https://petcity.cl/wp-content/uploads/2023/11/Juguete-Gato-Pelota-Rustica-con-Pluma_puntos.jpg",
+  "archivo": "assets/productos/ACC-MOND-218.webp",
   "intentos": [
    "tusmascotas.cl: juguete gato pelota interactiva mondo (0)",
    "tusmascotas.cl: juguete gato pelota (0)",
@@ -14841,15 +14500,15 @@
    "petcity.cl: juguete gato pelota (3)",
    "petcity.cl: juguete gato (6)"
   ],
-  "motivo": "sin coincidencia segura por código ni por nombre",
-  "fecha": "2026-11-01",
-  "referencialTiendas": true,
-  "motivoReferencial": "sin foto de referencia adecuada (se buscó \"juguete gato gato pelota\" en 6 tiendas)",
-  "catalogosTiendas": true
+  "fecha": "2026-11-01"
  },
  "ACC-MOND-267": {
-  "grupo": "C",
-  "tiendas": true,
+  "grupo": "B",
+  "metodo": "tipo de producto (catálogo de tusmascotas.cl)",
+  "titulo": "(PT051) Juguete para perro erizo 20x13CM",
+  "pagina": "https://www.tusmascotas.cl/product/pt051-juguete-para-perro-erizo-20x13cm/",
+  "origen": "https://www.tusmascotas.cl/wp-content/uploads/2024/12/PT051-Juguete-para-perro-erizo-20x13CM.png",
+  "archivo": "assets/productos/ACC-MOND-267.webp",
   "intentos": [
    "tusmascotas.cl: juguete perro mondo (0)",
    "tusmascotas.cl: juguete perro (8)",
@@ -14864,15 +14523,15 @@
    "petcity.cl: juguete perro mondo (0)",
    "petcity.cl: juguete perro (1)"
   ],
-  "motivo": "sin coincidencia segura por código ni por nombre",
-  "fecha": "2026-11-01",
-  "referencialTiendas": true,
-  "motivoReferencial": "sin foto de referencia adecuada (se buscó \"juguete perro perro\" en 6 tiendas)",
-  "catalogosTiendas": true
+  "fecha": "2026-11-01"
  },
  "ACC-DRAG-005": {
-  "grupo": "C",
-  "tiendas": true,
+  "grupo": "B",
+  "metodo": "tipo de producto (catálogo de tusmascotas.cl)",
+  "titulo": "Juguete Perro Pelota de Goma Roja 8cm",
+  "pagina": "https://www.tusmascotas.cl/product/juguete-pelota-de-goma-rojo-8cm/",
+  "origen": "https://www.tusmascotas.cl/wp-content/uploads/2021/05/rgthyhjyuju.png",
+  "archivo": "assets/productos/ACC-DRAG-005.webp",
   "intentos": [
    "tusmascotas.cl: juguete pelota goma dragpharma (0)",
    "tusmascotas.cl: juguete pelota goma (0)",
@@ -14893,15 +14552,15 @@
    "petcity.cl: juguete pelota goma (0)",
    "petcity.cl: juguete pelota (12)"
   ],
-  "motivo": "sin coincidencia segura por código ni por nombre",
-  "fecha": "2026-11-01",
-  "referencialTiendas": true,
-  "motivoReferencial": "sin foto de referencia adecuada (se buscó \"juguete pelota goma\" en 6 tiendas)",
-  "catalogosTiendas": true
+  "fecha": "2026-11-01"
  },
  "ACC-LEON-036": {
-  "grupo": "C",
-  "tiendas": true,
+  "grupo": "B",
+  "metodo": "tipo de producto (catálogo de tusmascotas.cl)",
+  "titulo": "Juguete Perro Pelota de Goma Naranja 8cm",
+  "pagina": "https://www.tusmascotas.cl/product/juguete-perro-pelota-de-goma-naranja-8cm/",
+  "origen": "https://www.tusmascotas.cl/wp-content/uploads/2021/05/efewf.png",
+  "archivo": "assets/productos/ACC-LEON-036.webp",
   "intentos": [
    "tusmascotas.cl: juguete pelota goma leon pets (0)",
    "tusmascotas.cl: juguete pelota goma (0)",
@@ -14922,15 +14581,15 @@
    "petcity.cl: juguete pelota goma (0)",
    "petcity.cl: juguete pelota (12)"
   ],
-  "motivo": "sin coincidencia segura por código ni por nombre",
-  "fecha": "2026-11-01",
-  "referencialTiendas": true,
-  "motivoReferencial": "sin foto de referencia adecuada (se buscó \"juguete pelota goma\" en 6 tiendas)",
-  "catalogosTiendas": true
+  "fecha": "2026-11-01"
  },
  "ACC-MOND-232": {
-  "grupo": "C",
-  "tiendas": true,
+  "grupo": "B",
+  "metodo": "tipo de producto (catálogo de tusmascotas.cl)",
+  "titulo": "Juguete Perro Conejo Super Realista",
+  "pagina": "https://www.tusmascotas.cl/product/juguete-perro-conejo-super-realista/",
+  "origen": "https://www.tusmascotas.cl/wp-content/uploads/2026/04/729208212694-1.png",
+  "archivo": "assets/productos/ACC-MOND-232.webp",
   "intentos": [
    "tusmascotas.cl: juguete perro (8)",
    "distribuidoralira.cl: juguete perro (4)",
@@ -14939,11 +14598,7 @@
    "mascoteriagonzalito.cl: juguete perro (3)",
    "petcity.cl: juguete perro (1)"
   ],
-  "motivo": "sin coincidencia segura por código ni por nombre",
-  "fecha": "2026-11-01",
-  "referencialTiendas": true,
-  "motivoReferencial": "sin foto de referencia adecuada (se buscó \"juguete perro perro\" en 6 tiendas)",
-  "catalogosTiendas": true
+  "fecha": "2026-11-01"
  },
  "ACC-MOND-286": {
   "grupo": "C",
@@ -14971,12 +14626,17 @@
   "motivo": "sin coincidencia segura por código ni por nombre",
   "fecha": "2026-11-01",
   "referencialTiendas": true,
-  "motivoReferencial": "sin foto de referencia adecuada (se buscó \"juguete pelota hilo\" en 6 tiendas)",
-  "catalogosTiendas": true
+  "motivoReferencial": "sin foto de referencia adecuada en los catálogos de las 9 tiendas",
+  "catalogosTiendas": true,
+  "referencialCatalogos": true
  },
  "ACC-BUEN-027": {
-  "grupo": "C",
-  "tiendas": true,
+  "grupo": "B",
+  "metodo": "tipo de producto (catálogo de tusmascotas.cl)",
+  "titulo": "Juguete Para Perro De Colores",
+  "pagina": "https://www.tusmascotas.cl/product/juguete-para-perro-de-colores/",
+  "origen": "https://www.tusmascotas.cl/wp-content/uploads/2024/12/729208212755.png",
+  "archivo": "assets/productos/ACC-BUEN-027.webp",
   "intentos": [
    "tusmascotas.cl: juguete perro buen amigo (0)",
    "tusmascotas.cl: juguete perro buen (0)",
@@ -14997,11 +14657,7 @@
    "petcity.cl: juguete perro buen (0)",
    "petcity.cl: juguete perro (1)"
   ],
-  "motivo": "sin coincidencia segura por código ni por nombre",
-  "fecha": "2026-11-01",
-  "referencialTiendas": true,
-  "motivoReferencial": "sin foto de referencia adecuada (se buscó \"juguete perro perro\" en 6 tiendas)",
-  "catalogosTiendas": true
+  "fecha": "2026-11-01"
  },
  "ACC-BUEN-026": {
   "grupo": "C",
@@ -15029,12 +14685,17 @@
   "motivo": "sin coincidencia segura por código ni por nombre",
   "fecha": "2026-11-01",
   "referencialTiendas": true,
-  "motivoReferencial": "sin foto de referencia adecuada (se buscó \"juguete perro perro dog\" en 6 tiendas)",
-  "catalogosTiendas": true
+  "motivoReferencial": "sin foto de referencia adecuada en los catálogos de las 9 tiendas",
+  "catalogosTiendas": true,
+  "referencialCatalogos": true
  },
  "ACC-LEON-035": {
-  "grupo": "C",
-  "tiendas": true,
+  "grupo": "B",
+  "metodo": "tipo de producto (catálogo de tusmascotas.cl)",
+  "titulo": "Juguete Para Perro - Elefante",
+  "pagina": "https://www.tusmascotas.cl/product/juguete-para-perro-elefante/",
+  "origen": "https://www.tusmascotas.cl/wp-content/uploads/2024/12/729208212748.png",
+  "archivo": "assets/productos/ACC-LEON-035.webp",
   "intentos": [
    "tusmascotas.cl: juguete perro leon pet (0)",
    "tusmascotas.cl: juguete perro leon (0)",
@@ -15055,38 +14716,23 @@
    "petcity.cl: juguete perro leon (0)",
    "petcity.cl: juguete perro (1)"
   ],
-  "motivo": "sin coincidencia segura por código ni por nombre",
-  "fecha": "2026-11-01",
-  "referencialTiendas": true,
-  "motivoReferencial": "sin foto de referencia adecuada (se buscó \"juguete perro perro\" en 6 tiendas)",
-  "catalogosTiendas": true
+  "fecha": "2026-11-01"
  },
  "ACC-MOND-295": {
   "grupo": "C",
-  "tiendas": true,
-  "intentos": [
-   "tusmascotas.cl: juguete perro mondo (0)",
-   "tusmascotas.cl: juguete perro (8)",
-   "distribuidoralira.cl: juguete perro mondo (0)",
-   "distribuidoralira.cl: juguete perro (4)",
-   "petpalace.cl: juguete perro mondo (0)",
-   "petpalace.cl: juguete perro (0)",
-   "petshopmg.cl: juguete perro mondo (0)",
-   "petshopmg.cl: juguete perro (0)",
-   "mascoteriagonzalito.cl: juguete perro mondo (0)",
-   "mascoteriagonzalito.cl: juguete perro (3)",
-   "petcity.cl: juguete perro mondo (0)",
-   "petcity.cl: juguete perro (1)"
+  "motivo": "foto referencial descartada en la revisión: muestra la marca de otro, un empaque de otra marca o una marca de agua de otra tienda",
+  "descartadas": [
+   "https://www.tusmascotas.cl/wp-content/uploads/2024/12/Juguete-perro-ardilla-super-realista.png"
   ],
-  "motivo": "sin coincidencia segura por código ni por nombre",
-  "fecha": "2026-11-01",
-  "referencialTiendas": true,
-  "motivoReferencial": "sin foto de referencia adecuada (se buscó \"juguete perro perro\" en 6 tiendas)",
-  "catalogosTiendas": true
+  "fecha": "2026-11-01"
  },
  "ACC-MOND-313": {
-  "grupo": "C",
-  "tiendas": true,
+  "grupo": "B",
+  "metodo": "tipo de producto (catálogo de tusmascotas.cl)",
+  "titulo": "Juguete Para Perro Cuerpo Redondo",
+  "pagina": "https://www.tusmascotas.cl/product/juguete-para-perro-cuerpo-redondo/",
+  "origen": "https://www.tusmascotas.cl/wp-content/uploads/2022/05/PELUCHE-VERDE.png",
+  "archivo": "assets/productos/ACC-MOND-313.webp",
   "intentos": [
    "tusmascotas.cl: juguete perro mondo (0)",
    "tusmascotas.cl: juguete perro (8)",
@@ -15101,11 +14747,7 @@
    "petcity.cl: juguete perro mondo (0)",
    "petcity.cl: juguete perro (1)"
   ],
-  "motivo": "sin coincidencia segura por código ni por nombre",
-  "fecha": "2026-11-01",
-  "referencialTiendas": true,
-  "motivoReferencial": "sin foto de referencia adecuada (se buscó \"juguete perro perro\" en 6 tiendas)",
-  "catalogosTiendas": true
+  "fecha": "2026-11-01"
  },
  "ACC-MOND-334": {
   "grupo": "C",
@@ -15133,12 +14775,17 @@
   "motivo": "sin coincidencia segura por código ni por nombre",
   "fecha": "2026-11-01",
   "referencialTiendas": true,
-  "motivoReferencial": "sin foto de referencia adecuada (se buscó \"juguete perro perro set\" en 6 tiendas)",
-  "catalogosTiendas": true
+  "motivoReferencial": "sin foto de referencia adecuada en los catálogos de las 9 tiendas",
+  "catalogosTiendas": true,
+  "referencialCatalogos": true
  },
  "ACC-PETE-008": {
-  "grupo": "C",
-  "tiendas": true,
+  "grupo": "B",
+  "metodo": "tipo de producto (catálogo de distribuidoralira.cl)",
+  "titulo": "Juguete para Gatos Wonder Cat Ratón Colores con Catnip (HDD168) 🐭",
+  "pagina": "https://www.distribuidoralira.cl/product/juguete-para-gatos-wonder-cat-raton-colores-con-catnip-hdd168-%f0%9f%90%ad/",
+  "origen": "https://www.distribuidoralira.cl/wp-content/uploads/2025/10/23P129.jpeg",
+  "archivo": "assets/productos/ACC-PETE-008.webp",
   "intentos": [
    "tusmascotas.cl: juguete raton par petegou (0)",
    "tusmascotas.cl: juguete raton par (0)",
@@ -15159,11 +14806,7 @@
    "petcity.cl: juguete raton par (0)",
    "petcity.cl: juguete raton (3)"
   ],
-  "motivo": "sin coincidencia segura por código ni por nombre",
-  "fecha": "2026-11-01",
-  "referencialTiendas": true,
-  "motivoReferencial": "sin foto de referencia adecuada (se buscó \"juguete raton par\" en 6 tiendas)",
-  "catalogosTiendas": true
+  "fecha": "2026-11-01"
  },
  "ACC-MOND-265": {
   "grupo": "C",
@@ -15191,8 +14834,9 @@
   "motivo": "sin coincidencia segura por código ni por nombre",
   "fecha": "2026-11-01",
   "referencialTiendas": true,
-  "motivoReferencial": "sin foto de referencia adecuada (se buscó \"juguete raton unidad\" en 6 tiendas)",
-  "catalogosTiendas": true
+  "motivoReferencial": "sin foto de referencia adecuada en los catálogos de las 9 tiendas",
+  "catalogosTiendas": true,
+  "referencialCatalogos": true
  },
  "ACC-MOND-301": {
   "grupo": "C",
@@ -15220,8 +14864,9 @@
   "motivo": "sin coincidencia segura por código ni por nombre",
   "fecha": "2026-11-01",
   "referencialTiendas": true,
-  "motivoReferencial": "sin foto de referencia adecuada (se buscó \"juguete set pelotas\" en 6 tiendas)",
-  "catalogosTiendas": true
+  "motivoReferencial": "sin foto de referencia adecuada en los catálogos de las 9 tiendas",
+  "catalogosTiendas": true,
+  "referencialCatalogos": true
  },
  "ACC-MARB-027": {
   "grupo": "B",
@@ -15357,8 +15002,9 @@
   "motivo": "sin coincidencia segura por código ni por nombre",
   "fecha": "2026-11-01",
   "referencialTiendas": true,
-  "motivoReferencial": "sin foto de referencia adecuada (se buscó \"mamadera lili\" en 6 tiendas)",
-  "catalogosTiendas": true
+  "motivoReferencial": "sin foto de referencia adecuada en los catálogos de las 9 tiendas",
+  "catalogosTiendas": true,
+  "referencialCatalogos": true
  },
  "ACC-MOND-223": {
   "grupo": "B",
@@ -15410,8 +15056,9 @@
   "motivo": "sin coincidencia segura por código ni por nombre",
   "fecha": "2026-11-01",
   "referencialTiendas": true,
-  "motivoReferencial": "sin foto de referencia adecuada (se buscó \"manta 60x90\" en 6 tiendas)",
-  "catalogosTiendas": true
+  "motivoReferencial": "sin foto de referencia adecuada en los catálogos de las 9 tiendas",
+  "catalogosTiendas": true,
+  "referencialCatalogos": true
  },
  "ACC-MOND-292": {
   "grupo": "C",
@@ -15433,8 +15080,9 @@
   "motivo": "sin coincidencia segura por código ni por nombre",
   "fecha": "2026-11-01",
   "referencialTiendas": true,
-  "motivoReferencial": "sin foto de referencia adecuada (se buscó \"manta 60x90\" en 6 tiendas)",
-  "catalogosTiendas": true
+  "motivoReferencial": "sin foto de referencia adecuada en los catálogos de las 9 tiendas",
+  "catalogosTiendas": true,
+  "referencialCatalogos": true
  },
  "ACC-MOND-222": {
   "grupo": "B",
@@ -15467,8 +15115,12 @@
   "fecha": "2026-10-31"
  },
  "ACC-MOND-224": {
-  "grupo": "C",
-  "tiendas": true,
+  "grupo": "B",
+  "metodo": "tipo de producto (catálogo de distribuidoralira.cl)",
+  "titulo": "Manta Corderito Rojo para Mascotas Lira 90x120cm",
+  "pagina": "https://www.distribuidoralira.cl/product/manta-corderito-rojo-para-mascotas-lira-90x120cm/",
+  "origen": "https://www.distribuidoralira.cl/wp-content/uploads/2026/08/MANTA-CORDERITO-ROJO-PARA-MASCOTAS-LIRA.webp",
+  "archivo": "assets/productos/ACC-MOND-224.webp",
   "intentos": [
    "tusmascotas.cl: manta 90x1 20 mondo (0)",
    "tusmascotas.cl: manta 90x1 20 (0)",
@@ -15489,11 +15141,7 @@
    "petcity.cl: manta 90x1 20 (0)",
    "petcity.cl: manta 90x1 (0)"
   ],
-  "motivo": "sin coincidencia segura por código ni por nombre",
-  "fecha": "2026-11-01",
-  "referencialTiendas": true,
-  "motivoReferencial": "sin foto de referencia adecuada (se buscó \"manta 90x1\" en 6 tiendas)",
-  "catalogosTiendas": true
+  "fecha": "2026-11-01"
  },
  "ACC-MOND-311": {
   "grupo": "C",
@@ -15516,25 +15164,26 @@
   "fecha": "2026-11-01",
   "referencialTiendas": true,
   "motivoReferencial": "no se reconoce el tipo de producto en el nombre",
-  "catalogosTiendas": true
+  "catalogosTiendas": true,
+  "referencialCatalogos": true
  },
  "ACC-MOND-199": {
   "grupo": "C",
-  "motivo": "foto referencial descartada en la revisión: no es del mismo tipo de producto, está en blanco o tiene marca de agua",
+  "motivo": "foto referencial descartada en la revisión: no es del mismo tipo de producto, está en blanco o es de otra especie",
   "descartadas": [
-   "https://www.tusmascotas.cl/wp-content/uploads/2026/03/Litter-Box-Bandeja-Sanitaria-Pala-Gre.png"
+   "https://www.tusmascotas.cl/wp-content/uploads/2026/03/Litter-Box-Bandeja-Sanitaria-Pala-Gre.png",
+   "https://www.tusmascotas.cl/wp-content/uploads/2023/08/Bano-verde.png"
   ],
-  "fecha": "2026-11-01",
-  "catalogosTiendas": true
+  "fecha": "2026-11-01"
  },
  "ACC-MOND-242": {
   "grupo": "C",
-  "motivo": "foto referencial descartada en la revisión: no es del mismo tipo de producto, está en blanco o tiene marca de agua",
+  "motivo": "foto referencial descartada en la revisión: no es del mismo tipo de producto, está en blanco o es de otra especie",
   "descartadas": [
-   "https://www.tusmascotas.cl/wp-content/uploads/2023/08/Bano-verde.png"
+   "https://www.tusmascotas.cl/wp-content/uploads/2023/08/Bano-verde.png",
+   "https://www.tusmascotas.cl/wp-content/uploads/2026/03/Litter-Box-Bandeja-Sanitaria-Pala-Gre.png"
   ],
-  "fecha": "2026-11-01",
-  "catalogosTiendas": true
+  "fecha": "2026-11-01"
  },
  "ACC-MOND-336": {
   "grupo": "C",
@@ -15557,11 +15206,16 @@
   "fecha": "2026-11-01",
   "referencialTiendas": true,
   "motivoReferencial": "no se reconoce el tipo de producto en el nombre",
-  "catalogosTiendas": true
+  "catalogosTiendas": true,
+  "referencialCatalogos": true
  },
  "ACC-MARB-028": {
-  "grupo": "C",
-  "tiendas": true,
+  "grupo": "B",
+  "metodo": "tipo de producto (catálogo de tusmascotas.cl)",
+  "titulo": "Arenero Tom AZUL con Borde y Pala",
+  "pagina": "https://www.tusmascotas.cl/product/arenero-tom-azul-con/",
+  "origen": "https://www.tusmascotas.cl/wp-content/uploads/2022/10/Arenero-Tom-AZUL-con-Borde-y-Pala.png",
+  "archivo": "assets/productos/ACC-MARB-028.webp",
   "intentos": [
    "tusmascotas.cl: pala arenero (1)",
    "distribuidoralira.cl: pala arenero (0)",
@@ -15570,15 +15224,15 @@
    "mascoteriagonzalito.cl: pala arenero (0)",
    "petcity.cl: pala arenero (0)"
   ],
-  "motivo": "sin coincidencia segura por código ni por nombre",
-  "fecha": "2026-11-01",
-  "referencialTiendas": true,
-  "motivoReferencial": "sin foto de referencia adecuada (se buscó \"arenero pala\" en 6 tiendas)",
-  "catalogosTiendas": true
+  "fecha": "2026-11-01"
  },
  "ACC-MARB-029": {
-  "grupo": "C",
-  "tiendas": true,
+  "grupo": "B",
+  "metodo": "tipo de producto (catálogo de tusmascotas.cl)",
+  "titulo": "Arenero Tom CAFE con Borde y Pala",
+  "pagina": "https://www.tusmascotas.cl/product/arenero-tom-cafe-con/",
+  "origen": "https://www.tusmascotas.cl/wp-content/uploads/2022/10/9-min.png",
+  "archivo": "assets/productos/ACC-MARB-029.webp",
   "intentos": [
    "tusmascotas.cl: pala arenero (1)",
    "distribuidoralira.cl: pala arenero (0)",
@@ -15587,15 +15241,15 @@
    "mascoteriagonzalito.cl: pala arenero (0)",
    "petcity.cl: pala arenero (0)"
   ],
-  "motivo": "sin coincidencia segura por código ni por nombre",
-  "fecha": "2026-11-01",
-  "referencialTiendas": true,
-  "motivoReferencial": "sin foto de referencia adecuada (se buscó \"arenero pala\" en 6 tiendas)",
-  "catalogosTiendas": true
+  "fecha": "2026-11-01"
  },
  "ACC-MOND-198": {
-  "grupo": "C",
-  "tiendas": true,
+  "grupo": "B",
+  "metodo": "tipo de producto (catálogo de distribuidoralira.cl)",
+  "titulo": "Arnés Pechera Negra Police K9 Talla XXL 72188",
+  "pagina": "https://www.distribuidoralira.cl/product/arnes-pechera-negra-police-k9-talla-xxl-72188-2/",
+  "origen": "https://www.distribuidoralira.cl/wp-content/uploads/2025/07/19P933-1.jpeg",
+  "archivo": "assets/productos/ACC-MOND-198.webp",
   "intentos": [
    "tusmascotas.cl: pechera xxl (0)",
    "distribuidoralira.cl: pechera xxl (0)",
@@ -15604,11 +15258,7 @@
    "mascoteriagonzalito.cl: pechera xxl (0)",
    "petcity.cl: pechera xxl (0)"
   ],
-  "motivo": "sin coincidencia segura por código ni por nombre",
-  "fecha": "2026-11-01",
-  "referencialTiendas": true,
-  "motivoReferencial": "sin foto de referencia adecuada (se buscó \"pechera xxl\" en 6 tiendas)",
-  "catalogosTiendas": true
+  "fecha": "2026-11-01"
  },
  "ACC-MOND-197": {
   "grupo": "C",
@@ -15624,8 +15274,9 @@
   "motivo": "sin coincidencia segura por código ni por nombre",
   "fecha": "2026-11-01",
   "referencialTiendas": true,
-  "motivoReferencial": "sin foto de referencia adecuada (se buscó \"peine giratorio\" en 6 tiendas)",
-  "catalogosTiendas": true
+  "motivoReferencial": "sin foto de referencia adecuada en los catálogos de las 9 tiendas",
+  "catalogosTiendas": true,
+  "referencialCatalogos": true
  },
  "ACC-MOND-312": {
   "grupo": "B",
@@ -15671,8 +15322,9 @@
   "motivo": "sin coincidencia segura por código ni por nombre",
   "fecha": "2026-11-01",
   "referencialTiendas": true,
-  "motivoReferencial": "sin foto de referencia adecuada (se buscó \"pelota vibradora\" en 6 tiendas)",
-  "catalogosTiendas": true
+  "motivoReferencial": "sin foto de referencia adecuada en los catálogos de las 9 tiendas",
+  "catalogosTiendas": true,
+  "referencialCatalogos": true
  },
  "ACC-MOND-207": {
   "grupo": "C",
@@ -15695,7 +15347,8 @@
   "fecha": "2026-11-01",
   "referencialTiendas": true,
   "motivoReferencial": "no se reconoce el tipo de producto en el nombre",
-  "catalogosTiendas": true
+  "catalogosTiendas": true,
+  "referencialCatalogos": true
  },
  "ACC-PETE-009": {
   "grupo": "C",
@@ -15717,8 +15370,9 @@
   "motivo": "sin coincidencia segura por código ni por nombre",
   "fecha": "2026-11-01",
   "referencialTiendas": true,
-  "motivoReferencial": "sin foto de referencia adecuada (se buscó \"collar placas metalicas\" en 6 tiendas)",
-  "catalogosTiendas": true
+  "motivoReferencial": "sin foto de referencia adecuada en los catálogos de las 9 tiendas",
+  "catalogosTiendas": true,
+  "referencialCatalogos": true
  },
  "ACC-MOND-226": {
   "grupo": "B",
@@ -15829,8 +15483,12 @@
   "fecha": "2026-10-31"
  },
  "ACC-LEON-033": {
-  "grupo": "C",
-  "tiendas": true,
+  "grupo": "B",
+  "metodo": "tipo de producto (catálogo de distribuidoralira.cl)",
+  "titulo": "Plato Acero Inoxidable Base Goma (KE-2000R) 1550ml",
+  "pagina": "https://www.distribuidoralira.cl/product/plato-acero-inoxidable-base-goma-ke-2000r-1550ml-2/",
+  "origen": "https://www.distribuidoralira.cl/wp-content/uploads/2025/03/20P715-20P716-21P153.jpg",
+  "archivo": "assets/productos/ACC-LEON-033.webp",
   "intentos": [
    "tusmascotas.cl: plato base (0)",
    "distribuidoralira.cl: plato base (0)",
@@ -15839,11 +15497,7 @@
    "mascoteriagonzalito.cl: plato base (0)",
    "petcity.cl: plato base (0)"
   ],
-  "motivo": "sin coincidencia segura por código ni por nombre",
-  "fecha": "2026-11-01",
-  "referencialTiendas": true,
-  "motivoReferencial": "sin foto de referencia adecuada (se buscó \"plato base\" en 6 tiendas)",
-  "catalogosTiendas": true
+  "fecha": "2026-11-01"
  },
  "ACC-MOND-280": {
   "grupo": "B",
@@ -15889,8 +15543,9 @@
   "motivo": "sin coincidencia segura por código ni por nombre",
   "fecha": "2026-11-01",
   "referencialTiendas": true,
-  "motivoReferencial": "sin foto de referencia adecuada (se buscó \"plato ceramico agua\" en 6 tiendas)",
-  "catalogosTiendas": true
+  "motivoReferencial": "sin foto de referencia adecuada en los catálogos de las 9 tiendas",
+  "catalogosTiendas": true,
+  "referencialCatalogos": true
  },
  "ACC-MOND-296": {
   "grupo": "C",
@@ -15918,8 +15573,9 @@
   "motivo": "sin coincidencia segura por código ni por nombre",
   "fecha": "2026-11-01",
   "referencialTiendas": true,
-  "motivoReferencial": "sin foto de referencia adecuada (se buscó \"plato doble agua\" en 6 tiendas)",
-  "catalogosTiendas": true
+  "motivoReferencial": "sin foto de referencia adecuada en los catálogos de las 9 tiendas",
+  "catalogosTiendas": true,
+  "referencialCatalogos": true
  },
  "ACC-MOND-335": {
   "grupo": "B",
@@ -15988,8 +15644,12 @@
   "fecha": "2026-10-31"
  },
  "ACC-MOND-204": {
-  "grupo": "C",
-  "tiendas": true,
+  "grupo": "B",
+  "metodo": "tipo de producto (catálogo de distribuidoralira.cl)",
+  "titulo": "Plato Semi Transparente 24 7 cm Colores Surtidos (DS472814)",
+  "pagina": "https://www.distribuidoralira.cl/product/plato-semi-transparente-24x7-cm-colores-surtidos-ds472814/",
+  "origen": "https://www.distribuidoralira.cl/wp-content/uploads/2025/07/600x600_cfbcfdb4-4c51-4190-b45c-4.jpg",
+  "archivo": "assets/productos/ACC-MOND-204.webp",
   "intentos": [
    "tusmascotas.cl: plato transparente mondo (0)",
    "tusmascotas.cl: plato transparente (0)",
@@ -16004,20 +15664,19 @@
    "petcity.cl: plato transparente mondo (0)",
    "petcity.cl: plato transparente (0)"
   ],
-  "motivo": "sin coincidencia segura por código ni por nombre",
-  "fecha": "2026-11-01",
-  "referencialTiendas": true,
-  "motivoReferencial": "sin foto de referencia adecuada (se buscó \"plato transparente\" en 6 tiendas)",
-  "catalogosTiendas": true
+  "fecha": "2026-11-01"
  },
  "ACC-MOND-243": {
-  "grupo": "C",
-  "motivo": "foto referencial descartada en la revisión: muestra la marca de otro, un empaque de otra marca o un personaje con licencia",
+  "grupo": "B",
+  "metodo": "tipo de producto (catálogo de tusmascotas.cl)",
+  "titulo": "RASCADOR CON CAPSULA Y CASA MADERA - MARBEN PETS",
+  "pagina": "https://www.tusmascotas.cl/product/rascador-con-capsula-y-casa-madera-marben-pets/",
+  "origen": "https://www.tusmascotas.cl/wp-content/uploads/2025/12/rascador.jpg",
+  "archivo": "assets/productos/ACC-MOND-243.webp",
   "descartadas": [
    "https://www.tusmascotas.cl/wp-content/uploads/2026/09/55005002.png"
   ],
-  "fecha": "2026-11-01",
-  "catalogosTiendas": true
+  "fecha": "2026-11-01"
  },
  "ACC-MOND-244": {
   "grupo": "B",
@@ -16072,13 +15731,16 @@
   "fecha": "2026-10-31"
  },
  "ACC-PETE-005": {
-  "grupo": "C",
-  "motivo": "foto referencial descartada en la revisión: muestra la marca de otro, un empaque de otra marca o un personaje con licencia",
+  "grupo": "B",
+  "metodo": "tipo de producto (catálogo de tusmascotas.cl)",
+  "titulo": "Pawise Leon Con Tirador",
+  "pagina": "https://www.tusmascotas.cl/product/pawise-leon-con-tirador/",
+  "origen": "https://www.tusmascotas.cl/wp-content/uploads/2020/10/Pawise-Leon-Con-Tirador-1.jpg",
+  "archivo": "assets/productos/ACC-PETE-005.webp",
   "descartadas": [
    "https://www.tusmascotas.cl/wp-content/uploads/2021/08/pato-tirador-.png"
   ],
-  "fecha": "2026-11-01",
-  "catalogosTiendas": true
+  "fecha": "2026-11-01"
  },
  "ACC-MERK-001": {
   "grupo": "C",
@@ -16100,8 +15762,9 @@
   "motivo": "sin coincidencia segura por código ni por nombre",
   "fecha": "2026-11-01",
   "referencialTiendas": true,
-  "motivoReferencial": "sin foto de referencia adecuada (se buscó \"tirador cadena merkasia\" en 6 tiendas)",
-  "catalogosTiendas": true
+  "motivoReferencial": "sin foto de referencia adecuada en los catálogos de las 9 tiendas",
+  "catalogosTiendas": true,
+  "referencialCatalogos": true
  },
  "ACC-MOND-337": {
   "grupo": "C",
@@ -16124,16 +15787,20 @@
   "fecha": "2026-11-01",
   "referencialTiendas": true,
   "motivoReferencial": "no se reconoce el tipo de producto en el nombre",
-  "catalogosTiendas": true
+  "catalogosTiendas": true,
+  "referencialCatalogos": true
  },
  "ACC-MOND-326": {
-  "grupo": "C",
-  "motivo": "foto referencial descartada en la revisión: no es del mismo tipo de producto, está en blanco o tiene marca de agua",
+  "grupo": "B",
+  "metodo": "tipo de producto (catálogo de tusmascotas.cl)",
+  "titulo": "Transportador Skudo 1 - Outlet Detalle en Producto",
+  "pagina": "https://www.tusmascotas.cl/product/transportador-skudo-1-outlet-detalle-en-producto/",
+  "origen": "https://www.tusmascotas.cl/wp-content/uploads/2020/10/Skudo-–-Transportador-1.png",
+  "archivo": "assets/productos/ACC-MOND-326.webp",
   "descartadas": [
    "https://www.tusmascotas.cl/wp-content/uploads/2025/12/79009.png"
   ],
-  "fecha": "2026-11-01",
-  "catalogosTiendas": true
+  "fecha": "2026-11-01"
  },
  "ACC-PETE-006": {
   "grupo": "B",
@@ -16174,7 +15841,8 @@
   "fecha": "2026-11-01",
   "referencialTiendas": true,
   "motivoReferencial": "no se reconoce el tipo de producto en el nombre",
-  "catalogosTiendas": true
+  "catalogosTiendas": true,
+  "referencialCatalogos": true
  },
  "ACC-MISI-002": {
   "grupo": "A",
@@ -16452,8 +16120,12 @@
   "fecha": "2026-11-01"
  },
  "ACC-MOND-310": {
-  "grupo": "C",
-  "tiendas": true,
+  "grupo": "B",
+  "metodo": "tipo de producto (catálogo de tusmascotas.cl)",
+  "titulo": "Bandana Huesitos y Calabazas ",
+  "pagina": "https://www.tusmascotas.cl/product/bandana-huesitos-y-calabazas/",
+  "origen": "https://www.tusmascotas.cl/wp-content/uploads/2026/10/Bandana-Huesitos-y-Calabazas-.png",
+  "archivo": "assets/productos/ACC-MOND-310.webp",
   "intentos": [
    "tusmascotas.cl: bandana mondo (0)",
    "distribuidoralira.cl: bandana mondo (0)",
@@ -16462,15 +16134,15 @@
    "mascoteriagonzalito.cl: bandana mondo (0)",
    "petcity.cl: bandana mondo (0)"
   ],
-  "motivo": "sin coincidencia segura por código ni por nombre",
-  "fecha": "2026-11-01",
-  "referencialTiendas": true,
-  "motivoReferencial": "sin foto de referencia adecuada (se buscó \"bandana perro\" en 6 tiendas)",
-  "catalogosTiendas": true
+  "fecha": "2026-11-01"
  },
  "ACC-MARB-025": {
-  "grupo": "C",
-  "tiendas": true,
+  "grupo": "B",
+  "metodo": "tipo de producto (catálogo de tusmascotas.cl)",
+  "titulo": "Wonder Dog Bandana Rojo/Amarillo/Azul/Verde",
+  "pagina": "https://www.tusmascotas.cl/product/wonder-dog-bandana-rojo-amarillo-azul-verde/",
+  "origen": "https://www.tusmascotas.cl/wp-content/uploads/2024/01/WhatsApp-Image-2024-01-30-at-13.20.41.jpeg",
+  "archivo": "assets/productos/ACC-MARB-025.webp",
   "intentos": [
    "tusmascotas.cl: bandana wonder dog (0)",
    "tusmascotas.cl: bandana wonder (0)",
@@ -16485,15 +16157,15 @@
    "petcity.cl: bandana wonder dog (0)",
    "petcity.cl: bandana wonder (0)"
   ],
-  "motivo": "sin coincidencia segura por código ni por nombre",
-  "fecha": "2026-11-01",
-  "referencialTiendas": true,
-  "motivoReferencial": "sin foto de referencia adecuada (se buscó \"bandana perro\" en 6 tiendas)",
-  "catalogosTiendas": true
+  "fecha": "2026-11-01"
  },
  "ACC-MOND-245": {
-  "grupo": "C",
-  "tiendas": true,
+  "grupo": "B",
+  "metodo": "tipo de producto (catálogo de tusmascotas.cl)",
+  "titulo": "Body protector y post-quirurgico para Perro 6 - Rojo",
+  "pagina": "https://www.tusmascotas.cl/product/body-protector-y-post-quirurgico-para-perro-6/",
+  "origen": "https://www.tusmascotas.cl/wp-content/uploads/2023/05/Body-Protector-y-Post-quirurgico-Para-Perro-7-–-ROJO.jpg",
+  "archivo": "assets/productos/ACC-MOND-245.webp",
   "intentos": [
    "tusmascotas.cl: body mondo (0)",
    "distribuidoralira.cl: body mondo (0)",
@@ -16502,11 +16174,7 @@
    "mascoteriagonzalito.cl: body mondo (0)",
    "petcity.cl: body mondo (0)"
   ],
-  "motivo": "sin coincidencia segura por código ni por nombre",
-  "fecha": "2026-11-01",
-  "referencialTiendas": true,
-  "motivoReferencial": "sin foto de referencia adecuada (se buscó \"body perro\" en 6 tiendas)",
-  "catalogosTiendas": true
+  "fecha": "2026-11-01"
  },
  "ACC-MARB-032": {
   "grupo": "C",
@@ -16528,14 +16196,16 @@
   "motivo": "sin coincidencia segura por código ni por nombre",
   "fecha": "2026-11-01",
   "referencialTiendas": true,
-  "motivoReferencial": "sin foto de referencia adecuada (se buscó \"chaqueta perro marbenpets talla\" en 6 tiendas)",
-  "catalogosTiendas": true
+  "motivoReferencial": "sin foto de referencia adecuada en los catálogos de las 9 tiendas",
+  "catalogosTiendas": true,
+  "referencialCatalogos": true
  },
  "ACC-MARB-021": {
   "grupo": "C",
-  "motivo": "foto descartada en la revisión: no se puede confirmar que sea el mismo producto",
+  "motivo": "foto referencial descartada en la revisión: no es del mismo tipo de producto, está en blanco o es de otra especie",
   "descartadas": [
-   "https://www.tusmascotas.cl/wp-content/uploads/2022/08/70908103101801.png"
+   "https://www.tusmascotas.cl/wp-content/uploads/2022/08/70908103101801.png",
+   "https://www.tusmascotas.cl/wp-content/uploads/2023/03/Body-de-cobre-perro-verde-2-5.jpg"
   ],
   "fecha": "2026-11-01"
  },
@@ -16565,8 +16235,9 @@
   "motivo": "sin coincidencia segura por código ni por nombre",
   "fecha": "2026-11-01",
   "referencialTiendas": true,
-  "motivoReferencial": "sin foto de referencia adecuada (se buscó \"chaqueta perro perro talla\" en 6 tiendas)",
-  "catalogosTiendas": true
+  "motivoReferencial": "sin foto de referencia adecuada en los catálogos de las 9 tiendas",
+  "catalogosTiendas": true,
+  "referencialCatalogos": true
  },
  "ACC-MARB-034": {
   "grupo": "C",
@@ -16594,8 +16265,9 @@
   "motivo": "sin coincidencia segura por código ni por nombre",
   "fecha": "2026-11-01",
   "referencialTiendas": true,
-  "motivoReferencial": "sin foto de referencia adecuada (se buscó \"chaqueta perro perro talla\" en 6 tiendas)",
-  "catalogosTiendas": true
+  "motivoReferencial": "sin foto de referencia adecuada en los catálogos de las 9 tiendas",
+  "catalogosTiendas": true,
+  "referencialCatalogos": true
  },
  "ACC-MARB-038": {
   "grupo": "C",
@@ -16623,8 +16295,9 @@
   "motivo": "sin coincidencia segura por código ni por nombre",
   "fecha": "2026-11-01",
   "referencialTiendas": true,
-  "motivoReferencial": "sin foto de referencia adecuada (se buscó \"parka perro perro marbenpets\" en 6 tiendas)",
-  "catalogosTiendas": true
+  "motivoReferencial": "sin foto de referencia adecuada en los catálogos de las 9 tiendas",
+  "catalogosTiendas": true,
+  "referencialCatalogos": true
  },
  "ACC-MARB-042": {
   "grupo": "C",
@@ -16652,37 +16325,17 @@
   "motivo": "sin coincidencia segura por código ni por nombre",
   "fecha": "2026-11-01",
   "referencialTiendas": true,
-  "motivoReferencial": "sin foto de referencia adecuada (se buscó \"parka perro perro marbenpets\" en 6 tiendas)",
-  "catalogosTiendas": true
+  "motivoReferencial": "sin foto de referencia adecuada en los catálogos de las 9 tiendas",
+  "catalogosTiendas": true,
+  "referencialCatalogos": true
  },
  "ACC-MARB-033": {
   "grupo": "C",
-  "tiendas": true,
-  "intentos": [
-   "tusmascotas.cl: chaqueta wonder dog talla (0)",
-   "tusmascotas.cl: chaqueta wonder dog (0)",
-   "tusmascotas.cl: chaqueta wonder (0)",
-   "distribuidoralira.cl: chaqueta wonder dog talla (0)",
-   "distribuidoralira.cl: chaqueta wonder dog (0)",
-   "distribuidoralira.cl: chaqueta wonder (0)",
-   "petpalace.cl: chaqueta wonder dog talla (0)",
-   "petpalace.cl: chaqueta wonder dog (0)",
-   "petpalace.cl: chaqueta wonder (0)",
-   "petshopmg.cl: chaqueta wonder dog talla (0)",
-   "petshopmg.cl: chaqueta wonder dog (0)",
-   "petshopmg.cl: chaqueta wonder (0)",
-   "mascoteriagonzalito.cl: chaqueta wonder dog talla (0)",
-   "mascoteriagonzalito.cl: chaqueta wonder dog (0)",
-   "mascoteriagonzalito.cl: chaqueta wonder (0)",
-   "petcity.cl: chaqueta wonder dog talla (0)",
-   "petcity.cl: chaqueta wonder dog (0)",
-   "petcity.cl: chaqueta wonder (0)"
+  "motivo": "foto referencial descartada en la revisión: muestra la marca de otro, un empaque de otra marca o una marca de agua de otra tienda",
+  "descartadas": [
+   "https://www.tusmascotas.cl/wp-content/uploads/2020/10/Chaqueta-Salvavidas-De-Perro-M-Flotador.jpg"
   ],
-  "motivo": "sin coincidencia segura por código ni por nombre",
-  "fecha": "2026-11-01",
-  "referencialTiendas": true,
-  "motivoReferencial": "sin foto de referencia adecuada (se buscó \"chaqueta perro\" en 6 tiendas)",
-  "catalogosTiendas": true
+  "fecha": "2026-11-01"
  },
  "ACC-MOND-206": {
   "grupo": "C",
@@ -16705,7 +16358,8 @@
   "fecha": "2026-11-01",
   "referencialTiendas": true,
   "motivoReferencial": "no se reconoce el tipo de producto en el nombre",
-  "catalogosTiendas": true
+  "catalogosTiendas": true,
+  "referencialCatalogos": true
  },
  "ACC-MOND-317": {
   "grupo": "C",
@@ -16733,8 +16387,9 @@
   "motivo": "sin coincidencia segura por código ni por nombre",
   "fecha": "2026-11-01",
   "referencialTiendas": true,
-  "motivoReferencial": "sin foto de referencia adecuada (se buscó \"parka perro perro talla\" en 6 tiendas)",
-  "catalogosTiendas": true
+  "motivoReferencial": "sin foto de referencia adecuada en los catálogos de las 9 tiendas",
+  "catalogosTiendas": true,
+  "referencialCatalogos": true
  },
  "SAL-MEBE-002": {
   "grupo": "C",
