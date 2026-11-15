@@ -48,10 +48,10 @@ let temporizadorAviso
 function avisar(texto, { error = false } = {}) {
   const el = $('#aviso')
   el.textContent = texto
-  el.classList.toggle('aviso--error', error)
-  el.classList.add('aviso--visible')
+  el.classList.toggle('rev-aviso--error', error)
+  el.classList.add('rev-aviso--visible')
   clearTimeout(temporizadorAviso)
-  temporizadorAviso = setTimeout(() => el.classList.remove('aviso--visible'), error ? 6000 : 2500)
+  temporizadorAviso = setTimeout(() => el.classList.remove('rev-aviso--visible'), error ? 6000 : 2500)
 }
 
 // ---------- Estado ----------
@@ -59,7 +59,7 @@ const estado = {
   base: null, ajustesRepo: null, codigosBaseRosa: [], categorias: [],
   cambios: {}, pila: {}, version: 0,
   originales: new Map(), vista: [], porSku: new Map(),
-  pestana: 'catalogo', mostrados: 48, editando: null, // SKU con el precio abierto en la card
+  pestana: 'catalogo', mostrados: 48, editando: null, tallas: new Map(), // editando: SKU|campo del precio abierto; tallas: talla elegida en cada card
   dialogoSku: null, subidas: new Set(), presencia: { PC: false, Celular: false }
 }
 const POR_PAGINA = 48
@@ -113,7 +113,7 @@ function pintarContadores() {
     'Para modificar': v.filter(p => marcasDeCambios(p.cambios).includes('Modificar')).length,
     'Nuevos': v.filter(esNuevo).length
   }
-  $('#contadores').replaceChildren(...Object.entries(n).map(([k, x]) => h('li', { class: 'contador' }, h('strong', { text: String(x) }), ` ${k}`)))
+  $('#contadores').replaceChildren(...Object.entries(n).map(([k, x]) => h('li', { class: 'rev-contador' }, h('strong', { text: String(x) }), ` ${k}`)))
   const faltan = porSacar().length
   $('#pestana-fotos-n').textContent = `(${faltan})`
 }
@@ -125,12 +125,25 @@ function llenarSelect(select, valores, { etiqueta = v => v } = {}) {
   if (valores.includes(actual)) select.value = actual
 }
 
+function pintarPestanasCategoria() {
+  const actual = $('#filtro-categoria').value
+  $('#categorias-lista').replaceChildren(...[{ id: '', nombre: 'Todo' }, ...estado.categorias].map(c => h('li', {},
+    h('button', { type: 'button', class: 'pestana', dataset: { categoria: c.id }, 'aria-current': c.id === actual ? 'page' : null, text: c.nombre }))))
+}
+
 function prepararFiltros() {
+  pintarPestanasCategoria()
+  $('#categorias-lista').addEventListener('click', e => {
+    const b = e.target.closest('button[data-categoria]')
+    if (!b) return
+    $('#filtro-categoria').value = b.dataset.categoria
+    $('#filtro-categoria').dispatchEvent(new Event('change'))
+  })
   llenarSelect($('#filtro-categoria'), estado.categorias.map(c => c.id), { etiqueta: nombreCategoria })
   actualizarOpcionesFiltros()
   for (const id of ['#filtro-buscar', '#filtro-categoria', '#filtro-subcategoria', '#filtro-marca', '#filtro-web', '#filtro-stock', '#filtro-cambios']) {
     $(id).addEventListener(id === '#filtro-buscar' ? 'input' : 'change', () => {
-      if (id === '#filtro-categoria') actualizarOpcionesFiltros()
+      if (id === '#filtro-categoria') { actualizarOpcionesFiltros(); pintarPestanasCategoria() }
       estado.mostrados = POR_PAGINA
       pintarLista()
     })
@@ -138,6 +151,7 @@ function prepararFiltros() {
   $('#filtro-limpiar').addEventListener('click', () => {
     for (const id of ['#filtro-buscar', '#filtro-categoria', '#filtro-subcategoria', '#filtro-marca', '#filtro-web', '#filtro-stock', '#filtro-cambios']) $(id).value = ''
     actualizarOpcionesFiltros()
+    pintarPestanasCategoria()
     estado.mostrados = POR_PAGINA
     pintarLista()
   })
@@ -188,22 +202,44 @@ function filtrar() {
   })
 }
 
-// ---------- Card ----------
-function etiquetaMarca(texto) {
-  const clase = { Eliminar: 'eliminar', Modificar: 'modificar', 'Precio cambiado': 'precio', 'Foto nueva': 'foto', OK: 'ok', Nuevo: 'nuevo' }[texto] || 'modificar'
-  return h('span', { class: `marca marca--${clase}`, text: texto })
+// Ícono del sitio (assets/iconos.svg)
+function icono(nombre) {
+  const NS = 'http://www.w3.org/2000/svg'
+  const svg = document.createElementNS(NS, 'svg')
+  svg.setAttribute('class', 'icono')
+  svg.setAttribute('aria-hidden', 'true')
+  svg.setAttribute('focusable', 'false')
+  const use = document.createElementNS(NS, 'use')
+  use.setAttribute('href', `/repo/assets/iconos.svg#${nombre}`)
+  svg.append(use)
+  return svg
 }
 
+// ---------- Card (misma estructura y estilos que la card del catálogo web: styles.css del sitio) ----------
+function etiquetaMarca(texto) {
+  const clase = { Eliminar: 'eliminar', Modificar: 'modificar', 'Precio cambiado': 'precio', 'Foto nueva': 'foto', OK: 'ok', Nuevo: 'nuevo' }[texto] || 'modificar'
+  return h('span', { class: `rev-marca rev-marca--${clase}`, text: texto })
+}
+
+// Foto como en la web: foto exacta/referencial, o el relleno con el logo y el nombre
 function bloqueFoto(p) {
   const f = valor(p, 'foto')
   const url = fotoUrl(p)
-  const caja = h('div', { class: 'tarjeta__foto' })
-  if (f && f.estado === 'procesando') caja.append(h('div', { class: 'foto-vacia foto-vacia--procesando', role: 'img', 'aria-label': 'Foto nueva procesándose' }, h('span', { text: 'Procesando foto…' })))
-  else if (f && f.estado === 'error') caja.append(h('div', { class: 'foto-vacia', role: 'img', 'aria-label': 'Error en la foto' }, h('span', { text: f.aviso || 'No se pudo procesar la foto' })))
-  else if (url) caja.append(h('img', { src: url, alt: p.nombre, loading: 'lazy', width: 300, height: 300 }))
-  else caja.append(h('div', { class: 'foto-vacia', role: 'img', 'aria-label': 'Sin foto' }, h('img', { src: '/repo/assets/logo/logo-akyra-recortado.svg', alt: '', width: 160, height: 54 }), h('span', { text: 'Sin foto' })))
+  const media = h('div', { class: 'tarjeta__media' })
+  if (f && f.estado !== 'lista') {
+    media.append(h('div', { class: `foto-pendiente rev-procesando${f.estado === 'error' ? ' rev-procesando--error' : ''}`, role: 'img', 'aria-label': f.estado === 'error' ? 'Error en la foto nueva' : 'Foto nueva procesándose' },
+      h('span', { class: 'foto-pendiente__texto', text: f.estado === 'error' ? (f.aviso || 'No se pudo procesar la foto') : 'Procesando foto…' })))
+  } else if (url) {
+    media.append(h('img', { src: url, alt: p.nombre + (p.imagenTipo === 'referencial' && !f ? ' (imagen referencial)' : ''), loading: 'lazy', decoding: 'async', width: 400, height: 400, class: 'producto-foto' }))
+  } else {
+    media.append(h('div', { class: 'foto-pendiente', role: 'img', 'aria-label': `${p.nombre} (sin foto)` },
+      h('img', { src: '/repo/assets/logo/logo-akyra-recortado.svg', alt: '', width: 976, height: 330, class: 'foto-pendiente__logo', loading: 'lazy' }),
+      h('span', { class: 'foto-pendiente__texto', 'aria-hidden': 'true', text: p.nombre })))
+  }
+  if (sinPrecio(p)) media.append(h('span', { class: 'insignia insignia--consultar insignia--flotante', 'aria-hidden': 'true', text: 'Consultar precio' }))
+  const caja = h('div', { class: 'tarjeta__foto' }, media)
   if (!f && p.imagen && p.imagenTipo === 'referencial') caja.append(h('p', { class: 'nota-referencial', text: 'Imagen referencial' }))
-  if (f) caja.append(h('p', { class: 'nota-foto', text: f.estado === 'lista' ? (f.eleccion === 'simple' ? 'Foto propia (sin quitar fondo)' : 'Foto propia') : 'Foto propia en proceso' }))
+  else if (f && f.estado === 'lista') caja.append(h('p', { class: 'nota-referencial rev-nota-propia', text: f.eleccion === 'simple' ? 'Foto nueva (sin quitar fondo)' : 'Foto nueva' }))
   return caja
 }
 
@@ -214,88 +250,128 @@ function textoPrecioOriginal(p, talla) {
   return typeof precio === 'number' ? precio : null
 }
 
-function filaPrecio(p, { talla = null } = {}) {
+const tallaElegida = p => (p.tallas ? estado.tallas.get(p.sku) || null : null)
+
+// Precio como en la web ("$12.990", "$2.800 por kg", "Desde $8.000", "Consultar precio"). Tocarlo lo vuelve editable.
+function bloquePrecio(p) {
+  const talla = tallaElegida(p)
   const campo = talla ? `precio@${talla}` : 'precio'
-  const actual = talla ? p.tallas.find(t => t.talla === talla)?.precio ?? null : p.precio ?? null
-  const original = esNuevo(p) ? null : textoPrecioOriginal(p, talla)
-  const cambiado = !esNuevo(p) && p.cambios[campo]?.valor != null
   const sufijo = p.granel ? ' por kg' : ''
-  const etiqueta = talla ? `Talla ${talla}: ` : (p.granel ? 'Precio por kilo: ' : '')
-  const fila = h('div', { class: `precio${cambiado ? ' precio--cambiado' : ''}`, dataset: { campo } })
   if (estado.editando === `${p.sku}|${campo}`) {
+    const actual = talla ? p.tallas.find(t => t.talla === talla)?.precio ?? null : p.precio ?? null
     const id = `precio-${p.sku}-${talla || 'unico'}`
     const entrada = h('input', { id, class: 'precio__campo', type: 'text', inputmode: 'numeric', autocomplete: 'off', value: actual ? formatoPrecio(actual) : '', 'aria-describedby': `${id}-ayuda` })
-    fila.append(
-      h('label', { for: id, class: 'precio__etiqueta', text: `${etiqueta || 'Precio'}${sufijo ? ' (por kg)' : ''}` }),
-      entrada,
-      h('p', { id: `${id}-ayuda`, class: 'ayuda', text: 'Solo números: 12345, 12.345 o $12.345. Enter guarda, Esc cancela.' }),
-      h('div', { class: 'fila-botones' },
-        h('button', { type: 'button', class: 'boton boton--primario', dataset: { accion: 'guardar-precio', campo }, text: 'Guardar precio' }),
-        h('button', { type: 'button', class: 'boton', dataset: { accion: 'cancelar-precio' }, text: 'Cancelar' }))
-    )
     queueMicrotask(() => { entrada.focus(); entrada.select() })
-    return fila
+    return h('div', { class: 'precio rev-precio-edicion', dataset: { campo } },
+      h('label', { for: id, class: 'precio__etiqueta', text: `Precio${talla ? ` talla ${talla}` : ''}${sufijo ? ' (por kg)' : ''}` }),
+      entrada,
+      h('p', { id: `${id}-ayuda`, class: 'rev-ayuda', text: 'Solo números: 12345, 12.345 o $12.345. Enter guarda, Esc cancela.' }),
+      h('div', { class: 'rev-fila-botones' },
+        h('button', { type: 'button', class: 'boton boton--primario boton--chico', dataset: { accion: 'guardar-precio', campo }, text: 'Guardar precio' }),
+        h('button', { type: 'button', class: 'boton boton--secundario boton--chico', dataset: { accion: 'cancelar-precio' }, text: 'Cancelar' })))
   }
-  const texto = actual ? `${formatoPrecio(actual)}${sufijo}` : 'Consultar precio (sin precio)'
-  fila.append(...[
-    h('span', { class: 'precio__etiqueta', text: etiqueta }),
-    cambiado ? h('s', { class: 'precio__antes', text: original ? formatoPrecio(original) : 'Consultar precio', 'aria-label': `Antes: ${original ? formatoPrecio(original) : 'Consultar precio'}` }) : null,
-    h('button', { type: 'button', class: `precio__valor${actual ? '' : ' precio__valor--sin'}`, dataset: { accion: 'editar-precio', campo }, 'aria-label': `${actual ? `Precio ${texto}` : texto}${talla ? `, talla ${talla}` : ''}. Tocar para cambiar`, text: texto }),
-    cambiado ? h('span', { class: 'marca marca--precio', text: 'Precio cambiado' }) : null
-  ].filter(Boolean))
+  let principal = null
+  if (p.tallas && !talla) {
+    const precios = p.tallas.map(t => t.precio).filter(n => typeof n === 'number')
+    if (precios.length) principal = (new Set(precios).size > 1 ? 'Desde ' : '') + formatoPrecio(Math.min(...precios))
+  } else {
+    const actual = talla ? p.tallas.find(t => t.talla === talla)?.precio : p.precio
+    if (typeof actual === 'number') principal = formatoPrecio(actual)
+  }
+  const cambiado = !esNuevo(p) && (talla || !p.tallas) && p.cambios[campo]?.valor != null
+  const original = cambiado ? textoPrecioOriginal(p, talla) : null
+  const fila = h('div', { class: `precio${cambiado ? ' precio--cambiado' : ''}`, dataset: { campo } })
+  if (cambiado) fila.append(h('s', { class: 'precio__antes', text: original ? formatoPrecio(original) : 'Consultar precio' }))
+  const boton = h('button', { type: 'button', class: 'rev-precio-boton', dataset: { accion: 'editar-precio', campo } })
+  if (principal) {
+    boton.append(h('span', { class: 'precio__valor', text: principal }))
+    if (sufijo) boton.append(h('span', { class: 'precio__sufijo', text: sufijo }))
+    boton.setAttribute('aria-label', `Precio ${principal}${sufijo}${talla ? `, talla ${talla}` : ''}. Tocar para cambiar`)
+  } else {
+    boton.append(h('span', { class: 'insignia insignia--consultar', text: 'Consultar precio' }))
+    boton.setAttribute('aria-label', `Consultar precio (sin precio)${talla ? `, talla ${talla}` : ''}. Tocar para poner precio`)
+  }
+  fila.append(boton)
   return fila
+}
+
+function selectorTallas(p) {
+  const elegida = tallaElegida(p)
+  return h('div', { class: 'tallas', role: 'group', 'aria-label': 'Talla' },
+    h('span', { class: 'tallas__titulo', 'aria-hidden': 'true', text: 'Talla' }),
+    h('div', { class: 'tallas__opciones' }, ...p.tallas.map(t => h('button', {
+      type: 'button', class: 'talla', 'aria-pressed': String(t.talla === elegida), dataset: { accion: 'talla', talla: t.talla },
+      'aria-label': `Talla ${t.talla}${typeof t.precio === 'number' ? `, ${formatoPrecio(t.precio)}` : ', sin precio'}`, text: t.talla
+    }))))
+}
+
+// La card tal como se ve en el catálogo web (sin enlaces: es una vista previa)
+function cardWeb(p) {
+  const talla = tallaElegida(p)
+  const disponibilidad = talla ? p.tallas.find(t => t.talla === talla)?.disponibilidad : p.disponibilidad
+  const cuerpo = h('div', { class: 'tarjeta__cuerpo' },
+    h('p', { class: 'tarjeta__marca', text: p.marca }),
+    h('h3', { class: 'tarjeta__nombre' }, h('span', { class: 'rev-nombre', text: p.nombre })),
+    p.descripcion ? h('p', { class: 'tarjeta__descripcion', text: p.descripcion }) : null,
+    bloquePrecio(p),
+    h('p', { class: `estado-stock estado-stock--${disponibilidad === 'con-stock' ? 'con-stock' : 'consultar'}`, text: disponibilidad === 'con-stock' ? '' : 'Consultar disponibilidad' }))
+  if (p.granel && typeof p.precio === 'number') cuerpo.append(h('p', { class: 'tarjeta__subtotal', text: `0,1 kg = ${formatoPrecio(Math.round(p.precio * 0.1))}` }))
+  if (p.tallas && !sinPrecio(p)) cuerpo.append(selectorTallas(p))
+  // Pie igual al de la web (vista previa sin funcionar): "− 1 +" y "Añadir", o "Consultar precio"
+  const compra = h('div', { class: 'compra rev-inerte', 'aria-hidden': 'true' })
+  if (sinPrecio(p)) compra.append(h('span', { class: 'boton boton--whatsapp compra__consultar' }, icono('message-circle'), h('span', { text: 'Consultar precio' })))
+  else {
+    compra.append(
+      h('span', { class: 'cantidad', dataset: { granel: p.granel ? '1' : null } },
+        h('span', { class: 'cantidad__boton', 'aria-disabled': 'true' }, icono('minus')),
+        h('span', { class: 'cantidad__campo rev-cantidad', text: p.granel ? '0,1' : '1' }),
+        p.granel ? h('span', { class: 'cantidad__unidad', text: 'kg' }) : null,
+        h('span', { class: 'cantidad__boton' }, icono('plus'))),
+      h('span', { class: 'boton boton--primario compra__anadir' }, icono('shopping-bag'), h('span', { text: 'Añadir' })))
+  }
+  return h('article', { class: 'tarjeta' }, bloqueFoto(p), cuerpo, h('div', { class: 'tarjeta__pie' }, compra))
 }
 
 function interruptorDisponibilidad(p) {
   const conStock = p.disponibilidad === 'con-stock'
-  return h('button', { type: 'button', role: 'switch', 'aria-checked': String(conStock), class: 'interruptor', dataset: { accion: 'disponibilidad' } },
-    h('span', { class: 'interruptor__opcion', text: 'Con stock' }),
-    h('span', { class: 'interruptor__opcion', text: 'Consultar' }))
+  return h('button', { type: 'button', role: 'switch', 'aria-checked': String(conStock), class: 'rev-interruptor', dataset: { accion: 'disponibilidad' }, 'aria-label': 'Disponibilidad: con stock' },
+    h('span', { class: 'rev-interruptor__opcion', text: 'Con stock' }),
+    h('span', { class: 'rev-interruptor__opcion', text: 'Consultar' }))
 }
 
+// Card web + panel de revisión debajo
 function tarjeta(p) {
   const marcas = marcasDeCambios(p.cambios)
-  const t = h('li', { class: `tarjeta${valor(p, 'eliminar') ? ' tarjeta--eliminar' : ''}${marcas.length ? ' tarjeta--marcada' : ''}`, dataset: { sku: p.sku } })
-  const cabeza = h('div', { class: 'tarjeta__marcas' }, ...marcas.map(etiquetaMarca))
-  if (!p.publicado) cabeza.append(h('span', { class: 'marca marca--oculto', text: p.motivo === 'falta-foto' ? 'No se ve en la web: falta foto' : 'No se ve en la web: eliminado' }))
-  t.append(cabeza, bloqueFoto(p))
-  const cuerpo = h('div', { class: 'tarjeta__cuerpo' },
-    h('p', { class: 'tarjeta__marca', text: p.marca }),
-    h('h3', { class: 'tarjeta__nombre', text: p.nombre }),
-    h('p', { class: 'tarjeta__codigos', text: `SKU ${p.sku}${p.codigo ? ` · Código ${p.codigo}` : ''}` }),
-    h('p', { class: 'tarjeta__categoria', text: [nombreCategoria(p.categoria), p.subcategoria].filter(Boolean).join(' · ') })
-  )
-  if (p.descripcion) cuerpo.append(h('p', { class: 'tarjeta__descripcion', text: p.descripcion }))
-  if (p.tallas) {
-    cuerpo.append(...p.tallas.map(x => filaPrecio(p, { talla: x.talla })))
-    cuerpo.append(h('button', { type: 'button', class: 'boton boton--chico', dataset: { accion: 'mismo-precio' }, text: 'Mismo precio para todas las tallas' }))
-  } else cuerpo.append(filaPrecio(p))
-  cuerpo.append(h('p', { class: 'tarjeta__web', text: sinPrecio(p) ? 'En la web: "Consultar precio" (sin botón Añadir)' : 'En la web: se vende con botón Añadir' }))
-  if (p.disponibilidad === 'consultar') cuerpo.append(h('p', { class: 'estado-consultar', text: 'Consultar disponibilidad' }))
+  const f = valor(p, 'foto')
+  const li = h('li', { class: `rev-item${valor(p, 'eliminar') ? ' rev-item--eliminar' : ''}${marcas.length ? ' rev-item--marcado' : ''}`, dataset: { sku: p.sku } })
+  const etiquetas = h('div', { class: 'rev-marcas' }, ...marcas.map(etiquetaMarca))
+  if (!p.publicado) etiquetas.append(h('span', { class: 'rev-marca rev-marca--oculto', text: p.motivo === 'falta-foto' ? 'No se ve en la web: falta foto' : 'No se ve en la web: eliminado' }))
+  const panel = h('div', { class: 'rev-panel' },
+    h('p', { class: 'rev-dato' }, 'Código de barras: ', h('strong', { text: p.codigo || 'sin código' })),
+    h('p', { class: 'rev-dato', text: [nombreCategoria(p.categoria), p.subcategoria].filter(Boolean).join(' · ') }),
+    h('p', { class: 'rev-dato', text: sinPrecio(p) ? 'En la web: "Consultar precio" (sin botón Añadir)' : 'En la web: se vende con botón Añadir' }))
   if (p.tallas) {
     const sin = p.tallas.filter(x => x.disponibilidad === 'consultar').map(x => x.talla)
-    if (sin.length && sin.length < p.tallas.length) cuerpo.append(h('p', { class: 'tarjeta__nota', text: `Tallas para consultar: ${sin.join(', ')}` }))
+    if (sin.length && sin.length < p.tallas.length) panel.append(h('p', { class: 'rev-nota', text: `Tallas para consultar: ${sin.join(', ')}` }))
+    if (!tallaElegida(p)) panel.append(h('p', { class: 'rev-ayuda', text: 'Para cambiar el precio de una talla, elígela en la card y toca el precio.' }))
+    panel.append(h('button', { type: 'button', class: 'boton boton--secundario boton--chico', dataset: { accion: 'mismo-precio' }, text: 'Mismo precio para todas las tallas' }))
   }
-  cuerpo.append(h('div', { class: 'campo-interruptor' }, h('span', { text: 'Disponibilidad:' }), interruptorDisponibilidad(p)))
-  if (valor(p, 'nota')) cuerpo.append(h('p', { class: 'tarjeta__nota', text: `Nota: ${valor(p, 'nota')}` }))
-  if (valor(p, 'eliminar')?.motivo) cuerpo.append(h('p', { class: 'tarjeta__nota', text: `Motivo: ${valor(p, 'eliminar').motivo}` }))
-  const f = valor(p, 'foto')
-  if (f && f.aviso) cuerpo.append(h('p', { class: 'tarjeta__nota', text: f.aviso }))
-  t.append(cuerpo)
-
-  const acciones = h('div', { class: 'tarjeta__acciones' },
-    h('label', { class: 'boton boton--archivo boton--foto' }, 'Sacar foto', h('input', { type: 'file', accept: 'image/*', capture: 'environment', class: 'oculto-visual', dataset: { accion: 'foto' }, 'aria-label': `Sacar foto de ${p.nombre}` })),
-    h('label', { class: 'boton boton--archivo' }, 'Subir foto', h('input', { type: 'file', accept: 'image/*', class: 'oculto-visual', dataset: { accion: 'foto' }, 'aria-label': `Subir foto de ${p.nombre}` })),
-    f && f.estado === 'lista' ? h('button', { type: 'button', class: 'boton', dataset: { accion: 'ver-foto' }, text: 'Ver foto nueva' }) : null,
-    h('button', { type: 'button', class: 'boton', dataset: { accion: 'modificar' }, text: 'Modificar' }),
+  panel.append(h('div', { class: 'rev-campo-interruptor' }, h('span', { 'aria-hidden': 'true', text: 'Disponibilidad:' }), interruptorDisponibilidad(p)))
+  if (valor(p, 'nota')) panel.append(h('p', { class: 'rev-nota', text: `Nota: ${valor(p, 'nota')}` }))
+  if (valor(p, 'eliminar')?.motivo) panel.append(h('p', { class: 'rev-nota', text: `Motivo: ${valor(p, 'eliminar').motivo}` }))
+  if (f && f.aviso) panel.append(h('p', { class: 'rev-nota', text: f.aviso }))
+  panel.append(h('div', { class: 'rev-acciones' },
+    h('label', { class: 'boton boton--secundario rev-archivo rev-foto' }, 'Sacar foto', h('input', { type: 'file', accept: 'image/*', capture: 'environment', class: 'visualmente-oculto', dataset: { accion: 'foto' }, 'aria-label': `Sacar foto de ${p.nombre}` })),
+    h('label', { class: 'boton boton--secundario rev-archivo' }, 'Subir foto', h('input', { type: 'file', accept: 'image/*', class: 'visualmente-oculto', dataset: { accion: 'foto' }, 'aria-label': `Subir foto de ${p.nombre}` })),
+    f && f.estado === 'lista' ? h('button', { type: 'button', class: 'boton boton--secundario', dataset: { accion: 'ver-foto' }, text: 'Ver foto nueva' }) : null,
+    h('button', { type: 'button', class: 'boton boton--secundario', dataset: { accion: 'modificar' }, text: 'Modificar' }),
     valor(p, 'eliminar')
-      ? h('button', { type: 'button', class: 'boton', dataset: { accion: 'no-eliminar' }, text: 'No eliminar' })
-      : h('button', { type: 'button', class: 'boton boton--peligro', dataset: { accion: 'eliminar' }, text: 'Eliminar de la web' }),
-    h('button', { type: 'button', class: 'boton', 'aria-pressed': String(!!valor(p, 'revisado')), dataset: { accion: 'revisado' }, text: valor(p, 'revisado') ? 'Revisado ✓' : 'Revisado, está bien' }),
-    estado.pila[p.sku] ? h('button', { type: 'button', class: 'boton boton--chico', dataset: { accion: 'deshacer' }, text: 'Deshacer último cambio' }) : null
-  )
-  t.append(acciones, h('p', { class: 'tarjeta__soltar', text: 'Suelta la foto aquí' }))
-  return t
+      ? h('button', { type: 'button', class: 'boton boton--secundario', dataset: { accion: 'no-eliminar' }, text: 'No eliminar' })
+      : h('button', { type: 'button', class: 'boton boton--secundario rev-peligro', dataset: { accion: 'eliminar' }, text: 'Eliminar de la web' }),
+    h('button', { type: 'button', class: 'boton boton--secundario', 'aria-pressed': String(!!valor(p, 'revisado')), dataset: { accion: 'revisado' }, text: valor(p, 'revisado') ? 'Revisado ✓' : 'Revisado, está bien' }),
+    estado.pila[p.sku] ? h('button', { type: 'button', class: 'boton boton--secundario boton--chico', dataset: { accion: 'deshacer' }, text: 'Deshacer último cambio' }) : null))
+  li.append(etiquetas, cardWeb(p), panel, h('p', { class: 'rev-soltar', text: 'Suelta la foto aquí' }))
+  return li
 }
 
 // ---------- Lista ----------
@@ -323,16 +399,15 @@ function porSacar() {
 }
 
 function filaFoto(p) {
-  return h('li', { class: 'foto-pendiente', dataset: { sku: p.sku } },
-    h('div', { class: 'foto-pendiente__datos' },
-      h('p', { class: 'foto-pendiente__nombre', text: p.nombre }),
-      h('p', { class: 'foto-pendiente__marca', text: p.marca }),
-      h('p', { class: 'foto-pendiente__codigo' }, 'Código de barras: ', h('strong', { text: p.codigo || 'sin código' })),
-      h('p', { class: 'foto-pendiente__codigo' }, 'SKU: ', h('strong', { text: p.sku })),
-      p.motivo === 'falta-foto' ? h('p', { class: 'marca marca--oculto', text: 'No se ve en la web: falta foto' }) : null),
-    h('div', { class: 'foto-pendiente__acciones' },
-      h('label', { class: 'boton boton--archivo boton--foto boton--grande' }, 'Sacar foto', h('input', { type: 'file', accept: 'image/*', capture: 'environment', class: 'oculto-visual', dataset: { accion: 'foto' }, 'aria-label': `Sacar foto de ${p.nombre}` })),
-      h('label', { class: 'boton boton--archivo' }, 'Subir foto', h('input', { type: 'file', accept: 'image/*', class: 'oculto-visual', dataset: { accion: 'foto' }, 'aria-label': `Subir foto de ${p.nombre}` })))
+  return h('li', { class: 'rev-foto-pendiente', dataset: { sku: p.sku } },
+    h('div', { class: 'rev-foto-pendiente__datos' },
+      h('p', { class: 'rev-foto-pendiente__nombre', text: p.nombre }),
+      h('p', { class: 'rev-foto-pendiente__marca', text: p.marca }),
+      h('p', { class: 'rev-foto-pendiente__codigo' }, 'Código de barras: ', h('strong', { text: p.codigo || 'sin código' })),
+      p.motivo === 'falta-foto' ? h('p', { class: 'rev-marca rev-marca--oculto', text: 'No se ve en la web: falta foto' }) : null),
+    h('div', { class: 'rev-foto-pendiente__acciones' },
+      h('label', { class: 'boton boton--secundario rev-archivo rev-foto rev-grande' }, 'Sacar foto', h('input', { type: 'file', accept: 'image/*', capture: 'environment', class: 'visualmente-oculto', dataset: { accion: 'foto' }, 'aria-label': `Sacar foto de ${p.nombre}` })),
+      h('label', { class: 'boton boton--secundario rev-archivo' }, 'Subir foto', h('input', { type: 'file', accept: 'image/*', class: 'visualmente-oculto', dataset: { accion: 'foto' }, 'aria-label': `Subir foto de ${p.nombre}` })))
   )
 }
 
@@ -366,7 +441,7 @@ function pintarFotos() {
     return h('li', { class: 'miniatura', dataset: { sku: p.sku } },
       url ? h('img', { src: url, alt: p.nombre, width: 120, height: 120, loading: 'lazy' }) : h('div', { class: 'foto-vacia foto-vacia--procesando', text: 'Procesando…' }),
       h('p', { text: p.nombre }),
-      valor(p, 'foto').estado === 'lista' ? h('button', { type: 'button', class: 'boton boton--chico', dataset: { accion: 'ver-foto' }, text: 'Ver foto' }) : null)
+      valor(p, 'foto').estado === 'lista' ? h('button', { type: 'button', class: 'boton boton--secundario boton--chico', dataset: { accion: 'ver-foto' }, text: 'Ver foto' }) : null)
   }))
   const referenciales = estado.vista.filter(p => p.imagenTipo === 'referencial' && !tieneFotoNueva(p) && !valor(p, 'eliminar')).filter(coincide)
   $('#fotos-referenciales').replaceChildren(...gruposPorCategoria(referenciales))
@@ -386,7 +461,7 @@ function confirmar(titulo, texto, { si = 'Sí, guardar', no = 'No, corregir' } =
       h('p', { class: 'confirmar__texto', text: texto }),
       h('div', { class: 'fila-botones' },
         h('button', { type: 'button', class: 'boton boton--primario', onclick: () => { resolver(true); cerrarDialogo() }, text: si }),
-        h('button', { type: 'button', class: 'boton', onclick: () => { resolver(false); cerrarDialogo() }, text: no }))
+        h('button', { type: 'button', class: 'boton boton--secundario', onclick: () => { resolver(false); cerrarDialogo() }, text: no }))
     ], { alCerrar: () => resolver(false) })
   })
 }
@@ -451,10 +526,10 @@ function dialogoEliminar(p) {
   const entrada = h('input', { id: 'motivo', type: 'text', maxlength: 200, autocomplete: 'off', placeholder: 'Ej: ya no se vende' })
   abrirDialogo(`Eliminar de la web: ${p.nombre}`, [
     h('p', { text: 'El producto no se publicará. Puedes deshacerlo después.' }),
-    h('label', { class: 'campo', for: 'motivo' }, 'Motivo (opcional)', entrada),
+    h('label', { class: 'rev-campo', for: 'motivo' }, 'Motivo (opcional)', entrada),
     h('div', { class: 'fila-botones' },
-      h('button', { type: 'button', class: 'boton boton--peligro', text: 'Eliminar de la web', onclick: async () => { cerrarDialogo(); await cambiar(p.sku, 'eliminar', { motivo: entrada.value.trim().slice(0, 200) }) } }),
-      h('button', { type: 'button', class: 'boton', text: 'Cancelar', onclick: cerrarDialogo }))
+      h('button', { type: 'button', class: 'boton boton--secundario rev-peligro', text: 'Eliminar de la web', onclick: async () => { cerrarDialogo(); await cambiar(p.sku, 'eliminar', { motivo: entrada.value.trim().slice(0, 200) }) } }),
+      h('button', { type: 'button', class: 'boton boton--secundario', text: 'Cancelar', onclick: cerrarDialogo }))
   ], { sku: p.sku })
   entrada.focus()
 }
@@ -472,12 +547,12 @@ function dialogoFoto(sku) {
         h('figure', {}, h('img', { src: `/${f.original}`, alt: 'Foto original', width: 300, height: 300 }), h('figcaption', { text: 'Original' })),
         h('figure', {}, h('img', { src: `/${f.procesada}?v=${f.id}`, alt: 'Foto procesada (sin fondo)', width: 300, height: 300 }), h('figcaption', { text: f.sinFondo ? 'Procesada (fondo blanco)' : 'Procesada (no se pudo quitar el fondo)' })),
         h('figure', {}, h('img', { src: `/${f.simple}?v=${f.id}`, alt: 'Sin quitar el fondo', width: 300, height: 300 }), h('figcaption', { text: 'Sin quitar fondo' }))))
-      if (f.aviso) cuerpo.push(h('p', { class: 'tarjeta__nota', text: f.aviso }))
+      if (f.aviso) cuerpo.push(h('p', { class: 'rev-nota', text: f.aviso }))
       cuerpo.push(h('p', { text: `Ahora se usa: ${f.eleccion === 'simple' ? 'sin quitar fondo' : 'la procesada'}.` }))
       cuerpo.push(h('div', { class: 'fila-botones' },
         h('button', { type: 'button', class: 'boton boton--primario', text: 'Usar esta', onclick: () => elegirFoto(sku, 'procesada') }),
-        h('button', { type: 'button', class: 'boton', text: 'Usar sin quitar fondo', onclick: () => elegirFoto(sku, 'simple') }),
-        h('label', { class: 'boton boton--archivo boton--peligro' }, 'Repetir foto', h('input', { type: 'file', accept: 'image/*', capture: 'environment', class: 'oculto-visual', onchange: async e => { const archivo = e.target.files[0]; await api('/api/foto/elegir', { metodo: 'POST', datos: { sku, eleccion: 'repetir' } }).catch(() => {}); if (archivo) await subirFoto(sku, archivo) } }))))
+        h('button', { type: 'button', class: 'boton boton--secundario', text: 'Usar sin quitar fondo', onclick: () => elegirFoto(sku, 'simple') }),
+        h('label', { class: 'boton boton--secundario rev-archivo rev-peligro' }, 'Repetir foto', h('input', { type: 'file', accept: 'image/*', capture: 'environment', class: 'visualmente-oculto', onchange: async e => { const archivo = e.target.files[0]; await api('/api/foto/elegir', { metodo: 'POST', datos: { sku, eleccion: 'repetir' } }).catch(() => {}); if (archivo) await subirFoto(sku, archivo) } }))))
     }
     abrirDialogo('Foto nueva', cuerpo, { sku, alCerrar: () => { refrescoDialogo = null } })
   }
@@ -505,21 +580,23 @@ function campoTexto(id, etiqueta, valorActual, { multilinea = false, lista = nul
     ? h('textarea', { id, rows: 3, maxlength: 600 })
     : h('input', { id, type: 'text', maxlength: 200, autocomplete: 'off', list: lista, required: requerido })
   entrada.value = valorActual ?? ''
-  return h('label', { class: 'campo', for: id }, etiqueta, entrada)
+  return h('label', { class: 'rev-campo', for: id }, etiqueta, entrada)
 }
 function selectDisponibilidad(id, etiqueta, actual) {
-  return h('label', { class: 'campo', for: id }, etiqueta,
+  return h('label', { class: 'rev-campo', for: id }, etiqueta,
     h('select', { id }, h('option', { value: 'con-stock', text: 'Con stock', selected: actual === 'con-stock' }), h('option', { value: 'consultar', text: 'Consultar disponibilidad', selected: actual !== 'con-stock' })))
 }
-function miniTarjeta(titulo, d) {
+// "Antes y después" con la misma card de la web (vista previa, sin controles)
+function miniTarjeta(titulo, d, p) {
+  const vista = { ...p, ...d, tallas: d.tallas ? d.tallas.map(t => ({ ...t })) : undefined, cambios: p.cambios, sku: `vista-${titulo}` }
+  if (!d.tallas) delete vista.tallas
+  const card = cardWeb(vista)
+  card.setAttribute('inert', '')
   return h('div', { class: 'mini' },
     h('p', { class: 'mini__titulo', text: titulo }),
-    h('p', { class: 'tarjeta__marca', text: d.marca }),
-    h('p', { class: 'tarjeta__nombre', text: d.nombre }),
-    d.descripcion ? h('p', { class: 'tarjeta__descripcion', text: d.descripcion }) : null,
-    h('p', { text: `${nombreCategoria(d.categoria)}${d.subcategoria ? ' · ' + d.subcategoria : ''}` }),
-    h('p', { class: 'mini__precio', text: d.precioTexto }),
-    d.disponibilidad === 'consultar' ? h('p', { class: 'estado-consultar', text: 'Consultar disponibilidad' }) : h('p', { text: 'Con stock' }))
+    card,
+    h('p', { class: 'rev-dato', text: [nombreCategoria(d.categoria), d.subcategoria].filter(Boolean).join(' · ') }),
+    d.tallas ? h('p', { class: 'rev-dato', text: textoPrecios(d) }) : null)
 }
 const textoPrecios = d => (d.tallas ? d.tallas.map(t => `${t.talla}: ${t.precio ? formatoPrecio(t.precio) : 'consultar'}`).join(' · ') : (d.precio ? `${formatoPrecio(d.precio)}${d.granel ? ' por kg' : ''}` : 'Consultar precio'))
 
@@ -530,10 +607,10 @@ function seccionFotoFormulario(skuDestino) {
   const alElegir = e => { archivoElegido.archivo = e.target.files[0] || null; nombreArchivo.textContent = archivoElegido.archivo ? `Foto elegida: ${archivoElegido.archivo.name}` : '' }
   const nodo = h('fieldset', { class: 'grupo-campos' }, h('legend', { text: 'Foto' }),
     h('div', { class: 'fila-botones' },
-      h('label', { class: 'boton boton--archivo boton--foto' }, 'Sacar foto', h('input', { type: 'file', accept: 'image/*', capture: 'environment', class: 'oculto-visual', onchange: alElegir })),
-      h('label', { class: 'boton boton--archivo' }, 'Subir imagen', h('input', { type: 'file', accept: 'image/*', class: 'oculto-visual', onchange: alElegir }))),
+      h('label', { class: 'boton boton--secundario rev-archivo rev-foto' }, 'Sacar foto', h('input', { type: 'file', accept: 'image/*', capture: 'environment', class: 'visualmente-oculto', onchange: alElegir })),
+      h('label', { class: 'boton boton--secundario rev-archivo' }, 'Subir imagen', h('input', { type: 'file', accept: 'image/*', class: 'visualmente-oculto', onchange: alElegir }))),
     nombreArchivo,
-    h('label', { class: 'campo', for: 'f-enlace' }, 'O pegar el enlace de una imagen', enlace))
+    h('label', { class: 'rev-campo', for: 'f-enlace' }, 'O pegar el enlace de una imagen', enlace))
   return {
     nodo,
     async enviar(sku = skuDestino) {
@@ -549,12 +626,12 @@ function seccionFotoFormulario(skuDestino) {
 function dialogoModificar(p) {
   const actual = { nombre: p.nombre, marca: p.marca, descripcion: p.descripcion || '', categoria: p.categoria, subcategoria: p.subcategoria || '', precio: p.precio ?? null, granel: !!p.granel, disponibilidad: p.disponibilidad, tallas: p.tallas ? p.tallas.map(t => ({ ...t })) : null, nota: valor(p, 'nota') || '' }
   const o = p.original || actual
-  const campos = h('div', { class: 'formulario' },
+  const campos = h('div', { class: 'rev-formulario' },
     campoTexto('f-nombre', 'Nombre que se muestra', actual.nombre),
     campoTexto('f-marca', 'Marca', actual.marca, { lista: 'lista-marcas' }),
     listaDatos('lista-marcas', estado.vista.map(x => x.marca)),
     campoTexto('f-descripcion', 'Texto descriptivo (card y ficha)', actual.descripcion, { multilinea: true }),
-    h('label', { class: 'campo', for: 'f-categoria' }, 'Categoría', h('select', { id: 'f-categoria' }, ...opcionesCategoria(actual.categoria))),
+    h('label', { class: 'rev-campo', for: 'f-categoria' }, 'Categoría', h('select', { id: 'f-categoria' }, ...opcionesCategoria(actual.categoria))),
     campoTexto('f-subcategoria', 'Subcategoría', actual.subcategoria, { lista: 'lista-subcategorias' }),
     listaDatos('lista-subcategorias', estado.vista.filter(x => x.categoria === actual.categoria).map(x => x.subcategoria))
   )
@@ -564,10 +641,10 @@ function dialogoModificar(p) {
       const precio = h('input', { id: `f-precio-${t.talla}`, type: 'text', inputmode: 'numeric', autocomplete: 'off', class: 'precio__campo' })
       precio.value = t.precio ? formatoPrecio(t.precio) : ''
       grupo.append(h('div', { class: 'fila-talla' },
-        h('label', { class: 'campo', for: `f-precio-${t.talla}` }, `Talla ${t.talla}: precio`, precio),
+        h('label', { class: 'rev-campo', for: `f-precio-${t.talla}` }, `Talla ${t.talla}: precio`, precio),
         selectDisponibilidad(`f-disp-${t.talla}`, `Talla ${t.talla}: disponibilidad`, t.disponibilidad)))
     }
-    grupo.append(h('button', { type: 'button', class: 'boton boton--chico', text: 'Mismo precio para todas las tallas', onclick: () => {
+    grupo.append(h('button', { type: 'button', class: 'boton boton--secundario boton--chico', text: 'Mismo precio para todas las tallas', onclick: () => {
       const primero = grupo.querySelector('.precio__campo').value
       for (const c of grupo.querySelectorAll('.precio__campo')) c.value = primero
       actualizarVista()
@@ -576,7 +653,7 @@ function dialogoModificar(p) {
   } else {
     const precio = h('input', { id: 'f-precio', type: 'text', inputmode: 'numeric', autocomplete: 'off', class: 'precio__campo' })
     precio.value = actual.precio ? formatoPrecio(actual.precio) : ''
-    campos.append(h('label', { class: 'campo', for: 'f-precio' }, actual.granel ? 'Precio por kilo' : 'Precio', precio), selectDisponibilidad('f-disp', 'Disponibilidad', actual.disponibilidad))
+    campos.append(h('label', { class: 'rev-campo', for: 'f-precio' }, actual.granel ? 'Precio por kilo' : 'Precio', precio), selectDisponibilidad('f-disp', 'Disponibilidad', actual.disponibilidad))
   }
   const foto = seccionFotoFormulario(p.sku)
   campos.append(foto.nodo, campoTexto('f-nota', 'Nota para Joaquín', actual.nota, { multilinea: true }))
@@ -595,7 +672,7 @@ function dialogoModificar(p) {
   const comparacion = h('div', { class: 'comparar-datos' })
   const actualizarVista = () => {
     const d = leer()
-    comparacion.replaceChildren(miniTarjeta('Cómo está ahora', { ...actual, precioTexto: textoPrecios(actual) }), miniTarjeta('Cómo quedaría', { ...d, precioTexto: textoPrecios(d) }))
+    comparacion.replaceChildren(miniTarjeta('Cómo está ahora', actual, p), miniTarjeta('Cómo quedaría', d, p))
   }
   campos.addEventListener('input', actualizarVista)
   campos.addEventListener('change', actualizarVista)
@@ -636,7 +713,7 @@ function dialogoModificar(p) {
   abrirDialogo(`Modificar: ${p.nombre}`, [campos, h('h3', { class: 'subtitulo', text: 'Antes y después' }), comparacion,
     h('div', { class: 'fila-botones fila-botones--pie' },
       h('button', { type: 'button', class: 'boton boton--primario', text: 'Guardar cambios', onclick: guardar }),
-      h('button', { type: 'button', class: 'boton', text: 'Cancelar', onclick: cerrarDialogo }))], { sku: p.sku })
+      h('button', { type: 'button', class: 'boton boton--secundario', text: 'Cancelar', onclick: cerrarDialogo }))], { sku: p.sku })
   actualizarVista()
   $('#f-nombre').focus()
 }
@@ -657,15 +734,15 @@ function dialogoNuevo(inicial = {}) {
   const tallasLista = h('div', { class: 'tallas-nuevas' })
   const agregarTalla = (t = {}) => {
     const fila = h('div', { class: 'fila-talla' },
-      h('label', { class: 'campo' }, 'Talla', h('input', { type: 'text', maxlength: 12, class: 'n-talla', value: t.talla || '' })),
-      h('label', { class: 'campo' }, 'Precio', h('input', { type: 'text', inputmode: 'numeric', class: 'n-talla-precio precio__campo', value: t.precio || '' })),
-      h('label', { class: 'campo' }, 'Disponibilidad', h('select', { class: 'n-talla-disp' }, h('option', { value: 'con-stock', text: 'Con stock' }), h('option', { value: 'consultar', text: 'Consultar disponibilidad', selected: true }))),
-      h('button', { type: 'button', class: 'boton boton--chico', text: 'Quitar talla', onclick: () => fila.remove() }))
+      h('label', { class: 'rev-campo' }, 'Talla', h('input', { type: 'text', maxlength: 12, class: 'n-talla', value: t.talla || '' })),
+      h('label', { class: 'rev-campo' }, 'Precio', h('input', { type: 'text', inputmode: 'numeric', class: 'n-talla-precio precio__campo', value: t.precio || '' })),
+      h('label', { class: 'rev-campo' }, 'Disponibilidad', h('select', { class: 'n-talla-disp' }, h('option', { value: 'con-stock', text: 'Con stock' }), h('option', { value: 'consultar', text: 'Consultar disponibilidad', selected: true }))),
+      h('button', { type: 'button', class: 'boton boton--secundario boton--chico', text: 'Quitar talla', onclick: () => fila.remove() }))
     tallasLista.append(fila)
   }
   const tipoPrecio = h('select', { id: 'n-tipo' }, h('option', { value: 'unico', text: 'Un precio' }), h('option', { value: 'tallas', text: 'Precio por talla' }), h('option', { value: 'granel', text: 'Granel (precio por kilo)' }))
-  const bloquePrecioUnico = h('label', { class: 'campo', for: 'n-precio' }, 'Precio', h('input', { id: 'n-precio', type: 'text', inputmode: 'numeric', autocomplete: 'off', class: 'precio__campo' }))
-  const bloqueTallas = h('fieldset', { class: 'grupo-campos', hidden: true }, h('legend', { text: 'Tallas' }), tallasLista, h('button', { type: 'button', class: 'boton boton--chico', text: 'Agregar talla', onclick: () => agregarTalla() }))
+  const bloquePrecioUnico = h('label', { class: 'rev-campo', for: 'n-precio' }, 'Precio', h('input', { id: 'n-precio', type: 'text', inputmode: 'numeric', autocomplete: 'off', class: 'precio__campo' }))
+  const bloqueTallas = h('fieldset', { class: 'grupo-campos', hidden: true }, h('legend', { text: 'Tallas' }), tallasLista, h('button', { type: 'button', class: 'boton boton--secundario boton--chico', text: 'Agregar talla', onclick: () => agregarTalla() }))
   tipoPrecio.addEventListener('change', () => {
     bloqueTallas.hidden = tipoPrecio.value !== 'tallas'
     bloquePrecioUnico.hidden = tipoPrecio.value === 'tallas'
@@ -678,7 +755,7 @@ function dialogoNuevo(inicial = {}) {
     const r = buscarCodigo(codigoEntrada.value)
     avisoCodigo.replaceChildren()
     avisoCodigo.hidden = !r
-    if (r?.tipo === 'catalogo') avisoCodigo.append(`Ese código ya existe en el catálogo: ${r.producto.nombre} (SKU ${r.producto.sku}). `, h('button', { type: 'button', class: 'boton boton--chico', text: 'Ver ese producto', onclick: () => { cerrarDialogo(); mostrarProducto(r.producto.sku) } }))
+    if (r?.tipo === 'catalogo') avisoCodigo.append(`Ese código ya existe en el catálogo: ${r.producto.nombre}. `, h('button', { type: 'button', class: 'boton boton--secundario boton--chico', text: 'Ver ese producto', onclick: () => { cerrarDialogo(); mostrarProducto(r.producto.sku) } }))
     else if (r?.tipo === 'base') avisoCodigo.append(`Ese código ya está en la Base Rosa: ${r.nombre}. Revisa que no sea el mismo producto.`)
   }
   codigoEntrada.addEventListener('input', revisarCodigo)
@@ -687,17 +764,17 @@ function dialogoNuevo(inicial = {}) {
     avisoMarca.hidden = !marca
     avisoMarca.textContent = marca ? `${marca}: sin foto, este producto no se publicará en la web.` : ''
   }
-  const leerFoto = h('label', { class: 'boton boton--archivo boton--chico' }, 'Fotografiar código', h('input', { type: 'file', accept: 'image/*', capture: 'environment', class: 'oculto-visual', onchange: async e => {
+  const leerFoto = h('label', { class: 'boton boton--secundario rev-archivo boton--chico' }, 'Fotografiar código', h('input', { type: 'file', accept: 'image/*', capture: 'environment', class: 'visualmente-oculto', onchange: async e => {
     const codigos = await leerCodigoDeFoto(e.target.files[0])
     if (codigos?.length) { codigoEntrada.value = codigos[0]; revisarCodigo() }
   } }))
-  const campos = h('div', { class: 'formulario' },
+  const campos = h('div', { class: 'rev-formulario' },
     campoTexto('n-nombre', 'Nombre *', inicial.nombre || '', { requerido: true }),
-    h('label', { class: 'campo', for: 'n-codigo' }, 'Código de barras', codigoEntrada), leerFoto, avisoCodigo,
+    h('label', { class: 'rev-campo', for: 'n-codigo' }, 'Código de barras', codigoEntrada), leerFoto, avisoCodigo,
     campoTexto('n-marca', 'Marca', '', { lista: 'lista-marcas-n' }), listaDatos('lista-marcas-n', estado.vista.map(x => x.marca)), avisoMarca,
-    h('label', { class: 'campo', for: 'n-categoria' }, 'Categoría *', h('select', { id: 'n-categoria' }, ...opcionesCategoria('accesorios'))),
+    h('label', { class: 'rev-campo', for: 'n-categoria' }, 'Categoría *', h('select', { id: 'n-categoria' }, ...opcionesCategoria('accesorios'))),
     campoTexto('n-subcategoria', 'Subcategoría', '', { lista: 'lista-subcategorias-n' }), listaDatos('lista-subcategorias-n', estado.vista.map(x => x.subcategoria)),
-    h('label', { class: 'campo', for: 'n-tipo' }, 'Tipo de precio', tipoPrecio), bloquePrecioUnico, bloqueTallas,
+    h('label', { class: 'rev-campo', for: 'n-tipo' }, 'Tipo de precio', tipoPrecio), bloquePrecioUnico, bloqueTallas,
     selectDisponibilidad('n-disp', 'Disponibilidad', 'consultar'),
     campoTexto('n-descripcion', 'Descripción', '', { multilinea: true }),
     foto.nodo,
@@ -731,7 +808,7 @@ function dialogoNuevo(inicial = {}) {
   }
   abrirDialogo('Agregar producto nuevo', [campos, h('div', { class: 'fila-botones fila-botones--pie' },
     h('button', { type: 'button', class: 'boton boton--primario', text: 'Guardar producto nuevo', onclick: guardar }),
-    h('button', { type: 'button', class: 'boton', text: 'Cancelar', onclick: cerrarDialogo }))])
+    h('button', { type: 'button', class: 'boton boton--secundario', text: 'Cancelar', onclick: cerrarDialogo }))])
   if (inicial.codigo) revisarCodigo()
   $('#n-nombre').focus()
 }
@@ -760,18 +837,19 @@ async function buscarPorFotoDeCodigo(archivo) {
     h('p', {}, 'El código ', h('strong', { text: c }), enBase?.tipo === 'base' ? ` está en la Base Rosa (${enBase.nombre}) pero no en el catálogo.` : ' no está en el catálogo.'),
     h('div', { class: 'fila-botones' },
       h('button', { type: 'button', class: 'boton boton--primario', text: 'Agregar producto nuevo', onclick: () => dialogoNuevo({ codigo: c, nombre: enBase?.nombre || '' }) }),
-      h('button', { type: 'button', class: 'boton', text: 'Cerrar', onclick: cerrarDialogo }))])
+      h('button', { type: 'button', class: 'boton boton--secundario', text: 'Cerrar', onclick: cerrarDialogo }))])
 }
 
 function mostrarProducto(sku) {
   cambiarPestana('catalogo')
   for (const id of ['#filtro-categoria', '#filtro-subcategoria', '#filtro-marca', '#filtro-web', '#filtro-stock', '#filtro-cambios']) $(id).value = ''
-  $('#filtro-buscar').value = sku
+  const producto = estado.porSku.get(sku)
+  $('#filtro-buscar').value = producto?.codigo || producto?.nombre || sku
   estado.mostrados = POR_PAGINA
   recalcular()
   pintarLista()
   const card = $(`#lista [data-sku="${CSS.escape(sku)}"]`)
-  if (card) { card.classList.add('tarjeta--destacada'); card.scrollIntoView({ block: 'center' }); card.querySelector('button, label')?.focus({ preventScroll: true }) }
+  if (card) { card.classList.add('rev-item--destacado'); card.scrollIntoView({ block: 'center' }); card.querySelector('button, label')?.focus({ preventScroll: true }) }
 }
 
 // ---- Conectar celular ----
@@ -855,7 +933,21 @@ function activarPantalla() {
     const p = estado.porSku.get(sku)
     if (!p) return
     const accion = boton.dataset.accion
-    if (accion === 'editar-precio') { estado.editando = `${sku}|${boton.dataset.campo}`; pintarLista() }
+    if (accion === 'talla') {
+      const t = boton.dataset.talla
+      if (estado.tallas.get(sku) === t) estado.tallas.delete(sku)
+      else estado.tallas.set(sku, t)
+      estado.editando = null
+      pintarLista()
+    } else if (accion === 'editar-precio') {
+      if (p.tallas && !estado.tallas.get(sku)) {
+        avisar('Primero elige la talla en la card.', { error: true })
+        boton.closest('[data-sku]').querySelector('.talla')?.focus()
+        return
+      }
+      estado.editando = `${sku}|${boton.dataset.campo}`
+      pintarLista()
+    }
     else if (accion === 'cancelar-precio') { estado.editando = null; pintarLista() }
     else if (accion === 'guardar-precio') {
       const campo = boton.dataset.campo
@@ -863,7 +955,7 @@ function activarPantalla() {
       if (await guardarPrecio(p, campo, entrada.value)) { estado.editando = null; pintarLista() }
     } else if (accion === 'mismo-precio') {
       const entrada = h('input', { id: 'mismo-precio', type: 'text', inputmode: 'numeric', class: 'precio__campo', autocomplete: 'off' })
-      abrirDialogo(`Mismo precio para todas las tallas: ${p.nombre}`, [h('label', { class: 'campo', for: 'mismo-precio' }, 'Precio para todas las tallas', entrada),
+      abrirDialogo(`Mismo precio para todas las tallas: ${p.nombre}`, [h('label', { class: 'rev-campo', for: 'mismo-precio' }, 'Precio para todas las tallas', entrada),
         h('div', { class: 'fila-botones' }, h('button', { type: 'button', class: 'boton boton--primario', text: 'Guardar precio', onclick: async () => {
           const precio = leerPrecio(entrada.value)
           if (precio === null) { avisar('Escribe el precio solo con números, por ejemplo 12.345', { error: true }); return }
@@ -872,7 +964,7 @@ function activarPantalla() {
           if (grande && !(await confirmar('¿Seguro?', `Antes: ${formatoPrecio(grande.precio)}, ahora: ${formatoPrecio(precio)}. Cambia más de la mitad.`))) return
           const datos = Object.fromEntries(p.tallas.map(t => [`precio@${t.talla}`, precio === textoPrecioOriginal(p, t.talla) ? null : precio]))
           await api('/api/cambios', { metodo: 'POST', datos: { sku, datos } }).then(() => avisar('Precio guardado')).catch(err => avisar(err.message, { error: true }))
-        } }), h('button', { type: 'button', class: 'boton', text: 'Cancelar', onclick: cerrarDialogo }))], { sku })
+        } }), h('button', { type: 'button', class: 'boton boton--secundario', text: 'Cancelar', onclick: cerrarDialogo }))], { sku })
       entrada.focus()
     } else if (accion === 'disponibilidad') {
       const nuevo = p.disponibilidad === 'con-stock' ? 'consultar' : 'con-stock'
@@ -911,14 +1003,14 @@ function activarPantalla() {
     const card = e.target.closest('[data-sku]')
     if (!card || !e.dataTransfer?.types.includes('Files')) return
     e.preventDefault()
-    card.classList.add('tarjeta--soltar')
+    card.classList.add('rev-item--soltar')
   })
-  main.addEventListener('dragleave', e => e.target.closest('[data-sku]')?.classList.remove('tarjeta--soltar'))
+  main.addEventListener('dragleave', e => e.target.closest('[data-sku]')?.classList.remove('rev-item--soltar'))
   main.addEventListener('drop', e => {
     const card = e.target.closest('[data-sku]')
     if (!card) return
     e.preventDefault()
-    card.classList.remove('tarjeta--soltar')
+    card.classList.remove('rev-item--soltar')
     subirFoto(card.dataset.sku, e.dataTransfer.files[0])
   })
 }

@@ -23,7 +23,7 @@ async function abrir(page, { dispositivo = 'PC' } = {}) {
   await page.goto(h.url(`&dispositivo=${dispositivo}`))
   await expect(page.locator('#cargando')).toBeHidden()
 }
-const card = (page, sku) => page.locator(`#lista li.tarjeta[data-sku="${sku}"]`)
+const card = (page, sku) => page.locator(`#lista li.rev-item[data-sku="${sku}"]`)
 async function buscar(page, texto) {
   if (await page.locator('#dialogo').evaluate(d => d.open)) await page.locator('#dialogo-cerrar').click()
   await page.locator('#pestana-catalogo').click()
@@ -54,21 +54,28 @@ test('sin la clave el servidor no responde; con la clave sí (también desde otr
 
 test('muestra todo el catálogo, incluso lo que no se publica, con avisos y filtros', async ({ page }) => {
   await abrir(page)
-  await expect(page.locator('#lista li.tarjeta')).toHaveCount(8)
+  await expect(page.locator('#lista li.rev-item')).toHaveCount(8)
   await expect(card(page, 'ACC-MOND-901')).toContainText('No se ve en la web: falta foto')
+  // Misma card que la web (marca, nombre, precio, "Añadir" o "Consultar precio") y sin SKU a la vista
+  await expect(card(page, 'PER-OTRA-904').locator('article.tarjeta .tarjeta__marca')).toHaveText('Alfa Dog')
+  await expect(card(page, 'PER-OTRA-904').locator('article.tarjeta .compra__anadir')).toContainText('Añadir')
+  await expect(card(page, 'SAL-PRUE-909').locator('article.tarjeta .compra__consultar')).toContainText('Consultar precio')
+  await expect(card(page, 'PER-OTRA-904')).toContainText('Código de barras: 7800000000047')
+  await expect(page.locator('#contenido')).not.toContainText('PER-OTRA-904')
+  await expect(page.locator('#contenido')).not.toContainText('SKU')
   await expect(card(page, 'GAT-LEON-910')).toContainText('No se ve en la web: falta foto')
   await expect(card(page, 'PER-OTRA-904')).not.toContainText('No se ve en la web')
   await expect(card(page, 'ACC-MARB-903')).toContainText('Imagen referencial')
   await expect(card(page, 'ACC-MOND-902')).toContainText('Consultar disponibilidad') // stock 0
   await expect(card(page, 'PER-OTRA-904')).not.toContainText('Consultar disponibilidad')
   await page.locator('#filtro-web').selectOption('no')
-  await expect(page.locator('#lista li.tarjeta')).toHaveCount(2)
+  await expect(page.locator('#lista li.rev-item')).toHaveCount(2)
   await page.locator('#filtro-web').selectOption('')
   await page.locator('#filtro-stock').selectOption('consultar')
-  await expect(page.locator('#lista li.tarjeta')).toHaveCount(3)
+  await expect(page.locator('#lista li.rev-item')).toHaveCount(3)
   await page.locator('#filtro-stock').selectOption('')
   await page.locator('#filtro-cambios').selectOption('sin-precio')
-  await expect(page.locator('#lista li.tarjeta')).toHaveCount(1)
+  await expect(page.locator('#lista li.rev-item')).toHaveCount(1)
   await expect(page.locator('#contadores')).toContainText('6 Publicados')
   await expect(page.locator('#contadores')).toContainText('2 No publicados por falta de foto')
 })
@@ -120,7 +127,7 @@ test('precio: edición rápida en la card (Enter guarda, Esc cancela) y formato 
   await c.locator('.precio__campo').press('Escape')
   await page.locator('#filtro-cambios').selectOption('precio-cambiado')
   await page.locator('#filtro-buscar').fill('')
-  await expect(page.locator('#lista li.tarjeta')).toHaveCount(1)
+  await expect(page.locator('#lista li.rev-item')).toHaveCount(1)
 })
 
 test('precio: más de 50 % de diferencia pide confirmar ("¿Seguro? Antes / ahora")', async ({ page }) => {
@@ -145,7 +152,12 @@ test('precio por talla, "Mismo precio para todas las tallas" y granel por kilo',
   await abrir(page)
   await buscar(page, 'ROP-PRUE-905')
   const c = card(page, 'ROP-PRUE-905')
-  await c.getByRole('button', { name: /talla M/ }).click()
+  // Igual que en la web: sin talla elegida dice "Desde"; al elegir una, muestra su precio
+  await expect(c.locator('.tarjeta .precio')).toContainText('Desde $8.000')
+  await c.getByRole('button', { name: /Precio Desde/ }).click()
+  await expect(page.locator('#aviso')).toContainText('Primero elige la talla')
+  await c.getByRole('button', { name: 'Talla M, $8.500' }).click()
+  await c.getByRole('button', { name: /Precio \$8\.500, talla M/ }).click()
   await c.locator('.precio__campo').fill('8.900')
   await c.locator('.precio__campo').press('Enter')
   await expect(c.getByRole('button', { name: /\$8\.900, talla M/ })).toBeVisible()
@@ -153,8 +165,8 @@ test('precio por talla, "Mismo precio para todas las tallas" y granel por kilo',
   await c.getByRole('button', { name: 'Mismo precio para todas las tallas' }).click()
   await page.locator('#mismo-precio').fill('9.500')
   await page.locator('#dialogo').getByRole('button', { name: 'Guardar precio' }).click()
-  await expect(c.getByRole('button', { name: /\$9\.500, talla S/ })).toBeVisible()
-  await expect(c.getByRole('button', { name: /\$9\.500, talla L/ })).toBeVisible()
+  await expect(c.getByRole('button', { name: 'Talla S, $9.500' })).toBeVisible()
+  await expect(c.getByRole('button', { name: 'Talla L, $9.500' })).toBeVisible()
   const r = leerRevision(h).cambios['ROP-PRUE-905']
   expect([r['precio@S'].valor, r['precio@M'].valor, r['precio@L'].valor]).toEqual([9500, 9500, 9500])
   // Granel: precio por kilo
@@ -224,7 +236,7 @@ test('modificar (antes y después), cambiar disponibilidad, eliminar, revisado y
   // Revisado, está bien
   await buscar(page, 'GAT-LEON-910')
   await card(page, 'GAT-LEON-910').getByRole('button', { name: 'Revisado, está bien' }).click()
-  await expect(card(page, 'GAT-LEON-910').locator('.marca--ok')).toHaveText('OK')
+  await expect(card(page, 'GAT-LEON-910').locator('.rev-marca--ok')).toHaveText('OK')
   const historial = readFileSync(join(h.datos, 'historial.log'), 'utf8')
   expect(historial).toContain('PC · PER-OTRA-904')
   expect(historial).toContain('(deshacer)')
@@ -246,7 +258,7 @@ test('agregar producto nuevo: aviso de código repetido y de marca que exige fot
   await d.getByLabel('Precio', { exact: true }).fill('19.990')
   await d.getByRole('button', { name: 'Guardar producto nuevo' }).click()
   await expect(page.locator('#aviso')).toHaveText('Guardado')
-  const nuevo = page.locator('#lista li.tarjeta').filter({ hasText: 'Cama Prueba Nueva' })
+  const nuevo = page.locator('#lista li.rev-item').filter({ hasText: 'Cama Prueba Nueva' })
   await expect(nuevo).toContainText('Nuevo')
   await expect(nuevo).toContainText('No se ve en la web: falta foto')
   await expect(nuevo).toContainText('$19.990')
@@ -314,7 +326,7 @@ test('buscar por foto de código de barras: abre la card; si no existe, ofrece a
   await abrir(page)
   await page.locator('#entrada-codigo').setInputFiles({ name: 'codigo.jpg', mimeType: 'image/jpeg', buffer: await imagenEan13('780000000004') })
   await expect(card(page, 'PER-OTRA-904')).toBeVisible()
-  await expect(card(page, 'PER-OTRA-904')).toHaveClass(/tarjeta--destacada/)
+  await expect(card(page, 'PER-OTRA-904')).toHaveClass(/rev-item--destacado/)
   await page.locator('#entrada-codigo').setInputFiles({ name: 'codigo.jpg', mimeType: 'image/jpeg', buffer: await imagenEan13('780555555555') })
   await expect(page.locator('#dialogo')).toContainText('no está en el catálogo')
   await page.locator('#dialogo').getByRole('button', { name: 'Agregar producto nuevo' }).click()

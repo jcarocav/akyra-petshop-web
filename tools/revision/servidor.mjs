@@ -225,9 +225,9 @@ export async function iniciar() {
         return archivo ? enviarArchivo(res, archivo) : enviarJson(res, 404, { error: 'No encontrado' })
       }
       // Módulos del sitio que también usa la herramienta (las mismas reglas de publicación)
-      const MODULOS = { '/repo/tools/catalogo/publicar.mjs': 'tools/catalogo/publicar.mjs', '/repo/tools/catalogo/reglas.mjs': 'tools/catalogo/reglas.mjs', '/repo/js/stock.mjs': 'js/stock.mjs', '/repo/tools/revision/convertir.mjs': 'tools/revision/convertir.mjs' }
+      const MODULOS = { '/repo/tools/catalogo/publicar.mjs': 'tools/catalogo/publicar.mjs', '/repo/tools/catalogo/reglas.mjs': 'tools/catalogo/reglas.mjs', '/repo/js/stock.mjs': 'js/stock.mjs', '/repo/tools/revision/convertir.mjs': 'tools/revision/convertir.mjs', '/repo/styles.css': 'styles.css' }
       if (req.method === 'GET' && MODULOS[ruta]) return enviarArchivo(res, join(RAIZ, MODULOS[ruta]))
-      if (req.method === 'GET' && /^\/repo\/assets\/(productos\/[A-Za-z0-9-]+\.webp|logo\/logo-akyra-recortado\.svg|fuentes\/[a-z0-9-]+\.woff2)$/i.test(ruta)) {
+      if (req.method === 'GET' && /^\/repo\/assets\/(productos\/[A-Za-z0-9-]+\.webp|logo\/logo-akyra-recortado\.svg|iconos\.svg|fuentes\/[a-z0-9-]+\.woff2)$/i.test(ruta)) {
         return enviarArchivo(res, join(RAIZ, ruta.slice('/repo/'.length)), { cache: 'max-age=3600' })
       }
       if (req.method === 'GET' && ruta.startsWith('/fotos/')) {

@@ -98,7 +98,10 @@ Hoy está vacío (no cambia nada). Después de `npm run catalogo` o `node tools/
 - Fotos: cola en el PC (`tools/revision/fotos.mjs` + `trabajador.py`): EXIF, brillo, rembg, fondo blanco, centrado con
   margen, 1:1; se ofrecen "Usar esta" / "Usar sin quitar fondo" / "Repetir foto". Sin Python/rembg sigue funcionando sin
   quitar fondos. Código de barras: foto → zxing-cpp → abre la card o propone "Agregar producto nuevo".
-- La pantalla (`tools/revision/publico/`) usa las MISMAS reglas de publicación del sitio (importa `publicar.mjs`).
+- La pantalla (`tools/revision/publico/`) usa las MISMAS reglas de publicación del sitio (importa `publicar.mjs`) y el
+  mismo diseño: carga `styles.css` del sitio y cada producto es la card del catálogo web (foto, marca, nombre, precio,
+  aviso, tallas, "− 1 +" y "Añadir") con el panel de revisión debajo. Sin SKU a la vista (se muestra el código de barras).
+  Las clases propias de la herramienta llevan el prefijo `rev-` para no chocar con las del sitio.
 - **Exportar** escribe en `revision-catalogo/`: `cambios-catalogo.xlsx` (Eliminar, Modificar, Precios, Disponibilidad,
   Fotos nuevas, Agregar), `Inventario_Mascoteria_Akyra_v54_precios.xlsx` (copia del inventario con los precios nuevos en
   la columna D de "Base Rosa (1004)" y los productos nuevos al final; se edita el XML de esa hoja: el original y las
