@@ -11,7 +11,7 @@ import ExcelJS from 'exceljs'
 import { existsSync, readFileSync } from 'node:fs'
 import { dirname, join, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
-import { cruzarStock } from '../../js/stock.mjs'
+import { productosCompletos } from './todos.mjs'
 import { CATEGORIAS } from './reglas.mjs'
 
 const RAIZ = resolve(dirname(fileURLToPath(import.meta.url)), '..', '..')
@@ -53,8 +53,6 @@ if (base) {
 }
 
 // 2) Catálogo actual (visibles y también los ocultos por stock 0): con foto exacta / referencial / sin foto
-const catalogo = JSON.parse(readFileSync(join(RAIZ, 'productos.json'), 'utf8'))
-const stock = JSON.parse(readFileSync(join(RAIZ, 'stock.json'), 'utf8'))
 const { internos } = JSON.parse(readFileSync(join(RAIZ, '.tmp', 'catalogo-interno.json'), 'utf8'))
 const lugaresDe = new Map(internos.map(i => [i.sku, i.lugares || []]))
 const codigoDe = new Map(internos.map(i => [i.sku, i.codigo]))
@@ -66,7 +64,7 @@ const hojas = { exacta: [], referencial: [], sin: [] }
 const detalle = []
 const noEncontradas = []
 let sinFilaEnExcel = 0
-for (const p of cruzarStock(catalogo.productos, stock)) {
+for (const p of productosCompletos()) {
   const skus = p.tallas ? p.tallas.map(t => t.sku) : [p.sku]
   const grupo = !p.imagen ? 'sin' : p.imagenTipo === 'referencial' ? 'referencial' : 'exacta'
   const origen = progreso[p.sku] || {}

@@ -13,7 +13,7 @@
 import { readFileSync, writeFileSync } from 'node:fs'
 import { dirname, join, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
-import { cruzarStock } from '../../js/stock.mjs'
+import { productosCompletos } from '../catalogo/todos.mjs'
 import { bajar, imagenUsable } from './buscar-web.mjs'
 import { esCodigoDeFabrica } from './buscar.mjs'
 import { evaluarCoincidencia, normalizar } from './coincidencia.mjs'
@@ -100,12 +100,10 @@ async function buscarEnTiendas(item) {
 async function main() {
   const progreso = JSON.parse(readFileSync(PROGRESO, 'utf8'))
   const guardar = () => writeFileSync(PROGRESO, JSON.stringify(progreso, null, 1))
-  const catalogo = JSON.parse(readFileSync(join(RAIZ, 'productos.json'), 'utf8'))
-  const stock = JSON.parse(readFileSync(join(RAIZ, 'stock.json'), 'utf8'))
   const { internos } = JSON.parse(readFileSync(join(RAIZ, '.tmp', 'catalogo-interno.json'), 'utf8'))
   const porSku = new Map(internos.map(i => [i.sku, i]))
   const items = []
-  for (const p of cruzarStock(catalogo.productos, stock).filter(x => !x.imagen)) {
+  for (const p of productosCompletos().filter(x => !x.imagen)) {
     const e = progreso[p.sku]
     if (SOLO ? p.sku !== SOLO : (e?.tiendas && !REINTENTAR) || (e && e.grupo !== 'C')) continue
     const i = porSku.get(p.tallas ? p.tallas.find(t => porSku.has(t.sku))?.sku : p.sku)

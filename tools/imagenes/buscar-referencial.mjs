@@ -14,7 +14,7 @@ import { readFileSync, writeFileSync } from 'node:fs'
 import { dirname, join, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import sharp from 'sharp'
-import { cruzarStock } from '../../js/stock.mjs'
+import { productosCompletos } from '../catalogo/todos.mjs'
 import { buscarBing } from './buscar-web.mjs'
 import { normalizar } from './coincidencia.mjs'
 import { optimizar } from './procesar.mjs'
@@ -76,9 +76,7 @@ async function main() {
     console.log(`${n} fotos referenciales confirmadas (grupo B).`)
     return
   }
-  const catalogo = JSON.parse(readFileSync(join(RAIZ, 'productos.json'), 'utf8'))
-  const stock = JSON.parse(readFileSync(join(RAIZ, 'stock.json'), 'utf8'))
-  const pendientes = cruzarStock(catalogo.productos, stock)
+  const pendientes = productosCompletos()
     .filter(p => !p.imagen && ['accesorios', 'ropa'].includes(p.categoria) && (!progreso[p.sku] || progreso[p.sku].grupo === 'C'))
     .filter(p => !progreso[p.sku]?.buscadaReferencial)
     .slice(0, MAX)

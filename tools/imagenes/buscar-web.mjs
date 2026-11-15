@@ -16,7 +16,7 @@ import sharp from 'sharp'
 import { existsSync, readFileSync, writeFileSync } from 'node:fs'
 import { dirname, join, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
-import { cruzarStock } from '../../js/stock.mjs'
+import { productosCompletos } from '../catalogo/todos.mjs'
 import { esCodigoDeFabrica } from './buscar.mjs'
 import { evaluarCoincidencia } from './coincidencia.mjs'
 import { optimizar } from './procesar.mjs'
@@ -80,12 +80,10 @@ export async function imagenUsable(buf) {
 }
 
 function armarItems() {
-  const catalogo = JSON.parse(readFileSync(join(RAIZ, 'productos.json'), 'utf8'))
-  const stock = JSON.parse(readFileSync(join(RAIZ, 'stock.json'), 'utf8'))
   const { internos } = JSON.parse(readFileSync(join(RAIZ, '.tmp', 'catalogo-interno.json'), 'utf8'))
   const porSku = new Map(internos.map(i => [i.sku, i]))
   const items = []
-  for (const p of cruzarStock(catalogo.productos, stock).filter(x => (!SOLO_VISIBLES || x.visible) && !x.imagen)) {
+  for (const p of productosCompletos().filter(x => (!SOLO_VISIBLES || x.visible) && !x.imagen)) {
     const skuInterno = p.tallas ? p.tallas.find(t => porSku.has(t.sku))?.sku : p.sku
     const i = porSku.get(skuInterno || p.sku)
     if (!i) continue

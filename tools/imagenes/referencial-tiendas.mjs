@@ -13,7 +13,7 @@ import { readFileSync, writeFileSync } from 'node:fs'
 import { dirname, join, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import sharp from 'sharp'
-import { cruzarStock } from '../../js/stock.mjs'
+import { productosCompletos } from '../catalogo/todos.mjs'
 import { fondoBlanco } from './buscar-referencial.mjs'
 import { GENERICAS, TIENDAS, pedir, sinHtml } from './buscar-tiendas.mjs'
 import { bajar } from './buscar-web.mjs'
@@ -73,9 +73,7 @@ async function candidata(p, usadas) {
 async function main() {
   const progreso = JSON.parse(readFileSync(PROGRESO, 'utf8'))
   const guardar = () => writeFileSync(PROGRESO, JSON.stringify(progreso, null, 1))
-  const catalogo = JSON.parse(readFileSync(join(RAIZ, 'productos.json'), 'utf8'))
-  const stock = JSON.parse(readFileSync(join(RAIZ, 'stock.json'), 'utf8'))
-  const pendientes = cruzarStock(catalogo.productos, stock)
+  const pendientes = productosCompletos()
     .filter(p => !p.imagen && ['accesorios', 'ropa'].includes(p.categoria) && !progreso[p.sku]?.archivo && !progreso[p.sku]?.referencialTiendas)
     .slice(0, MAX)
   console.log(`Fotos referenciales (tiendas) para ${pendientes.length} productos...`)

@@ -1,0 +1,15 @@
+{
+ "fuente": "fixture de pruebas",
+ "productos": [
+  {"id":"acc-mond-901","sku":"ACC-MOND-901","nombre":"Arnés Prueba Mondo Talla M","marca":"Mondo Mascota","categoria":"accesorios","subcategoria":"Collares, correas y arneses","precio":5990,"codigo":"7800000000016","fabricante":"Mondo Mascota","nombreExcel":"ARNES PRUEBA MONDO TALLA M"},
+  {"id":"acc-mond-902","sku":"ACC-MOND-902","nombre":"Juguete Prueba Mondo Con Foto","marca":"Mondo Mascota","categoria":"accesorios","subcategoria":"Juguetes","precio":2500,"codigo":"7800000000023","fabricante":"Mondo Mascota","nombreExcel":"JUGUETE PRUEBA MONDO","imagen":"assets/productos/ACC-AMER-001.webp","imagenTipo":"exacta"},
+  {"id":"acc-marb-903","sku":"ACC-MARB-903","nombre":"Plato Prueba Marben Referencial","marca":"Marben Pets","categoria":"accesorios","subcategoria":"Platos y fuentes","precio":3200,"codigo":"7800000000030","fabricante":"Marben Pets","nombreExcel":"PLATO PRUEBA MARBEN","imagen":"assets/productos/ACC-AMER-002.webp","imagenTipo":"referencial"},
+  {"id":"per-otra-904","sku":"PER-OTRA-904","nombre":"Alimento Prueba Otra Marca 3 Kg","marca":"Alfa Dog","categoria":"perros","subcategoria":"Alimento seco","precio":12990,"codigo":"7800000000047","fabricante":"Alfa Dog","nombreExcel":"ALIMENTO PRUEBA ALFA DOG 3KG"},
+  {"id":"rop-prue-905","sku":"ROP-PRUE-905","nombre":"Chaleco Prueba Tallas","marca":"Genérico","categoria":"ropa","subcategoria":"Chalecos","codigo":"7800000000054","fabricante":"Generico","nombreExcel":"CHALECO PRUEBA TALLA S","tallas":[{"talla":"S","sku":"ROP-PRUE-905","precio":8000,"codigo":"7800000000054"},{"talla":"M","sku":"ROP-PRUE-906","precio":8500,"codigo":"7800000000061"},{"talla":"L","sku":"ROP-PRUE-907","precio":9000,"codigo":"7800000000078"}]},
+  {"id":"gra-prue-908","sku":"GRA-PRUE-908","nombre":"Granel Prueba Perro Adulto","marca":"Champion","categoria":"granel","subcategoria":"Perro","precio":2800,"granel":true,"codigo":"7800000000085","fabricante":"Champion","nombreExcel":"GRANEL PRUEBA PERRO"},
+  {"id":"sal-prue-909","sku":"SAL-PRUE-909","nombre":"Shampoo Prueba Sin Precio","marca":"Bioline","categoria":"salud-higiene","subcategoria":"Shampoo y colonias","precio":null,"codigo":"7800000000092","fabricante":"Bioline","nombreExcel":"SHAMPOO PRUEBA SIN PRECIO"},
+  {"id":"gat-leon-910","sku":"GAT-LEON-910","nombre":"Snack Prueba Leon Pet","marca":"Leon Pet","categoria":"gatos","subcategoria":"Snacks y premios","precio":1500,"codigo":"7800000000108","fabricante":"Leon Pet","nombreExcel":"SNACK PRUEBA LEON PET"}
+ ],
+ "unidades": {"ACC-MOND-901": 4, "ACC-MOND-902": 0, "ACC-MARB-903": null, "PER-OTRA-904": 7, "ROP-PRUE-905": 0, "ROP-PRUE-906": 3, "ROP-PRUE-907": 1, "GRA-PRUE-908": 12.5, "SAL-PRUE-909": 2, "GAT-LEON-910": 0},
+ "codigosBaseRosa": [{"codigo":"7809999999998","nombre":"PRODUCTO SOLO EN BASE ROSA"}]
+}

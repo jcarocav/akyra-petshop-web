@@ -44,6 +44,13 @@ jobs:
         run: |
           for i in 1 2 3; do timeout -k 10 480 npx playwright install chromium firefox webkit && exit 0; echo "Intento $i falló"; done
           exit 1
+      # Herramienta de revisión: lector de códigos de barras (rembg, para quitar fondos, no se instala en CI:
+      # esa prueba se salta acá y corre en el PC del dueño)
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Lector de códigos de barras (zxing-cpp)
+        run: python -m pip install --quiet zxing-cpp pillow
       - name: Lint (JavaScript)
         run: npm run lint
       - name: Validar HTML

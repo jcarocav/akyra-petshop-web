@@ -10,7 +10,7 @@ import { existsSync, readFileSync, writeFileSync } from 'node:fs'
 import { dirname, join, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import sharp from 'sharp'
-import { cruzarStock } from '../../js/stock.mjs'
+import { productosCompletos } from '../catalogo/todos.mjs'
 import { fondoBlanco } from './buscar-referencial.mjs'
 import { bajar } from './buscar-web.mjs'
 import { normalizar } from './coincidencia.mjs'
@@ -29,10 +29,8 @@ const NO_GENERICO = /\b(royal canin|kong|nerf|catit|furminator|petmate|trixie|fe
 async function main() {
   const filas = TIENDAS.filter(t => existsSync(join(CARPETA, `${t}.json`))).flatMap(t => JSON.parse(readFileSync(join(CARPETA, `${t}.json`), 'utf8')).filter(f => f.imagen).map(f => ({ ...f, tienda: t, n: normalizar(f.nombre) })))
   const progreso = JSON.parse(readFileSync(PROGRESO, 'utf8'))
-  const catalogo = JSON.parse(readFileSync(join(RAIZ, 'productos.json'), 'utf8'))
-  const stock = JSON.parse(readFileSync(join(RAIZ, 'stock.json'), 'utf8'))
   const usadas = new Set(Object.values(progreso).map(e => e.origen).filter(Boolean))
-  const pendientes = cruzarStock(catalogo.productos, stock).filter(p => !p.imagen && ['accesorios', 'ropa'].includes(p.categoria) && !progreso[p.sku]?.archivo && !progreso[p.sku]?.referencialCatalogos).slice(0, MAX)
+  const pendientes = productosCompletos().filter(p => !p.imagen && ['accesorios', 'ropa'].includes(p.categoria) && !progreso[p.sku]?.archivo && !progreso[p.sku]?.referencialCatalogos).slice(0, MAX)
   console.log(`Referenciales desde catálogos para ${pendientes.length} productos (${filas.length} productos de tiendas)...`)
   let ok = 0
   for (const p of pendientes) {

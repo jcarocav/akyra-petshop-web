@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="es-CL">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Revisión del catálogo · Akyra</title>
+  <link rel="stylesheet" href="/publico/estilos.css">
+  <script type="module" src="/publico/app.mjs"></script>
+</head>
+<body>
+  <a class="saltar" href="#contenido">Saltar al contenido</a>
+  <header class="barra">
+    <div class="barra__fila">
+      <h1 class="barra__titulo">Revisión del catálogo</h1>
+      <p id="presencia" class="presencia" aria-live="polite">Conectando…</p>
+    </div>
+    <div class="barra__acciones">
+      <button type="button" class="boton" id="boton-conectar">Conectar celular</button>
+      <label class="boton boton--archivo">Buscar por código de barras
+        <input type="file" id="entrada-codigo" accept="image/*" capture="environment" class="oculto-visual">
+      </label>
+      <button type="button" class="boton" id="boton-nuevo">Agregar producto nuevo</button>
+      <button type="button" class="boton boton--primario" id="boton-exportar">Exportar</button>
+    </div>
+    <ul id="contadores" class="contadores" aria-label="Resumen de la revisión"></ul>
+  </header>
+
+  <nav class="pestanas" aria-label="Secciones">
+    <button type="button" class="pestana" id="pestana-catalogo" aria-pressed="true">Catálogo</button>
+    <button type="button" class="pestana" id="pestana-fotos" aria-pressed="false">Fotos por sacar <span id="pestana-fotos-n"></span></button>
+  </nav>
+
+  <main id="contenido" tabindex="-1">
+    <p id="cargando" class="cargando">Cargando el catálogo…</p>
+
+    <section id="vista-catalogo" aria-labelledby="titulo-catalogo" hidden>
+      <h2 id="titulo-catalogo" class="oculto-visual">Catálogo completo</h2>
+      <div class="filtros">
+        <label class="campo campo--ancho">Buscar (nombre, marca, SKU o código)
+          <input type="search" id="filtro-buscar" autocomplete="off" placeholder="Ej: Mondo arnés">
+        </label>
+        <label class="campo">Categoría
+          <select id="filtro-categoria"><option value="">Todas</option></select>
+        </label>
+        <label class="campo">Subcategoría
+          <select id="filtro-subcategoria"><option value="">Todas</option></select>
+        </label>
+        <label class="campo">Marca
+          <select id="filtro-marca"><option value="">Todas</option></select>
+        </label>
+        <label class="campo">En la web
+          <select id="filtro-web">
+            <option value="">Todos</option>
+            <option value="si">Se ve en la web</option>
+            <option value="no">No se ve en la web</option>
+          </select>
+        </label>
+        <label class="campo">Disponibilidad
+          <select id="filtro-stock">
+            <option value="">Todos</option>
+            <option value="con-stock">Solo con stock</option>
+            <option value="consultar">Solo consultar disponibilidad</option>
+          </select>
+        </label>
+        <label class="campo">Cambios
+          <select id="filtro-cambios">
+            <option value="">Todos</option>
+            <option value="precio-cambiado">Precio cambiado</option>
+            <option value="sin-precio">Consultar precio (sin precio)</option>
+            <option value="eliminar">Para eliminar</option>
+            <option value="modificar">Para modificar</option>
+            <option value="foto-nueva">Foto nueva</option>
+            <option value="nuevo">Productos nuevos</option>
+            <option value="sin-cambios">Sin cambios</option>
+          </select>
+        </label>
+        <button type="button" class="boton boton--chico" id="filtro-limpiar">Quitar filtros</button>
+      </div>
+      <p id="conteo" class="conteo" aria-live="polite"></p>
+      <ul id="lista" class="grilla"></ul>
+      <p class="centrado"><button type="button" class="boton" id="boton-mas" hidden>Mostrar más productos</button></p>
+    </section>
+
+    <section id="vista-fotos" aria-labelledby="titulo-fotos" hidden>
+      <h2 id="titulo-fotos">Fotos por sacar</h2>
+      <p id="fotos-contador" class="fotos-contador" aria-live="polite"></p>
+      <div class="filtros">
+        <label class="campo campo--ancho">Buscar
+          <input type="search" id="fotos-buscar" autocomplete="off" placeholder="Nombre, SKU o código de barras">
+        </label>
+        <label class="campo">Marca
+          <select id="fotos-marca"><option value="">Todas</option></select>
+        </label>
+      </div>
+      <div id="fotos-listas"></div>
+      <h3 class="subtitulo">Fotos nuevas</h3>
+      <ul id="fotos-nuevas" class="miniaturas"></ul>
+      <details class="desplegable">
+        <summary>Con foto referencial (opcional: reemplazarlas por fotos propias)</summary>
+        <div id="fotos-referenciales"></div>
+      </details>
+    </section>
+  </main>
+
+  <div id="aviso" class="aviso" role="status" aria-live="polite"></div>
+
+  <dialog id="dialogo" class="dialogo" aria-labelledby="dialogo-titulo">
+    <div class="dialogo__caja">
+      <div class="dialogo__cabeza">
+        <h2 id="dialogo-titulo"></h2>
+        <button type="button" class="boton boton--chico" id="dialogo-cerrar">Cerrar</button>
+      </div>
+      <p id="dialogo-alerta" class="alerta" role="alert" hidden></p>
+      <div id="dialogo-cuerpo"></div>
+    </div>
+  </dialog>
+</body>
+</html>

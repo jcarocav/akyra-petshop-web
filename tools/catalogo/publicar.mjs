@@ -15,7 +15,7 @@
 // El stock ya no oculta nada: solo decide el aviso "Consultar disponibilidad".
 // ============================================================
 import { disponibilidadDesdeUnidades, normalizarDisponibilidad } from '../../js/stock.mjs'
-import { CAMPOS_PUBLICOS, categoriaDesdeExcel, deducirEdad, deducirSubcategoria, formatoMarca, precioPublico, sinTildes, slug } from './reglas.mjs'
+import { CAMPOS_PUBLICOS, CATEGORIAS, categoriaDesdeExcel, deducirEdad, deducirSubcategoria, formatoMarca, precioPublico, sinTildes, slug } from './reglas.mjs'
 
 // Marcas que sin foto no se publican. Se revisan fabricante, marca y nombre (todas las formas de escribirlas:
 // "Mundo Mascota", "Marbenpets", "Marben Pet", "Wonder Dog/Cat/Pet", "León Pet", "... MONDO (11177)").
@@ -29,6 +29,12 @@ const MARCAS_CON_FOTO_OBLIGATORIA = [
 export function marcaConFotoObligatoria(producto) {
   const texto = ' ' + sinTildes([producto.fabricante, producto.marca, producto.nombreExcel, producto.nombre].filter(Boolean).join(' | ')).toLowerCase() + ' '
   return MARCAS_CON_FOTO_OBLIGATORIA.find(m => m.patron.test(texto))?.nombre || null
+}
+
+// Acepta el nombre del Excel ("Perros", "Salud/Higiene") o el id del sitio ("perros", "salud-higiene").
+export function categoriaValida(valor) {
+  if (!valor) return null
+  return categoriaDesdeExcel(valor) || (CATEGORIAS.some(c => c.id === valor) ? valor : null)
 }
 
 export function ajustesVacios() {
@@ -46,7 +52,7 @@ function precioAjuste(valor) {
 
 // Producto nuevo (de los ajustes) en el mismo formato que los del Excel.
 export function productoAgregado(a) {
-  const categoria = categoriaDesdeExcel(a.categoria) || (a.categoria && String(a.categoria)) || 'accesorios'
+  const categoria = categoriaValida(a.categoria) || 'accesorios'
   const p = {
     id: slug(a.sku), sku: a.sku, nombre: String(a.nombre || '').trim(), marca: formatoMarca(a.marca || 'Genérico'),
     categoria, subcategoria: a.subcategoria || deducirSubcategoria(categoria, a.nombre || ''),
@@ -96,7 +102,7 @@ export function publicarCatalogo(base, ajustes = ajustesVacios(), { existeImagen
     const m = aj.modificados?.[p.sku]
     if (m) {
       for (const campo of ['nombre', 'marca', 'descripcion', 'subcategoria']) if (typeof m[campo] === 'string' && m[campo].trim()) p[campo] = m[campo].trim()
-      if (m.categoria && categoriaDesdeExcel(m.categoria)) p.categoria = categoriaDesdeExcel(m.categoria)
+      if (m.categoria && categoriaValida(m.categoria)) p.categoria = categoriaValida(m.categoria)
       if ('precio' in m && !p.tallas) p.precio = precioAjuste(m.precio)
       if (m.disponibilidad) {
         if (p.tallas) for (const t of p.tallas) disp[t.sku] = normalizarDisponibilidad(m.disponibilidad)
