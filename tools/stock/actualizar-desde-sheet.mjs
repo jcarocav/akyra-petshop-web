@@ -5,7 +5,7 @@
 //   1. Descarga el CSV público de la hoja "Stock" (solo columnas públicas).
 //   2. Lo valida: columnas correctas y al menos el 50 % de los productos conocidos.
 //      Si no pasa, NO cambia nada (el sitio sigue con el último stock bueno).
-//   3. Escribe stock.json; si hay productos nuevos o precios distintos, productos.json.
+//   3. Escribe stock.json (solo disponibilidad: con stock / consultar). HOY DESACTIVADO (ver CLAUDE.md).
 //
 // Uso: STOCK_CSV_URL="https://script.google.com/macros/s/.../exec?token=..." node tools/stock/actualizar-desde-sheet.mjs
 //      node tools/stock/actualizar-desde-sheet.mjs --archivo ruta.csv   (para probar)
@@ -14,8 +14,9 @@ import { readFileSync } from 'node:fs'
 import { dirname, join, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { categoriaDesdeExcel, deducirEdad, deducirSubcategoria, formatoMarca, formatoTitulo, precioPublico, slug } from '../catalogo/reglas.mjs'
-import { escribirCatalogo, escribirStock } from '../catalogo/escritura.mjs'
-import { normalizarUnidades } from '../../js/stock.mjs'
+import { escribirStock } from '../catalogo/escritura.mjs'
+import { leerAjustes } from '../catalogo/proceso.mjs'
+import { disponibilidadDesdeUnidades, normalizarUnidades } from '../../js/stock.mjs'
 import { lectorNumero, lectorParsearCsv } from './lector.mjs'
 
 const RAIZ = resolve(dirname(fileURLToPath(import.meta.url)), '..', '..')
@@ -121,14 +122,26 @@ async function main() {
     if (!r.ok) throw new Error(`No se pudo descargar el CSV (HTTP ${r.status}). El sitio queda con el último stock bueno.`)
     csvTexto = await r.text()
   }
+  // Sin Gesnex (noviembre 2026) la fuente de precios, productos y disponibilidad corregida es
+  // tools/catalogo/ajustes-catalogo.json. Si esto se reactiva, solo se actualiza la disponibilidad
+  // (con stock / consultar, sin unidades) de los productos publicados, y los ajustes siguen ganando.
   const catalogo = JSON.parse(readFileSync(join(RAIZ, 'productos.json'), 'utf8'))
   const stock = JSON.parse(readFileSync(join(RAIZ, 'stock.json'), 'utf8'))
-  const r = aplicarCsv({ csvTexto, productos: catalogo.productos, stock })
+  const r = aplicarCsv({ csvTexto, productos: catalogo.productos, stock: { unidades: {} } })
   if (!r.ok) throw new Error(r.error)
-  const antes = JSON.stringify(stock.unidades)
-  if (JSON.stringify(r.stock.unidades) !== antes) escribirStock(r.stock.unidades, new Date(r.stock.actualizado))
-  if (r.cambiosCatalogo) escribirCatalogo(r.productos, { fuente: `${catalogo.fuente} + planilla Akyra · Stock web` })
-  console.log(`Coincidencia: ${Math.round(r.coincidencia * 100)}% · productos nuevos: ${r.nuevos.length} · cambios de catálogo: ${r.cambiosCatalogo}`)
+  const ajustes = leerAjustes()
+  const disponibilidad = {}
+  for (const p of catalogo.productos) {
+    const m = ajustes.modificados?.[p.sku]
+    for (const v of p.tallas || [p]) {
+      const calculada = Object.prototype.hasOwnProperty.call(r.stock.unidades, v.sku)
+        ? disponibilidadDesdeUnidades(r.stock.unidades[v.sku], !!p.granel)
+        : (stock.disponibilidad?.[v.sku] ?? 'consultar')
+      disponibilidad[v.sku] = m?.tallas?.[v.talla]?.disponibilidad || m?.disponibilidad || calculada
+    }
+  }
+  if (JSON.stringify(disponibilidad) !== JSON.stringify(stock.disponibilidad)) escribirStock(disponibilidad)
+  console.log(`Coincidencia: ${Math.round(r.coincidencia * 100)}% · productos nuevos en la planilla (no se agregan solos): ${r.nuevos.length}`)
   for (const e of r.errores) console.log('  aviso: ' + e)
 }
 

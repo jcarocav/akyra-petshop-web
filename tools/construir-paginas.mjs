@@ -14,7 +14,6 @@
 import { readFileSync, readdirSync, writeFileSync } from 'node:fs'
 import { dirname, join, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
-import { cruzarStock } from '../js/stock.mjs'
 
 const RAIZ = resolve(dirname(fileURLToPath(import.meta.url)), '..')
 const SITIO_ACTUAL = 'https://jcarocav.github.io/akyra-petshop-web/'
@@ -71,10 +70,9 @@ for (const [archivo, pagina] of Object.entries(PAGINAS)) {
 }
 
 // ---------- sitemap.xml ----------
-// Solo productos visibles (con stock o sin dato): los agotados no van al sitemap
+// productos.json ya trae solo los productos publicados (tools/catalogo/publicar.mjs): todos van al sitemap
 const catalogo = JSON.parse(readFileSync(join(RAIZ, 'productos.json'), 'utf8'))
-const stock = JSON.parse(readFileSync(join(RAIZ, 'stock.json'), 'utf8'))
-const productos = cruzarStock(catalogo.productos, stock).filter(p => p.visible)
+const productos = catalogo.productos
 const hoy = new Date().toISOString().slice(0, 10)
 const urls = []
 for (const [archivo, pagina] of Object.entries(PAGINAS)) {

@@ -54,7 +54,10 @@ function describirCantidad(linea) {
   return linea.granel ? `${formatoDecimal(linea.cantidad)} kg` : String(linea.cantidad)
 }
 
-// lineas: [{ nombre, sku, talla, precio, cantidad, granel }]
+// Las líneas sin stock conocido llevan al final este texto, para que la tienda confirme antes.
+export const MARCA_CONSULTAR = ' (consultar disponibilidad)'
+
+// lineas: [{ nombre, sku, talla, precio, cantidad, granel, disponibilidad }]
 // cliente: { nombre, telefono, entrega: 'retiro'|'despacho', sucursal:{nombre,direccion},
 //            direccion, zona:{nombre,valor}, pago, comentarios }
 export function construirMensaje({ lineas, cliente, tienda = 'Maskotería Akyra', fecha = new Date(), compacto = false }) {
@@ -68,19 +71,20 @@ export function construirMensaje({ lineas, cliente, tienda = 'Maskotería Akyra'
   lineas.forEach((l, i) => {
     const nombre = limpiarCampo(l.nombre, { max: 140 }) + (l.talla ? ` (talla ${limpiarCampo(l.talla, { max: 12 })})` : '')
     const unitario = l.granel ? `${formatoCLP(l.precio)} por kg` : `${formatoCLP(l.precio)} c/u`
+    const fin = l.disponibilidad === 'consultar' ? MARCA_CONSULTAR : ''
     if (l.granel) {
       // "1,3 kg × $3.400/kg = $4.420"
       const cuenta = `${describirCantidad(l)} × ${formatoCLP(l.precio)}/kg = ${formatoCLP(subtotalLinea(l))}`
-      if (compacto) partes.push(`${i + 1}. ${nombre} [${l.sku}] ${cuenta}`)
+      if (compacto) partes.push(`${i + 1}. ${nombre} [${l.sku}] ${cuenta}${fin}`)
       else {
         partes.push(`${i + 1}. ${nombre}`)
-        partes.push(`    SKU ${l.sku} · ${cuenta}`)
+        partes.push(`    SKU ${l.sku} · ${cuenta}${fin}`)
       }
     } else if (compacto) {
-      partes.push(`${i + 1}. ${describirCantidad(l)} × ${nombre} [${l.sku}] ${unitario} = ${formatoCLP(subtotalLinea(l))}`)
+      partes.push(`${i + 1}. ${describirCantidad(l)} × ${nombre} [${l.sku}] ${unitario} = ${formatoCLP(subtotalLinea(l))}${fin}`)
     } else {
       partes.push(`${i + 1}. ${describirCantidad(l)} × ${nombre}`)
-      partes.push(`    SKU ${l.sku} · ${unitario} · Subtotal ${formatoCLP(subtotalLinea(l))}`)
+      partes.push(`    SKU ${l.sku} · ${unitario} · Subtotal ${formatoCLP(subtotalLinea(l))}${fin}`)
     }
   })
   partes.push('')

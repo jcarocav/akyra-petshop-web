@@ -32,13 +32,15 @@ function filaLinea(l) {
   const producto = productoPorId.get(l.id)
   const minimo = l.granel ? carrito.MIN_GRANEL : 1
   const unidad = l.granel ? '100 gramos' : 'uno'
+  const maximo = l.granel ? carrito.MAX_KILOS : carrito.MAX_UNIDADES
   const idCampo = `carrito-cantidad-${l.clave.replace(/[^a-z0-9]/gi, '-')}`
   return h('li', { class: 'linea', 'data-clave': l.clave },
     h('div', { class: 'linea__info' },
       h('a', { class: 'linea__nombre', href: producto ? urlProducto(producto) : '#', text: nombre }),
       h('p', { class: 'linea__detalle' },
         h('span', { text: `SKU ${l.sku}` }),
-        h('span', { text: l.granel ? `${formatoCLP(l.precio)} por kg` : `${formatoCLP(l.precio)} c/u` }))
+        h('span', { text: l.granel ? `${formatoCLP(l.precio)} por kg` : `${formatoCLP(l.precio)} c/u` })),
+      l.disponibilidad === 'consultar' ? h('p', { class: 'estado-stock estado-stock--consultar linea__disponibilidad', text: 'Consultar disponibilidad' }) : null
     ),
     h('div', { class: 'linea__controles' },
       h('div', { class: 'cantidad cantidad--compacta' },
@@ -46,13 +48,13 @@ function filaLinea(l) {
         h('button', { type: 'button', class: 'cantidad__boton', 'data-linea': 'restar', 'aria-label': `Restar ${unidad} a ${nombre}`, 'aria-disabled': String(l.cantidad <= minimo) }, icono('minus')),
         h('input', { id: idCampo, class: 'cantidad__campo', type: 'text', size: 3, inputmode: l.granel ? 'decimal' : 'numeric', autocomplete: 'off', 'data-linea': 'campo', value: l.granel ? formatoDecimal(l.cantidad) : String(l.cantidad) }),
         l.granel ? h('span', { class: 'cantidad__unidad', 'aria-hidden': 'true', text: 'kg' }) : null,
-        h('button', { type: 'button', class: 'cantidad__boton', 'data-linea': 'sumar', 'aria-label': `Sumar ${unidad} a ${nombre}`, 'aria-disabled': String(l.tope !== null && l.cantidad >= l.tope) }, icono('plus'))
+        h('button', { type: 'button', class: 'cantidad__boton', 'data-linea': 'sumar', 'aria-label': `Sumar ${unidad} a ${nombre}`, 'aria-disabled': String(l.cantidad >= maximo) }, icono('plus'))
       ),
       h('p', { class: 'linea__subtotal' }, h('span', { class: 'visualmente-oculto', text: 'Subtotal: ' }), formatoCLP(l.precio * l.cantidad)),
       h('button', { type: 'button', class: 'linea__quitar', 'data-linea': 'quitar', 'aria-label': `Quitar ${nombre} del carrito` }, icono('trash-2'))
     ),
-    l.tope !== null && l.cantidad >= l.tope
-      ? h('p', { class: 'linea__aviso', text: `Máximo disponible: ${formatoCantidad(l.tope, l.granel)}.` })
+    l.cantidad >= maximo
+      ? h('p', { class: 'linea__aviso', text: `Máximo por pedido: ${formatoCantidad(maximo, l.granel)}.` })
       : null
   )
 }
@@ -100,7 +102,7 @@ function activarLista() {
       return
     }
     if (boton.getAttribute('aria-disabled') === 'true') {
-      if (accion === 'sumar') anunciar('Máximo disponible.')
+      if (accion === 'sumar') anunciar('Máximo por pedido.')
       return
     }
     const paso = linea.granel ? carrito.PASO_GRANEL : 1
@@ -112,7 +114,7 @@ function activarLista() {
     const linea = carrito.obtenerLineas().find(l => l.clave === clave)
     let n = leerNumero(campo.value)
     if (linea.granel) {
-      const r = carrito.interpretarKilos(campo.value, { tope: linea.tope })
+      const r = carrito.interpretarKilos(campo.value)
       n = r.n ?? linea.cantidad
       if (r.aviso) anunciar(r.aviso, { urgente: true })
     }

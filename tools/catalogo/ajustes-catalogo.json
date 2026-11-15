@@ -1,0 +1,7 @@
+{
+ "version": 1,
+ "nota": "Ajustes del catálogo (revisión con la dueña). Ganan sobre el Excel al regenerar: excluidos no vuelven, y precios, textos, fotos y disponibilidad modificados no vuelven al original. Ver CLAUDE.md.",
+ "excluidos": {},
+ "modificados": {},
+ "agregados": []
+}

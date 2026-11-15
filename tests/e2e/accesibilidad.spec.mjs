@@ -54,7 +54,7 @@ test.describe('con el aviso de privacidad', () => {
 
 test('axe: ficha de producto, con tallas y agotada', async ({ page }) => {
   await page.goto('/catalogo.html')
-  const simple = await elegirProducto(page, 'simple-mucho-stock')
+  const simple = await elegirProducto(page, 'simple-con-stock')
   const tallas = await elegirProducto(page, 'tallas')
   await page.goto(`/producto.html?id=${simple.id}`)
   await expect(page.locator('#ficha')).toBeVisible()
@@ -68,7 +68,7 @@ test('axe: ficha de producto, con tallas y agotada', async ({ page }) => {
 
 test('axe: carrito en sus 2 pasos, con errores y confirmación', async ({ page, context }) => {
   await page.goto('/catalogo.html')
-  const a = await elegirProducto(page, 'simple-mucho-stock')
+  const a = await elegirProducto(page, 'simple-con-stock')
   await page.evaluate(a => localStorage.setItem('akyra_carrito_v2', JSON.stringify([{ id: a.id, talla: null, cantidad: 2 }])), a)
   await page.reload()
   await page.locator('#boton-carrito').click()

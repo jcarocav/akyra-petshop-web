@@ -88,3 +88,18 @@ test('pedidos largos: formato compacto y nada se corta', () => {
   // corto: formato normal; largo: compacto
   expect(enlacePedido({ numero: '56986969111', lineas, cliente, fecha }).enlace.length).toBeLessThan(LARGO_MAXIMO_ENLACE)
 })
+
+test('las líneas "consultar disponibilidad" lo dicen al final (normal y compacto)', () => {
+  const lineas = [
+    { nombre: 'Sin stock', sku: 'A-1', talla: null, precio: 1000, cantidad: 2, granel: false, disponibilidad: 'consultar' },
+    { nombre: 'Con stock', sku: 'A-2', talla: null, precio: 1000, cantidad: 1, granel: false, disponibilidad: 'con-stock' }
+  ]
+  const cliente = { nombre: 'Ana', telefono: '912345678', entrega: 'retiro', sucursal: { nombre: 'Hornillas', direccion: 'Hornillas 080' }, pago: 'Efectivo', comentarios: '' }
+  for (const compacto of [false, true]) {
+    const texto = construirMensaje({ lineas, cliente, compacto })
+    const l1 = texto.split('\n').find(l => l.includes('A-1'))
+    const l2 = texto.split('\n').find(l => l.includes('A-2'))
+    expect(l1.endsWith('(consultar disponibilidad)')).toBe(true)
+    expect(l2).not.toContain('consultar')
+  }
+})

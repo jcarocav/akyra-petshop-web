@@ -26,7 +26,7 @@ export function elegirDestacados() {
     if (!porCategoria.has(p.categoria)) porCategoria.set(p.categoria, [])
     porCategoria.get(p.categoria).push(p)
   }
-  for (const lista of porCategoria.values()) lista.sort((a, b) => (b.tope ?? 0) - (a.tope ?? 0))
+  for (const lista of porCategoria.values()) lista.sort((a, b) => (b.disponibilidad === 'con-stock' ? 1 : 0) - (a.disponibilidad === 'con-stock' ? 1 : 0))
   const colas = [...porCategoria.values()]
   while (elegidos.length < CANTIDAD_DESTACADOS && colas.some(c => c.length)) {
     for (const cola of colas) {

@@ -1,13 +1,17 @@
 // ============================================================
-// Reglas de stock (las usan el sitio, el generador y las pruebas).
-//   - null / sin dato  → "Consultar disponibilidad": se muestra, sin tope.
-//   - mayor que 0      → se muestra; el tope del "+" es el stock.
-//   - 0 (o granel bajo 0,1 kg) → oculto ("Agotado por ahora").
+// Disponibilidad (la usan el sitio, el generador y las pruebas).
+// stock.json ya NO publica unidades: solo { disponibilidad: { SKU: 'con-stock' | 'consultar' } }.
+//   - 'con-stock'  → se vende normal, sin ningún aviso ni número de unidades.
+//   - 'consultar'  → aviso amarillo "Consultar disponibilidad" (stock 0 o sin cantidad registrada).
+// El stock ya no decide si un producto se ve: eso lo decide el generador
+// (tools/catalogo/publicar.mjs) y productos.json solo trae los publicados.
 // Funciones puras: no tocan la página.
 // ============================================================
 
 export const MINIMO_GRANEL = 0.1
-export const UMBRAL_ULTIMAS = 5
+export const CON_STOCK = 'con-stock'
+export const CONSULTAR = 'consultar'
+export const TEXTO_CONSULTAR = 'Consultar disponibilidad'
 
 export function normalizarUnidades(valor) {
   if (valor === null || valor === undefined || valor === '') return null
@@ -16,47 +20,34 @@ export function normalizarUnidades(valor) {
   return Math.max(0, Math.round(n * 1000) / 1000)
 }
 
-// ¿Se puede comprar? (true también cuando no hay dato)
-export function hayStock(unidades, granel = false) {
-  if (unidades === null || unidades === undefined) return true
-  return granel ? unidades >= MINIMO_GRANEL : unidades > 0
+// Unidades conocidas (Excel o, si se reactiva, un sistema de ventas) → disponibilidad pública, sin números.
+export function disponibilidadDesdeUnidades(unidades, granel = false) {
+  const u = normalizarUnidades(unidades)
+  if (u === null) return CONSULTAR
+  return (granel ? u >= MINIMO_GRANEL : u > 0) ? CON_STOCK : CONSULTAR
 }
 
-// Tope de cantidad que se puede pedir (null = sin tope)
-export function topeDe(unidades, granel = false) {
-  if (unidades === null || unidades === undefined) return null
-  return granel ? Math.floor(Math.round(unidades * 1e6) / 1000) / 1000 : Math.floor(unidades)
+export function normalizarDisponibilidad(valor) {
+  return valor === CON_STOCK ? CON_STOCK : CONSULTAR
 }
 
-// Estado para mostrar: { clave, texto }
-export function estadoStock(unidades, granel = false) {
-  if (unidades === null || unidades === undefined) return { clave: 'consultar', texto: 'Consultar disponibilidad' }
-  if (!hayStock(unidades, granel)) return { clave: 'agotado', texto: 'Agotado por ahora' }
-  const tope = topeDe(unidades, granel)
-  if (tope <= UMBRAL_ULTIMAS) {
-    if (granel) return { clave: 'ultimas', texto: `¡Últimos ${String(tope).replace('.', ',')} kg!` }
-    return { clave: 'ultimas', texto: tope === 1 ? '¡Última unidad!' : `¡Últimas ${tope} unidades!` }
-  }
-  return { clave: 'disponible', texto: 'Disponible' }
+// Estado para mostrar: { clave, texto }. Con stock no se muestra nada (texto vacío).
+export function estadoDisponibilidad(disponibilidad) {
+  return normalizarDisponibilidad(disponibilidad) === CON_STOCK
+    ? { clave: CON_STOCK, texto: '' }
+    : { clave: CONSULTAR, texto: TEXTO_CONSULTAR }
 }
 
-// Une el catálogo (productos.json) con el stock (stock.json).
-// Devuelve TODOS los productos con su stock por talla y un indicador "visible".
-export function cruzarStock(productos, stock) {
-  const unidades = stock?.unidades || {}
-  const de = sku => (Object.prototype.hasOwnProperty.call(unidades, sku) ? normalizarUnidades(unidades[sku]) : null)
+// Une el catálogo (productos.json) con stock.json. Lo que no aparece en stock.json = "consultar".
+// Un producto con tallas tiene stock si alguna talla lo tiene (cada talla conserva el suyo).
+export function cruzarDisponibilidad(productos, stock) {
+  const mapa = stock?.disponibilidad || {}
+  const de = sku => normalizarDisponibilidad(Object.prototype.hasOwnProperty.call(mapa, sku) ? mapa[sku] : null)
   return productos.map(p => {
     if (p.tallas) {
-      const tallas = p.tallas.map(t => {
-        const u = de(t.sku)
-        return { ...t, unidades: u, tope: topeDe(u, false), visible: hayStock(u, false) }
-      })
-      const visibles = tallas.filter(t => t.visible)
-      const conDato = visibles.filter(t => t.unidades !== null)
-      const total = conDato.length === visibles.length && visibles.length ? conDato.reduce((s, t) => s + t.unidades, 0) : null
-      return { ...p, tallas, unidades: visibles.length ? total : 0, visible: visibles.length > 0 }
+      const tallas = p.tallas.map(t => ({ ...t, disponibilidad: de(t.sku) }))
+      return { ...p, tallas, disponibilidad: tallas.some(t => t.disponibilidad === CON_STOCK) ? CON_STOCK : CONSULTAR }
     }
-    const u = de(p.sku)
-    return { ...p, unidades: u, tope: topeDe(u, !!p.granel), visible: hayStock(u, !!p.granel) }
+    return { ...p, disponibilidad: de(p.sku) }
   })
 }

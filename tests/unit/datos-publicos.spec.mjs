@@ -26,11 +26,12 @@ test('productos.json no menciona costos, proveedores ni sucursales/bodegas', () 
   expect(datos).not.toMatch(/\b(?:7\d{12}|\d{13})\b/) // sin códigos de barra
 })
 
-test('todo producto tiene su stock en stock.json y ningún precio es $1', () => {
+test('todo producto tiene su disponibilidad en stock.json (sin unidades) y ningún precio es $1', () => {
+  expect(Object.keys(stock)).toEqual(['disponibilidad'])
   for (const p of productos) {
     const variantes = p.tallas || [p]
     for (const v of variantes) {
-      expect(Object.prototype.hasOwnProperty.call(stock.unidades, v.sku), v.sku).toBe(true)
+      expect(['con-stock', 'consultar'], v.sku).toContain(stock.disponibilidad[v.sku])
       expect(v.precio === null || v.precio > 1, v.sku).toBe(true)
     }
   }

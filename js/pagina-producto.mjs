@@ -4,7 +4,7 @@
 // solo precio y disponibilidad) y productos relacionados.
 // ============================================================
 import { avisoReferencial, estadoDe, filaCompra, imagenProducto, tarjetaProducto } from './componentes.mjs'
-import { CONFIG, categoriaPorId, preciosDe, productoPorId, productos, sinPrecio, textoAlternativo, urlProducto } from './datos.mjs'
+import { categoriaPorId, preciosDe, productoPorId, productos, sinPrecio, textoAlternativo, urlProducto } from './datos.mjs'
 import { $, formatoCLP, h } from './utilidades.mjs'
 
 const SITIO = document.querySelector('link[rel="canonical"]')?.href.replace(/producto\.html.*$/, '') || location.href.replace(/producto\.html.*$/, '')
@@ -29,9 +29,10 @@ function datosEstructurados(p) {
     const oferta = {
       '@type': precios.length > 1 ? 'AggregateOffer' : 'Offer',
       priceCurrency: 'CLP',
-      availability: 'https://schema.org/InStock',
       url: SITIO + urlProducto(p)
     }
+    // Solo se declara "en stock" cuando se sabe; sin stock conocido no se afirma nada (nunca unidades)
+    if (p.disponibilidad === 'con-stock') oferta.availability = 'https://schema.org/InStock'
     if (precios.length > 1) { oferta.lowPrice = Math.min(...precios); oferta.highPrice = Math.max(...precios); oferta.offerCount = precios.length }
     else oferta.price = precios[0]
     datos.offers = oferta
@@ -54,9 +55,7 @@ function pintar(p) {
   meta('link[rel="canonical"]', 'href', SITIO + urlProducto(p))
   meta('meta[property="og:url"]', 'content', SITIO + urlProducto(p))
   if (p.imagen) meta('meta[property="og:image"]', 'content', SITIO + p.imagen)
-  const agotado = p.visible === false
-  if (agotado) meta('meta[name="robots"]', 'content', 'noindex, follow')
-  else datosEstructurados(p)
+  datosEstructurados(p)
 
   $('#miga-categoria').href = `catalogo.html?categoria=${p.categoria}`
   $('#miga-categoria').textContent = cat?.nombre || 'Catálogo'
@@ -71,20 +70,13 @@ function pintar(p) {
   $('#ficha-nombre').textContent = p.nombre
   $('#ficha-sku').textContent = `SKU ${p.sku}`
   $('#ficha-categoria').textContent = [cat?.nombre, p.subcategoria].filter(Boolean).join(' · ')
+  if (p.descripcion) { $('#ficha-descripcion').textContent = p.descripcion; $('#ficha-descripcion').hidden = false }
 
   const estado = estadoDe(p)
   const stockEl = $('#ficha-stock')
   stockEl.textContent = estado.texto
   stockEl.className = `estado-stock estado-stock--${estado.clave}`
-  if (agotado) {
-    $('#ficha-precio').append(...(sinPrecio(p) ? [] : [h('span', { class: 'precio__valor', text: formatoCLP(Math.min(...preciosDe(p))) })]))
-    const texto = `Hola, vi que ${p.nombre} (SKU ${p.sku}) está agotado. ¿Cuándo vuelve a llegar?`
-    $('#ficha-agotado-whatsapp').href = `https://wa.me/${CONFIG.whatsappTienda}?text=${encodeURIComponent(texto)}`
-    $('#ficha-agotado').hidden = false
-    $('#ficha-compra').remove()
-  } else {
-    pintarCompra(p)
-  }
+  pintarCompra(p)
   $('#ficha').hidden = false
   $('#ficha-cargando').hidden = true
   pintarRelacionados(p)
