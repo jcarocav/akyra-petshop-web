@@ -39,6 +39,7 @@
     "linkinator": "8.1.0",
     "lucide-static": "1.61.0",
     "oxlint": "1.89.0",
+    "qrcode": "1.5.4",
     "sharp": "0.35.5",
     "xlsx": "file:vendor/xlsx-0.20.3.tgz"
   }

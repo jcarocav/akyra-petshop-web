@@ -93,9 +93,10 @@ test('sitemap, robots, security.txt y llms.txt al día', async ({ request }) => 
   const sitemap = await (await request.get('/sitemap.xml')).text()
   expect(sitemap).toContain('accesibilidad.html')
   expect(sitemap).toContain('producto.html?id=')
-  const stock = JSON.parse(readFileSync(join(RAIZ, 'stock.json'), 'utf8'))
-  const agotado = Object.entries(stock.unidades).find(([, v]) => v === 0)
-  if (agotado) expect(sitemap).not.toContain(`id=${agotado[0].toLowerCase()}<`)
+  // Todos los productos publicados (productos.json) están en el sitemap, y nada más
+  const publicados = JSON.parse(readFileSync(join(RAIZ, 'productos.json'), 'utf8')).productos
+  expect(sitemap.split('producto.html?id=').length - 1).toBe(publicados.length)
+  for (const p of publicados.slice(0, 50)) expect(sitemap).toContain(`id=${encodeURIComponent(p.id)}<`)
   expect(await (await request.get('/robots.txt')).text()).toContain('Sitemap:')
   expect((await request.get('/.well-known/security.txt')).ok()).toBe(true)
   expect(await (await request.get('/llms.txt')).text()).toContain('catalogo.html')

@@ -3,7 +3,7 @@ import { NUMERO_TIENDA, abrirCard, carritoGuardado, elegirProducto, expect, form
 
 async function prepararCarrito(page) {
   await page.goto('/catalogo.html')
-  const a = await elegirProducto(page, 'simple-mucho-stock')
+  const a = await elegirProducto(page, 'simple-con-stock')
   const g = await elegirProducto(page, 'granel')
   await page.evaluate(([a, g]) => localStorage.setItem('akyra_carrito_v2', JSON.stringify([
     { id: a.id, talla: null, cantidad: 2 },
@@ -142,14 +142,14 @@ test('retiro en sucursal: sin costo de despacho', async ({ page, context }) => {
 
 test('lo guardado en el navegador se valida: datos falsos o productos inexistentes se descartan', async ({ page }) => {
   await page.goto('/catalogo.html')
-  const a = await elegirProducto(page, 'simple-tope-chico')
+  const a = await elegirProducto(page, 'simple-con-stock')
   await page.evaluate(a => localStorage.setItem('akyra_carrito_v2', JSON.stringify([
     { id: '<img src=x onerror=alert(1)>', talla: null, cantidad: 2 },
     { id: a.id, talla: null, cantidad: 999, nombre: '<b>falso</b>', precio: 1 },
     'basura', null
   ])), a)
   await page.reload()
-  expect(await carritoGuardado(page)).toEqual([{ id: a.id, talla: null, cantidad: a.tope }])
+  expect(await carritoGuardado(page)).toEqual([{ id: a.id, talla: null, cantidad: 99 }])
   await page.locator('#boton-carrito').click()
   await expect(page.locator('#carrito-lista li')).toHaveCount(1)
   await expect(page.locator('#carrito-lista')).toContainText(a.nombre)
@@ -159,7 +159,7 @@ test('lo guardado en el navegador se valida: datos falsos o productos inexistent
 
 test('agregar desde la card actualiza el carrito abierto en otra página', async ({ page }) => {
   await page.goto('/catalogo.html')
-  const a = await elegirProducto(page, 'simple-mucho-stock')
+  const a = await elegirProducto(page, 'simple-con-stock')
   const card = await abrirCard(page, a)
   await card.getByRole('button', { name: `Añadir ${a.nombre} al carrito` }).click()
   await page.goto('/contactenos.html')

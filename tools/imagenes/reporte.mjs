@@ -11,7 +11,7 @@ import { readFileSync } from 'node:fs'
 import { dirname, join, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { CATEGORIAS } from '../catalogo/reglas.mjs'
-import { cruzarStock } from '../../js/stock.mjs'
+import { productosCompletos } from '../catalogo/todos.mjs'
 
 const RAIZ = resolve(dirname(fileURLToPath(import.meta.url)), '..', '..')
 const SALIDA = process.argv.includes('--salida') ? resolve(process.argv[process.argv.indexOf('--salida') + 1]) : resolve(RAIZ, '..', 'imagenes-catalogo.xlsx')
@@ -21,13 +21,11 @@ const NOMBRE_LUGAR = { ALDUNATE: 'Casa Matriz (Aldunate)', HORNILLAS: 'Hornillas
 const nombreCategoria = new Map(CATEGORIAS.map(c => [c.id, c.nombre]))
 const ordenCategoria = new Map(CATEGORIAS.map((c, i) => [c.id, i]))
 
-const catalogo = JSON.parse(readFileSync(join(RAIZ, 'productos.json'), 'utf8'))
-const stock = JSON.parse(readFileSync(join(RAIZ, 'stock.json'), 'utf8'))
 const { internos } = JSON.parse(readFileSync(join(RAIZ, '.tmp', 'catalogo-interno.json'), 'utf8'))
 const fuentes = JSON.parse(readFileSync(join(RAIZ, 'tools', 'imagenes', 'fuentes.json'), 'utf8'))
 const interno = new Map(internos.map(i => [i.sku, i]))
 
-const visibles = cruzarStock(catalogo.productos, stock).filter(p => p.visible)
+const visibles = productosCompletos().filter(p => p.visible)
 const noEncontradas = []
 const encontradas = []
 for (const p of visibles) {

@@ -1,8 +1,9 @@
 #!/usr/bin/env node
 // ============================================================
 // GENERAR CATÁLOGO — lee el Excel de inventario y escribe:
-//   productos.json  catálogo completo (con y sin stock), solo datos públicos
-//   stock.json      { actualizado, unidades: { SKU: unidades | null } }
+//   productos.json  solo los productos PUBLICADOS (reglas en tools/catalogo/publicar.mjs), datos públicos
+//   stock.json      { disponibilidad: { SKU: 'con-stock' | 'consultar' } } (sin unidades)
+//   .tmp/catalogo-base.json  catálogo completo antes de los ajustes (lo usan aplicar-fotos y la revisión)
 //
 // Uso (desde la carpeta del sitio):   npm run catalogo
 // Con otra planilla:                   npm run catalogo -- --excel "C:\ruta\Inventario_v54.xlsx"
@@ -12,8 +13,9 @@
 //   - "Resumen": todo lo contado en las 3 tiendas y 2 bodegas (manda en el STOCK).
 //   - "Base Rosa (1004)": la lista maestra de Rosa (manda en nombre, precio,
 //     fabricante y categoría). Lo que solo está acá entra con stock 0.
-// Stock sin dato (cantidad vacía en las 5 hojas de conteo) = null:
-// el sitio lo muestra como "Consultar disponibilidad".
+// Stock 0 o sin dato (cantidad vacía en las 5 hojas de conteo) → "Consultar disponibilidad".
+// Después se aplican los ajustes de tools/catalogo/ajustes-catalogo.json (ganan sobre el Excel)
+// y la regla de publicación (excluidos fuera; Mondo/Marben/Leon Pet sin foto fuera).
 // NUNCA se publica costo, proveedor ni unidades por sucursal: eso va solo a
 // .tmp/catalogo-interno.json (fuera de git), para el informe de imágenes.
 // ============================================================
@@ -27,8 +29,8 @@ import {
   formatoMarca, formatoTitulo, generarSku, nombreGranel, nombreIncluyeMarca, precioPublico, slug
 } from './catalogo/reglas.mjs'
 import { normalizarUnidades } from '../js/stock.mjs'
-import { escribirCatalogo, escribirStock } from './catalogo/escritura.mjs'
 import { tipoDeImagen } from './catalogo/fotos.mjs'
+import { guardarBase, publicarYEscribir } from './catalogo/proceso.mjs'
 
 const RAIZ = resolve(dirname(fileURLToPath(import.meta.url)), '..')
 const HOJA_RESUMEN = 'Resumen'
@@ -236,7 +238,8 @@ export function construirCatalogo({ maestro, resumen, registrado }) {
       codigo: p.codigo, codigoSaco: p.codigoSaco || null, sku, nombreExcel: p.nombreExcel, categoria, granel,
       nombre: granel ? nombreGranel(p.nombreExcel) : formatoTitulo(p.nombreExcel),
       marca: elegirMarca(p.nombreExcel, p.fabricante, marcasConocidas, avisos),
-      precio: precioPublico(p.precio), unidades, porLugar: p.porLugar || {}, enResumen: !!p.enResumen
+      precio: precioPublico(p.precio), unidades, porLugar: p.porLugar || {}, enResumen: !!p.enResumen,
+      fabricante: p.fabricante || ''
     })
   }
   writeFileSync(ARCHIVO_SKUS, JSON.stringify(Object.fromEntries(Object.entries(guardados).sort()), null, 1) + '\n')
@@ -260,7 +263,7 @@ export function construirCatalogo({ maestro, resumen, registrado }) {
       productos.push(armarProducto({
         ...variantes[0],
         nombre: formatoTitulo(g.base),
-        tallas: g.items.map((it, i) => ({ talla: it.talla, sku: variantes[i].sku, precio: variantes[i].precio }))
+        tallas: g.items.map((it, i) => ({ talla: it.talla, sku: variantes[i].sku, precio: variantes[i].precio, codigo: variantes[i].codigo }))
       }, skuPorCodigo))
       continue
     }
@@ -279,6 +282,11 @@ function armarProducto(f, skuPorCodigo) {
     categoria: f.categoria,
     subcategoria: deducirSubcategoria(f.categoria, f.nombreExcel)
   }
+  // Campos internos (no van a productos.json: publicar.mjs los quita): código de barras, fabricante y nombre del Excel
+  p.codigo = f.codigo
+  p.fabricante = f.fabricante || ''
+  p.nombreExcel = f.nombreExcel
+  if (f.granel && f.codigoSaco) p.codigoSaco = f.codigoSaco
   const edad = deducirEdad(f.categoria, f.nombreExcel)
   if (edad) p.edad = edad
   if (f.tallas) p.tallas = f.tallas
@@ -297,33 +305,18 @@ async function main() {
   console.log(`Leyendo ${rutaExcel}`)
   const datos = await leerExcel(rutaExcel)
   const { productos, stock, filas, grupos, avisos, skusNuevos, stats } = construirCatalogo(datos)
-  escribirCatalogo(productos, { fuente: basename(rutaExcel) })
-  escribirStock(stock)
+  const base = guardarBase({ productos, unidades: stock, fuente: basename(rutaExcel) })
+  const { resumen } = publicarYEscribir(base)
 
   // Datos internos (sucursales, códigos de barra): solo local, fuera de git.
-  const visibleFila = f => f.unidades === null || (f.granel ? f.unidades >= 0.1 : f.unidades > 0)
   mkdirSync(join(RAIZ, '.tmp'), { recursive: true })
   const internos = filas.map(f => ({
     sku: f.sku, codigo: f.codigo, codigoSaco: f.granel ? f.codigoSaco : null, nombre: f.nombre, nombreExcel: f.nombreExcel,
-    marca: f.marca, categoria: f.categoria, precio: f.precio, unidades: f.unidades,
-    lugares: Object.keys(f.porLugar), sinCantidadRegistrada: f.unidades === null, visible: visibleFila(f), soloBaseRosa: !f.enResumen
+    marca: f.marca, fabricante: f.fabricante, categoria: f.categoria, precio: f.precio, unidades: f.unidades,
+    lugares: Object.keys(f.porLugar), sinCantidadRegistrada: f.unidades === null, soloBaseRosa: !f.enResumen
   }))
-  const visiblesProducto = productos.filter(p => p.tallas ? p.tallas.some(t => visibleFila(filas.find(f => f.sku === t.sku))) : visibleFila(filas.find(f => f.sku === p.sku)))
-  const resumenNumeros = {
-    productosCatalogo: productos.length,
-    visibles: visiblesProducto.length,
-    ocultosStock0: productos.length - visiblesProducto.length,
-    consultarDisponibilidad: productos.filter(p => !p.tallas && stock[p.sku] === null).length,
-    soloBaseRosa: stats.soloBase,
-    skusNuevos: skusNuevos.length,
-    gruposTallas: grupos.length,
-    sinPrecio: productos.filter(p => p.tallas ? p.tallas.every(t => t.precio === null) : p.precio === null).length,
-    sinPrecioVisibles: visiblesProducto.filter(p => p.tallas ? p.tallas.every(t => t.precio === null) : p.precio === null).length,
-    conImagen: productos.filter(p => p.imagen).length,
-    conImagenVisibles: visiblesProducto.filter(p => p.imagen).length
-  }
   writeFileSync(join(RAIZ, '.tmp', 'catalogo-interno.json'), JSON.stringify({
-    internos, numeros: resumenNumeros, skusNuevos, avisos,
+    internos, numeros: { ...resumen, soloBaseRosa: stats.soloBase, skusNuevos: skusNuevos.length, gruposTallas: grupos.length }, skusNuevos, avisos,
     grupos: grupos.map(g => ({ base: g.base, tallas: g.items.map(i => `${i.talla}:${i.sku}`) }))
   }, null, 1))
 
@@ -331,17 +324,19 @@ async function main() {
 Catálogo generado → productos.json + stock.json
   En "Resumen" (contados) ............ ${stats.resumen}
   En "Base Rosa" ..................... ${stats.base}
-  Solo en Base Rosa (stock 0) ........ ${stats.soloBase}
-  Productos en el catálogo ........... ${resumenNumeros.productosCatalogo}
-  Visibles para el cliente ........... ${resumenNumeros.visibles}
-  Ocultos por stock 0 ................ ${resumenNumeros.ocultosStock0}
-  "Consultar disponibilidad" ......... ${resumenNumeros.consultarDisponibilidad}
-  Grupos de tallas ................... ${resumenNumeros.gruposTallas}
-  SKU nuevos generados ............... ${resumenNumeros.skusNuevos}
-  Sin precio (visibles / total) ...... ${resumenNumeros.sinPrecioVisibles} / ${resumenNumeros.sinPrecio}
-  Con imagen (visibles / total) ...... ${resumenNumeros.conImagenVisibles} / ${resumenNumeros.conImagen}`)
+  Solo en Base Rosa .................. ${stats.soloBase}
+  Productos en el catálogo ........... ${resumen.total}
+  Publicados en la web ............... ${resumen.publicados}
+  "Consultar disponibilidad" ......... ${resumen.consultarDisponibilidad}
+  Eliminados en la revisión .......... ${resumen.eliminados}
+  Ocultos por falta de foto .......... ${resumen.ocultosFaltaFoto} (${Object.entries(resumen.ocultosFaltaFotoPorMarca).map(([m, n]) => `${m}: ${n}`).join(', ')})
+  Sin foto (total / publicados) ...... ${resumen.sinFoto} / ${resumen.sinFotoPublicados}
+  "Consultar precio" (publicados) .... ${resumen.consultarPrecio}
+  Grupos de tallas ................... ${grupos.length}
+  SKU nuevos generados ............... ${skusNuevos.length}`)
   if (avisos.length) {
-    console.log(`\nAvisos para revisar en la planilla (${avisos.length}):`)
+    console.log(`
+Avisos para revisar en la planilla (${avisos.length}):`)
     for (const a of avisos.slice(0, 40)) console.log('  · ' + a)
     if (avisos.length > 40) console.log(`  … y ${avisos.length - 40} más (ver .tmp/catalogo-interno.json)`)
   }

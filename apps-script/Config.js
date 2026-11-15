@@ -4,6 +4,11 @@
    ============================================================ */
 
 var CONFIG = {
+  // INTERRUPTOR GENERAL. La dueña dejó de usar Gesnex (noviembre 2026): en false, procesarCorreos()
+  // no hace nada aunque quede un activador horario. Para reactivar con otro sistema de ventas:
+  // poner true, subir con clasp y correr instalar() desde el editor (ver CLAUDE.md).
+  activo: false,
+
   // Búsqueda en Gmail del correo con el reporte de stock de Gesnex.
   // Ajusta el remitente y el asunto cuando llegue el primer reporte real.
   // (Se agrega solo: -label:akyra-procesado)

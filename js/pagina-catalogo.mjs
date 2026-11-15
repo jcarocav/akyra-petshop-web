@@ -4,7 +4,7 @@
 // 24 productos. Todo se refleja en la URL para poder compartirla.
 // ============================================================
 import { tarjetaProducto } from './componentes.mjs'
-import { categoriaPorId, coincideBusqueda, errorCarga, fechaStock, precioMinimo, productos, sinPrecio } from './datos.mjs'
+import { categoriaPorId, coincideBusqueda, errorCarga, precioMinimo, productos, sinPrecio } from './datos.mjs'
 import { crearDialogo } from './dialogo.mjs'
 import { $, $$, anunciar, debounce, h, icono, normalizar } from './utilidades.mjs'
 
@@ -347,8 +347,6 @@ function iniciar() {
   })
 
   iniciarPanelFiltros()
-  const fecha = fechaStock()
-  if (fecha) $('#stock-actualizado').textContent = `Stock actualizado: ${fecha}`
   if (errorCarga) {
     const aviso = $('#aviso-carga')
     aviso.textContent = errorCarga === 'catalogo'

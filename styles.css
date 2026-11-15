@@ -1021,13 +1021,11 @@ main:focus { outline: none; }
 }
 .estado-stock::before { content: ''; width: 8px; height: 8px; border-radius: 50%; background: currentColor; flex-shrink: 0; }
 .estado-stock:empty { display: none; }
-.estado-stock--disponible { background: #e8f6ee; color: var(--exito); }
-.estado-stock--ultimas { background: var(--magenta-suave); color: var(--magenta-oscuro); }
 .estado-stock--consultar { background: var(--amarillo-suave); color: #6b4d00; }
-.estado-stock--agotado { background: #eceff0; color: #3f4a49; }
 .ficha .estado-stock { font-size: .9375rem; margin: 4px 0 12px; }
-.aviso-agotado { border: 2px solid var(--borde-control); border-radius: var(--radio); background: var(--blanco); padding: 16px; margin: 12px 0 20px; max-width: 460px; }
-.aviso-agotado p { margin-bottom: 12px; }
+.ficha__descripcion { margin: 4px 0 12px; max-width: 60ch; }
+.tarjeta__descripcion { margin: 0; font-size: .875rem; color: var(--gris); display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.linea__disponibilidad { margin-top: 4px; font-size: .8125rem; }
 
 @media (prefers-reduced-motion: reduce) {
   .fachada, .sucursal, .sucursal__etiqueta { transition: none; }

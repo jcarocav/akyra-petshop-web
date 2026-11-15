@@ -1,12 +1,9 @@
 // ============================================================
-// Datos del catálogo: une productos.json (el catálogo) con
-// stock.json (unidades por SKU) al cargar la página. Así actualizar el
-// stock no obliga a regenerar el catálogo.
-// Lo que tiene stock 0 queda fuera de "productos" (catálogo, buscador,
-// destacados), pero sigue en "productoPorId" para que su ficha diga
-// "Agotado por ahora".
+// Datos del catálogo: une productos.json (solo productos publicados) con
+// stock.json (disponibilidad por SKU: 'con-stock' | 'consultar', sin unidades).
+// El stock ya no oculta productos: solo decide el aviso "Consultar disponibilidad".
 // ============================================================
-import { cruzarStock } from './stock.mjs'
+import { cruzarDisponibilidad } from './stock.mjs'
 import { normalizar } from './utilidades.mjs'
 
 export const CONFIG = window.AKYRA_CONFIG || {}
@@ -32,28 +29,14 @@ try {
   console.warn('No se pudo cargar el catálogo', e)
 }
 
-export const stockActualizado = stock?.actualizado || null
-export const todos = cruzarStock(catalogo.productos || [], stock)
-export const productos = todos
-  .filter(p => p.visible)
-  .map(p => (p.tallas ? { ...p, tallas: p.tallas.filter(t => t.visible) } : p))
+export const productos = cruzarDisponibilidad(catalogo.productos || [], stock)
 export const categorias = catalogo.categorias || []
 export const categoriaPorId = new Map(categorias.map(c => [c.id, c]))
-const visiblesPorId = new Map(productos.map(p => [p.id, p]))
-// Incluye los agotados (para su ficha), con las tallas visibles ya filtradas
-export const productoPorId = new Map(todos.map(p => [p.id, visiblesPorId.get(p.id) || p]))
+export const productoPorId = new Map(productos.map(p => [p.id, p]))
 export const productoPorSku = new Map(productos.map(p => [p.sku, p]))
 
 // Para las pruebas y para revisar en la consola del navegador
-window.AKYRA_CATALOGO = { productos, todos, categorias, stockActualizado }
-
-export function tallasDisponibles(producto) {
-  return (producto.tallas || []).filter(t => t.visible !== false)
-}
-
-export function esVisible(producto) {
-  return !!producto && producto.visible !== false
-}
+window.AKYRA_CATALOGO = { productos, categorias }
 
 // ---- Precios ----
 export function preciosDe(producto) {
@@ -73,10 +56,10 @@ export function precioMinimo(producto) {
 // Datos de una talla (o del producto si no tiene tallas)
 export function variante(producto, talla) {
   if (!producto.tallas) {
-    return { talla: null, sku: producto.sku, precio: producto.precio ?? null, tope: producto.tope ?? null, unidades: producto.unidades ?? null, visible: producto.visible !== false }
+    return { talla: null, sku: producto.sku, precio: producto.precio ?? null, disponibilidad: producto.disponibilidad || 'consultar' }
   }
   const t = producto.tallas.find(x => x.talla === talla)
-  return t ? { talla: t.talla, sku: t.sku, precio: t.precio ?? null, tope: t.tope ?? null, unidades: t.unidades ?? null, visible: t.visible !== false } : null
+  return t ? { talla: t.talla, sku: t.sku, precio: t.precio ?? null, disponibilidad: t.disponibilidad || 'consultar' } : null
 }
 
 // ---- Textos ----
@@ -101,14 +84,4 @@ export function coincideBusqueda(producto, consulta) {
   if (!palabras.length) return true
   const texto = indiceBusqueda.get(producto.id) || ''
   return palabras.every(w => texto.includes(w))
-}
-
-// "26-10-2026 09:15" (hora de Chile)
-export function fechaStock() {
-  if (!stockActualizado) return null
-  const d = new Date(stockActualizado)
-  if (Number.isNaN(d.getTime())) return null
-  const partes = new Intl.DateTimeFormat('es-CL', { timeZone: 'America/Punta_Arenas', day: '2-digit', month: '2-digit', year: 'numeric', hour: '2-digit', minute: '2-digit', hour12: false })
-    .formatToParts(d).reduce((o, x) => ({ ...o, [x.type]: x.value }), {})
-  return `${partes.day}-${partes.month}-${partes.year} ${partes.hour}:${partes.minute}`
 }

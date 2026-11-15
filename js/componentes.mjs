@@ -9,7 +9,7 @@ import * as carrito from './carrito.mjs'
 import {
   CONFIG, preciosDe, precioMinimo, productoPorId, sinPrecio, textoAlternativo, urlProducto, variante
 } from './datos.mjs'
-import { estadoStock } from './stock.mjs'
+import { estadoDisponibilidad } from './stock.mjs'
 import { anunciar, formatoCLP, formatoCantidad, formatoDecimal, h, icono, leerNumero } from './utilidades.mjs'
 
 let contador = 0
@@ -56,13 +56,14 @@ function textoPrecio(producto, talla) {
 }
 
 // ---------- Disponibilidad (texto real, no solo color) ----------
+// Con stock: sin aviso (texto vacío, el párrafo se oculta). Sin stock conocido: "Consultar disponibilidad".
+// Nunca se muestra cuántas unidades hay.
 export function estadoDe(producto, talla = null) {
-  if (producto.visible === false) return estadoStock(0)
   if (talla) {
     const v = variante(producto, talla)
-    return estadoStock(v ? v.unidades : 0, false)
+    return estadoDisponibilidad(v ? v.disponibilidad : null)
   }
-  return estadoStock(producto.unidades ?? null, !!producto.granel)
+  return estadoDisponibilidad(producto.disponibilidad)
 }
 
 export function insigniaStock(producto, talla = null) {
@@ -136,8 +137,6 @@ export function filaCompra(producto, { idAviso } = {}) {
     return fila
   }
 
-  const v = tieneTallas ? null : variante(producto, null)
-  const tope = v ? v.tope : null
   const idCampo = nuevoId('cantidad')
   const minimo = granel ? carrito.MIN_GRANEL : 1
   const unidad = granel ? '100 gramos' : 'uno'
@@ -145,8 +144,7 @@ export function filaCompra(producto, { idAviso } = {}) {
   const selector = h('div', {
     class: 'cantidad',
     'data-cantidad': '',
-    'data-granel': granel ? '1' : null,
-    'data-tope': tope ?? null
+    'data-granel': granel ? '1' : null
   },
   h('label', { class: 'visualmente-oculto', for: idCampo, text: granel ? `Kilos de ${nombre}` : `Cantidad de ${nombre}` }),
   h('button', { type: 'button', class: 'cantidad__boton', 'data-accion': 'restar', 'aria-label': `Restar ${unidad} a ${nombre}`, 'aria-disabled': 'true' }, icono('minus')),
@@ -162,7 +160,7 @@ export function filaCompra(producto, { idAviso } = {}) {
     'aria-describedby': idAviso
   }),
   granel ? h('span', { class: 'cantidad__unidad', 'aria-hidden': 'true', text: 'kg' }) : null,
-  h('button', { type: 'button', class: 'cantidad__boton', 'data-accion': 'sumar', 'aria-label': `Sumar ${unidad} a ${nombre}`, 'aria-disabled': tope !== null && tope <= minimo ? 'true' : 'false' }, icono('plus'))
+  h('button', { type: 'button', class: 'cantidad__boton', 'data-accion': 'sumar', 'aria-label': `Sumar ${unidad} a ${nombre}`, 'aria-disabled': 'false' }, icono('plus'))
   )
 
   const anadir = h('button', {
@@ -192,6 +190,7 @@ export function tarjetaProducto(producto, { nivelTitulo = 'h3', prioridad = fals
   const cuerpo = h('div', { class: 'tarjeta__cuerpo' },
     h('p', { class: 'tarjeta__marca', text: producto.marca }),
     h(nivelTitulo, { class: 'tarjeta__nombre' }, h('a', { href: url, text: producto.nombre })),
+    producto.descripcion ? h('p', { class: 'tarjeta__descripcion', text: producto.descripcion }) : null,
     bloquePrecio(producto),
     insigniaStock(producto)
   )
@@ -218,11 +217,9 @@ function estadoTarjeta(raiz) {
   return { producto, talla, v: producto ? variante(producto, talla) : null }
 }
 
-function topeActual(raiz) {
-  const { producto, v } = estadoTarjeta(raiz)
-  if (!producto) return null
-  if (producto.tallas && !raiz.dataset.talla) return null
-  return v ? v.tope : null
+// Tope por pedido (solo para evitar errores de tipeo; no tiene que ver con el stock)
+function topePedido(selector) {
+  return selector.dataset.granel === '1' ? carrito.MAX_KILOS : carrito.MAX_UNIDADES
 }
 
 function leerCantidad(selector) {
@@ -231,26 +228,25 @@ function leerCantidad(selector) {
 
 function fijarCantidad(raiz, selector, valor, { anunciarCambio = false, avisoExtra = null } = {}) {
   const granel = selector.dataset.granel === '1'
-  const tope = topeActual(raiz)
-  const n = carrito.ajustarCantidad(valor, { granel, tope })
+  const tope = topePedido(selector)
+  const n = carrito.ajustarCantidad(valor, { granel })
   const campo = selector.querySelector('.cantidad__campo')
   campo.dataset.valor = String(n)
   campo.value = granel ? formatoDecimal(n) : String(n)
   const minimo = granel ? carrito.MIN_GRANEL : 1
-  const maximo = tope ?? Infinity
   selector.querySelector('[data-accion="restar"]').setAttribute('aria-disabled', String(n <= minimo))
-  selector.querySelector('[data-accion="sumar"]').setAttribute('aria-disabled', String(n >= maximo))
+  selector.querySelector('[data-accion="sumar"]').setAttribute('aria-disabled', String(n >= tope))
   const aviso = raiz.querySelector('[data-aviso]')
-  const enMaximo = tope !== null && n >= tope
+  const enMaximo = n >= tope
   if (aviso && (raiz.dataset.talla || !productoPorId.get(raiz.dataset.producto)?.tallas)) {
-    aviso.textContent = avisoExtra || (enMaximo ? `Máximo disponible: ${formatoCantidad(tope, granel)}.` : '')
+    aviso.textContent = avisoExtra || (enMaximo ? `Máximo por pedido: ${formatoCantidad(tope, granel)}.` : '')
   }
   const subtotal = raiz.querySelector('[data-subtotal]')
   const { v } = estadoTarjeta(raiz)
   if (subtotal && v && typeof v.precio === 'number') subtotal.textContent = granel ? `${formatoDecimal(n)} kg = ${formatoCLP(v.precio * n)}` : `Subtotal: ${formatoCLP(v.precio * n)}`
   if (anunciarCambio) {
     const texto = granel ? `${formatoDecimal(n)} kilos` : `Cantidad: ${n}`
-    anunciar(avisoExtra ? `${avisoExtra} ${texto}.` : enMaximo ? `${texto}. Máximo disponible.` : texto, { urgente: !!avisoExtra })
+    anunciar(avisoExtra ? `${avisoExtra} ${texto}.` : enMaximo ? `${texto}. Máximo por pedido.` : texto, { urgente: !!avisoExtra })
   }
   return n
 }
@@ -300,7 +296,7 @@ function anadirAlCarrito(raiz, boton) {
   }
   const descripcion = `${formatoCantidad(r.cantidadAgregada, producto.granel)} × ${producto.nombre}${r.linea.talla ? ` (talla ${r.linea.talla})` : ''}`
   const mensaje = r.limitado
-    ? `Agregado: ${descripcion}. Llegaste al máximo disponible.`
+    ? `Agregado: ${descripcion}. Llegaste al máximo por pedido.`
     : `Agregado: ${descripcion}`
   alAgregar(mensaje)
   fijarCantidad(raiz, selector, producto.granel ? carrito.MIN_GRANEL : 1)
@@ -321,7 +317,7 @@ export function activarCompra(raizDocumento = document) {
     const selector = raiz.querySelector('[data-cantidad]')
     if (accion === 'restar' || accion === 'sumar') {
       if (boton.getAttribute('aria-disabled') === 'true') {
-        if (accion === 'sumar' && topeActual(raiz) !== null) anunciar('Máximo disponible.')
+        if (accion === 'sumar') anunciar('Máximo por pedido.')
         return
       }
       const paso = selector.dataset.granel === '1' ? carrito.PASO_GRANEL : 1
@@ -340,7 +336,7 @@ export function activarCompra(raizDocumento = document) {
     const actual = leerCantidad(selector)
     if (campo.value === (selector.dataset.granel === '1' ? formatoDecimal(actual) : String(actual))) return
     if (selector.dataset.granel === '1') {
-      const { n, aviso } = carrito.interpretarKilos(campo.value, { tope: topeActual(raiz) })
+      const { n, aviso } = carrito.interpretarKilos(campo.value)
       fijarCantidad(raiz, selector, n ?? leerCantidad(selector), { anunciarCambio: true, avisoExtra: aviso })
       return
     }

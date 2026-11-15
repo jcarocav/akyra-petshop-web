@@ -13,7 +13,7 @@
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs'
 import { dirname, join, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
-import { cruzarStock } from '../../js/stock.mjs'
+import { productosCompletos } from '../catalogo/todos.mjs'
 import { sinHtml } from './buscar-tiendas.mjs'
 import { bajar, imagenUsable } from './buscar-web.mjs'
 import { esCodigoDeFabrica } from './buscar.mjs'
@@ -85,12 +85,10 @@ async function comandoCruzar() {
   const catalogos = TIENDAS.filter(t => existsSync(join(CARPETA, `${t.id}.json`))).map(t => ({ id: t.id, filas: JSON.parse(readFileSync(join(CARPETA, `${t.id}.json`), 'utf8')).filter(f => f.imagen) }))
   if (!catalogos.length) throw new Error('Primero baja los catálogos: node tools/imagenes/catalogos-tiendas.mjs bajar')
   console.log('Catálogos:', catalogos.map(c => `${c.id} ${c.filas.length}`).join(' · '))
-  const catalogo = JSON.parse(readFileSync(join(RAIZ, 'productos.json'), 'utf8'))
-  const stock = JSON.parse(readFileSync(join(RAIZ, 'stock.json'), 'utf8'))
   const { internos } = JSON.parse(readFileSync(join(RAIZ, '.tmp', 'catalogo-interno.json'), 'utf8'))
   const porSku = new Map(internos.map(i => [i.sku, i]))
   const pendientes = []
-  for (const p of cruzarStock(catalogo.productos, stock).filter(x => !x.imagen)) {
+  for (const p of productosCompletos().filter(x => !x.imagen)) {
     if (progreso[p.sku]?.archivo) continue
     const i = porSku.get(p.tallas ? p.tallas.find(t => porSku.has(t.sku))?.sku : p.sku)
     if (i) pendientes.push({ sku: p.sku, nombreExcel: i.nombreExcel, marca: p.marca, categoria: p.categoria, codigo: i.codigo })

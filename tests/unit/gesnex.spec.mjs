@@ -4,15 +4,24 @@ import { expect, test } from '@playwright/test'
 import { readFileSync } from 'node:fs'
 import { createRequire } from 'node:module'
 import { join, resolve } from 'node:path'
-import { cruzarStock, estadoStock } from '../../js/stock.mjs'
+import { cruzarDisponibilidad, disponibilidadDesdeUnidades, estadoDisponibilidad } from '../../js/stock.mjs'
 import { aplicarCsv } from '../../tools/stock/actualizar-desde-sheet.mjs'
 import { lectorAplicarReporte, lectorLeerReporte, lectorParsearCsv } from '../../tools/stock/lector.mjs'
 
 const RAIZ = resolve(import.meta.dirname, '..', '..')
 const XLSX = createRequire(import.meta.url)('xlsx')
 const productos = JSON.parse(readFileSync(join(RAIZ, 'productos.json'), 'utf8')).productos
-const stock = JSON.parse(readFileSync(join(RAIZ, 'stock.json'), 'utf8'))
 const csvSimulado = readFileSync(join(RAIZ, 'tests', 'fixtures', 'gesnex-simulado.csv'), 'utf8')
+// stock.json ya no tiene unidades (desde noviembre 2026 solo "con-stock" / "consultar"): para probar el lector
+// (hoy desactivado) se suman a mano las bodegas del reporte simulado.
+const unidadesSimuladas = {}
+for (const linea of csvSimulado.replace(/^﻿/, '').split(/\r?\n/).slice(1)) {
+  const [sku, , , , cantidad] = linea.split(';')
+  if (!sku) continue
+  unidadesSimuladas[sku] = Math.round(((unidadesSimuladas[sku] || 0) + Number(String(cantidad).replace(',', '.'))) * 1000) / 1000
+}
+const stock = { unidades: unidadesSimuladas }
+const stockPublico = JSON.parse(readFileSync(join(RAIZ, 'stock.json'), 'utf8'))
 
 const skus = productos.flatMap(p => (p.tallas ? p.tallas.map(t => ({ sku: t.sku, precio: t.precio, nombre: p.nombre })) : [{ sku: p.sku, precio: p.precio, nombre: p.nombre }]))
 const catalogoPlanilla = () => skus.map(s => ({ sku: s.sku, codigo: '', nombre: s.nombre, precio: s.precio, unidades: stock.unidades[s.sku] }))
@@ -72,38 +81,39 @@ test.describe('lector del reporte de Gesnex (archivo simulado)', () => {
     expect(r.error).toContain('No se actualizó nada')
   })
 
-  test('con el simulado completo, la planilla queda con el mismo stock que stock.json', () => {
+  test('con el simulado completo, calzan todos los productos publicados', () => {
     const r = lectorAplicarReporte(catalogoPlanilla(), lectorLeerReporte(lectorParsearCsv(csvSimulado)), {})
     expect(r.ok).toBe(true)
     expect(r.coincidencia).toBeGreaterThan(0.5)
-    expect(r.sinMatch).toHaveLength(0)
+    // lo que no calza son solo productos que hoy no se publican (no están en productos.json)
+    const publicados = new Set(skus.map(x => x.sku))
+    expect(r.sinMatch.filter(x => publicados.has(x.sku))).toHaveLength(0)
   })
 })
 
-test.describe('reglas de visibilidad con el stock nuevo', () => {
+test.describe('disponibilidad (sin unidades)', () => {
   const simple = productos.find(p => !p.tallas && !p.granel && typeof p.precio === 'number')
   const conTallas = productos.find(p => p.tallas && p.tallas.length >= 2)
 
-  test('un producto pasa de 0 a 3 y aparece; de 3 a 0 y desaparece', () => {
-    const con0 = cruzarStock([simple], { unidades: { [simple.sku]: 0 } })[0]
-    expect(con0.visible).toBe(false)
-    const con3 = cruzarStock([simple], { unidades: { [simple.sku]: 3 } })[0]
-    expect(con3.visible).toBe(true)
-    expect(con3.tope).toBe(3)
-    expect(estadoStock(3).texto).toBe('¡Últimas 3 unidades!')
-    expect(estadoStock(12).texto).toBe('Disponible')
-    expect(estadoStock(null).texto).toBe('Consultar disponibilidad')
-    expect(estadoStock(0).texto).toBe('Agotado por ahora')
+  test('stock 0 o sin dato = "consultar"; con stock = sin aviso; nunca se oculta', () => {
+    expect(disponibilidadDesdeUnidades(0)).toBe('consultar')
+    expect(disponibilidadDesdeUnidades(null)).toBe('consultar')
+    expect(disponibilidadDesdeUnidades(3)).toBe('con-stock')
+    expect(disponibilidadDesdeUnidades(0.05, true)).toBe('consultar')
+    expect(estadoDisponibilidad('consultar').texto).toBe('Consultar disponibilidad')
+    expect(estadoDisponibilidad('con-stock').texto).toBe('')
+    const p = cruzarDisponibilidad([simple], { disponibilidad: { [simple.sku]: 'consultar' } })[0]
+    expect(p.disponibilidad).toBe('consultar')
+    expect(p).not.toHaveProperty('visible')
   })
 
-  test('una talla en 0 sale del selector; si todas quedan en 0, la card se oculta', () => {
+  test('las tallas sin stock siguen en el selector con su propia disponibilidad', () => {
     const [t1, ...resto] = conTallas.tallas
-    const unidades = { [t1.sku]: 0, ...Object.fromEntries(resto.map(t => [t.sku, 2])) }
-    const p = cruzarStock([conTallas], { unidades })[0]
-    expect(p.visible).toBe(true)
-    expect(p.tallas.filter(t => t.visible).map(t => t.sku)).not.toContain(t1.sku)
-    const todas0 = cruzarStock([conTallas], { unidades: Object.fromEntries(conTallas.tallas.map(t => [t.sku, 0])) })[0]
-    expect(todas0.visible).toBe(false)
+    const disponibilidad = { [t1.sku]: 'consultar', ...Object.fromEntries(resto.map(t => [t.sku, 'con-stock'])) }
+    const p = cruzarDisponibilidad([conTallas], { disponibilidad })[0]
+    expect(p.tallas).toHaveLength(conTallas.tallas.length)
+    expect(p.tallas[0].disponibilidad).toBe('consultar')
+    expect(p.disponibilidad).toBe('con-stock')
   })
 })
 
@@ -112,7 +122,7 @@ test.describe('GitHub Action: planilla (CSV) → stock.json', () => {
   const todasLasFilas = (cambios = {}) => skus.map(s => [s.sku, `"${s.nombre}"`, '', '', s.precio ?? '', cambios[s.sku] ?? (stock.unidades[s.sku] ?? ''), '', '', '2026-10-26T10:00:00-03:00'])
 
   test('actualiza unidades, agrega productos nuevos y respeta "sin dato"', () => {
-    const objetivo = skus.find(s => stock.unidades[s.sku] === 0).sku
+    const objetivo = skus.find(s => !stock.unidades[s.sku]).sku
     const filas = todasLasFilas({ [objetivo]: 3 })
     filas.push(['GAT-NUEVO-001', 'SOBRE GATO NUEVO SABOR ATUN 85G', 'Nueva Marca', 'Gatos', '990', '7', 'sí', '', '2026-10-26T10:00:00-03:00'])
     const r = aplicarCsv({ csvTexto: csvDe(filas), productos, stock })
@@ -149,10 +159,10 @@ test.describe('GitHub Action: planilla (CSV) → stock.json', () => {
     expect(r.error).toContain('No se actualizó nada')
   })
 
-  test('stock.json nunca contiene costos ni datos por sucursal', () => {
+  test('stock.json nunca contiene costos, unidades ni datos por sucursal', () => {
     const texto = readFileSync(join(RAIZ, 'stock.json'), 'utf8').toLowerCase()
     for (const palabra of ['costo', 'neto', 'proveedor', 'bodega', 'aldunate', 'hornillas', 'lengas', 'precio']) expect(texto).not.toContain(palabra)
-    expect(Object.keys(stock).sort()).toEqual(['actualizado', 'unidades'])
-    for (const v of Object.values(stock.unidades)) expect(v === null || typeof v === 'number').toBe(true)
+    expect(Object.keys(stockPublico)).toEqual(['disponibilidad'])
+    for (const v of Object.values(stockPublico.disponibilidad)) expect(['con-stock', 'consultar']).toContain(v)
   })
 })

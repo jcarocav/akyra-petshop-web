@@ -45,6 +45,16 @@ function instalar() {
   return { filasStock: stock.getLastRow() - 1, token: propiedades.getProperty('TOKEN_CSV') }
 }
 
+// Quita el activador horario (la actualización automática queda apagada; el código y la planilla siguen).
+// Para volver a activarlo: CONFIG.activo = true y correr instalar().
+function desactivar() {
+  var quitados = 0
+  ScriptApp.getProjectTriggers().forEach(function (t) {
+    if (t.getHandlerFunction() === 'procesarCorreos') { ScriptApp.deleteTrigger(t); quitados++ }
+  })
+  return { activadoresQuitados: quitados }
+}
+
 function asegurarHoja_(libro, nombre, encabezados) {
   var hoja = libro.getSheetByName(nombre) || libro.insertSheet(nombre)
   if (hoja.getLastRow() === 0) {
@@ -67,6 +77,7 @@ function enHorario_() {
 }
 
 function procesarCorreos() {
+  if (!CONFIG.activo) return // desactivado: ya no llegan reportes de Gesnex
   if (!enHorario_()) return
   var candado = LockService.getScriptLock()
   if (!candado.tryLock(30000)) return
@@ -197,6 +208,7 @@ function doGet(e) {
 
 // Para probar a mano desde el editor: procesa el correo más reciente aunque esté fuera de horario
 function probarAhora() {
+  CONFIG.activo = true
   CONFIG.horaInicio = 0
   CONFIG.horaFin = 24
   procesarCorreos()

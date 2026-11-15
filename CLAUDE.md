@@ -11,7 +11,7 @@ Publicado en GitHub Pages: https://jcarocav.github.io/akyra-petshop-web/ (repo p
    decide con buen criterio y anótalas en el informe. Detente solo para pedir una credencial o inicio de
    sesión que no puedas hacer, y al final para que el dueño pruebe antes de publicar.
 3. **Ramas**: el trabajo va en ramas; **nunca merge a `main` sin el "aprobado" del dueño**. Respaldo previo:
-   rama `respaldo-2026-09-02` y tag `respaldo-antes-catalogo-real` (para volver atrás si algo sale mal).
+   rama `respaldo-2026-09-02` y tags `respaldo-antes-catalogo-real` … `respaldo-6-antes-sin-gesnex` (para volver atrás si algo sale mal).
 4. **Nunca publicar datos internos**: costo neto, proveedor ni unidades por sucursal. El Excel de inventario
    **no se sube** al repositorio (`.gitignore`). `productos.json` y `stock.json` solo llevan campos públicos
    (lo verifican `tools/catalogo/escritura.mjs` y `tests/unit/datos-publicos.spec.mjs`).
@@ -37,25 +37,94 @@ Publicado en GitHub Pages: https://jcarocav.github.io/akyra-petshop-web/ (repo p
 | Copiar partes comunes a todas las páginas + sitemap | `npm run paginas` |
 | Todas las pruebas | `npm run verificar` · solo navegador: `npm test` · rápido (solo Chrome): `npm run test:rapido` |
 | Fotos: buscar / procesar / Excel de imágenes | `npm run imagenes:buscar` · `npm run imagenes:sitemaps` · `npm run imagenes:procesar` · `npm run imagenes:reporte` |
-| Stock desde la planilla (lo hace el Action) | `npm run stock:desde-planilla` (necesita `STOCK_CSV_URL`) |
+| Revisar el catálogo con Rosa (PC + celular) | doble clic en `REVISAR-CATALOGO.bat` (carpeta de arriba) o `node tools/revision/servidor.mjs` |
+| Aplicar fotos nuevas sin el Excel | `node tools/catalogo/aplicar-fotos.mjs` (usa `.tmp/catalogo-base.json`) |
+| Stock desde la planilla (DESACTIVADO) | `npm run stock:desde-planilla` (necesita `STOCK_CSV_URL`) |
 | Reporte simulado de Gesnex (pruebas) | `npm run stock:simular` |
 | Preparar el Apps Script para clasp | `npm run apps-script:preparar` |
 
-## Cómo está armado
-- `productos.json` (catálogo, lo genera `tools/generar-catalogo.mjs`) + `stock.json` (`{ actualizado, unidades: { SKU: n | null } }`).
-  El sitio cruza ambos al cargar (`js/datos.mjs` + `js/stock.mjs`).
-- Catálogo = unión de las hojas **"Resumen"** (stock, SKU) y **"Base Rosa (1004)"** (nombre, precio, fabricante,
-  categoría) del Excel, por código de barras. Lo que está solo en Base Rosa entra con stock 0 (oculto) y recibe un
-  SKU nuevo (`CATEGORIA-MARCA-NNN`, guardado en `tools/catalogo/skus-generados.json` para que no cambie).
-- Visibilidad: stock > 0 → visible (tope del "+" = stock); stock 0 → oculto en catálogo, buscador, destacados y
-  sitemap (su ficha dice "Agotado por ahora" con `noindex`); sin dato (cantidad vacía en las 5 hojas de conteo)
-  → visible como "Consultar disponibilidad", sin tope. Granel: en kilos con hasta 3 decimales (se escribe a mano, coma o punto; − y + de a 0,1 kg); bajo 0,1 kg = agotado.
-- Tallas: variantes que solo difieren en la talla son una card con selector; cada talla tiene su SKU, precio y stock.
-- Precio 1 o vacío = sin precio → "Consultar precio" + botón de WhatsApp.
+## Cómo está armado (sin Gesnex desde noviembre 2026)
+- `productos.json` (SOLO los productos publicados; lo genera `tools/generar-catalogo.mjs`) + `stock.json`
+  (`{ disponibilidad: { SKU: "con-stock" | "consultar" } }`, **nunca unidades**). El sitio cruza ambos al cargar
+  (`js/datos.mjs` + `js/stock.mjs`).
+- Catálogo base = unión de las hojas **"Resumen"** (stock, SKU) y **"Base Rosa (1004)"** (nombre, precio, fabricante,
+  categoría) del Excel, por código de barras. Lo que está solo en Base Rosa entra con stock 0 y recibe un SKU nuevo
+  (`CATEGORIA-MARCA-NNN`, guardado en `tools/catalogo/skus-generados.json` para que no cambie). El generador guarda
+  el catálogo completo (con código de barras y fabricante) en `.tmp/catalogo-base.json` (fuera de git).
+- **Qué se publica** (`tools/catalogo/publicar.mjs`, mismas reglas en el generador, `aplicar-fotos.mjs` y la herramienta
+  de revisión): (1) catálogo base → (2) **ajustes del catálogo** (`tools/catalogo/ajustes-catalogo.json`) → (3) regla:
+  - excluido ("Eliminar de la web") → no se publica;
+  - **Mondo Mascota** (y "Mundo Mascota", "… MONDO (código)"), **Marben Pets** (Marbenpets, Marben Pet, Wonder Dog/Cat/Pet)
+    y **Leon Pet** (se revisan fabricante, marca y nombre) SIN ninguna foto → no se publica; con foto exacta o
+    referencial sí. Al recibir foto (revisión o fotos propias) se publica solo al regenerar, sin cambiar reglas;
+  - todas las demás marcas se publican tengan o no foto (sin foto = imagen de relleno con el logo).
+  El stock ya NO oculta nada. Sitemap, destacados, categorías y buscador usan solo lo publicado.
+- **Disponibilidad** (único aviso): stock 0 o sin cantidad registrada → "Consultar disponibilidad" (amarillo, texto real);
+  con stock → sin aviso. Nunca se muestran unidades. Las tallas aparecen todas; la talla sin stock muestra el aviso al
+  elegirla. Carrito sin tope por stock (máximo por pedido: 99 unidades / 50 kg, solo contra errores de tipeo); las líneas
+  "consultar" se compran igual y en WhatsApp terminan en "(consultar disponibilidad)".
+- Tallas: variantes que solo difieren en la talla son una card con selector; cada talla tiene su SKU, precio y disponibilidad.
+- Precio 1 o vacío = sin precio → "Consultar precio" + botón de WhatsApp. `descripcion` (opcional, desde los ajustes)
+  se muestra en la ficha y en la card.
 - Partes comunes de las páginas en `tools/parciales/` (se copian con `npm run paginas`). JS en `js/*.mjs` (módulos).
 - Íconos locales (`assets/iconos.svg`, Lucide) y fuentes locales (`assets/fuentes/`). Sin CDNs.
 
-## Actualización diaria del stock (Gesnex → correo → Google Sheets → sitio)
+## Ajustes del catálogo (`tools/catalogo/ajustes-catalogo.json`) — fuente de precios y disponibilidad corregidos
+Reemplaza a Gesnex como fuente de la disponibilidad y de los precios corregidos. **Ganan siempre sobre el Excel**: un
+producto excluido no vuelve al regenerar, y un texto, precio, foto o disponibilidad modificados no vuelven al original.
+```json
+{ "version": 1,
+  "excluidos":   { "SKU": { "motivo": "ya no se vende" } },
+  "modificados": { "SKU": { "nombre", "marca", "descripcion", "categoria", "subcategoria", "precio", "disponibilidad",
+                            "tallas": { "M": { "precio": 9990, "disponibilidad": "con-stock" } },
+                            "imagen": "assets/productos/SKU.webp", "imagenTipo": "exacta" } },
+  "agregados":   [ { "sku" (opcional: se genera), "codigo", "nombre", "marca", "categoria", "subcategoria", "precio" | "tallas": [...],
+                     "granel", "disponibilidad", "descripcion", "imagen", "imagenTipo" } ] }
+```
+Hoy está vacío (no cambia nada). Después de `npm run catalogo` o `node tools/catalogo/aplicar-fotos.mjs` se aplica solo.
+
+## Revisión del catálogo con Rosa (`tools/revision/`) — NO cambia el sitio
+- Abrir: doble clic en `REVISAR-CATALOGO.bat` (carpeta `akyra-petshop`). La primera vez instala con Python `rembg`
+  (quitar fondos), `zxing-cpp` (códigos de barras) y el modelo de rembg, y crea la regla del Firewall de Windows para el
+  puerto 8090 solo en redes **privadas** (Windows pide "Sí" una vez) — `tools/revision/preparar.ps1`.
+- Servidor Node (`tools/revision/servidor.mjs`): escucha en la red local (Wi‑Fi o zona Wi‑Fi del celular), rechaza
+  direcciones de internet y exige una **clave aleatoria nueva en cada apertura** (`?clave=…`, luego cookie); sin clave → 403.
+  Muestra un QR con `http://IP-del-PC:8090/?clave=…` (botón "Conectar celular"). Avisa si la red está como "Pública".
+- Datos (fuera del repo): `akyra-petshop/revision-catalogo/`: `revision.json` (cambios **por dato**:
+  `cambios[SKU][campo] = { valor, fecha, dispositivo }`; guardado seguro temporal+renombrar), `historial.log` (qué, cuándo,
+  PC/Celular, y cuando un dispositivo pisa el mismo dato del otro), `respaldos/` (cada 10 min, últimas 5),
+  `fotos/` (procesadas `<SKU o código>.webp` ≤ 800 px y < 60 KB; `originales/`; `pendientes/` con las dos versiones).
+- Sincronización en vivo por Server-Sent Events (`/api/eventos`); presencia "PC conectado / Celular conectado".
+- Fotos: cola en el PC (`tools/revision/fotos.mjs` + `trabajador.py`): EXIF, brillo, rembg, fondo blanco, centrado con
+  margen, 1:1; se ofrecen "Usar esta" / "Usar sin quitar fondo" / "Repetir foto". Sin Python/rembg sigue funcionando sin
+  quitar fondos. Código de barras: foto → zxing-cpp → abre la card o propone "Agregar producto nuevo".
+- La pantalla (`tools/revision/publico/`) usa las MISMAS reglas de publicación del sitio (importa `publicar.mjs`) y el
+  mismo diseño: carga `styles.css` del sitio y cada producto es la card del catálogo web (foto, marca, nombre, precio,
+  aviso, tallas, "− 1 +" y "Añadir") con el panel de revisión debajo. Sin SKU a la vista (se muestra el código de barras).
+  Las clases propias de la herramienta llevan el prefijo `rev-` para no chocar con las del sitio.
+- **Exportar** escribe en `revision-catalogo/`: `cambios-catalogo.xlsx` (Eliminar, Modificar, Precios, Disponibilidad,
+  Fotos nuevas, Agregar), `Inventario_Mascoteria_Akyra_v54_precios.xlsx` (copia del inventario con los precios nuevos en
+  la columna D de "Base Rosa (1004)" y los productos nuevos al final; se edita el XML de esa hoja: el original y las
+  fórmulas no se tocan, Excel recalcula al abrir), `ajustes-catalogo.propuesto.json` y el resumen en `revision.json`.
+- **Aplicar después (otra tarea)**: copiar `revision-catalogo/fotos/*.webp` de los productos con foto nueva a
+  `assets/productos/<SKU>.webp` (y anotarlas como exactas en `fotos-progreso.json`), copiar
+  `ajustes-catalogo.propuesto.json` sobre `tools/catalogo/ajustes-catalogo.json` (juntándolo con lo que ya tenga),
+  correr `npm run catalogo` (con el Excel v54 si Rosa lo validó) y `npm run paginas`, y probar.
+- Pruebas: `npx playwright test --project=revision` (catálogo de prueba `tests/fixtures/revision/`) y
+  `tests/unit/revision.spec.mjs`. En CI la prueba de rembg se salta (no se instala); el código de barras sí corre.
+
+## Actualización automática del stock (DESACTIVADA en noviembre 2026: la dueña dejó de usar Gesnex)
+**Estado**: apagada, sin borrar nada. (a) Apps Script: `CONFIG.activo = false` en `apps-script/Config.js` (ya subido con
+clasp): `procesarCorreos()` no hace nada aunque quede el activador horario; para quitar también el activador, abrir el
+script y ejecutar `desactivar()`. (b) GitHub Action `.github/workflows/stock.yml`: sin `schedule` (solo manual).
+La planilla "Akyra · Stock web" y el secreto `STOCK_CSV_URL` siguen guardados. El sitio ya no muestra "Stock actualizado".
+**Para reactivar con un sistema de ventas**: (1) ajustar `apps-script/Config.js` (`busquedaGmail`, `COLUMNAS`) al reporte
+nuevo y poner `activo: true`; `npm run apps-script:preparar` y `npx clasp push` en `.tmp/clasp/`; ejecutar `instalar()` desde
+el editor (crea el activador); (2) descomentar el `schedule` de `stock.yml`. El Action ahora solo escribe la
+**disponibilidad** (con stock / consultar, sin unidades) de los productos publicados y respeta los ajustes del catálogo
+(no agrega productos ni cambia precios: eso va por `ajustes-catalogo.json`).
+
+Cómo funcionaba (referencia):
 1. Gesnex manda cada día un correo con el reporte de stock (xlsx o csv).
 2. La planilla de Google **"Akyra · Stock web"** tiene un Apps Script (`apps-script/`, se sube con clasp) que cada
    hora entre 8:00 y 23:00 busca ese correo (búsqueda en `apps-script/Config.js`), lee el adjunto, suma el stock de
@@ -66,7 +135,7 @@ Publicado en GitHub Pages: https://jcarocav.github.io/akyra-petshop-web/ (repo p
 3. Un **GitHub Action** (`.github/workflows/stock.yml`, cada hora) descarga el CSV público de la hoja "Stock"
    (secreto `STOCK_CSV_URL`, solo columnas públicas), lo valida con la misma regla del 50 % y, si algo cambió,
    actualiza `stock.json` (y `productos.json` si hay productos nuevos o precios distintos). El sitio nunca consulta
-   Google: si algo falla, queda con el último stock bueno. El catálogo muestra "Stock actualizado: dd-mm-aaaa hh:mm".
+   Google: si algo falla, queda con el último stock bueno. 
    Planilla (privada, en el Drive del dueño): https://docs.google.com/spreadsheets/d/1NkJQGtHwQNlyKrl8mXuGseTaStE579ND8Twx0bW2IWo
    · script: https://script.google.com/d/1_xFOb9jzqqvWssGYpxHUM_m_1PlGjDpIMZvGtq6CBdMvhSfmRdTM6Oa7/edit
    · para subir cambios del script: `npm run apps-script:preparar` y

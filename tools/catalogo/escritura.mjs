@@ -1,8 +1,9 @@
-// Escribe productos.json y stock.json (sin dependencias: lo usa también el GitHub Action).
+// Escribe productos.json y stock.json (sin dependencias: lo usa también el GitHub Action, hoy desactivado).
 import { writeFileSync } from 'node:fs'
 import { dirname, join, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { CAMPOS_PUBLICOS, CATEGORIAS } from './reglas.mjs'
+import { normalizarDisponibilidad } from '../../js/stock.mjs'
 
 const RAIZ = resolve(dirname(fileURLToPath(import.meta.url)), '..', '..')
 
@@ -30,10 +31,10 @@ export function escribirCatalogo(productos, { fuente }) {
   writeFileSync(join(RAIZ, 'productos.json'), json)
 }
 
-export function escribirStock(unidades, actualizado = new Date()) {
-  const ordenado = Object.fromEntries(Object.entries(unidades).sort(([a], [b]) => a.localeCompare(b)))
-  const json = `{\n"actualizado": ${JSON.stringify(actualizado.toISOString())},\n"unidades": {\n` +
-    Object.entries(ordenado).map(([k, v]) => `${JSON.stringify(k)}: ${v === null ? 'null' : v}`).join(',\n') + '\n}\n}\n'
+// disponibilidad: { SKU: 'con-stock' | 'consultar' }. NUNCA unidades.
+export function escribirStock(disponibilidad) {
+  const ordenado = Object.entries(disponibilidad).sort(([a], [b]) => a.localeCompare(b))
+  const json = '{\n"disponibilidad": {\n' +
+    ordenado.map(([k, v]) => `${JSON.stringify(k)}: ${JSON.stringify(normalizarDisponibilidad(v))}`).join(',\n') + '\n}\n}\n'
   writeFileSync(join(RAIZ, 'stock.json'), json)
 }
-

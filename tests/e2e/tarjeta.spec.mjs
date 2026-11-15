@@ -1,9 +1,9 @@
-// Card de producto: selector de cantidad, tope, Añadir, tallas y granel.
+// Card de producto: selector de cantidad (sin tope por stock), Añadir, tallas y granel.
 import { abrirCard, carritoGuardado, elegirProducto, expect, formatoCLP, test } from './ayuda.mjs'
 
-test('− y + cambian la cantidad sin bajar de 1 ni pasar el tope', async ({ page }) => {
+test('− y + cambian la cantidad sin bajar de 1; el + no se bloquea por stock (solo en 99 por pedido)', async ({ page }) => {
   await page.goto('/catalogo.html')
-  const p = await elegirProducto(page, 'simple-tope-chico')
+  const p = await elegirProducto(page, 'simple-con-stock')
   const card = await abrirCard(page, p)
   const campo = card.getByLabel(`Cantidad de ${p.nombre}`)
   const menos = card.getByRole('button', { name: `Restar uno a ${p.nombre}` })
@@ -12,16 +12,16 @@ test('− y + cambian la cantidad sin bajar de 1 ni pasar el tope', async ({ pag
   await expect(menos).toHaveAttribute('aria-disabled', 'true')
   await menos.dispatchEvent('click') // desactivado (aria-disabled): no hace nada
   await expect(campo).toHaveValue('1')
-  for (let i = 1; i < p.tope; i++) await mas.click()
-  await expect(campo).toHaveValue(String(p.tope))
-  await expect(mas).toHaveAttribute('aria-disabled', 'true')
-  await expect(card.locator('[data-aviso]')).toContainText('Máximo disponible')
-  await mas.dispatchEvent('click')
-  await expect(campo).toHaveValue(String(p.tope))
-  // Escribir más que el tope lo ajusta al máximo
+  for (let i = 1; i < 12; i++) await mas.click()
+  await expect(campo).toHaveValue('12')
+  await expect(mas).toHaveAttribute('aria-disabled', 'false')
+  await expect(card.locator('[data-aviso]')).toHaveText('')
+  // Escribir más de 99 lo ajusta al máximo por pedido (para evitar errores de tipeo)
   await campo.fill('999')
   await campo.press('Enter')
-  await expect(campo).toHaveValue(String(p.tope))
+  await expect(campo).toHaveValue('99')
+  await expect(mas).toHaveAttribute('aria-disabled', 'true')
+  await expect(card.locator('[data-aviso]')).toContainText('Máximo por pedido: 99')
   await campo.fill('0')
   await campo.press('Enter')
   await expect(campo).toHaveValue('1')
@@ -30,7 +30,7 @@ test('− y + cambian la cantidad sin bajar de 1 ni pasar el tope', async ({ pag
 
 test('"Añadir" agrega exactamente la cantidad elegida y repetir acumula', async ({ page }) => {
   await page.goto('/catalogo.html')
-  const p = await elegirProducto(page, 'simple-sin-tope')
+  const p = await elegirProducto(page, 'simple-consultar')
   const card = await abrirCard(page, p)
   const mas = card.getByRole('button', { name: `Sumar uno a ${p.nombre}` })
   await mas.click()
@@ -47,14 +47,13 @@ test('"Añadir" agrega exactamente la cantidad elegida y repetir acumula', async
   expect(await carritoGuardado(page)).toEqual([{ id: p.id, talla: null, cantidad: 5 }])
 })
 
-test('no se puede pasar del tope sumando varias veces', async ({ page }) => {
+test('añadir varias veces acumula sin tope de stock (hasta 99 por pedido)', async ({ page }) => {
   await page.goto('/catalogo.html')
-  const p = await elegirProducto(page, 'simple-tope-chico')
+  const p = await elegirProducto(page, 'simple-con-stock')
   const card = await abrirCard(page, p)
   const anadir = card.getByRole('button', { name: `Añadir ${p.nombre} al carrito` })
-  for (let i = 0; i <= p.tope; i++) await anadir.dispatchEvent('click')
-  expect((await carritoGuardado(page))[0].cantidad).toBe(p.tope)
-  await expect(card.locator('[data-aviso]')).toContainText('máximo disponible')
+  for (let i = 0; i < 8; i++) await anadir.dispatchEvent('click')
+  expect((await carritoGuardado(page))[0].cantidad).toBe(8)
 })
 
 test('con tallas: no deja añadir sin elegir talla', async ({ page }) => {
@@ -122,11 +121,10 @@ test('granel: kilos escritos a mano (coma o punto), − y + de a 0,1 kg y precio
   await campo.fill('0,12345')
   await campo.press('Enter')
   await expect(campo).toHaveValue('0,123')
-  // más que el stock: se ajusta al tope
+  // más de 50 kg: se ajusta al máximo por pedido
   await campo.fill('9999')
   await campo.press('Enter')
-  const tope = p.tope ?? 50
-  await expect(campo).toHaveValue(String(tope).replace('.', ','))
+  await expect(campo).toHaveValue('50')
   await expect(card.locator('[data-aviso]')).not.toBeEmpty()
   await campo.fill('1,3')
   await campo.press('Enter')
@@ -151,7 +149,7 @@ test('granel: el subtotal del carrito y el mensaje de WhatsApp calzan con kilos 
   await expect(campo).toHaveValue('1,4')
   await campo.fill('2.5')
   await campo.press('Enter')
-  await expect(page.locator(`#carrito-lista li[data-clave="${g.id}"]`).getByLabel(`Kilos de ${g.nombre}`)).toHaveValue(g.tope !== null && g.tope < 2.5 ? String(g.tope).replace('.', ',') : '2,5')
+  await expect(page.locator(`#carrito-lista li[data-clave="${g.id}"]`).getByLabel(`Kilos de ${g.nombre}`)).toHaveValue('2,5')
   const kilos = (await carritoGuardado(page))[0].cantidad
   await page.getByRole('button', { name: 'Continuar compra' }).click()
   await page.getByLabel('Nombre *').fill('Prueba')
@@ -167,7 +165,7 @@ test('granel: el subtotal del carrito y el mensaje de WhatsApp calzan con kilos 
 
 test('la ficha de producto tiene la misma fila de cantidad y Añadir', async ({ page }) => {
   await page.goto('/catalogo.html')
-  const p = await elegirProducto(page, 'simple-sin-tope')
+  const p = await elegirProducto(page, 'simple-consultar')
   await page.goto(`/producto.html?id=${p.id}`)
   const ficha = page.locator('#ficha')
   await ficha.getByRole('button', { name: `Sumar uno a ${p.nombre}` }).click()

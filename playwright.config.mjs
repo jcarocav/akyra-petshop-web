@@ -30,6 +30,8 @@ export default defineConfig({
   projects: [
     // Pruebas sin navegador (reglas del catálogo, mensaje de WhatsApp, data.js sin costos)
     { name: 'unidad', testMatch: /unit\/.*\.spec\.mjs/ },
+    // Herramienta de revisión del catálogo (servidor propio con un catálogo de prueba)
+    { name: 'revision', testMatch: /revision\/.*\.spec\.mjs/, timeout: 90_000, use: { ...devices['Desktop Chrome'] } },
     { name: 'chromium-escritorio', testMatch: /e2e\/.*\.spec\.mjs/, use: { ...devices['Desktop Chrome'] } },
     { name: 'firefox-escritorio', testMatch: /e2e\/.*\.spec\.mjs/, use: { ...devices['Desktop Firefox'] } },
     { name: 'webkit-escritorio', testMatch: /e2e\/.*\.spec\.mjs/, use: { ...devices['Desktop Safari'] } },

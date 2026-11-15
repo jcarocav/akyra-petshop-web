@@ -2,7 +2,8 @@
 // CARRITO — se guarda en el navegador (localStorage) para que no se
 // pierda al recargar ni al cambiar de página. Lo guardado NUNCA se usa
 // tal cual: al cargar, cada línea se vuelve a armar con los datos del
-// catálogo (nombre, precio, tope), y lo que no calza se descarta.
+// catálogo (nombre, precio, disponibilidad), y lo que no calza se descarta.
+// No hay tope por stock: solo un máximo por pedido (99 unidades o 50 kg) para evitar errores de tipeo.
 // ============================================================
 import { productoPorId, variante } from './datos.mjs'
 import { almacen } from './utilidades.mjs'
@@ -11,12 +12,12 @@ const CLAVE = 'akyra_carrito_v2'
 const MAX_LINEAS = 80
 export const MIN_GRANEL = 0.1
 export const PASO_GRANEL = 0.1
-const MAX_SIN_TOPE = 99
-const MAX_GRANEL_SIN_TOPE = 50
+export const MAX_UNIDADES = 99
+export const MAX_KILOS = 50
 
 const oyentes = new Set()
 let lineas = cargar()
-// Se reescribe lo guardado ya limpio (sin productos agotados, inexistentes ni datos alterados)
+// Se reescribe lo guardado ya limpio (sin productos inexistentes ni datos alterados)
 almacen.guardar(CLAVE, lineas.map(l => ({ id: l.id, talla: l.talla, cantidad: l.cantidad })))
 
 export function claveLinea(id, talla) {
@@ -24,11 +25,10 @@ export function claveLinea(id, talla) {
 }
 
 // Cantidad válida para un producto: unidades enteras (mín. 1) o kilos con hasta 3 decimales
-// (gramos; mín. 0,1 kg), nunca sobre el tope de stock.
-// Los botones − y + mueven de a 0,1 kg (PASO_GRANEL).
-export function ajustarCantidad(cantidad, { granel, tope }) {
+// (gramos; mín. 0,1 kg), hasta el máximo por pedido. Los botones − y + mueven de a 0,1 kg (PASO_GRANEL).
+export function ajustarCantidad(cantidad, { granel }) {
   const minimo = granel ? MIN_GRANEL : 1
-  const maximo = tope ?? (granel ? MAX_GRANEL_SIN_TOPE : MAX_SIN_TOPE)
+  const maximo = granel ? MAX_KILOS : MAX_UNIDADES
   let n = Number(cantidad)
   if (!Number.isFinite(n)) n = minimo
   n = granel ? Math.round(n * 1000) / 1000 : Math.round(n)
@@ -38,15 +38,14 @@ export function ajustarCantidad(cantidad, { granel, tope }) {
 // Interpreta lo que se escribió a mano en un campo de kilos ("1,3", "1.3", "0,250").
 // Devuelve { n, aviso }: n es la cantidad válida más cercana (null si no era un número: se deja la anterior)
 // y aviso explica lo que se corrigió (o null si estaba bien).
-export function interpretarKilos(texto, { tope = null } = {}) {
+export function interpretarKilos(texto) {
   const t = String(texto ?? '').trim().replace(',', '.')
   if (!/^[+-]?\d+(\.\d*)?$|^[+-]?\.\d+$/.test(t)) {
     return { n: null, aviso: `“${String(texto).trim().slice(0, 20)}” no es una cantidad válida. Escribe los kilos con números, por ejemplo 1,3.` }
   }
   const valor = Number(t)
-  const maximo = tope ?? MAX_GRANEL_SIN_TOPE
   if (valor <= 0) return { n: MIN_GRANEL, aviso: 'La cantidad mínima es 0,1 kg.' }
-  if (valor > maximo) return { n: maximo, aviso: tope === null ? `La cantidad máxima por pedido es ${MAX_GRANEL_SIN_TOPE} kg.` : `Máximo disponible: ${String(tope).replace('.', ',')} kg.` }
+  if (valor > MAX_KILOS) return { n: MAX_KILOS, aviso: `La cantidad máxima por pedido es ${MAX_KILOS} kg.` }
   const redondeado = Math.round(valor * 1000) / 1000
   if (redondeado !== valor) return { n: Math.max(redondeado, MIN_GRANEL), aviso: 'Usamos hasta 3 decimales (gramos).' }
   return { n: Math.max(valor, MIN_GRANEL), aviso: null }
@@ -54,9 +53,9 @@ export function interpretarKilos(texto, { tope = null } = {}) {
 
 function armarLinea(id, talla, cantidad) {
   const producto = productoPorId.get(id)
-  if (!producto || producto.visible === false) return null // agotado: sale del carrito
+  if (!producto) return null // ya no se publica: sale del carrito
   const v = variante(producto, talla)
-  if (!v || !v.visible || typeof v.precio !== 'number') return null
+  if (!v || typeof v.precio !== 'number') return null
   const granel = !!producto.granel
   return {
     clave: claveLinea(id, v.talla),
@@ -66,9 +65,9 @@ function armarLinea(id, talla, cantidad) {
     talla: v.talla,
     precio: v.precio,
     granel,
-    tope: v.tope,
+    disponibilidad: v.disponibilidad,
     imagen: producto.imagen || null,
-    cantidad: ajustarCantidad(cantidad, { granel, tope: v.tope })
+    cantidad: ajustarCantidad(cantidad, { granel })
   }
 }
 
@@ -114,7 +113,7 @@ export function agregar(id, talla, cantidad) {
     existente.cantidad = ajustarCantidad(antes + pedida, existente)
     const agregada = Math.round((existente.cantidad - antes) * 1000) / 1000
     guardar()
-    return { ok: agregada > 0, linea: { ...existente }, cantidadAgregada: agregada, limitado: agregada < pedida, motivo: agregada > 0 ? null : 'Ya tienes en el carrito el máximo disponible.' }
+    return { ok: agregada > 0, linea: { ...existente }, cantidadAgregada: agregada, limitado: agregada < pedida, motivo: agregada > 0 ? null : 'Ya tienes en el carrito el máximo por pedido.' }
   }
   if (lineas.length >= MAX_LINEAS) return { ok: false, motivo: 'El carrito está lleno.' }
   lineas.push(nueva)

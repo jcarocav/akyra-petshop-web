@@ -28,7 +28,7 @@ export async function catalogo(page) {
   return page.evaluate(() => window.AKYRA_CATALOGO)
 }
 
-// Cambia productos.json y/o stock.json que recibe el navegador (sin tocar los archivos)
+// Cambia productos.json y/o stock.json (disponibilidad) que recibe el navegador (sin tocar los archivos)
 export async function conDatos(page, { productosExtra = [], stockExtra = {} } = {}) {
   // Si la página navega mientras se arma la respuesta, la petición vieja se descarta sin error
   const modificar = cambiar => async route => {
@@ -43,7 +43,9 @@ export async function conDatos(page, { productosExtra = [], stockExtra = {} } = 
   if (productosExtra.length) {
     await page.route('**/productos.json', modificar(d => ({ ...d, productos: [...productosExtra, ...d.productos] })))
   }
-  await page.route('**/stock.json', modificar(d => ({ ...d, unidades: { ...d.unidades, ...stockExtra } })))
+  // stockExtra: { SKU: 'con-stock' | 'consultar' } (también acepta números: > 0 = con stock)
+  const extra = Object.fromEntries(Object.entries(stockExtra).map(([k, v]) => [k, typeof v === 'string' ? v : (v > 0 ? 'con-stock' : 'consultar')]))
+  await page.route('**/stock.json', modificar(d => ({ ...d, disponibilidad: { ...d.disponibilidad, ...extra } })))
 }
 
 // Productos que se pueden comprar (con precio), según su tipo
@@ -52,10 +54,9 @@ export async function elegirProducto(page, criterio) {
   const lista = datos.productos.filter(p => {
     const conPrecio = p.tallas ? p.tallas.some(t => typeof t.precio === 'number') : typeof p.precio === 'number'
     switch (criterio) {
-      case 'simple-sin-tope': return !p.tallas && !p.granel && conPrecio && p.tope === null
-      case 'simple-tope-chico': return !p.tallas && !p.granel && conPrecio && p.tope !== null && p.tope >= 2 && p.tope <= 4
-      case 'simple-mucho-stock': return !p.tallas && !p.granel && conPrecio && p.tope !== null && p.tope >= 10
-      case 'granel': return p.granel && conPrecio && (p.tope === null || p.tope >= 2)
+      case 'simple-consultar': return !p.tallas && !p.granel && conPrecio && p.disponibilidad === 'consultar'
+      case 'simple-con-stock': return !p.tallas && !p.granel && conPrecio && p.disponibilidad === 'con-stock'
+      case 'granel': return p.granel && conPrecio
       case 'tallas': return p.tallas && p.tallas.length >= 2 && p.tallas.every(t => typeof t.precio === 'number')
       case 'sin-precio': return !p.tallas && !conPrecio
       default: return false

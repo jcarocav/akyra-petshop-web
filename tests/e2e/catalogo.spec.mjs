@@ -1,4 +1,4 @@
-// Catálogo: visibilidad por stock, precios, filtros, buscador, paginación, tallas y ficha.
+// Catálogo: disponibilidad (sin ocultar por stock), precios, filtros, buscador, paginación, tallas y ficha.
 import { catalogo, conDatos, elegirProducto, expect, test } from './ayuda.mjs'
 
 // Productos de prueba (agotados, tallas mezcladas, sin precio) agregados a lo que recibe el navegador
@@ -20,28 +20,38 @@ async function conProductosAgotados(page) {
   })
 }
 
-test('ninguna card agotada se ve, ni con búsqueda directa', async ({ page }) => {
+test('un producto con stock 0 SÍ aparece y muestra "Consultar disponibilidad", también en la ficha', async ({ page }) => {
   await conProductosAgotados(page)
-  for (const sku of ['PRUEBA-AGOTADO', 'PRUEBA-TODAS-AGOTADAS']) {
-    await page.goto(`/catalogo.html?buscar=${sku}`)
-    await expect(page.locator('#catalogo-vacio')).toBeVisible()
-    await expect(page.locator('article.tarjeta')).toHaveCount(0)
-  }
+  await page.goto('/catalogo.html?buscar=PRUEBA-AGOTADO')
+  const card = page.locator('article.tarjeta[data-producto="prueba-agotado"]')
+  await expect(card).toBeVisible()
+  await expect(card.locator('[data-estado-stock]')).toHaveText('Consultar disponibilidad')
+  await expect(card.getByRole('button', { name: /Añadir/ })).toBeVisible()
+  await page.goto('/producto.html?id=prueba-agotado')
+  await expect(page.locator('#ficha-stock')).toHaveText('Consultar disponibilidad')
+  await expect(page.locator('#ficha')).not.toContainText('Agotado por ahora')
+  await expect(page.locator('meta[name="robots"]')).not.toHaveAttribute('content', /noindex/)
+  await expect(page.locator('#ficha').getByRole('button', { name: /Añadir/ })).toBeVisible()
 })
 
-test('las tallas sin stock no aparecen en el selector ni en el filtro', async ({ page }) => {
+test('todas las tallas aparecen; las sin stock dicen "Consultar disponibilidad" al elegirlas', async ({ page }) => {
   await conProductosAgotados(page)
   await page.goto('/catalogo.html?buscar=PRUEBA-TALLAS')
   const card = page.locator('article.tarjeta[data-producto="prueba-tallas"]')
   await expect(card).toBeVisible()
-  await expect(card.locator('.talla')).toHaveText(['M'])
-  // El filtro de talla no ofrece S ni XXL para este producto
-  await expect(page.locator('#filtro-talla input[value="S"]')).toHaveCount(0)
-  await page.goto('/catalogo.html?categoria=ropa&talla=S')
-  await expect(page.locator('article.tarjeta[data-producto="prueba-tallas"]')).toHaveCount(0)
+  await expect(card.locator('.talla')).toHaveText(['S', 'M', 'XXL'])
+  await expect(card.locator('[data-estado-stock]')).toHaveText('') // alguna talla tiene stock: sin aviso
+  await card.locator('.talla', { hasText: 'S' }).click()
+  await expect(card.locator('[data-estado-stock]')).toHaveText('Consultar disponibilidad')
+  await card.locator('.talla', { hasText: 'M' }).click()
+  await expect(card.locator('[data-estado-stock]')).toHaveText('')
+  await expect(card.locator('[data-estado-stock]')).toBeHidden()
+  // Una card con todas sus tallas sin stock se ve igual, con el aviso
+  await page.goto('/catalogo.html?buscar=PRUEBA-TODAS-AGOTADAS')
+  await expect(page.locator('article.tarjeta[data-producto="prueba-tallas-agotadas"] [data-estado-stock]')).toHaveText('Consultar disponibilidad')
 })
 
-test('un producto sin cantidad registrada sí aparece, como "Consultar disponibilidad"', async ({ page }) => {
+test('un producto sin cantidad registrada aparece como "Consultar disponibilidad" y su + no tiene tope de stock', async ({ page }) => {
   await conProductosAgotados(page)
   await page.goto('/catalogo.html?buscar=PRUEBA-SIN-DATO')
   const card = page.locator('article.tarjeta[data-producto="prueba-sin-dato"]')
@@ -49,33 +59,13 @@ test('un producto sin cantidad registrada sí aparece, como "Consultar disponibi
   await expect(card.locator('[data-estado-stock]')).toHaveText('Consultar disponibilidad')
   await card.getByRole('button', { name: /Sumar uno/ }).click()
   await card.getByRole('button', { name: /Sumar uno/ }).click()
-  await expect(card.getByRole('button', { name: /Sumar uno/ })).toHaveAttribute('aria-disabled', 'false') // sin tope
+  await expect(card.getByRole('button', { name: /Sumar uno/ })).toHaveAttribute('aria-disabled', 'false')
 })
 
-test('stock: de 0 a 3 aparece con "¡Últimas 3 unidades!"; de 3 a 0 desaparece', async ({ page }) => {
+test('el catálogo ya no muestra la fecha del stock', async ({ page }) => {
   await page.goto('/catalogo.html')
-  const p = await elegirProducto(page, 'simple-mucho-stock')
-  await conDatos(page, { stockExtra: { [p.sku]: 3 } })
-  await page.goto(`/catalogo.html?buscar=${p.sku}`)
-  const card = page.locator(`article.tarjeta[data-producto="${p.id}"]`)
-  await expect(card.locator('[data-estado-stock]')).toHaveText('¡Últimas 3 unidades!')
-  await page.unrouteAll({ behavior: 'ignoreErrors' })
-  await conDatos(page, { stockExtra: { [p.sku]: 0 } })
-  await page.goto(`/catalogo.html?buscar=${p.sku}`)
-  await expect(page.locator('#catalogo-vacio')).toBeVisible()
-  // La ficha sigue existiendo, dice "Agotado por ahora" y no se indexa
-  await page.goto(`/producto.html?id=${p.id}`)
-  await expect(page.locator('#ficha-stock')).toHaveText('Agotado por ahora')
-  await expect(page.locator('#ficha-agotado')).toBeVisible()
-  await expect(page.locator('#ficha').getByRole('button', { name: /Añadir/ })).toHaveCount(0)
-  await expect(page.locator('meta[name="robots"]')).toHaveAttribute('content', /noindex/)
-  const href = await page.locator('#ficha-agotado-whatsapp').getAttribute('href')
-  expect(href).toContain('wa.me/56986969111')
-})
-
-test('el pie del catálogo muestra la fecha del stock', async ({ page }) => {
-  await page.goto('/catalogo.html')
-  await expect(page.locator('#stock-actualizado')).toHaveText(/^Stock actualizado: \d{2}-\d{2}-\d{4} \d{2}:\d{2}$/)
+  await expect(page.locator('article.tarjeta').first()).toBeVisible()
+  await expect(page.locator('body')).not.toContainText('Stock actualizado')
 })
 
 test('no se ve ningún precio "$1" y "Consultar precio" abre WhatsApp', async ({ page }) => {
@@ -132,7 +122,7 @@ test('pestañas de categoría, subcategoría, marca y buscador filtran bien', as
 
 test('el buscador encuentra por código SKU y muestra estado vacío', async ({ page }) => {
   await page.goto('/catalogo.html')
-  const p = await elegirProducto(page, 'simple-mucho-stock')
+  const p = await elegirProducto(page, 'simple-con-stock')
   await page.locator('#catalogo-buscar').fill(p.sku.toLowerCase())
   await expect(page.locator(`article.tarjeta[data-producto="${p.id}"]`)).toBeVisible()
   await page.locator('#catalogo-buscar').fill('zzzzproductoinexistente')
@@ -151,10 +141,10 @@ test('paginación: "Mostrar más" agrega productos y mueve el foco', async ({ pa
   await expect(page.locator('#catalogo-conteo')).toContainText('Mostrando 48 de')
 })
 
-test('filtro por talla: solo productos que tienen esa talla disponible', async ({ page }) => {
+test('filtro por talla: solo productos que tienen esa talla', async ({ page }) => {
   await page.goto('/catalogo.html?categoria=ropa')
   const datos = await catalogo(page)
-  const conM = new Set(datos.productos.filter(p => p.tallas?.some(t => t.talla === 'M' && (t.tope === null || t.tope > 0))).map(p => p.id))
+  const conM = new Set(datos.productos.filter(p => p.tallas?.some(t => t.talla === 'M')).map(p => p.id))
   await page.goto('/catalogo.html?categoria=ropa&talla=M')
   const ids = await page.locator('article.tarjeta').evaluateAll(els => els.map(e => e.dataset.producto))
   expect(ids.length).toBeGreaterThan(0)
@@ -163,7 +153,7 @@ test('filtro por talla: solo productos que tienen esa talla disponible', async (
 
 test('ficha de producto: título, descripción y datos estructurados propios', async ({ page }) => {
   await page.goto('/catalogo.html')
-  const p = await elegirProducto(page, 'simple-mucho-stock')
+  const p = await elegirProducto(page, 'simple-con-stock')
   await page.goto(`/producto.html?id=${p.id}`)
   await expect(page.getByRole('heading', { level: 1 })).toHaveText(p.nombre)
   await expect(page).toHaveTitle(new RegExp(p.nombre.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')))

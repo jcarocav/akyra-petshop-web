@@ -25,10 +25,11 @@ copyFileSync(join(RAIZ, 'node_modules', 'xlsx', 'dist', 'xlsx.full.min.js'), joi
 
 const { internos } = JSON.parse(readFileSync(join(RAIZ, '.tmp', 'catalogo-interno.json'), 'utf8'))
 const nombreCategoria = new Map(CATEGORIAS.map(c => [c.id, c.nombre]))
-const stock = JSON.parse(readFileSync(join(RAIZ, 'stock.json'), 'utf8'))
+// stock.json ya no tiene unidades: la carga inicial usa las del Excel (catálogo interno, fuera de git)
+const actualizado = new Date().toISOString()
 const catalogo = internos.map(p => ({
   sku: p.sku, codigo: p.codigo, nombre: p.nombre, marca: p.marca, categoria: nombreCategoria.get(p.categoria) || '',
-  precio: p.precio, unidades: stock.unidades[p.sku] ?? null, actualizado: stock.actualizado
+  precio: p.precio, unidades: p.unidades ?? null, actualizado
 }))
 writeFileSync(join(DESTINO, 'CatalogoInicial.js'), `// Generado por tools/stock/preparar-apps-script.mjs (no está en el repositorio)\nvar CATALOGO_INICIAL = ${JSON.stringify(catalogo)}\n`)
 // Clave para el CSV público (se guarda también como secreto STOCK_CSV_URL en GitHub)
