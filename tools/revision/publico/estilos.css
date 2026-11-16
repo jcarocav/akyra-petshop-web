@@ -104,8 +104,11 @@ main { padding: 16px var(--margen) 40px; background: var(--blanco); min-height: 
 .rev-campo-interruptor { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; font-weight: 700; }
 .rev-interruptor { display: inline-flex; padding: 3px; border: 2px solid var(--borde-control); border-radius: 999px; background: var(--blanco); min-height: 48px; }
 .rev-interruptor__opcion { padding: 6px 14px; border-radius: 999px; font-weight: 700; color: var(--gris); }
-.rev-interruptor[aria-checked="true"] .rev-interruptor__opcion:first-child { background: var(--rev-verde); color: var(--blanco); }
-.rev-interruptor[aria-checked="false"] .rev-interruptor__opcion:last-child { background: var(--amarillo); color: var(--tinta); }
+/* Disponible = verde suave · Consultar disponibilidad = amarillo suave (los mismos tonos que tendrá la web) */
+.rev-interruptor[aria-checked="true"] .rev-interruptor__opcion:first-child { background: var(--rev-verde-suave); color: var(--rev-verde); box-shadow: inset 0 0 0 2px var(--rev-verde); }
+.rev-interruptor[aria-checked="false"] .rev-interruptor__opcion:last-child { background: var(--amarillo-suave); color: var(--rev-amarillo-texto); box-shadow: inset 0 0 0 2px #c79a1e; }
+/* Vista previa del aviso "Disponible" en la card (verde suave, texto real) */
+.estado-stock--disponible { background: var(--rev-verde-suave); color: var(--rev-verde); }
 
 /* ---------- Fotos por sacar ---------- */
 .fotos-contador { font-family: var(--fuente-titulos); font-size: 1.3rem; }

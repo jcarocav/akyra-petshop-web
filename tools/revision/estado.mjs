@@ -32,12 +32,12 @@ const fechaLocal = (d = new Date()) => {
   return `${p.year}-${p.month}-${p.day} ${p.hour}:${p.minute}:${p.second}`
 }
 
-// Texto corto de un valor para el historial ("$12.345", "Con stock", …)
+// Texto corto de un valor para el historial ("$12.345", "Disponible", …)
 export function describirValor(campo, valor) {
   if (valor === null || valor === undefined) return '(original)'
   const base = campo.split('@')[0]
   if (base === 'precio' && typeof valor === 'number') return '$' + String(valor).replace(/\B(?=(\d{3})+(?!\d))/g, '.')
-  if (base === 'disponibilidad') return valor === 'con-stock' ? 'Con stock' : 'Consultar disponibilidad'
+  if (base === 'disponibilidad') return valor === 'con-stock' ? 'Disponible' : 'Consultar disponibilidad'
   if (base === 'eliminar') return `eliminar${valor.motivo ? ` (${valor.motivo})` : ''}`
   if (base === 'foto') return valor.archivo || 'foto'
   if (typeof valor === 'object') return JSON.stringify(valor).slice(0, 120)

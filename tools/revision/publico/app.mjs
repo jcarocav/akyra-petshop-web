@@ -314,7 +314,7 @@ function cardWeb(p) {
     h('h3', { class: 'tarjeta__nombre' }, h('span', { class: 'rev-nombre', text: p.nombre })),
     p.descripcion ? h('p', { class: 'tarjeta__descripcion', text: p.descripcion }) : null,
     bloquePrecio(p),
-    h('p', { class: `estado-stock estado-stock--${disponibilidad === 'con-stock' ? 'con-stock' : 'consultar'}`, text: disponibilidad === 'con-stock' ? '' : 'Consultar disponibilidad' }))
+    h('p', { class: `estado-stock estado-stock--${disponibilidad === 'con-stock' ? 'disponible' : 'consultar'}`, text: disponibilidad === 'con-stock' ? 'Disponible' : 'Consultar disponibilidad' }))
   if (p.granel && typeof p.precio === 'number') cuerpo.append(h('p', { class: 'tarjeta__subtotal', text: `0,1 kg = ${formatoPrecio(Math.round(p.precio * 0.1))}` }))
   if (p.tallas && !sinPrecio(p)) cuerpo.append(selectorTallas(p))
   // Pie igual al de la web (vista previa sin funcionar): "− 1 +" y "Añadir", o "Consultar precio"
@@ -334,9 +334,9 @@ function cardWeb(p) {
 
 function interruptorDisponibilidad(p) {
   const conStock = p.disponibilidad === 'con-stock'
-  return h('button', { type: 'button', role: 'switch', 'aria-checked': String(conStock), class: 'rev-interruptor', dataset: { accion: 'disponibilidad' }, 'aria-label': 'Disponibilidad: con stock' },
-    h('span', { class: 'rev-interruptor__opcion', text: 'Con stock' }),
-    h('span', { class: 'rev-interruptor__opcion', text: 'Consultar' }))
+  return h('button', { type: 'button', role: 'switch', 'aria-checked': String(conStock), class: 'rev-interruptor', dataset: { accion: 'disponibilidad' }, 'aria-label': 'Disponible' },
+    h('span', { class: 'rev-interruptor__opcion', text: 'Disponible' }),
+    h('span', { class: 'rev-interruptor__opcion', text: 'Consultar disponibilidad' }))
 }
 
 // Card web + panel de revisión debajo
@@ -584,7 +584,7 @@ function campoTexto(id, etiqueta, valorActual, { multilinea = false, lista = nul
 }
 function selectDisponibilidad(id, etiqueta, actual) {
   return h('label', { class: 'rev-campo', for: id }, etiqueta,
-    h('select', { id }, h('option', { value: 'con-stock', text: 'Con stock', selected: actual === 'con-stock' }), h('option', { value: 'consultar', text: 'Consultar disponibilidad', selected: actual !== 'con-stock' })))
+    h('select', { id }, h('option', { value: 'con-stock', text: 'Disponible', selected: actual === 'con-stock' }), h('option', { value: 'consultar', text: 'Consultar disponibilidad', selected: actual !== 'con-stock' })))
 }
 // "Antes y después" con la misma card de la web (vista previa, sin controles)
 function miniTarjeta(titulo, d, p) {
@@ -736,7 +736,7 @@ function dialogoNuevo(inicial = {}) {
     const fila = h('div', { class: 'fila-talla' },
       h('label', { class: 'rev-campo' }, 'Talla', h('input', { type: 'text', maxlength: 12, class: 'n-talla', value: t.talla || '' })),
       h('label', { class: 'rev-campo' }, 'Precio', h('input', { type: 'text', inputmode: 'numeric', class: 'n-talla-precio precio__campo', value: t.precio || '' })),
-      h('label', { class: 'rev-campo' }, 'Disponibilidad', h('select', { class: 'n-talla-disp' }, h('option', { value: 'con-stock', text: 'Con stock' }), h('option', { value: 'consultar', text: 'Consultar disponibilidad', selected: true }))),
+      h('label', { class: 'rev-campo' }, 'Disponibilidad', h('select', { class: 'n-talla-disp' }, h('option', { value: 'con-stock', text: 'Disponible' }), h('option', { value: 'consultar', text: 'Consultar disponibilidad', selected: true }))),
       h('button', { type: 'button', class: 'boton boton--secundario boton--chico', text: 'Quitar talla', onclick: () => fila.remove() }))
     tallasLista.append(fila)
   }

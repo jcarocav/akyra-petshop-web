@@ -66,8 +66,11 @@ test('muestra todo el catálogo, incluso lo que no se publica, con avisos y filt
   await expect(card(page, 'GAT-LEON-910')).toContainText('No se ve en la web: falta foto')
   await expect(card(page, 'PER-OTRA-904')).not.toContainText('No se ve en la web')
   await expect(card(page, 'ACC-MARB-903')).toContainText('Imagen referencial')
-  await expect(card(page, 'ACC-MOND-902')).toContainText('Consultar disponibilidad') // stock 0
-  await expect(card(page, 'PER-OTRA-904')).not.toContainText('Consultar disponibilidad')
+  // Aviso de la card como se verá en la web: amarillo "Consultar disponibilidad" o verde "Disponible"
+  await expect(card(page, 'ACC-MOND-902').locator('article.tarjeta .estado-stock')).toHaveText('Consultar disponibilidad') // stock 0
+  await expect(card(page, 'PER-OTRA-904').locator('article.tarjeta .estado-stock')).toHaveText('Disponible')
+  await expect(card(page, 'PER-OTRA-904').getByRole('switch')).toContainText('Disponible')
+  await expect(card(page, 'PER-OTRA-904').getByRole('switch')).toContainText('Consultar disponibilidad')
   await page.locator('#filtro-web').selectOption('no')
   await expect(page.locator('#lista li.rev-item')).toHaveCount(2)
   await page.locator('#filtro-web').selectOption('')

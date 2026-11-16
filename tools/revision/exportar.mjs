@@ -19,7 +19,7 @@ const HOJA_BASE = 'Base Rosa (1004)'
 const NOMBRE_CATEGORIA = new Map(CATEGORIAS.map(c => [c.id, c.excel]))
 const ETIQUETA = { nombre: 'Nombre', marca: 'Marca', descripcion: 'Descripción', categoria: 'Categoría', subcategoria: 'Subcategoría', disponibilidad: 'Disponibilidad', nota: 'Nota para Joaquín' }
 const texto = v => (v === null || v === undefined ? '' : String(v))
-const disp = v => (v === 'con-stock' ? 'Con stock' : v === 'consultar' ? 'Consultar disponibilidad' : texto(v))
+const disp = v => (v === 'con-stock' ? 'Disponible' : v === 'consultar' ? 'Consultar disponibilidad' : texto(v))
 
 // productos: los de la herramienta ({ sku, codigo, nombre, marca, precio, tallas, disponibilidad, categoria, ... } originales)
 // cambios: revision.datos.cambios
