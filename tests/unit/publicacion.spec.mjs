@@ -7,7 +7,7 @@ import { marcaConFotoObligatoria, publicarCatalogo } from '../../tools/catalogo/
 
 const RAIZ = resolve(import.meta.dirname, '..', '..')
 const FOTO = 'assets/productos/ACC-AMER-001.webp'
-const prod = (sku, extra = {}) => ({ id: sku.toLowerCase(), sku, nombre: `Producto ${sku}`, marca: 'Genérico', categoria: 'accesorios', subcategoria: 'Varios', precio: 1000, codigo: `780${sku.length}`, fabricante: '', nombreExcel: `PRODUCTO ${sku}`, ...extra })
+const prod = (sku, extra = {}) => ({ id: sku.toLowerCase(), sku, nombre: `Producto ${sku}`, marca: 'Genérico', categoria: 'perros', subcategoria: 'Snacks y premios', precio: 1000, codigo: `780${sku.length}`, fabricante: '', nombreExcel: `PRODUCTO ${sku}`, ...extra })
 
 const base = {
   productos: [
@@ -80,8 +80,8 @@ test('los ajustes ganan sobre el Excel: excluido no vuelve; precio, texto y disp
       'A-TALLAS': { tallas: { S: { precio: 3990, disponibilidad: 'con-stock' } } },
       'A-MONDO-SIN': { imagen: FOTO, imagenTipo: 'exacta' }
     },
-    agregados: [{ sku: 'NUEVO-001', codigo: '7801234567890', nombre: 'Producto Nuevo', marca: 'Leon Pet', categoria: 'Accesorios', precio: 5000, disponibilidad: 'consultar' },
-      { sku: 'NUEVO-002', codigo: '7801234567891', nombre: 'Otro Nuevo Leon Pet', marca: 'Leon Pet', categoria: 'Accesorios', precio: 5000, imagen: FOTO }]
+    agregados: [{ sku: 'NUEVO-001', codigo: '7801234567890', nombre: 'Producto Nuevo', marca: 'Leon Pet', categoria: 'Perros', precio: 5000, disponibilidad: 'consultar' },
+      { sku: 'NUEVO-002', codigo: '7801234567891', nombre: 'Otro Nuevo Leon Pet', marca: 'Leon Pet', categoria: 'Perros', precio: 5000, imagen: FOTO }]
   }
   // Se "regenera" dos veces desde la misma base (como si se volviera a leer el Excel): mismo resultado
   for (let vez = 0; vez < 2; vez++) {
@@ -113,4 +113,17 @@ test('el catálogo publicado: ningún Mondo / Marben / Leon Pet usa la imagen de
     const todos = JSON.parse(readFileSync(rutaBase, 'utf8')).productos
     for (const p of todos.filter(x => publicados.has(x.sku) && marcaConFotoObligatoria(x))) expect(publicados.has(p.sku) && !!productos.find(x => x.sku === p.sku).imagen, p.sku).toBe(true)
   }
+})
+
+test('accesorios y ropa de Mondo, Marben, Leon Pet y Buen Amigo: solo con foto oficial (también si están en otra categoría)', async () => {
+  const { accesorioOculto } = await import('../../tools/catalogo/publicar.mjs')
+  const p = extra => ({ categoria: 'accesorios', nombre: 'Plato Doble', marca: 'Mondo Mascota', fabricante: 'Mondo Mascota', ...extra })
+  expect(accesorioOculto(p())).toBe('Mondo Mascota') // sin foto
+  expect(accesorioOculto(p({ imagen: 'x.webp', imagenTipo: 'referencial' }))).toBe('Mondo Mascota') // referencial no basta
+  expect(accesorioOculto(p({ imagen: 'x.webp', imagenTipo: 'exacta' }))).toBeNull() // foto oficial: se ve
+  expect(accesorioOculto(p({ categoria: 'ropa', marca: 'Marben Pets', fabricante: 'Marben Pets', nombre: 'Chaqueta Wonder Dog' }))).toBe('Marben Pets')
+  expect(accesorioOculto(p({ categoria: 'perros', nombre: 'Pechera XL (75251)', marca: 'Buen Amigo', fabricante: 'Buen Amigo' }))).toBe('Buen Amigo')
+  expect(accesorioOculto(p({ categoria: 'perros', nombre: 'Snack Tasty Farm Sabor Pollo', marca: 'Marben Pets', fabricante: 'Marben Pets' }))).toBeNull() // snack: regla normal
+  expect(accesorioOculto(p({ categoria: 'salud-higiene', nombre: 'Calming Collar', marca: 'Marben Pets' }))).toBeNull() // salud no cuenta
+  expect(accesorioOculto(p({ marca: 'Bioline', fabricante: 'Bioline' }))).toBeNull() // otras marcas: se publican igual
 })

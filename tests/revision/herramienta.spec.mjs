@@ -55,7 +55,10 @@ test('sin la clave el servidor no responde; con la clave sí (también desde otr
 test('muestra todo el catálogo, incluso lo que no se publica, con avisos y filtros', async ({ page }) => {
   await abrir(page)
   await expect(page.locator('#lista li.rev-item')).toHaveCount(8)
-  await expect(card(page, 'ACC-MOND-901')).toContainText('No se ve en la web: falta foto')
+  // Accesorios de Mondo / Marben sin foto oficial: ocultos; snacks de esas marcas sin foto: "falta foto"
+  await expect(card(page, 'ACC-MOND-901')).toContainText('No se ve en la web: accesorio sin foto oficial')
+  await expect(card(page, 'ACC-MARB-903')).toContainText('No se ve en la web: accesorio sin foto oficial')
+  await expect(card(page, 'ACC-MOND-902')).not.toContainText('No se ve en la web')
   // Misma card que la web (marca, nombre, precio, "Añadir" o "Consultar precio") y sin SKU a la vista
   await expect(card(page, 'PER-OTRA-904').locator('article.tarjeta .tarjeta__marca')).toHaveText('Alfa Dog')
   await expect(card(page, 'PER-OTRA-904').locator('article.tarjeta .compra__anadir')).toContainText('Añadir')
@@ -72,15 +75,15 @@ test('muestra todo el catálogo, incluso lo que no se publica, con avisos y filt
   await expect(card(page, 'PER-OTRA-904').getByRole('switch')).toContainText('Disponible')
   await expect(card(page, 'PER-OTRA-904').getByRole('switch')).toContainText('Consultar disponibilidad')
   await page.locator('#filtro-web').selectOption('no')
-  await expect(page.locator('#lista li.rev-item')).toHaveCount(2)
+  await expect(page.locator('#lista li.rev-item')).toHaveCount(3)
   await page.locator('#filtro-web').selectOption('')
   await page.locator('#filtro-stock').selectOption('consultar')
   await expect(page.locator('#lista li.rev-item')).toHaveCount(3)
   await page.locator('#filtro-stock').selectOption('')
   await page.locator('#filtro-cambios').selectOption('sin-precio')
   await expect(page.locator('#lista li.rev-item')).toHaveCount(1)
-  await expect(page.locator('#contadores')).toContainText('6 Publicados')
-  await expect(page.locator('#contadores')).toContainText('2 No publicados por falta de foto')
+  await expect(page.locator('#contadores')).toContainText('5 Publicados')
+  await expect(page.locator('#contadores')).toContainText('1 No publicados por falta de foto')
 })
 
 test('accesible (axe, WCAG 2.2 AA) en PC y celular, también con la edición de precio y el formulario abiertos', async ({ page }) => {
@@ -263,7 +266,7 @@ test('agregar producto nuevo: aviso de código repetido y de marca que exige fot
   await expect(page.locator('#aviso')).toHaveText('Guardado')
   const nuevo = page.locator('#lista li.rev-item').filter({ hasText: 'Cama Prueba Nueva' })
   await expect(nuevo).toContainText('Nuevo')
-  await expect(nuevo).toContainText('No se ve en la web: falta foto')
+  await expect(nuevo).toContainText('No se ve en la web: accesorio sin foto oficial')
   await expect(nuevo).toContainText('$19.990')
   const [sku, c] = Object.entries(leerRevision(h).cambios).find(([k]) => k.startsWith('NUEVO-'))
   expect(c.codigo.valor).toBe('7801111111116')

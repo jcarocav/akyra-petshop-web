@@ -25,6 +25,22 @@ const MARCAS_CON_FOTO_OBLIGATORIA = [
   { id: 'leon', nombre: 'Leon Pet', patron: /\bleon\s*pets?\b|\bleonpet\b/ }
 ]
 
+// Accesorios y ropa de estas marcas: ocultos "hasta nuevo aviso" salvo los que tengan foto exacta (oficial o propia).
+// Pedido de la dueña, noviembre 2026. Snacks y alimentos de estas marcas siguen la regla de arriba.
+const MARCAS_ACCESORIOS_OCULTOS = [...MARCAS_CON_FOTO_OBLIGATORIA, { id: 'buen-amigo', nombre: 'Buen Amigo', patron: /\bbuen\s*amigo\b/ }]
+const CATEGORIAS_ACCESORIOS = new Set(['accesorios', 'ropa'])
+// Accesorios cargados en otra categoría (por ejemplo un arnés en "Perros"); los de salud e higiene no cuentan
+const NOMBRE_ACCESORIO = /\b(arnes|collar|correa|pechera|tirador|chaqueta|parka|chaleco|polera|poleron|sweater|sueter|vestido|impermeable|bandana|cama|cojin|frazada|manta|juguete|pelota|plato|comedero|bebedero|alfombra|transportador|rascador|mochila|bozal|placa|jaula|arenero|pala|peine)\b/
+
+export function accesorioOculto(producto) {
+  const esAccesorio = CATEGORIAS_ACCESORIOS.has(producto.categoria) ||
+    (producto.categoria !== 'salud-higiene' && NOMBRE_ACCESORIO.test(sinTildes(producto.nombre || '').toLowerCase()))
+  if (!esAccesorio) return null
+  if (producto.imagen && producto.imagenTipo !== 'referencial') return null
+  const texto = ' ' + sinTildes([producto.fabricante, producto.marca, producto.nombreExcel, producto.nombre].filter(Boolean).join(' | ')).toLowerCase() + ' '
+  return MARCAS_ACCESORIOS_OCULTOS.find(m => m.patron.test(texto))?.nombre || null
+}
+
 // Devuelve el nombre de la marca ("Mondo Mascota", "Marben Pets", "Leon Pet") o null.
 export function marcaConFotoObligatoria(producto) {
   const texto = ' ' + sinTildes([producto.fabricante, producto.marca, producto.nombreExcel, producto.nombre].filter(Boolean).join(' | ')).toLowerCase() + ' '
@@ -73,7 +89,7 @@ export function productoAgregado(a) {
 // ajustes: tools/catalogo/ajustes-catalogo.json
 // existeImagen(ruta): para no publicar una foto de los ajustes que todavía no está en assets/ (por defecto: sí existe)
 // Devuelve { todos, publicados, disponibilidad, resumen }:
-//   todos       → cada producto con `publicado` (true/false) y `motivo` ('eliminado' | 'falta-foto' | null)
+//   todos       → cada producto con `publicado` (true/false) y `motivo` ('eliminado' | 'accesorio-sin-foto-oficial' | 'falta-foto' | null)
 //   publicados  → listos para productos.json (solo campos públicos)
 //   disponibilidad → { SKU: 'con-stock' | 'consultar' } de los publicados (para stock.json)
 export function publicarCatalogo(base, ajustes = ajustesVacios(), { existeImagen = () => true } = {}) {
@@ -104,6 +120,7 @@ export function publicarCatalogo(base, ajustes = ajustesVacios(), { existeImagen
       for (const campo of ['nombre', 'marca', 'descripcion', 'subcategoria']) if (typeof m[campo] === 'string' && m[campo].trim()) p[campo] = m[campo].trim()
       if (m.categoria && categoriaValida(m.categoria)) p.categoria = categoriaValida(m.categoria)
       if ('precio' in m && !p.tallas) p.precio = precioAjuste(m.precio)
+      if (typeof m.granel === 'boolean') { if (m.granel) p.granel = true; else delete p.granel }
       if (m.disponibilidad) {
         if (p.tallas) for (const t of p.tallas) disp[t.sku] = normalizarDisponibilidad(m.disponibilidad)
         else disp[p.sku] = normalizarDisponibilidad(m.disponibilidad)
@@ -121,7 +138,8 @@ export function publicarCatalogo(base, ajustes = ajustesVacios(), { existeImagen
     const excluido = aj.excluidos?.[p.sku]
     const marca = marcaConFotoObligatoria(p)
     p.marcaFotoObligatoria = marca
-    if (excluido) { p.publicado = false; p.motivo = 'eliminado' } else if (marca && !p.imagen) { p.publicado = false; p.motivo = 'falta-foto' } else { p.publicado = true; p.motivo = null }
+    const accesorio = accesorioOculto(p)
+    if (excluido) { p.publicado = false; p.motivo = 'eliminado' } else if (accesorio) { p.publicado = false; p.motivo = 'accesorio-sin-foto-oficial' } else if (marca && !p.imagen) { p.publicado = false; p.motivo = 'falta-foto' } else { p.publicado = true; p.motivo = null }
     p.disponibilidad = p.tallas ? (p.tallas.some(t => disp[t.sku] === 'con-stock') ? 'con-stock' : 'consultar') : disp[p.sku]
     if (p.tallas) for (const t of p.tallas) t.disponibilidad = disp[t.sku]
   }
@@ -139,6 +157,7 @@ export function publicarCatalogo(base, ajustes = ajustesVacios(), { existeImagen
     consultarDisponibilidad: todos.filter(p => p.publicado && p.disponibilidad === 'consultar').length,
     eliminados: todos.filter(p => p.motivo === 'eliminado').length,
     ocultosFaltaFoto: todos.filter(p => p.motivo === 'falta-foto').length,
+    ocultosAccesorios: todos.filter(p => p.motivo === 'accesorio-sin-foto-oficial').length,
     ocultosFaltaFotoPorMarca: Object.fromEntries(MARCAS_CON_FOTO_OBLIGATORIA.map(m => [m.nombre, todos.filter(p => p.motivo === 'falta-foto' && p.marcaFotoObligatoria === m.nombre).length])),
     sinFoto: sinFoto.length,
     sinFotoPublicados: sinFoto.filter(p => p.publicado).length,

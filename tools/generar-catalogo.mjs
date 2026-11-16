@@ -329,6 +329,7 @@ Catálogo generado → productos.json + stock.json
   Publicados en la web ............... ${resumen.publicados}
   "Consultar disponibilidad" ......... ${resumen.consultarDisponibilidad}
   Eliminados en la revisión .......... ${resumen.eliminados}
+  Accesorios/ropa ocultos (marcas) ... ${resumen.ocultosAccesorios}
   Ocultos por falta de foto .......... ${resumen.ocultosFaltaFoto} (${Object.entries(resumen.ocultosFaltaFotoPorMarca).map(([m, n]) => `${m}: ${n}`).join(', ')})
   Sin foto (total / publicados) ...... ${resumen.sinFoto} / ${resumen.sinFotoPublicados}
   "Consultar precio" (publicados) .... ${resumen.consultarPrecio}

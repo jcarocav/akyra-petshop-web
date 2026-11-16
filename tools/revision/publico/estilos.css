@@ -75,6 +75,7 @@ main { padding: 16px var(--margen) 40px; background: var(--blanco); min-height: 
 .rev-marca--ok { color: var(--rev-verde); background: var(--rev-verde-suave); }
 .rev-marca--nuevo { color: #0b4f8a; background: #e5f0fb; }
 .rev-marca--oculto { color: #3f4a49; background: #eceff0; }
+.rev-marca--propuesta { color: #6b4d00; background: var(--amarillo-suave); border-style: dashed; }
 
 /* Dentro de la card */
 .rev-nombre { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }

@@ -105,6 +105,7 @@ function pintarContadores() {
   const n = {
     'Publicados': v.filter(p => p.publicado).length,
     'No publicados por falta de foto': v.filter(p => p.motivo === 'falta-foto').length,
+    'Accesorios y ropa ocultos': v.filter(p => p.motivo === 'accesorio-sin-foto-oficial').length,
     'Fotos nuevas sacadas': v.filter(tieneFotoNueva).length,
     'Precios cambiados': v.filter(precioCambiado).length,
     'Revisados': v.filter(p => valor(p, 'revisado')).length,
@@ -194,6 +195,7 @@ function filtrar() {
     if (cambios === 'foto-nueva' && !tieneFotoNueva(p)) return false
     if (cambios === 'nuevo' && !esNuevo(p)) return false
     if (cambios === 'sin-cambios' && (esNuevo(p) || Object.keys(p.cambios).length)) return false
+    if (cambios === 'propuesta' && !Object.values(p.cambios).some(c => c?.dispositivo === 'Propuesta')) return false
     if (palabras.length) {
       const t = textoBusqueda(p)
       if (!palabras.every(w => t.includes(w))) return false
@@ -217,7 +219,7 @@ function icono(nombre) {
 
 // ---------- Card (misma estructura y estilos que la card del catálogo web: styles.css del sitio) ----------
 function etiquetaMarca(texto) {
-  const clase = { Eliminar: 'eliminar', Modificar: 'modificar', 'Precio cambiado': 'precio', 'Foto nueva': 'foto', OK: 'ok', Nuevo: 'nuevo' }[texto] || 'modificar'
+  const clase = { Eliminar: 'eliminar', Modificar: 'modificar', 'Precio cambiado': 'precio', 'Foto nueva': 'foto', OK: 'ok', Nuevo: 'nuevo', 'Propuesta: confirmar': 'propuesta' }[texto] || 'modificar'
   return h('span', { class: `rev-marca rev-marca--${clase}`, text: texto })
 }
 
@@ -344,8 +346,9 @@ function tarjeta(p) {
   const marcas = marcasDeCambios(p.cambios)
   const f = valor(p, 'foto')
   const li = h('li', { class: `rev-item${valor(p, 'eliminar') ? ' rev-item--eliminar' : ''}${marcas.length ? ' rev-item--marcado' : ''}`, dataset: { sku: p.sku } })
-  const etiquetas = h('div', { class: 'rev-marcas' }, ...marcas.map(etiquetaMarca))
-  if (!p.publicado) etiquetas.append(h('span', { class: 'rev-marca rev-marca--oculto', text: p.motivo === 'falta-foto' ? 'No se ve en la web: falta foto' : 'No se ve en la web: eliminado' }))
+  const propuesta = Object.values(p.cambios).some(c => c?.dispositivo === 'Propuesta')
+  const etiquetas = h('div', { class: 'rev-marcas' }, ...(propuesta ? ['Propuesta: confirmar', ...marcas] : marcas).map(etiquetaMarca))
+  if (!p.publicado) etiquetas.append(h('span', { class: 'rev-marca rev-marca--oculto', text: p.motivo === 'falta-foto' ? 'No se ve en la web: falta foto' : p.motivo === 'accesorio-sin-foto-oficial' ? 'No se ve en la web: accesorio sin foto oficial' : 'No se ve en la web: eliminado' }))
   const panel = h('div', { class: 'rev-panel' },
     h('p', { class: 'rev-dato' }, 'Código de barras: ', h('strong', { text: p.codigo || 'sin código' })),
     h('p', { class: 'rev-dato', text: [nombreCategoria(p.categoria), p.subcategoria].filter(Boolean).join(' · ') }),

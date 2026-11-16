@@ -74,6 +74,7 @@ export function cambiosAAjustes(cambios = {}, { incluirNuevosEliminados = false 
       m.tallas = m.tallas || {}
       m.tallas[talla] = { ...m.tallas[talla], [base]: dato.valor }
     }
+    if (typeof valor(c, 'granel') === 'boolean') m.granel = valor(c, 'granel')
     if (valor(c, 'foto')) { m.imagen = rutaFotoSitio(sku); m.imagenTipo = 'exacta' }
     if (Object.keys(m).length) ajustes.modificados[sku] = m
   }

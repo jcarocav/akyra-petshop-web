@@ -16,7 +16,8 @@
 import { appendFileSync, copyFileSync, existsSync, mkdirSync, readFileSync, readdirSync, renameSync, unlinkSync, writeFileSync } from 'node:fs'
 import { join } from 'node:path'
 
-export const DISPOSITIVOS = ['PC', 'Celular']
+// 'Propuesta' = cambios precargados desde el Word de la dueña y la lista de Joaquín (para que Rosa los confirme)
+export const DISPOSITIVOS = ['PC', 'Celular', 'Propuesta']
 const CAMPO_VALIDO = /^(eliminar|revisado|nombre|marca|descripcion|categoria|subcategoria|precio|disponibilidad|nota|foto|nuevo|codigo|tallas|granel)(@[^\s@]{1,12})?$/
 const MAX_PILA = 60
 const RESPALDOS = 5
